@@ -23,12 +23,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const toggleLang = useCallback(() => {
-    setLang(prev => {
+    setLangState(prev => {
       const next = prev === 'en' ? 'zh' : 'en';
       localStorage.setItem('lang', next);
       return next;
     });
-  }, [setLang]);
+  }, []);
 
   useEffect(() => {
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
