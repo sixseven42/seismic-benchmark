@@ -35,7 +35,7 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
   const items = useMemo(() => {
     let list = data.models.slice();
     if (filters.task !== 'all') {
-      list = list.filter(m => (m.tasks || []).includes(filters.task));
+      list = list.filter(m => (m.tasks || []).includes(filters.task as import('../types').Task));
     }
     if (filters.type !== 'all') {
       list = list.filter(m => m.type === filters.type);

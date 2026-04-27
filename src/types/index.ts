@@ -33,12 +33,14 @@ export interface Benchmark {
   model_count: number;
 }
 
-export type MetricKey = 'snr' | 'ssim' | 'rmse' | 'accuracy' | 'f1' | 'mae';
+export type MetricKey = 'snr' | 'psnr' | 'ssim' | 'rmse' | 'mse' | 'accuracy' | 'f1' | 'mae';
 
 export interface Scores {
   snr?: number;
+  psnr?: number;
   ssim?: number;
   rmse?: number;
+  mse?: number;
   accuracy?: number;
   f1?: number;
   mae?: number;

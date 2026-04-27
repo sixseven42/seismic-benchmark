@@ -55,27 +55,24 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     const allMetrics = ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
 
     list.sort((a, b) => {
-      let av: string | number = 0;
-      let bv: string | number = 0;
-
       if (key === 'name') {
-        av = a.model!.name || '';
-        bv = b.model!.name || '';
-        return dir === 'asc' ? (av as string).localeCompare(bv as string) : (bv as string).localeCompare(av as string);
+        const av = a.model!.name || '';
+        const bv = b.model!.name || '';
+        return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
       } else if (key === 'benchmark') {
-        av = a.benchmark!.name || '';
-        bv = b.benchmark!.name || '';
-        return dir === 'asc' ? (av as string).localeCompare(bv as string) : (bv as string).localeCompare(av as string);
+        const av = a.benchmark!.name || '';
+        const bv = b.benchmark!.name || '';
+        return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
       } else if (key === 'score' || allMetrics.includes(key)) {
         const metric = key === 'score' ? filters.metric : key;
-        av = a.result.scores[metric as MetricKey] ?? null;
-        bv = b.result.scores[metric as MetricKey] ?? null;
+        const av = a.result.scores[metric as MetricKey] ?? null;
+        const bv = b.result.scores[metric as MetricKey] ?? null;
         if (av === null && bv === null) return 0;
         if (av === null) return 1;
         if (bv === null) return -1;
         const lowerBetter = isLowerBetter(metric);
         const mult = lowerBetter ? -1 : 1;
-        return dir === 'asc' ? ((av as number) - (bv as number)) * mult : ((bv as number) - (av as number)) * mult;
+        return dir === 'asc' ? (av - bv) * mult : (bv - av) * mult;
       }
       return 0;
     });

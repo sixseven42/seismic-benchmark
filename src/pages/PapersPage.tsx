@@ -24,7 +24,7 @@ export default function PapersPage({ data, search }: Props) {
   const list = useMemo(() => {
     let items = data.papers.slice();
     if (taskFilter !== 'all') {
-      items = items.filter(p => (p.tasks || []).includes(taskFilter));
+      items = items.filter(p => (p.tasks || []).includes(taskFilter as import('../types').Task));
     }
     if (yearFilter !== 'all') {
       items = items.filter(p => String(p.year) === yearFilter);
