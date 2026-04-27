@@ -1,5 +1,6 @@
 export type Task = 'interpolation' | 'denoising' | 'first_arrival_picking';
 export type ModelType = 'traditional' | 'deep_learning' | 'hybrid';
+export type Language = 'en' | 'zh';
 
 export interface Model {
   id: string;
@@ -81,7 +82,7 @@ export interface AppData {
   papers: Paper[];
 }
 
-export type Tab = 'leaderboard' | 'benchmarks' | 'models' | 'papers';
+export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'models' | 'papers';
 
 export interface Filters {
   task: Task | 'all';

@@ -12,6 +12,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { useLanguage } from '../contexts/LanguageContext';
 import type { AppData, Filters } from '../types';
 import { isLowerBetter, escapeHtml } from '../utils/helpers';
 import { getBarChartConfig, getScatterChartConfig } from '../utils/charts';
@@ -30,6 +31,7 @@ interface Props {
 }
 
 export default function BenchmarksPage({ data, filters, setFilters, search, theme }: Props) {
+  const { t } = useLanguage();
   const [activeBenchId, setActiveBenchId] = useState<string | null>(null);
 
   const list = useMemo(() => {
@@ -78,24 +80,24 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
   return (
     <div>
       <div className="page-header">
-        <h1>Benchmarks</h1>
-        <p className="lede">Explore datasets and evaluation protocols for seismic data processing tasks.</p>
+        <h1>{t.benchmarks.title}</h1>
+        <p className="lede">{t.benchmarks.subtitle}</p>
       </div>
 
       <div className="toolbar">
         <div className="toolbar-group">
-          <label>Task</label>
+          <label>{t.leaderboard.task}</label>
           <select
             value={filters.task}
             onChange={e => setFilters(prev => ({ ...prev, task: e.target.value as Filters['task'] }))}
           >
-            <option value="all">All</option>
-            <option value="interpolation">Interpolation</option>
-            <option value="denoising">Denoising</option>
-            <option value="first_arrival_picking">First Arrival Picking</option>
+            <option value="all">{t.leaderboard.all}</option>
+            <option value="interpolation">{t.tasks.interpolation}</option>
+            <option value="denoising">{t.tasks.denoising}</option>
+            <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
           </select>
         </div>
-        <span className="result-count">{list.length} results</span>
+        <span className="result-count">{list.length} {t.leaderboard.results}</span>
       </div>
 
       <div className="grid cols-2">
@@ -124,17 +126,17 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
               <div className="detail-panel" onClick={e => e.stopPropagation()}>
                 <div className="detail-grid">
                   <div className="detail-section">
-                    <h4>Description</h4>
+                    <h4>{t.benchmarks.description}</h4>
                     <p>{escapeHtml(activeBench.description)}</p>
-                    <h4>Citation</h4>
+                    <h4>{t.benchmarks.citation}</h4>
                     <p className="mono">{escapeHtml(activeBench.citation)}</p>
-                    <h4>Evaluation Protocol</h4>
-                    <p>Primary metric: <strong>{activeBench.primary_metric.toUpperCase()}</strong>. Higher values are {isLowerBetter(activeBench.primary_metric) ? 'worse' : 'better'}.</p>
-                    <h4>Metrics</h4>
+                    <h4>{t.benchmarks.protocol}</h4>
+                    <p>Primary metric: <strong>{activeBench.primary_metric.toUpperCase()}</strong>. {isLowerBetter(activeBench.primary_metric) ? t.benchmarks.lowerIsBetter : t.benchmarks.higherIsBetter}</p>
+                    <h4>{t.benchmarks.metrics}</h4>
                     <p>{(activeBench.metrics || []).map(m => m.toUpperCase()).join(', ')}</p>
                   </div>
                   <div className="detail-section">
-                    <h4>Top 5 Methods</h4>
+                    <h4>{t.benchmarks.top5}</h4>
                     <table className="detail-mini-table">
                       <thead><tr><th>Rank</th><th>Method</th><th>{activeBench.primary_metric.toUpperCase()}</th></tr></thead>
                       <tbody>
@@ -145,12 +147,12 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                             <td>{r.score.toFixed(2)}</td>
                           </tr>
                         ))}
-                        {!top5.length && <tr><td colSpan={3} className="text-muted">No results yet.</td></tr>}
+                        {!top5.length && <tr><td colSpan={3} className="text-muted">{t.benchmarks.noResults}</td></tr>}
                       </tbody>
                     </table>
                   </div>
                   <div className="detail-section" style={{ gridColumn: '1 / -1' }}>
-                    <h4>Top 10 Scores</h4>
+                    <h4>{t.benchmarks.top10}</h4>
                     <div className="detail-chart-wrap">
                       {top10.length > 0 && (
                         <Bar {...getBarChartConfig(
@@ -163,7 +165,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                     </div>
                   </div>
                   <div className="detail-section" style={{ gridColumn: '1 / -1' }}>
-                    <h4>SOTA Progression</h4>
+                    <h4>{t.benchmarks.sotaProgression}</h4>
                     <div className="detail-chart-wrap" style={{ height: 260 }}>
                       {scatterPoints.length > 0 && (
                         <Scatter {...getScatterChartConfig(scatterPoints, theme)} />

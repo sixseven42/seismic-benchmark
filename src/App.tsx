@@ -1,24 +1,28 @@
 import { useState, useMemo } from 'react';
 import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import { useTheme } from './hooks/useTheme';
 import { useData } from './hooks/useData';
 import { useDebounce } from './hooks/useDebounce';
 import { getLastUpdatedDate } from './utils/helpers';
 import type { Tab, Filters } from './types';
+import OverviewPage from './pages/OverviewPage';
 import LeaderboardPage from './pages/LeaderboardPage';
 import BenchmarksPage from './pages/BenchmarksPage';
 import ModelsPage from './pages/ModelsPage';
 import PapersPage from './pages/PapersPage';
 
-const TABS: { id: Tab; label: string }[] = [
-  { id: 'leaderboard', label: 'Leaderboard' },
-  { id: 'benchmarks', label: 'Benchmarks' },
-  { id: 'models', label: 'Models' },
-  { id: 'papers', label: 'Papers' },
+const TABS: { id: Tab; labelKey: keyof ReturnType<typeof useLanguage>['t']['nav'] }[] = [
+  { id: 'overview', labelKey: 'overview' },
+  { id: 'leaderboard', labelKey: 'leaderboard' },
+  { id: 'benchmarks', labelKey: 'benchmarks' },
+  { id: 'models', labelKey: 'models' },
+  { id: 'papers', labelKey: 'papers' },
 ];
 
-function App() {
+function AppContent() {
   const { theme, toggleTheme } = useTheme();
+  const { lang, t, toggleLang } = useLanguage();
   const { data, loading, error } = useData();
   const location = useLocation();
   const navigate = useNavigate();
@@ -36,7 +40,7 @@ function App() {
 
   const activeTab = useMemo<Tab>(() => {
     const path = location.pathname.slice(1);
-    return TABS.some(t => t.id === path) ? (path as Tab) : 'leaderboard';
+    return TABS.some(t => t.id === path) ? (path as Tab) : 'overview';
   }, [location.pathname]);
 
   const handleTabChange = (tab: Tab) => {
@@ -81,7 +85,7 @@ function App() {
                   className={`nav-tab ${activeTab === tab.id ? 'active' : ''}`}
                   onClick={() => handleTabChange(tab.id)}
                 >
-                  {tab.label}
+                  {t.nav[tab.labelKey]}
                 </button>
               </li>
             ))}
@@ -90,7 +94,7 @@ function App() {
           <div className="nav-search">
             <input
               type="text"
-              placeholder="Search..."
+              placeholder={t.nav.searchPlaceholder}
               value={searchInput}
               onChange={e => {
                 setSearchInput(e.target.value);
@@ -98,6 +102,9 @@ function App() {
               }}
             />
           </div>
+          <button className="theme-toggle" onClick={toggleLang} title="Switch language" style={{ fontSize: '0.85rem', fontWeight: 600 }}>
+            {lang === 'en' ? '中' : 'EN'}
+          </button>
           <button className="theme-toggle" onClick={toggleTheme} title="Toggle theme">
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
@@ -106,6 +113,7 @@ function App() {
 
       <main>
         <Routes>
+          <Route path="/overview" element={<OverviewPage data={data} />} />
           <Route
             path="/leaderboard"
             element={
@@ -150,18 +158,25 @@ function App() {
               />
             }
           />
-          <Route path="*" element={<Navigate to="/leaderboard" replace />} />
+          <Route path="*" element={<Navigate to="/overview" replace />} />
         </Routes>
       </main>
 
       <footer>
-        SeismicBench · Data sourced from published papers ·
-        Last updated {lastUpdated} ·
+        {t.footer.text} {lastUpdated} ·
         <a href="https://github.com/YOUR_USERNAME/seismic-benchmark" target="_blank" rel="noreferrer">
-          Contribute on GitHub
+          {t.footer.contribute}
         </a>
       </footer>
     </>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }
 

@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import type { AppData, Filters, MetricKey } from '../types';
 import {
   isLowerBetter,
@@ -21,6 +22,7 @@ interface SortState {
 }
 
 export default function LeaderboardPage({ data, filters, setFilters, search }: Props) {
+  const { t } = useLanguage();
   const [sort, setSort] = useState<SortState>({ key: 'score', dir: 'desc' });
 
   const metricCols = useMemo(() => getMetricColumns(filters.task), [filters.task]);
@@ -50,7 +52,6 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       );
     }
 
-    // Sort
     const { key, dir } = sort;
     const allMetrics = ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
 
@@ -137,18 +138,30 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
 
   const currentBench = data.benchmarks.find(b => b.id === filters.dataset);
 
+  const taskOptions: { value: Filters['task']; label: string }[] = [
+    { value: 'all', label: t.leaderboard.all },
+    { value: 'interpolation', label: t.tasks.interpolation },
+    { value: 'denoising', label: t.tasks.denoising },
+    { value: 'first_arrival_picking', label: t.tasks.first_arrival_picking },
+  ];
+
+  const typeOptions: { value: Filters['type']; label: string }[] = [
+    { value: 'all', label: t.leaderboard.allTypes },
+    { value: 'traditional', label: 'Traditional' },
+    { value: 'deep_learning', label: 'Deep Learning' },
+    { value: 'hybrid', label: 'Hybrid' },
+  ];
+
   return (
     <div>
       <div className="page-header">
-        <h1>Leaderboard</h1>
-        <p className="lede">
-          Compare seismic data processing methods across interpolation, denoising, and first arrival picking tasks.
-        </p>
+        <h1>{t.leaderboard.title}</h1>
+        <p className="lede">{t.leaderboard.subtitle}</p>
       </div>
 
       <div className="toolbar">
         <div className="toolbar-group">
-          <label>Task</label>
+          <label>{t.leaderboard.task}</label>
           <select
             value={filters.task}
             onChange={e => {
@@ -162,15 +175,12 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
               setSort({ key: 'score', dir: 'desc' });
             }}
           >
-            <option value="all">All</option>
-            <option value="interpolation">Interpolation</option>
-            <option value="denoising">Denoising</option>
-            <option value="first_arrival_picking">First Arrival Picking</option>
+            {taskOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </div>
 
         <div className="toolbar-group">
-          <label>Dataset</label>
+          <label>{t.leaderboard.dataset}</label>
           <select
             value={filters.dataset}
             onChange={e => {
@@ -183,7 +193,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
               }));
             }}
           >
-            <option value="all">All Datasets</option>
+            <option value="all">{t.leaderboard.allDatasets}</option>
             {availableDatasets.map(b => (
               <option key={b.id} value={b.id}>{b.name}</option>
             ))}
@@ -191,7 +201,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         </div>
 
         <div className="toolbar-group">
-          <label>Metric</label>
+          <label>{t.leaderboard.metric}</label>
           <select
             value={filters.metric}
             onChange={e => setFilters(prev => ({ ...prev, metric: e.target.value as MetricKey }))}
@@ -203,19 +213,16 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         </div>
 
         <div className="toolbar-group">
-          <label>Type</label>
+          <label>{t.leaderboard.type}</label>
           <select
             value={filters.type}
             onChange={e => setFilters(prev => ({ ...prev, type: e.target.value as Filters['type'] }))}
           >
-            <option value="all">All Types</option>
-            <option value="traditional">Traditional</option>
-            <option value="deep_learning">Deep Learning</option>
-            <option value="hybrid">Hybrid</option>
+            {typeOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </div>
 
-        <span className="result-count">{rows.length} results</span>
+        <span className="result-count">{rows.length} {t.leaderboard.results}</span>
       </div>
 
       <div className="lb-wrapper">
@@ -223,13 +230,13 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
           <thead>
             <tr>
               <th className="sortable" onClick={() => handleSort('rank')}>
-                Rank <span className="sort-arrow">{sort.key === 'rank' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                {t.leaderboard.rank} <span className="sort-arrow">{sort.key === 'rank' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
               </th>
               <th className="sortable" onClick={() => handleSort('name')}>
-                Method <span className="sort-arrow">{sort.key === 'name' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                {t.leaderboard.method} <span className="sort-arrow">{sort.key === 'name' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
               </th>
               <th className="sortable" onClick={() => handleSort('benchmark')}>
-                Benchmark <span className="sort-arrow">{sort.key === 'benchmark' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                {t.leaderboard.benchmark} <span className="sort-arrow">{sort.key === 'benchmark' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
               </th>
               {metricCols.map(m => (
                 <th
@@ -241,8 +248,8 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                   <span className="sort-arrow">{sort.key === m ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
                 </th>
               ))}
-              <th>{highlightMetric.toUpperCase()} Highlight</th>
-              <th>Links</th>
+              <th>{highlightMetric.toUpperCase()} {t.leaderboard.highlight}</th>
+              <th>{t.leaderboard.links}</th>
             </tr>
           </thead>
           <tbody>
@@ -265,7 +272,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                       <strong>{escapeHtml(row.model!.name)}</strong>
                       <span className="method-meta">{escapeHtml(row.model!.authors)} · {escapeHtml(row.model!.org)}</span>
                     </div>
-                    {isNewResult(row.result.date_added) && <span className="tag tag-new">New</span>}
+                    {isNewResult(row.result.date_added) && <span className="tag tag-new">{t.leaderboard.newBadge}</span>}
                   </td>
                   <td className="lb-benchmark">{escapeHtml(row.benchmark!.name)}</td>
                   {metricCols.map(m => {
@@ -298,7 +305,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
             {rows.length === 0 && (
               <tr>
                 <td colSpan={metricCols.length + 6} className="lb-empty">
-                  No results match your filters.
+                  {t.leaderboard.noResults}
                 </td>
               </tr>
             )}
@@ -307,21 +314,21 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       </div>
 
       <div style={{ marginTop: 'var(--space-4)', display: 'flex', gap: 'var(--space-3)' }}>
-        <button className="btn btn-primary btn-icon" onClick={exportCSV}>📥 Export CSV</button>
+        <button className="btn btn-primary btn-icon" onClick={exportCSV}>📥 {t.leaderboard.exportCSV}</button>
       </div>
 
       <div className="section-title">
-        <h3>Dataset Downloads</h3>
+        <h3>{t.leaderboard.downloadsTitle}</h3>
       </div>
       <div className="card">
         <div className="card-body">
           {availableDatasets.length ? availableDatasets.map(b => (
             <div className="dl-row" key={b.id}>
               <span className="dl-label">{escapeHtml(b.name)}</span>
-              <a href={b.download_url} target="_blank" rel="noreferrer" className="btn-ghost btn-icon">Download ↓</a>
+              <a href={b.download_url} target="_blank" rel="noreferrer" className="btn-ghost btn-icon">{t.leaderboard.downloadsTitle.includes('Download') ? 'Download ↓' : '下载 ↓'}</a>
             </div>
           )) : (
-            <p className="text-muted">No datasets available.</p>
+            <p className="text-muted">{t.leaderboard.noDatasets}</p>
           )}
         </div>
       </div>

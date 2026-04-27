@@ -322,6 +322,7 @@ main {
 
 .grid.cols-2 { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); }
 .grid.cols-3 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.grid.cols-4 { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
 
 .section-title {
   margin: var(--space-6) 0 var(--space-3);

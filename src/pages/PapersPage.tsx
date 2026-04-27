@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import type { AppData } from '../types';
 import { escapeHtml } from '../utils/helpers';
 
@@ -8,6 +9,7 @@ interface Props {
 }
 
 export default function PapersPage({ data, search }: Props) {
+  const { t } = useLanguage();
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
   const [taskFilter, setTaskFilter] = useState<string>('all');
   const [yearFilter, setYearFilter] = useState('all');
@@ -55,38 +57,38 @@ export default function PapersPage({ data, search }: Props) {
   return (
     <div>
       <div className="page-header">
-        <h1>Papers</h1>
-        <p className="lede">Explore research papers and their contributions to seismic data processing.</p>
+        <h1>{t.papers.title}</h1>
+        <p className="lede">{t.papers.subtitle}</p>
       </div>
 
       <div className="toolbar">
         <div className="toolbar-group">
-          <label>Task</label>
+          <label>{t.leaderboard.task}</label>
           <select
             value={taskFilter}
             onChange={e => setTaskFilter(e.target.value)}
           >
-            <option value="all">All</option>
-            <option value="interpolation">Interpolation</option>
-            <option value="denoising">Denoising</option>
-            <option value="first_arrival_picking">First Arrival Picking</option>
+            <option value="all">{t.leaderboard.all}</option>
+            <option value="interpolation">{t.tasks.interpolation}</option>
+            <option value="denoising">{t.tasks.denoising}</option>
+            <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
           </select>
         </div>
         <div className="toolbar-group">
-          <label>Year</label>
+          <label>{t.papers.year}</label>
           <select value={yearFilter} onChange={e => setYearFilter(e.target.value)}>
-            <option value="all">All Years</option>
+            <option value="all">{t.papers.allYears}</option>
             {years.map(y => <option key={y} value={String(y)}>{y}</option>)}
           </select>
         </div>
         <div className="toolbar-group">
-          <label>Venue</label>
+          <label>{t.papers.venue}</label>
           <select value={venueFilter} onChange={e => setVenueFilter(e.target.value)}>
-            <option value="all">All Venues</option>
+            <option value="all">{t.papers.allVenues}</option>
             {venues.map(v => <option key={v} value={v}>{v}</option>)}
           </select>
         </div>
-        <span className="result-count">{list.length} results</span>
+        <span className="result-count">{list.length} {t.leaderboard.results}</span>
       </div>
 
       <div className="grid cols-2">
@@ -103,11 +105,11 @@ export default function PapersPage({ data, search }: Props) {
               <div className="card-body">
                 <div className={`paper-abstract ${isExpanded ? '' : 'collapsed'}`}>{escapeHtml(p.abstract)}</div>
                 <button className="paper-toggle" onClick={() => toggleAbstract(p.id)}>
-                  {isExpanded ? 'Show less' : 'Show more'}
+                  {isExpanded ? t.papers.showLess : t.papers.showMore}
                 </button>
                 <div className="paper-meta">
                   {(p.tags || []).map(t => <span key={t} className="tag">{escapeHtml(t)}</span>)}
-                  {p.is_sota && <span className="tag tag-sota">SOTA</span>}
+                  {p.is_sota && <span className="tag tag-sota">{t.papers.sotaBadge}</span>}
                 </div>
                 <div className="paper-meta" style={{ marginTop: 'var(--space-2)' }}>
                   {p.arxiv_url && <a className="icon-link" href={p.arxiv_url} target="_blank" rel="noreferrer" title="arXiv">arXiv</a>}
