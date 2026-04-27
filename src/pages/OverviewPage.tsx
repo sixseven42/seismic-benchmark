@@ -30,9 +30,16 @@ export default function OverviewPage({ data }: Props) {
 
   return (
     <div>
-      <div className="page-header">
-        <h1>{t.overview.title}</h1>
-        <p className="lede">{t.overview.subtitle}</p>
+      <div className="page-header" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-5)', flexWrap: 'wrap' }}>
+        <img
+          src="/seismic-benchmark/logo.png"
+          alt="GeoBrain Logo"
+          style={{ width: 140, height: 140, objectFit: 'contain', flexShrink: 0 }}
+        />
+        <div>
+          <h1>{t.overview.title}</h1>
+          <p className="lede">{t.overview.subtitle}</p>
+        </div>
       </div>
 
       {/* Stats Cards */}
