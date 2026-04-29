@@ -1,4 +1,4 @@
-export type Task = 'interpolation' | 'denoising' | 'first_arrival_picking';
+export type Task = 'interpolation' | 'denoising' | 'first_arrival_picking' | 'super_resolution';
 export type ModelType = 'traditional' | 'deep_learning' | 'hybrid';
 export type Language = 'en' | 'zh';
 

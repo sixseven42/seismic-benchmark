@@ -12,7 +12,7 @@ const translations = {
     },
     overview: {
       title: 'Overview',
-      subtitle: 'SeismicBench is an open academic benchmark for seismic data processing methods, tracking performance across interpolation, denoising, and first arrival picking tasks.',
+      subtitle: 'SeismicBench is an open academic benchmark for seismic data processing methods, tracking performance across interpolation, denoising, first arrival picking, and super-resolution tasks.',
       aboutTitle: 'About SeismicBench',
       aboutText1: 'SeismicBench was created to provide a centralized, fair, and reproducible evaluation platform for seismic data processing algorithms. We collect results from peer-reviewed publications and maintain up-to-date leaderboards to help researchers identify state-of-the-art methods.',
       aboutText2: 'All data is sourced from published papers with full citation information. We encourage authors to submit their latest results to keep the benchmark current.',
@@ -21,7 +21,7 @@ const translations = {
       milestonesTitle: 'Milestones',
       futureTitle: 'Future Plans',
       milestone1: 'Project launched with 10 baseline methods and 6 benchmark datasets',
-      milestone2: 'Expanded to 3 tasks: interpolation, denoising, first arrival picking',
+      milestone2: 'Expanded to 4 tasks: interpolation, denoising, first arrival picking, super-resolution',
       milestone3: 'Added interactive visualization and CSV export features',
       future1: 'Add 3D seismic data processing benchmarks',
       future2: 'Support real-field data evaluation protocols',
@@ -34,7 +34,7 @@ const translations = {
     },
     leaderboard: {
       title: 'Leaderboard',
-      subtitle: 'Compare seismic data processing methods across interpolation, denoising, and first arrival picking tasks.',
+      subtitle: 'Compare seismic data processing methods across interpolation, denoising, first arrival picking, and super-resolution tasks.',
       task: 'Task',
       dataset: 'Dataset',
       metric: 'Metric',
@@ -103,6 +103,7 @@ const translations = {
       interpolation: 'Interpolation',
       denoising: 'Denoising',
       first_arrival_picking: 'First Arrival Picking',
+      super_resolution: 'Super Resolution',
     },
   },
   zh: {
@@ -116,7 +117,7 @@ const translations = {
     },
     overview: {
       title: '概览',
-      subtitle: 'SeismicBench 是一个开放的地震数据处理学术基准平台，追踪插值、去噪和初至拾取等任务的算法性能。',
+      subtitle: 'SeismicBench 是一个开放的地震数据处理学术基准平台，追踪插值、去噪、初至拾取和超分辨率等任务的算法性能。',
       aboutTitle: '关于 SeismicBench',
       aboutText1: 'SeismicBench 旨在为地震数据处理算法提供一个集中、公平且可复现的评估平台。我们收集同行评审论文中的实验结果，并维护最新的排行榜，帮助研究人员识别最先进的方法。',
       aboutText2: '所有数据均来自已发表论文，并附有完整的引用信息。我们鼓励作者提交最新结果以保持基准的时效性。',
@@ -125,7 +126,7 @@ const translations = {
       milestonesTitle: '里程碑',
       futureTitle: '未来计划',
       milestone1: '项目启动，包含 10 个基线方法和 6 个基准数据集',
-      milestone2: '扩展至 3 个任务：插值、去噪、初至拾取',
+      milestone2: '扩展至 4 个任务：插值、去噪、初至拾取、超分辨率',
       milestone3: '新增交互式可视化和 CSV 导出功能',
       future1: '增加三维地震数据处理基准',
       future2: '支持真实野外数据评估协议',
@@ -138,7 +139,7 @@ const translations = {
     },
     leaderboard: {
       title: '排行榜',
-      subtitle: '对比地震数据处理方法的性能，涵盖插值、去噪和初至拾取任务。',
+      subtitle: '对比地震数据处理方法的性能，涵盖插值、去噪、初至拾取和超分辨率任务。',
       task: '任务',
       dataset: '数据集',
       metric: '指标',
@@ -207,6 +208,7 @@ const translations = {
       interpolation: '插值',
       denoising: '去噪',
       first_arrival_picking: '初至拾取',
+      super_resolution: '超分辨率',
     },
   },
 } as const;

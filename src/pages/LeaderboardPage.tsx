@@ -143,6 +143,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     { value: 'interpolation', label: t.tasks.interpolation },
     { value: 'denoising', label: t.tasks.denoising },
     { value: 'first_arrival_picking', label: t.tasks.first_arrival_picking },
+    { value: 'super_resolution', label: t.tasks.super_resolution },
   ];
 
   const typeOptions: { value: Filters['type']; label: string }[] = [

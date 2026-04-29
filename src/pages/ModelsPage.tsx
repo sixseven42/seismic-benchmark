@@ -139,6 +139,7 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
             <option value="interpolation">{t.tasks.interpolation}</option>
             <option value="denoising">{t.tasks.denoising}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
+            <option value="super_resolution">{t.tasks.super_resolution}</option>
           </select>
         </div>
         <div className="toolbar-group">

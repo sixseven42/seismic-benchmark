@@ -95,6 +95,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
             <option value="interpolation">{t.tasks.interpolation}</option>
             <option value="denoising">{t.tasks.denoising}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
+            <option value="super_resolution">{t.tasks.super_resolution}</option>
           </select>
         </div>
         <span className="result-count">{list.length} {t.leaderboard.results}</span>
