@@ -13,7 +13,7 @@ export interface Model {
   tasks: Task[];
   description: string;
   paper_url: string;
-  code_url: string;
+  code_url: string | null;
   weights_url: string | null;
   is_open_source: boolean;
 }
@@ -67,9 +67,9 @@ export interface Paper {
   abstract: string;
   tasks: Task[];
   tags: string[];
-  arxiv_url: string;
-  doi: string;
-  code_url: string;
+  arxiv_url: string | null;
+  doi: string | null;
+  code_url: string | null;
   citation_count: number;
   introduces_model: string;
   is_sota: boolean;
