@@ -134,27 +134,26 @@ export default function OverviewPage({ data }: Props) {
               <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember2Role}</div>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <div style={{
-                width: 120,
-                height: 120,
-                borderRadius: '50%',
-                background: 'var(--tag-bg)',
-                margin: '0 auto var(--space-3)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'var(--text-muted)',
-                border: '2px solid var(--border)',
-              }}>
-                👤
-              </div>
-              <div style={{ fontWeight: 600 }}>Team Member 3</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Data Curator</div>
+              <img
+                src="/seismic-benchmark/team/chengzhitong.jpg"
+                alt={t.overview.teamMember3Name}
+                style={{
+                  width: 120,
+                  height: 120,
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  margin: '0 auto var(--space-3)',
+                  display: 'block',
+                  border: '2px solid var(--border)',
+                }}
+              />
+              <div style={{ fontWeight: 600 }}>{t.overview.teamMember3Name}</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember3Role}</div>
             </div>
           </div>
           <p className="text-muted" style={{ marginTop: 'var(--space-4)', fontSize: '0.85rem', textAlign: 'center' }}>
-            More team members will be added soon.
+            GeoBrain Team · PKU & HIT
           </p>
         </div>
       </div>
