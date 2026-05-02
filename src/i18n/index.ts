@@ -45,6 +45,10 @@ const translations = {
       teamMember6Role: 'Interpolation Task Member',
       teamMember7Name: 'Wei Gao',
       teamMember7Role: 'Interpolation Task Member',
+      teamMember8Name: 'Wenzhe Sheng',
+      teamMember8Role: 'Random Noise Task Member',
+      teamMember9Name: 'Yulong Ge',
+      teamMember9Role: 'Server Management & Resource Scheduling',
     },
     leaderboard: {
       title: 'Leaderboard',
@@ -167,6 +171,10 @@ const translations = {
       teamMember6Role: '插值任务参与成员',
       teamMember7Name: '高伟',
       teamMember7Role: '插值任务参与成员',
+      teamMember8Name: '盛文哲',
+      teamMember8Role: '随机噪声任务成员',
+      teamMember9Name: '葛煜龙',
+      teamMember9Role: '服务器管理以及资源调度',
     },
     leaderboard: {
       title: '排行榜',
