@@ -106,6 +106,7 @@ export default function OverviewPage({ data }: Props) {
                   height: 120,
                   borderRadius: '50%',
                   objectFit: 'cover',
+                  objectPosition: 'center 15%',
                   margin: '0 auto var(--space-3)',
                   display: 'block',
                   border: '2px solid var(--border)',
