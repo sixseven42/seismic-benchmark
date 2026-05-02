@@ -7,8 +7,14 @@
     "venue": "Geophysics",
     "year": 2006,
     "abstract": "We present a Projection Onto Convex Sets algorithm for 3D interpolation of irregularly sampled seismic data. The method alternates between thresholding the F-K spectrum and re-imposing known traces, converging to a band-limited reconstruction without requiring user-tuned regularization weights.",
-    "tasks": ["interpolation"],
-    "tags": ["POCS", "Traditional", "F-K"],
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "POCS",
+      "Traditional",
+      "F-K"
+    ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/1.2356088",
     "code_url": "https://github.com/seismic-benchmark/pocs-baseline",
@@ -24,8 +30,15 @@
     "venue": "Geophysics",
     "year": 2011,
     "abstract": "Multichannel singular spectrum analysis (MSSA) reorganizes f-x slices into block Hankel matrices whose low-rank structure encodes coherent events. Truncated SVD then both denoises and reconstructs missing traces in one pass.",
-    "tasks": ["interpolation", "denoising"],
-    "tags": ["MSSA", "Rank Reduction", "Traditional"],
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "MSSA",
+      "Rank Reduction",
+      "Traditional"
+    ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/1.3552706",
     "code_url": "https://github.com/seismic-benchmark/mssa-baseline",
@@ -41,8 +54,14 @@
     "venue": "Geophysics",
     "year": 2008,
     "abstract": "We exploit curvelet sparsity for both denoising and reconstruction of seismic wavefields. Combined with jittered undersampling, l1-promoted curvelet recovery outperforms regular subsampling and band-pass denoising.",
-    "tasks": ["denoising"],
-    "tags": ["Curvelet", "Sparsity", "Traditional"],
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Curvelet",
+      "Sparsity",
+      "Traditional"
+    ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/j.1365-2478.2007.00684.x",
     "code_url": "https://github.com/seismic-benchmark/curvelet-baseline",
@@ -58,8 +77,15 @@
     "venue": "Geophysics",
     "year": 2020,
     "abstract": "We adapt the U-Net encoder-decoder for seismic 2D interpolation, training on synthetic gathers with random trace masks. Skip connections preserve high-frequency content, achieving SNR gains of 5–8 dB over POCS on the Mobil AVO benchmark.",
-    "tasks": ["interpolation", "denoising"],
-    "tags": ["U-Net", "Deep Learning", "2D"],
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "U-Net",
+      "Deep Learning",
+      "2D"
+    ],
     "arxiv_url": "https://arxiv.org/abs/2007.04841",
     "doi": "https://doi.org/10.1190/geo2019-0481.1",
     "code_url": "https://github.com/seismic-benchmark/seisunet",
@@ -75,8 +101,14 @@
     "venue": "Geophysics",
     "year": 2022,
     "abstract": "We propose a conditional GAN for seismic trace interpolation. The discriminator constrains the generator toward phase-consistent reconstructions, addressing the over-smoothing common in MSE-trained networks.",
-    "tasks": ["interpolation"],
-    "tags": ["GAN", "Deep Learning", "2D"],
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "GAN",
+      "Deep Learning",
+      "2D"
+    ],
     "arxiv_url": "https://arxiv.org/abs/2201.00000",
     "doi": "https://doi.org/10.1190/geo2021-0498.1",
     "code_url": "https://github.com/seismic-benchmark/seisgan",
@@ -92,8 +124,14 @@
     "venue": "IEEE TGRS",
     "year": 2019,
     "abstract": "We retrain a deep residual CNN (DnCNN) on synthetic Marmousi gathers contaminated with additive Gaussian noise. The network predicts the noise component, with batch normalization stabilizing training under varying input SNRs.",
-    "tasks": ["denoising"],
-    "tags": ["CNN", "Residual Learning", "Deep Learning"],
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "CNN",
+      "Residual Learning",
+      "Deep Learning"
+    ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2019.2926772",
     "code_url": "https://github.com/seismic-benchmark/dncnn-seis",
@@ -109,8 +147,15 @@
     "venue": "Geophysics",
     "year": 2023,
     "abstract": "SeisFormer adapts the Swin transformer with shifted window attention along the trace axis. By capturing long-range trace coherence missed by purely convolutional models, it sets new SOTA on the Mobil AVO Viking Graben benchmark.",
-    "tasks": ["interpolation", "denoising"],
-    "tags": ["Transformer", "Self-Attention", "Deep Learning"],
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "Transformer",
+      "Self-Attention",
+      "Deep Learning"
+    ],
     "arxiv_url": "https://arxiv.org/abs/2303.12345",
     "doi": "https://doi.org/10.1190/geo2022-0734.1",
     "code_url": "https://github.com/seismic-benchmark/seisformer",
@@ -126,8 +171,14 @@
     "venue": "arXiv preprint",
     "year": 2024,
     "abstract": "We frame seismic denoising as posterior sampling under a score-based diffusion prior. A measurement-consistency term steers the reverse SDE, recovering low-amplitude reflections that discriminative networks miss at -5 dB input SNR.",
-    "tasks": ["denoising"],
-    "tags": ["Diffusion", "Score-Based", "Deep Learning"],
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Diffusion",
+      "Score-Based",
+      "Deep Learning"
+    ],
     "arxiv_url": "https://arxiv.org/abs/2402.01234",
     "doi": null,
     "code_url": "https://github.com/seismic-benchmark/seisdiff",
@@ -143,8 +194,14 @@
     "venue": "IEEE GRSL",
     "year": 2019,
     "abstract": "PickNet is a 1D U-shaped CNN that predicts a Gaussian-shaped likelihood of first-break arrival per sample. It improves over STA/LTA by ~20 percentage points in accuracy at low SNR.",
-    "tasks": ["first_arrival_picking"],
-    "tags": ["CNN", "U-Net", "Deep Learning"],
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "CNN",
+      "U-Net",
+      "Deep Learning"
+    ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2019.2934966",
     "code_url": "https://github.com/seismic-benchmark/picknet",
@@ -160,8 +217,14 @@
     "venue": "Geophysical Journal International",
     "year": 2019,
     "abstract": "PhaseNet is a U-Net trained on three-component waveforms to output per-sample P/S phase probabilities. While developed for earthquake catalogs, it transfers cleanly to active-source first-break picking.",
-    "tasks": ["first_arrival_picking"],
-    "tags": ["U-Net", "Earthquake", "Deep Learning"],
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "U-Net",
+      "Earthquake",
+      "Deep Learning"
+    ],
     "arxiv_url": "https://arxiv.org/abs/1803.03211",
     "doi": "https://doi.org/10.1093/gji/ggy423",
     "code_url": "https://github.com/AI4EPS/PhaseNet",
@@ -177,8 +240,14 @@
     "venue": "Geophysics",
     "year": 2023,
     "abstract": "We unroll N iterations of POCS into a trainable network where each thresholding step is replaced with a learned proximal operator. The hybrid retains data-consistency guarantees while matching CNN reconstruction quality.",
-    "tasks": ["interpolation"],
-    "tags": ["Hybrid", "Unrolled Optimization", "Deep Learning"],
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Hybrid",
+      "Unrolled Optimization",
+      "Deep Learning"
+    ],
     "arxiv_url": "https://arxiv.org/abs/2305.04567",
     "doi": "https://doi.org/10.1190/geo2023-0102.1",
     "code_url": "https://github.com/seismic-benchmark/hybrid-pocs-net",
@@ -194,13 +263,1309 @@
     "venue": "arXiv preprint",
     "year": 2024,
     "abstract": "SeisBERT pre-trains a masked-trace transformer on 50 TB of unlabeled marine and land surveys, then fine-tunes per task. A single backbone reaches near-SOTA on interpolation, denoising, and first-arrival picking with as few as 100 labeled examples.",
-    "tasks": ["interpolation", "denoising", "first_arrival_picking"],
-    "tags": ["Foundation Model", "Pre-training", "Transformer"],
+    "tasks": [
+      "interpolation",
+      "denoising",
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Foundation Model",
+      "Pre-training",
+      "Transformer"
+    ],
     "arxiv_url": "https://arxiv.org/abs/2403.05678",
     "doi": null,
     "code_url": "https://github.com/seismic-benchmark/seisbert",
     "citation_count": 921,
     "introduces_model": "seisbert-2024",
     "is_sota": true
+  },
+  {
+    "id": "li-cddpm-2024",
+    "title": "Conditional Denoising Diffusion Probabilistic Model for Ground-Roll Attenuation",
+    "authors": "Li, Y., Zhang, H., Huang, J., Li, Z.",
+    "org": "China University of Petroleum (East China)",
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "Uses conditional denoising diffusion probabilistic model (c-DDPM) for seismic ground-roll attenuation; improved model generates clean data and ground roll simultaneously with better separation performance",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3489716",
+    "code_url": null,
+    "introduces_model": "cddpm-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-gabor-lsr-2024",
+    "title": "Gabor-Based Learnable Sparse Representation for Self-Supervised Denoising",
+    "authors": "Liu, S., Cheng, S., Alkhalifah, T. A.",
+    "org": "King Abdullah University of Science and Technology",
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "Proposes a Gabor-based learnable sparse representation network for self-supervised seismic denoising by constraining Gabor filter parameters",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3353315",
+    "code_url": null,
+    "introduces_model": "gabor-lsr-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "sun-afm-unet-2024",
+    "title": "Ground Roll Attenuation in Seismic Data Based on Enhanced Deep Learning Framework With Adaptive Frequency Modulation Loss",
+    "authors": "Sun, S., Li, H., Li, G., Wang, Z.",
+    "org": "China University of Petroleum",
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "Proposes an enhanced U-Net with attention and residual modules, combined with MSE and adaptive frequency modulation loss for seismic ground roll attenuation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3427405",
+    "code_url": null,
+    "introduces_model": "afm-unet-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-pcdnn-2025",
+    "title": "Near-Surface-Related Nonstationary Coherent Noise Suppression Using a Physically Constrained Deep Neural Network",
+    "authors": "Liu, J., Hu, T., Wang, C., Li, X., Zeng, Q., Liu, L.",
+    "org": "Peking University",
+    "venue": "TGRS",
+    "year": 2025,
+    "abstract": "Proposes a physically constrained deep neural network with multi-modal physical constraints and SDPAF preprocessing to suppress nonstationary near-surface coherent noise",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2025.3526231",
+    "code_url": null,
+    "introduces_model": "pcdnn-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-unet-lmo-2023",
+    "title": "Unsupervised Deep Learning for Ground Roll and Scattered Noise Attenuation",
+    "authors": "Liu, D., Sacchi, M. D., Wang, X., Chen, W.",
+    "org": "Xi’an Jiaotong University",
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "Proposes an unsupervised deep learning method using U-Net generator with LMO and NMO corrections to extract self-similar features for ground roll and scattered noise attenuation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Scattered Noise"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2023.3325324",
+    "code_url": null,
+    "introduces_model": "unet-lmo-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhang-dfbcnn-2022",
+    "title": "Ground-Roll Attenuation Using a Dual-Filter-Bank Convolutional Neural Network",
+    "authors": "Zhang, C., van der Baan, M.",
+    "org": "University of Alberta",
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "Proposes dual-filter-bank CNN with radial trace transform to separately extract broad- and narrow-scale features for ground-roll attenuation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2021.3110303",
+    "code_url": null,
+    "introduces_model": "dfbcnn-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "oliveira-selflabel-cgan-2021",
+    "title": "Self-Supervised Ground-Roll Noise Attenuation Using Self-Labeling and Paired Data Synthesis",
+    "authors": "Oliveira, D. A. B., Semin, D. G., Zaytsev, S.",
+    "org": "IBM Research",
+    "venue": "TGRS",
+    "year": 2021,
+    "abstract": "Proposes a two-stage self-supervised framework using U-Net for ground-roll region detection and cGAN for noise attenuation via synthetic paired data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2020.3029914",
+    "code_url": null,
+    "introduces_model": "selflabel-cgan-2021",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "yang-soft-attention-2024",
+    "title": "Deep learning with soft attention mechanism for small-scale ground roll attenuation",
+    "authors": "Yang, L., Fomel, S., Wang, S., Chen, X., Chen, Y.",
+    "org": "China University of Petroleum",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "Proposes a supervised deep learning framework with soft attention residual learning for small-scale ground roll attenuation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2023-0150.1",
+    "code_url": null,
+    "introduces_model": "soft-attention-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "li-inr-2025",
+    "title": "Unsupervised ground-roll attenuation via implicit neural representations",
+    "authors": "Li, J., Liu, D., Sacchi, M. D.",
+    "org": "University of Calgary",
+    "venue": "Geophysics",
+    "year": 2025,
+    "abstract": "Proposes an unsupervised ground-roll attenuation method using implicit neural representations with NMO correction and horizontal derivative regularization",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2024-0148.1",
+    "code_url": null,
+    "introduces_model": "inr-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "sun-luc-2025",
+    "title": "Signal separation using unsupervised learning with local uncorrelated constraints: Applications to ground-roll contaminated data sets",
+    "authors": "Sun, X., Chai, X., Yang, Q., Zhai, M., Gu, H.",
+    "org": "China University of Geosciences",
+    "venue": "Geophysics",
+    "year": 2025,
+    "abstract": "Proposes an unsupervised learning method with local uncorrelated constraints for ground-roll signal separation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2024-0447.1",
+    "code_url": null,
+    "introduces_model": "luc-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "pham-pcdl-2022",
+    "title": "Physics-constrained deep learning for ground roll attenuation",
+    "authors": "Pham, N., Li, W.",
+    "org": "Aramco Americas",
+    "venue": "Geophysics",
+    "year": 2022,
+    "abstract": "Proposes a physics-constrained deep learning method with three CNN components for seismic ground roll attenuation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2020-0691.1",
+    "code_url": null,
+    "introduces_model": "pcdl-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "yuan-cgan-2020",
+    "title": "Ground-roll attenuation using generative adversarial networks",
+    "authors": "Yuan, Y., Si, X., Zheng, Y.",
+    "org": "China University of Geosciences",
+    "venue": "Geophysics",
+    "year": 2020,
+    "abstract": "Proposes a conditional GAN with U-Net generator for ground-roll attenuation, which effectively removes noise and preserves signals better than traditional methods",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2019-0414.1",
+    "code_url": null,
+    "introduces_model": "cgan-2020",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "tian-iaaa-2022",
+    "title": "Improved Anomalous Amplitude Attenuation Method Based on Deep Neural Networks",
+    "authors": "Tian, X., Lu, W., Li, Y.",
+    "org": "Tsinghua University",
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "Proposes improved anomalous amplitude attenuation (IAAA) method using FCN to detect noise regions and adaptively optimize AAA parameters, enhancing noise suppression and signal preservation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Anomalous Amplitude",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2021.3052898",
+    "code_url": null,
+    "introduces_model": "iaaa-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "sun-msi-2024",
+    "title": "Seismic shear wave noise suppression and application to well tie",
+    "authors": "Sun, H., Liu, E., Zhang, F., Wang, W., Li, X.",
+    "org": "China University of Petroleum (Beijing) & Northeast Petroleum University",
+    "venue": "JGE",
+    "year": 2024,
+    "abstract": "Proposes a shear-wave noise suppression workflow: filter linear/single-frequency noise, F-K filtering for far-offset multiples, MSI for near-offset multiples; improves SNR and well-tie accuracy",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Linear Interference"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1093/jge/gxae091",
+    "code_url": null,
+    "introduces_model": "msi-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "huang-rdssa-2024",
+    "title": "A reweighted damped singular spectrum analysis method for robust seismic noise suppression",
+    "authors": "Huang, W.-L., Zhou, Y.-X., Zhou, Y., Liu, W.-J., Li, J.-D.",
+    "org": "China University of Petroleum (Beijing) & SINOPEC",
+    "venue": "Petroleum Science",
+    "year": 2024,
+    "abstract": "Proposes reweighted damped singular spectrum analysis (RD-SSA) for robust seismic incoherent/erratic noise suppression, combining damping operator and Tukey’s bisquare iterative reweighting",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Anomalous Amplitude",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.petsci.2024.01.018",
+    "code_url": null,
+    "introduces_model": "rdssa-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang-dnn-2022",
+    "title": "Seismic multiple suppression based on a deep neural network method for",
+    "authors": "Wang, K., Hu, T., Wang, S., Wei, J.",
+    "org": "Peking University, China University of Petroleum (Beijing)",
+    "venue": "Geophysics",
+    "year": 2022,
+    "abstract": "Proposes a deep neural network (DNN) with data augmentation training for marine seismic multiple suppression and primary reconstruction by adding noise and rotation to enhance robustness",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2021-0206.1",
+    "code_url": null,
+    "introduces_model": "dnn-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang-lwc-dnn-2023",
+    "title": "Surface-related multiple attenuation based on a self-supervised deep neural network with local wavefield characteristics",
+    "authors": "Wang, K., Hu, T., Zhao, B., Wang, S.",
+    "org": "Peking University, PetroChina, China University of Petroleum (Beijing)",
+    "venue": "Geophysics",
+    "year": 2023,
+    "abstract": "Proposes a self-supervised deep neural network with multi-attention U-Net and local wavefield characteristic loss (MAE+LNCC) for surface-related multiple attenuation without labeled data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2022-0599.1",
+    "code_url": null,
+    "introduces_model": "lwc-dnn-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "durall-unet-2024",
+    "title": "An in-depth study of U-net for seismic data conditioning: Multiple removal by moveout discrimination",
+    "authors": "Durall, R., Ghanim, A., Ettrich, N., Keuper, J.",
+    "org": "Fraunhofer ITWM, Offenburg University",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "Proposes a U-Net model trained on synthetic data for postmigration multiple removal via moveout discrimination, achieving strong generalization and preserving data features without parameter tuning",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2023-0146.1",
+    "code_url": null,
+    "introduces_model": "unet-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "kiraz-1dcnn-2024",
+    "title": "Free-surface multiple attenuation and seismic deghosting for blended data",
+    "authors": "Kiraz, M. S. R., Snieder, R., Sheiman, J.",
+    "org": "Shell International, Colorado School of Mines",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "Proposes a 1D CNN for simultaneous free-surface multiple attenuation and seismic deghosting directly on blended data without prior deblending, robust to irregular acquisition and delay time variations",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2023-0417.1",
+    "code_url": null,
+    "introduces_model": "1dcnn-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang-jcmdnns-2023",
+    "title": "An Unsupervised Learning Method to Suppress Seismic Internal Multiples Based on Adaptive Virtual Events and Joint Constraints of Multiple Deep Neural Networks",
+    "authors": "Wang, K., Hu, T., Zhao, B., Wang, S.",
+    "org": "Peking University, PetroChina, China University of Petroleum",
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "Proposes an unsupervised learning method (JCMDNNs) combining adaptive virtual events (AVE) and multi-DNN joint constraints (ensemble learning) for internal multiple suppression; no real labels needed, outperforms single DNN and L1-norm methods",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2023.3243106",
+    "code_url": null,
+    "introduces_model": "jcmdnns-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-mpr-ssn-2024",
+    "title": "Physics-Informed Self-Supervised Learning With Phase Resemblance Constraint for Internal Multiple Attenuation",
+    "authors": "Liu, X., Hu, T., Wang, S.",
+    "org": "Peking University, China University of Petroleum",
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "Proposes physics-informed self-supervised learning (MPR-SSN) with phase resemblance (PR) constraint for internal multiple attenuation; uses U-Net+ECA+PDC, VE-predicted multiples as input, hybrid MAE+PR loss to avoid primary distortion, outperforms L1 and pure data-driven networks",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3462440",
+    "code_url": null,
+    "introduces_model": "mpr-ssn-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang-udl-loc-2023",
+    "title": "Seismic Internal Multiple Attenuation Based on Unsupervised Deep Learning With a Local Orthogonalization Constraint",
+    "authors": "Wang, K., Hu, T., Zhao, B.",
+    "org": "Peking University, PetroChina",
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "Proposes unsupervised deep learning with local orthogonalization constraint (UDL-LOC) for internal multiple attenuation; uses multi-attention U-Net (MA-net) and AVE-predicted multiples as input, hybrid MAE+LOC loss to avoid primary leakage, outperforms UDL-CVE in synthetic and land field data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2023.3307750",
+    "code_url": null,
+    "introduces_model": "udl-loc-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang-ave-dnn-2022",
+    "title": "Unsupervised Learning for Seismic Internal Multiple Suppression Based on Adaptive Virtual Events",
+    "authors": "Wang, K., Hu, T., Wang, S.",
+    "org": "Peking University, China University of Petroleum",
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "Proposes unsupervised deep learning combined with adaptive virtual events (AVE) for seismic internal multiple suppression; uses U-Net-like DNN as nonlinear matching operator, no true primary labels needed, outperforms traditional virtual event methods in synthetic and land field data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3169481",
+    "code_url": null,
+    "introduces_model": "ave-dnn-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "huang-3d-unet-2025",
+    "title": "Adaptive subtraction with 3D U-net and 3D data windows to suppress seismic multiples",
+    "authors": "Huang, J., Fu, L., Ma, J., Du, X., Li, Z., Sun, K.",
+    "org": "Guizhou University, China University of Petroleum (East China), Qingdao University, PowerChina Guiyang",
+    "venue": "Petroleum Science",
+    "year": 2025,
+    "abstract": "Proposes 3D U-Net with 3D data windows for adaptive multiple subtraction, capturing spatial continuity along gathers; combined with transfer learning, it improves SNR by ~1 dB over 2D U-Net and cuts computation by 70%",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.petsci.2025.01.010",
+    "code_url": null,
+    "introduces_model": "3d-unet-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-cnn-tl-2023",
+    "title": "Internal multiple suppression with convolutional neural network-based transfer learning",
+    "authors": "Liu, X., Hu, T., Liu, T., Wei, Z., Xiao, Y., Xie, F., Duan, W., Cui, Y., Peng, G.",
+    "org": "Peking University, SINOPEC, PetroChina Tarim Oilfield",
+    "venue": "JGE",
+    "year": 2023,
+    "abstract": "Proposes a U-Net based CNN with multiple learning and transfer learning for internal multiple suppression, using VE-generated labels and fine-tuning to achieve high efficiency and better primary preservation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1093/jge/gxac101",
+    "code_url": null,
+    "introduces_model": "cnn-tl-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "he-dl-clsrme-2025",
+    "title": "Deep learning-based closed-loop surface-related multiple Elimination",
+    "authors": "He, Z., Li, Z., Li, Z., Xu, Y., Tan, G., Yue, Y., Wang, P.",
+    "org": "China University of Petroleum (East China), Sinopec, CNOOC, Southwest Petroleum University",
+    "venue": "JGE",
+    "year": 2025,
+    "abstract": "Proposes DL-CLSRME: a U-Net model that maps SRME-predicted multiples to CLSRME-accurate multiples, avoiding adaptive subtraction and waveform inversion for fast, accurate surface-related multiple suppression",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1093/jge/gxaf115",
+    "code_url": null,
+    "introduces_model": "dl-clsrme-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhang-glo-unet-2025",
+    "title": "Deep Learning for Efficient Prestack Seismic Internal Multiples Suppression with Global-Local Feature Fusion and Optuna Optimization",
+    "authors": "Zhang, M., Hu, T., Duan, W., Li, X.",
+    "org": "Peking University, CNPC, Kunlun Digital Technology",
+    "venue": "JGE",
+    "year": 2025,
+    "abstract": "Proposes GLO-UNet with Global-Local Feature Fusion (Transformer+DenseNet) and Optuna-optimized hybrid loss for efficient prestack internal multiple suppression, outperforming baselines in SNR and primary preservation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1093/jge/gxaf142",
+    "code_url": null,
+    "introduces_model": "glo-unet-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "li-radon-unet-2026",
+    "title": "Deep learning-based high-resolution Radon transform and its application to multiple elimination",
+    "authors": "Li, Z., Zhang, H., Tan, G., Li, Z., He, Z., Zhang, Q., Wang, P., Dong, L.",
+    "org": "China University of Petroleum (East China), CNPC, CNOOC, BGP",
+    "venue": "JGE",
+    "year": 2026,
+    "abstract": "Proposes a deep learning-based high-resolution Radon transform using U-Net to map adjoint solutions to high-resolution Radon domain results, replacing iterative inversion for fast, stable multiple elimination with lower training cost and better sparsity",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1093/jge/gxag020",
+    "code_url": null,
+    "introduces_model": "radon-unet-2026",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "geng-dc-lstm-2024",
+    "title": "Accurate Multiple Wave Suppression Using Data Correlation and Long Short-Term Memory Networks",
+    "authors": "Geng, H., Peng, S., Cui, X., He, T., Xu, N., Du, W.",
+    "org": "China University of Mining and Technology (Beijing)",
+    "venue": "GRSL",
+    "year": 2024,
+    "abstract": "Proposes DC-LSTM by combining data correlation and LSTM to accurately suppress multiples in CMP gathers while preserving primaries and avoiding pseudo-frequency artifacts",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2024.3487618",
+    "code_url": null,
+    "introduces_model": "dc-lstm-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-pcnn-poststack-2024",
+    "title": "Adaptive_Subtraction_of_Post-Stack_Surface_Multiples_Using_the_Pseudo-Seismic-Data-Based_Convolutional_Neural_Network",
+    "authors": "Liu, L., Hu, T.",
+    "org": "Peking University",
+    "venue": "GRSL",
+    "year": 2024,
+    "abstract": "Proposes P-CNN for adaptive subtraction of post-stack surface multiples by introducing Hilbert-transformed pseudo-seismic data as input, achieving better amplitude-phase matching and higher SNR than CNN and L1-norm methods",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
+    "code_url": null,
+    "introduces_model": "pcnn-poststack-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-pcnn-srme-2024",
+    "title": "Adaptive_Surface-Related_Multiple_Subtraction_Based_on_Convolutional_Neural_Network",
+    "authors": "Liu, L., Hu, T.",
+    "org": "Peking University",
+    "venue": "GRSL",
+    "year": 2024,
+    "abstract": "Proposes P-CNN for adaptive subtraction of post-stack surface multiples by introducing Hilbert-transformed pseudo-seismic data as input, achieving better amplitude-phase matching and higher SNR than CNN and L1-norm methods",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
+    "code_url": null,
+    "introduces_model": "pcnn-srme-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-ucnn-2022",
+    "title": "Seismic_Internal_Multiple_Suppression_Based_on_Convolutional_Neural_Network",
+    "authors": "Liu, X., Hu, T., Wang, S., Liu, T., Wei, Z.",
+    "org": "Peking University, China University of Petroleum (Beijing), SINOPEC",
+    "venue": "GRSL",
+    "year": 2022,
+    "abstract": "Proposes a U-shaped CNN for internal multiple suppression using virtual event labels, vertical patch input, and multiple data augmentation, achieving low memory usage, high efficiency, and better primary preservation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2022.3211855",
+    "code_url": null,
+    "introduces_model": "ucnn-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "tao-sagan-2022",
+    "title": "Seismic_Surface-Related_Multiples_Suppression_Based_on_SAGAN",
+    "authors": "Tao, L., Ren, H., Ye, Y., Jiang, J.",
+    "org": "Zhejiang University, PetroChina Hangzhou Research Institute of Geology",
+    "venue": "GRSL",
+    "year": 2022,
+    "abstract": "Proposes SAGAN (self-attention GAN with U-Net generator and Markov discriminator) for end-to-end surface-related multiple suppression, achieving high SNR, efficient inference, and robustness to missing near-offset traces",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2022.3168143",
+    "code_url": null,
+    "introduces_model": "sagan-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "duan-wednn-2025",
+    "title": "Surface-Related_Multiple_Suppression_Based_on_Prestack_Seismic_Data_Regularization_Using_Deep_Neural_Network_Wavefield_Extrapolation",
+    "authors": "Duan, W., Liu, J., Lei, G., Zheng, D., Chen, F., Sun, H., Hu, T.",
+    "org": "CNPC, Peking University, Xinjiang Key Laboratory",
+    "venue": "GRSL",
+    "year": 2025,
+    "abstract": "Proposes WEDNN for surface-related multiple suppression by fusing t-x and f-k domain features to extrapolate far-offset SRME results to missing near-offset traces, reducing information loss by 48.83% and improving efficiency by 88.3%",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2025.3627214",
+    "code_url": null,
+    "introduces_model": "wednn-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "ma-unetfm-2024",
+    "title": "U-Net-Based_Adaptive_Subtraction_Using_Three_Frequency_Bands_of_Simulated_Multiples_for_Their_Suppression",
+    "authors": "Ma, J., Sun, K., Dai, X., Li, B., Wang, Y., Li, Z.",
+    "org": "Qingdao University, PetroChina, BGP Inc., CAS",
+    "venue": "GRSL",
+    "year": 2024,
+    "abstract": "Proposes UNetFM using three frequency bands of simulated multiples as three-channel U-Net input for adaptive subtraction, achieving higher SNR and better residual multiple removal than traditional and single-channel U-Net methods",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2024.3381078",
+    "code_url": null,
+    "introduces_model": "unetfm-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "kiraz-1dcnn-2023",
+    "title": "Attenuating free-surface multiples and ghost reflection from seismic data using a trace-by-trace convolutional neural network approach",
+    "authors": "Kiraz, M. S. R., Snieder, R., Sheiman, J.",
+    "org": "Colorado School of Mines",
+    "venue": "Geophysical Prospecting",
+    "year": 2023,
+    "abstract": "Proposes a trace-by-trace 1D CNN to simultaneously attenuate free-surface multiples and remove ghost reflections, no dense acquisition or adaptive subtraction needed, preserves primaries even when overlapped",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13443",
+    "code_url": null,
+    "introduces_model": "1dcnn-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "shi-mdssl-2026",
+    "title": "Multiple Elimination Using Model-Driven Self-Supervised Learning With an Attention Mechanism",
+    "authors": "Shi, Y., Bao, P., Zhang, W.",
+    "org": "Northeast Petroleum University, Sinopec, University of Alberta",
+    "venue": "Geophysical Prospecting",
+    "year": 2026,
+    "abstract": "Proposes model-driven self-supervised learning with attention mechanism + U-Net for multiple elimination; uses conventional SRME-predicted multiples as input, hybrid L1+L2 loss, better preserves primaries and improves efficiency",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.70128",
+    "code_url": null,
+    "introduces_model": "mdssl-2026",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhang-pgdl-2026",
+    "title": "Physics-Guided Deep Learning for Adaptive Surface-Related Multiple Subtraction",
+    "authors": "Zhang, D., Verschuur, E.",
+    "org": "Delft University of Technology",
+    "venue": "Geophysical Prospecting",
+    "year": 2026,
+    "abstract": "Proposes a physics-guided deep learning (PGDL) framework with dual-channel U-Net for adaptive surface-related multiple subtraction by learning non-linear residual mapping from full wavefield and physics-based multiple predictions",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.70180",
+    "code_url": null,
+    "introduces_model": "pgdl-2026",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhang-ulpmol-2026",
+    "title": "Unsupervised Local Primary-and-Multiple Orthogonalization Learning for Seismic Multiple Leakage Estimation",
+    "authors": "Zhang, D., Rui, Z.",
+    "org": "Delft University of Technology, China University of Petroleum (Beijing)",
+    "venue": "Geophysical Prospecting",
+    "year": 2026,
+    "abstract": "Proposes unsupervised local primary-and-multiple orthogonalization learning (ULPMOL) with U-Net and local orthogonality loss for seismic multiple leakage estimation without labeled data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.70164",
+    "code_url": null,
+    "introduces_model": "ulpmol-2026",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "li-cnn-as-2023",
+    "title": "CNN-based adaptive subtraction for the removal of seismic multiples",
+    "authors": "Li, Z., Xie, F., Ma, J., Qi, Z., Wang, Y.",
+    "org": "Peking University, Qingdao University, CAS",
+    "venue": "JSE",
+    "year": 2023,
+    "abstract": "Proposes a deep CNN-based adaptive subtraction method with L1 primary constraint and L2 regularization, using modeled multiples as input and original data as label to learn nonlinear mismatches, outperforming LR and SVR in multiple removal and primary preservation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1553/jse.32.169",
+    "code_url": null,
+    "introduces_model": "cnn-as-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "li-unet-tl-2023",
+    "title": "Accelerating the U-Net based adaptive subtraction with transfer learning for removing seismic multiples in field data",
+    "authors": "Li, Z., Ma, J., Qi, Z., Zhang, L., Xie, F., Yang, J.",
+    "org": "Peking University, Qingdao University, Sinopec",
+    "venue": "JSE",
+    "year": 2023,
+    "abstract": "Proposes transfer learning accelerated U-Net for adaptive multiple subtraction, reusing prior parameters to reduce epochs, achieving same accuracy with ~40% less computation time for field data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1553/jse.32.373",
+    "code_url": null,
+    "introduces_model": "unet-tl-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhang-mcesa-unet-2026",
+    "title": "Dual-branch enhanced U-Net algorithm for multi-source separation and multiple suppression in seismic data processing",
+    "authors": "Zhang, Q., Lv, X., Li, Y., Peng, B., Tang, S.",
+    "org": "Southwest Petroleum University",
+    "venue": "JAG",
+    "year": 2026,
+    "abstract": "Proposes dual-branch enhanced U-Net (MCESA-Unet) with ALC and ESA modules for simultaneous multi-source separation and multiple suppression, outperforming baseline models on synthetic and field data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Multiples",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.jappgeo.2026.106139",
+    "code_url": null,
+    "introduces_model": "mcesa-unet-2026",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "lee-unetpp-2024",
+    "title": "U-Net++ Based Subshallow Gas-Scattered Image Conditioning: Small-Scale Case Study of Seismic Data Acquired in the Korean East Sea",
+    "authors": "Lee, J., Lee, M. J., Park, H., Jun, H., Cho, Y.",
+    "org": "Seoul National University, Kyungpook National University",
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "Proposes self-supervised U-Net++ with attention module for shallow gas–distorted seismic image conditioning; uses hybrid L1+SSIM loss, random tapering/cropping for training; reconstructs missing traces, improves stratigraphic continuity, outperforms U-Net, U-Net++, and conventional Pyseistr interpolation on Korean East Sea data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Scattered Noise",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3366952",
+    "code_url": null,
+    "introduces_model": "unetpp-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-ovt-3dcnn-2022",
+    "title": "Accelerating seismic scattered noise attenuation in offset-vector tile domain: Application of deep learning",
+    "authors": "Liu, D., Wang, X., Yang, X., Mao, H., Sacchi, M. D., Chen, W.",
+    "org": "Xi’an Jiaotong University, Xinjiang Oilfield, University of Alberta",
+    "venue": "Geophysics",
+    "year": 2022,
+    "abstract": "Proposes OVT-domain + 3D CNN for fast seismic scattered noise attenuation; uses direct signal learning (no residual), 3D CWT for high-quality labels, mid-offset OVT training; achieves 10× speedup vs 3D CWT, better denoising & generalization",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Scattered Noise",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/GEO2021-0654.1",
+    "code_url": null,
+    "introduces_model": "ovt-3dcnn-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "gong-cae-2022",
+    "title": "A deep learning approach to separating scattered direct waves from reflection seismic records on rugged surface: Synthetic data examples",
+    "authors": "Gong, R., Wang, Y., Geng, J.",
+    "org": "Tongji University",
+    "venue": "Geophysical Prospecting",
+    "year": 2022,
+    "abstract": "Proposes convolutional autoencoder (CAE) to separate scattered direct waves (SDWs) from rugged-surface seismic records; uses spectral element method to generate paired synthetic data (with/without reflectors) for supervised training; CAE outperforms F–K filtering and CNN in denoising, efficiency, and preserving reflections on single-reflector, four-reflector, and modified Marmousi2 models",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Scattered Noise",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13250",
+    "code_url": null,
+    "introduces_model": "cae-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhou-dgdlnet-2026",
+    "title": "Enhancing Seismic Data Quality With Gabor‐Kernel Unsupervised Denoising of Near-Surface Scattering Noise",
+    "authors": "Zhou, Z., Saad, O. M., Liu, S., Liu, Y., Alkhalifah, T.",
+    "org": "Jilin University, KAUST",
+    "venue": "Geophysical Prospecting",
+    "year": 2026,
+    "abstract": "Proposes D-GDLNet, an unsupervised denoising method based on Gabor dictionary learning for near-surface scattered noise attenuation; outperforms GDLNet, DRR, and Seislet transform while preserving reflections and steeply dipping signals",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Scattered Noise",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.70179",
+    "code_url": null,
+    "introduces_model": "dgdlnet-2026",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "kaur-cyclegan-2020",
+    "title": "Seismic ground-roll noise attenuation using deep learning",
+    "authors": "Kaur, H., Fomel, S., Pham, N.",
+    "org": "University of Texas at Austin",
+    "venue": "Geophysical Prospecting",
+    "year": 2020,
+    "abstract": "Uses CycleGAN for seismic ground-roll attenuation with labels from LTF and RNR, achieving fast and accurate noise suppression",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.12985",
+    "code_url": null,
+    "introduces_model": "cyclegan-2020",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhao-degans-2022",
+    "title": "Unsupervised dual learning for seismic data denoising in the absence of labelled data",
+    "authors": "Zhao, Y. X., Li, Y., Wu, N.",
+    "org": "Jilin University",
+    "venue": "Geophysical Prospecting",
+    "year": 2022,
+    "abstract": "Proposes unsupervised DeGANs based on CycleGAN for seismic denoising without labeled data; trained on unpaired real noisy and synthetic clean data, suppresses random noise and ground roll thoroughly with almost no false signals",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13157",
+    "code_url": null,
+    "introduces_model": "degans-2022",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "xing-st-cnn-2024",
+    "title": "Ground roll intelligent suppression based on spatial domain synchrosqueezing wavelet transform convolutional neural network",
+    "authors": "Xing, L., Lin, H., Wang, L., Xu, Z., Liu, H., Li, Q.",
+    "org": "Ocean University of China",
+    "venue": "Geophysical Prospecting",
+    "year": 2024,
+    "abstract": "Proposes ST-CNN combining spatial domain synchrosqueezing wavelet transform and CNN for intelligent high-precision ground roll suppression in seismic data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13271",
+    "code_url": null,
+    "introduces_model": "st-cnn-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu-blind-fan-2024",
+    "title": "A self-supervised scheme for ground roll suppression",
+    "authors": "Liu, S., Birnie, C., Bakulin, A., Dawood, A., Silvestrov, I., Alkhalifah, T.",
+    "org": "King Abdullah University of Science and Technology",
+    "venue": "Geophysical Prospecting",
+    "year": 2024,
+    "abstract": "Proposes self-supervised blind-fan network with U-Net for aliased ground roll suppression without clean labeled data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13522",
+    "code_url": null,
+    "introduces_model": "blind-fan-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "brandolin-pinnslope-2025",
+    "title": "Slope assisted Physics-informed neural networks for seismic signal separation with applications on ground roll removal and interpolation",
+    "authors": "Brandolin, F., Ravasi, M., Alkhalifah, T.",
+    "org": "King Abdullah University of Science and Technology",
+    "venue": "Geophysical Prospecting",
+    "year": 2025,
+    "abstract": "Proposes slope-assisted PINNslope with single/double slope constraints and time-derivative loss for seismic signal separation, enabling ground-roll removal, deblending, and aliased data interpolation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.70004",
+    "code_url": null,
+    "introduces_model": "pinnslope-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "tian-msloss-unet-2023",
+    "title": "A Ground-Roll Separation Method Based on Neural Networks With Morphological Similarity Loss",
+    "authors": "Tian, X., Ao, Y., Li, Y., Lu, W.",
+    "org": "Tsinghua University",
+    "venue": "GRSL",
+    "year": 2023,
+    "abstract": "Proposes U-Net with Gabor-based morphological similarity loss (MSLoss) for pseudo-low-frequency signal generation, combined with dictionary learning for ground-roll separation",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2023.3317528",
+    "code_url": null,
+    "introduces_model": "msloss-unet-2023",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zuo-dasdnet-2025",
+    "title": "Simultaneous Suppression of Random Noise and Ground Roll With a Fuzzy Logic-Guided Deep Network",
+    "authors": "Zuo, X., Ma, J., Liao, Z., Chen, X.",
+    "org": "China University of Petroleum-Beijing",
+    "venue": "GRSL",
+    "year": 2025,
+    "abstract": "Proposes DASDNet with fuzzy logic encoder, STFT-DWT time-frequency decomposition, and variance-aware attention to simultaneously suppress random noise and ground roll",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2025.3624295",
+    "code_url": null,
+    "introduces_model": "dasdnet-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "son-bhn-dsssl-2024",
+    "title": "Ground-roll attenuation using dual-model self-supervised selective learning with blind horizontal convolutional neural networks",
+    "authors": "Son, Y. H., Park, H., Cho, Y., Min, D. J.",
+    "org": "Seoul National University",
+    "venue": "JAG",
+    "year": 2024,
+    "abstract": "Proposes blind horizontal network (BHN) + dual-model self-supervised selective learning (dSSSL) for ground-roll attenuation, avoiding U-Net identity mapping and improving separation stability",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.jappgeo.2024.105363",
+    "code_url": null,
+    "introduces_model": "bhn-dsssl-2024",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "yan-nsst-msanet-2025",
+    "title": "Ground-roll attenuation in high-dimensional domain using multi-scale decomposition and attention mechanism network",
+    "authors": "Yan, T., Dai, Y., Wang, Z.",
+    "org": "China University of Petroleum (East China)",
+    "venue": "JAG",
+    "year": 2025,
+    "abstract": "Proposes NSST-MSANet: Non-Subsampled Shearlet Transform + multi-scale attention network for ground-roll attenuation in high-dimensional domain, reducing signal-noise overlap and preserving useful signals",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.jappgeo.2025.105736",
+    "code_url": null,
+    "introduces_model": "nsst-msanet-2025",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang-udnn-acs-2026",
+    "title": "Attribute-constrained unsupervised ground-roll suppression via mid-band amplitude–phase fidelity and wavefield orthogonalization",
+    "authors": "Wang, K., Rao, Y., Hu, T., Zhao, Z.",
+    "org": "China University of Petroleum (Beijing) & Peking University",
+    "venue": "JGE",
+    "year": 2026,
+    "abstract": "Proposes attribute-constrained unsupervised network (UDNN-ACs) for ground-roll suppression, combining mid-band amplitude–phase fidelity and wavefield orthogonalization loss without labeled data",
+    "tasks": [
+      "denoising"
+    ],
+    "tags": [
+      "Coherent Noise Suppression",
+      "Ground Roll",
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1093/jge/gxag054",
+    "code_url": null,
+    "introduces_model": "udnn-acs-2026",
+    "is_sota": false,
+    "citation_count": 0
   }
 ]

@@ -5,7 +5,8 @@
       "Bash(git push *)",
       "WebSearch",
       "WebFetch(domain:www.geophy.pku.edu.cn)",
-      "Bash(curl -L -o C:/Code/benchmark/public/team/majianwei.jpg \"https://www.geophy.pku.edu.cn/people/majianwei/photo/7e6b3308def8432f9d8edb750f85f3f7.jpg\")"
+      "Bash(curl -L -o C:/Code/benchmark/public/team/majianwei.jpg \"https://www.geophy.pku.edu.cn/people/majianwei/photo/7e6b3308def8432f9d8edb750f85f3f7.jpg\")",
+      "Bash(python *)"
     ]
   }
 }
