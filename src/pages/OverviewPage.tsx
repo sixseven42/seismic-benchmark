@@ -96,61 +96,35 @@ export default function OverviewPage({ data }: Props) {
       <div className="card">
         <div className="card-body">
           <p style={{ marginBottom: 'var(--space-4)' }}>{t.overview.teamText}</p>
-          <div className="grid cols-3">
-            <div style={{ textAlign: 'center' }}>
-              <img
-                src="/seismic-benchmark/team/majianwei.jpg"
-                alt={t.overview.teamMember1Name}
-                style={{
-                  width: 120,
-                  height: 120,
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  objectPosition: 'center 15%',
-                  margin: '0 auto var(--space-3)',
-                  display: 'block',
-                  border: '2px solid var(--border)',
-                }}
-              />
-              <div style={{ fontWeight: 600 }}>{t.overview.teamMember1Name}</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember1Role}</div>
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <img
-                src="/seismic-benchmark/team/liuqi.jpg"
-                alt={t.overview.teamMember2Name}
-                style={{
-                  width: 120,
-                  height: 120,
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  objectPosition: 'center top',
-                  margin: '0 auto var(--space-3)',
-                  display: 'block',
-                  border: '2px solid var(--border)',
-                }}
-              />
-              <div style={{ fontWeight: 600 }}>{t.overview.teamMember2Name}</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember2Role}</div>
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <img
-                src="/seismic-benchmark/team/chengzhitong.jpg"
-                alt={t.overview.teamMember3Name}
-                style={{
-                  width: 120,
-                  height: 120,
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  objectPosition: 'center top',
-                  margin: '0 auto var(--space-3)',
-                  display: 'block',
-                  border: '2px solid var(--border)',
-                }}
-              />
-              <div style={{ fontWeight: 600 }}>{t.overview.teamMember3Name}</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember3Role}</div>
-            </div>
+          <div className="team-scroll">
+            {[
+              { name: t.overview.teamMember1Name, role: t.overview.teamMember1Role, img: '/seismic-benchmark/team/majianwei.jpg', pos: 'center 15%' },
+              { name: t.overview.teamMember2Name, role: t.overview.teamMember2Role, img: '/seismic-benchmark/team/liuqi.jpg', pos: 'center top' },
+              { name: t.overview.teamMember3Name, role: t.overview.teamMember3Role, img: '/seismic-benchmark/team/chengzhitong.jpg', pos: 'center top' },
+              { name: t.overview.teamMember4Name, role: t.overview.teamMember4Role, img: '/seismic-benchmark/team/gaotianxiang.png', pos: 'center top' },
+              { name: t.overview.teamMember5Name, role: t.overview.teamMember5Role, img: '/seismic-benchmark/team/hupeng.jpg', pos: 'center top' },
+              { name: t.overview.teamMember6Name, role: t.overview.teamMember6Role, img: '/seismic-benchmark/team/lishirui.jpg', pos: 'center top' },
+              { name: t.overview.teamMember7Name, role: t.overview.teamMember7Role, img: '/seismic-benchmark/team/gaowei.jpg', pos: 'center top' },
+            ].map((m) => (
+              <div key={m.name} className="team-member">
+                <img
+                  src={m.img}
+                  alt={m.name}
+                  style={{
+                    width: 120,
+                    height: 120,
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    objectPosition: m.pos,
+                    margin: '0 auto var(--space-3)',
+                    display: 'block',
+                    border: '2px solid var(--border)',
+                  }}
+                />
+                <div style={{ fontWeight: 600 }}>{m.name}</div>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{m.role}</div>
+              </div>
+            ))}
           </div>
           <p className="text-muted" style={{ marginTop: 'var(--space-4)', fontSize: '0.85rem', textAlign: 'center' }}>
             GeoBrain Team · PKU & HIT

@@ -815,6 +815,34 @@ select:focus {
   font-family: var(--mono);
 }
 
+/* ---------- Team scroll ---------- */
+.team-scroll {
+  display: flex;
+  gap: var(--space-5);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+  scrollbar-width: thin;
+}
+
+.team-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.team-scroll::-webkit-scrollbar-track {
+  background: var(--surface-alt);
+  border-radius: 999px;
+}
+
+.team-scroll::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+}
+
+.team-member {
+  flex: 0 0 140px;
+  text-align: center;
+}
+
 /* ---------- Misc ---------- */
 .kbd {
   display: inline-block;
