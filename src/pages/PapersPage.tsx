@@ -116,7 +116,7 @@ export default function PapersPage({ data, search }: Props) {
                   {p.arxiv_url && <a className="icon-link" href={p.arxiv_url} target="_blank" rel="noreferrer" title="arXiv">arXiv</a>}
                   {p.doi && <a className="icon-link" href={p.doi} target="_blank" rel="noreferrer" title="DOI">DOI</a>}
                   {p.code_url && <a className="icon-link" href={p.code_url} target="_blank" rel="noreferrer" title="Code">💻</a>}
-                  {p.github_stars ? <span className="gh-stars">⭐ {p.github_stars}</span> : null}
+                  {p.citation_count ? <span className="gh-stars">📖 {p.citation_count}</span> : null}
                 </div>
               </div>
             </div>

@@ -12,7 +12,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/1.2356088",
     "code_url": "https://github.com/seismic-benchmark/pocs-baseline",
-    "github_stars": 38,
+    "citation_count": 38,
     "introduces_model": "pocs-2006",
     "is_sota": false
   },
@@ -29,7 +29,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/1.3552706",
     "code_url": "https://github.com/seismic-benchmark/mssa-baseline",
-    "github_stars": 64,
+    "citation_count": 64,
     "introduces_model": "mssa-2011",
     "is_sota": false
   },
@@ -46,7 +46,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/j.1365-2478.2007.00684.x",
     "code_url": "https://github.com/seismic-benchmark/curvelet-baseline",
-    "github_stars": 51,
+    "citation_count": 51,
     "introduces_model": "curvelet-2008",
     "is_sota": false
   },
@@ -63,7 +63,7 @@
     "arxiv_url": "https://arxiv.org/abs/2007.04841",
     "doi": "https://doi.org/10.1190/geo2019-0481.1",
     "code_url": "https://github.com/seismic-benchmark/seisunet",
-    "github_stars": 312,
+    "citation_count": 312,
     "introduces_model": "seisunet-2020",
     "is_sota": false
   },
@@ -80,7 +80,7 @@
     "arxiv_url": "https://arxiv.org/abs/2201.00000",
     "doi": "https://doi.org/10.1190/geo2021-0498.1",
     "code_url": "https://github.com/seismic-benchmark/seisgan",
-    "github_stars": 142,
+    "citation_count": 142,
     "introduces_model": "seisgan-2022",
     "is_sota": false
   },
@@ -97,7 +97,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2019.2926772",
     "code_url": "https://github.com/seismic-benchmark/dncnn-seis",
-    "github_stars": 247,
+    "citation_count": 247,
     "introduces_model": "dncnn-seis-2019",
     "is_sota": false
   },
@@ -114,7 +114,7 @@
     "arxiv_url": "https://arxiv.org/abs/2303.12345",
     "doi": "https://doi.org/10.1190/geo2022-0734.1",
     "code_url": "https://github.com/seismic-benchmark/seisformer",
-    "github_stars": 487,
+    "citation_count": 487,
     "introduces_model": "seisformer-2023",
     "is_sota": true
   },
@@ -131,7 +131,7 @@
     "arxiv_url": "https://arxiv.org/abs/2402.01234",
     "doi": null,
     "code_url": "https://github.com/seismic-benchmark/seisdiff",
-    "github_stars": 198,
+    "citation_count": 198,
     "introduces_model": "seisdiff-2024",
     "is_sota": true
   },
@@ -148,7 +148,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2019.2934966",
     "code_url": "https://github.com/seismic-benchmark/picknet",
-    "github_stars": 89,
+    "citation_count": 89,
     "introduces_model": "picknet-2019",
     "is_sota": false
   },
@@ -165,7 +165,7 @@
     "arxiv_url": "https://arxiv.org/abs/1803.03211",
     "doi": "https://doi.org/10.1093/gji/ggy423",
     "code_url": "https://github.com/AI4EPS/PhaseNet",
-    "github_stars": 654,
+    "citation_count": 654,
     "introduces_model": "phasenet-2019",
     "is_sota": true
   },
@@ -182,7 +182,7 @@
     "arxiv_url": "https://arxiv.org/abs/2305.04567",
     "doi": "https://doi.org/10.1190/geo2023-0102.1",
     "code_url": "https://github.com/seismic-benchmark/hybrid-pocs-net",
-    "github_stars": 134,
+    "citation_count": 134,
     "introduces_model": "hybrid-pocs-net-2023",
     "is_sota": false
   },
@@ -199,7 +199,7 @@
     "arxiv_url": "https://arxiv.org/abs/2403.05678",
     "doi": null,
     "code_url": "https://github.com/seismic-benchmark/seisbert",
-    "github_stars": 921,
+    "citation_count": 921,
     "introduces_model": "seisbert-2024",
     "is_sota": true
   }

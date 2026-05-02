@@ -97,25 +97,22 @@ export default function OverviewPage({ data }: Props) {
         <div className="card-body">
           <p style={{ marginBottom: 'var(--space-4)' }}>{t.overview.teamText}</p>
           <div className="grid cols-3">
-            {/* Team member placeholders - replace with actual photos and info */}
             <div style={{ textAlign: 'center' }}>
-              <div style={{
-                width: 120,
-                height: 120,
-                borderRadius: '50%',
-                background: 'var(--tag-bg)',
-                margin: '0 auto var(--space-3)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'var(--text-muted)',
-                border: '2px solid var(--border)',
-              }}>
-                👤
-              </div>
-              <div style={{ fontWeight: 600 }}>Team Member 1</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Principal Investigator</div>
+              <img
+                src="/seismic-benchmark/team/majianwei.jpg"
+                alt={t.overview.teamMember1Name}
+                style={{
+                  width: 120,
+                  height: 120,
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  margin: '0 auto var(--space-3)',
+                  display: 'block',
+                  border: '2px solid var(--border)',
+                }}
+              />
+              <div style={{ fontWeight: 600 }}>{t.overview.teamMember1Name}</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember1Role}</div>
             </div>
             <div style={{ textAlign: 'center' }}>
               <div style={{
@@ -157,7 +154,7 @@ export default function OverviewPage({ data }: Props) {
             </div>
           </div>
           <p className="text-muted" style={{ marginTop: 'var(--space-4)', fontSize: '0.85rem', textAlign: 'center' }}>
-            Replace the placeholder avatars above with actual team photos by placing images in the <code>public/team/</code> folder and updating the image paths.
+            More team members will be added soon.
           </p>
         </div>
       </div>

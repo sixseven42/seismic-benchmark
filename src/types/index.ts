@@ -70,7 +70,7 @@ export interface Paper {
   arxiv_url: string;
   doi: string;
   code_url: string;
-  github_stars: number;
+  citation_count: number;
   introduces_model: string;
   is_sota: boolean;
 }
