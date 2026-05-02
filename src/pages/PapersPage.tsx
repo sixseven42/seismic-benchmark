@@ -14,6 +14,7 @@ export default function PapersPage({ data, search }: Props) {
   const [taskFilter, setTaskFilter] = useState<string>('all');
   const [yearFilter, setYearFilter] = useState('all');
   const [venueFilter, setVenueFilter] = useState('all');
+  const [showAll, setShowAll] = useState(false);
 
   const years = useMemo(() => {
     return [...new Set(data.papers.map(p => p.year).filter(Boolean))].sort((a, b) => b - a);
@@ -70,7 +71,8 @@ export default function PapersPage({ data, search }: Props) {
           >
             <option value="all">{t.leaderboard.all}</option>
             <option value="interpolation">{t.tasks.interpolation}</option>
-            <option value="denoising">{t.tasks.denoising}</option>
+            <option value="coherent_noise_suppression">{t.tasks.coherent_noise_suppression}</option>
+            <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
             <option value="super_resolution">{t.tasks.super_resolution}</option>
           </select>
@@ -92,13 +94,42 @@ export default function PapersPage({ data, search }: Props) {
         <span className="result-count">{list.length} {t.leaderboard.results}</span>
       </div>
 
-      <div className="grid cols-2">
-        {list.map(p => {
+      <div className="grid cols-3">
+        {list.slice(0, 9).map(p => {
           const isExpanded = expandedIds.has(p.id);
           return (
             <div key={p.id} className="card paper-card">
               <div className="card-header">
-                <div>
+                <div style={{ minWidth: 0 }}>
+                  <div className="card-title">{escapeHtml(p.title)}</div>
+                  <div className="card-subtitle">{escapeHtml(p.authors)} · {p.venue} {p.year}</div>
+                </div>
+              </div>
+              <div className="card-body">
+                <div className={`paper-abstract ${isExpanded ? '' : 'collapsed'}`}>{escapeHtml(p.abstract)}</div>
+                <button className="paper-toggle" onClick={() => toggleAbstract(p.id)}>
+                  {isExpanded ? t.papers.showLess : t.papers.showMore}
+                </button>
+                <div className="paper-meta">
+                  {(p.tags || []).map(t => <span key={t} className="tag">{escapeHtml(t)}</span>)}
+                  {p.is_sota && <span className="tag tag-sota">{t.papers.sotaBadge}</span>}
+                </div>
+                <div className="paper-meta" style={{ marginTop: 'var(--space-2)' }}>
+                  {p.arxiv_url && <a className="icon-link" href={p.arxiv_url} target="_blank" rel="noreferrer" title="arXiv">arXiv</a>}
+                  {p.doi && <a className="icon-link" href={p.doi} target="_blank" rel="noreferrer" title="DOI">DOI</a>}
+                  {p.code_url && <a className="icon-link" href={p.code_url} target="_blank" rel="noreferrer" title="Code">💻</a>}
+                  {p.citation_count ? <span className="gh-stars">📖 {p.citation_count}</span> : null}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+        {showAll && list.slice(9).map(p => {
+          const isExpanded = expandedIds.has(p.id);
+          return (
+            <div key={p.id} className="card paper-card">
+              <div className="card-header">
+                <div style={{ minWidth: 0 }}>
                   <div className="card-title">{escapeHtml(p.title)}</div>
                   <div className="card-subtitle">{escapeHtml(p.authors)} · {p.venue} {p.year}</div>
                 </div>
@@ -123,6 +154,13 @@ export default function PapersPage({ data, search }: Props) {
           );
         })}
       </div>
+      {list.length > 9 && (
+        <div style={{ textAlign: 'center', marginTop: 'var(--space-5)' }}>
+          <button className="btn btn-primary" onClick={() => setShowAll(v => !v)}>
+            {showAll ? t.papers.showLessPapers : t.papers.showMorePapers}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

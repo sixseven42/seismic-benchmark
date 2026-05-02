@@ -1,265 +1,5 @@
 [
   {
-    "id": "pocs-2006",
-    "name": "POCS",
-    "authors": "Abma & Kabir",
-    "org": "ConocoPhillips",
-    "year": 2006,
-    "emoji": "📐",
-    "type": "traditional",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Projection Onto Convex Sets reconstructs missing traces by iteratively thresholding F-K spectra and re-injecting known samples. A workhorse baseline for randomly missing trace recovery.",
-    "paper_url": "https://doi.org/10.1190/1.2356088",
-    "code_url": "https://github.com/seismic-benchmark/pocs-baseline",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "mssa-2011",
-    "name": "MSSA",
-    "authors": "Oropeza & Sacchi",
-    "org": "University of Alberta",
-    "year": 2011,
-    "emoji": "🎚️",
-    "type": "traditional",
-    "tasks": [
-      "interpolation",
-      "denoising"
-    ],
-    "description": "Multichannel Singular Spectrum Analysis arranges f-x slices into Hankel matrices and applies rank reduction to attenuate random noise and reconstruct missing traces.",
-    "paper_url": "https://doi.org/10.1190/1.3552706",
-    "code_url": "https://github.com/seismic-benchmark/mssa-baseline",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "curvelet-2008",
-    "name": "Curvelet Denoising",
-    "authors": "Hennenfent & Herrmann",
-    "org": "University of British Columbia",
-    "year": 2008,
-    "emoji": "🌀",
-    "type": "traditional",
-    "tasks": [
-      "denoising"
-    ],
-    "description": "Sparsity-promoting denoising in the curvelet domain. Curvelets approximately sparsify wavefronts, so soft-thresholding their coefficients suppresses random noise while preserving steep events.",
-    "paper_url": "https://doi.org/10.1111/j.1365-2478.2007.00684.x",
-    "code_url": "https://github.com/seismic-benchmark/curvelet-baseline",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "fk-filter-2002",
-    "name": "F-K Filter",
-    "authors": "Yilmaz",
-    "org": "Schlumberger",
-    "year": 2002,
-    "emoji": "🔲",
-    "type": "traditional",
-    "tasks": [
-      "denoising"
-    ],
-    "description": "Frequency-wavenumber band-pass mute targeting coherent linear noise (e.g. ground roll). Simple, fast, and the de-facto reference point for any new denoiser.",
-    "paper_url": "https://doi.org/10.1190/1.9781560801580",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "radon-1985",
-    "name": "Radon Transform",
-    "authors": "Thorson & Claerbout",
-    "org": "Stanford University",
-    "year": 1985,
-    "emoji": "📈",
-    "type": "traditional",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "High-resolution parabolic Radon transform reconstructs missing offsets by sparse modeling of move-out trajectories. Robust on regularly-sampled marine gathers.",
-    "paper_url": "https://doi.org/10.1190/1.1441948",
-    "code_url": "https://github.com/seismic-benchmark/radon-baseline",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "stalta-1998",
-    "name": "STA/LTA",
-    "authors": "Allen",
-    "org": "USGS",
-    "year": 1978,
-    "emoji": "📡",
-    "type": "traditional",
-    "tasks": [
-      "first_arrival_picking"
-    ],
-    "description": "Short-Term Average / Long-Term Average ratio detector. The classical first-break picker — a moving-window energy ratio crossing a threshold.",
-    "paper_url": "https://pubs.geoscienceworld.org/ssa/bssa/article/68/5/1521/117374",
-    "code_url": "https://github.com/seismic-benchmark/stalta-baseline",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "seisunet-2020",
-    "name": "SeisU-Net",
-    "authors": "Wang, Liu & Chen",
-    "org": "China University of Petroleum",
-    "year": 2020,
-    "emoji": "🌊",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation",
-      "denoising"
-    ],
-    "description": "U-Net adapted for seismic 2D sections with skip connections preserving high-frequency content. Trained jointly for trace interpolation and random-noise attenuation.",
-    "paper_url": "https://doi.org/10.1190/geo2019-0481.1",
-    "code_url": "https://github.com/seismic-benchmark/seisunet",
-    "weights_url": "https://zenodo.org/record/4523001/files/seisunet-weights.pt",
-    "is_open_source": true
-  },
-  {
-    "id": "seisgan-2022",
-    "name": "SeisGAN",
-    "authors": "Li, Chen & Wang",
-    "org": "Institute of Geology, CAS",
-    "year": 2022,
-    "emoji": "🎭",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Conditional GAN for trace interpolation. The discriminator enforces phase-consistent reconstructions, reducing the over-smoothing seen in MSE-trained baselines.",
-    "paper_url": "https://doi.org/10.1190/geo2021-0498.1",
-    "code_url": "https://github.com/seismic-benchmark/seisgan",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "dncnn-seis-2019",
-    "name": "DnCNN-Seis",
-    "authors": "Zhang & Lin",
-    "org": "Tongji University",
-    "year": 2019,
-    "emoji": "🧹",
-    "type": "deep_learning",
-    "tasks": [
-      "denoising"
-    ],
-    "description": "Residual CNN trained to predict the noise component of a seismic patch. Originally an image denoiser, retrained on synthetic Marmousi shot gathers with random Gaussian noise.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2019.2926772",
-    "code_url": "https://github.com/seismic-benchmark/dncnn-seis",
-    "weights_url": "https://zenodo.org/record/3711234/files/dncnn-seis.pt",
-    "is_open_source": true
-  },
-  {
-    "id": "seisformer-2023",
-    "name": "SeisFormer",
-    "authors": "Chen, Xu & Zhao",
-    "org": "USTC",
-    "year": 2023,
-    "emoji": "🔭",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation",
-      "denoising"
-    ],
-    "description": "Swin-Transformer backbone with shifted window attention along the trace axis. Captures long-range coherence missed by purely convolutional models.",
-    "paper_url": "https://doi.org/10.1190/geo2022-0734.1",
-    "code_url": "https://github.com/seismic-benchmark/seisformer",
-    "weights_url": "https://huggingface.co/seismic-benchmark/seisformer",
-    "is_open_source": true
-  },
-  {
-    "id": "seisdiff-2024",
-    "name": "SeisDiff",
-    "authors": "Park, Kim & Lee",
-    "org": "KAIST",
-    "year": 2024,
-    "emoji": "💧",
-    "type": "deep_learning",
-    "tasks": [
-      "denoising"
-    ],
-    "description": "Score-based diffusion prior for seismic denoising. Sampling guided by a measurement-consistency term recovers low-amplitude reflections under heavy noise.",
-    "paper_url": "https://arxiv.org/abs/2402.01234",
-    "code_url": "https://github.com/seismic-benchmark/seisdiff",
-    "weights_url": "https://huggingface.co/seismic-benchmark/seisdiff",
-    "is_open_source": true
-  },
-  {
-    "id": "picknet-2019",
-    "name": "PickNet",
-    "authors": "Hu, Zheng & Liu",
-    "org": "Tsinghua University",
-    "year": 2019,
-    "emoji": "🎯",
-    "type": "deep_learning",
-    "tasks": [
-      "first_arrival_picking"
-    ],
-    "description": "Per-trace 1D CNN classifier predicting a Gaussian likelihood of first-break arrival per sample. Outperforms STA/LTA at low SNR.",
-    "paper_url": "https://doi.org/10.1109/LGRS.2019.2934966",
-    "code_url": "https://github.com/seismic-benchmark/picknet",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "phasenet-2019",
-    "name": "PhaseNet",
-    "authors": "Zhu & Beroza",
-    "org": "Stanford University",
-    "year": 2019,
-    "emoji": "🌐",
-    "type": "deep_learning",
-    "tasks": [
-      "first_arrival_picking"
-    ],
-    "description": "U-Net trained on three-component waveforms outputting per-sample P/S phase probabilities. Re-purposed here for first-break picking on active-source surveys.",
-    "paper_url": "https://doi.org/10.1093/gji/ggy423",
-    "code_url": "https://github.com/AI4EPS/PhaseNet",
-    "weights_url": "https://github.com/AI4EPS/PhaseNet/tree/master/model",
-    "is_open_source": true
-  },
-  {
-    "id": "hybrid-pocs-net-2023",
-    "name": "Hybrid POCS-Net",
-    "authors": "Müller, Schmidt & Becker",
-    "org": "ETH Zürich",
-    "year": 2023,
-    "emoji": "⚙️",
-    "type": "hybrid",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Unrolled POCS iterations with learned proximal operators. Combines the data-consistency guarantees of model-based methods with the prior of a CNN.",
-    "paper_url": "https://doi.org/10.1190/geo2023-0102.1",
-    "code_url": "https://github.com/seismic-benchmark/hybrid-pocs-net",
-    "weights_url": "https://zenodo.org/record/8123456/files/hybrid-pocs-net.pt",
-    "is_open_source": true
-  },
-  {
-    "id": "seisbert-2024",
-    "name": "SeisBERT",
-    "authors": "Xu, Wang & Zhou",
-    "org": "MIT",
-    "year": 2024,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation",
-      "denoising",
-      "first_arrival_picking"
-    ],
-    "description": "Pre-trained masked-trace transformer fine-tuned per task. Demonstrates that a single foundation model transfers across processing tasks with minimal labeled data.",
-    "paper_url": "https://arxiv.org/abs/2403.05678",
-    "code_url": "https://github.com/seismic-benchmark/seisbert",
-    "weights_url": "https://huggingface.co/seismic-benchmark/seisbert-base",
-    "is_open_source": true
-  },
-  {
     "id": "cddpm-2024",
     "name": "CDDPM",
     "authors": "Li et al.",
@@ -268,7 +8,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Uses conditional denoising diffusion probabilistic model (c-DDPM) for seismic ground-roll attenuation; improved model generates clean data and ground roll simultaneously with bette...",
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3489716",
@@ -285,7 +25,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a Gabor-based learnable sparse representation network for self-supervised seismic denoising by constraining Gabor filter parameters",
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3353315",
@@ -302,7 +42,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes an enhanced U-Net with attention and residual modules, combined with MSE and adaptive frequency modulation loss for seismic ground roll attenuation",
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
@@ -319,7 +59,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a physically constrained deep neural network with multi-modal physical constraints and SDPAF preprocessing to suppress nonstationary near-surface coherent noise",
     "paper_url": "https://doi.org/10.1109/TGRS.2025.3526231",
@@ -336,7 +76,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes an unsupervised deep learning method using U-Net generator with LMO and NMO corrections to extract self-similar features for ground roll and scattered noise attenuation",
     "paper_url": "https://doi.org/10.1109/TGRS.2023.3325324",
@@ -353,7 +93,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes dual-filter-bank CNN with radial trace transform to separately extract broad- and narrow-scale features for ground-roll attenuation",
     "paper_url": "https://doi.org/10.1109/TGRS.2021.3110303",
@@ -370,7 +110,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a two-stage self-supervised framework using U-Net for ground-roll region detection and cGAN for noise attenuation via synthetic paired data",
     "paper_url": "https://doi.org/10.1109/TGRS.2020.3029914",
@@ -387,7 +127,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a supervised deep learning framework with soft attention residual learning for small-scale ground roll attenuation",
     "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
@@ -404,7 +144,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes an unsupervised ground-roll attenuation method using implicit neural representations with NMO correction and horizontal derivative regularization",
     "paper_url": "https://doi.org/10.1190/geo2024-0148.1",
@@ -421,7 +161,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes an unsupervised learning method with local uncorrelated constraints for ground-roll signal separation",
     "paper_url": "https://doi.org/10.1190/geo2024-0447.1",
@@ -438,7 +178,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a physics-constrained deep learning method with three CNN components for seismic ground roll attenuation",
     "paper_url": "https://doi.org/10.1190/geo2020-0691.1",
@@ -455,7 +195,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a conditional GAN with U-Net generator for ground-roll attenuation, which effectively removes noise and preserves signals better than traditional methods",
     "paper_url": "https://doi.org/10.1190/geo2019-0414.1",
@@ -472,7 +212,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes improved anomalous amplitude attenuation (IAAA) method using FCN to detect noise regions and adaptively optimize AAA parameters, enhancing noise suppression and signal pre...",
     "paper_url": "https://doi.org/10.1109/TGRS.2021.3052898",
@@ -489,7 +229,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a shear-wave noise suppression workflow: filter linear/single-frequency noise, F-K filtering for far-offset multiples, MSI for near-offset multiples; improves SNR and well...",
     "paper_url": "https://doi.org/10.1093/jge/gxae091",
@@ -506,7 +246,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes reweighted damped singular spectrum analysis (RD-SSA) for robust seismic incoherent/erratic noise suppression, combining damping operator and Tukey’s bisquare iterative re...",
     "paper_url": "https://doi.org/10.1016/j.petsci.2024.01.018",
@@ -523,7 +263,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a deep neural network (DNN) with data augmentation training for marine seismic multiple suppression and primary reconstruction by adding noise and rotation to enhance robu...",
     "paper_url": "https://doi.org/10.1190/geo2021-0206.1",
@@ -540,7 +280,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a self-supervised deep neural network with multi-attention U-Net and local wavefield characteristic loss (MAE+LNCC) for surface-related multiple attenuation without labele...",
     "paper_url": "https://doi.org/10.1190/geo2022-0599.1",
@@ -557,7 +297,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a U-Net model trained on synthetic data for postmigration multiple removal via moveout discrimination, achieving strong generalization and preserving data features without...",
     "paper_url": "https://doi.org/10.1190/geo2023-0146.1",
@@ -574,7 +314,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a 1D CNN for simultaneous free-surface multiple attenuation and seismic deghosting directly on blended data without prior deblending, robust to irregular acquisition and d...",
     "paper_url": "https://doi.org/10.1190/geo2023-0417.1",
@@ -591,7 +331,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes an unsupervised learning method (JCMDNNs) combining adaptive virtual events (AVE) and multi-DNN joint constraints (ensemble learning) for internal multiple suppression; no...",
     "paper_url": "https://doi.org/10.1109/TGRS.2023.3243106",
@@ -608,7 +348,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes physics-informed self-supervised learning (MPR-SSN) with phase resemblance (PR) constraint for internal multiple attenuation; uses U-Net+ECA+PDC, VE-predicted multiples as...",
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3462440",
@@ -625,7 +365,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes unsupervised deep learning with local orthogonalization constraint (UDL-LOC) for internal multiple attenuation; uses multi-attention U-Net (MA-net) and AVE-predicted multi...",
     "paper_url": "https://doi.org/10.1109/TGRS.2023.3307750",
@@ -642,7 +382,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes unsupervised deep learning combined with adaptive virtual events (AVE) for seismic internal multiple suppression; uses U-Net-like DNN as nonlinear matching operator, no tr...",
     "paper_url": "https://doi.org/10.1109/TGRS.2022.3169481",
@@ -659,7 +399,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes 3D U-Net with 3D data windows for adaptive multiple subtraction, capturing spatial continuity along gathers; combined with transfer learning, it improves SNR by ~1 dB over...",
     "paper_url": "https://doi.org/10.1016/j.petsci.2025.01.010",
@@ -676,7 +416,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a U-Net based CNN with multiple learning and transfer learning for internal multiple suppression, using VE-generated labels and fine-tuning to achieve high efficiency and ...",
     "paper_url": "https://doi.org/10.1093/jge/gxac101",
@@ -693,7 +433,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes DL-CLSRME: a U-Net model that maps SRME-predicted multiples to CLSRME-accurate multiples, avoiding adaptive subtraction and waveform inversion for fast, accurate surface-r...",
     "paper_url": "https://doi.org/10.1093/jge/gxaf115",
@@ -710,7 +450,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes GLO-UNet with Global-Local Feature Fusion (Transformer+DenseNet) and Optuna-optimized hybrid loss for efficient prestack internal multiple suppression, outperforming basel...",
     "paper_url": "https://doi.org/10.1093/jge/gxaf142",
@@ -727,7 +467,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a deep learning-based high-resolution Radon transform using U-Net to map adjoint solutions to high-resolution Radon domain results, replacing iterative inversion for fast,...",
     "paper_url": "https://doi.org/10.1093/jge/gxag020",
@@ -744,7 +484,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes DC-LSTM by combining data correlation and LSTM to accurately suppress multiples in CMP gathers while preserving primaries and avoiding pseudo-frequency artifacts",
     "paper_url": "https://doi.org/10.1109/LGRS.2024.3487618",
@@ -761,7 +501,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes P-CNN for adaptive subtraction of post-stack surface multiples by introducing Hilbert-transformed pseudo-seismic data as input, achieving better amplitude-phase matching a...",
     "paper_url": "https://doi.org/10.1109/LGRS.2024.3408145",
@@ -778,7 +518,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes P-CNN for adaptive subtraction of post-stack surface multiples by introducing Hilbert-transformed pseudo-seismic data as input, achieving better amplitude-phase matching a...",
     "paper_url": "https://doi.org/10.1109/LGRS.2024.3408145",
@@ -795,7 +535,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a U-shaped CNN for internal multiple suppression using virtual event labels, vertical patch input, and multiple data augmentation, achieving low memory usage, high efficie...",
     "paper_url": "https://doi.org/10.1109/LGRS.2022.3211855",
@@ -812,7 +552,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes SAGAN (self-attention GAN with U-Net generator and Markov discriminator) for end-to-end surface-related multiple suppression, achieving high SNR, efficient inference, and ...",
     "paper_url": "https://doi.org/10.1109/LGRS.2022.3168143",
@@ -829,7 +569,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes WEDNN for surface-related multiple suppression by fusing t-x and f-k domain features to extrapolate far-offset SRME results to missing near-offset traces, reducing informa...",
     "paper_url": "https://doi.org/10.1109/LGRS.2025.3627214",
@@ -846,7 +586,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes UNetFM using three frequency bands of simulated multiples as three-channel U-Net input for adaptive subtraction, achieving higher SNR and better residual multiple removal ...",
     "paper_url": "https://doi.org/10.1109/LGRS.2024.3381078",
@@ -863,7 +603,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a trace-by-trace 1D CNN to simultaneously attenuate free-surface multiples and remove ghost reflections, no dense acquisition or adaptive subtraction needed, preserves pri...",
     "paper_url": "https://doi.org/10.1111/1365-2478.13443",
@@ -880,7 +620,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes model-driven self-supervised learning with attention mechanism + U-Net for multiple elimination; uses conventional SRME-predicted multiples as input, hybrid L1+L2 loss, be...",
     "paper_url": "https://doi.org/10.1111/1365-2478.70128",
@@ -897,7 +637,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a physics-guided deep learning (PGDL) framework with dual-channel U-Net for adaptive surface-related multiple subtraction by learning non-linear residual mapping from full...",
     "paper_url": "https://doi.org/10.1111/1365-2478.70180",
@@ -914,7 +654,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes unsupervised local primary-and-multiple orthogonalization learning (ULPMOL) with U-Net and local orthogonality loss for seismic multiple leakage estimation without labeled...",
     "paper_url": "https://doi.org/10.1111/1365-2478.70164",
@@ -931,7 +671,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes a deep CNN-based adaptive subtraction method with L1 primary constraint and L2 regularization, using modeled multiples as input and original data as label to learn nonline...",
     "paper_url": "https://doi.org/10.1553/jse.32.169",
@@ -948,7 +688,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes transfer learning accelerated U-Net for adaptive multiple subtraction, reusing prior parameters to reduce epochs, achieving same accuracy with ~40% less computation time f...",
     "paper_url": "https://doi.org/10.1553/jse.32.373",
@@ -965,7 +705,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes dual-branch enhanced U-Net (MCESA-Unet) with ALC and ESA modules for simultaneous multi-source separation and multiple suppression, outperforming baseline models on synthe...",
     "paper_url": "https://doi.org/10.1016/j.jappgeo.2026.106139",
@@ -982,7 +722,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes self-supervised U-Net++ with attention module for shallow gas–distorted seismic image conditioning; uses hybrid L1+SSIM loss, random tapering/cropping for training; recons...",
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3366952",
@@ -999,7 +739,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes OVT-domain + 3D CNN for fast seismic scattered noise attenuation; uses direct signal learning (no residual), 3D CWT for high-quality labels, mid-offset OVT training; achie...",
     "paper_url": "https://doi.org/10.1190/GEO2021-0654.1",
@@ -1016,7 +756,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes convolutional autoencoder (CAE) to separate scattered direct waves (SDWs) from rugged-surface seismic records; uses spectral element method to generate paired synthetic da...",
     "paper_url": "https://doi.org/10.1111/1365-2478.13250",
@@ -1033,7 +773,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes D-GDLNet, an unsupervised denoising method based on Gabor dictionary learning for near-surface scattered noise attenuation; outperforms GDLNet, DRR, and Seislet transform ...",
     "paper_url": "https://doi.org/10.1111/1365-2478.70179",
@@ -1050,7 +790,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Uses CycleGAN for seismic ground-roll attenuation with labels from LTF and RNR, achieving fast and accurate noise suppression",
     "paper_url": "https://doi.org/10.1111/1365-2478.12985",
@@ -1067,7 +807,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes unsupervised DeGANs based on CycleGAN for seismic denoising without labeled data; trained on unpaired real noisy and synthetic clean data, suppresses random noise and grou...",
     "paper_url": "https://doi.org/10.1111/1365-2478.13157",
@@ -1084,7 +824,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes ST-CNN combining spatial domain synchrosqueezing wavelet transform and CNN for intelligent high-precision ground roll suppression in seismic data",
     "paper_url": "https://doi.org/10.1111/1365-2478.13271",
@@ -1101,7 +841,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes self-supervised blind-fan network with U-Net for aliased ground roll suppression without clean labeled data",
     "paper_url": "https://doi.org/10.1111/1365-2478.13522",
@@ -1118,7 +858,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes slope-assisted PINNslope with single/double slope constraints and time-derivative loss for seismic signal separation, enabling ground-roll removal, deblending, and aliased...",
     "paper_url": "https://doi.org/10.1111/1365-2478.70004",
@@ -1135,7 +875,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes U-Net with Gabor-based morphological similarity loss (MSLoss) for pseudo-low-frequency signal generation, combined with dictionary learning for ground-roll separation",
     "paper_url": "https://doi.org/10.1109/LGRS.2023.3317528",
@@ -1152,7 +892,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes DASDNet with fuzzy logic encoder, STFT-DWT time-frequency decomposition, and variance-aware attention to simultaneously suppress random noise and ground roll",
     "paper_url": "https://doi.org/10.1109/LGRS.2025.3624295",
@@ -1169,7 +909,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes blind horizontal network (BHN) + dual-model self-supervised selective learning (dSSSL) for ground-roll attenuation, avoiding U-Net identity mapping and improving separatio...",
     "paper_url": "https://doi.org/10.1016/j.jappgeo.2024.105363",
@@ -1186,7 +926,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes NSST-MSANet: Non-Subsampled Shearlet Transform + multi-scale attention network for ground-roll attenuation in high-dimensional domain, reducing signal-noise overlap and pr...",
     "paper_url": "https://doi.org/10.1016/j.jappgeo.2025.105736",
@@ -1203,7 +943,7 @@
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
-      "denoising"
+      "coherent_noise_suppression"
     ],
     "description": "Proposes attribute-constrained unsupervised network (UDNN-ACs) for ground-roll suppression, combining mid-band amplitude–phase fidelity and wavefield orthogonalization loss without...",
     "paper_url": "https://doi.org/10.1093/jge/gxag054",

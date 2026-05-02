@@ -137,7 +137,8 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
           >
             <option value="all">{t.leaderboard.all}</option>
             <option value="interpolation">{t.tasks.interpolation}</option>
-            <option value="denoising">{t.tasks.denoising}</option>
+            <option value="coherent_noise_suppression">{t.tasks.coherent_noise_suppression}</option>
+            <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
             <option value="super_resolution">{t.tasks.super_resolution}</option>
           </select>

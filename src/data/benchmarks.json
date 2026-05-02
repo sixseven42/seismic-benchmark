@@ -78,7 +78,7 @@
   {
     "id": "synth-denoise-random",
     "name": "Synthetic Random Noise",
-    "task": "denoising",
+    "task": "random_noise_suppression",
     "icon": "🌫️",
     "description": "Marmousi shot gathers contaminated with additive Gaussian noise at -5 dB to +10 dB input SNR. Tests robustness across noise regimes.",
     "data_source": "synthetic",
@@ -103,7 +103,7 @@
   {
     "id": "synth-denoise-coherent",
     "name": "Synthetic Coherent Noise",
-    "task": "denoising",
+    "task": "coherent_noise_suppression",
     "icon": "〰️",
     "description": "Synthetic land gathers contaminated with linear ground-roll, scattered surface waves, and 50/60 Hz powerline interference. Stresses methods that assume Gaussian noise.",
     "data_source": "synthetic",
@@ -128,7 +128,7 @@
   {
     "id": "field-land-denoise",
     "name": "Field Land Survey Denoising",
-    "task": "denoising",
+    "task": "coherent_noise_suppression",
     "icon": "🏔️",
     "description": "Real onshore vibroseis records from the Sichuan Basin with strong ground-roll and ambient cultural noise. Reference \"clean\" volumes obtained by long-stack averaging.",
     "data_source": "field",
