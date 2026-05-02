@@ -116,23 +116,22 @@ export default function OverviewPage({ data }: Props) {
               <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember1Role}</div>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <div style={{
-                width: 120,
-                height: 120,
-                borderRadius: '50%',
-                background: 'var(--tag-bg)',
-                margin: '0 auto var(--space-3)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '3rem',
-                color: 'var(--text-muted)',
-                border: '2px solid var(--border)',
-              }}>
-                👤
-              </div>
-              <div style={{ fontWeight: 600 }}>Team Member 2</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Lead Developer</div>
+              <img
+                src="/seismic-benchmark/team/liuqi.jpg"
+                alt={t.overview.teamMember2Name}
+                style={{
+                  width: 120,
+                  height: 120,
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  margin: '0 auto var(--space-3)',
+                  display: 'block',
+                  border: '2px solid var(--border)',
+                }}
+              />
+              <div style={{ fontWeight: 600 }}>{t.overview.teamMember2Name}</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.overview.teamMember2Role}</div>
             </div>
             <div style={{ textAlign: 'center' }}>
               <div style={{

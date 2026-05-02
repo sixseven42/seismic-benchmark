@@ -33,6 +33,8 @@ const translations = {
       statsResults: 'Results',
       teamMember1Name: 'Jianwei Ma',
       teamMember1Role: 'Boya Distinguished Professor',
+      teamMember2Name: 'Qi Liu',
+      teamMember2Role: 'Lead Developer & Project Lead',
     },
     leaderboard: {
       title: 'Leaderboard',
@@ -140,6 +142,8 @@ const translations = {
       statsResults: '结果数',
       teamMember1Name: '马坚伟',
       teamMember1Role: '博雅特聘教授',
+      teamMember2Name: '刘祺',
+      teamMember2Role: '网站主要开发者 / 项目主要负责人',
     },
     leaderboard: {
       title: '排行榜',
