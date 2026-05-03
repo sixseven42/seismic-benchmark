@@ -1922,7 +1922,7 @@
     "title": "Seismic Random Noise Attenuation Using Non-LocalReference-Guided Deep Image Prior",
     "authors": "",
     "org": "",
-    "venue": "GP ",
+    "venue": "Geophysical Prospecting",
     "year": 2026,
     "abstract": "",
     "tasks": [
@@ -1943,7 +1943,7 @@
     "title": "Seismic Random Noise Attenuation via ChannelAttention-Weighted Unsupervised Deep Learning",
     "authors": "Yuting Wang, Hongsun Fu, Ruixue Gu, Nan Zhao",
     "org": "",
-    "venue": "GP ",
+    "venue": "Geophysical Prospecting",
     "year": 2026,
     "abstract": "We propose an encoder-decoder architecture that uses a channel-attention mechanism to suppress random noise in seismic data. Our autoencoder structure consists of three parts: an encoder module, a decoder module, and an attention skip connection module, which is a type of unsupervised deep learning model that uses the patching technique. Both encoder and decoder modules use fully connected layers, which allow for comprehensive information integration and feature extraction.",
     "tasks": [
