@@ -24,30 +24,6 @@
     "citation_count": 0
   },
   {
-    "id": "liu-gabor-lsr-2024",
-    "title": "Gabor-Based Learnable Sparse Representation for Self-Supervised Denoising",
-    "authors": "Liu, S., Cheng, S., Alkhalifah, T. A.",
-    "org": "King Abdullah University of Science and Technology",
-    "venue": "TGRS",
-    "year": 2024,
-    "abstract": "Proposes a Gabor-based learnable sparse representation network for self-supervised seismic denoising by constraining Gabor filter parameters",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "tags": [
-      "Coherent Noise Suppression",
-      "Self-Supervised",
-      "Sparse",
-      "Sparse Representation"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2024.3353315",
-    "code_url": null,
-    "introduces_model": "gabor-lsr-2024",
-    "is_sota": false,
-    "citation_count": 0
-  },
-  {
     "id": "sun-afm-unet-2024",
     "title": "Ground Roll Attenuation in Seismic Data Based on Enhanced Deep Learning Framework With Adaptive Frequency Modulation Loss",
     "authors": "Sun, S., Li, H., Li, G., Wang, Z.",
@@ -91,31 +67,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3526231",
     "code_url": null,
     "introduces_model": "pcdnn-2025",
-    "is_sota": false,
-    "citation_count": 0
-  },
-  {
-    "id": "liu-unet-lmo-2023",
-    "title": "Unsupervised Deep Learning for Ground Roll and Scattered Noise Attenuation",
-    "authors": "Liu, D., Sacchi, M. D., Wang, X., Chen, W.",
-    "org": "Xi’an Jiaotong University",
-    "venue": "TGRS",
-    "year": 2023,
-    "abstract": "Proposes an unsupervised deep learning method using U-Net generator with LMO and NMO corrections to extract self-similar features for ground roll and scattered noise attenuation",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "tags": [
-      "Coherent Noise Suppression",
-      "Deep Learning",
-      "Ground Roll",
-      "U-Net",
-      "Unsupervised"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2023.3325324",
-    "code_url": null,
-    "introduces_model": "unet-lmo-2023",
     "is_sota": false,
     "citation_count": 0
   },
@@ -2668,7 +2619,7 @@
     "org": "",
     "venue": "JGE",
     "year": 2025,
-    "abstract": "",
+    "abstract": "To overcome the label scarcity in supervised methods and the blurred outputs of unsupervised approaches for seismic denoising, we propose a semi-supervised gradient-penalized GAN with feature expansion (FEWGAN-SGP) guided by easily-generated pseudo-labels. The network integrates a global residual structure for stable convergence, a channel attention mechanism with feature expansion for fine detail extraction, and a smooth gradient penalty to strengthen discrimination between field and generated images. Experiments on 2D and 3D datasets show that the proposed method achieves superior signal preservation and noise attenuation compared with mainstream traditional and unsupervised approaches.",
     "tasks": [
       "random_noise_suppression"
     ],
@@ -2866,7 +2817,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2023.3244155",
+    "doi": "https://doi.org/10.1109/TGRS.2023.3244034",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -2987,7 +2938,7 @@
       "Synthetic Data"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2023.3309151",
+    "doi": "https://doi.org/10.1109/TGRS.2023.3307881",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -3084,7 +3035,7 @@
       "Total Variation"
     ],
     "arxiv_url": "https://arxiv.org/abs/2212.13523",
-    "doi": "https://doi.org/10.1109/TGRS.2023.3241504",
+    "doi": "https://doi.org/10.1109/TGRS.2023.3268554",
     "code_url": "https://github.com/XuZitai/S2S-WTV",
     "citation_count": 0,
     "introduces_model": "",
@@ -3111,7 +3062,7 @@
       "Unsupervised"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2023.3281891",
+    "doi": "https://doi.org/10.1109/TGRS.2023.3295730",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -3186,7 +3137,7 @@
       "Unsupervised"
     ],
     "arxiv_url": "https://arxiv.org/abs/2302.10756",
-    "doi": "https://doi.org/10.1109/TGRS.2023.3261234",
+    "doi": "https://doi.org/10.1109/TGRS.2023.3277973",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -3254,7 +3205,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2024.3430605",
+    "doi": "https://doi.org/10.1109/TGRS.2024.3475549",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
