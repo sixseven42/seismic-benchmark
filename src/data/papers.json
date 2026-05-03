@@ -1965,7 +1965,7 @@
     "title": "Removing random noise and improving the resolution of seismic data using deep-learning transformers",
     "authors": "Q. Sun, Y. Feng, Q. Du, F. Gong",
     "org": "",
-    "venue": "GP",
+    "venue": "Geophysical Prospecting",
     "year": 2025,
     "abstract": "The paper proposes Seis-SUnet, a deep learning approach that achieves simultaneous random noise suppression and super-resolution reconstruction of post-stack seismic data. Key contributions include: Conv-Swin-Block Design that combines ordinary convolution with Swin transformer to capture long-distance dependencies in seismic data spatial locations; Hybrid Training Strategy using a combination of L1 loss, Edge loss, and Multi-scale structural similarity loss.",
     "tasks": [
@@ -1987,7 +1987,7 @@
     "title": "Re-visible blind block network: An unsupervised seismic datarandom noise attenuation method",
     "authors": "Jing Wang, Bangyu Wu, Hui Yang, Bo Li",
     "org": "",
-    "venue": "GP",
+    "venue": "Geophysical Prospecting",
     "year": 2024,
     "abstract": "The paper proposes a novel one-stage unsupervised denoising framework called the Re-visible Blind Block Network for seismic data random noise attenuation. The method only requires a single noisy seismic dataset, eliminating the need for clean labels or extensive training datasets. It uses two complementary block-wise masks to mask noisy data, and introduces a re-visible loss to improve denoising performance.",
     "tasks": [
@@ -2008,7 +2008,7 @@
     "title": "Random noise attenuation of ocean bottom seismometers basedon a substep deep denoising autoencoder",
     "authors": "Haoran Lin, Jian Xu, Lei Xing, Qianqian Li, Huaishan Liu",
     "org": "",
-    "venue": "GP",
+    "venue": "Geophysical Prospecting",
     "year": 2024,
     "abstract": "Ocean bottom seismometer data usually contain a large amount of random noise, which seriously reduces the signal-to-noise ratio of the data and affects subsequent imaging. A novel approach is proposed to attenuate the marine seismic random noise of ocean bottom seismometers based on a six-dense-layer denoising autoencoder. The method uses a substep (pretraining) strategy: pretrain the encoder based on clean synthetic seismic data and pretrain the decoder based on noisy synthetic seismic data, then fine-tune the pretrained model on raw seismic data in an unsupervised manner.",
     "tasks": [
@@ -2030,7 +2030,7 @@
     "title": "Robust fast dictionary learning for seismic noise attenuation",
     "authors": "Z. Feng",
     "org": "",
-    "venue": "GP",
+    "venue": "Geophysical Prospecting",
     "year": 2022,
     "abstract": "This paper proposes a robust fast dictionary learning method for seismic noise attenuation. The method improves upon conventional dictionary learning by introducing robustness to erratic noise and faster computation.",
     "tasks": [
@@ -2052,7 +2052,7 @@
     "title": "Unsupervised dual learning for seismic data denoising in the absence of labelled data",
     "authors": "Yu Xing Zhao, Yue Li, Ning Wu",
     "org": "",
-    "venue": "GP",
+    "venue": "Geophysical Prospecting",
     "year": 2022,
     "abstract": "The training and updating of the supervised deep learning model are both dependent on labelled data. Unfortunately, the data-labelling process is usually expensive and time consuming. This paper introduces an unpaired domain-to-domain translation method based on the framework of two-way generative adversarial networks (CycleGAN), which does not need to use labelled data for training. We use an unpaired mixed training set containing synthetic seismic data and real seismic data to train the network.",
     "tasks": [
@@ -2073,7 +2073,7 @@
     "title": "Seismic noise attenuation by signal reconstruction: an unsupervisedmachine learning approach",
     "authors": "Y. Gao, F. Zhao, G. Li, H. Li",
     "org": "",
-    "venue": "GP",
+    "venue": "Geophysical Prospecting",
     "year": 2021,
     "abstract": "The paper presents an unsupervised machine learning approach for seismic noise attenuation based on signal reconstruction. The method uses deep convolutional neural networks in an unsupervised learning manner, reconstructs seismic signals without requiring clean training labels or synthetic noise-free data, and uses only raw noisy data as input with the network learning hidden features directly from the noisy input.",
     "tasks": [
@@ -2094,7 +2094,7 @@
     "title": "Two-dimensional dictionary learning for suppressing random seismic noise",
     "authors": "Kunhong Li, Zhining Liu, Bin She, Hanpeng Cai, Yaojun Wang, Guangmin Hu",
     "org": "",
-    "venue": "GP",
+    "venue": "Geophysical Prospecting",
     "year": 2021,
     "abstract": "Dictionary learning is a successful method for random seismic noise attenuation. The local patches extracted from the seismic section are essentially two-dimensional matrices. However, almost all existing dictionary learning methods convert each two-dimensional patch into a one-dimensional vector, destroying the geometric structure information. In this paper, we propose a two-dimensional dictionary learning method for the seismic denoising problem that represents the two-dimensional patches directly to avoid the conversion process and thus reserves the important structure information for a better reconstruction.",
     "tasks": [
