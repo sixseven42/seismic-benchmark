@@ -17,9 +17,10 @@ export default function OverviewPage({ data }: Props) {
   }), [data]);
 
   const milestones = [
-    { year: '2023', text: t.overview.milestone1 },
-    { year: '2024', text: t.overview.milestone2 },
-    { year: '2025', text: t.overview.milestone3 },
+    { year: '2026.04', text: t.overview.milestone1 },
+    { year: '2026.05', text: t.overview.milestone2 },
+    { year: '2026.05', text: t.overview.milestone3 },
+    { year: '2026.05', text: t.overview.milestone4 },
   ];
 
   const futurePlans = [
@@ -143,10 +144,10 @@ export default function OverviewPage({ data }: Props) {
               <div className="card-title">{t.overview.milestonesTitle}</div>
             </div>
           </div>
-          <div className="card-body">
+          <div className="card-body" style={{ maxHeight: 220, overflowY: 'auto', scrollbarWidth: 'thin' }}>
             {milestones.map((m, i) => (
               <div key={i} className="dl-row">
-                <span className="dl-label" style={{ fontFamily: 'var(--mono)', color: 'var(--accent-dark)' }}>{m.year}</span>
+                <span className="dl-label" style={{ fontFamily: 'var(--mono)', color: 'var(--accent-dark)', flexShrink: 0 }}>{m.year}</span>
                 <span>{m.text}</span>
               </div>
             ))}

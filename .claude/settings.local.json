@@ -18,7 +18,22 @@
       "Bash(node node_modules/typescript/bin/tsc)",
       "Bash(node node_modules/vite/bin/vite.js build)",
       "PowerShell(python -c \"print\\('hello'\\)\")",
-      "PowerShell(Copy-Item *)"
+      "PowerShell(Copy-Item *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -sL https://raw.githubusercontent.com/thedotmack/claude-mem/main/README.md)",
+      "PowerShell(npx --version 2>&1)",
+      "Bash(/c/Program Files/nodejs/npx.cmd *)",
+      "Bash(npx claude-mem *)",
+      "Bash(C:/Users/admin/.bun/bin/bun.exe *)",
+      "Read(//c/Users/admin/.claude/plugins/cache/thedotmack/claude-mem/12.5.0/**)",
+      "Bash(\"C:/Users/admin/.bun/bin/bun.exe\" install *)",
+      "Bash(winget --version)",
+      "Bash(\"C:/Program Files \\(x86\\)/Microsoft Visual Studio/Installer/vswhere.exe\" -products * -format json)",
+      "PowerShell(winget install *)",
+      "Bash(rm -rf node_modules)",
+      "Bash(export CL=\"/std:c++20\")",
+      "Bash(\"C:/Users/admin/.bun/bin/bun.exe\" x *)"
     ]
   }
 }
