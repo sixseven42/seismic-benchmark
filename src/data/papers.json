@@ -1919,23 +1919,24 @@
   },
   {
     "id": "unknown-seismic-2026",
-    "title": "Seismic Random Noise Attenuation Using Non-LocalReference-Guided Deep Image Prior",
-    "authors": "",
-    "org": "",
+    "title": "Seismic Random Noise Attenuation Using Non-Local Reference-Guided Deep Image Prior",
+    "authors": "N. Liu, Z. Wang, G. Hua, W. Deng, J. Gao",
+    "org": null,
     "venue": "Geophysical Prospecting",
     "year": 2026,
-    "abstract": "",
+    "abstract": "This study proposes a non-local reference-guided deep image prior (DIP) framework for seismic random noise attenuation. It extends non-local self-similarity from the patch to pixel level to improve noise estimation and generate structurally consistent reference data, introduces a noise-driven early stopping criterion for unsupervised optimization, and applies selective weight decay to enhance signal-noise separation without requiring clean training data. Experiments demonstrate effective noise suppression while preserving structural continuity and reflection characteristics.",
     "tasks": [
-      "random_noise_suppression"
+      "denoising"
     ],
     "tags": [
-      "Traditional"
+      "Traditional",
+      "DIP"
     ],
     "arxiv_url": null,
-    "doi": null,
-    "code_url": null,
-    "citation_count": 0,
-    "introduces_model": "",
+    "doi": "https://doi.org/10.1111/1365-2478.70177",
+    "code_url": "\\",
+    "github_stars": null,
+    "introduces_model": null,
     "is_sota": false
   },
   {
