@@ -12,8 +12,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Ground Roll",
-      "Supervised"
+      "DDPM",
+      "Diffusion",
+      "Ground Roll"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3489716",
@@ -35,8 +36,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Ground Roll",
-      "Supervised"
+      "Self-Supervised",
+      "Sparse",
+      "Sparse Representation"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3353315",
@@ -58,8 +60,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
+      "Deep Learning",
       "Ground Roll",
-      "Supervised"
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3427405",
@@ -81,8 +84,8 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Ground Roll",
-      "Supervised"
+      "DNN",
+      "Multi-modal"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3526231",
@@ -104,8 +107,10 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
+      "Deep Learning",
       "Ground Roll",
-      "Scattered Noise"
+      "U-Net",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3325324",
@@ -126,9 +131,9 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Coherent Noise Suppression",
-      "Ground Roll",
-      "Supervised"
+      "Ground Roll"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3110303",
@@ -149,9 +154,13 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "cGAN",
       "Coherent Noise Suppression",
+      "GAN",
       "Ground Roll",
-      "Self-Supervised"
+      "Self-Supervised",
+      "Synthetic Data",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2020.3029914",
@@ -173,6 +182,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
+      "Deep Learning",
       "Ground Roll",
       "Supervised"
     ],
@@ -241,9 +251,10 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Coherent Noise Suppression",
-      "Ground Roll",
-      "Self-Supervised"
+      "Deep Learning",
+      "Ground Roll"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2020-0691.1",
@@ -264,9 +275,12 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "Adversarial",
+      "cGAN",
       "Coherent Noise Suppression",
+      "GAN",
       "Ground Roll",
-      "Supervised"
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2019-0414.1",
@@ -288,8 +302,8 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Anomalous Amplitude",
-      "Self-Supervised"
+      "FCN",
+      "Optimization"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3052898",
@@ -311,8 +325,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Linear Interference"
+      "F-K Filter"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxae091",
@@ -334,8 +347,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Anomalous Amplitude",
-      "Unsupervised"
+      "SSA"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.petsci.2024.01.018",
@@ -357,8 +369,10 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Data Augmentation",
+      "DNN",
+      "Marine",
+      "Multiple"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0206.1",
@@ -380,8 +394,10 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Self-Supervised"
+      "DNN",
+      "Multiple",
+      "Self-Supervised",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2022-0599.1",
@@ -403,8 +419,8 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Synthetic Data",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0146.1",
@@ -425,9 +441,9 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Multiple"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0417.1",
@@ -449,7 +465,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
+      "DNN",
+      "Ensemble",
+      "Multiple",
       "Unsupervised"
     ],
     "arxiv_url": null,
@@ -472,8 +490,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Self-Supervised"
+      "Multiple",
+      "Self-Supervised",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3462440",
@@ -495,7 +514,12 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
+      "Deep Learning",
+      "Field Data",
+      "Land",
+      "Multiple",
+      "Synthetic Data",
+      "U-Net",
       "Unsupervised"
     ],
     "arxiv_url": null,
@@ -518,7 +542,13 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
+      "Deep Learning",
+      "DNN",
+      "Field Data",
+      "Land",
+      "Multiple",
+      "Synthetic Data",
+      "U-Net",
       "Unsupervised"
     ],
     "arxiv_url": null,
@@ -540,9 +570,11 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "2D",
+      "3D",
       "Coherent Noise Suppression",
-      "Multiples",
-      "Self-Supervised"
+      "Transfer Learning",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.petsci.2025.01.010",
@@ -563,9 +595,11 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Multiple",
+      "Transfer Learning",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxac101",
@@ -587,8 +621,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Deep Learning",
+      "Multiple",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf115",
@@ -610,8 +645,12 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Deep Learning",
+      "DenseNet",
+      "Multiple",
+      "Optimization",
+      "Transformer",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf142",
@@ -633,8 +672,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Deep Learning",
+      "Radon",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxag020",
@@ -656,8 +696,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "LSTM"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3487618",
@@ -678,9 +717,8 @@
       "coherent_noise_suppression"
     ],
     "tags": [
-      "Coherent Noise Suppression",
-      "Multiples",
-      "Unsupervised"
+      "CNN",
+      "Coherent Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
@@ -701,9 +739,8 @@
       "coherent_noise_suppression"
     ],
     "tags": [
-      "Coherent Noise Suppression",
-      "Multiples",
-      "Unsupervised"
+      "CNN",
+      "Coherent Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
@@ -724,9 +761,10 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Data Augmentation",
+      "Multiple"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2022.3211855",
@@ -748,8 +786,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "GAN",
+      "Multiple",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2022.3168143",
@@ -771,8 +810,8 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "F-K Filter",
+      "Multiple"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2025.3627214",
@@ -794,8 +833,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Self-Supervised"
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3381078",
@@ -816,9 +854,8 @@
       "coherent_noise_suppression"
     ],
     "tags": [
-      "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "CNN",
+      "Coherent Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13443",
@@ -840,8 +877,8 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Self-Supervised"
+      "Self-Supervised",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70128",
@@ -863,8 +900,8 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Deep Learning",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70180",
@@ -886,7 +923,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
+      "U-Net",
       "Unsupervised"
     ],
     "arxiv_url": null,
@@ -908,9 +945,8 @@
       "coherent_noise_suppression"
     ],
     "tags": [
-      "Coherent Noise Suppression",
-      "Multiples",
-      "Self-Supervised"
+      "CNN",
+      "Coherent Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1553/jse.32.169",
@@ -932,8 +968,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Field Data",
+      "Transfer Learning",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1553/jse.32.373",
@@ -955,8 +992,10 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Multiples",
-      "Supervised"
+      "Field Data",
+      "Multiple",
+      "Synthetic Data",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.jappgeo.2026.106139",
@@ -978,8 +1017,9 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Scattered Noise",
-      "Self-Supervised"
+      "Reconstruction",
+      "Self-Supervised",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3366952",
@@ -1000,9 +1040,10 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "3D",
+      "CNN",
       "Coherent Noise Suppression",
-      "Scattered Noise",
-      "Supervised"
+      "Deep Learning"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/GEO2021-0654.1",
@@ -1023,9 +1064,12 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "Autoencoder",
+      "CNN",
       "Coherent Noise Suppression",
-      "Scattered Noise",
-      "Supervised"
+      "Deep Learning",
+      "Supervised",
+      "Synthetic Data"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13250",
@@ -1047,7 +1091,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Scattered Noise",
+      "Dictionary Learning",
       "Unsupervised"
     ],
     "arxiv_url": null,
@@ -1070,8 +1114,10 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Ground Roll",
-      "Supervised"
+      "CycleGAN",
+      "Deep Learning",
+      "GAN",
+      "Ground Roll"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.12985",
@@ -1093,7 +1139,11 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
+      "CycleGAN",
+      "GAN",
       "Ground Roll",
+      "Random Noise",
+      "Synthetic Data",
       "Unsupervised"
     ],
     "arxiv_url": null,
@@ -1115,9 +1165,11 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Coherent Noise Suppression",
       "Ground Roll",
-      "Supervised"
+      "Time-Frequency",
+      "Wavelet"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13271",
@@ -1140,7 +1192,8 @@
     "tags": [
       "Coherent Noise Suppression",
       "Ground Roll",
-      "Unsupervised"
+      "Self-Supervised",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13522",
@@ -1162,8 +1215,7 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
-      "Ground Roll",
-      "Unsupervised"
+      "Ground Roll"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70004",
@@ -1185,8 +1237,10 @@
     ],
     "tags": [
       "Coherent Noise Suppression",
+      "Dictionary Learning",
       "Ground Roll",
-      "Supervised"
+      "Morphological",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2023.3317528",
@@ -1209,7 +1263,8 @@
     "tags": [
       "Coherent Noise Suppression",
       "Ground Roll",
-      "Supervised"
+      "Random Noise",
+      "Time-Frequency"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2025.3624295",
@@ -1230,9 +1285,11 @@
       "coherent_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Coherent Noise Suppression",
       "Ground Roll",
-      "Self-Supervised"
+      "Self-Supervised",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.jappgeo.2024.105363",
@@ -1255,7 +1312,7 @@
     "tags": [
       "Coherent Noise Suppression",
       "Ground Roll",
-      "Supervised"
+      "Multi-scale"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.jappgeo.2025.105736",
@@ -1300,6 +1357,10 @@
     ],
     "tags": [
       "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Supervised",
+      "Synthetic Data",
       "U-Net"
     ],
     "arxiv_url": null,
@@ -1321,10 +1382,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1190/geo2024-0073.1",
+    "doi": "https://doi.org/10.1190/geo2024-0186.1",
     "code_url": "https://github.com/mengchuangji/IPS-RNA",
     "citation_count": 0,
     "introduces_model": "",
@@ -1342,7 +1404,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Noise2Noise",
+      "Random Noise Suppression",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2024-0106.1",
@@ -1364,7 +1428,10 @@
     ],
     "tags": [
       "Deep Learning",
-      "Diffusion"
+      "Diffusion",
+      "Field Data",
+      "Random Noise Suppression",
+      "Synthetic Data"
     ],
     "arxiv_url": "https://arxiv.org/abs/2404.02767",
     "doi": "https://doi.org/10.1190/geo2024-0187.1",
@@ -1385,7 +1452,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "DnCNN",
+      "F-K Filter",
+      "Field Data",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2024-0391.1",
@@ -1406,9 +1479,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "Diffusion",
-      "Attention"
+      "Random Noise Suppression"
     ],
     "arxiv_url": "https://arxiv.org/abs/2408.06963",
     "doi": "https://doi.org/10.1190/geo2025-0103.1",
@@ -1429,7 +1501,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Data Augmentation",
+      "Deep Learning",
+      "Noise2Noise",
+      "Random Noise Suppression",
+      "Self-Supervised",
+      "Unsupervised",
+      "Zero-Shot"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0762.1",
@@ -1450,8 +1528,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Diffusion"
+      "DDPM",
+      "Diffusion",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0676.1",
@@ -1472,8 +1551,12 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "3D",
       "Deep Learning",
-      "Attention"
+      "Field Data",
+      "Random Noise Suppression",
+      "Supervised",
+      "Synthetic Data"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0592.1",
@@ -1494,8 +1577,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "GAN"
+      "Adversarial",
+      "GAN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2022-0306.1",
@@ -1516,7 +1600,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise Suppression",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0131.1",
@@ -1537,7 +1622,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Land",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0143.1",
@@ -1558,8 +1645,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Residual Learning"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2022-0192.1",
@@ -1580,7 +1667,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "CNN",
+      "Deep Image Prior",
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -1601,7 +1693,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0654.1",
@@ -1623,7 +1716,10 @@
     ],
     "tags": [
       "Deep Learning",
-      "Residual Learning"
+      "Random Noise",
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0294.1",
@@ -1644,8 +1740,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "DNN",
+      "Random Noise Suppression",
+      "Sparse"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2022-0198.1",
@@ -1666,9 +1764,13 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Deep Learning",
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "DNN",
+      "Random Noise Suppression",
+      "Sparse",
+      "Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0838.1",
@@ -1689,11 +1791,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
       "Dictionary Learning",
-      "Residual Learning",
-      "Erratic Noise"
+      "Random Noise Suppression",
+      "Sparse",
+      "Sparse Representation"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2022-0168.1",
@@ -1714,7 +1815,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Learning",
+      "DNN",
+      "Optimization",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0459.1",
@@ -1735,7 +1839,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Contrastive Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0460.1",
@@ -1756,7 +1861,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Erratic Noise"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0785.1",
@@ -1777,7 +1883,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Machine Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2020-0193.1",
@@ -1798,9 +1905,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "CNN",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Sparse",
+      "Sparse Representation"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2019-0689.1",
@@ -1821,7 +1931,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Data Augmentation",
+      "Random Noise",
+      "Random Noise Suppression",
+      "VAE"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2019-0815.1",
@@ -1842,8 +1955,12 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "Autoencoder",
       "Deep Learning",
-      "Autoencoder"
+      "Random Noise",
+      "Random Noise Suppression",
+      "Semi-Supervised",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2019-0468.1",
@@ -1864,7 +1981,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "CNN",
+      "Deep Learning",
+      "DNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2018-0668.1",
@@ -1885,8 +2005,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Curvelet",
+      "Deep Image Prior",
+      "Dictionary Learning",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2018-0596.1",
@@ -1907,8 +2030,9 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Deep Learning",
-      "CNN"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -1929,8 +2053,10 @@
       "denoising"
     ],
     "tags": [
-      "Traditional",
-      "DIP"
+      "Deep Image Prior",
+      "Optimization",
+      "Random Noise",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70177",
@@ -1951,8 +2077,11 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "Autoencoder",
       "Deep Learning",
-      "Attention"
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70147",
@@ -1974,6 +2103,10 @@
     ],
     "tags": [
       "Deep Learning",
+      "Multi-scale",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Swin Transformer",
       "Transformer"
     ],
     "arxiv_url": null,
@@ -1995,7 +2128,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13559",
@@ -2016,8 +2151,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Autoencoder"
+      "Autoencoder",
+      "Marine",
+      "Pre-trained",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13302",
@@ -2038,8 +2178,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -2060,7 +2200,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Adversarial",
+      "CycleGAN",
+      "Deep Learning",
+      "GAN",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13157",
@@ -2081,7 +2227,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "CNN",
+      "Machine Learning",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13085",
@@ -2102,8 +2252,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13029",
@@ -2125,8 +2275,10 @@
     ],
     "tags": [
       "Deep Learning",
+      "Random Noise Suppression",
+      "Swin Transformer",
       "Transformer",
-      "Residual Learning"
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.36922/JSE025400081",
@@ -2147,7 +2299,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "CNN",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.36922/JSE025240011",
@@ -2168,8 +2323,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "DnCNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.36922/JSE025260030",
@@ -2190,8 +2346,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Attention"
+      "Multi-scale",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -2212,8 +2368,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Autoencoder"
+      "Autoencoder",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -2234,9 +2393,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
       "Dictionary Learning",
-      "Sparse Representation"
+      "Multi-scale",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Sparse",
+      "Sparse Representation",
+      "Wavelet"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -2257,7 +2420,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Desert Seismic"
+      "CNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.36922/JSE84",
@@ -2278,7 +2442,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Dictionary Learning",
+      "Random Noise Suppression",
+      "Sparse",
+      "Sparse Representation"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.36922/JSE134",
@@ -2299,8 +2466,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Desert Seismic"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxz051",
@@ -2321,7 +2487,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise Suppression",
+      "Total Variation"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxy003",
@@ -2342,8 +2509,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Residual Learning"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxac055",
@@ -2364,7 +2531,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxac022",
@@ -2385,7 +2552,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxad008",
@@ -2406,8 +2573,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "Deep Image Prior",
+      "DnCNN",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxad076",
@@ -2428,7 +2598,14 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "3D",
+      "Deep Image Prior",
+      "Deep Learning",
+      "Field Data",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxad005",
@@ -2449,7 +2626,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Self-Supervised",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxad094",
@@ -2470,7 +2651,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Learning",
+      "Random Noise Suppression",
+      "ResUNet",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf091",
@@ -2491,8 +2675,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional"
+      "Curvelet",
+      "Fourier",
+      "Random Noise Suppression",
+      "Reconstruction"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf045",
@@ -2513,7 +2699,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "DNN",
+      "Random Noise Suppression",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TNNLS.2022.3188915",
@@ -2534,7 +2722,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Erratic Noise"
+      "Deep Learning",
+      "Fourier",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf109",
@@ -2555,8 +2745,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "GAN"
+      "Adversarial",
+      "GAN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf158",
@@ -2577,7 +2768,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Desert Seismic"
+      "CNN",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.cageo.2023.105387",
@@ -2598,8 +2791,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Diffusion"
+      "Diffusion",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.cageo.2023.105377",
@@ -2620,7 +2813,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "CNN",
+      "Fourier",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.cageo.2024.105519",
@@ -2641,7 +2837,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Multi-scale",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.cageo.2024.105682",
@@ -2662,7 +2860,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.cageo.2024.105595",
@@ -2683,7 +2882,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "CNN",
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Swin Transformer",
+      "Synthetic Data",
       "Transformer"
     ],
     "arxiv_url": null,
@@ -2705,7 +2908,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Learning",
+      "Pre-trained",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Transfer Learning"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3300697",
@@ -2726,8 +2933,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Autoencoder"
+      "Autoencoder",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3244155",
@@ -2748,7 +2956,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Learning",
+      "Field Data",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3298679",
@@ -2770,6 +2982,8 @@
     ],
     "tags": [
       "Deep Learning",
+      "Field Data",
+      "Random Noise Suppression",
       "U-Net"
     ],
     "arxiv_url": null,
@@ -2791,7 +3005,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Image Prior",
+      "Optimization",
+      "Random Noise Suppression",
+      "Self-Supervised",
+      "Total Variation"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3329303",
@@ -2812,8 +3030,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression",
+      "Sparse"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3286791",
@@ -2834,7 +3053,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Field Data",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Synthetic Data"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3309151",
@@ -2856,7 +3078,9 @@
     ],
     "tags": [
       "Deep Learning",
-      "Attention"
+      "Pre-trained",
+      "Random Noise Suppression",
+      "Transfer Learning"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3308077",
@@ -2877,7 +3101,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "DNN",
+      "Ensemble",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3295355",
@@ -2898,7 +3126,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise",
+      "Random Noise Suppression",
+      "Reinforcement Learning"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3268718",
@@ -2919,7 +3149,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Self-Supervised",
+      "Total Variation"
     ],
     "arxiv_url": "https://arxiv.org/abs/2212.13523",
     "doi": "https://doi.org/10.1109/TGRS.2023.3241504",
@@ -2941,7 +3175,12 @@
     ],
     "tags": [
       "Deep Learning",
-      "U-Net"
+      "Multi-scale",
+      "Random Noise",
+      "Random Noise Suppression",
+      "ResUNet",
+      "U-Net",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3281891",
@@ -2962,7 +3201,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Adversarial",
+      "Field Data",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3279866",
@@ -2983,11 +3225,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
       "CNN",
-      "Wavelet",
-      "Attention"
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Time-Frequency",
+      "Wavelet"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3267037",
@@ -3008,8 +3250,12 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "Autoencoder",
       "Deep Learning",
-      "Autoencoder"
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Total Variation",
+      "Unsupervised"
     ],
     "arxiv_url": "https://arxiv.org/abs/2302.10756",
     "doi": "https://doi.org/10.1109/TGRS.2023.3261234",
@@ -3031,7 +3277,10 @@
     ],
     "tags": [
       "Deep Learning",
-      "Ground Roll"
+      "Ground Roll",
+      "Land",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3325324",
@@ -3052,9 +3301,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Attention",
-      "DAS"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3352587",
@@ -3075,7 +3322,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "DAS"
+      "Deep Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3430605",
@@ -3096,9 +3344,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "Diffusion",
-      "DAS"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3362853",
@@ -3120,6 +3367,8 @@
     ],
     "tags": [
       "Deep Learning",
+      "Multi-scale",
+      "Random Noise Suppression",
       "U-Net"
     ],
     "arxiv_url": null,
@@ -3141,8 +3390,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression",
+      "SVD"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3357729",
@@ -3163,7 +3413,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
+      "Ground Roll",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Self-Supervised",
+      "Sparse",
       "Sparse Representation"
     ],
     "arxiv_url": "https://arxiv.org/abs/2308.03077",
@@ -3185,7 +3439,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Erratic Noise"
+      "2D",
+      "3D",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3386590",
@@ -3206,8 +3464,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Erratic Noise"
+      "CNN",
+      "Optimization",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3430288",
@@ -3228,8 +3487,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "EMD",
+      "Multi-scale",
+      "Random Noise Suppression",
+      "Sparse",
+      "Sparse Representation",
+      "SVD"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3396459",
@@ -3250,8 +3514,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Diffusion"
+      "Diffusion",
+      "Field Data",
+      "PCA",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Transfer Learning"
     ],
     "arxiv_url": "https://arxiv.org/abs/2309.04944",
     "doi": "https://doi.org/10.1109/TGRS.2024.3355460",
@@ -3272,7 +3540,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "CNN",
+      "Pre-trained",
+      "Random Noise Suppression",
+      "Self-Supervised",
       "Transformer"
     ],
     "arxiv_url": null,
@@ -3294,7 +3565,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Swell Noise"
+      "Marine",
+      "Random Noise Suppression",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3497163",
@@ -3315,7 +3588,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "DAS"
+      "Random Noise Suppression",
+      "Self-Supervised",
+      "Total Variation"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3509552",
@@ -3336,7 +3611,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "DAS"
+      "Deep Learning",
+      "Field Data",
+      "Random Noise Suppression",
+      "Semi-Supervised",
+      "Synthetic Data",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3510781",
@@ -3357,7 +3637,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise Suppression",
+      "Reconstruction"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3421597",
@@ -3378,9 +3659,15 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "Adversarial",
       "Deep Learning",
+      "GAN",
+      "Optimization",
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Swin Transformer",
       "Transformer",
-      "GAN"
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3424502",
@@ -3401,7 +3688,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Autoencoder",
+      "Deep Learning",
+      "PCA",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3349272",
@@ -3422,9 +3713,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Attention",
-      "Erratic Noise"
+      "2D",
+      "3D",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3386590",
@@ -3445,9 +3738,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
+      "Adversarial",
       "GAN",
+      "Random Noise Suppression",
+      "Time-Frequency",
       "Wavelet"
     ],
     "arxiv_url": null,
@@ -3469,8 +3763,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Diffusion"
+      "Diffusion",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3612877",
@@ -3491,7 +3787,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3571390",
@@ -3512,9 +3811,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Wavelet",
-      "Microseismic"
+      "Multi-scale",
+      "Random Noise Suppression",
+      "Time-Frequency",
+      "Transformer",
+      "Wavelet"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3592196",
@@ -3535,7 +3836,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "3D",
+      "Deep Learning",
+      "POCS",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3548275",
@@ -3556,7 +3862,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "Pre-trained",
+      "Random Noise Suppression",
       "Transformer"
     ],
     "arxiv_url": null,
@@ -3578,9 +3885,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "DDPM",
       "Diffusion",
-      "DAS"
+      "F-K Filter",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Zero-Shot"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3574981",
@@ -3601,7 +3911,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "DAS"
+      "Deep Learning",
+      "Noise2Noise",
+      "Random Noise Suppression",
+      "Self-Supervised",
+      "Zero-Shot"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3590990",
@@ -3622,9 +3936,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Attention",
-      "Erratic Noise"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3197929",
@@ -3645,9 +3957,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "CNN",
-      "Residual Learning"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3054071",
@@ -3668,8 +3979,10 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "BM3D",
+      "CNN",
       "Deep Learning",
-      "CNN"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3073001",
@@ -3690,9 +4003,14 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "CNN",
-      "Attention"
+      "DnCNN",
+      "Field Data",
+      "Random Noise Suppression",
+      "Sparse",
+      "Synthetic Data",
+      "Transformer",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.11720/wtyht.2024.1380",
@@ -3713,7 +4031,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Blind-Spot",
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "U-Net",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3179718",
@@ -3734,7 +4057,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3057857",
@@ -3755,10 +4079,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
       "CNN",
-      "DAS"
+      "Deep Learning",
+      "Random Noise Suppression",
+      "SSA",
+      "SVD"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3071189",
@@ -3779,11 +4104,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
       "CNN",
-      "Low-Rank",
-      "Desert Seismic"
+      "DnCNN",
+      "Low-rank",
+      "Random Noise Suppression",
+      "Sparse"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3055506",
@@ -3804,8 +4129,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "Field Data",
+      "Random Noise Suppression",
+      "Synthetic Data"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3132566",
@@ -3826,7 +4153,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3194635",
@@ -3847,9 +4174,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
       "Dictionary Learning",
-      "Erratic Noise"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3160434",
@@ -3870,9 +4197,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
-      "CNN"
+      "CNN",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Supervised",
+      "Time-Frequency"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3181239",
@@ -3893,7 +4222,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3052898",
@@ -3914,7 +4243,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3168446",
@@ -3935,7 +4266,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Autoencoder",
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3226404",
@@ -3956,8 +4291,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Diffusion"
+      "Diffusion",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3086317",
@@ -3978,9 +4313,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Attention",
-      "DAS"
+      "Multi-scale",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3142805",
@@ -4002,7 +4336,7 @@
     ],
     "tags": [
       "Deep Learning",
-      "Traditional"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3197287",
@@ -4023,8 +4357,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3123509",
@@ -4045,8 +4380,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Residual Learning"
+      "Multi-scale",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3217887",
@@ -4068,7 +4403,8 @@
     ],
     "tags": [
       "Deep Learning",
-      "Attention"
+      "Multi-scale",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3178212",
@@ -4089,7 +4425,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3217289",
@@ -4110,8 +4447,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3166029",
@@ -4132,7 +4469,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3175535",
@@ -4153,8 +4491,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "Multi-scale",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3095922",
@@ -4175,7 +4515,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
+      "Random Noise Suppression",
+      "Sparse",
       "Sparse Representation"
     ],
     "arxiv_url": null,
@@ -4197,8 +4538,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Attention"
+      "3D",
+      "Deep Image Prior",
+      "DenseNet",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3108515",
@@ -4219,8 +4563,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3225923",
@@ -4241,7 +4588,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3210217",
@@ -4262,7 +4610,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "BERT",
+      "Deep Learning",
+      "Pre-trained",
+      "Random Noise Suppression"
     ],
     "arxiv_url": "https://arxiv.org/abs/2205.00222",
     "doi": "https://doi.org/10.1109/TGRS.2022.3216660",
@@ -4283,8 +4634,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression",
+      "Synthetic Data"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3107541",
@@ -4305,8 +4657,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Autoencoder"
+      "Autoencoder",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3100455",
@@ -4327,7 +4681,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Random Noise Suppression",
+      "Time-Frequency",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3209932",
@@ -4348,10 +4705,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN",
       "Autoencoder",
-      "Erratic Noise"
+      "Random Noise",
+      "Random Noise Suppression",
+      "Total Variation",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3158389",
@@ -4372,7 +4730,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Adversarial",
+      "GAN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2020.3021492",
@@ -4393,7 +4753,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Microseismic"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2020.3032664",
@@ -4414,9 +4774,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "CNN",
-      "Residual Learning"
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3053399",
@@ -4437,9 +4798,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "Adversarial",
       "GAN",
-      "Desert Seismic"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2020.3011130",
@@ -4460,8 +4821,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Low-Rank"
+      "Low-rank",
+      "Random Noise Suppression",
+      "SVD"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2020.2990744",
@@ -4482,9 +4844,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "CNN",
-      "Desert Seismic"
+      "Multi-scale",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2019.2939606",
@@ -4505,8 +4867,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Desert Seismic"
+      "CNN",
+      "Low-rank",
+      "PCA",
+      "Random Noise Suppression",
+      "Sparse",
+      "Synthetic Data"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2020.2966054",
@@ -4527,8 +4893,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "3D",
+      "CNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2019.2933508",
@@ -4549,7 +4916,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Marine",
+      "Random Noise Suppression",
+      "SVD"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2019.2891835",
@@ -4570,8 +4939,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Sparse Representation"
+      "Dictionary Learning",
+      "Random Noise Suppression",
+      "Sparse",
+      "Sparse Representation",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2019.2928715",
@@ -4592,7 +4964,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Random Noise Suppression",
+      "Sparse",
+      "Sparse Representation",
+      "Time-Frequency"
     ],
     "arxiv_url": "https://arxiv.org/abs/1811.02695",
     "doi": "https://doi.org/10.1109/TGRS.2019.2926772",
@@ -4613,8 +4988,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2018.2870087",
@@ -4635,9 +5010,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "U-Net",
-      "CNN"
+      "Random Noise",
+      "Random Noise Suppression",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.3969/j.issn.1000-1441.2020.01.006",
@@ -4658,9 +5033,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "CNN",
-      "Attention"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.3969/j.issn.1000-1441.2021.05.006",
@@ -4681,8 +5056,11 @@
       "random_noise_suppression"
     ],
     "tags": [
+      "CNN",
       "Deep Learning",
-      "CNN"
+      "Random Noise Suppression",
+      "Time-Frequency",
+      "Wavelet"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.62.03.002",
@@ -4703,8 +5081,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
+      "2D",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Time-Frequency",
       "U-Net",
       "Wavelet"
     ],
@@ -4727,8 +5107,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "Dictionary Learning",
+      "DnCNN",
+      "Multi-scale",
+      "Random Noise",
+      "Random Noise Suppression",
+      "SVD",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.62.04.008",
@@ -4749,9 +5134,12 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Transformer",
-      "GAN"
+      "Adversarial",
+      "CNN",
+      "GAN",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Transformer"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.63.01.010",
@@ -4772,8 +5160,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "Field Data",
+      "Multi-scale",
+      "Random Noise Suppression",
+      "Synthetic Data",
+      "Transfer Learning"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.63.01.007",
@@ -4794,8 +5185,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "GAN"
+      "GAN",
+      "Random Noise",
+      "Random Noise Suppression",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.63.01.009",
@@ -4816,8 +5209,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "GAN"
+      "GAN",
+      "Multi-scale",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.0071",
@@ -4838,7 +5233,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "3D",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.0353",
@@ -4859,7 +5257,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Microseismic"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.0439",
@@ -4880,8 +5278,13 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "FCN",
+      "Ground Roll",
+      "Random Noise Suppression",
+      "Time-Frequency",
+      "U-Net",
+      "Wavelet"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.0365",
@@ -4902,7 +5305,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "CNN",
+      "Deep Image Prior",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2023R0483",
@@ -4923,7 +5329,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "DNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2025S0616",
@@ -4944,8 +5351,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Microseismic"
+      "Kalman Filter",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2025S0663",
@@ -4966,7 +5374,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Learning",
+      "Optimization",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2025S0742",
@@ -4987,8 +5399,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "CNN",
+      "Data Augmentation",
+      "Random Noise Suppression",
+      "Synthetic Data"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2019M0385",
@@ -5009,8 +5423,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2019M0373",
@@ -5031,8 +5445,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning",
+      "Random Noise Suppression",
+      "Sparse",
       "Sparse Representation"
     ],
     "arxiv_url": null,
@@ -5054,7 +5468,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2021P0045",
@@ -5075,7 +5490,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Multi-scale",
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2022P0613",
@@ -5096,10 +5513,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "GAN",
-      "CNN",
-      "Desert Seismic"
+      "Adversarial",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2022P0279",
@@ -5120,7 +5535,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Random Noise",
+      "Random Noise Suppression",
+      "Time-Frequency"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.6038/cjg2022P0866",
@@ -5141,9 +5558,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN",
-      "Desert Seismic"
+      "DnCNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2018.2885506",
@@ -5164,9 +5580,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "CNN",
-      "Residual Learning"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2019.2928974",
@@ -5187,9 +5603,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Residual Learning",
-      "Desert Seismic"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2019.2925062",
@@ -5210,8 +5624,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2019.2947227",
@@ -5232,9 +5646,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "CNN",
-      "Desert Seismic"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2020.2981965",
@@ -5255,7 +5668,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "CNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2020.2989450",
@@ -5276,8 +5690,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2020.3007819",
@@ -5298,9 +5711,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
       "GAN",
-      "Desert Seismic"
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2020.3011130",
@@ -5321,9 +5734,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "CNN",
-      "Autoencoder"
+      "Autoencoder",
+      "Inception",
+      "Random Noise Suppression",
+      "Reconstruction"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2021.3073560",
@@ -5344,7 +5758,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "CNN",
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2020.3019400",
@@ -5365,7 +5783,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "Deep Image Prior",
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2021.3057631",
@@ -5386,8 +5808,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Desert Seismic"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2020.3044036",
@@ -5408,7 +5829,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Autoencoder",
+      "Random Noise Suppression",
+      "Reconstruction",
+      "Self-Supervised",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2021.3068132",
@@ -5429,10 +5854,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "Adversarial",
       "GAN",
-      "Attention",
-      "Desert Seismic"
+      "Random Noise Suppression",
+      "Semi-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2021.3076594",
@@ -5453,7 +5878,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning"
+      "CNN",
+      "Deep Learning",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -5474,7 +5903,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Noise2Noise",
+      "Random Noise Suppression",
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2023.3285951",
@@ -5495,7 +5926,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Random Noise",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2023.3324755",
@@ -5516,9 +5948,7 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Residual Learning",
-      "DAS"
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2022.3229556",
@@ -5539,9 +5969,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Attention",
-      "DAS"
+      "CNN",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.7506405",
@@ -5562,9 +5991,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Transformer",
-      "GAN"
+      "GAN",
+      "Multi-scale",
+      "Random Noise Suppression",
+      "Transformer"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.7508205",
@@ -5585,9 +6015,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Transformer",
-      "Swell Noise"
+      "Random Noise Suppression",
+      "Sparse",
+      "Transformer"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.7501805",
@@ -5608,8 +6038,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Residual Learning"
+      "Multi-scale",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -5630,7 +6060,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "Random Noise Suppression",
+      "Swin Transformer",
       "Transformer"
     ],
     "arxiv_url": null,
@@ -5652,7 +6083,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional"
+      "Deep Image Prior",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2025.3560978",
@@ -5673,9 +6105,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
       "Dictionary Learning",
-      "Erratic Noise"
+      "Random Noise Suppression",
+      "SVD"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2025.3580580",
@@ -5696,12 +6128,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Traditional",
+      "Marine",
+      "Random Noise Suppression",
+      "Time-Frequency",
       "U-Net",
-      "Wavelet",
-      "Attention",
-      "Swell Noise"
+      "Wavelet"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -5722,8 +6153,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "Ground Roll"
+      "Ground Roll",
+      "Random Noise",
+      "Random Noise Suppression",
+      "Time-Frequency"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -5744,9 +6177,11 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
+      "3D",
       "Dictionary Learning",
-      "Low-Rank"
+      "Low-rank",
+      "Random Noise Suppression",
+      "Tensor Decomposition"
     ],
     "arxiv_url": null,
     "doi": null,
@@ -5767,7 +6202,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Erratic Noise"
+      "Fourier",
+      "INR",
+      "Random Noise Suppression",
+      "Unsupervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2025.3580648",
@@ -5788,7 +6226,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
+      "Random Noise Suppression",
+      "Transformer",
       "U-Net"
     ],
     "arxiv_url": null,
@@ -5810,8 +6249,8 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Traditional",
-      "Dictionary Learning"
+      "Dictionary Learning",
+      "Random Noise Suppression"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.petsci.2023.02.023",
@@ -5832,8 +6271,9 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Deep Learning",
-      "DAS"
+      "EMD",
+      "Random Noise Suppression",
+      "U-Net"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.petsci.2025.03.006",
