@@ -1029,30 +1029,6 @@
     "citation_count": 0
   },
   {
-    "id": "liu-ovt-3dcnn-2022",
-    "title": "Accelerating seismic scattered noise attenuation in offset-vector tile domain: Application of deep learning",
-    "authors": "Liu, D., Wang, X., Yang, X., Mao, H., Sacchi, M. D., Chen, W.",
-    "org": "Xi’an Jiaotong University, Xinjiang Oilfield, University of Alberta",
-    "venue": "Geophysics",
-    "year": 2022,
-    "abstract": "Proposes OVT-domain + 3D CNN for fast seismic scattered noise attenuation; uses direct signal learning (no residual), 3D CWT for high-quality labels, mid-offset OVT training; achieves 10× speedup vs 3D CWT, better denoising & generalization",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "tags": [
-      "3D",
-      "CNN",
-      "Coherent Noise Suppression",
-      "Deep Learning"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1190/GEO2021-0654.1",
-    "code_url": null,
-    "introduces_model": "ovt-3dcnn-2022",
-    "is_sota": false,
-    "citation_count": 0
-  },
-  {
     "id": "gong-cae-2022",
     "title": "A deep learning approach to separating scattered direct waves from reflection seismic records on rugged surface: Synthetic data examples",
     "authors": "Gong, R., Wang, Y., Geng, J.",
@@ -1126,33 +1102,7 @@
     "is_sota": false,
     "citation_count": 0
   },
-  {
-    "id": "zhao-degans-2022",
-    "title": "Unsupervised dual learning for seismic data denoising in the absence of labelled data",
-    "authors": "Zhao, Y. X., Li, Y., Wu, N.",
-    "org": "Jilin University",
-    "venue": "Geophysical Prospecting",
-    "year": 2022,
-    "abstract": "Proposes unsupervised DeGANs based on CycleGAN for seismic denoising without labeled data; trained on unpaired real noisy and synthetic clean data, suppresses random noise and ground roll thoroughly with almost no false signals",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "tags": [
-      "Coherent Noise Suppression",
-      "CycleGAN",
-      "GAN",
-      "Ground Roll",
-      "Random Noise",
-      "Synthetic Data",
-      "Unsupervised"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1111/1365-2478.13157",
-    "code_url": null,
-    "introduces_model": "degans-2022",
-    "is_sota": false,
-    "citation_count": 0
-  },
+
   {
     "id": "xing-st-cnn-2024",
     "title": "Ground roll intelligent suppression based on spatial domain synchrosqueezing wavelet transform convolutional neural network",
@@ -1566,29 +1516,6 @@
     "is_sota": false
   },
   {
-    "id": "Xu-fault-2023",
-    "title": "Fault-fracture reservoir identification method based on a superresolution generative adversarial network and reconstructed superresolution seismic signals",
-    "authors": "Tianji Xu, Zhengye Qin, Feng Bo, Ling Ling, Hao Xu, Shengwei Wei",
-    "org": "",
-    "venue": "Geophysics",
-    "year": 2023,
-    "abstract": "The paper presents a novel method for fault-fracture reservoir identification using superresolution generative adversarial networks (SRGAN). The method utilizes a superresolution generative adversarial network to enhance seismic data resolution, reconstructs superresolution seismic signals to better capture fine-scale fracture features, and applies the enhanced seismic data for improved fault-fracture reservoir identification.",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "tags": [
-      "Adversarial",
-      "GAN",
-      "Random Noise Suppression"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1190/geo2022-0306.1",
-    "code_url": null,
-    "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
-  },
-  {
     "id": "Luiken-integrating-2023",
     "title": "Integrating self-supervised denoising in inversion-based seismic deblending",
     "authors": "Nick Luiken, Matteo Ravasi, Claire Birnie",
@@ -1649,7 +1576,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1190/geo2022-0192.1",
+    "doi": "https://doi.org/10.1190/geo2021-0621.1",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -1675,7 +1602,7 @@
       "Unsupervised"
     ],
     "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1190/geo2022-0612.1",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -1843,7 +1770,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1190/geo2021-0460.1",
+    "doi": "https://doi.org/10.1190/geo2021-0590.1",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -2035,7 +1962,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1190/geo2018-0635.1",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -2182,7 +2109,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13217",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -2205,6 +2132,7 @@
       "Deep Learning",
       "GAN",
       "Random Noise Suppression",
+      "Coherent Noise Suppression",
       "Synthetic Data",
       "Unsupervised"
     ],
@@ -2217,7 +2145,7 @@
   },
   {
     "id": "Gao-seismic-2021",
-    "title": "Seismic noise attenuation by signal reconstruction: an unsupervisedmachine learning approach",
+    "title": "Seismic noise attenuation by signal reconstruction: an unsupervised machine learning approach",
     "authors": "Y. Gao, F. Zhao, G. Li, H. Li",
     "org": "",
     "venue": "Geophysical Prospecting",
@@ -2234,7 +2162,7 @@
       "Unsupervised"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1111/1365-2478.13085",
+    "doi": "https://doi.org/10.1111/1365-2478.13070",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -2336,7 +2264,7 @@
   },
   {
     "id": "Dong-self-2023",
-    "title": "SELF-GUIDED ATTENTION DENOISING NETWORK FOR PRE-STACK SEISMIC DATA: FROM COARSE TO FINE",
+    "title": "Self-guided attention denoising network for pre-stack seismic data: From coarse to fine",
     "authors": "Xintong Dong, Jun Lin, Shaoping Lu, Ming Cheng, Hongzhou Wang",
     "org": "",
     "venue": "JSE",
@@ -2410,7 +2338,7 @@
   },
   {
     "id": "Dong-desert-2021",
-    "title": "DESERT SEISMIC DATA DENOISING AND EFFECTIVE SIGNAL RECOVERY BY USING IMPROVED SHEARLET TRANSFORM BASED ON THE DEEP-LEARNING COEFFICIENT SELECTION",
+    "title": "Desert seismic data denoising and effective signal recovery by using improved shearlet transform based on the deep-learning coefficient selection",
     "authors": "Xintong Dong, Yue Li, Baojun Yang",
     "org": "",
     "venue": "JSE",
@@ -2424,7 +2352,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.36922/JSE84",
+    "doi": null,
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -2448,7 +2376,7 @@
       "Sparse Representation"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.36922/JSE134",
+    "doi": null,
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
