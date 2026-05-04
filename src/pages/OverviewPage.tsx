@@ -108,6 +108,7 @@ export default function OverviewPage({ data }: Props) {
               { name: t.overview.teamMember7Name, role: t.overview.teamMember7Role, img: '/seismic-benchmark/team/gaowei.jpg', pos: 'center top' },
               { name: t.overview.teamMember8Name, role: t.overview.teamMember8Role, img: '/seismic-benchmark/team/shengwenzhe.jpg', pos: 'center top' },
               { name: t.overview.teamMember9Name, role: t.overview.teamMember9Role, img: '/seismic-benchmark/team/geyulong.jpg', pos: 'center top' },
+              { name: t.overview.teamMember10Name, role: t.overview.teamMember10Role, img: '/seismic-benchmark/team/chengyuying.jpg', pos: 'center top' },
             ].map((m) => (
               <div key={m.name} className="team-member">
                 <img
