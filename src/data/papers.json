@@ -1053,7 +1053,6 @@
     "is_sota": false,
     "citation_count": 0
   },
-
   {
     "id": "xing-st-cnn-2024",
     "title": "Ground roll intelligent suppression based on spatial domain synchrosqueezing wavelet transform convolutional neural network",
@@ -3847,12 +3846,12 @@
     "is_sota": false
   },
   {
-    "id": "Li-deep-2021",
+    "id": "Li-deep-2022",
     "title": "A Deep Learning Method for Denoising Based on a Fast and Flexible Convolutional Neural Network",
     "authors": "W. Li, H. Liu, J. Wang",
     "org": "",
     "venue": "TGRS",
-    "year": 2021,
+    "year": 2022,
     "abstract": "The paper proposes a fast and flexible convolutional neural network for seismic signal denoising. The method uses a tunable noise level map as input, works on downsampled sub-images for faster inference, handles a wide range of noise levels with a single network, and can remove spatially variant noise. It is faster than benchmark BM3D even on CPU.",
     "tasks": [
       "random_noise_suppression"
@@ -3871,12 +3870,12 @@
     "is_sota": false
   },
   {
-    "id": "Min-method-2024",
+    "id": "Min-method-2022",
     "title": "A Method for Denoising Seismic Signals With a CNN Based on an Attention Mechanism",
     "authors": "Zhang Min, Xu Yi",
     "org": "",
     "venue": "TGRS",
-    "year": 2024,
+    "year": 2022,
     "abstract": "This paper introduces an STCNN (Sparse and Dense Attention CNN) network with a retractable attention mechanism that has both dense and sparse self-attention modules. It alternates between dense self-attention (D-MSA) and sparse self-attention (S-MSA), combining CNN's local modeling with Transformer's global modeling capabilities. It outperforms U-Net and DnCNN in suppressing noise while preserving effective seismic information, significantly improving signal-to-noise ratio on both synthetic and field data.",
     "tasks": [
       "random_noise_suppression"
@@ -3892,7 +3891,7 @@
       "U-Net"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.11720/wtyht.2024.1380",
+    "doi": "https://doi.org/10.1109/TGRS.2022.3215819",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -3919,6 +3918,53 @@
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3179718",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Wang-Deblending-2022",
+    "title": "Deblending of Seismic Data Based on Neural Network Trained in the CSG",
+    "authors": "Kunxi Wang, Tianyue Hu",
+    "org": "",
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "The paper presents an iterative deblending method using a deep neural network trained in the Common Shot Gather (CSG) domain. It uses double-blended simultaneous source data as input and blended CSG data as labels, solving the problem of difficult acquisition of clean label data and making the network applicable to different geological areas without retraining.",
+    "tasks": [
+      "deblending"
+    ],
+    "tags": [
+      "Common shot gather",
+      "Deblending",
+      "Simultaneous source",
+      "DNN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2021.3121806",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Cheng-deblending-2022",
+    "title": "Deblending of Simultaneous-Source Seismic Data Based on Deep Convolutional Neural Network",
+    "authors": "Jingwang Cheng, Chuncheng Liu, Li Zhou, Wei Chen, Hanming Gu",
+    "org": "",
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "The paper proposes a data-driven deep learning method for fast seismic deblending using convolutional neural networks. It sorts blended data from common source to common channel domain to transform blending noise from coherent to incoherent, trained on field seismic data with over 20,000 examples.",
+    "tasks": [
+      "deblending"
+    ],
+    "tags": [
+      "CNN",
+      "Deblending",
+      "Simultaneous source"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3153642",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4014,7 +4060,7 @@
       "Synthetic Data"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2021.3132566",
+    "doi": "https://doi.org/10.1109/TGRS.2020.3042202",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4058,16 +4104,16 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2022.3160434",
+    "doi": "https://doi.org/10.1109/TGRS.2022.3164460",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
     "is_sota": false
   },
   {
-    "id": "Qiu-ground-2022",
+    "id": "Qian-ground-2022",
     "title": "Ground Truth-Free 3-D Seismic Random Noise Attenuation via Deep Tensor Convolutional Neural Networks in the Time-Frequency Domain",
-    "authors": "Feng Qiu, Zhangbo Liu, Yan Wang, Yingjie Zhou, Gulan Hu",
+    "authors": "Feng Qian, Zhangbo Liu, Yan Wang, Yingjie Zhou, Guangmin Hu",
     "org": "",
     "venue": "TGRS",
     "year": 2022,
@@ -4083,28 +4129,7 @@
       "Time-Frequency"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2022.3181239",
-    "code_url": null,
-    "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
-  },
-  {
-    "id": "Tian-improved-2021",
-    "title": "Improved Anomalous Amplitude Attenuation Method Based on Deep Neural Networks",
-    "authors": "Xingyu Tian, Wenkai Lu, Yanda Li",
-    "org": "",
-    "venue": "TGRS",
-    "year": 2021,
-    "abstract": "The paper proposes an Improved Anomalous Amplitude Attenuation method using deep neural networks to estimate optimal parameters for the AAA method, making it adaptive and more effective at suppressing anomalous amplitude noise while better preserving signals.",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "tags": [
-      "Random Noise Suppression"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2021.3052898",
+    "doi": "https://doi.org/10.1109/TGRS.2022.3149545",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4113,7 +4138,7 @@
   {
     "id": "Wang-learning-2022",
     "title": "Learning From Noisy Data An Unsupervised Random Denoising Method for Seismic Data Using Model-Based Deep Learning",
-    "authors": "Feng Wang, Bo Yang, Yang Wang, Meng Wang",
+    "authors": "Feng Wang, Bo Yang, Yuqing Wang, Ming Wang",
     "org": "",
     "venue": "TGRS",
     "year": 2022,
@@ -4127,7 +4152,7 @@
       "Unsupervised"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2022.3168446",
+    "doi": "https://doi.org/10.1109/TGRS.2022.3165037",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4406,12 +4431,12 @@
     "is_sota": false
   },
   {
-    "id": "Saad-self-2021",
+    "id": "Saad-self-2022",
     "title": "Self-Attention Deep Image Prior Network for Unsupervised 3-D Seismic Data Enhancement",
     "authors": "Omar M. Saad, Yapo Abolé Serge Innocent Oboué, Min Bai, Lotfy Samy, Liuqing Yang, Yangkang Chen",
     "org": "",
     "venue": "TGRS",
-    "year": 2021,
+    "year": 2022,
     "abstract": "The paper introduces ADNet combining self-attention mechanisms with deep image prior for unsupervised 3D seismic data enhancement including denoising, interpolation, and reconstruction. The Attention-based DenseNet Architecture uses self-attention to capture long-range dependencies.",
     "tasks": [
       "random_noise_suppression"
@@ -4502,12 +4527,12 @@
     "is_sota": false
   },
   {
-    "id": "Kuruguntla-study-2021",
+    "id": "Kuruguntla-study-2022",
     "title": "Study of Parameters in Dictionary Learning Method for Seismic Denoising",
     "authors": "Lakshmi Kuruguntla, Vineela Chandra Dodda, Karthikeyan Elumalai",
     "org": "",
     "venue": "TGRS",
-    "year": 2021,
+    "year": 2022,
     "abstract": "The paper investigates how various parameters in dictionary learning affect seismic data denoising performance, including patch size, dictionary size, number of training patches, choice of threshold, sparsity level, and computational cost. Evaluations use SNR and MSE on synthetic and field seismic data.",
     "tasks": [
       "random_noise_suppression"
@@ -4598,12 +4623,12 @@
     "is_sota": false
   },
   {
-    "id": "Wang-attribute-2020",
+    "id": "Wang-attribute-2021",
     "title": "Attribute-Based Double Constraint Denoising Network for Seismic Data",
     "authors": "Shengnan Wang, Yue Li, Ning Wu, Yuxing Zhao, Haiyang Yao",
     "org": "",
     "venue": "TGRS",
-    "year": 2020,
+    "year": 2021,
     "abstract": "Att-DCDN uses encoder-decoder architecture with an attribute classifier to form a GAN, attenuating seismic noise by controlling with/without target attributes. It uses double-constraint training with reconstruction/residual losses for signal recovery and attribute classification/adversarial losses for noise attenuation.",
     "tasks": [
       "random_noise_suppression"
@@ -4682,7 +4707,30 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2020.3011130",
+    "doi": "https://doi.org/10.1109/TGRS.2020.3030692",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Wang-generative-2021",
+    "title": "Intelligent Deblending of Seismic Data Based on U-Net and Transfer Learning",
+    "authors": "Benfeng Wang, Jiakuo Li, Jingrui Luo, Yingying Wang, Jianhua Geng",
+    "org": "",
+    "venue": "TGRS",
+    "year": 2021,
+    "abstract": "The paper applies U-Net architecture with transfer learning for seismic data deblending. The network is trained on synthetic data and fine-tuned for field data, effectively separating blended seismic sources.",
+    "tasks": [
+      "deblending"
+    ],
+    "tags": [
+      "Deblending",
+      "U-net",
+      "Transfer Learning"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2020.3048746",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4705,7 +4753,7 @@
       "SVD"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2020.2990744",
+    "doi": "https://doi.org/10.1109/TGRS.2020.2991438",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4714,7 +4762,7 @@
   {
     "id": "Zhao-low-2020",
     "title": "Low-Frequency Desert Noise Intelligent Suppression in Seismic Data Based on Multiscale Geometric Analysis Convolutional Neural Network",
-    "authors": "Yuxing Zhao, Yue Li, Xintong Dong, Baojun Yang",
+    "authors": "Yuxing Zhao, Yue Li, Baojun Yang",
     "org": "",
     "venue": "TGRS",
     "year": 2020,
@@ -4728,7 +4776,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2019.2939606",
+    "doi": "https://doi.org/10.1109/TGRS.2019.2938836",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4777,7 +4825,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2019.2933508",
+    "doi": "https://doi.org/10.1109/TGRS.2019.2947149",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4903,7 +4951,7 @@
   {
     "id": "Cuiqian-基于全局上下文和注意力机制深度-2021",
     "title": "基于全局上下文和注意力机制深度卷积神经网络的地震数据去噪",
-    "authors": "Yang Cuiqian, Zhou Yatong, He Hao",
+    "authors": "Yang Cuiqian, Zhou Yatong, He Hao, Cui Tao, Wang Yang",
     "org": "",
     "venue": "石油物探",
     "year": 2021,
@@ -4924,9 +4972,9 @@
     "is_sota": false
   },
   {
-    "id": "unknown-基于cwt-2023",
+    "id": "Zhao-基于cwt-2023",
     "title": "基于CWT-CNN的地震噪声压制研究",
-    "authors": "",
+    "authors": "Zhao Jinquan, You Jiachun, Wei Junting, Huang Cong",
     "org": "",
     "venue": "石油物探",
     "year": 2023,
