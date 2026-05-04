@@ -2553,10 +2553,10 @@
       "random_noise_suppression"
     ],
     "tags": [
-      "Curvelet",
-      "Fourier",
+      "Diffusion",
+      "Random Noise",
       "Random Noise Suppression",
-      "Reconstruction"
+      "Self-Supervised"
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf045",
@@ -3630,30 +3630,6 @@
     "is_sota": false
   },
   {
-    "id": "Wang-seismic-2025",
-    "title": "3-D Seismic Random Noise Attenuation via Self-Supervised Conditional Diffusion Model",
-    "authors": "Xinyang Wang, Qianyu Ge, Xintong Dong, Shiqi Dong, Tie Zhong",
-    "org": "",
-    "venue": "TGRS",
-    "year": 2025,
-    "abstract": "The paper proposes using a self-supervised conditional diffusion model specifically for random noise attenuation in 3-D seismic data. The method leverages conditional diffusion models to effectively remove random noise while preserving seismic signal characteristics in three-dimensional seismic datasets.",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "tags": [
-      "Diffusion",
-      "Random Noise",
-      "Random Noise Suppression",
-      "Self-Supervised"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2025.3612877",
-    "code_url": null,
-    "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
-  },
-  {
     "id": "Meng-self-2025",
     "title": "A Self-Supervised Method for Attenuating Seismic Random and Tracewise Coherent Noise Under the Nonpixelwise Independence Assumption",
     "authors": "Chuangji Meng, Jinghuai Gao, Wenting Shang, Yajun Tian",
@@ -3847,23 +3823,21 @@
   },
   {
     "id": "Li-deep-2022",
-    "title": "A Deep Learning Method for Denoising Based on a Fast and Flexible Convolutional Neural Network",
-    "authors": "W. Li, H. Liu, J. Wang",
+    "title": "Deep Learning for Simultaneous Seismic Image Super-Resolution and Denoising",
+    "authors": "Jintao Li, Xinming Wu, Zhanxuan Hu",
     "org": "",
     "venue": "TGRS",
     "year": 2022,
-    "abstract": "The paper proposes a fast and flexible convolutional neural network for seismic signal denoising. The method uses a tunable noise level map as input, works on downsampled sub-images for faster inference, handles a wide range of noise levels with a single network, and can remove spatially variant noise. It is faster than benchmark BM3D even on CPU.",
+    "abstract": "The paper addresses enhancing seismic images by simultaneously performing super-resolution and denoising using deep learning. The method handles both tasks jointly, which are typically handled separately in traditional seismic data processing workflows.",
     "tasks": [
       "random_noise_suppression"
     ],
     "tags": [
-      "BM3D",
-      "CNN",
       "Deep Learning",
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2021.3073001",
+    "doi": "https://doi.org/10.1109/TGRS.2021.3057857",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -3965,28 +3939,6 @@
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3153642",
-    "code_url": null,
-    "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
-  },
-  {
-    "id": "Li-deep-2022",
-    "title": "Deep Learning for Simultaneous Seismic Image Super-Resolution and Denoising",
-    "authors": "Jintao Li, Xinming Wu, Zhanxuan Hu",
-    "org": "",
-    "venue": "TGRS",
-    "year": 2022,
-    "abstract": "The paper addresses enhancing seismic images by simultaneously performing super-resolution and denoising using deep learning. The method handles both tasks jointly, which are typically handled separately in traditional seismic data processing workflows.",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "tags": [
-      "Deep Learning",
-      "Random Noise Suppression"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2021.3057857",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -4692,29 +4644,6 @@
   },
   {
     "id": "Wang-generative-2021",
-    "title": "Generative Adversarial Network for Desert Seismic Data Denoising",
-    "authors": "H. Wang, Y. Li, X. Dong",
-    "org": "",
-    "venue": "TGRS",
-    "year": 2021,
-    "abstract": "The paper proposes a Generative Adversarial Network for desert seismic data denoising, handling challenges including strong noise energy and frequency-band overlap between noise and effective signals. The GAN framework learns to generate clean seismic data from noisy inputs.",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "tags": [
-      "Adversarial",
-      "GAN",
-      "Random Noise Suppression"
-    ],
-    "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/TGRS.2020.3030692",
-    "code_url": null,
-    "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
-  },
-  {
-    "id": "Wang-generative-2021",
     "title": "Intelligent Deblending of Seismic Data Based on U-Net and Transfer Learning",
     "authors": "Benfeng Wang, Jiakuo Li, Jingrui Luo, Yingying Wang, Jianhua Geng",
     "org": "",
@@ -5103,7 +5032,7 @@
   {
     "id": "Yankai-生成式对抗神经网络的改进及其在-2024",
     "title": "生成式对抗神经网络的改进及其在地震数据压噪中的应用",
-    "authors": "Xu Yankai, Liu Zengmei, Xue Yaru",
+    "authors": "PENG Hailong,  LI Ming,  SUN Wenzhao,  LI Lie,  ZHOU Fan,  LU Tongxiang,  JIANG Fan",
     "org": "",
     "venue": "石油物探",
     "year": 2024,
@@ -5175,10 +5104,10 @@
   {
     "id": "Lei-优化损失函数的低信噪比微地震信-2023",
     "title": "优化损失函数的低信噪比微地震信号去噪方法",
-    "authors": "Gao Lei, Shen Housen, Min Fan",
+    "authors": "GAO Hongyu, ,  SONG Xueyan,  ZHANG Yiwen,  HAO Fenghua",
     "org": "",
     "venue": "石油物探",
-    "year": 2023,
+    "year": 2025,
     "abstract": "The paper optimizes the loss function for low SNR microseismic signal denoising, improving the network ability to recover weak signals in microseismic data with poor signal-to-noise ratio.",
     "tasks": [
       "random_noise_suppression"
@@ -5272,7 +5201,7 @@
     "authors": "Zhang Yan, Zhang Yongxue, Wei Zixin, Dong Hongli, Han Fei, Zhang Linjun, Wang Jingzhe",
     "org": "",
     "venue": "地球物理学报",
-    "year": 2024,
+    "year": 2026,
     "abstract": "The paper proposes combining multi-trace Kalman filter with RNN neural network operators for unsupervised microseismic denoising, automatically optimizing Kalman parameters via chain-rule gradient differentiation without requiring labeled training data.",
     "tasks": [
       "random_noise_suppression"
@@ -5292,10 +5221,10 @@
   {
     "id": "陈-基于无监督蒙特卡洛深度学习框架-2024",
     "title": "基于无监督蒙特卡洛深度学习框架的向量化地震随机噪声衰减",
-    "authors": "陈桂, 刘洋, 张宓",
+    "authors": "CHEN Gui, , LIU Yang, , , ZHANG Mi",
     "org": "",
     "venue": "地球物理学报",
-    "year": 2024,
+    "year": 2026,
     "abstract": "The paper proposes an unsupervised Monte Carlo deep learning framework with zero-lag cross-correlation regularization for vectorized seismic random noise attenuation, using sliding window technology and Monte Carlo vector selection strategy to accelerate optimization.",
     "tasks": [
       "random_noise_suppression"
@@ -5317,7 +5246,7 @@
   {
     "id": "王-基于数据增广和cnn的地震随机-2019",
     "title": "基于数据增广和CNN的地震随机噪声压制",
-    "authors": "王钰清, 陆文凯, 刘金林",
+    "authors": "WANG YuQing, LU WenKai, LIU JinLin, ZHANG Meng, MIAO YongKang",
     "org": "",
     "venue": "地球物理学报",
     "year": 2019,
@@ -5341,7 +5270,7 @@
   {
     "id": "李-模型约束下的在线字典学习地震弱-2019",
     "title": "模型约束下的在线字典学习地震弱信号去噪方法",
-    "authors": "李勇, 张益明, 雷钦, 牛聪, 周钰邦, 叶云飞",
+    "authors": "LI Yong, ZHANG YiMing, LEI Qin, NIU Cong, ZHOU YuBang, YE YunFei",
     "org": "",
     "venue": "地球物理学报",
     "year": 2019,
@@ -5363,7 +5292,7 @@
   {
     "id": "张-双稀疏字典和fista的地震数-2019",
     "title": "双稀疏字典和FISTA的地震数据去噪",
-    "authors": "张良, 韩立国, 方金伟, 张盼, 刘争光",
+    "authors": "ZHANG Liang, , HAN LiGuo, , FANG JinWei, ZHANG Pan, LIU ZhengGuang",
     "org": "",
     "venue": "地球物理学报",
     "year": 2019,
@@ -5386,7 +5315,7 @@
   {
     "id": "刘-地震随机噪声压缩感知迭代压制方-2021",
     "title": "地震随机噪声压缩感知迭代压制方法",
-    "authors": "刘璐, 刘洋, 刘财, 郑植升",
+    "authors": "LIU Lu, LIU Yang, LIU Cai, ZHENG ZhiSheng",
     "org": "",
     "venue": "地球物理学报",
     "year": 2021,
@@ -5408,7 +5337,7 @@
   {
     "id": "钟-基于dmff-2022",
     "title": "基于DMFF-Net的地震随机噪声压制新技术",
-    "authors": "钟铁, 陈云, 卢绍平, 董新桐, 李月, 杨宝俊",
+    "authors": "ZHONG Tie, CHEN Yun, LU ShaoPing, DONG XinTong, LI Yue, YANG BaoJun",
     "org": "",
     "venue": "地球物理学报",
     "year": 2022,
@@ -5431,7 +5360,7 @@
   {
     "id": "董-基于卷积对抗降噪网络的塔里木盆-2022",
     "title": "基于卷积对抗降噪网络的塔里木盆地沙漠地震资料消噪方法研究",
-    "authors": "董新桐, 钟铁, 王洪洲",
+    "authors": "DONG XinTong, ZHONG Tie, WANG HongZhou, WU Ning, LI Yue, YANG BaoJun",
     "org": "",
     "venue": "地球物理学报",
     "year": 2022,
@@ -5453,7 +5382,7 @@
   {
     "id": "邵-基于时频分析与分数阶最优控制网-2023",
     "title": "基于时频分析与分数阶最优控制网络的地震数据噪声压制",
-    "authors": "邵丹, 李桐林, 韩立国",
+    "authors": "SHAO Dan, LI TongLin, HAN LiGuo, LI Yue, WU Ning",
     "org": "",
     "venue": "地球物理学报",
     "year": 2023,
@@ -5489,7 +5418,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2018.2885506",
+    "doi": "https://doi.org/10.1109/LGRS.2018.2882058",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5512,7 +5441,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2019.2928974",
+    "doi": "https://doi.org/10.1109/LGRS.2019.2895702",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5521,7 +5450,7 @@
   {
     "id": "Ma-deep-2020",
     "title": "Deep Residual Encoder–Decoder Networks for Desert Seismic Noise Suppression",
-    "authors": "H. Ma, Y. Li, X. Dong, H. Lin",
+    "authors": "Ma, Haitao and Yao, Haiyang and Li, Yue and Wang, Hongzhou",
     "org": "",
     "venue": "GRSL",
     "year": 2020,
@@ -5555,7 +5484,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2019.2947227",
+    "doi": "https://doi.org/10.1109/LGRS.2019.2941025",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5564,7 +5493,7 @@
   {
     "id": "Lin-branch-2021",
     "title": "A Branch Construction-Based CNN Denoiser for Desert Seismic Data",
-    "authors": "Hongbo Lin, Hui Yao, Hao Ma, Yue Li",
+    "authors": "Lin, Hongbo and Wang, Shifu and Li, Yue",
     "org": "",
     "venue": "GRSL",
     "year": 2021,
@@ -5586,7 +5515,7 @@
   {
     "id": "Dong-deep-2021",
     "title": "A Deep-Learning-Based Denoising Method for Multiarea Surface Seismic Data",
-    "authors": "Xintong Dong, Yue Li, Tie Zhong, Baojun Yang",
+    "authors": "Dong, Xintong and Zhong, Tie and Li, Yue",
     "org": "",
     "venue": "GRSL",
     "year": 2021,
@@ -5608,10 +5537,10 @@
   {
     "id": "Sang-dcnns-2020",
     "title": "DCNNs-Based Denoising With a Novel Data Generation for Multidimensional Geological Structures Learning",
-    "authors": "W. Sang, Y. Li, Y. Zhang, S. Wang",
+    "authors": "Sang, Wenjing and Yuan, Sanyi and Yong, Xueshan and Jiao, Xinqi and Wang, Shangxu",
     "org": "",
     "venue": "GRSL",
-    "year": 2020,
+    "year": 2021,
     "abstract": "The paper proposes DCNNs-based denoising with novel data generation for multidimensional geological structures learning, generating training data that captures complex geological structures for better denoising generalization.",
     "tasks": [
       "random_noise_suppression"
@@ -5629,7 +5558,7 @@
   {
     "id": "Li-denoising-2021",
     "title": "The Denoising of Desert Seismic Data Based on Cycle-GAN With Unpaired Data Training",
-    "authors": "Yue Li, Xintong Dong, Tie Zhong",
+    "authors": "Li, Yue and Wang, Hongzhou and Dong, Xintong",
     "org": "",
     "venue": "GRSL",
     "year": 2021,
@@ -5676,7 +5605,7 @@
   {
     "id": "Liu-unsupervised-2022",
     "title": "An Unsupervised Deep Learning Method for Denoising Prestack Random Noise",
-    "authors": "D. Liu, Z. Deng, C. Wang, X. Wang, W. Chen",
+    "authors": "Liu, Bin and Yue, Jinghang and Zuo, Zhiwu and Xu, Xinji and Fu, Chao and Yang, Senlin and Jiang, Peng",
     "org": "",
     "venue": "GRSL",
     "year": 2022,
@@ -5692,7 +5621,7 @@
       "Unsupervised"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2020.3019400",
+    "doi": "https://doi.org/10.1109/LGRS.2021.3057631",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5717,7 +5646,7 @@
       "Unsupervised"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2021.3057631",
+    "doi": "https://doi.org/10.1109/LGRS.2021.3053760",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5729,7 +5658,7 @@
     "authors": "H. Yao, H. Ma, Y. Li, Q. Feng",
     "org": "",
     "venue": "GRSL",
-    "year": 2021,
+    "year": 2022,
     "abstract": "The paper proposes DnResNeXt network for desert seismic data denoising, using ResNeXt-based architecture with residual learning to predict and subtract desert noise, outperforming traditional methods in field experiments.",
     "tasks": [
       "random_noise_suppression"
@@ -5750,7 +5679,7 @@
     "authors": "Fanlei Meng, QinYin Fan, Yue Li",
     "org": "",
     "venue": "GRSL",
-    "year": 2021,
+    "year": 2022,
     "abstract": "The paper proposes a self-supervised learning approach for seismic data reconstruction and blind denoising requiring no labeled training data, using a masking procedure and modified UNet with two-level nested autoencoder structure.",
     "tasks": [
       "random_noise_suppression"
@@ -5787,32 +5716,7 @@
       "Semi-Supervised"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2021.3076594",
-    "code_url": null,
-    "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
-  },
-  {
-    "id": "Liu-unsupervised-2022",
-    "title": "Unsupervised Deep Learning for Random Noise Attenuation of Seismic Data",
-    "authors": "B. Liu, J. Yue, Z. Zuo, X. Xu, C. Fu, S. Yang, P. Jiang",
-    "org": "",
-    "venue": "GRSL",
-    "year": 2022,
-    "abstract": "The paper proposes unsupervised deep learning for random noise attenuation of seismic data using deep convolutional neural network without requiring clean labels, employing normalization and patch sampling techniques.",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "tags": [
-      "CNN",
-      "Deep Learning",
-      "Random Noise",
-      "Random Noise Suppression",
-      "Unsupervised"
-    ],
-    "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1109/LGRS.2021.3073419",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5887,7 +5791,7 @@
   {
     "id": "Li-das-2024",
     "title": "DAS Noise Suppression Network Based on Distributing-Local-Attention Expansion",
-    "authors": "Juan Li, Pan Xiong, Yue Li, Qiankun Feng",
+    "authors": "Li, Juan and Xiong, Pan and Li, Yue and Feng, Qiankun",
     "org": "",
     "venue": "GRSL",
     "year": 2024,
@@ -5900,7 +5804,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2024.7506405",
+    "doi": "https://doi.org/10.1109/LGRS.2024.3433006",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5909,7 +5813,7 @@
   {
     "id": "Zhang-enhancing-2024",
     "title": "Enhancing Seismic Data Denoising Through Multiscale Analysis Across Transformer and GAN",
-    "authors": "Jia Zhang, Wei Wang, Kai Li, Hongfei Wang, Zhi Wei",
+    "authors": "Zhang, Junsan and Wang, Wenxue and Li, Kun and Wang, Haoge and Wei, Zhoutuo",
     "org": "",
     "venue": "GRSL",
     "year": 2024,
@@ -5924,7 +5828,7 @@
       "Transformer"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2024.7508205",
+    "doi": "https://doi.org/10.1109/LGRS.2024.3464237",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5933,7 +5837,7 @@
   {
     "id": "Wang-transnet-2024",
     "title": "ME-TransNet: A Modal-Enhanced Transformer Denoising Network for Attenuating Low-Frequency Swell Noise",
-    "authors": "Shengnan Wang, Shaoping Lu, Kai Ren",
+    "authors": "Wang, Shengnan and Lu, Shaoping and Ren, Kai",
     "org": "",
     "venue": "GRSL",
     "year": 2024,
@@ -5947,7 +5851,7 @@
       "Transformer"
     ],
     "arxiv_url": null,
-    "doi": "https://doi.org/10.1109/LGRS.2024.7501805",
+    "doi": "https://doi.org/10.1109/LGRS.2024.3358746",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -5956,7 +5860,7 @@
   {
     "id": "Gao-multiscale-2024",
     "title": "Multiscale Residual Convolution Neural Network for Seismic Data Denoising",
-    "authors": "Z. Gao, H. Chen, Z. Li, B. Ma",
+    "authors": "Gao, Zhimin and Chen, Honglong and Li, Zhe and Ma, Bolun",
     "org": "",
     "venue": "GRSL",
     "year": 2024,
@@ -5969,7 +5873,7 @@
       "Random Noise Suppression"
     ],
     "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1109/LGRS.2024.3374810",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -6023,7 +5927,7 @@
   {
     "id": "Tejaswi-double-2025",
     "title": "Double Dictionary Learning for Seismic Random and Erratic Noise Attenuation",
-    "authors": "Dokku Tejaswi, Sunil Chinnadurai, Karthikeyan Elumalai",
+    "authors": "Shekhar, Nakka and Tejaswi, Dokku and Chinnadurai, Sunil and Elumalai, Karthikeyan",
     "org": "",
     "venue": "GRSL",
     "year": 2025,
@@ -6046,7 +5950,7 @@
   {
     "id": "Tan-seismic-2025",
     "title": "Seismic Swell Noise Suppression Using a Wavelet-Transform-Integrated Attention U-Net",
-    "authors": "Zhoujie Tan, Gang Yao, Sanyi Yuan, Feng Zhang, Di Wu",
+    "authors": "Tan, Zhoujie and Yao, Gang and Yuan, Sanyi and Zhang, Feng and Wu, Di",
     "org": "",
     "venue": "GRSL",
     "year": 2025,
@@ -6062,7 +5966,7 @@
       "Wavelet"
     ],
     "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1109/LGRS.2025.3623895",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -6071,7 +5975,7 @@
   {
     "id": "Zuo-simultaneous-2025",
     "title": "Simultaneous Suppression of Random Noise and Ground Roll With a Fuzzy Logic-Guided Deep Network",
-    "authors": "Xuebin Zuo, Jitao Ma, Zhen Liao, Xiaohong Chen",
+    "authors": "Zuo, Xuebin and Ma, Jitao and Liao, Zhen and Chen, Xiaohong",
     "org": "",
     "venue": "GRSL",
     "year": 2025,
@@ -6086,7 +5990,7 @@
       "Time-Frequency"
     ],
     "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1109/LGRS.2025.3624295",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -6095,7 +5999,7 @@
   {
     "id": "Liu-tensor-2025",
     "title": "Tensor Decomposition Dictionary Learning With Low-Rank Regularization for Seismic Data Denoising",
-    "authors": "Lina Liu, Zhao Liu",
+    "authors": "Liu, Lina and Liu, Zhao",
     "org": "",
     "venue": "GRSL",
     "year": 2025,
@@ -6111,7 +6015,7 @@
       "Tensor Decomposition"
     ],
     "arxiv_url": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1109/LGRS.2025.3529463",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
@@ -6204,6 +6108,163 @@
     ],
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.petsci.2025.03.006",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Lin-self-Supervised-2023",
+    "title": "A Self-Supervised Denoising Method Based on Deep Noise Estimation",
+    "authors": "Lin, Hongbo and Sun, Fuyao",
+    "org": "",
+    "venue": "GRSL",
+    "year": 2023,
+    "abstract": "Seismic random noise attenuation is an essential procedure when processing seismic data. Due to various acquisition environments and complex geological conditions, random noise in seismic field data exhibits spatiotemporal levels, significantly increasing the difficulty of extracting seismic signals. The deep learning (DL) methods have shown excellent performances for seismic denoising. However, most existing discriminative DL methods cannot fit field data with noise levels and signal structures that differ from the training set. To tackle the unmatching challenge, we propose a self-supervised deep denoising model named noise estimation-based convolution neural network (NE-CNN), which contains a multiscale denoising module as a pretrained model and a dual-path noise estimation module that estimates the noise level of each data patch with a generalized Gaussian distribution and gray-level co-occurrence matrix (GLCM). With Stein’s unbiased risk estimate (SURE), we can fine-tune the pretrained denoising module according to the estimated noise levels in a self-supervised style solely on data to be processed, leading to a boost of robustness to nonstationary seismic noise. In synthetic and field data tests, NE-CNN performed satisfactorily compared with discriminative DL methods in denoising effects on seismic data with nonstationary noise.",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "tags": [
+      "Noise reduction",
+      "Convolution",
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2023.3239049",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Zhong-rmchn-2023",
+    "title": "RMCHN: A Residual Modular Cascaded Heterogeneous Network for Noise Suppression in DAS-VSP Records",
+    "authors": "Tie Zhong, Weiyu Wang, Shaoping Lu, Xintong Dong, Baojun Yang",
+    "org": "",
+    "venue": "GRSL",
+    "year": 2023,
+    "abstract": "The paper proposes RMCHN, a residual modular cascaded heterogeneous network for noise suppression in DAS-VSP records, using heterogeneous convolution and long-short path feature learning strategy.",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "tags": [
+      "Random Noise Suppression"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2022.3229556",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Feng-Complex-2025",
+    "title": "Complex Noise Suppression Using a Robust Dictionary Learning Approach",
+    "authors": "Feng, Zhenjie",
+    "org": "",
+    "venue": "GRSL",
+    "year": 2025,
+    "abstract": "Seismic data comprise reflection signals and various types of noise, including random high-frequency ambient noise, high-amplitude noise, and low-frequency ground-roll noise. Noise removal while protecting useful signals has been the long-term research focus of seismic exploration and data processing. Seldom methods can be used to deal with all these types of noise simultaneously, which motivates the study of this research. Here, we propose a systematic and effective method to tackle various kinds of complex seismic noise in seismic data by designing a dictionary learning approach. To deal with random and high-amplitude noise, we propose a robust inversion framework to estimate the signals from noise-corrupted data iteratively. The inversion scheme is inspired by an L1 -norm regularized iterative denoising framework but performs conveniently in terms of the coherency-promoting denoising operator. Then, we propose a bandpass-limited signal retrieving scheme internally within the iterative framework to tackle the ground-roll suppression issue. The iterative robust dictionary learning approach is based on a singular-value decomposition (SVD)-free approach to improve the efficiency without sacrificing the denoising performance. Results from synthetic and real data examples show promising performance of the proposed method.",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "tags": [
+      "Noise reduction",
+      "Dictionary Learning"
+    ],
+    "arxiv_url": null,
+    "doi": "10.1109/LGRS.2024.3514077",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Li-Robust-Seismic-2026",
+    "title": "Robust Seismic Denoising Framework: A GAN-Based Approach With Multiscale Feature Fusion and Signal Preservation",
+    "authors": "Li, Kun and Yuan, Jin and Ge, Wei and Yin, Xingyao and Zong, Zhaoyun",
+    "org": "",
+    "venue": "GRSL",
+    "year": 2026,
+    "abstract": "Seismic data acquisition is often affected by complex field conditions and equipment precision limitations, leading to the generation of multiple types of noise that reduce the accuracy of reservoir inversion and geological interpretation. Deep learning techniques have begun to be applied in seismic data denoising due to their efficient feature learning capabilities. However, the complex characteristics of seismic noise pose challenges for conventional convolutional neural networks in learning diverse noise features and achieving effective feature fusion. We propose a novel seismic data denoising methodology based on generative adversarial networks (SD-GAN). The established denoising framework achieves noise distribution prediction through adversarial learning while integrating a deep residual convolutional network (DnCNN) with attention mechanisms to precisely learn diverse noise distributions and enable feature fusion. The DnCNN incorporates deformable convolutions that dynamically adjust convolution kernel shapes to adapt to different seismic signal characteristics, enhancing the network’s modeling capability for complex geological structures. To ensure effective frequency-domain denoising performance, an adaptive frequency-domain loss term is introduced in the loss function to maximize the preservation of seismic signal characteristics. Validation through synthetic seismic data experiments and real seismic data applications demonstrates that this method exhibits excellent robustness and feasibility across various denoising scenarios.",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "tags": [
+      "Noise reduction",
+      "Convolution",
+      "Generative adversarial networks"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2026.3676613",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Qi-seismic-2026",
+    "title": "Seismic Denoising via Multiround SCU-Net",
+    "authors": "Yuli Qi, Guoxin Chen, Jinxin Chen, Jun Li, Rongsen Du, Haiyang Lu, Naijian Wang, Xingguo Huang",
+    "org": "",
+    "venue": "GRSL",
+    "year": 2026,
+    "abstract": "The paper proposes seismic denoising via multiround SCU-Net, using iterative residual-based training with Swin-Transformer Convolution U-Net and SSIM loss for progressive noise suppression while preserving signals.",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "tags": [
+      "Random Noise Suppression",
+      "Transformer",
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2025.3640968",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Ke-a-hybrid-2024",
+    "title": "A hybrid WUDT-NAFnet for simultaneous source data deblending",
+    "authors": "Chao-Fan Ke and Shao-Huan Zu and Jun-Xing Cao and Xu-Dong Jiang and Chao Li and Xing-Ye Liu",
+    "org": "",
+    "venue": "Petroleum Science",
+    "year": 2024,
+    "abstract": "Simultaneous source technology, which reduces seismic survey time and improves the quality of seismic data by firing more than one source with a narrow time interval, is compromised by the massive blended interference. Therefore, deblending algorithms have been developed to separate this interference. Recently, deep learning (DL) has been proved its great potential in suppressing the interference. The most popular DL method employs neural network as a filter to attenuate the blended noise in an iterative estimation and subtraction framework (IESF). However, there are still amplitude distortion and blended noise residual problems, especially when dealing with weak signal submerged in strong interference. To address these problems, we propose a hybrid WUDT-NAFnet, which contains two sub-networks. The first network is a wavelet based U-shape deblending transformer network (WUDTnet), incorporated into IESF as a robust regularization term to iteratively separate the blended interference. The second network is a nonlinear activate free network (NAFnet) designed to recover the event amplitude and further suppress the weak noise residual in IESF. With the hybrid network, the blended noise can be separated purposefully and accurately. Examples using synthetic and field seismic data demonstrate that the WUDT-NAFnet outperforms traditional curvelet transform (CT) based method and the deblending transformer (DT) model in terms of deblending. Additionally, for field applications, the data augmentation method of bicubic interpolation is applied to mitigate the feature difference between synthetic and field data. Consequently, the trained network exhibits strong signal preservation ability in numerical field example without requiring additional training.",
+    "tasks": [
+      "deblending"
+    ],
+    "tags": [
+      "Deblending",
+      "Transformer"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.petsci.2023.12.017",
+    "code_url": null,
+    "citation_count": 0,
+    "introduces_model": "",
+    "is_sota": false
+  },
+  {
+    "id": "Wang-self-supervised-simultaneous-2025",
+    "title": "Self-supervised simultaneous deblending and interpolation of incomplete blended data using a multistep blind-trace U-Net",
+    "authors": "Ben-Feng Wang and Shi-Cong Lin and Xin-Yi Chen",
+    "org": "",
+    "venue": "Petroleum Science",
+    "year": 2025,
+    "abstract": "Blended acquisition offers efficiency improvements over conventional seismic data acquisition, at the cost of introducing blending noise effects. Besides, seismic data often suffers from irregularly missing shots caused by artificial or natural effects during blended acquisition. Therefore, blending noise attenuation and missing shots reconstruction are essential for providing high-quality seismic data for further seismic processing and interpretation. The iterative shrinkage thresholding algorithm can help obtain deblended data based on sparsity assumptions of complete unblended data, and it characterizes seismic data linearly. Supervised learning algorithms can effectively capture the nonlinear relationship between incomplete pseudo-deblended data and complete unblended data. However, the dependence on complete unblended labels limits their practicality in field applications. Consequently, a self-supervised algorithm is presented for simultaneous deblending and interpolation of incomplete blended data, which minimizes the difference between simulated and observed incomplete pseudo-deblended data. The used blind-trace U-Net (BTU-Net) prevents identity mapping during complete unblended data estimation. Furthermore, a multistep process with blending noise simulation-subtraction and missing traces reconstruction-insertion is used in each step to improve the deblending and interpolation performance. Experiments with synthetic and field incomplete blended data demonstrate the effectiveness of the multistep self-supervised BTU-Net algorithm.",
+    "tasks": [
+      "simultaneous_deblending_and_interpolation"
+    ],
+    "tags": [
+      "Simultaneous deblending and interpolation",
+      "Blind-trace U-Net",
+      "Self-supervised learning"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.petsci.2024.12.023",
     "code_url": null,
     "citation_count": 0,
     "introduces_model": "",
