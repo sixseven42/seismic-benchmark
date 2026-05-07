@@ -6269,5 +6269,1583 @@
     "citation_count": 0,
     "introduces_model": "",
     "is_sota": false
+  },
+  {
+    "id": "robust-unsupervised-5d-seismic-data-reconstruction-on-regular-2024",
+    "title": "Robust unsupervised 5D seismic data reconstruction on regular and irregular grids",
+    "authors": "Li, J., Liu, D., Trad, D., Sacchi, M. D.",
+    "org": "University of Calgary; University of Alberta",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "This paper addresses missing-trace recovery in seismic interpolation and reconstruction using an unsupervised multilayer perceptron, or implicit neural representation, for 5D seismic data on both regular and irregular grids. The evaluation uses a Marmousi earth-model example and focuses on reconstructing incomplete seismic observations without relying on fully sampled labels.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "INR",
+      "MLP",
+      "Unsupervised",
+      "5D",
+      "Irregular Grid"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2024-0098.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "self-supervised-deep-learning-to-reconstruct-seismic-data-2022",
+    "title": "Self-Supervised Deep Learning to Reconstruct Seismic Data With Consecutively Missing Traces",
+    "authors": "Huang, H., Wang, T., Cheng, J., Xiong, Y., Wang, C., Geng, J.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This work proposes a self-supervised deep-learning framework for reconstructing seismic data with consecutively missing traces. A nested U-Net convolutional architecture is trained using pseudo-labels generated from randomly masked observed regions, with experiments on the Marmousi-II model and an offshore field data set from the East China Sea. The workflow includes missing-zone simulation, random patch extraction, standard-deviation normalization, flipping and 180-degree rotation augmentation, sliding-window inference, and a two-stage CSG/CRG processing strategy.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Self-Supervised",
+      "UNet++",
+      "CNN",
+      "Consecutive Missing",
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3148994",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "self-supervised-reconstruction-of-off-the-grid-seismic-2026",
+    "title": "Self-supervised Reconstruction of off-the-grid seismic data using Convolutional neural network",
+    "authors": null,
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2026,
+    "abstract": "This paper studies self-supervised reconstruction of off-the-grid seismic data by combining a nonuniform discrete Fourier transform with a convolutional neural network. Experiments are performed on 2007 BP synthetic data and Mobil AVO Viking Graben Line 12 field data. The data are converted into random patches and normalized by the maximum absolute amplitude of the full data volume.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "CNN",
+      "Self-Supervised",
+      "NDFT"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-reconstruction-via-wavelet-based-residual-deep-2022",
+    "title": "Seismic Data Reconstruction via Wavelet-Based Residual Deep Learning",
+    "authors": "Liu, N., Wu, L., Wang, J., Wu, H., Gao, J., Wang, D.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This study introduces a wavelet-based residual deep-learning framework built on a U-Net backbone for seismic data reconstruction. The method is evaluated on synthetic data and the Mobil AVO Viking Graben Line 12 field data set. Training samples are generated as 128 x 128 synthetic patches and 512 x 112 field patches, followed by min-max normalization and experiments with random missing traces, 70 percent missing ratios, and 10 to 30 percent consecutively missing traces.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Wavelet",
+      "Residual Learning",
+      "WRDL"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3152984",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "a-multidirectional-deep-neural-network-for-self-supervised-2022",
+    "title": "A Multidirectional Deep Neural Network for Self-Supervised Reconstruction of Seismic Data",
+    "authors": "Abedi, M. M., Pardo, D.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This paper develops a multidirectional deep neural network for self-supervised seismic data reconstruction. The method is tested on 2004 BP synthetic data and a 2D vibroseis land seismic line. The preprocessing rearranges 2D seismic records into a 3D data cube according to source and receiver coordinates, applies maximum-amplitude normalization, removes one to eight consecutive shot gathers to simulate missing data, and extracts 32 x 32 x 640 training segments.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Self-Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3227212",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "deep-learning-based-seismic-data-interpolation-a-preliminary-2019",
+    "title": "Deep-learning-based seismic data interpolation: A preliminary result",
+    "authors": "Wang, B., Zhang, N., Lu, W., Wang, J.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2019,
+    "abstract": "This preliminary study applies a residual convolutional neural network to seismic data interpolation. Experiments use forward-modeled salt-model data and an additional field data example. The workflow extracts overlapping patches from common-shot gathers and trains the network to map incomplete seismic records to reconstructed data.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "ResNet",
+      "CNN",
+      "Anti-Aliasing",
+      "Supervised",
+      "Deep Learning"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2017-0495.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "attention-and-hybrid-loss-guided-deep-learning-for-2022",
+    "title": "Attention and Hybrid Loss Guided Deep Learning for Consecutively Missing Seismic Data Reconstruction",
+    "authors": "Yu, J., Wu, B.",
+    "org": "Xi'an Jiaotong University",
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This paper proposes an attention-guided neural network for reconstructing seismic data with consecutively missing traces. The model combines an attention network with a hybrid loss formed from structural similarity and L1 terms, and it is evaluated on the SEG C3 synthetic data set and the Mobil AVO Viking Graben Line 12 field data set. Patch extraction and normalization are used to construct the training samples.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Attention",
+      "CNN",
+      "SSIM",
+      "L1 Loss",
+      "Consecutive Missing"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2021.3068279",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "can-learning-from-natural-image-denoising-be-used-2020",
+    "title": "Can learning from natural image denoising be used for seismic data interpolation?",
+    "authors": "Zhang, H., Yang, X., Ma, J.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2020,
+    "abstract": "This work investigates whether convolutional denoising priors learned from natural images can be transferred to seismic interpolation. The method combines a pretrained CNN denoiser with projection onto convex sets to recover missing seismic traces. Experiments include synthetic seismic examples and project-specific field data, demonstrating the use of natural-image denoising knowledge as a prior for seismic reconstruction.",
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "CNN-POCS",
+      "Transfer Learning",
+      "Denoising Prior",
+      "Natural Images",
+      "CNN",
+      "POCS"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/1902.10379",
+    "doi": "https://doi.org/10.1190/geo2019-0243.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-interpolation-based-on-u-net-with-2021",
+    "title": "Seismic data interpolation based on U-net with texture loss",
+    "authors": "Fang, W., Fu, L., Zhang, M., Li, Z.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2021,
+    "abstract": "This paper formulates seismic data interpolation as an image-to-image reconstruction problem and uses a U-Net model enhanced with a texture-aware loss. Experiments are conducted on forward-modeled Marmousi data. Training samples are generated by random patch extraction and min-max normalization before the network learns to restore missing seismic traces.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Texture Loss",
+      "CNN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2019-0615.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "hybrid-loss-guided-coarse-to-fine-model-for-2022",
+    "title": "Hybrid Loss-Guided Coarse-to-Fine Model for Seismic Data Consecutively Missing Trace Reconstruction",
+    "authors": "Wei, X., Zhang, C., Wang, H., Zhao, Z., Xiong, D., Xu, S., Zhang, J., Kim, S.-W.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This study presents a coarse-to-fine deep-learning model for consecutively missing seismic trace reconstruction. The coarse network uses a U-Net structure, while the refinement network uses UNet++ together with a context discriminator and a hybrid L1, SSIM, and relativistic average least-squares GAN loss. Experiments cover the SEG C3, Mobil AVO Viking Graben Line 12, and Marmousi data sets.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Coarse-to-Fine",
+      "U-Net",
+      "UNet++",
+      "GAN",
+      "Hybrid Loss"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3223421",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "self-supervised-learning-for-efficient-antialiasing-seismic-data-2022",
+    "title": "Self-Supervised Learning for Efficient Antialiasing Seismic Data Interpolation",
+    "authors": "Yuan, P., Wang, S., Hu, W., Nadukandi, P., Botero, G. O., Wu, X., Nguyen, H. V., Chen, J.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This paper proposes a self-supervised antialiasing interpolation framework based on a blind-trace network with a U-Net-style architecture. The method is evaluated on SEAM-II unconventional and SEAM-II arid synthetic data as well as Mobil AVO Viking Graben Line 12 field data. Random and regular decimation ratios are used to build interpolation tasks, with logarithmic amplitude scaling and blind-trace self-supervision used during training.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Self-Supervised",
+      "Blind-Trace Network",
+      "Anti-Aliasing",
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3167546",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "deep-seismic-prior-based-reconstruction-of-seismic-data-2021",
+    "title": "Deep-seismic-prior-based reconstruction of seismic data using convolutional neural networks",
+    "authors": "Liu, Q., Fu, L., Zhang, M.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2021,
+    "abstract": "This work applies the deep seismic prior concept to reconstruct incomplete seismic data with convolutional neural networks. A U-Net-like network is optimized directly on incomplete observations from a deepwater Gulf of Mexico survey, using the network architecture itself as a regularizing prior. The method targets unsupervised interpolation without requiring external fully sampled training data.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Deep Image Prior",
+      "U-Net",
+      "Unsupervised",
+      "CNN"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/1911.08784",
+    "doi": "https://doi.org/10.1190/geo2019-0570.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "regeneration-constrained-self-supervised-seismic-data-interpolation-2023",
+    "title": "Regeneration-Constrained Self-Supervised Seismic Data Interpolation",
+    "authors": "Song, A., Wang, C., Zhang, C., Zhang, J., Xu, S., Kim, S.-W.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "This paper introduces a regeneration-constrained self-supervised framework for seismic data interpolation. The method uses a U-Net-based blind-trace network and imposes a regeneration constraint to improve consistency between observed and reconstructed traces. Experiments are performed on the Model94 data set and Mobil AVO Viking Graben Line 12 data after patch extraction and normalization.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Self-Supervised",
+      "Regeneration Constraint",
+      "U-Net",
+      "BTN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2023.3234601",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "irregularly-sampled-seismic-data-interpolation-with-self-supervised-2023",
+    "title": "Irregularly sampled seismic data interpolation with self-supervised learning",
+    "authors": "Fang, W., Fu, L., Wu, M., Yue, J., Zhang, M.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2023,
+    "abstract": "This study addresses interpolation of irregularly sampled seismic data using a self-supervised learning strategy. The experiments use forward-modeled Marmousi data and Gulf of Mexico field data. The workflow extracts patches, constructs trace-wise masks, and trains the network to infer missing traces from the observed irregular sampling pattern.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Self-Supervised",
+      "Irregular Sampling",
+      "CNN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2022-0586.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "coordinate-based-seismic-interpolation-in-irregular-land-survey-2023",
+    "title": "Coordinate-Based Seismic Interpolation in Irregular Land Survey: A Deep Internal Learning Approach",
+    "authors": "Goyes-Peñafiel, P., Vargas, E., Correa, C. V., Sun, Y., Kamilov, U. S., Wohlberg, B., Arguello, H.",
+    "org": "Industrial University of Santander; Washington University in St. Louis; Los Alamos National Laboratory",
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "This paper models seismic wavefields as continuous coordinate-based functions and uses an implicit neural representation to interpolate irregular land-survey data. A multilayer perceptron maps spatial-temporal coordinates to seismic amplitudes, enabling deep internal learning from the target data itself. Experiments include DEVITO simulations, the Stratton 3D survey, and SEAM Phase II Foothills data.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Coordinate-Based",
+      "INR",
+      "MLP",
+      "Deep Internal Learning",
+      "Irregular Land Survey"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2211.11889",
+    "doi": "https://doi.org/10.1109/TGRS.2023.3290468",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-reconstruction-based-on-multiscale-attention-deep-2023",
+    "title": "Seismic Data Reconstruction Based on Multiscale Attention Deep Learning",
+    "authors": "Cheng, M., Lin, J., Lu, S., Dong, S., Dong, X.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "This paper proposes MSEA-Net, a multiscale enhanced attention network for seismic data reconstruction. The model extracts information at multiple resolutions and uses attention mechanisms to recover missing seismic traces. Experiments are conducted on a Gulf of Mexico shot gather, with patch extraction, random and consecutive masking, normalization, and random noise augmentation used in preprocessing.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "MSEA-Net",
+      "Multiscale",
+      "Attention",
+      "CNN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2023.3298431",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "unsupervised-deep-learning-framework-for-5d-seismic-denoising-2024",
+    "title": "Unsupervised deep-learning framework for 5D seismic denoising and interpolation",
+    "authors": "Saad, O. M., Helmy, I., Chen, Y.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "This paper proposes an unsupervised deep-learning framework for 5D seismic denoising and interpolation. The method combines an MLP with residual connections, channel attention, and a projection-onto-convex-sets style consistency step. Experiments are based on private 5D seismic data, with the input organized into 5D patches for simultaneous noise attenuation and missing-data reconstruction.",
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "Unsupervised",
+      "Attention",
+      "POCS",
+      "5D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2023-0637.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "reconstructing-regularly-missing-seismic-traces-with-a-classifier-2024",
+    "title": "Reconstructing Regularly Missing Seismic Traces With a Classifier-Guided Diffusion Model",
+    "authors": "Wang, X., Wang, Z., Xiong, Z., Yang, Y., Zhu, C., Gao, J.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "This study reconstructs regularly missing seismic traces using a classifier-guided denoising diffusion probabilistic model. The method trains a conditional diffusion process with labels for near-, mid-, and far-offset missing patterns and applies a mask during inference to enforce observation consistency. Experiments use Mobil AVO Viking Graben Line 12 data and synthetic shot gathers.",
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "Diffusion"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3367354",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-trace-interpolation-via-score-based-diffusion-model-2025",
+    "title": "Seismic trace interpolation via score-based diffusion model with wavelet convolution",
+    "authors": null,
+    "org": null,
+    "venue": "Journal of Applied Geophysics",
+    "year": 2025,
+    "abstract": "This paper applies a score-based diffusion model with wavelet convolution to seismic trace interpolation. The method combines stochastic score-based reconstruction with wavelet-domain feature extraction to improve recovery of missing traces. Experiments are conducted on SEG C3-NA synthetic data and Mobil AVO field data, using random 2D patch extraction for training.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "CNN",
+      "Diffusion",
+      "Wavelet"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "unsupervised-deep-learning-for-3d-interpolation-of-highly-2022",
+    "title": "Unsupervised deep learning for 3D interpolation of highly incomplete data",
+    "authors": "Saad, O. M., Fomel, S., Abma, R., Chen, Y.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2023,
+    "abstract": "This work studies unsupervised 3D interpolation of highly incomplete seismic data using a deep image prior combined with projection onto convex sets. The method optimizes a neural network directly on the incomplete target data and enforces data consistency during reconstruction. Private seismic data are processed by extracting 3D volumes, converting them to 3D patches, and further organizing them into 1D representations where needed.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Unsupervised",
+      "POCS",
+      "Deep Image Prior",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2022-0232.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "a-projection-onto-convex-sets-network-for-3d-2022",
+    "title": "A projection-onto-convex-sets network for 3D seismic data interpolation",
+    "authors": "Chen, Y., Yu, S., Ma, J.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2023,
+    "abstract": "This paper proposes POCS-Net, a neural-network formulation inspired by projection onto convex sets for 3D seismic interpolation. The model integrates learned reconstruction with the data-consistency behavior of traditional POCS methods. The reported workflow uses 2D or 3D patches to train the network for missing-trace recovery, although the public data source is not specified.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "POCS",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2022-0326.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "ccnet-5d-5d-convolutional-neural-network-for-seismic-2022",
+    "title": "CCNet-5D: 5D convolutional neural network for seismic data interpolation",
+    "authors": "Fang, W., Fu, L., Xu, W., Bian, A., Li, H.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2023,
+    "abstract": "This study introduces CCNet-5D, a 5D convolutional neural network for seismic data interpolation. The model directly exploits multidimensional seismic coherence using 5D convolutional operations. Experiments use SEG C3 data, tools from the Seismic Julia ecosystem, and collaborator-provided data, with 5D patches prepared as the training samples.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "CNN",
+      "5D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2022-0420.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "pinnslope-seismic-data-interpolation-and-local-slope-estimation-2024",
+    "title": "PINNslope: Seismic data interpolation and local slope estimation with physics informed neural networks",
+    "authors": "Brandolin, F., Ravasi, M., Alkhalifah, T.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "This paper presents PINNslope, a physics-informed neural-network framework for joint seismic interpolation and local slope estimation. The method incorporates physical constraints into the learning process to recover missing data while estimating local structural slopes. Experiments include a forward-modeled sigmoid example and Gulf of Mexico data, and the implementation is available through the DeepWaveKAUST PINNslope repository.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "PINN"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2305.15990",
+    "doi": "https://doi.org/10.1190/geo2023-0323.1",
+    "code_url": "https://github.com/DeepWave-KAUST/PINNslope",
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "deep-learning-based-off-the-grid-seismic-data-2025",
+    "title": "Deep learning-based off-the-grid seismic data reconstruction and regularization: Preliminary research",
+    "authors": "Mo, T., Song, J., Li, Z., Wang, B.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2025,
+    "abstract": "This preliminary study investigates off-the-grid seismic data reconstruction and regularization using a nonuniform Fourier transform combined with a U-Net model. Experiments are based on forward-modeled Marmousi-II data and additional non-public field data. Common-shot-gather processing is used to prepare the training and reconstruction examples.",
+    "tasks": [
+      "interpolation",
+      "regularization"
+    ],
+    "tags": [
+      "U-Net",
+      "NDFT"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2023-0666.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-reconstruction-via-a-hybrid-convolutional-neural-2025",
+    "title": "Seismic data reconstruction via a hybrid convolutional neural network-low-rank method",
+    "authors": "Gao, W., Fu, L., Fang, W., Wu, J., Wang, Y.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2025,
+    "abstract": "This paper combines a U-Net convolutional neural network with multichannel singular-spectrum-analysis style low-rank reconstruction for seismic data recovery. The hybrid framework uses deep learning to capture nonlinear structure and low-rank constraints to exploit coherent seismic events. Experiments use 2007 BP and SEG C3 data, with patch extraction used during training.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "CNN",
+      "Low-Rank"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2024-0195.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "sparse-seismic-data-regularization-in-shot-and-trace-2024",
+    "title": "Sparse seismic data regularization in shot and trace domains using a residual block autoencoder based on the fast Fourier transform",
+    "authors": "Campi, A. L., Missagia, R. M.",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "This paper develops a residual-block autoencoder based on the fast Fourier transform for sparse seismic data regularization in both shot and trace domains. Fourier-domain transformations are embedded into the bottleneck to capture spectral structure before inverse transformation and reconstruction. Experiments include Chevron Gulf of Mexico, USGS U135A, Mobil Viking Graben Line 12, U32A, and Line B data, with common-shot-gather preprocessing.",
+    "tasks": [
+      "interpolation",
+      "regularization"
+    ],
+    "tags": [
+      "Fourier",
+      "Autoencoder"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2023-0097.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "dip-informed-neural-network-for-self-supervised-anti-2024",
+    "title": "Dip-Informed Neural Network for Self-Supervised Anti-Aliasing Seismic Data Interpolation",
+    "authors": "Wang, S., Wu, X., Chen, J.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "This study proposes a dip-informed self-supervised neural network for antialiasing seismic data interpolation. A U-Net-style encoder-decoder is guided by dip information derived from plane-wave destruction after low-pass filtering in the f-k domain. Experiments use SEAM-II unconventional data and Mobil AVO Viking Graben Line 12 data.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "CNN",
+      "Self-Supervised",
+      "Deep Image Prior"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3359247",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "reconstruct-3-d-seismic-data-with-randomly-missing-2024",
+    "title": "Reconstruct 3-D Seismic Data With Randomly Missing Traces via Fast Self-Supervised Deep Learning",
+    "authors": "Li, Y., Cao, W., Lu, W., Huang, X., Ding, J., Song, C.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "This paper presents a fast self-supervised deep-learning method for reconstructing 3D seismic data with randomly missing traces. The model uses a convolutional encoder-decoder architecture and builds input-target pairs from the observed data through masking and data splitting. Experiments include Sandia/SEG Salt Model shots, South China Sea synthetic data, and field data from an exploration area in China.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "CNN",
+      "Self-Supervised",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3401130",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "intelligent-missing-shots-reconstruction-using-the-spatial-reciprocity-2020",
+    "title": "Intelligent Missing Shots’ Reconstruction Using the Spatial Reciprocity of Green’s Function Based on Deep Learning",
+    "authors": null,
+    "org": null,
+    "venue": "TGRS",
+    "year": 2020,
+    "abstract": "This work reconstructs missing seismic shots by exploiting the spatial reciprocity of Green's functions with a residual convolutional network. Bicubic interpolation provides an initial estimate, and a 10-layer CNN learns the residual correction. Experiments use layered and salt velocity models together with Gulf of Suez field data, with regular 75 percent shot decimation and shot-level training-validation splits.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "CNN"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "deep-learning-for-regularly-missing-data-reconstruction-2020",
+    "title": "Deep Learning for Regularly Missing Data Reconstruction",
+    "authors": "Chai, X., Tang, G., Wang, S., Peng, R.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2020,
+    "abstract": "This paper applies an end-to-end U-Net-style 2D convolutional encoder-decoder to reconstruct regularly missing seismic data. The network maps incomplete seismic records directly to complete data. Training uses multiple synthetic and field data sets, including three-layer, Sigsbee2B, Pluto 1.5, and Mobil Line 12 examples, while testing covers Marmousi2, physical modeling, F3, GeoFrame, and Hampson-Russell data. Preprocessing includes normalization to [-1, 1], overlapping 112 x 112 patches, low-energy patch removal, first-arrival enhancement, and MSE optimization with Adam.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "CNN",
+      "Regular Missing",
+      "Supervised"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2020.2963928",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "deep-learning-for-irregularly-and-regularly-missing-3-2021",
+    "title": "Deep Learning for Irregularly and Regularly Missing 3-D Data Reconstruction",
+    "authors": "Chai, X., Tang, G., Wang, S., Lin, K., Peng, R.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2021,
+    "abstract": "This study extends deep-learning seismic reconstruction to both irregularly and regularly missing 3D data. A 3D U-Net-style encoder-decoder maps incomplete volumes to complete seismic volumes. Training draws from Marmousi2, SEAM, SEG benchmark, Pluto 1.5, and Mobil Line 12 data, with testing on BlackFoot, GeoFrame, and physical-modeling examples. The workflow normalizes amplitudes to [-1, 1], extracts 80 x 80 x 80 cubes with stride 60, removes low-energy cubes, and trains with MSE and Adam.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "3D CNN",
+      "U-Net",
+      "Irregular Missing",
+      "Regular Missing",
+      "CNN",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2020.3016343",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "coarse-refine-network-with-upsampling-techniques-and-fourier-2022",
+    "title": "Coarse-Refine Network With Upsampling Techniques and Fourier Loss for the Reconstruction of Missing Seismic Data",
+    "authors": "Park, H., Lee, J.-W., Hwang, J., Min, D.-J.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This paper proposes CFunet, a two-stage coarse-refine U-Net framework for missing seismic data reconstruction. The model combines Fourier-domain zero-padding upsampling with a loss that includes both MSE and Fourier components. Experiments use layered-velocity synthetic common-shot gathers and Mobil AVO Viking Graben Line 12 field data, with random removal of 50 to 87.5 percent of traces during training.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Fourier"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3190292",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "dtae-deep-tensor-autoencoder-for-3-d-seismic-2022",
+    "title": "DTAE: Deep Tensor Autoencoder for 3-D Seismic Data Interpolation",
+    "authors": "Qian, F., Liu, Z., Wang, Y., Liao, S., Pan, S., Hu, G.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This study introduces a deep tensor autoencoder for 3D seismic data interpolation. The method uses t-product-based tensor operations and implements tensor autoencoding through matrix autoencoders on frequency slices in the discrete cosine transform domain. Experiments are conducted on 3D 9C synthetic VSP, F3 Netherlands, and Parihaka 3D data, with nonoverlapping 3D cubes and random decimation used to create training samples.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "DTAE",
+      "Tensor",
+      "Autoencoder",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2021.3075968",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "ensemble-deep-learning-for-enhanced-seismic-data-reconstruction-2024",
+    "title": "Ensemble Deep Learning for Enhanced Seismic Data Reconstruction",
+    "authors": "Abedi, M. M., Pardo, D., Alkhalifah, T.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "This paper proposes an ensemble deep-learning approach for enhanced seismic data reconstruction using U-Net-based models and data transformations. Experiments include the KFUPM-KAUST Red Sea model, Gulf of Mexico field data, the 2004 BP benchmark, and land data from a mountainous area. Gamma correction, frequency shifting, dip filtering, random masking, and normalization are used to diversify the training data.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "CNN"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2404.02632",
+    "doi": "https://doi.org/10.1109/TGRS.2024.3401832",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "self-supervised-transfer-learning-pocs-net-for-seismic-2024",
+    "title": "Self-Supervised Transfer Learning POCS-Net for Seismic Data Interpolation",
+    "authors": "Chen, Y., Yu, S., Lin, R.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2024,
+    "abstract": "This work develops a self-supervised transfer-learning version of POCS-Net for seismic interpolation. The method combines projection-inspired neural reconstruction with secondary downsampling masks to build supervision from incomplete seismic observations. Experiments include 2D synthetic prestack data and 3D field prestack data, with patch or cube extraction used for 3D cases.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Self-Supervised",
+      "POCS"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3494723",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "fr-unet-a-feature-restoration-based-unet-for-2025",
+    "title": "FR-UNet: A Feature Restoration-Based UNet for Seismic Data Consecutively Missing Trace Interpolation",
+    "authors": "Tian, Y., Fu, L., Fang, W., Li, T.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2025,
+    "abstract": "This paper presents FR-UNet, a feature-restoration U-Net for interpolating seismic data with consecutively missing traces. The model is designed to recover coherent seismic events across missing trace bands by restoring feature representations within the encoder-decoder pathway. Experiments use synthetic data and Mobil AVO Viking Graben Line 12 field data, with random patch extraction and consecutive missing-trace simulation.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2025.3531934",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "reconstruction-and-compensation-of-missing-trace-and-attenuation-2025",
+    "title": "Reconstruction and Compensation of Missing Trace and Attenuation Seismic Data: Integrating Nonlinear Activation-Free Network With Attention Mechanisms",
+    "authors": null,
+    "org": null,
+    "venue": "TGRS",
+    "year": 2025,
+    "abstract": "This paper integrates nonlinear activation-free networks with attention mechanisms for reconstructing and compensating seismic data affected by missing traces and attenuation. The architecture combines U-Net3+, NAFNet, and CBAM components. Experiments use Marmousi synthetic data, noisy and consecutively missing Marmousi variants, Overthrust synthetic data, field seismic data, and 3D Overthrust data, with normalization, boundary extension, and sliding-window slicing used to build training samples.",
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "U-Net",
+      "Attention"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "an-aliasing-free-low-frequency-pretrained-model-for-2022",
+    "title": "An Aliasing-Free Low-Frequency Pretrained Model for Seismic Interpolation Using a Small Training Set",
+    "authors": "Mo, T., Wang, B.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2022,
+    "abstract": "This paper proposes an aliasing-free low-frequency pretraining strategy for seismic interpolation with limited training data. A U-Net is first pretrained on low-frequency, aliasing-reduced information and then fine-tuned on a small labeled seismic set. Experiments use the Marmousi-II synthetic data set to evaluate reconstruction quality under limited supervision.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Anti-Aliasing",
+      "Low-Frequency",
+      "Pretraining",
+      "Small Training Set"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2022.3221087",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "a-self-adaptive-antialiasing-framework-for-seismic-data-2023",
+    "title": "A Self-Adaptive Antialiasing Framework for Seismic Data Interpolation",
+    "authors": null,
+    "org": null,
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "This work introduces a self-adaptive antialiasing framework for seismic data interpolation. The approach combines patchwise shear transformation, cyclic closed-loop evaluation, and a backend interpolator, with ResNet used as the main interpolation engine in the experiments. Synthetic 3D blocks, Pluto synthetic data, and 2D field data are processed through patch extraction, shear-parameter search, and model-based interpolation.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Deep Learning"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "mda-gan-adversarial-learning-based-3-d-seismic-2023",
+    "title": "MDA GAN: Adversarial-Learning-Based 3-D Seismic Data Interpolation and Reconstruction for Complex Missing",
+    "authors": "Dou, Y., Li, K., Duan, H., Li, T., Dong, L., Huang, Z.",
+    "org": null,
+    "venue": "TGRS",
+    "year": 2023,
+    "abstract": "This paper proposes MDA-GAN for 3D seismic data interpolation and reconstruction under complex missing patterns. The architecture uses a 3D generator, one 3D discriminator, two 2D discriminators, a feature-splicing module, and a tensor-completion-enhanced loss. Experiments cover SEG C3, Mobil AVO Viking Graben Line 12, New Zealand Kerry, and F3 Netherlands data, with 128 x 128 x 128 cuboids and 30 to 99 percent slice removal used for training.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "MDA-GAN",
+      "GAN",
+      "3D",
+      "Complex Missing"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2204.03197",
+    "doi": "https://doi.org/10.1109/TGRS.2023.3249476",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "unsupervised-seismic-reconstruction-via-deep-learning-with-one-2025",
+    "title": "Unsupervised seismic reconstruction via deep learning with one-dimensional signal representation",
+    "authors": null,
+    "org": null,
+    "venue": "Computers & Geosciences",
+    "year": 2025,
+    "abstract": "This paper studies unsupervised seismic reconstruction using deep learning with a one-dimensional signal representation. The method represents seismic observations as 1D signals and applies a neural reconstruction model to recover missing or incomplete measurements without paired labels. The reported experiments use private seismic data, and no public preprocessing workflow is specified.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "3d-ga-unet-2025",
+    "title": "基于 3D GA-UNet 网络的三维地震数据同步去噪和重建方法研究",
+    "authors": null,
+    "org": null,
+    "venue": "石油物探",
+    "year": 2025,
+    "abstract": "This study develops a 3D GA-UNet framework for simultaneous 3D seismic denoising and reconstruction. The generator uses a 3D U-Net backbone enhanced with residual skip connections, attention modules, and trilinear-interpolation upsampling, while the discriminator incorporates conditional constraints and instance normalization. Experiments use synthetic 3D seismic data and the F3 field data set under different random sampling rates and noise levels.",
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "U-Net",
+      "Attention",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "interpolation-47-2025",
+    "title": "一种海上时移地震数据空缺区智能重建方法",
+    "authors": null,
+    "org": null,
+    "venue": "石油物探",
+    "year": 2025,
+    "abstract": "This paper proposes an intelligent U-Net-based method for reconstructing missing zones in marine time-lapse seismic data. The study uses two real offshore 3D time-lapse surveys from the same area, including an earlier streamer survey and a later OBN survey. Preprocessing includes prestack consistency processing, poststack global matching, extraction and filtering of seismic traces, normalization, fixed-length sampling, and an 80/20 training-validation split.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "interpolation-48-2025",
+    "title": "基于多尺度特征融合的生成对抗网络地震数据重建算法",
+    "authors": null,
+    "org": null,
+    "venue": "石油物探",
+    "year": 2025,
+    "abstract": "This work proposes MSF-GAN, a multiscale feature-fusion generative adversarial network for seismic data reconstruction. The generator is based on an HRNetV2 high-resolution multiscale fusion network with feature-splicing modules, and the discriminator uses one 3D and two 2D adversarial branches. Experiments use public data and real 3D seismic data from the Daqing Oilfield, with 128 x 128 x 128 blocks and 30, 50, and 70 percent missing-trace simulations.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "GAN",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "interpolation-49-2022",
+    "title": "基于压缩感知和深度学习的地震数据重建",
+    "authors": null,
+    "org": null,
+    "venue": "石油物探",
+    "year": 2022,
+    "abstract": "This paper combines compressed sensing and deep learning for seismic data reconstruction. A shearlet-domain compressed-sensing step provides an initial reconstruction, and a multilayer CNN refines the result in an end-to-end manner. Experiments use synthetic and real marine seismic data, with training pairs built from preliminary reconstructions and complete data patches.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "CNN"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "tv-self2self-2025",
+    "title": "基于 TV 正则化约束的 Self2Self 地震数据插值去噪一体化方法",
+    "authors": null,
+    "org": null,
+    "venue": "地球物理学报",
+    "year": 2025,
+    "abstract": "This study proposes a TV-regularized Self2Self framework for joint seismic interpolation and denoising. The method adds total-variation regularization to the Self2Self loss and incorporates an abnormal-noise identification and removal strategy. Experiments use simulated and field seismic data with 0 dB Gaussian noise and 50 percent random trace missingness to evaluate simultaneous denoising and reconstruction.",
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "Unsupervised"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "interpolating-seismic-data-with-conditional-generative-adversarial-networks-2018",
+    "title": "Interpolating Seismic Data With Conditional Generative Adversarial Networks",
+    "authors": "Oliveira, D. A. B., Ferreira, R. S., Silva, R. M. G., Brazil, E. V.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2018,
+    "abstract": "This paper applies conditional generative adversarial networks to seismic interpolation. A pix2pix-style architecture uses a U-Net generator and a PatchGAN discriminator to recover missing columns in seismic images. Experiments use the Netherlands F3 poststack data set, with crossline slices divided into training and testing sets, artificial missing columns of multiple widths, 80 x 80 tile extraction, 256 x 256 resizing, and Adam optimization.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Conditional GAN",
+      "Pix2Pix",
+      "U-Net",
+      "PatchGAN",
+      "GAN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2018.2866199",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-reconstruction-using-deep-bidirectional-long-short-2021",
+    "title": "Seismic Data Reconstruction Using Deep Bidirectional Long Short-Term Memory With Skip Connections",
+    "authors": "Yoon, D., Yeeh, Z., Byun, J.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2021,
+    "abstract": "This work proposes a deep bidirectional LSTM with skip connections for seismic data reconstruction. The model predicts missing traces from neighboring traces, optionally augmented with cubic-interpolation estimates. Experiments use a marine blended-source field shot gather from PGS, with three-trace windows, 375-sample inputs, dropout, Adam optimization, and a batch size of 16.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "LSTM"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2020.2993847",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-interpolation-using-dual-domain-conditional-generative-2021",
+    "title": "Seismic Data Interpolation Using Dual-Domain Conditional Generative Adversarial Networks",
+    "authors": "Chang, D., Yang, W., Yong, X., Zhang, G., Wang, W., Li, H., Wang, Y.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2021,
+    "abstract": "This paper introduces a dual-domain conditional GAN for seismic data interpolation. The model jointly uses time-domain and frequency-domain information to recover missing traces from 3D field seismic data. Training uses 36 field data sets from five oilfields, with random 40 to 60 percent missing traces, amplitude normalization to 0-255, a 90/10 training-validation split, and multi-GPU optimization.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "GAN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2020.3008478",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "deep-prior-based-unsupervised-reconstruction-of-irregularly-sampled-2021",
+    "title": "Deep Prior-Based Unsupervised Reconstruction of Irregularly Sampled Seismic Data",
+    "authors": "Kong, F., Picetti, F., Lipari, V., Bestagini, P., Tubaro, S.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2021,
+    "abstract": "This study presents an unsupervised deep-prior method for reconstructing irregularly sampled seismic data. A 3D MultiResUNet is optimized directly from random noise to match observed traces under a data-consistency loss. Experiments use a 3D simple synthetic shot gather and part of the F3 Netherlands field survey, with gain correction, normalization, L1 observation loss, and Adam optimization.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Deep Image Prior",
+      "MultiResUNet",
+      "3D CNN",
+      "Unsupervised",
+      "U-Net",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2020.3044455",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "consecutively-missing-seismic-data-interpolation-based-on-coordinate-2022",
+    "title": "Consecutively Missing Seismic Data Interpolation Based on Coordinate Attention Unet",
+    "authors": null,
+    "org": null,
+    "venue": "LGRS",
+    "year": 2022,
+    "abstract": "This study proposes CA-Unet for interpolating consecutively missing seismic traces. The method embeds coordinate-attention blocks into a 2D U-Net encoder-decoder to improve directional feature modeling. Experiments use SEG C3 synthetic data and Mobil AVO Viking Graben Line 12 field data, with min-max normalization, 10 to 30 percent consecutive missing traces, and separate training, validation, and testing splits.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Attention",
+      "INR"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "consecutively-missing-seismic-data-reconstruction-via-wavelet-based-2023",
+    "title": "Consecutively Missing Seismic Data Reconstruction Via Wavelet-Based Swin Residual Network",
+    "authors": null,
+    "org": null,
+    "venue": "LGRS",
+    "year": 2023,
+    "abstract": "This paper presents a wavelet-based Swin residual network for reconstructing seismic data with consecutively missing traces. A U-Net backbone is enhanced with Swin residual blocks to capture local and nonlocal structure. Experiments use 2007 BP anisotropic synthetic data and Mobil AVO Viking Graben Line 12 field data, with patch extraction, normalization to [-1, 1], 30 percent consecutive missing traces, data augmentation, and Adam optimization.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Transformer",
+      "Wavelet"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-consecutively-missing-trace-interpolation-based-on-2022",
+    "title": "Seismic Data Consecutively Missing Trace Interpolation Based on Multistage Neural Network Training Process",
+    "authors": null,
+    "org": null,
+    "venue": "LGRS",
+    "year": 2022,
+    "abstract": "This work investigates a multistage training process for U-Net-based interpolation of consecutively missing seismic traces. The model is trained progressively across multiple stages to improve robustness under high missing ratios. Experiments use SEG C3 synthetic data and Mobil AVO Viking Graben Line 12 field data, with 60 to 65 percent missing traces, normalized inputs, and staged optimization.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-interpolation-based-on-multi-scale-transformer-2023",
+    "title": "Seismic Data Interpolation Based on Multi-Scale Transformer",
+    "authors": "Guo, Y., Fu, L., Li, H.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2023,
+    "abstract": "This paper proposes a multiscale Transformer network for seismic data interpolation. The model uses transformer-based multiscale feature extraction to recover missing traces from incomplete seismic observations. Experiments use BP2007 public data for training and validation, along with synthetic and field test data. The workflow includes spatial downsampling augmentation, 96 x 96 patch extraction, [0, 1] normalization, random horizontal flipping, 50 percent trace dropout, and AdamW training.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Transformer"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2023.3298101",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-interpolation-by-learning-a-denoiser-with-2023",
+    "title": "Seismic Data Interpolation by Learning a Denoiser With Deep Implicit Prior",
+    "authors": null,
+    "org": null,
+    "venue": "LGRS",
+    "year": 2023,
+    "abstract": "This study reconstructs seismic data by learning a bias-free DnCNN denoiser within a deep implicit-prior framework. The learned denoiser regularizes interpolation of regularly and randomly missing seismic data. Experiments include simple synthetic data, randomly decimated synthetic data, and two field data sets, with extensive patch augmentation through downsampling, flipping, and rotation.",
+    "tasks": [
+      "interpolation",
+      "denoising"
+    ],
+    "tags": [
+      "CNN",
+      "Deep Image Prior"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-reconstruction-via-recurrent-residual-multiscale-inference-2022",
+    "title": "Seismic Data Reconstruction via Recurrent Residual Multiscale Inference",
+    "authors": null,
+    "org": null,
+    "venue": "LGRS",
+    "year": 2022,
+    "abstract": "This paper proposes RRMFI-Net for seismic data reconstruction using recurrent residual multiscale feature inference and recurrence-adjustment attention. The model is designed to recover missing traces by iteratively refining multiscale representations. Experiments use the Netherlands F3 marine 3D field data set and the Stratton land 3D data set, with inline-based train-test splits, [0, 1] scaling, 128 x 128 patches, and simulated missing traces.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Attention"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-reconstruction-based-on-conditional-constraint-diffusion-2024",
+    "title": "Seismic Data Reconstruction Based on Conditional Constraint Diffusion Model",
+    "authors": null,
+    "org": null,
+    "venue": "LGRS",
+    "year": 2024,
+    "abstract": "This work introduces a conditional-constraint diffusion model for seismic data reconstruction. A denoising diffusion process is guided by observed-data constraints to recover small missing gaps in seismic gathers. Experiments use SEG C3 synthetic data and Mobil AVO Viking Graben Line 12 field data, with patch-level training-validation-test splits and a 1000-step diffusion process with accelerated sampling.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "Diffusion"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-interpolation-using-5d-fcn-a-preliminary-2024",
+    "title": "Seismic Data Interpolation Using 5D-FCN: A Preliminary Study",
+    "authors": "Xu, W., Fang, W., Fu, L.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2024,
+    "abstract": "This preliminary study presents 5D-FCN, a fully convolutional network for 5D seismic interpolation. The model implements 5D convolutional processing through multiple 3D convolution operations to exploit multidimensional coherence. Experiments use the SEG C3-NA 5D synthetic data set and 5D field data, with high missing ratios, 5D cube extraction, supervised synthetic training, and unsupervised transfer learning on field data.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "CNN",
+      "3D",
+      "5D"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2024.3385433",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "a-deep-learning-based-targeted-interpolation-method-for-2025",
+    "title": "A Deep-Learning-Based Targeted Interpolation Method for Seismic Data: A Consecutively Missing Trace VSP Case",
+    "authors": null,
+    "org": null,
+    "venue": "LGRS",
+    "year": 2025,
+    "abstract": "This paper proposes a targeted U-Net interpolation method for a consecutively missing-trace vertical seismic profiling case. Instead of learning a generic missing pattern, the method constructs training data for a fixed missing-shot geometry. Experiments include synthetic and field VSP data, with targeted patch pairs, 90/10 training-test splits, and fixed missing-source patterns.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "fdsanet-seismic-data-reconstruction-based-on-a-frequency-2025",
+    "title": "FDSANet: Seismic Data Reconstruction Based on a Frequency-Domain Self-Attention Network",
+    "authors": "Mu, Y., Wang, C., Geng, X., Zhang, C., Zhang, J.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2025,
+    "abstract": "This work proposes FDSANet, a frequency-domain self-attention network for seismic data reconstruction. A U-Net backbone is augmented with a frequency-domain self-attention module in the bottleneck to better model spectral dependencies. Experiments use SEG14 Pisoelastic synthetic data and Mobil AVO Viking Graben Line 12 field data, with nonlinear logarithmic amplitude transformation, high missing-rate self-supervised reconstruction, and nearest-neighbor similarity loss.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Attention"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2025.3581375",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "cddip-constrained-diffusion-driven-deep-image-prior-for-2025",
+    "title": "CDDIP: Constrained Diffusion-Driven Deep Image Prior for Seismic Data Reconstruction",
+    "authors": "Goyes-Peñafiel, P., Kamilov, U. S., Arguello, H.",
+    "org": null,
+    "venue": "LGRS",
+    "year": 2025,
+    "abstract": "This paper introduces CDDIP, a constrained diffusion-driven deep image prior for seismic data reconstruction. The method combines a pretrained diffusion model with a data-consistent deep-image-prior solver based on an attention U-Net. Experiments use large poststack and prestack patch collections from TGS salt, SEAM, F3, BP, Marmousi, Kerry, Alaska, AvoMobil, SEG C3, Stratton, and other data sets, with diffusion-guided reconstruction followed by observation-consistent refinement.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "Diffusion",
+      "Attention",
+      "Deep Image Prior"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2407.17402",
+    "doi": "https://doi.org/10.1109/LGRS.2025.3545860",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "accurate-seismic-data-interpolation-with-multi-band-assisted-2025",
+    "title": "Accurate Seismic Data Interpolation With Multi-Band-Assisted Deep Learning",
+    "authors": null,
+    "org": null,
+    "venue": "Geophysical Prospecting",
+    "year": 2025,
+    "abstract": "This study proposes a multiband-assisted deep-learning framework for accurate seismic interpolation. The method decomposes seismic data into low-, mid-, and high-frequency bands using energy-based spectral partitioning and Hanning-window filters, trains U-Net models with transfer learning across bands, and recombines the subband predictions. Experiments use synthetic and field data, including field common-shot gathers with 127 shots, 127 traces, and 512 time samples.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "improving-generalization-performance-of-deep-learningbased-seismic-data-2025",
+    "title": "Improving generalization performance of deep learning–based seismic data interpolation",
+    "authors": null,
+    "org": null,
+    "venue": "Geophysical Prospecting",
+    "year": 2025,
+    "abstract": "This paper focuses on improving the generalization performance of deep-learning-based seismic interpolation. A modified U-Net3+ is trained on an unbiased data set that combines representative regular, irregular, and consecutive missing patterns as well as multiple levels of Gaussian random noise. Experiments use Mobil AVO Viking Graben Line 12 field data, with flipping and data stitching used to reduce data-set bias.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "seismic-data-interpolation-using-deeply-supervised-u-net-2023",
+    "title": "Seismic data interpolation using deeply supervised U-Net++ with natural seismic training sets",
+    "authors": null,
+    "org": null,
+    "venue": "Geophysical Prospecting",
+    "year": 2023,
+    "abstract": "This paper uses a deeply supervised U-Net++ for seismic interpolation and studies the construction of natural seismic training sets. Natural images are converted into seismic-like training samples through f-k bandpass filtering and time-axis bandpass processing, then combined with natural seismic and synthetic data. Training uses randomly missing inputs and patch-level supervision to improve interpolation performance.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "de-migration-based-supervised-learning-for-interpolation-and-2024",
+    "title": "De-migration-based supervised learning for interpolation and regularization of 3D offset classes",
+    "authors": null,
+    "org": null,
+    "venue": "Geophysical Prospecting",
+    "year": 2024,
+    "abstract": "This study proposes de-migration-based supervised learning for interpolation and regularization of 3D offset classes. A 3D convolutional encoder-decoder maps sparsely and irregularly sampled offset cubes to regular fully sampled cubes. Synthetic training pairs are generated by anti-leakage Fourier transform stacking and de-migration under both original and ideal acquisition geometries, followed by sliding-window supervised learning on 3D offset cubes.",
+    "tasks": [
+      "interpolation",
+      "regularization"
+    ],
+    "tags": [
+      "CNN",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "transposed-arrangement-strategy-based-deep-learning-for-seismic-2025",
+    "title": "Transposed Arrangement Strategy-Based Deep Learning for Seismic Data Crossline Interpolation",
+    "authors": null,
+    "org": null,
+    "venue": "JSE",
+    "year": 2025,
+    "abstract": "This paper presents a transposed-arrangement strategy for deep-learning-based seismic crossline interpolation. A 3D U-Net is trained on data blocks after linear moveout correction and is applied with transposed input arrangements to recover crossline-direction missing traces. Experiments use the SEG/EAGE Salt Model narrow-azimuth marine towed-streamer data set with regular 50 percent inline and crossline decimation and shot-position-based training, validation, and testing splits.",
+    "tasks": [
+      "interpolation"
+    ],
+    "tags": [
+      "U-Net",
+      "3D"
+    ],
+    "arxiv_url": null,
+    "doi": null,
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": null,
+    "is_sota": false,
+    "citation_count": 0
   }
 ]
