@@ -5,6 +5,7 @@ const translations = {
     nav: {
       overview: 'Overview',
       leaderboard: 'Leaderboard',
+      datasets: 'Datasets',
       benchmarks: 'Benchmarks',
       models: 'Models',
       papers: 'Papers',
@@ -89,6 +90,10 @@ const translations = {
       higherIsBetter: 'Higher values are better.',
       lowerIsBetter: 'Lower values are worse.',
     },
+    datasets: {
+      title: 'Datasets',
+      subtitle: 'Explore seismic datasets, visualizations, and related benchmarks.',
+    },
     models: {
       title: 'Models',
       subtitle: 'Browse methods and compare their performance across benchmarks.',
@@ -134,6 +139,7 @@ const translations = {
     nav: {
       overview: '概览',
       leaderboard: '排行榜',
+      datasets: '数据集',
       benchmarks: '基准测试',
       models: '模型',
       papers: '论文',
@@ -217,6 +223,10 @@ const translations = {
       noResults: '暂无结果。',
       higherIsBetter: '数值越高越好。',
       lowerIsBetter: '数值越低越好。',
+    },
+    datasets: {
+      title: '数据集',
+      subtitle: '浏览地震数据集、可视化内容及相关基准测试。',
     },
     models: {
       title: '模型',

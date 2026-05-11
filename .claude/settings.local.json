@@ -39,7 +39,8 @@
       "Bash(claude mem *)",
       "Bash(claude-mem --help)",
       "Bash(claude plugins *)",
-      "Bash(npm list *)"
+      "Bash(npm list *)",
+      "Bash(npx tsc *)"
     ]
   }
 }

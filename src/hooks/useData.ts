@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import type { AppData, Model, Benchmark, Result, Paper } from '../types';
+import type { AppData, Model, Benchmark, Result, Paper, Dataset } from '../types';
 import modelsJson from '../data/models.json';
 import benchmarksJson from '../data/benchmarks.json';
 import resultsJson from '../data/results.json';
 import papersJson from '../data/papers.json';
+import datasetsJson from '../data/datasets.json';
 
 export function useData(): { data: AppData; loading: boolean; error: string | null } {
   const [state, setState] = useState<{
@@ -11,7 +12,7 @@ export function useData(): { data: AppData; loading: boolean; error: string | nu
     loading: boolean;
     error: string | null;
   }>({
-    data: { models: [], benchmarks: [], results: [], papers: [] },
+    data: { models: [], benchmarks: [], results: [], papers: [], datasets: [] },
     loading: true,
     error: null,
   });
@@ -25,9 +26,10 @@ export function useData(): { data: AppData; loading: boolean; error: string | nu
       }));
       const results = resultsJson as Result[];
       const papers = papersJson as Paper[];
+      const datasets = datasetsJson as Dataset[];
 
       setState({
-        data: { models, benchmarks, results, papers },
+        data: { models, benchmarks, results, papers, datasets },
         loading: false,
         error: null,
       });

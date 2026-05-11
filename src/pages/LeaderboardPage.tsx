@@ -139,7 +139,6 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
   const currentBench = data.benchmarks.find(b => b.id === filters.dataset);
 
   const taskOptions: { value: Filters['task']; label: string }[] = [
-    { value: 'all', label: t.leaderboard.all },
     { value: 'interpolation', label: t.tasks.interpolation },
     { value: 'coherent_noise_suppression', label: t.tasks.coherent_noise_suppression },
     { value: 'random_noise_suppression', label: t.tasks.random_noise_suppression },
@@ -168,10 +167,11 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
             value={filters.task}
             onChange={e => {
               const task = e.target.value as Filters['task'];
+              const firstBench = data.benchmarks.find(b => b.task === task);
               setFilters(prev => ({
                 ...prev,
                 task,
-                dataset: 'all',
+                dataset: firstBench ? firstBench.id : 'all',
                 metric: task === 'first_arrival_picking' ? 'accuracy' : 'snr',
               }));
               setSort({ key: 'score', dir: 'desc' });
@@ -197,7 +197,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
           >
             <option value="all">{t.leaderboard.allDatasets}</option>
             {availableDatasets.map(b => (
-              <option key={b.id} value={b.id}>{b.name}</option>
+              <option key={b.id} value={b.id}>{b.dataset_name}</option>
             ))}
           </select>
         </div>

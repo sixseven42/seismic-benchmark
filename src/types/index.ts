@@ -21,6 +21,7 @@ export interface Model {
 export interface Benchmark {
   id: string;
   name: string;
+  dataset_name: string;
   task: Task;
   icon: string;
   description: string;
@@ -75,14 +76,34 @@ export interface Paper {
   is_sota: boolean;
 }
 
+export interface Dataset {
+  id: string;
+  name: string;
+  task: Task;
+  description: string;
+  thumbnail: string | null;
+  gallery: string[];
+  stats: {
+    shots?: number;
+    traces?: number;
+    samples?: number;
+    time_samples?: number;
+    size_gb?: number;
+    format?: string;
+    dimensions?: string;
+  };
+  related_benchmark_ids: string[];
+}
+
 export interface AppData {
   models: Model[];
   benchmarks: Benchmark[];
   results: Result[];
   papers: Paper[];
+  datasets: Dataset[];
 }
 
-export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'models' | 'papers';
+export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'datasets' | 'models' | 'papers';
 
 export interface Filters {
   task: Task | 'all';

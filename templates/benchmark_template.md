@@ -7,6 +7,7 @@
 | -------------- | --- | -------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | id             | 是   | string   | 唯一标识，小写，用连字符分隔    | `synth-denoise-random`                                                                                                     |
 | name           | 是   | string   | 显示名称              | `Synthetic Random Noise`                                                                                                   |
+| dataset_name   | 是   | string   | 底层数据集名称（如 SEG C3）   | `SEGC3` / `Marmousi`                                                                                                       |
 | task           | 是   | string   | 任务类型              | `interpolation` / `random_noise_suppression` / `coherent_noise_suppression` / `first_arrival_picking` / `super_resolution` |
 | icon           | 是   | string   | Emoji 图标          | `📡` `🧊` `🌫️` `⏱️` `🌋`                                                                                                  |
 | description    | 是   | string   | 数据集描述：如何生成、特点、用途  | 建议 1-3 句话                                                                                                                  |
@@ -36,7 +37,7 @@
 | description    | A dataset constructed based on the SEGC3 dataset and synthetic ground roll |
 | data_source    | syntheric                                                                  |
 | dimensions     | 9x201x201x625(shot numbers, xline, inline, time)                           |
-| primary_metric | `snr` / `psnr` / `ssim` / `rmse` / `mse`                                   |
+| primary_metric | `snr`                                                                      |
 | metrics        | `["snr", "ssim", "rmse"]`                                                  |
 | tags           | \                                                                          |
 | citation       | \                                                                          |
