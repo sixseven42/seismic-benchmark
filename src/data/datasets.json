@@ -4,10 +4,10 @@
     "name": "SEG C3 Ground Roll",
     "task": "coherent_noise_suppression",
     "description": "The SEGC3 (SEG China 3D) dataset is a synthetic 3D seismic survey based on a complex geological model. It includes 9 shot lines with 201 crosslines and 201 inlines each, sampled at 625 time samples. Synthetic ground-roll noise is injected to create a standard testbed for coherent noise suppression methods.",
-    "thumbnail": "/datasets/segc3-thumb.png",
+    "thumbnail": "datasets/segc3-thumb.png",
     "gallery": [
-      "/datasets/segc3-raw.png",
-      "/datasets/segc3-label.png"
+      "datasets/segc3-raw.png",
+      "datasets/segc3-label.png"
     ],
     "stats": {
       "shots": 9,
@@ -23,10 +23,10 @@
     "name": "Synthetic Marine 2D",
     "task": "interpolation",
     "description": "A 2D synthetic marine shot gather dataset generated via acoustic finite-difference modeling on a layered velocity model with Ricker wavelet sources. Designed for testing trace interpolation and reconstruction algorithms under controlled conditions.",
-    "thumbnail": "/datasets/marine2d-thumb.jpg",
+    "thumbnail": "datasets/marine2d-thumb.jpg",
     "gallery": [
-      "/datasets/marine2d-raw.jpg",
-      "/datasets/marine2d-label.jpg"
+      "datasets/marine2d-raw.jpg",
+      "datasets/marine2d-label.jpg"
     ],
     "stats": {
       "shots": 128,
@@ -42,10 +42,10 @@
     "name": "Marmousi",
     "task": "random_noise_suppression",
     "description": "The classic Marmousi model shot gathers contaminated with additive Gaussian noise at varying input SNR levels (-5 dB to +10 dB). Widely used as a standard benchmark for seismic denoising and random noise suppression methods.",
-    "thumbnail": "/datasets/marmousi-thumb.jpg",
+    "thumbnail": "datasets/marmousi-thumb.jpg",
     "gallery": [
-      "/datasets/marmousi-raw.jpg",
-      "/datasets/marmousi-label.jpg"
+      "datasets/marmousi-raw.jpg",
+      "datasets/marmousi-label.jpg"
     ],
     "stats": {
       "shots": 240,
@@ -61,10 +61,10 @@
     "name": "Synthetic Refraction",
     "task": "first_arrival_picking",
     "description": "Synthetic refraction shot records with exact ground-truth first-break times obtained directly from wavefront modeling. Spanning a range of input SNR from -5 dB to 20 dB to test robustness of first-arrival picking algorithms.",
-    "thumbnail": "/datasets/refraction-thumb.jpg",
+    "thumbnail": "datasets/refraction-thumb.jpg",
     "gallery": [
-      "/datasets/refraction-raw.jpg",
-      "/datasets/refraction-label.jpg"
+      "datasets/refraction-raw.jpg",
+      "datasets/refraction-label.jpg"
     ],
     "stats": {
       "shots": 96,
@@ -80,10 +80,10 @@
     "name": "Sichuan Basin Land Survey",
     "task": "coherent_noise_suppression",
     "description": "Real onshore vibroseis records from the Sichuan Basin featuring strong ground-roll and ambient cultural noise. Reference clean volumes are obtained through long-stack averaging, providing a realistic field-data testbed for denoising algorithms.",
-    "thumbnail": "/datasets/sichuan-thumb.jpg",
+    "thumbnail": "datasets/sichuan-thumb.jpg",
     "gallery": [
-      "/datasets/sichuan-raw.jpg",
-      "/datasets/sichuan-label.jpg"
+      "datasets/sichuan-raw.jpg",
+      "datasets/sichuan-label.jpg"
     ],
     "stats": {
       "shots": 120,
@@ -99,10 +99,10 @@
     "name": "Synthetic Super-Resolution",
     "task": "super_resolution",
     "description": "High-resolution synthetic marine shot gathers and their 2× downsampled counterparts. Designed for benchmarking seismic super-resolution methods on recovering spatially subsampled data.",
-    "thumbnail": "/datasets/sr-thumb.jpg",
+    "thumbnail": "datasets/sr-thumb.jpg",
     "gallery": [
-      "/datasets/sr-raw.jpg",
-      "/datasets/sr-label.jpg"
+      "datasets/sr-raw.jpg",
+      "datasets/sr-label.jpg"
     ],
     "stats": {
       "shots": 128,
