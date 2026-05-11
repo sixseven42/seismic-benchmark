@@ -1,5 +1,16 @@
 import { useState, useMemo, useCallback } from 'react';
+import { Bar } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useTheme } from '../hooks/useTheme';
 import type { AppData, Filters, MetricKey } from '../types';
 import {
   isLowerBetter,
@@ -8,6 +19,9 @@ import {
   formatMetricValue,
   escapeHtml,
 } from '../utils/helpers';
+import { getBarChartConfig } from '../utils/charts';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 interface Props {
   data: AppData;
@@ -23,6 +37,7 @@ interface SortState {
 
 export default function LeaderboardPage({ data, filters, setFilters, search }: Props) {
   const { t } = useLanguage();
+  const { theme } = useTheme();
   const [sort, setSort] = useState<SortState>({ key: 'score', dir: 'desc' });
 
   const metricCols = useMemo(() => getMetricColumns(filters.task), [filters.task]);
@@ -40,9 +55,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     if (filters.dataset !== 'all') {
       list = list.filter(row => row.benchmark!.id === filters.dataset);
     }
-    if (filters.type !== 'all') {
-      list = list.filter(row => row.model!.type === filters.type);
-    }
+    list = list.filter(row => row.model!.type === 'deep_learning');
     if (search) {
       const q = search.toLowerCase();
       list = list.filter(row =>
@@ -147,10 +160,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
   ];
 
   const typeOptions: { value: Filters['type']; label: string }[] = [
-    { value: 'all', label: t.leaderboard.allTypes },
-    { value: 'traditional', label: 'Traditional' },
-    { value: 'deep_learning', label: 'Deep Learning' },
-    { value: 'hybrid', label: 'Hybrid' },
+    { value: 'deep_learning', label: 'Deep Learning (E2E)' },
   ];
 
   return (
@@ -318,6 +328,26 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       <div style={{ marginTop: 'var(--space-4)', display: 'flex', gap: 'var(--space-3)' }}>
         <button className="btn btn-primary btn-icon" onClick={exportCSV}>📥 {t.leaderboard.exportCSV}</button>
       </div>
+
+      {rows.length > 0 && (
+        <div className="section-title" style={{ marginTop: 'var(--space-6)' }}>
+          <h3>{highlightMetric.toUpperCase()} Comparison</h3>
+        </div>
+      )}
+      {rows.length > 0 && (
+        <div className="card">
+          <div className="detail-chart-wrap" style={{ height: Math.max(280, rows.length * 44) }}>
+            <Bar
+              {...getBarChartConfig(
+                [...rows].reverse().map(r => r.model!.name),
+                [...rows].reverse().map(r => r.result.scores[highlightMetric] ?? 0),
+                highlightMetric,
+                theme
+              )}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -34,7 +34,7 @@ function AppContent() {
     task: 'interpolation',
     dataset: 'synth-interp-2d',
     metric: 'snr',
-    type: 'all',
+    type: 'deep_learning',
     search: '',
   });
 
