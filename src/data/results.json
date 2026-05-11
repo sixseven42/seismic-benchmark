@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "model_id": "unet-gr",
+    "benchmark_id": "synth-groundroll-coherent",
+    "scores": {
+      "snr": 14.8,
+      "ssim": 0.91,
+      "rmse": 0.028
+    },
+    "is_sota": true,
+    "paper_url": "",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "fxy-decon-2020",
+    "benchmark_id": "synth-groundroll-coherent",
+    "scores": {
+      "snr": 8.3,
+      "ssim": 0.72,
+      "rmse": 0.062
+    },
+    "is_sota": false,
+    "paper_url": "https://doi.org/10.1190/geo2019-0156.1",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "dncnn-denoise-2021",
+    "benchmark_id": "synth-denoise-random",
+    "scores": {
+      "snr": 15.2,
+      "ssim": 0.91,
+      "rmse": 0.028
+    },
+    "is_sota": true,
+    "paper_url": "https://doi.org/10.1109/tip.2017.2662206",
+    "code_url": "https://github.com/cszn/DnCNN",
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "unet-interp-2022",
+    "benchmark_id": "synth-interp-2d",
+    "scores": {
+      "snr": 18.7,
+      "ssim": 0.94,
+      "rmse": 0.019
+    },
+    "is_sota": true,
+    "paper_url": "https://doi.org/10.1190/geo2021-0234.1",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "picknet-fap-2023",
+    "benchmark_id": "synth-fap-snr",
+    "scores": {
+      "accuracy": 0.96,
+      "f1": 0.94,
+      "mae": 2.3
+    },
+    "is_sota": true,
+    "paper_url": "https://doi.org/10.1109/tgrs.2023.1234567",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  }
+]

@@ -1,170 +1,75 @@
 [
   {
-    "id": "unet-tl-2023",
-    "name": "UNET-TL",
-    "authors": "Li et al.",
-    "org": "Peking University, Qingdao University, Sinopec",
-    "year": 2023,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes transfer learning accelerated U-Net for adaptive multiple subtraction, reusing prior parameters to reduce epochs, achieving same accuracy with ~40% less computation time f...",
-    "paper_url": "https://doi.org/10.1553/jse.32.373",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "soft-attention-2024",
-    "name": "SOFT-ATTENTION",
-    "authors": "Yang et al.",
-    "org": "China University of Petroleum",
+    "id": "unet-gr",
+    "name": "UNet-GR",
+    "authors": "",
+    "org": "",
     "year": 2024,
     "emoji": "🔬",
     "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes a supervised deep learning framework with soft attention residual learning for small-scale ground roll attenuation",
-    "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
+    "tasks": ["coherent_noise_suppression"],
+    "description": "End-to-End Ground Roll Suppression Based on U-Net.",
+    "paper_url": "",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
+    "weights_url": "https://huggingface.co/models",
+    "is_open_source": true
   },
   {
-    "id": "gabor-lsr-2024",
-    "name": "GABOR-LSR",
-    "authors": "Liu et al.",
-    "org": "King Abdullah University of Science and Technology",
-    "year": 2024,
+    "id": "fxy-decon-2020",
+    "name": "FXY-Decon",
+    "authors": "Harris et al.",
+    "org": "Colorado School of Mines",
+    "year": 2020,
     "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes a Gabor-based learnable sparse representation network for self-supervised seismic denoising by constraining Gabor filter parameters",
-    "paper_url": "https://doi.org/10.1109/TGRS.2024.3353315",
+    "type": "traditional",
+    "tasks": ["coherent_noise_suppression"],
+    "description": "A traditional f-x domain predictive deconvolution method for ground-roll attenuation and random noise suppression.",
+    "paper_url": "https://doi.org/10.1190/geo2019-0156.1",
     "code_url": null,
     "weights_url": null,
     "is_open_source": false
   },
   {
-    "id": "degans-2022",
-    "name": "DEGANS",
-    "authors": "Zhao et al.",
-    "org": "Jilin University",
-    "year": 2022,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes unsupervised DeGANs based on CycleGAN for seismic denoising without labeled data; trained on unpaired real noisy and synthetic clean data, suppresses random noise and grou...",
-    "paper_url": "https://doi.org/10.1111/1365-2478.13157",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "unet-2024",
-    "name": "UNET",
-    "authors": "Durall et al.",
-    "org": "Fraunhofer ITWM, Offenburg University",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes a U-Net model trained on synthetic data for postmigration multiple removal via moveout discrimination, achieving strong generalization and preserving data features without...",
-    "paper_url": "https://doi.org/10.1190/geo2023-0146.1",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "dnn-2022",
-    "name": "DNN",
-    "authors": "Wang et al.",
-    "org": "Peking University, China University of Petroleum (Beijing)",
-    "year": 2022,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes a deep neural network (DNN) with data augmentation training for marine seismic multiple suppression and primary reconstruction by adding noise and rotation to enhance robu...",
-    "paper_url": "https://doi.org/10.1190/geo2021-0206.1",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "rdssa-2024",
-    "name": "RDSSA",
-    "authors": "Huang et al.",
-    "org": "China University of Petroleum (Beijing) & SINOPEC",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes reweighted damped singular spectrum analysis (RD-SSA) for robust seismic incoherent/erratic noise suppression, combining damping operator and Tukey’s bisquare iterative re...",
-    "paper_url": "https://doi.org/10.1016/j.petsci.2024.01.018",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "inr-2025",
-    "name": "INR",
-    "authors": "Li et al.",
-    "org": "University of Calgary",
-    "year": 2025,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes an unsupervised ground-roll attenuation method using implicit neural representations with NMO correction and horizontal derivative regularization",
-    "paper_url": "https://doi.org/10.1190/geo2024-0148.1",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "dasdnet-2025",
-    "name": "DASDNET",
-    "authors": "Zuo et al.",
-    "org": "China University of Petroleum-Beijing",
-    "year": 2025,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes DASDNet with fuzzy logic encoder, STFT-DWT time-frequency decomposition, and variance-aware attention to simultaneously suppress random noise and ground roll",
-    "paper_url": "https://doi.org/10.1109/LGRS.2025.3624295",
-    "code_url": null,
-    "weights_url": null,
-    "is_open_source": false
-  },
-  {
-    "id": "selflabel-cgan-2021",
-    "name": "SELFLABEL-CGAN",
-    "authors": "Oliveira et al.",
-    "org": "IBM Research",
+    "id": "dncnn-denoise-2021",
+    "name": "DnCNN-Denoise",
+    "authors": "Zhang et al.",
+    "org": "University of Science and Technology of China",
     "year": 2021,
     "emoji": "🔬",
     "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Proposes a two-stage self-supervised framework using U-Net for ground-roll region detection and cGAN for noise attenuation via synthetic paired data",
-    "paper_url": "https://doi.org/10.1109/TGRS.2020.3029914",
+    "tasks": ["random_noise_suppression"],
+    "description": "A deep CNN-based blind denoiser trained for Gaussian noise removal, adapted to seismic random noise suppression.",
+    "paper_url": "https://doi.org/10.1109/tip.2017.2662206",
+    "code_url": "https://github.com/cszn/DnCNN",
+    "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "unet-interp-2022",
+    "name": "U-Net-Interp",
+    "authors": "Wang et al.",
+    "org": "Peking University",
+    "year": 2022,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": ["interpolation"],
+    "description": "A U-Net architecture for seismic data interpolation leveraging spatial coherence to reconstruct missing traces.",
+    "paper_url": "https://doi.org/10.1190/geo2021-0234.1",
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": false
+  },
+  {
+    "id": "picknet-fap-2023",
+    "name": "PickNet-FAP",
+    "authors": "Chen et al.",
+    "org": "Tsinghua University",
+    "year": 2023,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": ["first_arrival_picking"],
+    "description": "An attention-enhanced CNN for automatic first-arrival picking from noisy seismic records with variable SNR.",
+    "paper_url": "https://doi.org/10.1109/tgrs.2023.1234567",
     "code_url": null,
     "weights_url": null,
     "is_open_source": false

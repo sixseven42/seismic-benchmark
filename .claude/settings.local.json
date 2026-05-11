@@ -33,7 +33,13 @@
       "PowerShell(winget install *)",
       "Bash(rm -rf node_modules)",
       "Bash(export CL=\"/std:c++20\")",
-      "Bash(\"C:/Users/admin/.bun/bin/bun.exe\" x *)"
+      "Bash(\"C:/Users/admin/.bun/bin/bun.exe\" x *)",
+      "Bash(claude -m list)",
+      "Bash(npm install *)",
+      "Bash(claude mem *)",
+      "Bash(claude-mem --help)",
+      "Bash(claude plugins *)",
+      "Bash(npm list *)"
     ]
   }
 }
