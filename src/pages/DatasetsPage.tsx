@@ -94,11 +94,13 @@ export default function DatasetsPage({ data, filters, setFilters, search }: Prop
     dimensions: 'Dimensions',
   };
 
+  const closePanel = () => setActiveDatasetId(null);
+
   return (
     <div>
       <div className="page-header">
         <h1>{t.datasets?.title ?? 'Datasets'}</h1>
-        <p className="lede">{t.datasets?.subtitle ?? 'Explore seismic datasets and their visualizations.'}</p>
+        <p className="lede">{t.datasets?.subtitle ?? 'Explore seismic datasets, visualizations, and related benchmarks.'}</p>
       </div>
 
       <div className="toolbar">
@@ -118,7 +120,7 @@ export default function DatasetsPage({ data, filters, setFilters, search }: Prop
         {list.map(d => (
           <div
             key={d.id}
-            className="card clickable dataset-card"
+            className={`card clickable dataset-card ${activeDatasetId === d.id ? 'dataset-active' : ''}`}
             onClick={() => setActiveDatasetId(prev => prev === d.id ? null : d.id)}
           >
             <div className="dataset-thumb">
@@ -133,68 +135,85 @@ export default function DatasetsPage({ data, filters, setFilters, search }: Prop
             <div className="card-body">
               <p>{escapeHtml(d.description)}</p>
             </div>
-
-            {activeDatasetId === d.id && activeDataset && (
-              <div className="detail-panel" onClick={e => e.stopPropagation()}>
-                <div className="detail-grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
-                  <div className="detail-section" style={{ gridColumn: '1 / -1' }}>
-                    <h4>Visualization Gallery</h4>
-                    <div className="dataset-gallery">
-                      {activeDataset.gallery.map((src, idx) => (
-                        <div key={idx} className="dataset-gallery-item">
-                          <LazyImage src={src} alt={`${activeDataset.name} ${idx + 1}`} />
-                        </div>
-                      ))}
-                      {!activeDataset.gallery.length && (
-                        <p className="text-muted">No visualizations available yet.</p>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="detail-section">
-                    <h4>Description</h4>
-                    <p>{escapeHtml(activeDataset.description)}</p>
-                  </div>
-
-                  <div className="detail-section">
-                    <h4>Statistics</h4>
-                    <table className="detail-mini-table">
-                      <tbody>
-                        {Object.entries(activeDataset.stats).map(([key, val]) => (
-                          <tr key={key}>
-                            <td>{statLabels[key] ?? key}</td>
-                            <td className="mono">{val}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <div className="detail-section" style={{ gridColumn: '1 / -1' }}>
-                    <h4>Related Benchmarks</h4>
-                    {relatedBenchmarks.length ? (
-                      <div className="dataset-benchmark-list">
-                        {relatedBenchmarks.map(b => (
-                          <div key={b.id} className="dataset-benchmark-chip">
-                            <span className="dataset-benchmark-icon">{b.icon}</span>
-                            <span>{escapeHtml(b.name)}</span>
-                            <span className="dataset-benchmark-meta">{b.dimensions}</span>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <p className="text-muted">No related benchmarks.</p>
-                    )}
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         ))}
       </div>
 
       {list.length === 0 && (
         <div className="lb-empty">No datasets match your filters.</div>
+      )}
+
+      {/* Slide-over panel */}
+      {activeDataset && (
+        <>
+          <div className="slide-backdrop" onClick={closePanel} />
+          <div className="slide-panel">
+            <div className="slide-panel-header">
+              <div>
+                <h2>{escapeHtml(activeDataset.name)}</h2>
+                <span className="slide-panel-subtitle">{escapeHtml(t.tasks[activeDataset.task])}</span>
+              </div>
+              <button className="slide-panel-close" onClick={closePanel} title="Close">✕</button>
+            </div>
+
+            <div className="slide-panel-body">
+              <div className="slide-panel-col">
+                <section className="slide-section">
+                  <h4>Description</h4>
+                  <p>{escapeHtml(activeDataset.description)}</p>
+                </section>
+
+                <section className="slide-section">
+                  <h4>Statistics</h4>
+                  <div className="stat-grid">
+                    {Object.entries(activeDataset.stats).map(([key, val]) => (
+                      <div key={key} className="stat-cell">
+                        <span className="stat-label">{statLabels[key] ?? key}</span>
+                        <span className="stat-value mono">{val}</span>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="slide-section">
+                  <h4>Related Benchmarks</h4>
+                  {relatedBenchmarks.length ? (
+                    <div className="dataset-benchmark-list">
+                      {relatedBenchmarks.map(b => (
+                        <div key={b.id} className="dataset-benchmark-chip">
+                          <span className="dataset-benchmark-icon">{b.icon}</span>
+                          <span>{escapeHtml(b.name)}</span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-muted">No related benchmarks.</p>
+                  )}
+                </section>
+              </div>
+
+              <div className="slide-panel-col">
+                <section className="slide-section">
+                  <h4>Visualization</h4>
+                  <div className="viz-pair">
+                    <div className="viz-item">
+                      <span className="viz-tag">Raw Data</span>
+                      <div className="viz-frame">
+                        <LazyImage src={activeDataset.gallery[0] ?? null} alt={`${activeDataset.name} raw`} />
+                      </div>
+                    </div>
+                    <div className="viz-item">
+                      <span className="viz-tag">Label / Clean</span>
+                      <div className="viz-frame">
+                        <LazyImage src={activeDataset.gallery[1] ?? null} alt={`${activeDataset.name} label`} />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </>
       )}
     </div>
   );

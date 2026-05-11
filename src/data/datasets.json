@@ -7,8 +7,7 @@
     "thumbnail": "/datasets/segc3-thumb.jpg",
     "gallery": [
       "/datasets/segc3-raw.jpg",
-      "/datasets/segc3-clean.jpg",
-      "/datasets/segc3-velocity.jpg"
+      "/datasets/segc3-label.jpg"
     ],
     "stats": {
       "shots": 9,
@@ -26,9 +25,8 @@
     "description": "A 2D synthetic marine shot gather dataset generated via acoustic finite-difference modeling on a layered velocity model with Ricker wavelet sources. Designed for testing trace interpolation and reconstruction algorithms under controlled conditions.",
     "thumbnail": "/datasets/marine2d-thumb.jpg",
     "gallery": [
-      "/datasets/marine2d-missing.jpg",
-      "/datasets/marine2d-reconstructed.jpg",
-      "/datasets/marine2d-velocity.jpg"
+      "/datasets/marine2d-raw.jpg",
+      "/datasets/marine2d-label.jpg"
     ],
     "stats": {
       "shots": 128,
@@ -46,9 +44,8 @@
     "description": "The classic Marmousi model shot gathers contaminated with additive Gaussian noise at varying input SNR levels (-5 dB to +10 dB). Widely used as a standard benchmark for seismic denoising and random noise suppression methods.",
     "thumbnail": "/datasets/marmousi-thumb.jpg",
     "gallery": [
-      "/datasets/marmousi-noisy.jpg",
-      "/datasets/marmousi-denoised.jpg",
-      "/datasets/marmousi-velocity.jpg"
+      "/datasets/marmousi-raw.jpg",
+      "/datasets/marmousi-label.jpg"
     ],
     "stats": {
       "shots": 240,
@@ -66,9 +63,8 @@
     "description": "Synthetic refraction shot records with exact ground-truth first-break times obtained directly from wavefront modeling. Spanning a range of input SNR from -5 dB to 20 dB to test robustness of first-arrival picking algorithms.",
     "thumbnail": "/datasets/refraction-thumb.jpg",
     "gallery": [
-      "/datasets/refraction-record.jpg",
-      "/datasets/refraction-picks.jpg",
-      "/datasets/refraction-snr.jpg"
+      "/datasets/refraction-raw.jpg",
+      "/datasets/refraction-label.jpg"
     ],
     "stats": {
       "shots": 96,
@@ -87,8 +83,7 @@
     "thumbnail": "/datasets/sichuan-thumb.jpg",
     "gallery": [
       "/datasets/sichuan-raw.jpg",
-      "/datasets/sichuan-clean.jpg",
-      "/datasets/sichuan-noise.jpg"
+      "/datasets/sichuan-label.jpg"
     ],
     "stats": {
       "shots": 120,
