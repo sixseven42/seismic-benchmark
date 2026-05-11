@@ -7847,5 +7847,934 @@
     "introduces_model": null,
     "is_sota": false,
     "citation_count": 0
+  },
+  {
+    "id": "hu2019unet_first_arrival",
+    "title": "First-arrival picking with a U-net convolutional network",
+    "authors": "Lianlian Hu, Xiaodong Zheng, Yanting Duan, Xinfei Yan, Ying Hu, Xiaole Zhang",
+    "org": "PetroChina / Peking University / China National Petroleum Corporation",
+    "venue": "Geophysics",
+    "year": 2019,
+    "abstract": "We formulate first-arrival picking as a binary segmentation problem and use a U-Net convolutional network trained with annotated shot gathers. The model predicts the first-arrival boundary on synthetic and low-quality field data, reducing manual picking for noisy exploration records.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "U-Net",
+      "Semantic Segmentation"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2018-0688.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "U-Net convolutional network for first-arrival picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "duan2020integrated_ml_first_break",
+    "title": "Multitrace first-break picking using an integrated seismic and machine learning method",
+    "authors": "Xudong Duan, Jie Zhang",
+    "org": null,
+    "venue": "Geophysics",
+    "year": 2020,
+    "abstract": "This method combines conventional preliminary picking, moveout correction, and a CNN-based quality-control step to repair or reject unreliable multitrace first-break picks. The workflow is designed for large labeled shot gathers and exploits moveout-consistent traces.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "CNN",
+      "Moveout Correction",
+      "Quality Control"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2019-0422.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Integrated seismic and machine-learning multitrace first-break picking workflow",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "ma2020pixel_level_arrival_picking",
+    "title": "Automated arrival-time picking using a pixel-level network",
+    "authors": "Yuanyuan Ma, Siyuan Cao, James W. Rector, Zhishuai Zhang",
+    "org": "China University of Petroleum Beijing / University of California, Berkeley / Stanford University",
+    "venue": "Geophysics",
+    "year": 2020,
+    "abstract": "This work converts seismic traces into image-like inputs and trains a pixel-level convolutional network to output a probability map for arrival-time classes. The first arrivals are then extracted from the predicted boundary between pre-arrival and post-arrival regions.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Pixel-Level CNN",
+      "Semantic Segmentation"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2019-0792.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Pixel-level convolutional network for arrival-time picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "yuan2020cnn_rnn_first_arrival_workflow",
+    "title": "A robust first-arrival picking workflow using convolutional and recurrent neural networks",
+    "authors": "Pengyu Yuan, Shirui Wang, Wenyi Hu, Xuqing Wu, Jiefu Chen, Hien Van Nguyen",
+    "org": "University of Houston",
+    "venue": "Geophysics",
+    "year": 2020,
+    "abstract": "A CNN/U-Net segmentation model identifies candidate first-arrival regions and a recurrent or post-processing module traces a coherent picking boundary. The workflow targets near-surface seismic data for velocity-model building.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "CNN",
+      "RNN",
+      "Boundary Extraction"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2019-0437.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "CNN/U-Net segmentation plus recurrent/post-processing first-arrival workflow",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "ozawa2024self_trained_first_arrival",
+    "title": "Automated picking of seismic first arrivals using a single- to multidomain self-trained network",
+    "authors": "Mitsuyuki Ozawa",
+    "org": "JGI, Inc.",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "This work introduces a single- to multidomain self-training scheme for seismic first-arrival picking. It iteratively filters unreliable pseudo-picks and assigns pseudo-first-arrival times to unlabeled data to improve cross-survey adaptation.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Self Training",
+      "Pseudo Labels",
+      "Domain Adaptation",
+      "Semi-Supervised Learning"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2022-0666.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Single- to multidomain self-trained network for seismic first-arrival picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "pu2024hu_net_first_arrival_accuracy",
+    "title": "Improving the accuracy of predicted first-arrival times using deep learning",
+    "authors": "Yitao Pu, Bo Zhang, Chenglin Wei, Yingyu Xu, Hongfei Liu",
+    "org": "University of Alabama",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "HU-net uses three complementary inputs—shot gathers, envelope, and cosine of instantaneous phase—and fuses multiple predictions statistically. A constrained path-search stage enforces physically plausible first-arrival continuity.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "HU-Net",
+      "Multi-Input Fusion",
+      "Constrained Path Search"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2023-0154.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "HU-net multi-input prediction fusion plus constrained path search",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang2024msspn_first_arrival",
+    "title": "MSSPN: Automatic first-arrival picking using a multistage spatial perception network",
+    "authors": "Hongtao Wang, Jiangshe Zhang, Xiaoli Wei, Chunxia Zhang, Li Long, Zhenbo Guo",
+    "org": "Xi'an Jiaotong University / Chinese Academy of Sciences",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "MSSPN performs first-arrival picking through a coarse-to-fine pipeline: coarse segmentation, trend estimation, refined segmentation, and velocity-constrained post-processing. The multistage design narrows the search region and suppresses outliers across field surveys.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "MSSPN",
+      "Coarse-to-Fine",
+      "Velocity Constraint"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2209.03132",
+    "doi": "https://doi.org/10.1190/geo2023-0110.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "MSSPN (multistage segmentation-picking network)",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "stcharles2024hardrock_first_break_benchmark",
+    "title": "A deep learning benchmark for first break detection from hardrock seismic reflection data",
+    "authors": "Pierre-Luc St-Charles, Bruno Rousseau, Joumana Ghosn, Gilles Bellefleur, Ernst Schetselaar",
+    "org": "Mila, Québec AI Institute / Geological Survey of Canada, Natural Resources Canada",
+    "venue": "Geophysics",
+    "year": 2024,
+    "abstract": "This benchmark paper releases a hardrock seismic first-break detection dataset, standardized splits, evaluation protocols, and baseline models. It provides a reproducible testbed for comparing deep-learning pickers.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Benchmark",
+      "Open Dataset",
+      "U-Net Baseline"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2022-0741.1",
+    "code_url": "https://github.com/mila-iqia/hardpicks",
+    "github_stars": null,
+    "introduces_model": "Hardrock first-break detection benchmark and baseline models",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liu2025foundation_models_exploration_geophysics",
+    "title": "Foundation models for exploration geophysics",
+    "authors": "Qi Liu, Zenggui Chen, Jianwei Ma",
+    "org": "Peking University / Harbin Institute of Technology",
+    "venue": "Geophysics",
+    "year": 2025,
+    "abstract": "This perspective and review paper discusses the role of foundation models in exploration geophysics and highlights possible applications such as first-arrival picking. It is included as a general model-oriented reference rather than a dedicated picker.",
+    "tasks": [
+      "foundation_model"
+    ],
+    "tags": [
+      "Foundation Model",
+      "Review",
+      "Exploration Geophysics"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1190/geo2024-0916.1",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Foundation-model review and perspective for exploration geophysics",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "yuan2022segnet_sparse_traces_first_break",
+    "title": "SegNet-based first-break picking via seismic waveform classification directly from shot gathers with sparsely distributed traces",
+    "authors": "San-Yi Yuan, Yue Zhao, Tao Xie, Jie Qi, Shang-Xu Wang",
+    "org": "China University of Petroleum / related institutions",
+    "venue": "Petroleum Science",
+    "year": 2022,
+    "abstract": "This method applies a SegNet fully convolutional network to classify seismic waveforms directly from sparsely distributed shot gathers. Binary labels generated from manually interpreted full gathers guide first-break prediction under missing-trace conditions.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "SegNet",
+      "Sparse Traces",
+      "Semantic Segmentation"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.petsci.2021.10.010",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "SegNet waveform-classification first-break picker for sparse shot gathers",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "yuan2024regression_first_break_picking",
+    "title": "A regression approach for seismic first-break picking",
+    "authors": "Huan Yuan, San-Yi Yuan, Jie Wu, Wen-Jing Sang, Yu-He Zhao",
+    "org": "China University of Petroleum / related institutions",
+    "venue": "Petroleum Science",
+    "year": 2024,
+    "abstract": "This work formulates first-break picking as a regression problem with a BiLSTM model. Geometry and traveltime-related inputs such as shot elevation, receiver elevation, offset, and traveltime are used to predict continuous first-break times.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "BiLSTM",
+      "Regression",
+      "Geometry Features"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.petsci.2023.11.028",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "BiLSTM regression model for seismic first-break picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "li2024attention_unet_complex_surface_first_arrival",
+    "title": "基于注意力机制U-Net的复杂地表地震初至拾取方法",
+    "authors": "李闻达, 刘洪, 吴天麒",
+    "org": null,
+    "venue": "地球物理学报",
+    "year": 2024,
+    "abstract": "This paper introduces an attention U-Net for complex near-surface seismic first-arrival picking. The attention mechanism strengthens relevant first-arrival features and aims to improve static-correction and near-surface inversion workflows.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Attention U-Net",
+      "Complex Surface",
+      "Semantic Segmentation"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.6038/cjg2024R0306",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Attention U-Net for complex-surface seismic first-arrival picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "luo2021cmdp_first_break_picking",
+    "title": "基于约束Markov决策过程的初至自动识别技术",
+    "authors": "罗飞, 王华忠",
+    "org": "同济大学海洋与地球科学学院",
+    "venue": "地球物理学报",
+    "year": 2021,
+    "abstract": "This method models first-break picking as a constrained Markov decision process. Spatial geometric constraints, transition probabilities, and a global reward function are used to search for coherent first arrivals while avoiding bad traces.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Markov Decision Process",
+      "Constrained Optimization",
+      "Traditional Machine Learning"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.6038/cjg2021O0135",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Constrained Markov Decision Process (CMDP) first-break picking framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "luo2021intelligent_markov_first_arrival",
+    "title": "Automatic first-arrival picking method via intelligent Markov optimal decision processes",
+    "authors": "Fei Luo, Bo Feng, Huazhong Wang",
+    "org": "Tongji University",
+    "venue": "Journal of Geophysics and Engineering",
+    "year": 2021,
+    "abstract": "An intelligent Markov optimal decision process is built with fuzzy C-means multiattribute rewards and a Gaussian random strategy. The method exploits lateral continuity to pick first arrivals on synthetic, marine, and complex-surface seismic data.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Markov Decision Process",
+      "Fuzzy C-Means",
+      "Multiattribute Reward"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1093/jge/gxab026",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Intelligent Markov optimal decision process with FCM reward and Gaussian stochastic policy",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "chen2023ntcom_first_arrival",
+    "title": "NT-Com: A combined machine learning model for picking up first arrival",
+    "authors": "Hongfeng Chen, Pengyu Wang, Tao Ren, Zhangrong Pan, Jie Liu, Yanlu Ma",
+    "org": null,
+    "venue": "Computers and Geosciences",
+    "year": 2023,
+    "abstract": "NT-Com combines a nonlinear autoregressive exogenous network with classification and regression trees to detect abrupt P-wave arrivals. The model treats arrival picking as time-series anomaly detection and reduces false triggers on China Earthquake Network data.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "NARX",
+      "CART",
+      "Combined Machine Learning",
+      "P-Wave Picking"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1016/j.cageo.2023.105321",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "NT-Com (NARX + CART) combined machine-learning model",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "tsai2020automatic_first_arrival",
+    "title": "Automatic First Arrival Picking via Deep Learning With Human Interactive Learning",
+    "authors": "Kuo Chun Tsai, Wenyi Hu, Xuqing Wu, Jiefu Chen, Zhu Han",
+    "org": "University of Houston",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2020,
+    "abstract": "This human-interactive deep-learning framework performs automatic first-arrival picking while updating the model through active learning. It uses both labeled and unlabeled data to reduce annotation effort and identify labeling anomalies.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Human Interactive Learning",
+      "Semi-Supervised Learning",
+      "Active Learning"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2019.2946118",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Human-interactive deep learning framework for automatic first-arrival picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "ayub2024enhanced_first_break_picking",
+    "title": "Enhanced First-Break Picking Using Hybrid Convolutional Neural Network and Recurrent Neural Networks",
+    "authors": "Mohammed Ayub, SanLinn I. Kaka",
+    "org": "King Fahd University of Petroleum and Minerals",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2024,
+    "abstract": "Hybrid CNN-RNN architectures are evaluated for first-break classification, including CNNBiLSTM, CNNLSTM, and GRUCNN. The study compares feature and sample requirements and reports that hybrid models outperform a baseline CNN.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "CNN",
+      "RNN",
+      "Hybrid Architecture"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2023.3338091",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "CNNBiLSTM, CNNLSTM, GRUCNN and other hybrid CNN-RNN architectures for first-break picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang2024upnet_first_break_picking",
+    "title": "UPNet: Uncertainty-Based Picking Deep Learning Network for Robust First Break Picking",
+    "authors": "Hongtao Wang, Jiangshe Zhang, Xiaoli Wei, Li Long, Chunxia Zhang, Zhenbo Guo",
+    "org": "Xi'an Jiaotong University",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2024,
+    "abstract": "UPNet combines Bayesian uncertainty estimation with a regression network to produce robust trace-by-trace first-break picks. Uncertainty analysis filters low-confidence predictions and avoids threshold-based post-processing of segmentation maps.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Bayesian Deep Learning",
+      "Uncertainty Quantification",
+      "Regression"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3439685",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "UPNet",
+    "is_sota": true,
+    "citation_count": 0
+  },
+  {
+    "id": "wang2024dsunet_first_break_picking",
+    "title": "DSU-Net: Dynamic Snake U-Net for 2-D Seismic First Break Picking",
+    "authors": "Hongtao Wang, Rongyu Feng, Liangyi Wu, Mutian Liu, Yinuo Cui, Chunxia Zhang, Zhenbo Guo",
+    "org": "Xi'an Jiaotong University",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2024,
+    "abstract": "DSU-Net embeds dynamic snake convolution into U-Net to better capture horizontally continuous first-break textures in shot gathers. The model improves robustness for 2-D segmentation-based picking, especially near abrupt first-break jumps.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Dynamic Snake Convolution",
+      "U-Net",
+      "2D Segmentation"
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2405.16980",
+    "doi": "https://doi.org/10.1109/TGRS.2024.3457521",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "DSU-Net",
+    "is_sota": true,
+    "citation_count": 0
+  },
+  {
+    "id": "bai2025simultaneous_picking_refinement",
+    "title": "Simultaneous Automatic Picking and Manual Picking Refinement for First-Break",
+    "authors": "Haowen Bai, Zixiang Zhao, Jiangshe Zhang, Yukun Cui, Chunxia Zhang, Zhenbo Guo, Yongjun Wang",
+    "org": "Xi'an Jiaotong University",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2024,
+    "abstract": "SPR treats the true first break as a latent variable and jointly performs automatic picking and manual-pick refinement. The probabilistic framework is designed to handle outliers, mislabeled samples, and noisy annotations.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Probabilistic Deep Learning",
+      "Label Refinement",
+      "Noisy Labels"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3400977",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "SPR (Simultaneous Picking and Refinement)",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "jiang2024three_d_first_break_two_channel_mask",
+    "title": "3-D Seismic First Break Picking Based on Two-Channel Mask Strategy",
+    "authors": "Peifan Jiang, Fei Deng, Xuben Wang, Wen Luo, Chengming Ye",
+    "org": "Chengdu University of Technology",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2024,
+    "abstract": "This work proposes a two-channel mask strategy for 3-D seismic first-break picking. A Swin Transformer-based USwinNet uses strip-like and line-like masks to improve uniqueness and global feature extraction across inline and crossline directions.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Swin Transformer",
+      "Two-Channel Mask",
+      "3D Picking"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3412673",
+    "code_url": "https://github.com/jiangpeifan/2C-SeismicFBpicking",
+    "github_stars": 1,
+    "introduces_model": "Two-Channel Mask Strategy Network",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "li2024meta_learning_first_arrival",
+    "title": "A Meta-Learning-Based Approach for Automatic First-Arrival Picking",
+    "authors": "Hanyang Li, Yuhang Sun, Jiahui Li, Hang Li, Hongli Dong",
+    "org": "Northeast Petroleum University",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2024,
+    "abstract": "This meta-learning framework reduces dependence on large high-quality labeled datasets for first-arrival picking. It can be paired with different DNN backbones and improves few-shot adaptation and robustness under strong noise.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Meta Learning",
+      "Small Sample Learning",
+      "Deep Neural Network"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3436817",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Meta-learning-based first-arrival picking framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "li2024pg_tl_first_arrival",
+    "title": "First-Arrival Picking for Out-of-Distribution Noisy Data: A Cost-Effective Transfer Learning Method With Tens of Samples",
+    "authors": "Hanyang Li, Xuegui Li, Yuhang Sun, Hongli Dong, Gang Xu",
+    "org": "Northeast Petroleum University",
+    "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+    "year": 2024,
+    "abstract": "This transfer-learning method uses prior knowledge to adapt first-arrival pickers to out-of-distribution noisy data with only tens of labeled samples. It targets small-sample, cost-effective adaptation across acquisition conditions.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Transfer Learning",
+      "Out-of-Distribution Generalization",
+      "Small Sample Adaptation"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/TGRS.2024.3462935",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "PG-TL (Prior Knowledge Guided Transfer Learning)",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhao2024intelligent_first_arrival_multi_data_fusion",
+    "title": "An intelligent first-arrival picking method based on multi-data fusion and adaptive weighted hybrid loss function",
+    "authors": "Juncai Zhao, Jiangtao Ma, Yang Liu, Ning Wang, Yadong Hu, Yong Tan",
+    "org": "Huabei Branch of Sinopec Geophysical Corporation",
+    "venue": "Geophysical Prospecting for Petroleum (石油物探)",
+    "year": 2025,
+    "abstract": "This method integrates seismic, offset, and elevation information in a multi-data-fusion deep model. An adaptive weighted hybrid loss constrains training and improves first-arrival picking under complex surface conditions with weak arrivals and strong noise.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Data Fusion",
+      "Adaptive Weighted Hybrid Loss"
+    ],
+    "arxiv_url": null,
+    "doi": "http://dx.doi.org/10.12431/issn.1000-1441.2024.0090",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Multi-Data Fusion + Adaptive Weighted Hybrid Loss First-Arrival Picking Framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhou2020dcgan_first_arrival",
+    "title": "A deep convolutional generative adversarial network for first-arrivalxpickup from seismic data",
+    "authors": "Chuang Zhou, Xingguo Ju, Ziang Li, Xiaomin Liu",
+    "org": "Sinopec Geophysical Research Institute",
+    "venue": "Geophysical Prospecting for Petroleum (石油物探)",
+    "year": 2020,
+    "abstract": "This method applies a deep convolutional generative adversarial network to first-arrival picking. A fully convolutional generator maps shot gathers to first-arrival labels while a CNN discriminator improves the learned picking result.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "DCGAN",
+      "Fully Convolutional Network"
+    ],
+    "arxiv_url": null,
+    "doi": "https://dx.doi.org/10.3969/j.issn.1000-1441.2020.05.013",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "DCGAN-based First-Arrival Picking Framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "qin2025precise_first_arrival_res_lstm",
+    "title": "A precise picking method for seismic first arrivals based on the residual long short-term memory network driven by time-frequency dual domain data",
+    "authors": "Ziyu Qin, Xianju Zheng, Wenhua Wang",
+    "org": "Chengdu Technological University",
+    "venue": "Journal of Seismic Exploration",
+    "year": 2025,
+    "abstract": "M-Res-LSTM combines residual networks, LSTM temporal modeling, coordinate attention, and time-frequency dual-domain inputs. Amplitude, frequency, and phase features are used to improve first-arrival picking under low SNR and weak first-arrival energy.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Residual LSTM",
+      "Time-Frequency Features",
+      "Coordinate Attention"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.36922/JSE025330058",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "M-Res-LSTM (Multi-perspective Residual Long Short-Term Memory Network)",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wu2024automatic_first_break_multi_view_fusion",
+    "title": "Automatic seismic first-break picking based on multi-view feature fusion network",
+    "authors": "Yinghe Wu, Shulin Pan, Haiqiang Lan, José Badal, Ze Wei, Yaojie Chen",
+    "org": "Southwest Petroleum University",
+    "venue": "Geophysical Prospecting",
+    "year": 2024,
+    "abstract": "This multi-view feature fusion network combines LSTM-based single-trace temporal features with a residual attention-gated U-Net for 2-D boundary features. A fusion module integrates both views to improve picking accuracy and noise resistance.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Multi-View Feature Fusion",
+      "LSTM",
+      "Re-AG-UNet"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13592",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Multi-View Feature Fusion Network (LSTM + Re-AG-UNet)",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zhang2023automatic_first_break_structured_rf",
+    "title": "Automatic first break picking with structured random forests",
+    "authors": "Chun-Xia Zhang, Qi Zhang, Xiao-Li Wei, Zhen-Bo Guo, Yong-Jun Wang, Sang-Woon Kim",
+    "org": "Xi'an Jiaotong University",
+    "venue": "Geophysical Prospecting",
+    "year": 2023,
+    "abstract": "This framework uses structured random forests for first-break picking from multichannel feature maps. Multi-scale normalization and STA/LTA-enhanced features provide local context, followed by probability-map post-processing.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Structured Random Forest",
+      "Multi-Scale Normalization",
+      "Traditional Machine Learning"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13390",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Structured Random Forest (SRF) First-Break Picking Framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "loginov2022cnn_land_first_break",
+    "title": "Convolution neural network application for first-break picking for land seismic data",
+    "authors": "Georgy N. Loginov, Anton A. Duchkov, Dmitry A. Litvichenko, Sergey A. Alyamkin",
+    "org": "Institute of Petroleum Geology and Geophysics",
+    "venue": "Geophysical Prospecting",
+    "year": 2022,
+    "abstract": "This work evaluates CNN architectures for large-scale land seismic first-break picking and favors a compact 1-D trace-by-trace network. Training on a limited number of traces yields robust results on millions of West Siberia field traces.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "CNN",
+      "Land Seismic Data"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13192",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "1-D CNN First-Break Picking Framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "wang2022iterative_gmm_first_arrival",
+    "title": "Iterative Gaussian mixture model and multi-channel attributes for arrival picking in extremely noisy environments",
+    "authors": "Hang Wang, Yangkang Chen",
+    "org": "School of Earth Sciences",
+    "venue": "Geophysical Prospecting",
+    "year": 2022,
+    "abstract": "This strategy combines local PCA, two multichannel attributes, and an iterative Gaussian mixture model to pick arrivals in extremely noisy environments. The iterative boundaries provide more flexible clustering than fixed K-means-style methods.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Gaussian Mixture Model",
+      "Multi-Channel Attributes",
+      "Extreme Noise Robustness"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13164",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Iterative Gaussian Mixture Model (IGMM)",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "zwartjes2022first_break_deep_learning_architecture",
+    "title": "First break picking with deep learning - evaluation of network architectures",
+    "authors": "Paul M. Zwartjes, Jewoo Yoo",
+    "org": "Aramco Overseas Company",
+    "venue": "Geophysical Prospecting",
+    "year": 2022,
+    "abstract": "This architecture-evaluation study compares autoencoder, U-Net, and ResNet-enhanced variants for first-break picking. It analyzes network depth, width, input size, and robustness to noisy training picks.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "U-Net",
+      "Architecture Evaluation"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13162",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Benchmark framework for U-Net / Autoencoder / ResNet architecture comparison",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "xu2021first_break_semantic_segmentation",
+    "title": "First-break automatic picking technology based on semantic segmentation",
+    "authors": "Yinpo Xu, Cheng Yin, Yingjie Pan, Yudong Ni, Xuefeng Zou, Tianfu Yang",
+    "org": "Acquisition Technology Center",
+    "venue": "Geophysical Prospecting",
+    "year": 2021,
+    "abstract": "This method formulates first-break picking as semantic segmentation with an improved U-Net-like encoder-decoder. Multiple conventional first-break attributes are extracted and fused to improve low-SNR high-productivity acquisition data.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "U-Net",
+      "Semantic Segmentation",
+      "First-Break Attributes"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.13088",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Semantic Segmentation U-Net First-Break Picking Framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "xu2020high_accurate_first_break_complex_surface",
+    "title": "A high accurate automated first-break picking method for seismic records from high-density acquisition in areas with a complex surface",
+    "authors": "Yinpo Xu, Cheng Yin, Xuefeng Zou, Yudong Ni, Yingjie Pan, Liangjun Xu",
+    "org": "Southwest Petroleum University",
+    "venue": "Geophysical Prospecting",
+    "year": 2020,
+    "abstract": "This high-accuracy automated workflow uses multi-azimuth time-window interpolation, clustering-based initial picking, multi-angle quality evaluation, and ant-colony correction. It targets high-density data in complex surface areas with low SNR.",
+    "tasks": [
+      "first_arrival_picking",
+      "Ant Colony Optimization"
+    ],
+    "tags": [
+      "Clustering",
+      "Ant Colony Optimization",
+      "Complex Surface"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1111/1365-2478.12923",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Multi-Azimuth Clustering + Ant Colony First-Break Picking Framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "mousa2024pseudo_coloring_first_arrival",
+    "title": "First Arrival Picking of Exploration Seismic Data Using Pseudo-coloring and Color Image",
+    "authors": "Wail A. Mousa",
+    "org": "King Fahd University of Petroleum and Minerals",
+    "venue": "IEEE Geoscience and Remote Sensing Letters",
+    "year": 2024,
+    "abstract": "This method uses pseudo-coloring and color-image segmentation to pick first arrivals from refracted seismic shot gathers. Spiral warm-color mapping and two-class K-means separate first-arrival amplitudes and timing.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "K-Means",
+      "Pseudo-Coloring",
+      "Image Segmentation"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2024.3412913",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Pseudo-coloring and Color Image Segmentation First-Arrival Picker",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "elmak2023texture_segmentation_first_arrival",
+    "title": "A First-Arrival Picking Technique Based on Texture Segmentation Exploring Seismic Data",
+    "authors": "Ahmed Elmak, Wail A. Mousa",
+    "org": "King Fahd University of Petroleum and Minerals",
+    "venue": "IEEE Geoscience and Remote Sensing Letters",
+    "year": 2023,
+    "abstract": "This technique segments seismic shot records by texture features and fuzzy C-means clustering. An energy-ratio step is applied to the first-arrival cluster to determine direct-arrival picks.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Texture Segmentation",
+      "Fuzzy C-Means",
+      "Energy Ratio"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2023.3287320",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "Texture Segmentation First-Arrival Picking Framework",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "jiang2023swin_transformer_first_break",
+    "title": "Seismic First Break Picking Through Swin Transformer Feature Extraction",
+    "authors": "Peifan Jiang, Fei Deng, Xuben Wang, Pengfei Shuai, Wen Luo, Yun Tang",
+    "org": "Chengdu University of Technology",
+    "venue": "IEEE Geoscience and Remote Sensing Letters",
+    "year": 2023,
+    "abstract": "STUNet uses Swin Transformer feature extraction within a U-shaped network for first-break picking. Self-attention helps preserve long-range spatial relationships and improves performance where adjacent-trace first-break times vary sharply.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Swin Transformer",
+      "STUNet"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2023.3248233",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "STUNet",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "han2022first_arrival_3d_unet",
+    "title": "First Arrival Traveltime Picking Through 3-D U-Net",
+    "authors": "Song Han, Yujin Liu, Yubing Li, Yi Luo",
+    "org": "Aramco Beijing Research Center",
+    "venue": "IEEE Geoscience and Remote Sensing Letters",
+    "year": 2022,
+    "abstract": "A supervised 3-D U-Net classifies samples before and after the first arrival in 3-D seismic data. The predicted separating surface corresponds to first-arrival traveltimes and is more consistent than 2-D picking in field tests.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Deep Learning",
+      "3D U-Net",
+      "Energy Semblance"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2021.3096572",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "3-D U-Net for First Arrival Traveltime Picking",
+    "is_sota": false,
+    "citation_count": 0
+  },
+  {
+    "id": "liao2020first_arrival_transfer_learning_cwt",
+    "title": "First Arrival Time Identification Using Transfer Learning With Continuous Wavelet Transform Feature Images",
+    "authors": "Xiaofang Liao, Junxing Cao, Jiangtao Hu, Jun You, Xudong Jiang, Zhege Liu",
+    "org": "Chengdu University of Technology",
+    "venue": "IEEE Geoscience and Remote Sensing Letters",
+    "year": 2020,
+    "abstract": "This transfer-learning method converts each trace into continuous wavelet transform feature images and fine-tunes a pretrained CNN. Probability distributions of noise, first-break, and post-first-break are used to extract first-arrival times.",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "tags": [
+      "Transfer Learning",
+      "Continuous Wavelet Transform",
+      "CNN"
+    ],
+    "arxiv_url": null,
+    "doi": "https://doi.org/10.1109/LGRS.2019.2955950",
+    "code_url": null,
+    "github_stars": null,
+    "introduces_model": "CWT Transfer Learning First-Arrival Picker",
+    "is_sota": false,
+    "citation_count": 0
   }
 ]
