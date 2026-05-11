@@ -13,46 +13,85 @@
     "date_added": "2026-05-11"
   },
   {
-    "model_id": "fxy-decon-2020",
+    "model_id": "unet-coherent-2",
     "benchmark_id": "synth-groundroll-coherent",
     "scores": {
-      "snr": 8.3,
-      "ssim": 0.72,
-      "rmse": 0.062
+      "snr": 13.2,
+      "ssim": 0.87,
+      "rmse": 0.035
     },
     "is_sota": false,
-    "paper_url": "https://doi.org/10.1190/geo2019-0156.1",
+    "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
   },
   {
-    "model_id": "dncnn-denoise-2021",
-    "benchmark_id": "synth-denoise-random",
-    "scores": {
-      "snr": 15.2,
-      "ssim": 0.91,
-      "rmse": 0.028
-    },
-    "is_sota": true,
-    "paper_url": "https://doi.org/10.1109/tip.2017.2662206",
-    "code_url": "https://github.com/cszn/DnCNN",
-    "date_added": "2026-05-11"
-  },
-  {
-    "model_id": "unet-interp-2022",
+    "model_id": "unet-interp-1",
     "benchmark_id": "synth-interp-2d",
     "scores": {
-      "snr": 18.7,
-      "ssim": 0.94,
-      "rmse": 0.019
+      "snr": 17.5,
+      "ssim": 0.93,
+      "rmse": 0.022
     },
-    "is_sota": true,
-    "paper_url": "https://doi.org/10.1190/geo2021-0234.1",
+    "is_sota": false,
+    "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
   },
   {
-    "model_id": "picknet-fap-2023",
+    "model_id": "unet-interp-2",
+    "benchmark_id": "synth-interp-2d",
+    "scores": {
+      "snr": 19.2,
+      "ssim": 0.95,
+      "rmse": 0.018
+    },
+    "is_sota": true,
+    "paper_url": "",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "unet-random-1",
+    "benchmark_id": "synth-denoise-random",
+    "scores": {
+      "snr": 14.5,
+      "ssim": 0.90,
+      "rmse": 0.030
+    },
+    "is_sota": false,
+    "paper_url": "",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "unet-random-2",
+    "benchmark_id": "synth-denoise-random",
+    "scores": {
+      "snr": 16.1,
+      "ssim": 0.92,
+      "rmse": 0.025
+    },
+    "is_sota": true,
+    "paper_url": "",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "unet-fap-1",
+    "benchmark_id": "synth-fap-snr",
+    "scores": {
+      "accuracy": 0.94,
+      "f1": 0.92,
+      "mae": 3.1
+    },
+    "is_sota": false,
+    "paper_url": "",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "unet-fap-2",
     "benchmark_id": "synth-fap-snr",
     "scores": {
       "accuracy": 0.96,
@@ -60,7 +99,33 @@
       "mae": 2.3
     },
     "is_sota": true,
-    "paper_url": "https://doi.org/10.1109/tgrs.2023.1234567",
+    "paper_url": "",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "unet-sr-1",
+    "benchmark_id": "synth-sr-2d",
+    "scores": {
+      "psnr": 32.5,
+      "ssim": 0.91,
+      "mse": 0.0035
+    },
+    "is_sota": false,
+    "paper_url": "",
+    "code_url": null,
+    "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "unet-sr-2",
+    "benchmark_id": "synth-sr-2d",
+    "scores": {
+      "psnr": 34.2,
+      "ssim": 0.93,
+      "mse": 0.0028
+    },
+    "is_sota": true,
+    "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
   }

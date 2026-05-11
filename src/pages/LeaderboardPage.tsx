@@ -318,22 +318,6 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       <div style={{ marginTop: 'var(--space-4)', display: 'flex', gap: 'var(--space-3)' }}>
         <button className="btn btn-primary btn-icon" onClick={exportCSV}>📥 {t.leaderboard.exportCSV}</button>
       </div>
-
-      <div className="section-title">
-        <h3>{t.leaderboard.downloadsTitle}</h3>
-      </div>
-      <div className="card">
-        <div className="card-body">
-          {availableDatasets.length ? availableDatasets.map(b => (
-            <div className="dl-row" key={b.id}>
-              <span className="dl-label">{escapeHtml(b.name)}</span>
-              <a href={b.download_url} target="_blank" rel="noreferrer" className="btn-ghost btn-icon">{t.leaderboard.downloadsTitle.includes('Download') ? 'Download ↓' : '下载 ↓'}</a>
-            </div>
-          )) : (
-            <p className="text-muted">{t.leaderboard.noDatasets}</p>
-          )}
-        </div>
-      </div>
     </div>
   );
 }

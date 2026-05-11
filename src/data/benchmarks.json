@@ -77,6 +77,22 @@
     "tags": ["Refraction", "Synthetic", "Variable SNR"],
     "citation": "Hu et al., IEEE GRSL 2019",
     "download_url": "",
-    "model_count": 1
+    "model_count": 2
+  },
+  {
+    "id": "synth-sr-2d",
+    "name": "Synthetic 2D Super-Resolution",
+    "dataset_name": "Synthetic Marine 2D",
+    "task": "super_resolution",
+    "icon": "🔍",
+    "description": "2D synthetic marine shot gathers downsampled by 2× along the spatial axis. Tests a method's ability to recover high-frequency seismic details.",
+    "data_source": "synthetic",
+    "dimensions": "128 × 256 traces",
+    "primary_metric": "psnr",
+    "metrics": ["psnr", "ssim", "mse"],
+    "tags": ["2D", "Marine", "Downsampling"],
+    "citation": "TBD",
+    "download_url": "",
+    "model_count": 2
   }
 ]

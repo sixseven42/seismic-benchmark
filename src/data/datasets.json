@@ -93,5 +93,24 @@
       "dimensions": "240 × 1024 traces"
     },
     "related_benchmark_ids": ["field-land-denoise"]
+  },
+  {
+    "id": "synthetic-sr",
+    "name": "Synthetic Super-Resolution",
+    "task": "super_resolution",
+    "description": "High-resolution synthetic marine shot gathers and their 2× downsampled counterparts. Designed for benchmarking seismic super-resolution methods on recovering spatially subsampled data.",
+    "thumbnail": "/datasets/sr-thumb.jpg",
+    "gallery": [
+      "/datasets/sr-raw.jpg",
+      "/datasets/sr-label.jpg"
+    ],
+    "stats": {
+      "shots": 128,
+      "traces": 256,
+      "time_samples": 512,
+      "format": "SEGY",
+      "dimensions": "128 × 256 traces"
+    },
+    "related_benchmark_ids": ["synth-sr-2d"]
   }
 ]
