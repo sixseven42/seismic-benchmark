@@ -77,6 +77,8 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
       .sort((a, b) => a.year - b.year);
   }, [benchResults]);
 
+  const closePanel = () => setActiveBenchId(null);
+
   return (
     <div>
       <div className="page-header">
@@ -106,7 +108,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
         {list.map(b => (
           <div
             key={b.id}
-            className="card clickable benchmark-card"
+            className={`card clickable benchmark-card ${activeBenchId === b.id ? 'active-card' : ''}`}
             onClick={() => setActiveBenchId(prev => prev === b.id ? null : b.id)}
           >
             <div className="card-header">
@@ -123,63 +125,94 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                 <span className="tag tag-accent">{b.model_count} methods</span>
               </div>
             </div>
-
-            {activeBenchId === b.id && activeBench && (
-              <div className="detail-panel" onClick={e => e.stopPropagation()}>
-                <div className="detail-grid">
-                  <div className="detail-section">
-                    <h4>{t.benchmarks.description}</h4>
-                    <p>{escapeHtml(activeBench.description)}</p>
-                    <h4>{t.benchmarks.citation}</h4>
-                    <p className="mono">{escapeHtml(activeBench.citation)}</p>
-                    <h4>{t.benchmarks.protocol}</h4>
-                    <p>Primary metric: <strong>{activeBench.primary_metric.toUpperCase()}</strong>. {isLowerBetter(activeBench.primary_metric) ? t.benchmarks.lowerIsBetter : t.benchmarks.higherIsBetter}</p>
-                    <h4>{t.benchmarks.metrics}</h4>
-                    <p>{(activeBench.metrics || []).map(m => m.toUpperCase()).join(', ')}</p>
-                  </div>
-                  <div className="detail-section">
-                    <h4>{t.benchmarks.top5}</h4>
-                    <table className="detail-mini-table">
-                      <thead><tr><th>Rank</th><th>Method</th><th>{activeBench.primary_metric.toUpperCase()}</th></tr></thead>
-                      <tbody>
-                        {top5.map((r, i) => (
-                          <tr key={r.model_id}>
-                            <td>{i + 1}</td>
-                            <td>{escapeHtml(r.model.name)}</td>
-                            <td>{r.score.toFixed(2)}</td>
-                          </tr>
-                        ))}
-                        {!top5.length && <tr><td colSpan={3} className="text-muted">{t.benchmarks.noResults}</td></tr>}
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="detail-section" style={{ gridColumn: '1 / -1' }}>
-                    <h4>{t.benchmarks.top10}</h4>
-                    <div className="detail-chart-wrap">
-                      {top10.length > 0 && (
-                        <Bar {...getBarChartConfig(
-                          top10.map(r => r.model.name),
-                          top10.map(r => r.score),
-                          activeBench.primary_metric,
-                          theme
-                        )} />
-                      )}
-                    </div>
-                  </div>
-                  <div className="detail-section" style={{ gridColumn: '1 / -1' }}>
-                    <h4>{t.benchmarks.sotaProgression}</h4>
-                    <div className="detail-chart-wrap" style={{ height: 260 }}>
-                      {scatterPoints.length > 0 && (
-                        <Scatter {...getScatterChartConfig(scatterPoints, theme)} />
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         ))}
       </div>
+
+      {activeBench && (
+        <>
+          <div className="slide-backdrop" onClick={closePanel} />
+          <div className="slide-panel">
+            <div className="slide-panel-header">
+              <div>
+                <h2>{escapeHtml(activeBench.name)}</h2>
+                <span className="slide-panel-subtitle">{escapeHtml(activeBench.task)} · {escapeHtml(activeBench.dimensions)}</span>
+              </div>
+              <button className="slide-panel-close" onClick={closePanel} title="Close">✕</button>
+            </div>
+
+            <div className="slide-panel-body">
+              <div className="slide-panel-col">
+                <section className="slide-section">
+                  <h4>{t.benchmarks.description}</h4>
+                  <p>{escapeHtml(activeBench.description)}</p>
+                </section>
+
+                <section className="slide-section">
+                  <h4>{t.benchmarks.citation}</h4>
+                  <p className="mono">{escapeHtml(activeBench.citation)}</p>
+                </section>
+
+                <section className="slide-section">
+                  <h4>{t.benchmarks.protocol}</h4>
+                  <p>Primary metric: <strong>{activeBench.primary_metric.toUpperCase()}</strong>. {isLowerBetter(activeBench.primary_metric) ? t.benchmarks.lowerIsBetter : t.benchmarks.higherIsBetter}</p>
+                </section>
+
+                <section className="slide-section">
+                  <h4>{t.benchmarks.metrics}</h4>
+                  <p>{(activeBench.metrics || []).map(m => m.toUpperCase()).join(', ')}</p>
+                </section>
+              </div>
+
+              <div className="slide-panel-col">
+                <section className="slide-section">
+                  <h4>{t.benchmarks.top5}</h4>
+                  <table className="detail-mini-table">
+                    <thead><tr><th>Rank</th><th>Method</th><th>{activeBench.primary_metric.toUpperCase()}</th></tr></thead>
+                    <tbody>
+                      {top5.map((r, i) => (
+                        <tr key={r.model_id}>
+                          <td>{i + 1}</td>
+                          <td>{escapeHtml(r.model.name)}</td>
+                          <td>{r.score.toFixed(2)}</td>
+                        </tr>
+                      ))}
+                      {!top5.length && <tr><td colSpan={3} className="text-muted">{t.benchmarks.noResults}</td></tr>}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+
+              <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
+                <section className="slide-section">
+                  <h4>{t.benchmarks.top10}</h4>
+                  <div className="detail-chart-wrap">
+                    {top10.length > 0 && (
+                      <Bar {...getBarChartConfig(
+                        top10.map(r => r.model.name),
+                        top10.map(r => r.score),
+                        activeBench.primary_metric,
+                        theme
+                      )} />
+                    )}
+                  </div>
+                </section>
+              </div>
+
+              <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
+                <section className="slide-section">
+                  <h4>{t.benchmarks.sotaProgression}</h4>
+                  <div className="detail-chart-wrap" style={{ height: 260 }}>
+                    {scatterPoints.length > 0 && (
+                      <Scatter {...getScatterChartConfig(scatterPoints, theme)} />
+                    )}
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

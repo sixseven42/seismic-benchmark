@@ -876,7 +876,7 @@ select:focus {
   overflow: hidden;
 }
 
-.dataset-card.dataset-active {
+.card.clickable.active-card {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-bg);
 }

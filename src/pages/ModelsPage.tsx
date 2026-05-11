@@ -121,6 +121,8 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
     { key: 'mae', label: 'MAE' },
   ];
 
+  const closePanel = () => setActiveModelId(null);
+
   return (
     <div>
       <div className="page-header">
@@ -162,7 +164,7 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
         {items.map(m => (
           <div
             key={m.id}
-            className="card clickable model-row"
+            className={`card clickable model-row ${activeModelId === m.id ? 'active-card' : ''}`}
             onClick={() => setActiveModelId(prev => prev === m.id ? null : m.id)}
           >
             <div className="card-header">
@@ -180,61 +182,86 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
                 {m.is_open_source && <span className="tag tag-accent">{t.models.openSource}</span>}
               </div>
             </div>
-
-            {activeModelId === m.id && activeModel && (
-              <div className="detail-panel" onClick={e => e.stopPropagation()}>
-                <div className="detail-grid">
-                  <div className="detail-section">
-                    <h4>{t.models.details}</h4>
-                    <p>{escapeHtml(activeModel.description)}</p>
-                    <div className="dl-row"><span className="dl-label">{t.models.authors}</span><span>{escapeHtml(activeModel.authors)}</span></div>
-                    <div className="dl-row"><span className="dl-label">{t.models.organization}</span><span>{escapeHtml(activeModel.org)}</span></div>
-                    <div className="dl-row"><span className="dl-label">{t.models.year}</span><span>{activeModel.year}</span></div>
-                    <div className="dl-row"><span className="dl-label">{t.models.type}</span><span>{formatType(activeModel.type)}</span></div>
-                    <div style={{ marginTop: 'var(--space-3)', display: 'flex', gap: 'var(--space-2)', flexWrap: 'wrap' }}>
-                      {activeModel.paper_url && <a href={activeModel.paper_url} target="_blank" rel="noreferrer" className="btn btn-primary">📄 {t.models.paper}</a>}
-                      {activeModel.code_url && <a href={activeModel.code_url} target="_blank" rel="noreferrer" className="btn btn-primary">💻 {t.models.code}</a>}
-                      {activeModel.weights_url && <a href={activeModel.weights_url} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ {t.models.weights}</a>}
-                    </div>
-                  </div>
-                  <div className="detail-section">
-                    <h4>{t.models.radarTitle}</h4>
-                    <div className="detail-chart-wrap" style={{ height: 320 }}>
-                      <Radar {...getRadarChartConfig(radarData, theme)} />
-                    </div>
-                  </div>
-                  <div className="detail-section" style={{ gridColumn: '1 / -1' }}>
-                    <h4>{t.models.scoresTitle}</h4>
-                    <table className="detail-mini-table">
-                      <thead>
-                        <tr>
-                          <th>{t.leaderboard.benchmark}</th>
-                          <th>{t.leaderboard.task}</th>
-                          {metricCols.map(m => <th key={m.key}>{m.label}</th>)}
-                          <th>SOTA?</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {modelResults.map(r => (
-                          <tr key={r.benchmark_id}>
-                            <td>{escapeHtml(r.benchmark!.name)}</td>
-                            <td>{escapeHtml(r.benchmark!.task)}</td>
-                            {metricCols.map(m => (
-                              <td key={m.key}>{r.scores[m.key] != null ? r.scores[m.key]!.toFixed(m.key === 'ssim' || m.key === 'f1' ? 3 : m.key === 'rmse' ? 4 : m.key === 'mse' ? 6 : m.key === 'accuracy' ? 2 : 2) : '—'}{m.key === 'accuracy' && r.scores[m.key] != null ? '%' : ''}</td>
-                            ))}
-                            <td>{r.is_sota ? <span className="tag tag-sota">{t.models.sotaBadge}</span> : '—'}</td>
-                          </tr>
-                        ))}
-                        {!modelResults.length && <tr><td colSpan={metricCols.length + 4} className="text-muted">{t.benchmarks.noResults}</td></tr>}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         ))}
       </div>
+
+      {activeModel && (
+        <>
+          <div className="slide-backdrop" onClick={closePanel} />
+          <div className="slide-panel">
+            <div className="slide-panel-header">
+              <div>
+                <h2>{escapeHtml(activeModel.name)}</h2>
+                <span className="slide-panel-subtitle">{escapeHtml(activeModel.authors)} · {activeModel.year}</span>
+              </div>
+              <button className="slide-panel-close" onClick={closePanel} title="Close">✕</button>
+            </div>
+
+            <div className="slide-panel-body">
+              <div className="slide-panel-col">
+                <section className="slide-section">
+                  <h4>{t.models.details}</h4>
+                  <p>{escapeHtml(activeModel.description)}</p>
+                </section>
+
+                <section className="slide-section">
+                  <div className="dl-row"><span className="dl-label">{t.models.authors}</span><span>{escapeHtml(activeModel.authors)}</span></div>
+                  <div className="dl-row"><span className="dl-label">{t.models.organization}</span><span>{escapeHtml(activeModel.org)}</span></div>
+                  <div className="dl-row"><span className="dl-label">{t.models.year}</span><span>{activeModel.year}</span></div>
+                  <div className="dl-row"><span className="dl-label">{t.models.type}</span><span>{formatType(activeModel.type)}</span></div>
+                </section>
+
+                <section className="slide-section">
+                  <div style={{ display: 'flex', gap: 'var(--space-2)', flexWrap: 'wrap' }}>
+                    {activeModel.paper_url && <a href={activeModel.paper_url} target="_blank" rel="noreferrer" className="btn btn-primary">📄 {t.models.paper}</a>}
+                    {activeModel.code_url && <a href={activeModel.code_url} target="_blank" rel="noreferrer" className="btn btn-primary">💻 {t.models.code}</a>}
+                    {activeModel.weights_url && <a href={activeModel.weights_url} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ {t.models.weights}</a>}
+                  </div>
+                </section>
+              </div>
+
+              <div className="slide-panel-col">
+                <section className="slide-section">
+                  <h4>{t.models.radarTitle}</h4>
+                  <div className="detail-chart-wrap" style={{ height: 320 }}>
+                    <Radar {...getRadarChartConfig(radarData, theme)} />
+                  </div>
+                </section>
+              </div>
+
+              <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
+                <section className="slide-section">
+                  <h4>{t.models.scoresTitle}</h4>
+                  <table className="detail-mini-table">
+                    <thead>
+                      <tr>
+                        <th>{t.leaderboard.benchmark}</th>
+                        <th>{t.leaderboard.task}</th>
+                        {metricCols.map(m => <th key={m.key}>{m.label}</th>)}
+                        <th>SOTA?</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {modelResults.map(r => (
+                        <tr key={r.benchmark_id}>
+                          <td>{escapeHtml(r.benchmark!.name)}</td>
+                          <td>{escapeHtml(r.benchmark!.task)}</td>
+                          {metricCols.map(m => (
+                            <td key={m.key}>{r.scores[m.key] != null ? r.scores[m.key]!.toFixed(m.key === 'ssim' || m.key === 'f1' ? 3 : m.key === 'rmse' ? 4 : m.key === 'mse' ? 6 : m.key === 'accuracy' ? 2 : 2) : '—'}{m.key === 'accuracy' && r.scores[m.key] != null ? '%' : ''}</td>
+                          ))}
+                          <td>{r.is_sota ? <span className="tag tag-sota">{t.models.sotaBadge}</span> : '—'}</td>
+                        </tr>
+                      ))}
+                      {!modelResults.length && <tr><td colSpan={metricCols.length + 4} className="text-muted">{t.benchmarks.noResults}</td></tr>}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

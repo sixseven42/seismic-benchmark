@@ -120,7 +120,7 @@ export default function DatasetsPage({ data, filters, setFilters, search }: Prop
         {list.map(d => (
           <div
             key={d.id}
-            className={`card clickable dataset-card ${activeDatasetId === d.id ? 'dataset-active' : ''}`}
+            className={`card clickable dataset-card ${activeDatasetId === d.id ? 'active-card' : ''}`}
             onClick={() => setActiveDatasetId(prev => prev === d.id ? null : d.id)}
           >
             <div className="dataset-thumb">
