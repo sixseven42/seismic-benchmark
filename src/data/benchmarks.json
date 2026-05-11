@@ -2,7 +2,7 @@
   {
     "id": "synth-groundroll-coherent",
     "name": "Synthetic Ground Roll Noise",
-    "dataset_name": "SEGC3",
+    "dataset_name": "SEG C3 Ground Roll",
     "task": "coherent_noise_suppression",
     "icon": "〰️",
     "description": "A dataset constructed based on the SEGC3 dataset and synthetic ground roll.",

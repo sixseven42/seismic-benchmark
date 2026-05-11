@@ -1,13 +1,13 @@
 [
   {
     "id": "segc3",
-    "name": "SEGC3",
+    "name": "SEG C3 Ground Roll",
     "task": "coherent_noise_suppression",
     "description": "The SEGC3 (SEG China 3D) dataset is a synthetic 3D seismic survey based on a complex geological model. It includes 9 shot lines with 201 crosslines and 201 inlines each, sampled at 625 time samples. Synthetic ground-roll noise is injected to create a standard testbed for coherent noise suppression methods.",
-    "thumbnail": "/datasets/segc3-thumb.jpg",
+    "thumbnail": "/datasets/segc3-thumb.png",
     "gallery": [
-      "/datasets/segc3-raw.jpg",
-      "/datasets/segc3-label.jpg"
+      "/datasets/segc3-raw.png",
+      "/datasets/segc3-label.png"
     ],
     "stats": {
       "shots": 9,
