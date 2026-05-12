@@ -7,7 +7,6 @@
       "ssim": 0.91,
       "rmse": 0.028
     },
-    "is_sota": true,
     "paper_url": "",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
     "date_added": "2026-05-11"
@@ -20,7 +19,6 @@
       "ssim": 0.87,
       "rmse": 0.035
     },
-    "is_sota": false,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -33,7 +31,6 @@
       "ssim": 0.93,
       "rmse": 0.022
     },
-    "is_sota": false,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -46,7 +43,6 @@
       "ssim": 0.95,
       "rmse": 0.018
     },
-    "is_sota": true,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -56,10 +52,9 @@
     "benchmark_id": "synth-denoise-random",
     "scores": {
       "snr": 14.5,
-      "ssim": 0.90,
-      "rmse": 0.030
+      "ssim": 0.9,
+      "rmse": 0.03
     },
-    "is_sota": false,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -72,7 +67,6 @@
       "ssim": 0.92,
       "rmse": 0.025
     },
-    "is_sota": true,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -85,7 +79,6 @@
       "f1": 0.92,
       "mae": 3.1
     },
-    "is_sota": false,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -98,7 +91,6 @@
       "f1": 0.94,
       "mae": 2.3
     },
-    "is_sota": true,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -111,7 +103,6 @@
       "ssim": 0.91,
       "mse": 0.0035
     },
-    "is_sota": false,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
@@ -124,7 +115,6 @@
       "ssim": 0.93,
       "mse": 0.0028
     },
-    "is_sota": true,
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"

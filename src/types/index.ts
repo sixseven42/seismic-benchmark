@@ -54,7 +54,6 @@ export interface Result {
   model_id: string;
   benchmark_id: string;
   scores: Scores;
-  is_sota: boolean;
   paper_url: string;
   code_url: string;
   date_added: string;
@@ -75,7 +74,6 @@ export interface Paper {
   code_url: string | null;
   citation_count: number;
   introduces_model: string;
-  is_sota: boolean;
 }
 
 export interface Dataset {

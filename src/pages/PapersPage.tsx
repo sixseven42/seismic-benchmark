@@ -112,7 +112,6 @@ export default function PapersPage({ data, search }: Props) {
                 </button>
                 <div className="paper-meta">
                   {(p.tags || []).map(t => <span key={t} className="tag">{escapeHtml(t)}</span>)}
-                  {p.is_sota && <span className="tag tag-sota">{t.papers.sotaBadge}</span>}
                 </div>
                 <div className="paper-meta" style={{ marginTop: 'var(--space-2)' }}>
                   {p.arxiv_url && <a className="icon-link" href={p.arxiv_url} target="_blank" rel="noreferrer" title="arXiv">arXiv</a>}
@@ -141,7 +140,6 @@ export default function PapersPage({ data, search }: Props) {
                 </button>
                 <div className="paper-meta">
                   {(p.tags || []).map(t => <span key={t} className="tag">{escapeHtml(t)}</span>)}
-                  {p.is_sota && <span className="tag tag-sota">{t.papers.sotaBadge}</span>}
                 </div>
                 <div className="paper-meta" style={{ marginTop: 'var(--space-2)' }}>
                   {p.arxiv_url && <a className="icon-link" href={p.arxiv_url} target="_blank" rel="noreferrer" title="arXiv">arXiv</a>}

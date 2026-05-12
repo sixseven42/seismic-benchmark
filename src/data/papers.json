@@ -20,7 +20,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3489716",
     "code_url": null,
     "introduces_model": "cddpm-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -44,7 +43,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3427405",
     "code_url": null,
     "introduces_model": "afm-unet-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -67,7 +65,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3526231",
     "code_url": null,
     "introduces_model": "pcdnn-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -90,7 +87,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3110303",
     "code_url": null,
     "introduces_model": "dfbcnn-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -117,7 +113,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.3029914",
     "code_url": null,
     "introduces_model": "selflabel-cgan-2021",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -141,7 +136,6 @@
     "doi": "https://doi.org/10.1190/geo2023-0150.1",
     "code_url": null,
     "introduces_model": "soft-attention-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -164,7 +158,6 @@
     "doi": "https://doi.org/10.1190/geo2024-0148.1",
     "code_url": null,
     "introduces_model": "inr-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -187,7 +180,6 @@
     "doi": "https://doi.org/10.1190/geo2024-0447.1",
     "code_url": null,
     "introduces_model": "luc-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -211,7 +203,6 @@
     "doi": "https://doi.org/10.1190/geo2020-0691.1",
     "code_url": null,
     "introduces_model": "pcdl-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -237,7 +228,6 @@
     "doi": "https://doi.org/10.1190/geo2019-0414.1",
     "code_url": null,
     "introduces_model": "cgan-2020",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -260,7 +250,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3052898",
     "code_url": null,
     "introduces_model": "iaaa-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -282,7 +271,6 @@
     "doi": "https://doi.org/10.1093/jge/gxae091",
     "code_url": null,
     "introduces_model": "msi-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -304,7 +292,6 @@
     "doi": "https://doi.org/10.1016/j.petsci.2024.01.018",
     "code_url": null,
     "introduces_model": "rdssa-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -329,7 +316,6 @@
     "doi": "https://doi.org/10.1190/geo2021-0206.1",
     "code_url": null,
     "introduces_model": "dnn-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -354,7 +340,6 @@
     "doi": "https://doi.org/10.1190/geo2022-0599.1",
     "code_url": null,
     "introduces_model": "lwc-dnn-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -377,7 +362,6 @@
     "doi": "https://doi.org/10.1190/geo2023-0146.1",
     "code_url": null,
     "introduces_model": "unet-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -400,7 +384,6 @@
     "doi": "https://doi.org/10.1190/geo2023-0417.1",
     "code_url": null,
     "introduces_model": "1dcnn-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -425,7 +408,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3243106",
     "code_url": null,
     "introduces_model": "jcmdnns-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -449,7 +431,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3462440",
     "code_url": null,
     "introduces_model": "mpr-ssn-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -477,7 +458,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3307750",
     "code_url": null,
     "introduces_model": "udl-loc-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -506,7 +486,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3169481",
     "code_url": null,
     "introduces_model": "ave-dnn-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -531,7 +510,6 @@
     "doi": "https://doi.org/10.1016/j.petsci.2025.01.010",
     "code_url": null,
     "introduces_model": "3d-unet-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -556,7 +534,6 @@
     "doi": "https://doi.org/10.1093/jge/gxac101",
     "code_url": null,
     "introduces_model": "cnn-tl-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -580,7 +557,6 @@
     "doi": "https://doi.org/10.1093/jge/gxaf115",
     "code_url": null,
     "introduces_model": "dl-clsrme-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -607,7 +583,6 @@
     "doi": "https://doi.org/10.1093/jge/gxaf142",
     "code_url": null,
     "introduces_model": "glo-unet-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -631,7 +606,6 @@
     "doi": "https://doi.org/10.1093/jge/gxag020",
     "code_url": null,
     "introduces_model": "radon-unet-2026",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -653,7 +627,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3487618",
     "code_url": null,
     "introduces_model": "dc-lstm-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -675,7 +648,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
     "code_url": null,
     "introduces_model": "pcnn-poststack-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -697,7 +669,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
     "code_url": null,
     "introduces_model": "pcnn-srme-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -721,7 +692,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2022.3211855",
     "code_url": null,
     "introduces_model": "ucnn-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -745,7 +715,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2022.3168143",
     "code_url": null,
     "introduces_model": "sagan-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -768,7 +737,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3627214",
     "code_url": null,
     "introduces_model": "wednn-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -790,7 +758,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3381078",
     "code_url": null,
     "introduces_model": "unetfm-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -812,7 +779,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.13443",
     "code_url": null,
     "introduces_model": "1dcnn-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -835,7 +801,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.70128",
     "code_url": null,
     "introduces_model": "mdssl-2026",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -858,7 +823,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.70180",
     "code_url": null,
     "introduces_model": "pgdl-2026",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -881,7 +845,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.70164",
     "code_url": null,
     "introduces_model": "ulpmol-2026",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -903,7 +866,6 @@
     "doi": "https://doi.org/10.1553/jse.32.169",
     "code_url": null,
     "introduces_model": "cnn-as-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -927,7 +889,6 @@
     "doi": "https://doi.org/10.1553/jse.32.373",
     "code_url": null,
     "introduces_model": "unet-tl-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -952,7 +913,6 @@
     "doi": "https://doi.org/10.1016/j.jappgeo.2026.106139",
     "code_url": null,
     "introduces_model": "mcesa-unet-2026",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -976,7 +936,6 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3366952",
     "code_url": null,
     "introduces_model": "unetpp-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1002,7 +961,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.13250",
     "code_url": null,
     "introduces_model": "cae-2022",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1025,7 +983,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.70179",
     "code_url": null,
     "introduces_model": "dgdlnet-2026",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1050,7 +1007,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.12985",
     "code_url": null,
     "introduces_model": "cyclegan-2020",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1075,7 +1031,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.13271",
     "code_url": null,
     "introduces_model": "st-cnn-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1099,7 +1054,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.13522",
     "code_url": null,
     "introduces_model": "blind-fan-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1121,7 +1075,6 @@
     "doi": "https://doi.org/10.1111/1365-2478.70004",
     "code_url": null,
     "introduces_model": "pinnslope-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1146,7 +1099,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2023.3317528",
     "code_url": null,
     "introduces_model": "msloss-unet-2023",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1170,7 +1122,6 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3624295",
     "code_url": null,
     "introduces_model": "dasdnet-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1195,7 +1146,6 @@
     "doi": "https://doi.org/10.1016/j.jappgeo.2024.105363",
     "code_url": null,
     "introduces_model": "bhn-dsssl-2024",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1218,7 +1168,6 @@
     "doi": "https://doi.org/10.1016/j.jappgeo.2025.105736",
     "code_url": null,
     "introduces_model": "nsst-msanet-2025",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1241,7 +1190,6 @@
     "doi": "https://doi.org/10.1093/jge/gxag054",
     "code_url": null,
     "introduces_model": "udnn-acs-2026",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -1267,8 +1215,7 @@
     "doi": "https://doi.org/10.1190/geo2024-0019.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Meng-posterior-2025",
@@ -1289,8 +1236,7 @@
     "doi": "https://doi.org/10.1190/geo2024-0186.1",
     "code_url": "https://github.com/mengchuangji/IPS-RNA",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Ozawa-enhancing-2025",
@@ -1312,8 +1258,7 @@
     "doi": "https://doi.org/10.1190/geo2024-0106.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Peng-fast-2025",
@@ -1337,8 +1282,7 @@
     "doi": "https://doi.org/10.1190/geo2024-0187.1",
     "code_url": "https://github.com/lexiaoheng/Mariana",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-beyond-2025",
@@ -1364,8 +1308,7 @@
     "doi": "https://doi.org/10.1190/geo2024-0391.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-diffusion-2025",
@@ -1386,8 +1329,7 @@
     "doi": "https://doi.org/10.1190/geo2025-0103.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-robust-2024",
@@ -1413,8 +1355,7 @@
     "doi": "https://doi.org/10.1190/geo2023-0762.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xiao-diffusion-2024",
@@ -1436,8 +1377,7 @@
     "doi": "https://doi.org/10.1190/geo2023-0676.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Cui-ground-2024",
@@ -1462,8 +1402,7 @@
     "doi": "https://doi.org/10.1190/geo2023-0592.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Luiken-integrating-2023",
@@ -1484,8 +1423,7 @@
     "doi": "https://doi.org/10.1190/geo2023-0131.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-removing-2023",
@@ -1507,8 +1445,7 @@
     "doi": "https://doi.org/10.1190/geo2023-0143.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liao-residual-2023",
@@ -1529,8 +1466,7 @@
     "doi": "https://doi.org/10.1190/geo2021-0621.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-unsupervised-2023",
@@ -1555,8 +1491,7 @@
     "doi": "https://doi.org/10.1190/geo2022-0612.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-accelerating-2022",
@@ -1577,8 +1512,7 @@
     "doi": "https://doi.org/10.1190/geo2021-0654.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-adapting-2022",
@@ -1602,8 +1536,7 @@
     "doi": "https://doi.org/10.1190/geo2021-0294.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Sui-deep-2022",
@@ -1626,8 +1559,7 @@
     "doi": "https://doi.org/10.1190/geo2022-0198.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-dl²-2022",
@@ -1653,8 +1585,7 @@
     "doi": "https://doi.org/10.1190/geo2021-0838.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Chen-retrieving-2022",
@@ -1677,8 +1608,7 @@
     "doi": "https://doi.org/10.1190/geo2022-0168.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lan-seismic-2022",
@@ -1701,8 +1631,7 @@
     "doi": "https://doi.org/10.1190/geo2021-0459.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-simple-2022",
@@ -1723,8 +1652,7 @@
     "doi": "https://doi.org/10.1190/geo2021-0590.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Oboué-erratic-2022",
@@ -1745,8 +1673,7 @@
     "doi": "https://doi.org/10.1190/geo2021-0785.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-complete-2021",
@@ -1767,8 +1694,7 @@
     "doi": "https://doi.org/10.1190/geo2020-0193.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Almadani-dictionary-2021",
@@ -1793,8 +1719,7 @@
     "doi": "https://doi.org/10.1190/geo2019-0689.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-intelligent-2021",
@@ -1817,8 +1742,7 @@
     "doi": "https://doi.org/10.1190/geo2019-0815.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Saad-deep-2020",
@@ -1843,8 +1767,7 @@
     "doi": "https://doi.org/10.1190/geo2019-0468.1",
     "code_url": "https://github.com/omarmohamed15/Deep-Denoising-Autoencoder-for-Seismic-Random-Noise-Attenuation",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yu-deep-2019",
@@ -1867,8 +1790,7 @@
     "doi": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": "https://github.com/cszn/DnCNN",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zu-dictionary-2019",
@@ -1892,8 +1814,7 @@
     "doi": "https://doi.org/10.1190/geo2018-0596.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wu-white-2019",
@@ -1915,8 +1836,7 @@
     "doi": "https://doi.org/10.1190/geo2018-0635.1",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "unknown-seismic-2026",
@@ -1939,8 +1859,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.70177",
     "code_url": "\\",
     "github_stars": null,
-    "introduces_model": null,
-    "is_sota": false
+    "introduces_model": null
   },
   {
     "id": "Wang-seismic-2026",
@@ -1964,8 +1883,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.70147",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Sun-removing-2025",
@@ -1990,8 +1908,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13617",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-visible-2024",
@@ -2013,8 +1930,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13559",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lin-random-2024",
@@ -2040,8 +1956,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13302",
     "code_url": "https://github.com/chenyk1990/Pyortho",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-robust-2022",
@@ -2062,8 +1977,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13217",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhao-unsupervised-2022",
@@ -2090,8 +2004,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13157",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Gao-seismic-2021",
@@ -2115,8 +2028,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13070",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-two-2021",
@@ -2137,8 +2049,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13029",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wu-stdrnet-2026",
@@ -2162,8 +2073,7 @@
     "doi": "https://doi.org/10.36922/JSE025400081",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-multi-2025",
@@ -2186,8 +2096,7 @@
     "doi": "https://doi.org/10.36922/JSE025240011",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-seismic-2025",
@@ -2209,8 +2118,7 @@
     "doi": "https://doi.org/10.36922/JSE025260030",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Dong-self-2023",
@@ -2231,8 +2139,7 @@
     "doi": null,
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Song-seismic-2022",
@@ -2256,8 +2163,7 @@
     "doi": null,
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Fang-seismic-2022",
@@ -2283,8 +2189,7 @@
     "doi": null,
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Dong-desert-2021",
@@ -2305,8 +2210,7 @@
     "doi": null,
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-seismic-2020",
@@ -2329,8 +2233,7 @@
     "doi": null,
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-low-2019",
@@ -2350,8 +2253,7 @@
     "doi": "https://doi.org/10.1093/jge/gxz051",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Chen-seismic-2019",
@@ -2372,8 +2274,7 @@
     "doi": "https://doi.org/10.1093/jge/gxy003",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zeng-combined-2022",
@@ -2394,8 +2295,7 @@
     "doi": "https://doi.org/10.1093/jge/gxac055",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-intelligent-2022",
@@ -2415,8 +2315,7 @@
     "doi": "https://doi.org/10.1093/jge/gxac022",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-seismic-2023",
@@ -2436,8 +2335,7 @@
     "doi": "https://doi.org/10.1093/jge/gxad008",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yang-seismic-2023",
@@ -2461,8 +2359,7 @@
     "doi": "https://doi.org/10.1093/jge/gxad076",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xu-unsupervised-2023",
@@ -2489,8 +2386,7 @@
     "doi": "https://doi.org/10.1093/jge/gxad005",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Song-regularized-2024",
@@ -2514,8 +2410,7 @@
     "doi": "https://doi.org/10.1093/jge/gxad094",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-dpn2n-2025",
@@ -2538,8 +2433,7 @@
     "doi": "https://doi.org/10.1093/jge/gxaf091",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-seismic-2025",
@@ -2562,8 +2456,7 @@
     "doi": "https://doi.org/10.1093/jge/gxaf045",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-seismic-2023",
@@ -2585,8 +2478,7 @@
     "doi": "https://doi.org/10.1109/TNNLS.2022.3188915",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xie-simultaneous-2025",
@@ -2608,8 +2500,7 @@
     "doi": "https://doi.org/10.1093/jge/gxaf109",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xue-multi-2025",
@@ -2631,8 +2522,7 @@
     "doi": "https://doi.org/10.1093/jge/gxaf158",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lin-asymmetric-2023",
@@ -2654,8 +2544,7 @@
     "doi": "https://doi.org/10.1016/j.cageo.2023.105387",
     "code_url": "https://github.com/songxue702/Asymmetric-Learning-based-Nonstationary-CNN",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Durall-deep-2023",
@@ -2676,8 +2565,7 @@
     "doi": "https://doi.org/10.1016/j.cageo.2023.105377",
     "code_url": "https://github.com/dlseis/diffseis",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lee-denoising-2024",
@@ -2700,8 +2588,7 @@
     "doi": "https://doi.org/10.1016/j.cageo.2024.105519",
     "code_url": "https://github.com/Dawoon-Lee-Geo/Deep-BiLSTM-in-FrFT",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhong-mutual-2024",
@@ -2723,8 +2610,7 @@
     "doi": "https://doi.org/10.1016/j.cageo.2024.105682",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-seismic-2024",
@@ -2745,8 +2631,7 @@
     "doi": "https://doi.org/10.1016/j.cageo.2024.105595",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Gao-swin-2024",
@@ -2771,8 +2656,7 @@
     "doi": "https://doi.org/10.1016/j.cageo.2023.105510",
     "code_url": "https://github.com/javashs/SCRN.git",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Dong-potential-2023",
@@ -2796,8 +2680,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3300697",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liao-twice-2023",
@@ -2819,8 +2702,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3244034",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Meng-attenuation-2023",
@@ -2844,8 +2726,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3298679",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Sun-automatic-2023",
@@ -2868,8 +2749,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3321898",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xu-deep-2023",
@@ -2893,8 +2773,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3329303",
     "code_url": "https://github.com/XuZitai/DNLR",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-enhancement-2023",
@@ -2916,8 +2795,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3286791",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Meng-learning-2023",
@@ -2940,8 +2818,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3307881",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-less-2023",
@@ -2964,8 +2841,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3308077",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-random-2023",
@@ -2989,8 +2865,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3295355",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liang-reinforcement-2023",
@@ -3012,8 +2887,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3268718",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xu-s2s-2023",
@@ -3037,8 +2911,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3268554",
     "code_url": "https://github.com/XuZitai/S2S-WTV",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Gao-seismic-2023",
@@ -3064,8 +2937,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3295730",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Fang-seismic-2023",
@@ -3088,8 +2960,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3279866",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Dodda-simultaneous-2023",
@@ -3113,8 +2984,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3267037",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qian-unsupervised-2023",
@@ -3139,8 +3009,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3277973",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-unsupervised-2023",
@@ -3164,8 +3033,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3325324",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-dual-2024",
@@ -3185,8 +3053,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3352587",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Sun-universal-2024",
@@ -3207,8 +3074,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3475549",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-analysis-2024",
@@ -3229,8 +3095,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3362853",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Chen-efficient-2024",
@@ -3253,8 +3118,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3355972",
     "code_url": "https://gitee.com/chenlestudy/mca-transformer",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhou-fast-2024",
@@ -3276,8 +3140,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3357729",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-gabor-2024",
@@ -3302,8 +3165,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3352745",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yang-interpretable-2024",
@@ -3327,8 +3189,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3386590",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhong-joint-2024",
@@ -3350,8 +3211,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3430288",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-seismic-2024",
@@ -3377,8 +3237,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3396459",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Peng-seismic-2024",
@@ -3403,8 +3262,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3355460",
     "code_url": "https://github.com/lexiaoheng/DDPM-for-seismicdenoising.git",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-self-2024",
@@ -3428,8 +3286,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3368282",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xu-self-2024",
@@ -3451,8 +3308,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3497163",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhu-selftexture-2024",
@@ -3474,8 +3330,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3509552",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-semi-2024",
@@ -3500,8 +3355,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3510781",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Meng-stochastic-2024",
@@ -3522,8 +3376,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3421597",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-stugan-2024",
@@ -3551,8 +3404,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3424502",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qian-unsupervised-2024",
@@ -3576,8 +3428,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3349272",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Fu-unsupervised-2024",
@@ -3601,8 +3452,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3386590",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Junkai-wavelet-2024",
@@ -3626,8 +3476,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3410277",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Meng-self-2025",
@@ -3650,8 +3499,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3571390",
     "code_url": "https://github.com/mengchuangji/SSDn",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Sheng-dcaf-2025",
@@ -3675,8 +3523,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3592196",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-efficient-2025",
@@ -3701,8 +3548,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3548275",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xiang-five-2025",
@@ -3724,8 +3570,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3601354",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-zero-2025",
@@ -3750,8 +3595,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3574981",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-zsn2n-2025",
@@ -3775,8 +3619,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2025.3590990",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-attention-2022",
@@ -3796,8 +3639,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3197929",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Othman-automated-2022",
@@ -3818,8 +3660,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3054071",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-deep-2022",
@@ -3840,8 +3681,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3057857",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Min-method-2022",
@@ -3868,8 +3708,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3215819",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Fang-bsnet-2022",
@@ -3894,8 +3733,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3179718",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-Deblending-2022",
@@ -3918,8 +3756,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3121806",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Cheng-deblending-2022",
@@ -3941,8 +3778,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3153642",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-denoising-2022",
@@ -3966,8 +3802,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3071189",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Ma-desert-2022",
@@ -3991,8 +3826,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3055506",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhao-distributed-2022",
@@ -4015,8 +3849,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.3042202",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-distributed-2022",
@@ -4036,8 +3869,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3194635",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Tejaswi-erratic-2022",
@@ -4059,8 +3891,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3164460",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qian-ground-2022",
@@ -4084,8 +3915,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3149545",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-learning-2022",
@@ -4107,8 +3937,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3165037",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Geng-loud-2022",
@@ -4132,8 +3961,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3226404",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-low-2022",
@@ -4154,8 +3982,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3086317",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wu-multi-2022",
@@ -4176,8 +4003,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3142805",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qian-multidimensiona-2022",
@@ -4198,8 +4024,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3197287",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-multigranularit-2022",
@@ -4221,8 +4046,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3123509",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhong-multiscale-2022",
@@ -4243,8 +4067,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3217887",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Dong-multiscale-2022",
@@ -4266,8 +4089,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3178212",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-ns2ns-2022",
@@ -4288,8 +4110,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3217289",
     "code_url": "https://github.com/JialeWang2022/NS2NS",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xu-seismic-2022",
@@ -4310,8 +4131,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3166029",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Meng-seismic-2022",
@@ -4332,8 +4152,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3175535",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhong-seismic-2022",
@@ -4356,8 +4175,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3095922",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-seismic-2022",
@@ -4379,8 +4197,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.3038405",
     "code_url": "https://github.com/csjunxu/TWSC-ECCV2018",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Saad-self-2022",
@@ -4404,8 +4221,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3108515",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Cao-self-2022",
@@ -4429,8 +4245,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3225923",
     "code_url": "https://github.com/caowei2020/self-supervised-3-DPCNN",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-similarity-2022",
@@ -4451,8 +4266,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3210217",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Harsuko-storseismic-2022",
@@ -4475,8 +4289,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3216660",
     "code_url": "https://github.com/swag-kaust/storseismic",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Kuruguntla-study-2022",
@@ -4498,8 +4311,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3107541",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yang-unsupervised-2022",
@@ -4522,8 +4334,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3100455",
     "code_url": "https://github.com/YangLiuqing-add/DDUL",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Saad-unsupervised-2022",
@@ -4546,8 +4357,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3209932",
     "code_url": "https://figshare.com/articles/software/Scripts/17055452",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qian-unsupervised-2022",
@@ -4571,8 +4381,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2022.3158389",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-attribute-2021",
@@ -4594,8 +4403,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.3021492",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-automated-2021",
@@ -4615,8 +4423,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.3032664",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yang-deep-2021",
@@ -4639,8 +4446,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2021.3053399",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-generative-2021",
@@ -4662,8 +4468,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.3048746",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-incoherent-2020",
@@ -4685,8 +4490,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.2991438",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhao-low-2020",
@@ -4708,8 +4512,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2019.2938836",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Dong-new-2020",
@@ -4734,8 +4537,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2020.2966054",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-poststack-2020",
@@ -4757,8 +4559,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2019.2947149",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Xu-automatic-2019",
@@ -4780,8 +4581,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2019.2891835",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-seismic-2019",
@@ -4805,8 +4605,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2019.2928715",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhu-seismic-2019",
@@ -4829,8 +4628,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2019.2926772",
     "code_url": "https://github.com/wayneweiqiang/DeepDenoiser",
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-structured-2019",
@@ -4851,8 +4649,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2018.2870087",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Renze-一种基于runet卷积神经网络-2020",
@@ -4874,8 +4671,7 @@
     "doi": "https://doi.org/10.3969/j.issn.1000-1441.2020.01.006",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Cuiqian-基于全局上下文和注意力机制深度-2021",
@@ -4897,8 +4693,7 @@
     "doi": "https://doi.org/10.3969/j.issn.1000-1441.2021.05.006",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhao-基于cwt-2023",
@@ -4922,8 +4717,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.62.03.002",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yi-基于u-2023",
@@ -4948,8 +4742,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.62.05.007",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lei-基于密集扩张卷积残差网络的地震-2023",
@@ -4975,8 +4768,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.62.04.008",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Hongshuai-基于swin-2024",
@@ -5001,8 +4793,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.63.01.010",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Chen-基于多尺度卷积自编码器的地震噪-2024",
@@ -5026,8 +4817,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.63.01.007",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yankai-生成式对抗神经网络的改进及其在-2024",
@@ -5050,8 +4840,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.63.01.009",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Renze-基于msip-2025",
@@ -5074,8 +4863,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2024.0071",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Donghong-基于无监督学习网络的三维地震随-2025",
@@ -5098,8 +4886,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.0353",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lei-优化损失函数的低信噪比微地震信-2023",
@@ -5119,8 +4906,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.0439",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Guangde-基于cnn模型的地震数据噪声压-2025",
@@ -5146,8 +4932,7 @@
     "doi": "https://doi.org/10.12431/issn.1000-1441.2023.0365",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhencong-基于结构保护去噪神经网络的地震-2024",
@@ -5170,8 +4955,7 @@
     "doi": "https://doi.org/10.6038/cjg2023R0483",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Bangliu-基于双输入联合深度学习的地震背-2025",
@@ -5192,8 +4976,7 @@
     "doi": "https://doi.org/10.6038/cjg2025S0616",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yan-基于多道卡尔曼滤波神经网络的无-2024",
@@ -5215,8 +4998,7 @@
     "doi": "https://doi.org/10.6038/cjg2025S0663",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "陈-基于无监督蒙特卡洛深度学习框架-2024",
@@ -5240,8 +5022,7 @@
     "doi": "https://doi.org/10.6038/cjg2025S0742",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "王-基于数据增广和cnn的地震随机-2019",
@@ -5264,8 +5045,7 @@
     "doi": "https://doi.org/10.6038/cjg2019M0385",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "李-模型约束下的在线字典学习地震弱-2019",
@@ -5286,8 +5066,7 @@
     "doi": "https://doi.org/10.6038/cjg2019M0373",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "张-双稀疏字典和fista的地震数-2019",
@@ -5309,8 +5088,7 @@
     "doi": "https://doi.org/10.6038/cjg2019M0028",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "刘-地震随机噪声压缩感知迭代压制方-2021",
@@ -5331,8 +5109,7 @@
     "doi": "https://doi.org/10.6038/cjg2021P0045",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "钟-基于dmff-2022",
@@ -5354,8 +5131,7 @@
     "doi": "https://doi.org/10.6038/cjg2022P0613",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "董-基于卷积对抗降噪网络的塔里木盆-2022",
@@ -5376,8 +5152,7 @@
     "doi": "https://doi.org/10.6038/cjg2022P0279",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "邵-基于时频分析与分数阶最优控制网-2023",
@@ -5399,8 +5174,7 @@
     "doi": "https://doi.org/10.6038/cjg2022P0866",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhao-low-2019",
@@ -5421,8 +5195,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2018.2882058",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-residual-2019",
@@ -5444,8 +5217,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2019.2895702",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Ma-deep-2020",
@@ -5465,8 +5237,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2019.2925062",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-adaptive-2020",
@@ -5487,8 +5258,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2019.2941025",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lin-branch-2021",
@@ -5509,8 +5279,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2020.2981965",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Dong-deep-2021",
@@ -5531,8 +5300,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2020.2989450",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Sang-dcnns-2020",
@@ -5552,8 +5320,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2020.3007819",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-denoising-2021",
@@ -5575,8 +5342,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2020.3011130",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Jiang-convolutional-2022",
@@ -5599,8 +5365,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2021.3073560",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-unsupervised-2022",
@@ -5624,8 +5389,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2021.3057631",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qiu-deep-2022",
@@ -5649,8 +5413,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2021.3053760",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yao-dnresnext-2021",
@@ -5670,8 +5433,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2020.3044036",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Meng-self-2021",
@@ -5695,8 +5457,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2021.3068132",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-application-2022",
@@ -5719,8 +5480,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2021.3073419",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-self-2023",
@@ -5742,8 +5502,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2023.3285951",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Song-hybrid-2023",
@@ -5764,8 +5523,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2023.3324755",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhong-rmchn-2022",
@@ -5785,8 +5543,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2022.3229556",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-das-2024",
@@ -5807,8 +5564,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3433006",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhang-enhancing-2024",
@@ -5831,8 +5587,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3464237",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-transnet-2024",
@@ -5854,8 +5609,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3358746",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Gao-multiscale-2024",
@@ -5876,8 +5630,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3374810",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-swin-2024",
@@ -5899,8 +5652,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3358234",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Yuqing-dip-2025",
@@ -5921,8 +5673,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3560978",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Tejaswi-double-2025",
@@ -5944,8 +5695,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3580580",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Tan-seismic-2025",
@@ -5969,8 +5719,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3623895",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zuo-simultaneous-2025",
@@ -5993,8 +5742,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3624295",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Liu-tensor-2025",
@@ -6018,8 +5766,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3529463",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Bao-unsupervised-2025",
@@ -6042,8 +5789,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3580648",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qi-seismic-2025",
@@ -6065,8 +5811,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3640968",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lan-simultaneous-2023",
@@ -6087,8 +5832,7 @@
     "doi": "https://doi.org/10.1016/j.petsci.2023.02.023",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Tang-edcc-2025",
@@ -6110,8 +5854,7 @@
     "doi": "https://doi.org/10.1016/j.petsci.2025.03.006",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Lin-self-Supervised-2023",
@@ -6133,8 +5876,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2023.3239049",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Zhong-rmchn-2023",
@@ -6154,8 +5896,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2022.3229556",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Feng-Complex-2025",
@@ -6176,8 +5917,7 @@
     "doi": "10.1109/LGRS.2024.3514077",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Li-Robust-Seismic-2026",
@@ -6199,8 +5939,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2026.3676613",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Qi-seismic-2026",
@@ -6222,8 +5961,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2025.3640968",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Ke-a-hybrid-2024",
@@ -6244,8 +5982,7 @@
     "doi": "https://doi.org/10.1016/j.petsci.2023.12.017",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "Wang-self-supervised-simultaneous-2025",
@@ -6267,8 +6004,7 @@
     "doi": "https://doi.org/10.1016/j.petsci.2024.12.023",
     "code_url": null,
     "citation_count": 0,
-    "introduces_model": "",
-    "is_sota": false
+    "introduces_model": ""
   },
   {
     "id": "robust-unsupervised-5d-seismic-data-reconstruction-on-regular-2024",
@@ -6293,7 +6029,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6319,7 +6054,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6343,7 +6077,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6368,7 +6101,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6390,7 +6122,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6416,7 +6147,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6442,7 +6172,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6470,7 +6199,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6494,7 +6222,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6520,7 +6247,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6545,7 +6271,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6570,7 +6295,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6595,7 +6319,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6619,7 +6342,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6645,7 +6367,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6670,7 +6391,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6696,7 +6416,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6719,7 +6438,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6743,7 +6461,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6768,7 +6485,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6791,7 +6507,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6814,7 +6529,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6836,7 +6550,6 @@
     "code_url": "https://github.com/DeepWave-KAUST/PINNslope",
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6860,7 +6573,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6884,7 +6596,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6908,7 +6619,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6933,7 +6643,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6957,7 +6666,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -6979,7 +6687,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7004,7 +6711,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7031,7 +6737,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7054,7 +6759,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7079,7 +6783,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7102,7 +6805,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7125,7 +6827,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7147,7 +6848,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7171,7 +6871,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7197,7 +6896,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7219,7 +6917,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7244,7 +6941,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7266,7 +6962,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7291,7 +6986,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7313,7 +7007,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7336,7 +7029,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7358,7 +7050,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7381,7 +7072,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7407,7 +7097,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7429,7 +7118,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7451,7 +7139,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7478,7 +7165,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7502,7 +7188,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7526,7 +7211,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7548,7 +7232,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7570,7 +7253,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7594,7 +7276,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7616,7 +7297,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7638,7 +7318,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7662,7 +7341,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7684,7 +7362,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7707,7 +7384,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7732,7 +7408,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7754,7 +7429,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7776,7 +7450,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7798,7 +7471,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7822,7 +7494,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7845,7 +7516,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": null,
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7869,7 +7539,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "U-Net convolutional network for first-arrival picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7894,7 +7563,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Integrated seismic and machine-learning multitrace first-break picking workflow",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7918,7 +7586,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Pixel-level convolutional network for arrival-time picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7943,7 +7610,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "CNN/U-Net segmentation plus recurrent/post-processing first-arrival workflow",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7968,7 +7634,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Single- to multidomain self-trained network for seismic first-arrival picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -7993,7 +7658,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "HU-net multi-input prediction fusion plus constrained path search",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8018,7 +7682,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "MSSPN (multistage segmentation-picking network)",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8042,7 +7705,6 @@
     "code_url": "https://github.com/mila-iqia/hardpicks",
     "github_stars": null,
     "introduces_model": "Hardrock first-break detection benchmark and baseline models",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8066,7 +7728,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Foundation-model review and perspective for exploration geophysics",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8091,7 +7752,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "SegNet waveform-classification first-break picker for sparse shot gathers",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8116,7 +7776,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "BiLSTM regression model for seismic first-break picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8141,7 +7800,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Attention U-Net for complex-surface seismic first-arrival picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8165,7 +7823,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Constrained Markov Decision Process (CMDP) first-break picking framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8189,7 +7846,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Intelligent Markov optimal decision process with FCM reward and Gaussian stochastic policy",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8214,7 +7870,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "NT-Com (NARX + CART) combined machine-learning model",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8239,7 +7894,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Human-interactive deep learning framework for automatic first-arrival picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8264,7 +7918,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "CNNBiLSTM, CNNLSTM, GRUCNN and other hybrid CNN-RNN architectures for first-break picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8288,7 +7941,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "UPNet",
-    "is_sota": true,
     "citation_count": 0
   },
   {
@@ -8313,7 +7965,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "DSU-Net",
-    "is_sota": true,
     "citation_count": 0
   },
   {
@@ -8337,7 +7988,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "SPR (Simultaneous Picking and Refinement)",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8362,7 +8012,6 @@
     "code_url": "https://github.com/jiangpeifan/2C-SeismicFBpicking",
     "github_stars": 1,
     "introduces_model": "Two-Channel Mask Strategy Network",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8386,7 +8035,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Meta-learning-based first-arrival picking framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8410,7 +8058,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "PG-TL (Prior Knowledge Guided Transfer Learning)",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8434,7 +8081,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Multi-Data Fusion + Adaptive Weighted Hybrid Loss First-Arrival Picking Framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8458,7 +8104,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "DCGAN-based First-Arrival Picking Framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8483,7 +8128,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "M-Res-LSTM (Multi-perspective Residual Long Short-Term Memory Network)",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8508,7 +8152,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Multi-View Feature Fusion Network (LSTM + Re-AG-UNet)",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8532,7 +8175,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Structured Random Forest (SRF) First-Break Picking Framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8556,7 +8198,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "1-D CNN First-Break Picking Framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8580,7 +8221,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Iterative Gaussian Mixture Model (IGMM)",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8604,7 +8244,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Benchmark framework for U-Net / Autoencoder / ResNet architecture comparison",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8629,7 +8268,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Semantic Segmentation U-Net First-Break Picking Framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8654,7 +8292,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Multi-Azimuth Clustering + Ant Colony First-Break Picking Framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8678,7 +8315,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Pseudo-coloring and Color Image Segmentation First-Arrival Picker",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8702,7 +8338,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "Texture Segmentation First-Arrival Picking Framework",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8726,7 +8361,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "STUNet",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8750,7 +8384,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "3-D U-Net for First Arrival Traveltime Picking",
-    "is_sota": false,
     "citation_count": 0
   },
   {
@@ -8774,7 +8407,6 @@
     "code_url": null,
     "github_stars": null,
     "introduces_model": "CWT Transfer Learning First-Arrival Picker",
-    "is_sota": false,
     "citation_count": 0
   }
 ]

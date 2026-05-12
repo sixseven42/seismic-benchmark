@@ -237,7 +237,6 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                         <th>{t.leaderboard.benchmark}</th>
                         <th>{t.leaderboard.task}</th>
                         {metricCols.map(m => <th key={m.key}>{m.label}</th>)}
-                        <th>SOTA?</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -248,10 +247,9 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                           {metricCols.map(m => (
                             <td key={m.key}>{r.scores[m.key] != null ? r.scores[m.key]!.toFixed(m.key === 'ssim' || m.key === 'f1' ? 3 : m.key === 'rmse' ? 4 : m.key === 'mse' ? 6 : m.key === 'accuracy' ? 2 : 2) : '—'}{m.key === 'accuracy' && r.scores[m.key] != null ? '%' : ''}</td>
                           ))}
-                          <td>{r.is_sota ? <span className="tag tag-sota">{t.models.sotaBadge}</span> : '—'}</td>
                         </tr>
                       ))}
-                      {!modelResults.length && <tr><td colSpan={metricCols.length + 4} className="text-muted">{t.benchmarks.noResults}</td></tr>}
+                      {!modelResults.length && <tr><td colSpan={metricCols.length + 3} className="text-muted">{t.benchmarks.noResults}</td></tr>}
                     </tbody>
                   </table>
                 </section>
