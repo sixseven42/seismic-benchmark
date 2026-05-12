@@ -1052,6 +1052,14 @@ select:focus {
   gap: var(--space-4);
 }
 
+.viz-pair.row {
+  flex-direction: row;
+}
+
+.viz-pair.row > .viz-item {
+  flex: 1;
+}
+
 .viz-item {
   display: flex;
   flex-direction: column;

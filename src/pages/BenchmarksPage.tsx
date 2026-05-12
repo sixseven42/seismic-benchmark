@@ -191,7 +191,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                 <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                   <section className="slide-section">
                     <h4>Visualization</h4>
-                    <div className="viz-pair">
+                    <div className="viz-pair row">
                       <div className="viz-item">
                         <span className="viz-tag">Raw Data</span>
                         <div className="viz-frame">
