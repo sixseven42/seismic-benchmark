@@ -18,7 +18,7 @@ const TASK_LABELS: Record<string, string> = {
   super_resolution: 'Super Resolution',
 };
 
-export default function ModelsPage({ data, filters, setFilters, search, theme }: Props) {
+export default function ModelsPage({ data, filters, setFilters, search }: Props) {
   const { t } = useLanguage();
   const [activeModelId, setActiveModelId] = useState<string | null>(null);
   const [weightsTask, setWeightsTask] = useState<string>('');
