@@ -12,6 +12,12 @@
     "paper_url": "",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
     "weights_url": "https://huggingface.co/models",
+    "weights_urls": {
+      "coherent_noise_suppression": "https://huggingface.co/models",
+      "random_noise_suppression": "https://huggingface.co/models",
+      "interpolation": "https://huggingface.co/models"
+    },
+    "architecture_image": "models/arch-unet-gr.png",
     "is_open_source": true
   },
   {
@@ -27,6 +33,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-coherent2.png",
     "is_open_source": false
   },
   {
@@ -42,6 +49,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-interp1.png",
     "is_open_source": false
   },
   {
@@ -57,6 +65,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-interp2.png",
     "is_open_source": false
   },
   {
@@ -72,6 +81,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-random1.png",
     "is_open_source": false
   },
   {
@@ -87,6 +97,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-random2.png",
     "is_open_source": false
   },
   {
@@ -102,6 +113,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-fap1.png",
     "is_open_source": false
   },
   {
@@ -117,6 +129,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-fap2.png",
     "is_open_source": false
   },
   {
@@ -132,6 +145,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-sr1.png",
     "is_open_source": false
   },
   {
@@ -147,6 +161,7 @@
     "paper_url": "",
     "code_url": null,
     "weights_url": null,
+    "architecture_image": "models/arch-unet-sr2.png",
     "is_open_source": false
   }
 ]

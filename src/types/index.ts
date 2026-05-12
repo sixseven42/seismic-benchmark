@@ -15,6 +15,8 @@ export interface Model {
   paper_url: string;
   code_url: string | null;
   weights_url: string | null;
+  weights_urls?: Record<string, string>;
+  architecture_image?: string;
   is_open_source: boolean;
 }
 

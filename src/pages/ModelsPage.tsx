@@ -1,26 +1,7 @@
 import { useState, useMemo } from 'react';
-import { Radar } from 'react-chartjs-2';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  RadialLinearScale,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
 import { useLanguage } from '../contexts/LanguageContext';
 import type { AppData, Filters, MetricKey } from '../types';
 import { formatType, escapeHtml } from '../utils/helpers';
-import { getRadarChartConfig } from '../utils/charts';
-
-ChartJS.register(
-  CategoryScale, LinearScale, BarElement, PointElement,
-  LineElement, RadialLinearScale, Title, Tooltip, Legend
-);
 
 interface Props {
   data: AppData;
@@ -30,9 +11,18 @@ interface Props {
   theme: 'light' | 'dark';
 }
 
+const TASK_LABELS: Record<string, string> = {
+  interpolation: 'Interpolation',
+  coherent_noise_suppression: 'Coherent Noise Suppression',
+  random_noise_suppression: 'Random Noise Suppression',
+  first_arrival_picking: 'First Arrival Picking',
+  super_resolution: 'Super Resolution',
+};
+
 export default function ModelsPage({ data, filters, setFilters, search, theme }: Props) {
   const { t } = useLanguage();
   const [activeModelId, setActiveModelId] = useState<string | null>(null);
+  const [weightsTask, setWeightsTask] = useState<string>('');
 
   const items = useMemo(() => {
     let list = data.models.slice();
@@ -65,51 +55,6 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
       .filter((r): r is typeof r & { benchmark: NonNullable<typeof r.benchmark> } => !!r.benchmark);
   }, [activeModel, data.results, data.benchmarks]);
 
-  const radarData = useMemo(() => {
-    const allScores: Record<string, number[]> = {};
-    data.results.forEach(r => {
-      Object.entries(r.scores || {}).forEach(([k, v]) => {
-        if (v != null) {
-          if (!allScores[k]) allScores[k] = [];
-          allScores[k].push(v);
-        }
-      });
-    });
-
-    const minMax: Record<string, { min: number; max: number }> = {};
-    Object.entries(allScores).forEach(([k, arr]) => {
-      if (arr.length) {
-        minMax[k] = { min: Math.min(...arr), max: Math.max(...arr) };
-      }
-    });
-
-    const modelScores: Record<string, number> = {};
-    modelResults.forEach(r => {
-      Object.entries(r.scores || {}).forEach(([k, v]) => {
-        if (v != null && (!modelScores[k] || v > modelScores[k])) {
-          modelScores[k] = v;
-        }
-      });
-    });
-
-    const normalize = (k: string, v: number) => {
-      const mm = minMax[k];
-      if (!mm || mm.max === mm.min) return 0.5;
-      return (v - mm.min) / (mm.max - mm.min);
-    };
-
-    return {
-      snr: normalize('snr', modelScores.snr ?? 0),
-      psnr: normalize('psnr', modelScores.psnr ?? 0),
-      ssim: normalize('ssim', modelScores.ssim ?? 0),
-      rmse_inv: 1 - normalize('rmse', modelScores.rmse ?? 0),
-      mse_inv: 1 - normalize('mse', modelScores.mse ?? 0),
-      accuracy: normalize('accuracy', modelScores.accuracy ?? 0),
-      f1: normalize('f1', modelScores.f1 ?? 0),
-      mae_inv: 1 - normalize('mae', modelScores.mae ?? 0),
-    };
-  }, [modelResults, data.results]);
-
   const metricCols: { key: MetricKey; label: string }[] = [
     { key: 'snr', label: 'SNR' },
     { key: 'psnr', label: 'PSNR' },
@@ -121,7 +66,21 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
     { key: 'mae', label: 'MAE' },
   ];
 
-  const closePanel = () => setActiveModelId(null);
+  const closePanel = () => {
+    setActiveModelId(null);
+    setWeightsTask('');
+  };
+
+  const weightOptions = useMemo(() => {
+    if (!activeModel) return [];
+    if (activeModel.weights_urls && Object.keys(activeModel.weights_urls).length > 0) {
+      return Object.entries(activeModel.weights_urls);
+    }
+    if (activeModel.weights_url) {
+      return [['default', activeModel.weights_url]];
+    }
+    return [];
+  }, [activeModel]);
 
   return (
     <div>
@@ -171,7 +130,7 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
               <span className="card-icon">{m.emoji || '🔬'}</span>
               <div>
                 <div className="card-title">{escapeHtml(m.name)}</div>
-                <div className="card-subtitle">{escapeHtml(m.authors)} · {m.year}</div>
+                <div className="card-subtitle">{escapeHtml(m.authors || '—')}</div>
               </div>
             </div>
             <div className="card-body">
@@ -193,7 +152,7 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
             <div className="slide-panel-header">
               <div>
                 <h2>{escapeHtml(activeModel.name)}</h2>
-                <span className="slide-panel-subtitle">{escapeHtml(activeModel.authors)} · {activeModel.year}</span>
+                <span className="slide-panel-subtitle">{escapeHtml(activeModel.authors || '—')}</span>
               </div>
               <button className="slide-panel-close" onClick={closePanel} title="Close">✕</button>
             </div>
@@ -206,26 +165,58 @@ export default function ModelsPage({ data, filters, setFilters, search, theme }:
                 </section>
 
                 <section className="slide-section">
-                  <div className="dl-row"><span className="dl-label">{t.models.authors}</span><span>{escapeHtml(activeModel.authors)}</span></div>
-                  <div className="dl-row"><span className="dl-label">{t.models.organization}</span><span>{escapeHtml(activeModel.org)}</span></div>
-                  <div className="dl-row"><span className="dl-label">{t.models.year}</span><span>{activeModel.year}</span></div>
-                  <div className="dl-row"><span className="dl-label">{t.models.type}</span><span>{formatType(activeModel.type)}</span></div>
+                  <div className="dl-row"><span className="dl-label">Provider</span><span>{escapeHtml(activeModel.authors || '—')}</span></div>
+                  <div className="dl-row"><span className="dl-label">Reference</span><span>{escapeHtml(activeModel.org || '—')}</span></div>
+                  <div className="dl-row"><span className="dl-label">Type</span><span>{formatType(activeModel.type)}</span></div>
                 </section>
 
                 <section className="slide-section">
                   <div style={{ display: 'flex', gap: 'var(--space-2)', flexWrap: 'wrap' }}>
-                    {activeModel.paper_url && <a href={activeModel.paper_url} target="_blank" rel="noreferrer" className="btn btn-primary">📄 {t.models.paper}</a>}
-                    {activeModel.code_url && <a href={activeModel.code_url} target="_blank" rel="noreferrer" className="btn btn-primary">💻 {t.models.code}</a>}
-                    {activeModel.weights_url && <a href={activeModel.weights_url} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ {t.models.weights}</a>}
+                    {activeModel.paper_url && <a href={activeModel.paper_url} target="_blank" rel="noreferrer" className="btn btn-primary">📄 Paper</a>}
+                    {activeModel.code_url && <a href={activeModel.code_url} target="_blank" rel="noreferrer" className="btn btn-primary">💻 Code</a>}
                   </div>
+
+                  {weightOptions.length > 0 && (
+                    <div style={{ marginTop: 'var(--space-3)' }}>
+                      {weightOptions.length === 1 ? (
+                        <a href={weightOptions[0][1]} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ Weights</a>
+                      ) : (
+                        <div style={{ display: 'flex', gap: 'var(--space-2)', alignItems: 'center', flexWrap: 'wrap' }}>
+                          <select
+                            value={weightsTask}
+                            onChange={e => setWeightsTask(e.target.value)}
+                            style={{ minWidth: 180 }}
+                          >
+                            <option value="">Select task…</option>
+                            {weightOptions.map(([task, url]) => (
+                              <option key={task} value={url}>{TASK_LABELS[task] || task}</option>
+                            ))}
+                          </select>
+                          {weightsTask && (
+                            <a href={weightsTask} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ Download</a>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </section>
               </div>
 
               <div className="slide-panel-col">
                 <section className="slide-section">
-                  <h4>{t.models.radarTitle}</h4>
-                  <div className="detail-chart-wrap" style={{ height: 320 }}>
-                    <Radar {...getRadarChartConfig(radarData, theme)} />
+                  <h4>Architecture</h4>
+                  <div className="viz-frame" style={{ aspectRatio: '16 / 9' }}>
+                    {activeModel.architecture_image ? (
+                      <img
+                        src={activeModel.architecture_image}
+                        alt={`${activeModel.name} architecture`}
+                        style={{ objectFit: 'contain', width: '100%', height: '100%', padding: 'var(--space-2)' }}
+                      />
+                    ) : (
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)' }}>
+                        No architecture diagram
+                      </div>
+                    )}
                   </div>
                 </section>
               </div>
