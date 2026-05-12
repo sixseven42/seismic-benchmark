@@ -205,7 +205,6 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
               }));
             }}
           >
-            <option value="all">{t.leaderboard.allDatasets}</option>
             {availableDatasets.map(b => (
               <option key={b.id} value={b.id}>{b.dataset_name}</option>
             ))}

@@ -40,7 +40,8 @@
       "Bash(claude-mem --help)",
       "Bash(claude plugins *)",
       "Bash(npm list *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(node *)"
     ]
   }
 }

@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Bar, Scatter } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -15,7 +15,7 @@ import {
 import { useLanguage } from '../contexts/LanguageContext';
 import type { AppData, Filters } from '../types';
 import { isLowerBetter, escapeHtml } from '../utils/helpers';
-import { getBarChartConfig, getScatterChartConfig } from '../utils/charts';
+import { getBarChartConfig } from '../utils/charts';
 
 ChartJS.register(
   CategoryScale, LinearScale, BarElement, PointElement,
@@ -70,12 +70,10 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
   const top5 = benchResults.slice(0, 5);
   const top10 = benchResults.slice(0, 10);
 
-  const scatterPoints = useMemo(() => {
-    return benchResults
-      .filter(r => r.model.year)
-      .map(r => ({ year: r.model.year, score: r.score, model: r.model.name }))
-      .sort((a, b) => a.year - b.year);
-  }, [benchResults]);
+  const relatedDataset = useMemo(() => {
+    if (!activeBench) return null;
+    return data.datasets.find(d => d.name === activeBench.dataset_name) || null;
+  }, [activeBench, data.datasets]);
 
   const closePanel = () => setActiveBenchId(null);
 
@@ -142,12 +140,16 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
             </div>
 
             <div className="slide-panel-body">
-              <div className="slide-panel-col">
+              {/* Description — full width */}
+              <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                 <section className="slide-section">
                   <h4>{t.benchmarks.description}</h4>
                   <p>{escapeHtml(activeBench.description)}</p>
                 </section>
+              </div>
 
+              {/* Left column: Citation, Protocol, Metrics */}
+              <div className="slide-panel-col">
                 <section className="slide-section">
                   <h4>{t.benchmarks.citation}</h4>
                   <p className="mono">{escapeHtml(activeBench.citation)}</p>
@@ -164,6 +166,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                 </section>
               </div>
 
+              {/* Right column: Top5 */}
               <div className="slide-panel-col">
                 <section className="slide-section">
                   <h4>{t.benchmarks.top5}</h4>
@@ -183,6 +186,46 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                 </section>
               </div>
 
+              {/* Visualization — raw & label images */}
+              {relatedDataset && (
+                <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
+                  <section className="slide-section">
+                    <h4>Visualization</h4>
+                    <div className="viz-pair">
+                      <div className="viz-item">
+                        <span className="viz-tag">Raw Data</span>
+                        <div className="viz-frame">
+                          {relatedDataset.gallery[0] ? (
+                            <img
+                              src={relatedDataset.gallery[0]}
+                              alt={`${relatedDataset.name} raw`}
+                              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                            />
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)' }}>No image</div>
+                          )}
+                        </div>
+                      </div>
+                      <div className="viz-item">
+                        <span className="viz-tag">Label / Clean</span>
+                        <div className="viz-frame">
+                          {relatedDataset.gallery[1] ? (
+                            <img
+                              src={relatedDataset.gallery[1]}
+                              alt={`${relatedDataset.name} label`}
+                              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                            />
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)' }}>No image</div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              )}
+
+              {/* Top10 — moved to bottom */}
               <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                 <section className="slide-section">
                   <h4>{t.benchmarks.top10}</h4>
@@ -194,17 +237,6 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                         activeBench.primary_metric,
                         theme
                       )} />
-                    )}
-                  </div>
-                </section>
-              </div>
-
-              <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
-                <section className="slide-section">
-                  <h4>{t.benchmarks.sotaProgression}</h4>
-                  <div className="detail-chart-wrap" style={{ height: 260 }}>
-                    {scatterPoints.length > 0 && (
-                      <Scatter {...getScatterChartConfig(scatterPoints, theme)} />
                     )}
                   </div>
                 </section>
