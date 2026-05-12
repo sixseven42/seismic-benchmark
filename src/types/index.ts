@@ -105,7 +105,7 @@ export interface AppData {
   datasets: Dataset[];
 }
 
-export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'datasets' | 'models' | 'papers';
+export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'models' | 'papers';
 
 export interface Filters {
   task: Task | 'all';

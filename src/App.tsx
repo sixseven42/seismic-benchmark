@@ -12,12 +12,9 @@ import BenchmarksPage from './pages/BenchmarksPage';
 import ModelsPage from './pages/ModelsPage';
 import PapersPage from './pages/PapersPage';
 
-import DatasetsPage from './pages/DatasetsPage';
-
 const TABS: { id: Tab; labelKey: keyof ReturnType<typeof useLanguage>['t']['nav'] }[] = [
   { id: 'overview', labelKey: 'overview' },
   { id: 'leaderboard', labelKey: 'leaderboard' },
-  { id: 'datasets', labelKey: 'datasets' },
   { id: 'benchmarks', labelKey: 'benchmarks' },
   { id: 'models', labelKey: 'models' },
   { id: 'papers', labelKey: 'papers' },
@@ -121,17 +118,6 @@ function AppContent() {
             path="/leaderboard"
             element={
               <LeaderboardPage
-                data={data}
-                filters={filters}
-                setFilters={setFilters}
-                search={debouncedSearch}
-              />
-            }
-          />
-          <Route
-            path="/datasets"
-            element={
-              <DatasetsPage
                 data={data}
                 filters={filters}
                 setFilters={setFilters}

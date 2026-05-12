@@ -148,6 +148,22 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                 </section>
               </div>
 
+              {/* Dataset Download */}
+              {relatedDataset?.download_url && (
+                <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
+                  <section className="slide-section">
+                    <a
+                      className="btn btn-primary btn-icon"
+                      href={relatedDataset.download_url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      📥 Download Dataset
+                    </a>
+                  </section>
+                </div>
+              )}
+
               {/* Left column: Citation, Protocol, Metrics */}
               <div className="slide-panel-col">
                 <section className="slide-section">
