@@ -88,10 +88,12 @@ export interface Dataset {
     traces?: number;
     samples?: number;
     time_samples?: number;
+    dt?: number;
     size_gb?: number;
     format?: string;
     dimensions?: string;
   };
+  download_url?: string;
   related_benchmark_ids: string[];
 }
 

@@ -13,9 +13,12 @@
       "shots": 9,
       "traces": 40401,
       "time_samples": 625,
+      "dt": 0.004,
       "format": "SEGY",
       "dimensions": "9 × 201 × 201 × 625"
     },
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
     "related_benchmark_ids": ["synth-groundroll-coherent", "field-land-denoise"]
   },
   {
@@ -32,9 +35,11 @@
       "shots": 128,
       "traces": 512,
       "time_samples": 256,
+      "dt": 0.004,
       "format": "SEGY",
       "dimensions": "256 × 512 traces"
     },
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
     "related_benchmark_ids": ["synth-interp-2d"]
   },
   {
@@ -51,9 +56,11 @@
       "shots": 240,
       "traces": 512,
       "time_samples": 256,
+      "dt": 0.004,
       "format": "SEGY",
       "dimensions": "256 × 512 traces"
     },
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
     "related_benchmark_ids": ["synth-denoise-random"]
   },
   {
@@ -70,9 +77,11 @@
       "shots": 96,
       "traces": 96,
       "time_samples": 2000,
+      "dt": 0.004,
       "format": "SU",
       "dimensions": "96 × 2000 samples"
     },
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
     "related_benchmark_ids": ["synth-fap-snr"]
   },
   {
@@ -89,9 +98,11 @@
       "shots": 120,
       "traces": 1024,
       "time_samples": 240,
+      "dt": 0.004,
       "format": "SEGY",
       "dimensions": "240 × 1024 traces"
     },
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
     "related_benchmark_ids": ["field-land-denoise"]
   },
   {
@@ -108,9 +119,11 @@
       "shots": 128,
       "traces": 256,
       "time_samples": 512,
+      "dt": 0.004,
       "format": "SEGY",
       "dimensions": "128 × 256 traces"
     },
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
     "related_benchmark_ids": ["synth-sr-2d"]
   }
 ]

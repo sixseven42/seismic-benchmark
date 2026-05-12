@@ -89,9 +89,10 @@ export default function DatasetsPage({ data, filters, setFilters, search }: Prop
     traces: 'Traces',
     samples: 'Samples',
     time_samples: 'Time Samples',
+    dt: 'Sampling Interval',
     size_gb: 'Size (GB)',
     format: 'Format',
-    dimensions: 'Dimensions',
+    dimensions: 'Supplement',
   };
 
   const closePanel = () => setActiveDatasetId(null);
@@ -169,11 +170,25 @@ export default function DatasetsPage({ data, filters, setFilters, search }: Prop
                     {Object.entries(activeDataset.stats).map(([key, val]) => (
                       <div key={key} className="stat-cell">
                         <span className="stat-label">{statLabels[key] ?? key}</span>
-                        <span className="stat-value mono">{val}</span>
+                        <span className="stat-value mono">{key === 'dt' ? `${val} s` : val}</span>
                       </div>
                     ))}
                   </div>
                 </section>
+
+                {activeDataset.download_url && (
+                  <section className="slide-section">
+                    <h4>Download</h4>
+                    <a
+                      className="btn btn-primary btn-icon"
+                      href={activeDataset.download_url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      📥 Download Dataset
+                    </a>
+                  </section>
+                )}
 
                 <section className="slide-section">
                   <h4>Related Benchmarks</h4>
