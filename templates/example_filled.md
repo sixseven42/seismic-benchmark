@@ -56,7 +56,6 @@
 | model_id     | `unet-tl-2023`                              |
 | benchmark_id | `synth-denoise-coherent`                    |
 | scores       | `{"snr": 12.5, "ssim": 0.85, "rmse": 0.04}` |
-| is_sota      | `false`                                     |
 | paper_url    | `https://doi.org/10.1553/jse.32.373`        |
 | code_url     | `null`                                      |
 | date_added   | `2024-03-10`                                |
@@ -67,10 +66,10 @@
 ## 批量 Result 示例
 
 
-| model_id         | benchmark_id             | scores                        | is_sota | date_added   |
-| ---------------- | ------------------------ | ----------------------------- | ------- | ------------ |
-| `unet-tl-2023`   | `synth-denoise-coherent` | `{"snr": 12.5, "ssim": 0.85}` | `false` | `2024-03-10` |
-| `gabor-lsr-2024` | `synth-denoise-coherent` | `{"snr": 14.2, "ssim": 0.91}` | `true`  | `2024-06-20` |
-| `dnn-2022`       | `field-land-denoise`     | `{"snr": 8.3, "ssim": 0.72}`  | `false` | `2024-01-15` |
+| model_id         | benchmark_id             | scores                        | date_added   |
+| ---------------- | ------------------------ | ----------------------------- | ------------ |
+| `unet-tl-2023`   | `synth-denoise-coherent` | `{"snr": 12.5, "ssim": 0.85}` | `2024-03-10` |
+| `gabor-lsr-2024` | `synth-denoise-coherent` | `{"snr": 14.2, "ssim": 0.91}` | `2024-06-20` |
+| `dnn-2022`       | `field-land-denoise`     | `{"snr": 8.3, "ssim": 0.72}`  | `2024-01-15` |
 
 
