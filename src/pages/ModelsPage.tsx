@@ -8,7 +8,6 @@ interface Props {
   filters: Filters;
   setFilters: React.Dispatch<React.SetStateAction<Filters>>;
   search: string;
-  theme: 'light' | 'dark';
 }
 
 const TASK_LABELS: Record<string, string> = {

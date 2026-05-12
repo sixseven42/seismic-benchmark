@@ -145,7 +145,6 @@ function AppContent() {
                 filters={filters}
                 setFilters={setFilters}
                 search={debouncedSearch}
-                theme={theme}
               />
             }
           />
