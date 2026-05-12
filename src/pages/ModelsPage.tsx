@@ -170,15 +170,23 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                 </section>
 
                 <section className="slide-section">
-                  <div style={{ display: 'flex', gap: 'var(--space-2)', flexWrap: 'wrap' }}>
-                    {activeModel.paper_url && <a href={activeModel.paper_url} target="_blank" rel="noreferrer" className="btn btn-primary">📄 Paper</a>}
-                    {activeModel.code_url && <a href={activeModel.code_url} target="_blank" rel="noreferrer" className="btn btn-primary">💻 Code</a>}
-                  </div>
-
+                  {activeModel.paper_url && (
+                    <div className="dl-row">
+                      <span className="dl-label">Paper</span>
+                      <a href={activeModel.paper_url} target="_blank" rel="noreferrer" className="btn btn-primary">📄 View</a>
+                    </div>
+                  )}
+                  {activeModel.code_url && (
+                    <div className="dl-row">
+                      <span className="dl-label">Code</span>
+                      <a href={activeModel.code_url} target="_blank" rel="noreferrer" className="btn btn-primary">💻 View</a>
+                    </div>
+                  )}
                   {weightOptions.length > 0 && (
-                    <div style={{ marginTop: 'var(--space-3)' }}>
+                    <div className="dl-row">
+                      <span className="dl-label">Weights</span>
                       {weightOptions.length === 1 ? (
-                        <a href={weightOptions[0][1]} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ Weights</a>
+                        <a href={weightOptions[0][1]} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ Download</a>
                       ) : (
                         <div style={{ display: 'flex', gap: 'var(--space-2)', alignItems: 'center', flexWrap: 'wrap' }}>
                           <select
