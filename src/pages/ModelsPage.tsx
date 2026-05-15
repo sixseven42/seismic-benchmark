@@ -237,19 +237,29 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                         <th>{t.leaderboard.benchmark}</th>
                         <th>{t.leaderboard.task}</th>
                         {metricCols.map(m => <th key={m.key}>{m.label}</th>)}
+                        <th>Weights</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {modelResults.map(r => (
-                        <tr key={r.benchmark_id}>
-                          <td>{escapeHtml(r.benchmark!.name)}</td>
-                          <td>{escapeHtml(r.benchmark!.task)}</td>
-                          {metricCols.map(m => (
-                            <td key={m.key}>{r.scores[m.key] != null ? r.scores[m.key]!.toFixed(m.key === 'ssim' || m.key === 'f1' ? 3 : m.key === 'rmse' ? 4 : m.key === 'mse' ? 6 : m.key === 'accuracy' ? 2 : 2) : '—'}{m.key === 'accuracy' && r.scores[m.key] != null ? '%' : ''}</td>
-                          ))}
-                        </tr>
-                      ))}
-                      {!modelResults.length && <tr><td colSpan={metricCols.length + 3} className="text-muted">{t.benchmarks.noResults}</td></tr>}
+                      {modelResults.map(r => {
+                        const taskWeights = activeModel?.weights_urls?.[r.benchmark!.task];
+                        const weightsUrl = taskWeights || activeModel?.weights_url;
+                        return (
+                          <tr key={r.benchmark_id}>
+                            <td>{escapeHtml(r.benchmark!.name)}</td>
+                            <td>{escapeHtml(r.benchmark!.task)}</td>
+                            {metricCols.map(m => (
+                              <td key={m.key}>{r.scores[m.key] != null ? r.scores[m.key]!.toFixed(m.key === 'ssim' || m.key === 'f1' ? 3 : m.key === 'rmse' ? 4 : m.key === 'mse' ? 6 : m.key === 'accuracy' ? 2 : 2) : '—'}{m.key === 'accuracy' && r.scores[m.key] != null ? '%' : ''}</td>
+                            ))}
+                            <td>
+                              {weightsUrl ? (
+                                <a href={weightsUrl} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️</a>
+                              ) : '—'}
+                            </td>
+                          </tr>
+                        );
+                      })}
+                      {!modelResults.length && <tr><td colSpan={metricCols.length + 4} className="text-muted">{t.benchmarks.noResults}</td></tr>}
                     </tbody>
                   </table>
                 </section>

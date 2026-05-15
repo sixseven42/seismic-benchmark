@@ -59,15 +59,34 @@ Result 表示某个 **Model** 在某个 **Benchmark** 上的评测得分。
 
 ---
 
+## JSON 格式示例（可直接复制到 `results.json`）
+
+```json
+{
+  "model_id": "unet-gr",
+  "benchmark_id": "synth-groundroll-coherent",
+  "scores": {
+    "snr": 14.8,
+    "ssim": 0.91,
+    "rmse": 0.028
+  },
+  "paper_url": "",
+  "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
+  "date_added": "2024-05-12"
+}
+```
+
+---
+
 ## 批量填写建议格式
 
 如果你有多个结果，也可以用下面的表格方式批量填写：
 
 | model_id | benchmark_id | scores (JSON) | date_added |
 | -------- | ------------ | ------------- | ---------- |
-|          |              |               |         |            |
-|          |              |               |         |            |
-|          |              |               |         |            |
+|          |              |               |            |
+|          |              |               |            |
+|          |              |               |            |
 
 ---
 

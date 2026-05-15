@@ -71,6 +71,29 @@ Datasets 栏目已合并到 Benchmarks 中展示。新增 Benchmark 时：
 
 ---
 
+## JSON 格式示例（可直接复制到 `benchmarks.json`）
+
+```json
+{
+  "id": "synth-groundroll-coherent",
+  "name": "Synthetic Ground Roll Noise",
+  "dataset_name": "SEG C3 Ground Roll",
+  "task": "coherent_noise_suppression",
+  "icon": "〰️",
+  "description": "A synthetic 3D seismic benchmark built on the SEG China 3D (SEGC3) geological model...",
+  "data_source": "synthetic",
+  "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+  "primary_metric": "snr",
+  "metrics": ["snr", "ssim", "rmse"],
+  "tags": ["3D", "Ground Roll", "Synthetic"],
+  "citation": "TBD",
+  "download_url": "https://huggingface.co/models",
+  "model_count": 1
+}
+```
+
+---
+
 ## 快速参考
 
 ### 任务类型可选值

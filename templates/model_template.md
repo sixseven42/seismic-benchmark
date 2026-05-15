@@ -80,6 +80,60 @@
 
 ---
 
+## JSON 格式示例（可直接复制到 `models.json`）
+
+```json
+{
+  "id": "unet-gr",
+  "name": "UNet-GR",
+  "authors": "Li et al.",
+  "org": "Peking University",
+  "year": 2024,
+  "emoji": "🔬",
+  "type": "deep_learning",
+  "tasks": ["coherent_noise_suppression"],
+  "description": "End-to-End Ground Roll Suppression Based on U-Net.",
+  "paper_url": "https://doi.org/10.xxxx",
+  "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
+  "weights_url": "https://huggingface.co/models",
+  "weights_urls": {
+    "coherent_noise_suppression": "https://huggingface.co/xxx/groundroll",
+    "random_noise_suppression": "https://huggingface.co/xxx/denoise"
+  },
+  "architecture_image": "models/arch-unet-gr.png",
+  "is_open_source": true
+}
+```
+
+---
+
+## JSON 格式示例（可直接复制到 `models.json`）
+
+```json
+{
+  "id": "unet-gr",
+  "name": "UNet-GR",
+  "authors": "Li et al.",
+  "org": "Peking University",
+  "year": 2024,
+  "emoji": "🔬",
+  "type": "deep_learning",
+  "tasks": ["coherent_noise_suppression"],
+  "description": "End-to-End Ground Roll Suppression Based on U-Net.",
+  "paper_url": "https://doi.org/10.xxxx",
+  "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
+  "weights_url": "https://huggingface.co/models",
+  "weights_urls": {
+    "coherent_noise_suppression": "https://huggingface.co/xxx/groundroll",
+    "random_noise_suppression": "https://huggingface.co/xxx/denoise"
+  },
+  "architecture_image": "models/arch-unet-gr.png",
+  "is_open_source": true
+}
+```
+
+---
+
 ## 快速参考
 
 ### 任务类型可选值
