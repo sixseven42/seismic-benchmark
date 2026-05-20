@@ -17,9 +17,8 @@
       "format": "SEGY",
       "dimensions": "9 × 201 × 201 × 625"
     },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
-    "related_benchmark_ids": ["synth-groundroll-coherent", "field-land-denoise"]
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
+    "related_benchmark_ids": ["segc3-groundroll-noise1", "segc3-groundroll-noise3", "segc3-groundroll-noise5", "segc3-groundroll-noise7", "segc3-groundroll-noise9", "field-land-denoise"]
   },
   {
     "id": "synthetic-marine-2d",
