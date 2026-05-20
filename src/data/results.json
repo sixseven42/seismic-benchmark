@@ -118,5 +118,305 @@
     "paper_url": "",
     "code_url": null,
     "date_added": "2026-05-11"
+  },
+  {
+    "model_id": "attention-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise1",
+    "scores": {
+      "snr": 29.4786,
+      "psnr": 48.5979,
+      "ssim": 0.9974,
+      "mae": 0.000577,
+      "mse": 1.4e-05,
+      "rmse": 0.003745
+    },
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "attention-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise3",
+    "scores": {
+      "snr": 24.3939,
+      "psnr": 49.5338,
+      "ssim": 0.9964,
+      "mae": 0.00063,
+      "mse": 1.1e-05,
+      "rmse": 0.003358
+    },
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "attention-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise5",
+    "scores": {
+      "snr": 21.9546,
+      "psnr": 50.6163,
+      "ssim": 0.9965,
+      "mae": 0.000618,
+      "mse": 9e-06,
+      "rmse": 0.002961
+    },
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "attention-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise7",
+    "scores": {
+      "snr": 17.9454,
+      "psnr": 49.1059,
+      "ssim": 0.9947,
+      "mae": 0.000686,
+      "mse": 1.4e-05,
+      "rmse": 0.003623
+    },
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "attention-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise9",
+    "scores": {
+      "snr": 15.7861,
+      "psnr": 48.8849,
+      "ssim": 0.994,
+      "mae": 0.000822,
+      "mse": 1.5e-05,
+      "rmse": 0.003715
+    },
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "dncnn-groundroll",
+    "benchmark_id": "segc3-groundroll-noise1",
+    "scores": {
+      "snr": 19.7355,
+      "psnr": 38.8548,
+      "ssim": 0.9846,
+      "mae": 0.004684,
+      "mse": 0.00013,
+      "rmse": 0.011415
+    },
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "dncnn-groundroll",
+    "benchmark_id": "segc3-groundroll-noise3",
+    "scores": {
+      "snr": 17.2389,
+      "psnr": 42.3788,
+      "ssim": 0.9883,
+      "mae": 0.002676,
+      "mse": 5.8e-05,
+      "rmse": 0.007606
+    },
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "dncnn-groundroll",
+    "benchmark_id": "segc3-groundroll-noise5",
+    "scores": {
+      "snr": 15.5662,
+      "psnr": 44.228,
+      "ssim": 0.9898,
+      "mae": 0.002042,
+      "mse": 3.8e-05,
+      "rmse": 0.006147
+    },
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "dncnn-groundroll",
+    "benchmark_id": "segc3-groundroll-noise7",
+    "scores": {
+      "snr": 15.1741,
+      "psnr": 46.3346,
+      "ssim": 0.9925,
+      "mae": 0.001628,
+      "mse": 2.3e-05,
+      "rmse": 0.004823
+    },
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "dncnn-groundroll",
+    "benchmark_id": "segc3-groundroll-noise9",
+    "scores": {
+      "snr": 14.8737,
+      "psnr": 47.9725,
+      "ssim": 0.9942,
+      "mae": 0.001366,
+      "mse": 1.6e-05,
+      "rmse": 0.003994
+    },
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "res-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise1",
+    "scores": {
+      "snr": 31.6226,
+      "psnr": 50.742,
+      "ssim": 0.998,
+      "mae": 0.000659,
+      "mse": 8e-06,
+      "rmse": 0.002907
+    },
+    "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "res-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise3",
+    "scores": {
+      "snr": 22.6469,
+      "psnr": 47.7869,
+      "ssim": 0.9924,
+      "mae": 0.001194,
+      "mse": 1.7e-05,
+      "rmse": 0.004095
+    },
+    "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "res-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise5",
+    "scores": {
+      "snr": 18.1078,
+      "psnr": 46.7695,
+      "ssim": 0.9898,
+      "mae": 0.001265,
+      "mse": 2.3e-05,
+      "rmse": 0.004679
+    },
+    "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "res-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise7",
+    "scores": {
+      "snr": 16.6023,
+      "psnr": 47.7628,
+      "ssim": 0.9895,
+      "mae": 0.001264,
+      "mse": 1.7e-05,
+      "rmse": 0.004128
+    },
+    "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "res-unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise9",
+    "scores": {
+      "snr": 13.8944,
+      "psnr": 46.9932,
+      "ssim": 0.9873,
+      "mae": 0.001799,
+      "mse": 2.1e-05,
+      "rmse": 0.004502
+    },
+    "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise1",
+    "scores": {
+      "snr": 28.3886,
+      "psnr": 47.508,
+      "ssim": 0.9972,
+      "mae": 0.000673,
+      "mse": 1.8e-05,
+      "rmse": 0.004235
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise3",
+    "scores": {
+      "snr": 23.0729,
+      "psnr": 48.2128,
+      "ssim": 0.9961,
+      "mae": 0.000676,
+      "mse": 1.5e-05,
+      "rmse": 0.003885
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise5",
+    "scores": {
+      "snr": 20.2195,
+      "psnr": 48.8813,
+      "ssim": 0.9958,
+      "mae": 0.000656,
+      "mse": 1.3e-05,
+      "rmse": 0.003599
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise7",
+    "scores": {
+      "snr": 17.8984,
+      "psnr": 49.059,
+      "ssim": 0.9955,
+      "mae": 0.00062,
+      "mse": 1.2e-05,
+      "rmse": 0.003526
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
+    "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "unet-groundroll",
+    "benchmark_id": "segc3-groundroll-noise9",
+    "scores": {
+      "snr": 16.5997,
+      "psnr": 49.6984,
+      "ssim": 0.9956,
+      "mae": 0.000673,
+      "mse": 1.1e-05,
+      "rmse": 0.003277
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
+    "date_added": "2026-05-16"
   }
 ]

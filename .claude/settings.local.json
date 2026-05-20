@@ -41,7 +41,8 @@
       "Bash(claude plugins *)",
       "Bash(npm list *)",
       "Bash(npx tsc *)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Bash(/c/Users/admin/anaconda3/python *)"
     ]
   }
 }

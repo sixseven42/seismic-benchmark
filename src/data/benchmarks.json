@@ -9,8 +9,16 @@
     "data_source": "synthetic",
     "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
     "primary_metric": "snr",
-    "metrics": ["snr", "ssim", "rmse"],
-    "tags": ["3D", "Ground Roll", "Synthetic"],
+    "metrics": [
+      "snr",
+      "ssim",
+      "rmse"
+    ],
+    "tags": [
+      "3D",
+      "Ground Roll",
+      "Synthetic"
+    ],
     "citation": "TBD",
     "download_url": "https://huggingface.co/models",
     "model_count": 2
@@ -25,8 +33,17 @@
     "data_source": "field",
     "dimensions": "240 × 1024 traces",
     "primary_metric": "snr",
-    "metrics": ["snr", "ssim", "rmse"],
-    "tags": ["2D", "Land", "Field", "Vibroseis"],
+    "metrics": [
+      "snr",
+      "ssim",
+      "rmse"
+    ],
+    "tags": [
+      "2D",
+      "Land",
+      "Field",
+      "Vibroseis"
+    ],
     "citation": "Liu et al., Geophysical Prospecting 2022",
     "download_url": "",
     "model_count": 0
@@ -41,8 +58,16 @@
     "data_source": "synthetic",
     "dimensions": "256 × 512 traces",
     "primary_metric": "snr",
-    "metrics": ["snr", "ssim", "rmse"],
-    "tags": ["2D", "Marine", "Random Missing"],
+    "metrics": [
+      "snr",
+      "ssim",
+      "rmse"
+    ],
+    "tags": [
+      "2D",
+      "Marine",
+      "Random Missing"
+    ],
     "citation": "Wang et al., Geophysics 2022",
     "download_url": "",
     "model_count": 1
@@ -57,8 +82,16 @@
     "data_source": "synthetic",
     "dimensions": "256 × 512 traces",
     "primary_metric": "snr",
-    "metrics": ["snr", "ssim", "rmse"],
-    "tags": ["2D", "Random Noise", "Marmousi"],
+    "metrics": [
+      "snr",
+      "ssim",
+      "rmse"
+    ],
+    "tags": [
+      "2D",
+      "Random Noise",
+      "Marmousi"
+    ],
     "citation": "Versteeg, Leading Edge 1994 (Marmousi)",
     "download_url": "",
     "model_count": 1
@@ -73,8 +106,16 @@
     "data_source": "synthetic",
     "dimensions": "96 × 2000 samples",
     "primary_metric": "accuracy",
-    "metrics": ["accuracy", "f1", "mae"],
-    "tags": ["Refraction", "Synthetic", "Variable SNR"],
+    "metrics": [
+      "accuracy",
+      "f1",
+      "mae"
+    ],
+    "tags": [
+      "Refraction",
+      "Synthetic",
+      "Variable SNR"
+    ],
     "citation": "Hu et al., IEEE GRSL 2019",
     "download_url": "",
     "model_count": 2
@@ -89,10 +130,153 @@
     "data_source": "synthetic",
     "dimensions": "128 × 256 traces",
     "primary_metric": "psnr",
-    "metrics": ["psnr", "ssim", "mse"],
-    "tags": ["2D", "Marine", "Downsampling"],
+    "metrics": [
+      "psnr",
+      "ssim",
+      "mse"
+    ],
+    "tags": [
+      "2D",
+      "Marine",
+      "Downsampling"
+    ],
     "citation": "TBD",
     "download_url": "",
     "model_count": 2
+  },
+  {
+    "id": "segc3-groundroll-noise1",
+    "name": "SEGC3 Ground-Roll Noise 1",
+    "dataset_name": "SEG C3 Ground Roll",
+    "task": "coherent_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 paired ground-roll attenuation benchmark with noise strength 1.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
+    "model_count": 9
+  },
+  {
+    "id": "segc3-groundroll-noise3",
+    "name": "SEGC3 Ground-Roll Noise 3",
+    "dataset_name": "SEG C3 Ground Roll",
+    "task": "coherent_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 paired ground-roll attenuation benchmark with noise strength 3.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
+    "model_count": 9
+  },
+  {
+    "id": "segc3-groundroll-noise5",
+    "name": "SEGC3 Ground-Roll Noise 5",
+    "dataset_name": "SEG C3 Ground Roll",
+    "task": "coherent_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 paired ground-roll attenuation benchmark with noise strength 5.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
+    "model_count": 9
+  },
+  {
+    "id": "segc3-groundroll-noise7",
+    "name": "SEGC3 Ground-Roll Noise 7",
+    "dataset_name": "SEG C3 Ground Roll",
+    "task": "coherent_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 paired ground-roll attenuation benchmark with noise strength 7.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
+    "model_count": 9
+  },
+  {
+    "id": "segc3-groundroll-noise9",
+    "name": "SEGC3 Ground-Roll Noise 9",
+    "dataset_name": "SEG C3 Ground Roll",
+    "task": "coherent_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 paired ground-roll attenuation benchmark with noise strength 9.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
+    "model_count": 9
   }
 ]
