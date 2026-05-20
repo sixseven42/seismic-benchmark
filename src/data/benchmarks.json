@@ -94,7 +94,7 @@
     "tags": ["SEG C3", "Ground Roll", "Synthetic"],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9
+    "model_count": 1
   },
   {
     "id": "segc3-groundroll-noise3",
@@ -111,7 +111,7 @@
     "tags": ["SEG C3", "Ground Roll", "Synthetic"],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9
+    "model_count": 1
   },
   {
     "id": "segc3-groundroll-noise5",
@@ -128,7 +128,7 @@
     "tags": ["SEG C3", "Ground Roll", "Synthetic"],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9
+    "model_count": 1
   },
   {
     "id": "segc3-groundroll-noise7",
@@ -145,7 +145,7 @@
     "tags": ["SEG C3", "Ground Roll", "Synthetic"],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9
+    "model_count": 1
   },
   {
     "id": "segc3-groundroll-noise9",
@@ -162,6 +162,6 @@
     "tags": ["SEG C3", "Ground Roll", "Synthetic"],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9
+    "model_count": 1
   }
 ]
