@@ -149,6 +149,20 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     return data.benchmarks.filter(b => filters.task === 'all' || b.task === filters.task);
   }, [data.benchmarks, filters.task]);
 
+  const datasetOptions = useMemo(() => {
+    const groups = new Map<string, typeof availableDatasets>();
+    const singles: typeof availableDatasets = [];
+    for (const b of availableDatasets) {
+      if (b.group_name) {
+        if (!groups.has(b.group_name)) groups.set(b.group_name, []);
+        groups.get(b.group_name)!.push(b);
+      } else {
+        singles.push(b);
+      }
+    }
+    return { groups: Array.from(groups.entries()), singles };
+  }, [availableDatasets]);
+
   const currentBench = data.benchmarks.find(b => b.id === filters.dataset);
 
   const taskOptions: { value: Filters['task']; label: string }[] = [
@@ -205,7 +219,14 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
               }));
             }}
           >
-            {availableDatasets.map(b => (
+            {datasetOptions.groups.map(([groupName, items]) => (
+              <optgroup key={groupName} label={groupName}>
+                {items.map(b => (
+                  <option key={b.id} value={b.id}>{b.name}</option>
+                ))}
+              </optgroup>
+            ))}
+            {datasetOptions.singles.map(b => (
               <option key={b.id} value={b.id}>{b.dataset_name}</option>
             ))}
           </select>

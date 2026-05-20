@@ -23,6 +23,7 @@ export interface Model {
 export interface Benchmark {
   id: string;
   name: string;
+  group_name?: string;
   dataset_name: string;
   task: Task;
   icon: string;

@@ -13,7 +13,7 @@ import {
   Legend,
 } from 'chart.js';
 import { useLanguage } from '../contexts/LanguageContext';
-import type { AppData, Filters } from '../types';
+import type { AppData, Filters, Benchmark } from '../types';
 import { isLowerBetter, escapeHtml } from '../utils/helpers';
 import { getBarChartConfig } from '../utils/charts';
 
@@ -21,6 +21,10 @@ ChartJS.register(
   CategoryScale, LinearScale, BarElement, PointElement,
   LineElement, RadialLinearScale, Title, Tooltip, Legend
 );
+
+const GROUP_DESCRIPTIONS: Record<string, string> = {
+  'SEGC3 Ground-Roll Noise': 'A suite of synthetic 3D seismic benchmarks built on the SEG China 3D (SEGC3) geological model with progressively increasing ground-roll noise strengths (levels 1, 3, 5, 7 and 9). Each variant shares the same 9-shot-line geometry and provides paired raw/noisy and clean labels, enabling systematic evaluation of coherent noise suppression methods under controlled interference conditions.',
+};
 
 interface Props {
   data: AppData;
@@ -34,7 +38,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
   const { t } = useLanguage();
   const [activeBenchId, setActiveBenchId] = useState<string | null>(null);
 
-  const list = useMemo(() => {
+  const filteredBenchmarks = useMemo(() => {
     let items = data.benchmarks.slice();
     if (filters.task !== 'all') {
       items = items.filter(b => b.task === filters.task);
@@ -43,13 +47,38 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
       const q = search.toLowerCase();
       items = items.filter(b =>
         (b.name || '').toLowerCase().includes(q) ||
+        (b.group_name || '').toLowerCase().includes(q) ||
         (b.tags || []).some(t => t.toLowerCase().includes(q))
       );
     }
     return items;
   }, [data.benchmarks, filters.task, search]);
 
+  const { groupEntries, singles } = useMemo(() => {
+    const groups = new Map<string, Benchmark[]>();
+    const singlesArr: Benchmark[] = [];
+    for (const b of filteredBenchmarks) {
+      if (b.group_name) {
+        if (!groups.has(b.group_name)) groups.set(b.group_name, []);
+        groups.get(b.group_name)!.push(b);
+      } else {
+        singlesArr.push(b);
+      }
+    }
+    return {
+      groupEntries: Array.from(groups.entries()).map(([name, items]) => ({ name, items })),
+      singles: singlesArr,
+    };
+  }, [filteredBenchmarks]);
+
   const activeBench = data.benchmarks.find(b => b.id === activeBenchId);
+
+  const activeGroupItems = useMemo(() => {
+    if (!activeBench?.group_name) return [];
+    return data.benchmarks
+      .filter(b => b.group_name === activeBench.group_name)
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, [activeBench, data.benchmarks]);
 
   const benchResults = useMemo(() => {
     if (!activeBench) return [];
@@ -77,6 +106,16 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
 
   const closePanel = () => setActiveBenchId(null);
 
+  const getGroupStats = (items: Benchmark[]) => {
+    const ids = new Set(items.map(i => i.id));
+    const modelIds = new Set(
+      data.results.filter(r => ids.has(r.benchmark_id)).map(r => r.model_id)
+    );
+    return { variantCount: items.length, methodCount: modelIds.size };
+  };
+
+  const totalCount = groupEntries.length + singles.length;
+
   return (
     <div>
       <div className="page-header">
@@ -99,11 +138,42 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
             <option value="super_resolution">{t.tasks.super_resolution}</option>
           </select>
         </div>
-        <span className="result-count">{list.length} {t.leaderboard.results}</span>
+        <span className="result-count">{totalCount} {t.leaderboard.results}</span>
       </div>
 
       <div className="grid cols-2">
-        {list.map(b => (
+        {/* Group cards */}
+        {groupEntries.map(({ name, items }) => {
+          const first = items[0];
+          const { variantCount, methodCount } = getGroupStats(items);
+          const allTags = Array.from(new Set(items.flatMap(b => b.tags || [])));
+          const isActive = activeBench?.group_name === name;
+          return (
+            <div
+              key={name}
+              className={`card clickable benchmark-card ${isActive ? 'active-card' : ''}`}
+              onClick={() => setActiveBenchId(items[0].id)}
+            >
+              <div className="card-header">
+                <span className="card-icon">{first.icon || '📊'}</span>
+                <div>
+                  <div className="card-title">{escapeHtml(name)}</div>
+                  <div className="card-subtitle">{escapeHtml(first.task)} · {escapeHtml(first.dataset_name)}</div>
+                </div>
+              </div>
+              <div className="card-body">
+                <p>{escapeHtml(GROUP_DESCRIPTIONS[name] || first.description)}</p>
+                <div className="card-meta">
+                  {allTags.map(t => <span key={t} className="tag">{escapeHtml(t)}</span>)}
+                  <span className="tag tag-accent">{variantCount} variants · {methodCount} methods</span>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        {/* Single benchmark cards */}
+        {singles.map(b => (
           <div
             key={b.id}
             className={`card clickable benchmark-card ${activeBenchId === b.id ? 'active-card' : ''}`}
@@ -133,18 +203,38 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
           <div className="slide-panel">
             <div className="slide-panel-header">
               <div>
-                <h2>{escapeHtml(activeBench.name)}</h2>
-                <span className="slide-panel-subtitle">{escapeHtml(activeBench.task)} · {escapeHtml(activeBench.dimensions)}</span>
+                <h2>{escapeHtml(activeBench.group_name || activeBench.name)}</h2>
+                <span className="slide-panel-subtitle">
+                  {activeBench.group_name ? escapeHtml(activeBench.name) : `${escapeHtml(activeBench.task)} · ${escapeHtml(activeBench.dimensions)}`}
+                </span>
               </div>
               <button className="slide-panel-close" onClick={closePanel} title="Close">✕</button>
             </div>
 
             <div className="slide-panel-body">
+              {/* Variant selector — full width */}
+              {activeGroupItems.length > 0 && (
+                <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-2)' }}>
+                    <span style={{ fontSize: '0.875rem', color: 'var(--text-muted)', fontWeight: 500 }}>Variant</span>
+                    <select
+                      value={activeBenchId || ''}
+                      onChange={e => setActiveBenchId(e.target.value)}
+                      style={{ minWidth: 200 }}
+                    >
+                      {activeGroupItems.map(b => (
+                        <option key={b.id} value={b.id}>{b.name}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              )}
+
               {/* Description — full width */}
               <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                 <section className="slide-section">
                   <h4>{t.benchmarks.description}</h4>
-                  <p>{escapeHtml(activeBench.description)}</p>
+                  <p>{escapeHtml(activeBench.group_name ? (GROUP_DESCRIPTIONS[activeBench.group_name] || activeBench.description) : activeBench.description)}</p>
                 </section>
               </div>
 
