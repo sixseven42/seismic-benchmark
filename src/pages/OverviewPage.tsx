@@ -104,6 +104,7 @@ export default function OverviewPage({ data }: Props) {
               { name: t.overview.teamMember3Name, role: t.overview.teamMember3Role, img: '/seismic-benchmark/team/chengzhitong.jpg', pos: 'center top' },
               { name: t.overview.teamMember4Name, role: t.overview.teamMember4Role, img: '/seismic-benchmark/team/gaotianxiang.png', pos: 'center top' },
               { name: t.overview.teamMember5Name, role: t.overview.teamMember5Role, img: '/seismic-benchmark/team/hupeng.jpg', pos: 'center top' },
+              { name: t.overview.teamMember11Name, role: t.overview.teamMember11Role, img: '/seismic-benchmark/team/zhangchen.jpg', pos: 'center top' },
               { name: t.overview.teamMember6Name, role: t.overview.teamMember6Role, img: '/seismic-benchmark/team/lishirui.jpg', pos: 'center top' },
               { name: t.overview.teamMember7Name, role: t.overview.teamMember7Role, img: '/seismic-benchmark/team/gaowei.jpg', pos: 'center top' },
               { name: t.overview.teamMember8Name, role: t.overview.teamMember8Role, img: '/seismic-benchmark/team/shengwenzhe.jpg', pos: 'center top' },

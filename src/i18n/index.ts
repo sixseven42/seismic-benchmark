@@ -53,6 +53,8 @@ const translations = {
       teamMember9Role: 'Server Management & Resource Scheduling',
       teamMember10Name: 'Yuying Cheng',
       teamMember10Role: 'Random Noise Denoising Member',
+      teamMember11Name: 'Chen Zhang',
+      teamMember11Role: 'First Arrival Picking Task Lead',
     },
     leaderboard: {
       title: 'Leaderboard',
@@ -187,6 +189,8 @@ const translations = {
       teamMember9Role: '服务器管理以及资源调度',
       teamMember10Name: '程裕莹',
       teamMember10Role: '随机噪声去噪成员',
+      teamMember11Name: '张宸',
+      teamMember11Role: '初至拾取任务负责人',
     },
     leaderboard: {
       title: '排行榜',
