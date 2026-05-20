@@ -1,41 +1,5 @@
 [
   {
-    "id": "unet-gr",
-    "name": "UNet-GR",
-    "authors": "",
-    "org": "",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "End-to-End Ground Roll Suppression Based on U-Net.",
-    "paper_url": "",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
-    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "architecture_image": "models/arch-unet-gr.png",
-    "is_open_source": true
-  },
-  {
-    "id": "unet-coherent-2",
-    "name": "UNet-Coherent2",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "U-Net variant for coherent noise suppression with improved attention mechanisms.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-coherent2.png",
-    "is_open_source": false
-  },
-  {
     "id": "unet-interp-1",
     "name": "UNet-Interp1",
     "authors": "TBD",
