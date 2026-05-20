@@ -13,12 +13,7 @@
     "description": "End-to-End Ground Roll Suppression Based on U-Net.",
     "paper_url": "",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code",
-    "weights_url": "https://huggingface.co/models",
-    "weights_urls": {
-      "coherent_noise_suppression": "https://huggingface.co/models",
-      "random_noise_suppression": "https://huggingface.co/models",
-      "interpolation": "https://huggingface.co/models"
-    },
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "architecture_image": "models/arch-unet-gr.png",
     "is_open_source": true
   },
@@ -198,7 +193,7 @@
     "description": "Attention-gated U-Net for ground-roll residual prediction.",
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
-    "weights_url": "https://huggingface.co/models/attention-unet",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "is_open_source": true
   },
   {
@@ -231,7 +226,7 @@
     "description": "Residual convolutional denoiser for ground-roll noise prediction.",
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
-    "weights_url": "https://huggingface.co/models/dncnn",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "is_open_source": true
   },
   {
@@ -296,7 +291,7 @@
     "description": "Residual U-Net baseline for ground-roll residual prediction.",
     "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
-    "weights_url": "https://huggingface.co/models/resunet",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "is_open_source": true
   },
   {
@@ -329,7 +324,7 @@
     "description": "U-Net baseline for ground-roll residual prediction.",
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
-    "weights_url": "https://huggingface.co/models/unet",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "is_open_source": true
   }
 ]

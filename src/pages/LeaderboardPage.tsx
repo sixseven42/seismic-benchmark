@@ -330,6 +330,17 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                     {row.model!.code_url && (
                       <a className="icon-link" href={row.model!.code_url} target="_blank" rel="noreferrer" title="Code">💻</a>
                     )}
+                    {(row.model!.weights_urls?.[row.benchmark!.task] || row.model!.weights_url) && (
+                      <a
+                        className="icon-link"
+                        href={row.model!.weights_urls?.[row.benchmark!.task] || row.model!.weights_url || ''}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="Weights"
+                      >
+                        ⬇️
+                      </a>
+                    )}
                   </td>
                 </tr>
               );
