@@ -115,7 +115,23 @@ const GROUP_DESCRIPTIONS: Record<string, string> = {
 
 ---
 
-## 5. 常见注意事项
+## 5. 历史错误记录（不再犯）
+
+### ❌ 错误：数据集 download_url 使用统一默认值
+
+**问题**：在添加 SEG C3 Ground Roll 数据集时，我没有使用你提供的具体下载链接 `https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll`，而是给所有数据集统一填充了一个默认链接 `https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main`。
+
+**原因**：
+- `benchmarks.json` 中的 `download_url` 和 `datasets.json` 中的 `download_url` 是两个不同的字段，前者是 benchmark 级别的下载页，后者是数据集本身的下载页。
+- 不同数据集对应不同的 HuggingFace 仓库，不能用一个统一链接套所有数据集。
+
+**纠正**：
+- `datasets.json` 中每个数据集的 `download_url` 必须使用你提供的具体链接，**绝不擅自用默认值填充**。
+- 如果你提供 benchmark JSON 时附带了 `download_url`，我会同时更新 `benchmarks.json` 和 `datasets.json` 中对应条目，但两者的值可以不同（benchmark 页 vs 数据集页）。
+
+---
+
+## 6. 常见注意事项
 
 | 问题 | 处理方式 |
 |------|----------|

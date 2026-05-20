@@ -20,10 +20,7 @@ export function useData(): { data: AppData; loading: boolean; error: string | nu
   useEffect(() => {
     try {
       const models = modelsJson as Model[];
-      const benchmarks = (benchmarksJson as Benchmark[]).map(b => ({
-        ...b,
-        model_count: (resultsJson as Result[]).filter(r => r.benchmark_id === b.id).length,
-      }));
+      const benchmarks = benchmarksJson as Benchmark[];
       const results = resultsJson as Result[];
       const papers = papersJson as Paper[];
       const datasets = datasetsJson as Dataset[];

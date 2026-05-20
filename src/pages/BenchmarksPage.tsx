@@ -114,8 +114,6 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
     return { variantCount: items.length, methodCount: modelIds.size };
   };
 
-  const totalCount = groupEntries.length + singles.length;
-
   return (
     <div>
       <div className="page-header">
@@ -138,7 +136,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
             <option value="super_resolution">{t.tasks.super_resolution}</option>
           </select>
         </div>
-        <span className="result-count">{totalCount} {t.leaderboard.results}</span>
+        <span className="result-count">{filteredBenchmarks.length} {t.leaderboard.results}</span>
       </div>
 
       <div className="grid cols-2">

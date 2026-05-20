@@ -17,8 +17,7 @@
       "format": "SEGY",
       "dimensions": "9 × 201 × 201 × 625"
     },
-    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "related_benchmark_ids": ["segc3-groundroll-noise1", "segc3-groundroll-noise3", "segc3-groundroll-noise5", "segc3-groundroll-noise7", "segc3-groundroll-noise9", "field-land-denoise"]
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll"
   },
   {
     "id": "synthetic-marine-2d",
@@ -38,8 +37,7 @@
       "format": "SEGY",
       "dimensions": "256 × 512 traces"
     },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
-    "related_benchmark_ids": ["synth-interp-2d"]
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
   },
   {
     "id": "marmousi",
@@ -59,8 +57,7 @@
       "format": "SEGY",
       "dimensions": "256 × 512 traces"
     },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
-    "related_benchmark_ids": ["synth-denoise-random"]
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
   },
   {
     "id": "synthetic-refraction",
@@ -80,8 +77,7 @@
       "format": "SU",
       "dimensions": "96 × 2000 samples"
     },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
-    "related_benchmark_ids": ["synth-fap-snr"]
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
   },
   {
     "id": "sichuan-basin",
@@ -101,8 +97,7 @@
       "format": "SEGY",
       "dimensions": "240 × 1024 traces"
     },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
-    "related_benchmark_ids": ["field-land-denoise"]
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
   },
   {
     "id": "synthetic-sr",
@@ -122,7 +117,6 @@
       "format": "SEGY",
       "dimensions": "128 × 256 traces"
     },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main",
-    "related_benchmark_ids": ["synth-sr-2d"]
+    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
   }
 ]

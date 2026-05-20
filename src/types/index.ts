@@ -95,7 +95,6 @@ export interface Dataset {
     dimensions?: string;
   };
   download_url?: string;
-  related_benchmark_ids: string[];
 }
 
 export interface AppData {

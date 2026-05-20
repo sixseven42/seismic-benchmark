@@ -58,7 +58,7 @@ export default function OverviewPage({ data }: Props) {
             {stats.datasets}
           </div>
           <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: 'var(--space-2)' }}>
-            {t.overview.statsDatasets}
+            {t.overview.statsBenchmarks}
           </div>
         </div>
         <div className="card" style={{ textAlign: 'center' }}>
