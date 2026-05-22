@@ -36,42 +36,6 @@
     "is_open_source": false
   },
   {
-    "id": "unet-random-1",
-    "name": "UNet-Random1",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2023,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "U-Net trained for random noise suppression in seismic data.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-random1.png",
-    "is_open_source": false
-  },
-  {
-    "id": "unet-random-2",
-    "name": "UNet-Random2",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "Attention-augmented U-Net for robust random noise attenuation.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-random2.png",
-    "is_open_source": false
-  },
-  {
     "id": "unet-fap-1",
     "name": "UNet-FAP1",
     "authors": "TBD",

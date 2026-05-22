@@ -24,30 +24,6 @@
     "date_added": "2026-05-11"
   },
   {
-    "model_id": "unet-random-1",
-    "benchmark_id": "synth-denoise-random",
-    "scores": {
-      "snr": 14.5,
-      "ssim": 0.9,
-      "rmse": 0.03
-    },
-    "paper_url": "",
-    "code_url": null,
-    "date_added": "2026-05-11"
-  },
-  {
-    "model_id": "unet-random-2",
-    "benchmark_id": "synth-denoise-random",
-    "scores": {
-      "snr": 16.1,
-      "ssim": 0.92,
-      "rmse": 0.025
-    },
-    "paper_url": "",
-    "code_url": null,
-    "date_added": "2026-05-11"
-  },
-  {
     "model_id": "unet-fap-1",
     "benchmark_id": "synth-fap-snr",
     "scores": {

@@ -49,30 +49,6 @@
     "model_count": 1
   },
   {
-    "id": "synth-denoise-random",
-    "name": "Synthetic Random Noise",
-    "dataset_name": "Marmousi",
-    "task": "random_noise_suppression",
-    "icon": "🌫️",
-    "description": "Shot gathers from the classic Marmousi velocity model contaminated with additive Gaussian white noise at varying input SNR levels ranging from -5 dB to +10 dB. This benchmark tests the robustness and generalization of random noise suppression methods across different noise regimes and signal-to-noise conditions.",
-    "data_source": "synthetic",
-    "dimensions": "256 × 512 traces",
-    "primary_metric": "snr",
-    "metrics": [
-      "snr",
-      "ssim",
-      "rmse"
-    ],
-    "tags": [
-      "2D",
-      "Random Noise",
-      "Marmousi"
-    ],
-    "citation": "Versteeg, Leading Edge 1994 (Marmousi)",
-    "download_url": "",
-    "model_count": 1
-  },
-  {
     "id": "synth-fap-snr",
     "name": "Synthetic First Arrival (varying SNR)",
     "dataset_name": "Synthetic Refraction",
