@@ -290,5 +290,73 @@
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "is_open_source": true
+  },
+  {
+    "id": "attention-unet-random-noise",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Attention U-Net family",
+    "year": 2018,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "Attention U-Net baseline for synthetic random-noise suppression.",
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/atten_unet",
+    "is_open_source": true
+  },
+  {
+    "id": "dncnn-random-noise",
+    "name": "DnCNN",
+    "authors": "Zhang et al.",
+    "org": "Image Processing Group",
+    "year": 2017,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "DnCNN baseline for synthetic random-noise suppression.",
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/dncnn",
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-random-noise",
+    "name": "ResUNet",
+    "authors": "Diakogiannis et al.",
+    "org": "ResUNet-a",
+    "year": 2019,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "Residual U-Net baseline for synthetic random-noise suppression.",
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/res_unet",
+    "is_open_source": true
+  },
+  {
+    "id": "unet-random-noise",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "U-Net baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet",
+    "is_open_source": true
   }
 ]

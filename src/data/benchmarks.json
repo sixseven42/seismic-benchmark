@@ -9,8 +9,17 @@
     "data_source": "field",
     "dimensions": "240 × 1024 traces",
     "primary_metric": "snr",
-    "metrics": ["snr", "ssim", "rmse"],
-    "tags": ["2D", "Land", "Field", "Vibroseis"],
+    "metrics": [
+      "snr",
+      "ssim",
+      "rmse"
+    ],
+    "tags": [
+      "2D",
+      "Land",
+      "Field",
+      "Vibroseis"
+    ],
     "citation": "Liu et al., Geophysical Prospecting 2022",
     "download_url": "",
     "model_count": 0
@@ -25,8 +34,16 @@
     "data_source": "synthetic",
     "dimensions": "256 × 512 traces",
     "primary_metric": "snr",
-    "metrics": ["snr", "ssim", "rmse"],
-    "tags": ["2D", "Marine", "Random Missing"],
+    "metrics": [
+      "snr",
+      "ssim",
+      "rmse"
+    ],
+    "tags": [
+      "2D",
+      "Marine",
+      "Random Missing"
+    ],
     "citation": "Wang et al., Geophysics 2022",
     "download_url": "",
     "model_count": 1
@@ -41,8 +58,16 @@
     "data_source": "synthetic",
     "dimensions": "256 × 512 traces",
     "primary_metric": "snr",
-    "metrics": ["snr", "ssim", "rmse"],
-    "tags": ["2D", "Random Noise", "Marmousi"],
+    "metrics": [
+      "snr",
+      "ssim",
+      "rmse"
+    ],
+    "tags": [
+      "2D",
+      "Random Noise",
+      "Marmousi"
+    ],
     "citation": "Versteeg, Leading Edge 1994 (Marmousi)",
     "download_url": "",
     "model_count": 1
@@ -57,8 +82,16 @@
     "data_source": "synthetic",
     "dimensions": "96 × 2000 samples",
     "primary_metric": "accuracy",
-    "metrics": ["accuracy", "f1", "mae"],
-    "tags": ["Refraction", "Synthetic", "Variable SNR"],
+    "metrics": [
+      "accuracy",
+      "f1",
+      "mae"
+    ],
+    "tags": [
+      "Refraction",
+      "Synthetic",
+      "Variable SNR"
+    ],
     "citation": "Hu et al., IEEE GRSL 2019",
     "download_url": "",
     "model_count": 2
@@ -73,8 +106,16 @@
     "data_source": "synthetic",
     "dimensions": "128 × 256 traces",
     "primary_metric": "psnr",
-    "metrics": ["psnr", "ssim", "mse"],
-    "tags": ["2D", "Marine", "Downsampling"],
+    "metrics": [
+      "psnr",
+      "ssim",
+      "mse"
+    ],
+    "tags": [
+      "2D",
+      "Marine",
+      "Downsampling"
+    ],
     "citation": "TBD",
     "download_url": "",
     "model_count": 2
@@ -90,8 +131,19 @@
     "data_source": "synthetic",
     "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
     "primary_metric": "snr",
-    "metrics": ["snr", "psnr", "ssim", "mae", "mse", "rmse"],
-    "tags": ["SEG C3", "Ground Roll", "Synthetic"],
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
     "model_count": 1
@@ -107,8 +159,19 @@
     "data_source": "synthetic",
     "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
     "primary_metric": "snr",
-    "metrics": ["snr", "psnr", "ssim", "mae", "mse", "rmse"],
-    "tags": ["SEG C3", "Ground Roll", "Synthetic"],
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
     "model_count": 1
@@ -124,8 +187,19 @@
     "data_source": "synthetic",
     "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
     "primary_metric": "snr",
-    "metrics": ["snr", "psnr", "ssim", "mae", "mse", "rmse"],
-    "tags": ["SEG C3", "Ground Roll", "Synthetic"],
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
     "model_count": 1
@@ -141,8 +215,19 @@
     "data_source": "synthetic",
     "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
     "primary_metric": "snr",
-    "metrics": ["snr", "psnr", "ssim", "mae", "mse", "rmse"],
-    "tags": ["SEG C3", "Ground Roll", "Synthetic"],
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
     "model_count": 1
@@ -158,10 +243,195 @@
     "data_source": "synthetic",
     "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
     "primary_metric": "snr",
-    "metrics": ["snr", "psnr", "ssim", "mae", "mse", "rmse"],
-    "tags": ["SEG C3", "Ground Roll", "Synthetic"],
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Ground Roll",
+      "Synthetic"
+    ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
     "model_count": 1
+  },
+  {
+    "id": "segc3-random-noise-gaussian-snrneg5",
+    "name": "SEGC3 Random Noise Gaussian SNR -5 dB",
+    "dataset_name": "SEG C3 Random Noise",
+    "task": "random_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 synthetic random-noise attenuation benchmark with Gaussian noise at -5 dB.",
+    "data_source": "synthetic",
+    "dimensions": "9 x 201 x 625 (shots, traces, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Random Noise",
+      "Gaussian",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://wiki.seg.org/wiki/C3",
+    "model_count": 4,
+    "group_name": "SEGC3 Random Noise"
+  },
+  {
+    "id": "segc3-random-noise-gaussian-snr0",
+    "name": "SEGC3 Random Noise Gaussian SNR 0 dB",
+    "dataset_name": "SEG C3 Random Noise",
+    "task": "random_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 synthetic random-noise attenuation benchmark with Gaussian noise at 0 dB.",
+    "data_source": "synthetic",
+    "dimensions": "9 x 201 x 625 (shots, traces, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Random Noise",
+      "Gaussian",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://wiki.seg.org/wiki/C3",
+    "model_count": 4,
+    "group_name": "SEGC3 Random Noise"
+  },
+  {
+    "id": "segc3-random-noise-gaussian-snr5",
+    "name": "SEGC3 Random Noise Gaussian SNR 5 dB",
+    "dataset_name": "SEG C3 Random Noise",
+    "task": "random_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 synthetic random-noise attenuation benchmark with Gaussian noise at 5 dB.",
+    "data_source": "synthetic",
+    "dimensions": "9 x 201 x 625 (shots, traces, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Random Noise",
+      "Gaussian",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://wiki.seg.org/wiki/C3",
+    "model_count": 4,
+    "group_name": "SEGC3 Random Noise"
+  },
+  {
+    "id": "segc3-random-noise-poisson-snrneg5",
+    "name": "SEGC3 Random Noise Poisson SNR -5 dB",
+    "dataset_name": "SEG C3 Random Noise",
+    "task": "random_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 synthetic random-noise attenuation benchmark with Poisson noise at -5 dB.",
+    "data_source": "synthetic",
+    "dimensions": "9 x 201 x 625 (shots, traces, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Random Noise",
+      "Poisson",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://wiki.seg.org/wiki/C3",
+    "model_count": 4,
+    "group_name": "SEGC3 Random Noise"
+  },
+  {
+    "id": "segc3-random-noise-poisson-snr0",
+    "name": "SEGC3 Random Noise Poisson SNR 0 dB",
+    "dataset_name": "SEG C3 Random Noise",
+    "task": "random_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 synthetic random-noise attenuation benchmark with Poisson noise at 0 dB.",
+    "data_source": "synthetic",
+    "dimensions": "9 x 201 x 625 (shots, traces, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Random Noise",
+      "Poisson",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://wiki.seg.org/wiki/C3",
+    "model_count": 4,
+    "group_name": "SEGC3 Random Noise"
+  },
+  {
+    "id": "segc3-random-noise-poisson-snr5",
+    "name": "SEGC3 Random Noise Poisson SNR 5 dB",
+    "dataset_name": "SEG C3 Random Noise",
+    "task": "random_noise_suppression",
+    "icon": "🌊",
+    "description": "SEG C3 synthetic random-noise attenuation benchmark with Poisson noise at 5 dB.",
+    "data_source": "synthetic",
+    "dimensions": "9 x 201 x 625 (shots, traces, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Random Noise",
+      "Poisson",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://wiki.seg.org/wiki/C3",
+    "model_count": 4,
+    "group_name": "SEGC3 Random Noise"
   }
 ]

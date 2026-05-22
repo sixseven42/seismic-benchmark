@@ -118,5 +118,22 @@
       "dimensions": "128 × 256 traces"
     },
     "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
+  },
+  {
+    "id": "segc3-random",
+    "name": "SEG C3 Random Noise",
+    "task": "random_noise_suppression",
+    "description": "The SEGC3 (SEG China 3D) dataset injected with synthetic random noise (Gaussian and Poisson) at varying SNR levels. Designed for benchmarking random noise suppression and denoising algorithms on 3D seismic data.",
+    "thumbnail": null,
+    "gallery": [],
+    "stats": {
+      "shots": 9,
+      "traces": 40401,
+      "time_samples": 625,
+      "dt": 0.004,
+      "format": "SEGY",
+      "dimensions": "9 x 201 x 625"
+    },
+    "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main"
   }
 ]

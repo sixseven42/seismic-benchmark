@@ -103,7 +103,7 @@
       "psnr": 48.5979,
       "ssim": 0.9974,
       "mae": 0.000577,
-      "mse": 0.000014,
+      "mse": 1.4e-05,
       "rmse": 0.003745
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -118,7 +118,7 @@
       "psnr": 49.5338,
       "ssim": 0.9964,
       "mae": 0.00063,
-      "mse": 0.000011,
+      "mse": 1.1e-05,
       "rmse": 0.003358
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -133,7 +133,7 @@
       "psnr": 50.6163,
       "ssim": 0.9965,
       "mae": 0.000618,
-      "mse": 0.000009,
+      "mse": 9e-06,
       "rmse": 0.002961
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -148,7 +148,7 @@
       "psnr": 49.1059,
       "ssim": 0.9947,
       "mae": 0.000686,
-      "mse": 0.000014,
+      "mse": 1.4e-05,
       "rmse": 0.003623
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -163,7 +163,7 @@
       "psnr": 48.8849,
       "ssim": 0.994,
       "mae": 0.000822,
-      "mse": 0.000015,
+      "mse": 1.5e-05,
       "rmse": 0.003715
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -193,7 +193,7 @@
       "psnr": 42.3788,
       "ssim": 0.9883,
       "mae": 0.002676,
-      "mse": 0.000058,
+      "mse": 5.8e-05,
       "rmse": 0.007606
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -208,7 +208,7 @@
       "psnr": 44.228,
       "ssim": 0.9898,
       "mae": 0.002042,
-      "mse": 0.000038,
+      "mse": 3.8e-05,
       "rmse": 0.006147
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -223,7 +223,7 @@
       "psnr": 46.3346,
       "ssim": 0.9925,
       "mae": 0.001628,
-      "mse": 0.000023,
+      "mse": 2.3e-05,
       "rmse": 0.004823
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -238,7 +238,7 @@
       "psnr": 47.9725,
       "ssim": 0.9942,
       "mae": 0.001366,
-      "mse": 0.000016,
+      "mse": 1.6e-05,
       "rmse": 0.003994
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -253,7 +253,7 @@
       "psnr": 50.742,
       "ssim": 0.998,
       "mae": 0.000659,
-      "mse": 0.000008,
+      "mse": 8e-06,
       "rmse": 0.002907
     },
     "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
@@ -268,7 +268,7 @@
       "psnr": 47.7869,
       "ssim": 0.9924,
       "mae": 0.001194,
-      "mse": 0.000017,
+      "mse": 1.7e-05,
       "rmse": 0.004095
     },
     "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
@@ -283,7 +283,7 @@
       "psnr": 46.7695,
       "ssim": 0.9898,
       "mae": 0.001265,
-      "mse": 0.000023,
+      "mse": 2.3e-05,
       "rmse": 0.004679
     },
     "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
@@ -298,7 +298,7 @@
       "psnr": 47.7628,
       "ssim": 0.9895,
       "mae": 0.001264,
-      "mse": 0.000017,
+      "mse": 1.7e-05,
       "rmse": 0.004128
     },
     "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
@@ -313,7 +313,7 @@
       "psnr": 46.9932,
       "ssim": 0.9873,
       "mae": 0.001799,
-      "mse": 0.000021,
+      "mse": 2.1e-05,
       "rmse": 0.004502
     },
     "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
@@ -328,7 +328,7 @@
       "psnr": 47.508,
       "ssim": 0.9972,
       "mae": 0.000673,
-      "mse": 0.000018,
+      "mse": 1.8e-05,
       "rmse": 0.004235
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -343,7 +343,7 @@
       "psnr": 48.2128,
       "ssim": 0.9961,
       "mae": 0.000676,
-      "mse": 0.000015,
+      "mse": 1.5e-05,
       "rmse": 0.003885
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -358,7 +358,7 @@
       "psnr": 48.8813,
       "ssim": 0.9958,
       "mae": 0.000656,
-      "mse": 0.000013,
+      "mse": 1.3e-05,
       "rmse": 0.003599
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -373,7 +373,7 @@
       "psnr": 49.059,
       "ssim": 0.9955,
       "mae": 0.00062,
-      "mse": 0.000012,
+      "mse": 1.2e-05,
       "rmse": 0.003526
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -388,11 +388,371 @@
       "psnr": 49.6984,
       "ssim": 0.9956,
       "mae": 0.000673,
-      "mse": 0.000011,
+      "mse": 1.1e-05,
       "rmse": 0.003277
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
     "date_added": "2026-05-16"
+  },
+  {
+    "model_id": "attention-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
+    "scores": {
+      "snr": 10.764067,
+      "psnr": 35.430467,
+      "ssim": 0.926433,
+      "mae": 0.011651,
+      "mse": 0.000332,
+      "rmse": 0.017748
+    },
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "attention-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr0",
+    "scores": {
+      "snr": 12.797533,
+      "psnr": 37.464033,
+      "ssim": 0.9496,
+      "mae": 0.009551,
+      "mse": 0.000205,
+      "rmse": 0.013976
+    },
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "attention-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr5",
+    "scores": {
+      "snr": 14.8935,
+      "psnr": 39.559933,
+      "ssim": 0.967733,
+      "mae": 0.007652,
+      "mse": 0.000125,
+      "rmse": 0.010927
+    },
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "attention-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snrneg5",
+    "scores": {
+      "snr": 10.8449,
+      "psnr": 35.511367,
+      "ssim": 0.927333,
+      "mae": 0.011566,
+      "mse": 0.000325,
+      "rmse": 0.017554
+    },
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "attention-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr0",
+    "scores": {
+      "snr": 12.7997,
+      "psnr": 37.466133,
+      "ssim": 0.9494,
+      "mae": 0.009557,
+      "mse": 0.000205,
+      "rmse": 0.013976
+    },
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "attention-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr5",
+    "scores": {
+      "snr": 14.915867,
+      "psnr": 39.582267,
+      "ssim": 0.9679,
+      "mae": 0.007624,
+      "mse": 0.000124,
+      "rmse": 0.010889
+    },
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "dncnn-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
+    "scores": {
+      "snr": 11.304433,
+      "psnr": 35.9709,
+      "ssim": 0.9268,
+      "mae": 0.011706,
+      "mse": 0.000301,
+      "rmse": 0.016818
+    },
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "dncnn-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr0",
+    "scores": {
+      "snr": 13.865,
+      "psnr": 38.531433,
+      "ssim": 0.955133,
+      "mae": 0.00898,
+      "mse": 0.000167,
+      "rmse": 0.012521
+    },
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "dncnn-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr5",
+    "scores": {
+      "snr": 16.748133,
+      "psnr": 41.414567,
+      "ssim": 0.975833,
+      "mae": 0.006463,
+      "mse": 8.5e-05,
+      "rmse": 0.008953
+    },
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "dncnn-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snrneg5",
+    "scores": {
+      "snr": 11.2894,
+      "psnr": 35.955833,
+      "ssim": 0.9264,
+      "mae": 0.011744,
+      "mse": 0.000301,
+      "rmse": 0.016835
+    },
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "dncnn-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr0",
+    "scores": {
+      "snr": 13.8524,
+      "psnr": 38.5189,
+      "ssim": 0.9549,
+      "mae": 0.008989,
+      "mse": 0.000168,
+      "rmse": 0.012552
+    },
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "dncnn-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr5",
+    "scores": {
+      "snr": 16.7555,
+      "psnr": 41.421967,
+      "ssim": 0.9758,
+      "mae": 0.006463,
+      "mse": 8.5e-05,
+      "rmse": 0.008949
+    },
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "res-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
+    "scores": {
+      "snr": 10.5049,
+      "psnr": 35.171367,
+      "ssim": 0.923933,
+      "mae": 0.012144,
+      "mse": 0.000351,
+      "rmse": 0.018243
+    },
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "res-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr0",
+    "scores": {
+      "snr": 12.560933,
+      "psnr": 37.227433,
+      "ssim": 0.948333,
+      "mae": 0.010003,
+      "mse": 0.000217,
+      "rmse": 0.014361
+    },
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "res-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr5",
+    "scores": {
+      "snr": 14.923833,
+      "psnr": 39.590267,
+      "ssim": 0.969367,
+      "mae": 0.007797,
+      "mse": 0.000125,
+      "rmse": 0.010913
+    },
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "res-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snrneg5",
+    "scores": {
+      "snr": 10.5332,
+      "psnr": 35.199633,
+      "ssim": 0.924033,
+      "mae": 0.012113,
+      "mse": 0.000348,
+      "rmse": 0.018172
+    },
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "res-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr0",
+    "scores": {
+      "snr": 12.569067,
+      "psnr": 37.2355,
+      "ssim": 0.948233,
+      "mae": 0.010001,
+      "mse": 0.000216,
+      "rmse": 0.014346
+    },
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "res-unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr5",
+    "scores": {
+      "snr": 14.923433,
+      "psnr": 39.589867,
+      "ssim": 0.969367,
+      "mae": 0.007797,
+      "mse": 0.000125,
+      "rmse": 0.010912
+    },
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
+    "scores": {
+      "snr": 10.719533,
+      "psnr": 35.385967,
+      "ssim": 0.9259,
+      "mae": 0.011759,
+      "mse": 0.000335,
+      "rmse": 0.017824
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr0",
+    "scores": {
+      "snr": 12.734567,
+      "psnr": 37.401,
+      "ssim": 0.9491,
+      "mae": 0.009668,
+      "mse": 0.000209,
+      "rmse": 0.014091
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "unet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr5",
+    "scores": {
+      "snr": 14.8439,
+      "psnr": 39.510333,
+      "ssim": 0.967567,
+      "mae": 0.00773,
+      "mse": 0.000128,
+      "rmse": 0.011019
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snrneg5",
+    "scores": {
+      "snr": 10.720867,
+      "psnr": 35.3873,
+      "ssim": 0.925733,
+      "mae": 0.011764,
+      "mse": 0.000334,
+      "rmse": 0.017796
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr0",
+    "scores": {
+      "snr": 12.730967,
+      "psnr": 37.3974,
+      "ssim": 0.949,
+      "mae": 0.009671,
+      "mse": 0.000209,
+      "rmse": 0.014087
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "unet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr5",
+    "scores": {
+      "snr": 14.894233,
+      "psnr": 39.560633,
+      "ssim": 0.968,
+      "mae": 0.007678,
+      "mse": 0.000126,
+      "rmse": 0.010946
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "date_added": "2026-05-22"
   }
 ]

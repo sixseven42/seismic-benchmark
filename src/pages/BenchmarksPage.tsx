@@ -24,6 +24,7 @@ ChartJS.register(
 
 const GROUP_DESCRIPTIONS: Record<string, string> = {
   'SEGC3 Ground-Roll Noise': 'A suite of synthetic 3D seismic benchmarks built on the SEG China 3D (SEGC3) geological model with progressively increasing ground-roll noise strengths (levels 1, 3, 5, 7 and 9). Each variant shares the same 9-shot-line geometry and provides paired raw/noisy and clean labels, enabling systematic evaluation of coherent noise suppression methods under controlled interference conditions.',
+  'SEGC3 Random Noise': 'A suite of synthetic 3D seismic benchmarks based on the SEG China 3D (SEGC3) geological model with varying random noise types (Gaussian and Poisson) and SNR levels (-5 dB, 0 dB and 5 dB). Each variant provides paired noisy and clean labels, enabling systematic evaluation of random noise suppression methods under controlled noise conditions.',
 };
 
 interface Props {
