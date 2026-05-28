@@ -1,41 +1,5 @@
 [
   {
-    "id": "unet-sr-1",
-    "name": "UNet-SR1",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2023,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "super_resolution"
-    ],
-    "description": "U-Net for seismic super-resolution using sub-pixel convolution.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-sr1.png",
-    "is_open_source": false
-  },
-  {
-    "id": "unet-sr-2",
-    "name": "UNet-SR2",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "super_resolution"
-    ],
-    "description": "Progressive U-Net for high-quality seismic data super-resolution.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-sr2.png",
-    "is_open_source": false
-  },
-  {
     "id": "attention-unet-groundroll",
     "name": "Attention UNet",
     "authors": "Oktay et al.",

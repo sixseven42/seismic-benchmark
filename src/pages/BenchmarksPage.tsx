@@ -25,6 +25,9 @@ ChartJS.register(
 const GROUP_DESCRIPTIONS: Record<string, string> = {
   'SEGC3 Ground-Roll Noise': 'A suite of synthetic 3D seismic benchmarks built on the SEG China 3D (SEGC3) geological model with progressively increasing ground-roll noise strengths (levels 1, 3, 5, 7 and 9). Each variant shares the same 9-shot-line geometry and provides paired raw/noisy and clean labels, enabling systematic evaluation of coherent noise suppression methods under controlled interference conditions.',
   'SEGC3 Random Noise': 'A suite of synthetic 3D seismic benchmarks based on the SEG China 3D (SEGC3) geological model with varying random noise types (Gaussian and Poisson) and SNR levels (-5 dB, 0 dB and 5 dB). Each variant provides paired noisy and clean labels, enabling systematic evaluation of random noise suppression methods under controlled noise conditions.',
+  'SEGC3 Random Missing': 'A suite of synthetic 3D seismic interpolation benchmarks based on the SEG China 3D (SEGC3) geological model with randomly missing traces at varying ratios (30%, 50%, 70%) and cross-domain tests. Each variant provides paired incomplete and complete data, enabling systematic evaluation of interpolation methods under random spatial subsampling conditions.',
+  'SEGC3 Uniform Missing': 'A suite of synthetic 3D seismic interpolation benchmarks based on the SEG China 3D (SEGC3) geological model with uniformly missing traces at varying ratios (30%, 50%, 70%) and cross-domain tests. Each variant provides paired incomplete and complete data, enabling systematic evaluation of interpolation methods under uniform spatial subsampling conditions.',
+  'SEGC3 Continuous Missing': 'A suite of synthetic 3D seismic interpolation benchmarks based on the SEG China 3D (SEGC3) geological model with continuously missing traces at varying lengths (20, 30, 40 traces) and cross-domain tests. Each variant provides paired incomplete and complete data, enabling systematic evaluation of interpolation methods under continuous spatial gap conditions.',
 };
 
 interface Props {
@@ -134,7 +137,6 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
             <option value="coherent_noise_suppression">{t.tasks.coherent_noise_suppression}</option>
             <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
-            <option value="super_resolution">{t.tasks.super_resolution}</option>
           </select>
         </div>
         <span className="result-count">{filteredBenchmarks.length} {t.leaderboard.results}</span>

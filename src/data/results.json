@@ -1,29 +1,5 @@
 [
   {
-    "model_id": "unet-sr-1",
-    "benchmark_id": "synth-sr-2d",
-    "scores": {
-      "psnr": 32.5,
-      "ssim": 0.91,
-      "mse": 0.0035
-    },
-    "paper_url": "",
-    "code_url": null,
-    "date_added": "2026-05-11"
-  },
-  {
-    "model_id": "unet-sr-2",
-    "benchmark_id": "synth-sr-2d",
-    "scores": {
-      "psnr": 34.2,
-      "ssim": 0.93,
-      "mse": 0.0028
-    },
-    "paper_url": "",
-    "code_url": null,
-    "date_added": "2026-05-11"
-  },
-  {
     "model_id": "attention-unet-groundroll",
     "benchmark_id": "segc3-groundroll-noise1",
     "scores": {

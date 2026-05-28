@@ -174,7 +174,6 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     { value: 'coherent_noise_suppression', label: t.tasks.coherent_noise_suppression },
     { value: 'random_noise_suppression', label: t.tasks.random_noise_suppression },
     { value: 'first_arrival_picking', label: t.tasks.first_arrival_picking },
-    { value: 'super_resolution', label: t.tasks.super_resolution },
   ];
 
   const typeOptions: { value: Filters['type']; label: string }[] = [
