@@ -42,7 +42,14 @@
       "Bash(npm list *)",
       "Bash(npx tsc *)",
       "Bash(node *)",
-      "Bash(/c/Users/admin/anaconda3/python *)"
+      "Bash(/c/Users/admin/anaconda3/python *)",
+      "Bash(Expand-Archive *)",
+      "Read(//c/Users/admin/Documents/WeChat Files/wxid_hvmr1h95e7jn22/FileStorage/File/2026-05/**)",
+      "Bash(Get-Command Expand-Archive -ErrorAction SilentlyContinue)",
+      "Read(//c/Program Files/WinRAR/**)",
+      "Read(//c/Program Files/7-Zip/**)",
+      "Read(//c/Program Files \\(x86\\)/WinRAR/**)",
+      "Read(//c/Program Files \\(x86\\)/7-Zip/**)"
     ]
   }
 }

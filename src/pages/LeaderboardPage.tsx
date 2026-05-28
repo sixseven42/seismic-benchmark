@@ -39,6 +39,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
   const { t } = useLanguage();
   const { theme } = useTheme();
   const [sort, setSort] = useState<SortState>({ key: 'score', dir: 'desc' });
+  const [hitRatePx, setHitRatePx] = useState<string>('hit_rate_3px');
 
   const metricCols = useMemo(() => getMetricColumns(filters.task), [filters.task]);
 
@@ -66,7 +67,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     }
 
     const { key, dir } = sort;
-    const allMetrics = ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
+    const allMetrics = ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae', 'hit_rate', 'hit_rate_1px', 'hit_rate_3px', 'hit_rate_5px', 'hit_rate_7px', 'hit_rate_9px'];
 
     list.sort((a, b) => {
       if (key === 'name') {
@@ -78,7 +79,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         const bv = b.benchmark!.name || '';
         return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
       } else if (key === 'score' || allMetrics.includes(key)) {
-        const metric = key === 'score' ? filters.metric : key;
+        const metric = key === 'score' ? filters.metric : key === 'hit_rate' ? hitRatePx : key;
         const av = a.result.scores[metric as MetricKey] ?? null;
         const bv = b.result.scores[metric as MetricKey] ?? null;
         if (av === null && bv === null) return 0;
@@ -130,7 +131,10 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         m.type || '',
         `"${(b.name || '').replace(/"/g, '""')}"`,
         b.task || '',
-        ...metricCols.map(metric => row.result.scores[metric as MetricKey] ?? ''),
+        ...metricCols.map(metric => {
+          const actualMetric = metric === 'hit_rate' ? hitRatePx : metric;
+          return row.result.scores[actualMetric as MetricKey] ?? '';
+        }),
         row.result.date_added || '',
       ];
       lines.push(line.join(','));
@@ -196,7 +200,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                 ...prev,
                 task,
                 dataset: firstBench ? firstBench.id : 'all',
-                metric: task === 'first_arrival_picking' ? 'accuracy' : 'snr',
+                metric: task === 'first_arrival_picking' ? 'mae' : 'snr',
               }));
               setSort({ key: 'score', dir: 'desc' });
             }}
@@ -236,11 +240,31 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
           <label>{t.leaderboard.metric}</label>
           <select
             value={filters.metric}
-            onChange={e => setFilters(prev => ({ ...prev, metric: e.target.value as MetricKey }))}
+            onChange={e => {
+              const val = e.target.value as MetricKey;
+              if (val.startsWith('hit_rate_')) setHitRatePx(val);
+              setFilters(prev => ({ ...prev, metric: val }));
+            }}
           >
-            {(currentBench?.metrics || ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae']).map(m => (
-              <option key={m} value={m}>{m.toUpperCase()}</option>
-            ))}
+            {(() => {
+              const baseMetrics = currentBench?.metrics || ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
+              const hasHitRate = baseMetrics.some(m => m.startsWith('hit_rate_'));
+              const nonHitRate = baseMetrics.filter(m => !m.startsWith('hit_rate_'));
+              return (
+                <>
+                  {nonHitRate.map(m => (
+                    <option key={m} value={m}>{m.toUpperCase()}</option>
+                  ))}
+                  {hasHitRate && (
+                    <optgroup label="Hit Rate">
+                      {['1px', '3px', '5px', '7px', '9px'].map(px => (
+                        <option key={px} value={`hit_rate_${px}`}>{px}</option>
+                      ))}
+                    </optgroup>
+                  )}
+                </>
+              );
+            })()}
           </select>
         </div>
 
@@ -270,16 +294,45 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
               <th className="sortable" onClick={() => handleSort('benchmark')}>
                 {t.leaderboard.benchmark} <span className="sort-arrow">{sort.key === 'benchmark' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
               </th>
-              {metricCols.map(m => (
-                <th
-                  key={m}
-                  className={`sortable ${m === highlightMetric ? 'sort-active' : ''}`}
-                  onClick={() => handleSort(m)}
-                >
-                  {m.toUpperCase()}{' '}
-                  <span className="sort-arrow">{sort.key === m ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
-                </th>
-              ))}
+              {metricCols.map(m => {
+                if (m === 'hit_rate') {
+                  const isActive = filters.metric === hitRatePx;
+                  return (
+                    <th
+                      key={m}
+                      className={`sortable ${isActive ? 'sort-active' : ''}`}
+                      onClick={() => handleSort('hit_rate')}
+                    >
+                      HIT RATE{' '}
+                      <select
+                        value={hitRatePx}
+                        onClick={e => e.stopPropagation()}
+                        onChange={e => {
+                          const val = e.target.value;
+                          setHitRatePx(val);
+                          setFilters(prev => ({ ...prev, metric: val as MetricKey }));
+                        }}
+                        style={{ fontSize: '0.7em', marginLeft: 4, padding: '1px 2px' }}
+                      >
+                        {['1px', '3px', '5px', '7px', '9px'].map(px => (
+                          <option key={px} value={`hit_rate_${px}`}>{px}</option>
+                        ))}
+                      </select>
+                      <span className="sort-arrow">{sort.key === 'hit_rate' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                    </th>
+                  );
+                }
+                return (
+                  <th
+                    key={m}
+                    className={`sortable ${m === highlightMetric ? 'sort-active' : ''}`}
+                    onClick={() => handleSort(m)}
+                  >
+                    {m.toUpperCase()}{' '}
+                    <span className="sort-arrow">{sort.key === m ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                  </th>
+                );
+              })}
               <th>{highlightMetric.toUpperCase()} {t.leaderboard.highlight}</th>
               <th>{t.leaderboard.links}</th>
             </tr>
@@ -308,11 +361,12 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                   </td>
                   <td className="lb-benchmark">{escapeHtml(row.benchmark!.name)}</td>
                   {metricCols.map(m => {
-                    const val = row.result.scores[m as MetricKey] ?? null;
-                    const isHighlight = m === highlightMetric;
+                    const actualMetric = m === 'hit_rate' ? hitRatePx : m;
+                    const val = row.result.scores[actualMetric as MetricKey] ?? null;
+                    const isHighlight = actualMetric === highlightMetric;
                     return (
                       <td key={m} className={`lb-score ${isHighlight ? 'lb-score-highlight' : ''}`}>
-                        {formatMetricValue(val, m)}
+                        {formatMetricValue(val, actualMetric)}
                       </td>
                     );
                   })}

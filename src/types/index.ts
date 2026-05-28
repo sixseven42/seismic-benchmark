@@ -38,7 +38,7 @@ export interface Benchmark {
   model_count: number;
 }
 
-export type MetricKey = 'snr' | 'psnr' | 'ssim' | 'rmse' | 'mse' | 'accuracy' | 'f1' | 'mae';
+export type MetricKey = 'snr' | 'psnr' | 'ssim' | 'rmse' | 'mse' | 'accuracy' | 'f1' | 'mae' | 'hit_rate' | 'hit_rate_1px' | 'hit_rate_3px' | 'hit_rate_5px' | 'hit_rate_7px' | 'hit_rate_9px';
 
 export interface Scores {
   snr?: number;
@@ -49,6 +49,12 @@ export interface Scores {
   accuracy?: number;
   f1?: number;
   mae?: number;
+  hit_rate?: number;
+  hit_rate_1px?: number;
+  hit_rate_3px?: number;
+  hit_rate_5px?: number;
+  hit_rate_7px?: number;
+  hit_rate_9px?: number;
 }
 
 export interface Result {

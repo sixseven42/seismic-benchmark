@@ -25,54 +25,6 @@
     "model_count": 0
   },
   {
-    "id": "synth-interp-2d",
-    "name": "Synthetic 2D Interpolation",
-    "dataset_name": "Synthetic Marine 2D",
-    "task": "interpolation",
-    "icon": "📡",
-    "description": "A 2D synthetic marine shot-gather dataset generated via acoustic finite-difference modeling on a layered velocity model with Ricker wavelet sources. Fifty percent of traces are randomly removed to simulate realistic acquisition gaps, designed for testing trace interpolation, reconstruction, and data recovery algorithms under controlled conditions.",
-    "data_source": "synthetic",
-    "dimensions": "256 × 512 traces",
-    "primary_metric": "snr",
-    "metrics": [
-      "snr",
-      "ssim",
-      "rmse"
-    ],
-    "tags": [
-      "2D",
-      "Marine",
-      "Random Missing"
-    ],
-    "citation": "Wang et al., Geophysics 2022",
-    "download_url": "",
-    "model_count": 1
-  },
-  {
-    "id": "synth-fap-snr",
-    "name": "Synthetic First Arrival (varying SNR)",
-    "dataset_name": "Synthetic Refraction",
-    "task": "first_arrival_picking",
-    "icon": "⏱️",
-    "description": "Synthetic refraction shot records with exact ground-truth first-break times obtained directly from wavefront modeling. The dataset spans a wide input SNR range from -5 dB to 20 dB, designed to rigorously test the robustness and accuracy of first-arrival picking algorithms under both noisy and clean conditions.",
-    "data_source": "synthetic",
-    "dimensions": "96 × 2000 samples",
-    "primary_metric": "accuracy",
-    "metrics": [
-      "accuracy",
-      "f1",
-      "mae"
-    ],
-    "tags": [
-      "Refraction",
-      "Synthetic",
-      "Variable SNR"
-    ],
-    "citation": "Hu et al., IEEE GRSL 2019",
-    "download_url": "",
-    "model_count": 2
-  },
-  {
     "id": "synth-sr-2d",
     "name": "Synthetic 2D Super-Resolution",
     "dataset_name": "Synthetic Marine 2D",
@@ -409,5 +361,669 @@
     "download_url": "https://wiki.seg.org/wiki/C3",
     "model_count": 4,
     "group_name": "SEGC3 Random Noise"
+  },
+  {
+    "id": "fbp-geomseg-all",
+    "name": "First-Break Picking Multi-Dataset",
+    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "task": "first_arrival_picking",
+    "icon": "⏱️",
+    "description": "Multi-dataset first-break picking benchmark using SEG-Y amplitude records and binary step-mask labels. Models are trained on all available first-break SEG-Y pairs with gather-level train/validation/test splits and evaluated by pick-location error and hit-rate metrics.",
+    "data_source": "field",
+    "dimensions": "Brunswick, Dongbei, Halfmile, and Lalor SEG-Y pairs; 128 × 512 training patches",
+    "primary_metric": "mae",
+    "metrics": [
+      "mae",
+      "rmse",
+      "hit_rate_1px",
+      "hit_rate_3px",
+      "hit_rate_5px",
+      "hit_rate_7px",
+      "hit_rate_9px",
+      "f1"
+    ],
+    "tags": [
+      "SEG-Y",
+      "First Break",
+      "Field",
+      "Multi-Dataset"
+    ],
+    "citation": "GeoBrain first-break picking release",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
+    "model_count": 4
+  },
+  {
+    "id": "fbp-brunswick-valid",
+    "name": "Brunswick First-Break Picking",
+    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "task": "first_arrival_picking",
+    "icon": "⏱️",
+    "description": "Single-dataset first-break picking benchmark on the Brunswick valid SEG-Y pair. The task uses paired amplitude and step-mask SEG-Y files and reports averaged results across seeds 42, 43, and 44.",
+    "data_source": "field",
+    "dimensions": "4,490,714 traces × 751 samples, 2 ms sample interval",
+    "primary_metric": "mae",
+    "metrics": [
+      "mae",
+      "rmse",
+      "hit_rate_1px",
+      "hit_rate_3px",
+      "hit_rate_5px",
+      "hit_rate_7px",
+      "hit_rate_9px",
+      "f1"
+    ],
+    "tags": [
+      "SEG-Y",
+      "First Break",
+      "Field",
+      "Brunswick"
+    ],
+    "citation": "GeoBrain first-break picking release",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
+    "model_count": 4
+  },
+  {
+    "id": "fbp-dongbei",
+    "name": "Dongbei First-Break Picking",
+    "dataset_name": "Dongbei First-Break Picking",
+    "task": "first_arrival_picking",
+    "icon": "⏱️",
+    "description": "Single-dataset first-break picking benchmark on the Dongbei SEG-Y pair. The benchmark results and model weights are public, while the raw Dongbei SEG-Y data are private and are not provided as a public download.",
+    "data_source": "field",
+    "dimensions": "266,270 traces × 2,751 samples, 10 FFIDs",
+    "primary_metric": "mae",
+    "metrics": [
+      "mae",
+      "rmse",
+      "hit_rate_1px",
+      "hit_rate_3px",
+      "hit_rate_5px",
+      "hit_rate_7px",
+      "hit_rate_9px",
+      "f1"
+    ],
+    "tags": [
+      "SEG-Y",
+      "First Break",
+      "Field",
+      "Dongbei",
+      "Private Data"
+    ],
+    "citation": "Private Dongbei first-break picking data; public benchmark results in GeoBrain first-break picking release",
+    "download_url": null,
+    "model_count": 4
+  },
+  {
+    "id": "fbp-halfmile-valid",
+    "name": "Halfmile First-Break Picking",
+    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "task": "first_arrival_picking",
+    "icon": "⏱️",
+    "description": "Single-dataset first-break picking benchmark on the Halfmile valid SEG-Y pair. The task uses paired amplitude and step-mask SEG-Y files and reports averaged results across seeds 42, 43, and 44.",
+    "data_source": "field",
+    "dimensions": "1,093,842 traces × 751 samples, 2 ms sample interval",
+    "primary_metric": "mae",
+    "metrics": [
+      "mae",
+      "rmse",
+      "hit_rate_1px",
+      "hit_rate_3px",
+      "hit_rate_5px",
+      "hit_rate_7px",
+      "hit_rate_9px",
+      "f1"
+    ],
+    "tags": [
+      "SEG-Y",
+      "First Break",
+      "Field",
+      "Halfmile"
+    ],
+    "citation": "GeoBrain first-break picking release",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
+    "model_count": 4
+  },
+  {
+    "id": "fbp-lalor-valid",
+    "name": "Lalor First-Break Picking",
+    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "task": "first_arrival_picking",
+    "icon": "⏱️",
+    "description": "Single-dataset first-break picking benchmark on the Lalor valid SEG-Y pair. The task uses paired amplitude and step-mask SEG-Y files and reports averaged results across seeds 42, 43, and 44.",
+    "data_source": "field",
+    "dimensions": "2,027,587 traces × 1,501 samples, 1 ms sample interval",
+    "primary_metric": "mae",
+    "metrics": [
+      "mae",
+      "rmse",
+      "hit_rate_1px",
+      "hit_rate_3px",
+      "hit_rate_5px",
+      "hit_rate_7px",
+      "hit_rate_9px",
+      "f1"
+    ],
+    "tags": [
+      "SEG-Y",
+      "First Break",
+      "Field",
+      "Lalor"
+    ],
+    "citation": "GeoBrain first-break picking release",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-random30",
+    "name": "SEGC3 Random Missing 30%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 30% randomly missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Random Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-random50",
+    "name": "SEGC3 Random Missing 50%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 50% randomly missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Random Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-random70",
+    "name": "SEGC3 Random Missing 70%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 70% randomly missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Random Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-uniform30",
+    "name": "SEGC3 Uniform Missing 30%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 30% uniformly missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Uniform Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-uniform50",
+    "name": "SEGC3 Uniform Missing 50%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 50% uniformly missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Uniform Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-uniform70",
+    "name": "SEGC3 Uniform Missing 70%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 70% uniformly missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Uniform Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-continuous20tr",
+    "name": "SEGC3 Continuous Missing 20 Traces",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 20 continuously missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Continuous Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-continuous30tr",
+    "name": "SEGC3 Continuous Missing 30 Traces",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 30 continuously missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Continuous Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-continuous40tr",
+    "name": "SEGC3 Continuous Missing 40 Traces",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 40 continuously missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Continuous Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-random30-to-random40",
+    "name": "SEGC3 Random Missing 30% → 40%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 30% randomly missing traces, cross-tested on 40% missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Random Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-random50-to-random60",
+    "name": "SEGC3 Random Missing 50% → 60%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 50% randomly missing traces, cross-tested on 60% missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Random Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-random70-to-random80",
+    "name": "SEGC3 Random Missing 70% → 80%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 70% randomly missing traces, cross-tested on 80% missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Random Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-uniform30-to-uniform40",
+    "name": "SEGC3 Uniform Missing 30% → 40%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 30% uniformly missing traces, cross-tested on 40% missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Uniform Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-uniform50-to-uniform60",
+    "name": "SEGC3 Uniform Missing 50% → 60%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 50% uniformly missing traces, cross-tested on 60% missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Uniform Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-uniform70-to-uniform80",
+    "name": "SEGC3 Uniform Missing 70% → 80%",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 70% uniformly missing traces, cross-tested on 80% missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Uniform Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-continuous20tr-to-continuous30tr",
+    "name": "SEGC3 Continuous Missing 20tr → 30tr",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 20 continuously missing traces, cross-tested on 30 continuous missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Continuous Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-continuous30tr-to-continuous40tr",
+    "name": "SEGC3 Continuous Missing 30tr → 40tr",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 30 continuously missing traces, cross-tested on 40 continuous missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Continuous Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
+  },
+  {
+    "id": "segc3-interp-continuous40tr-to-continuous50tr",
+    "name": "SEGC3 Continuous Missing 40tr → 50tr",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 seismic interpolation benchmark with 40 continuously missing traces, cross-tested on 50 continuous missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "SEG C3",
+      "Interpolation",
+      "Continuous Missing",
+      "Synthetic",
+      "Cross-Domain"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 4
   }
 ]

@@ -34,7 +34,7 @@ export function getMetricColumns(task: string): string[] {
     return ['snr', 'psnr', 'ssim', 'rmse', 'mse'];
   }
   if (task === 'first_arrival_picking') {
-    return ['accuracy', 'f1', 'mae'];
+    return ['mae', 'rmse', 'f1', 'hit_rate'];
   }
   return ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
 }

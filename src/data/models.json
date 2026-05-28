@@ -1,77 +1,5 @@
 [
   {
-    "id": "unet-interp-1",
-    "name": "UNet-Interp1",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2023,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "U-Net based seismic trace interpolation with residual connections.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-interp1.png",
-    "is_open_source": false
-  },
-  {
-    "id": "unet-interp-2",
-    "name": "UNet-Interp2",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Improved U-Net for seismic interpolation with multi-scale feature fusion.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-interp2.png",
-    "is_open_source": false
-  },
-  {
-    "id": "unet-fap-1",
-    "name": "UNet-FAP1",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2023,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "first_arrival_picking"
-    ],
-    "description": "U-Net for automatic first-arrival picking from seismic records.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-fap1.png",
-    "is_open_source": false
-  },
-  {
-    "id": "unet-fap-2",
-    "name": "UNet-FAP2",
-    "authors": "TBD",
-    "org": "TBD",
-    "year": 2024,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "first_arrival_picking"
-    ],
-    "description": "Multi-task U-Net combining first-arrival picking with noise suppression.",
-    "paper_url": "",
-    "code_url": null,
-    "weights_url": null,
-    "architecture_image": "models/arch-unet-fap2.png",
-    "is_open_source": false
-  },
-  {
     "id": "unet-sr-1",
     "name": "UNet-SR1",
     "authors": "TBD",
@@ -321,6 +249,166 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet",
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-first-break",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "description": "Attention-gated U-Net adapted for first-break picking, using gated skip connections to emphasize relevant trace-time features for step-mask prediction.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
+    "weights_urls": {
+      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
+    },
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "dncnn-seg-first-break",
+    "name": "DnCNN Seg",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
+    "year": 2017,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "description": "DnCNN-style convolutional segmentation baseline for first-break picking, modified from residual denoising to direct binary step-mask logits prediction.",
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/dncnn_seg.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
+    "weights_urls": {
+      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
+    },
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-first-break",
+    "name": "ResUNet",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "description": "Residual U-Net baseline adapted for first-break picking, combining residual convolution blocks with encoder-decoder skip connections for step-mask segmentation.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
+    "weights_urls": {
+      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
+    },
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "unet-first-break",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "description": "U-Net baseline adapted for first-break picking as binary step-mask segmentation, using a single-channel amplitude input and a single-channel logits output.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
+    "weights_urls": {
+      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
+    },
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-interpolation",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Attention-gated U-Net for seismic interpolation and missing trace reconstruction.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
+    "weights_url": null,
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "dncnn-interpolation",
+    "name": "DnCNN",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
+    "year": 2017,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Residual convolutional neural network baseline for seismic trace interpolation and missing trace reconstruction.",
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
+    "weights_url": null,
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-interpolation",
+    "name": "ResUNet",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Residual U-Net baseline for seismic interpolation and missing trace reconstruction.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
+    "weights_url": null,
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "unet-interpolation",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "U-Net baseline for seismic trace interpolation and missing data reconstruction.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/tree/main/model/interpolation/unet.py",
+    "weights_url": null,
+    "weights_urls": {},
+    "architecture_image": null,
     "is_open_source": true
   }
 ]

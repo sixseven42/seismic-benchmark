@@ -20,46 +20,6 @@
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll"
   },
   {
-    "id": "synthetic-marine-2d",
-    "name": "Synthetic Marine 2D",
-    "task": "interpolation",
-    "description": "A 2D synthetic marine shot gather dataset generated via acoustic finite-difference modeling on a layered velocity model with Ricker wavelet sources. Designed for testing trace interpolation and reconstruction algorithms under controlled conditions.",
-    "thumbnail": "datasets/marine2d-thumb.jpg",
-    "gallery": [
-      "datasets/marine2d-raw.jpg",
-      "datasets/marine2d-label.jpg"
-    ],
-    "stats": {
-      "shots": 128,
-      "traces": 512,
-      "time_samples": 256,
-      "dt": 0.004,
-      "format": "SEGY",
-      "dimensions": "256 × 512 traces"
-    },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
-  },
-  {
-    "id": "synthetic-refraction",
-    "name": "Synthetic Refraction",
-    "task": "first_arrival_picking",
-    "description": "Synthetic refraction shot records with exact ground-truth first-break times obtained directly from wavefront modeling. Spanning a range of input SNR from -5 dB to 20 dB to test robustness of first-arrival picking algorithms.",
-    "thumbnail": "datasets/refraction-thumb.jpg",
-    "gallery": [
-      "datasets/refraction-raw.jpg",
-      "datasets/refraction-label.jpg"
-    ],
-    "stats": {
-      "shots": 96,
-      "traces": 96,
-      "time_samples": 2000,
-      "dt": 0.004,
-      "format": "SU",
-      "dimensions": "96 × 2000 samples"
-    },
-    "download_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation/tree/main"
-  },
-  {
     "id": "sichuan-basin",
     "name": "Sichuan Basin Land Survey",
     "task": "coherent_noise_suppression",
@@ -115,5 +75,39 @@
       "dimensions": "9 x 201 x 625"
     },
     "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main"
+  },
+  {
+    "id": "first-break-picking",
+    "name": "First-Break Picking SEG-Y Dataset with Masks",
+    "task": "first_arrival_picking",
+    "description": "Field first-break picking dataset containing paired SEG-Y amplitude records and binary step-mask labels from Brunswick, Halfmile, and Lalor surveys. Designed for benchmarking first-arrival picking and step-mask segmentation algorithms on real land seismic data.",
+    "thumbnail": null,
+    "gallery": [],
+    "stats": {
+      "shots": "Variable",
+      "traces": "Variable",
+      "time_samples": "Variable",
+      "dt": "1–2 ms",
+      "format": "SEGY",
+      "dimensions": "Brunswick, Halfmile, Lalor SEG-Y pairs"
+    },
+    "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset"
+  },
+  {
+    "id": "segc3-interp",
+    "name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "description": "The SEGC3 (SEG China 3D) dataset for seismic trace interpolation benchmarks. Synthetic traces are removed under random, uniform, and continuous missing patterns at varying levels to test interpolation and reconstruction algorithms on 3D seismic data.",
+    "thumbnail": null,
+    "gallery": [],
+    "stats": {
+      "shots": 9,
+      "traces": 40401,
+      "time_samples": 625,
+      "dt": 0.004,
+      "format": "SEGY",
+      "dimensions": "9 × 201 × 201 × 625"
+    },
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation"
   }
 ]
