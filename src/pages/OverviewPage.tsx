@@ -17,10 +17,8 @@ export default function OverviewPage({ data }: Props) {
   }), [data]);
 
   const milestones = [
-    { year: '2026.04', text: t.overview.milestone1 },
-    { year: '2026.05', text: t.overview.milestone2 },
-    { year: '2026.05', text: t.overview.milestone3 },
-    { year: '2026.05', text: t.overview.milestone4 },
+    { year: '2026.04.11', text: t.overview.milestone1 },
+    { year: '2026.05.28', text: t.overview.milestone2 },
   ];
 
   const futurePlans = [
