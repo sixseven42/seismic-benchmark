@@ -507,7 +507,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Random Missing"
+    "group_name": "SEGC3 Random Missing",
+    "gallery": [
+      "datasets/segc3-interp-random-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-random50",
@@ -536,7 +540,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Random Missing"
+    "group_name": "SEGC3 Random Missing",
+    "gallery": [
+      "datasets/segc3-interp-random-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-random70",
@@ -565,7 +573,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Random Missing"
+    "group_name": "SEGC3 Random Missing",
+    "gallery": [
+      "datasets/segc3-interp-random-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-uniform30",
@@ -594,7 +606,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Uniform Missing"
+    "group_name": "SEGC3 Uniform Missing",
+    "gallery": [
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-uniform50",
@@ -623,7 +639,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Uniform Missing"
+    "group_name": "SEGC3 Uniform Missing",
+    "gallery": [
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-uniform70",
@@ -652,7 +672,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Uniform Missing"
+    "group_name": "SEGC3 Uniform Missing",
+    "gallery": [
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-continuous20tr",
@@ -681,7 +705,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Continuous Missing"
+    "group_name": "SEGC3 Continuous Missing",
+    "gallery": [
+      "datasets/segc3-interp-continuous-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-continuous30tr",
@@ -710,7 +738,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Continuous Missing"
+    "group_name": "SEGC3 Continuous Missing",
+    "gallery": [
+      "datasets/segc3-interp-continuous-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-continuous40tr",
@@ -739,7 +771,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Continuous Missing"
+    "group_name": "SEGC3 Continuous Missing",
+    "gallery": [
+      "datasets/segc3-interp-continuous-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-random30-to-random40",
@@ -769,7 +805,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Random Missing"
+    "group_name": "SEGC3 Random Missing",
+    "gallery": [
+      "datasets/segc3-interp-random-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-random50-to-random60",
@@ -799,7 +839,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Random Missing"
+    "group_name": "SEGC3 Random Missing",
+    "gallery": [
+      "datasets/segc3-interp-random-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-random70-to-random80",
@@ -829,7 +873,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Random Missing"
+    "group_name": "SEGC3 Random Missing",
+    "gallery": [
+      "datasets/segc3-interp-random-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-uniform30-to-uniform40",
@@ -859,7 +907,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Uniform Missing"
+    "group_name": "SEGC3 Uniform Missing",
+    "gallery": [
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-uniform50-to-uniform60",
@@ -889,7 +941,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Uniform Missing"
+    "group_name": "SEGC3 Uniform Missing",
+    "gallery": [
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-uniform70-to-uniform80",
@@ -919,7 +975,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Uniform Missing"
+    "group_name": "SEGC3 Uniform Missing",
+    "gallery": [
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-continuous20tr-to-continuous30tr",
@@ -949,7 +1009,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Continuous Missing"
+    "group_name": "SEGC3 Continuous Missing",
+    "gallery": [
+      "datasets/segc3-interp-continuous-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-continuous30tr-to-continuous40tr",
@@ -979,7 +1043,11 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Continuous Missing"
+    "group_name": "SEGC3 Continuous Missing",
+    "gallery": [
+      "datasets/segc3-interp-continuous-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   },
   {
     "id": "segc3-interp-continuous40tr-to-continuous50tr",
@@ -1009,6 +1077,10 @@
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
     "model_count": 4,
-    "group_name": "SEGC3 Continuous Missing"
+    "group_name": "SEGC3 Continuous Missing",
+    "gallery": [
+      "datasets/segc3-interp-continuous-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ]
   }
 ]
