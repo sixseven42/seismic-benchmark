@@ -371,7 +371,11 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 4
+    "model_count": 4,
+    "gallery": [
+      "datasets/fbp-brunswick-raw.png",
+      "datasets/fbp-brunswick-mask.png"
+    ]
   },
   {
     "id": "fbp-dongbei",
@@ -402,7 +406,11 @@
     ],
     "citation": "Private Dongbei first-break picking data; public benchmark results in GeoBrain first-break picking release",
     "download_url": null,
-    "model_count": 4
+    "model_count": 4,
+    "gallery": [
+      "datasets/fbp-dongbei-raw.png",
+      "datasets/fbp-dongbei-mask.png"
+    ]
   },
   {
     "id": "fbp-halfmile-valid",
@@ -432,7 +440,11 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 4
+    "model_count": 4,
+    "gallery": [
+      "datasets/fbp-halfmile-raw.png",
+      "datasets/fbp-halfmile-mask.png"
+    ]
   },
   {
     "id": "fbp-lalor-valid",
@@ -462,7 +474,11 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 4
+    "model_count": 4,
+    "gallery": [
+      "datasets/fbp-lalor-raw.png",
+      "datasets/fbp-lalor-mask.png"
+    ]
   },
   {
     "id": "segc3-interp-random30",

@@ -84,17 +84,8 @@
     "name": "First-Break Picking SEG-Y Dataset with Masks",
     "task": "first_arrival_picking",
     "description": "Field first-break picking dataset containing paired SEG-Y amplitude records and binary step-mask labels from Brunswick, Halfmile, and Lalor surveys. Designed for benchmarking first-arrival picking and step-mask segmentation algorithms on real land seismic data.",
-    "thumbnail": "datasets/fbp-thumb.png",
-    "gallery": [
-      "datasets/fbp-brunswick-raw.png",
-      "datasets/fbp-brunswick-mask.png",
-      "datasets/fbp-dongbei-raw.png",
-      "datasets/fbp-dongbei-mask.png",
-      "datasets/fbp-halfmile-raw.png",
-      "datasets/fbp-halfmile-mask.png",
-      "datasets/fbp-lalor-raw.png",
-      "datasets/fbp-lalor-mask.png"
-    ],
+    "thumbnail": null,
+    "gallery": [],
     "stats": {
       "shots": "Variable",
       "traces": "Variable",

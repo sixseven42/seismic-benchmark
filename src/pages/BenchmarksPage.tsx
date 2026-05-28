@@ -294,7 +294,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
               </div>
 
               {/* Visualization — raw & label images */}
-              {relatedDataset && (
+              {(activeBench.gallery?.length || relatedDataset?.gallery?.length) && (
                 <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                   <section className="slide-section">
                     <h4>Visualization</h4>
@@ -302,10 +302,10 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                       <div className="viz-item">
                         <span className="viz-tag">Raw Data</span>
                         <div className="viz-frame">
-                          {relatedDataset.gallery[0] ? (
+                          {(activeBench.gallery?.[0] || relatedDataset?.gallery?.[0]) ? (
                             <img
-                              src={relatedDataset.gallery[0]}
-                              alt={`${relatedDataset.name} raw`}
+                              src={activeBench.gallery?.[0] || relatedDataset?.gallery?.[0]}
+                              alt={`${activeBench.name} raw`}
                               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
                           ) : (
@@ -316,10 +316,10 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                       <div className="viz-item">
                         <span className="viz-tag">Label / Clean</span>
                         <div className="viz-frame">
-                          {relatedDataset.gallery[1] ? (
+                          {(activeBench.gallery?.[1] || relatedDataset?.gallery?.[1]) ? (
                             <img
-                              src={relatedDataset.gallery[1]}
-                              alt={`${relatedDataset.name} label`}
+                              src={activeBench.gallery?.[1] || relatedDataset?.gallery?.[1]}
+                              alt={`${activeBench.name} label`}
                               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
                           ) : (

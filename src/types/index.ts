@@ -36,6 +36,8 @@ export interface Benchmark {
   citation: string;
   download_url: string;
   model_count: number;
+  thumbnail?: string | null;
+  gallery?: string[];
 }
 
 export type MetricKey = 'snr' | 'psnr' | 'ssim' | 'rmse' | 'mse' | 'accuracy' | 'f1' | 'mae' | 'hit_rate' | 'hit_rate_1px' | 'hit_rate_3px' | 'hit_rate_5px' | 'hit_rate_7px' | 'hit_rate_9px';
