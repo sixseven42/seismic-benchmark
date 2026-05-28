@@ -64,8 +64,11 @@
     "name": "SEG C3 Random Noise",
     "task": "random_noise_suppression",
     "description": "The SEGC3 (SEG China 3D) dataset injected with synthetic random noise (Gaussian and Poisson) at varying SNR levels. Designed for benchmarking random noise suppression and denoising algorithms on 3D seismic data.",
-    "thumbnail": null,
-    "gallery": [],
+    "thumbnail": "datasets/segc3-random-thumb.png",
+    "gallery": [
+      "datasets/segc3-random-raw.png",
+      "datasets/segc3-random-label.png"
+    ],
     "stats": {
       "shots": 9,
       "traces": 40401,
@@ -81,8 +84,17 @@
     "name": "First-Break Picking SEG-Y Dataset with Masks",
     "task": "first_arrival_picking",
     "description": "Field first-break picking dataset containing paired SEG-Y amplitude records and binary step-mask labels from Brunswick, Halfmile, and Lalor surveys. Designed for benchmarking first-arrival picking and step-mask segmentation algorithms on real land seismic data.",
-    "thumbnail": null,
-    "gallery": [],
+    "thumbnail": "datasets/fbp-thumb.png",
+    "gallery": [
+      "datasets/fbp-brunswick-raw.png",
+      "datasets/fbp-brunswick-mask.png",
+      "datasets/fbp-dongbei-raw.png",
+      "datasets/fbp-dongbei-mask.png",
+      "datasets/fbp-halfmile-raw.png",
+      "datasets/fbp-halfmile-mask.png",
+      "datasets/fbp-lalor-raw.png",
+      "datasets/fbp-lalor-mask.png"
+    ],
     "stats": {
       "shots": "Variable",
       "traces": "Variable",
@@ -98,8 +110,14 @@
     "name": "SEG C3 Interpolation",
     "task": "interpolation",
     "description": "The SEGC3 (SEG China 3D) dataset for seismic trace interpolation benchmarks. Synthetic traces are removed under random, uniform, and continuous missing patterns at varying levels to test interpolation and reconstruction algorithms on 3D seismic data.",
-    "thumbnail": null,
-    "gallery": [],
+    "thumbnail": "datasets/segc3-interp-thumb.png",
+    "gallery": [
+      "datasets/segc3-interp-random-raw.png",
+      "datasets/segc3-interp-random-label.png",
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-continuous-raw.png",
+      "datasets/segc3-interp-random-label.png"
+    ],
     "stats": {
       "shots": 9,
       "traces": 40401,

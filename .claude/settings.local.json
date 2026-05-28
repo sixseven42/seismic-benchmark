@@ -49,7 +49,13 @@
       "Read(//c/Program Files/WinRAR/**)",
       "Read(//c/Program Files/7-Zip/**)",
       "Read(//c/Program Files \\(x86\\)/WinRAR/**)",
-      "Read(//c/Program Files \\(x86\\)/7-Zip/**)"
+      "Read(//c/Program Files \\(x86\\)/7-Zip/**)",
+      "Bash(cp \"C:\\\\Users\\\\admin\\\\Documents\\\\WeChat Files\\\\wxid_hvmr1h95e7jn22\\\\FileStorage\\\\Temp\\\\c371e5816d8e0b8c88a63a0a07b1093.png\" public/datasets/segc3-random-raw.png)",
+      "Bash(cp \"C:\\\\Users\\\\admin\\\\Documents\\\\WeChat Files\\\\wxid_hvmr1h95e7jn22\\\\FileStorage\\\\Temp\\\\784b0cb6e5e9297e6da13ae73425e2d.png\" public/datasets/segc3-random-label.png)",
+      "Bash(cp \"C:\\\\Users\\\\admin\\\\Documents\\\\WeChat Files\\\\wxid_hvmr1h95e7jn22\\\\FileStorage\\\\Temp\\\\c371e5816d8e0b8c88a63a0a07b1093.png\" public/datasets/segc3-random-thumb.png)",
+      "Bash(cp \"C:\\\\Users\\\\admin\\\\Documents\\\\WeChat Files\\\\wxid_hvmr1h95e7jn22\\\\FileStorage\\\\Temp\\\\e32e29f708a6c9785a28f3189ce08dc.png\" public/datasets/segc3-interp-random-raw.png)",
+      "Bash(cp \"C:\\\\Users\\\\admin\\\\Documents\\\\WeChat Files\\\\wxid_hvmr1h95e7jn22\\\\FileStorage\\\\Temp\\\\40e79cce2319b8473e2a9bcaeb223be.png\" public/datasets/segc3-interp-random-label.png)",
+      "Bash(cp \"C:\\\\Users\\\\admin\\\\Documents\\\\WeChat Files\\\\wxid_hvmr1h95e7jn22\\\\FileStorage\\\\Temp\\\\e32e29f708a6c9785a28f3189ce08dc.png\" public/datasets/segc3-interp-thumb.png)"
     ]
   }
 }
