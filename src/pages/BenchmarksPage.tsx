@@ -337,14 +337,22 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                 <section className="slide-section">
                   <h4>{t.benchmarks.top10}</h4>
                   <div className="detail-chart-wrap">
-                    {top10.length > 0 && (
-                      <Bar {...getBarChartConfig(
-                        top10.map(r => r.model.name),
-                        top10.map(r => r.score),
-                        activeBench.primary_metric,
-                        theme
-                      )} />
-                    )}
+                    {top10.length > 0 && (() => {
+                      const metric = activeBench.primary_metric;
+                      const lowerBetter = isLowerBetter(metric);
+                      const bestScore = top10[0].score;
+                      const chartData = top10.map(r =>
+                        lowerBetter ? (bestScore / r.score) * 100 : r.score
+                      );
+                      return (
+                        <Bar {...getBarChartConfig(
+                          top10.map(r => r.model.name),
+                          chartData,
+                          metric,
+                          theme
+                        )} />
+                      );
+                    })()}
                   </div>
                 </section>
               </div>

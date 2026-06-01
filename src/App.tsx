@@ -29,7 +29,7 @@ function AppContent() {
 
   const [filters, setFilters] = useState<Filters>({
     task: 'interpolation',
-    dataset: 'synth-interp-2d',
+    dataset: 'segc3-interp-random30',
     metric: 'snr',
     type: 'deep_learning',
     search: '',
