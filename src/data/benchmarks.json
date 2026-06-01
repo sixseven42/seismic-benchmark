@@ -25,7 +25,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 1
+    "model_count": 4
   },
   {
     "id": "segc3-groundroll-noise3",
@@ -53,7 +53,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 1
+    "model_count": 4
   },
   {
     "id": "segc3-groundroll-noise5",
@@ -81,7 +81,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 1
+    "model_count": 4
   },
   {
     "id": "segc3-groundroll-noise7",
@@ -109,7 +109,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 1
+    "model_count": 4
   },
   {
     "id": "segc3-groundroll-noise9",
@@ -137,7 +137,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 1
+    "model_count": 4
   },
   {
     "id": "segc3-random-noise-gaussian-snrneg5",
@@ -164,7 +164,7 @@
       "Synthetic"
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
-    "download_url": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
     "model_count": 4,
     "group_name": "SEGC3 Random Noise"
   },
@@ -193,7 +193,7 @@
       "Synthetic"
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
-    "download_url": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
     "model_count": 4,
     "group_name": "SEGC3 Random Noise"
   },
@@ -222,7 +222,7 @@
       "Synthetic"
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
-    "download_url": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
     "model_count": 4,
     "group_name": "SEGC3 Random Noise"
   },
@@ -251,7 +251,7 @@
       "Synthetic"
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
-    "download_url": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
     "model_count": 4,
     "group_name": "SEGC3 Random Noise"
   },
@@ -280,7 +280,7 @@
       "Synthetic"
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
-    "download_url": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
     "model_count": 4,
     "group_name": "SEGC3 Random Noise"
   },
@@ -309,7 +309,7 @@
       "Synthetic"
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
-    "download_url": "https://wiki.seg.org/wiki/C3",
+    "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
     "model_count": 4,
     "group_name": "SEGC3 Random Noise"
   },

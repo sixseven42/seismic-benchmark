@@ -103,11 +103,6 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
   const top5 = benchResults.slice(0, 5);
   const top10 = benchResults.slice(0, 10);
 
-  const relatedDataset = useMemo(() => {
-    if (!activeBench) return null;
-    return data.datasets.find(d => d.name === activeBench.dataset_name) || null;
-  }, [activeBench, data.datasets]);
-
   const closePanel = () => setActiveBenchId(null);
 
   const getGroupStats = (items: Benchmark[]) => {
@@ -240,12 +235,12 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
               </div>
 
               {/* Dataset Download */}
-              {relatedDataset?.download_url && (
+              {activeBench.download_url && (
                 <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                   <section className="slide-section">
                     <a
                       className="btn btn-primary btn-icon"
-                      href={relatedDataset.download_url}
+                      href={activeBench.download_url}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -294,7 +289,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
               </div>
 
               {/* Visualization — raw & label images */}
-              {(activeBench.gallery?.length || relatedDataset?.gallery?.length) && (
+              {activeBench.gallery && activeBench.gallery.length > 0 && (
                 <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                   <section className="slide-section">
                     <h4>Visualization</h4>
@@ -302,9 +297,9 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                       <div className="viz-item">
                         <span className="viz-tag">Raw Data</span>
                         <div className="viz-frame">
-                          {(activeBench.gallery?.[0] || relatedDataset?.gallery?.[0]) ? (
+                          {activeBench.gallery[0] ? (
                             <img
-                              src={activeBench.gallery?.[0] || relatedDataset?.gallery?.[0]}
+                              src={activeBench.gallery[0]}
                               alt={`${activeBench.name} raw`}
                               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
@@ -316,9 +311,9 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                       <div className="viz-item">
                         <span className="viz-tag">Label / Clean</span>
                         <div className="viz-frame">
-                          {(activeBench.gallery?.[1] || relatedDataset?.gallery?.[1]) ? (
+                          {activeBench.gallery[1] ? (
                             <img
-                              src={activeBench.gallery?.[1] || relatedDataset?.gallery?.[1]}
+                              src={activeBench.gallery[1]}
                               alt={`${activeBench.name} label`}
                               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
@@ -341,15 +336,19 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                       const metric = activeBench.primary_metric;
                       const lowerBetter = isLowerBetter(metric);
                       const bestScore = top10[0].score;
-                      const chartData = top10.map(r =>
-                        lowerBetter ? (bestScore / r.score) * 100 : r.score
-                      );
+                      const rawScores = top10.map(r => r.score);
+                      const chartData = top10.map(r => {
+                        if (!lowerBetter) return r.score;
+                        if (bestScore <= 0) return r.score <= 0 ? 100 : 0;
+                        return (bestScore / r.score) * 100;
+                      });
                       return (
                         <Bar {...getBarChartConfig(
                           top10.map(r => r.model.name),
                           chartData,
                           metric,
-                          theme
+                          theme,
+                          rawScores
                         )} />
                       );
                     })()}

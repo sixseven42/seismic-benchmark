@@ -17,22 +17,6 @@
     "is_open_source": true
   },
   {
-    "id": "conditional-ddpm-groundroll",
-    "name": "Conditional DDPM",
-    "authors": "Li et al.",
-    "org": "China University of Petroleum (East China)",
-    "year": 2024,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Conditional diffusion model for joint signal and ground-roll estimation.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2024.3489716",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/ddpm.py",
-    "is_open_source": true
-  },
-  {
     "id": "dncnn-groundroll",
     "name": "DnCNN",
     "authors": "Zhang et al.",
@@ -50,54 +34,6 @@
     "is_open_source": true
   },
   {
-    "id": "enhanced-atten-unet-groundroll",
-    "name": "Enhanced Atten-UNet",
-    "authors": "Sun et al.",
-    "org": "China University of Petroleum (Beijing)",
-    "year": 2024,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Enhanced attention U-Net with adaptive frequency modulation loss.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/enhanced_unet.py",
-    "is_open_source": true
-  },
-  {
-    "id": "physics-cnn-groundroll",
-    "name": "Physics CNN",
-    "authors": "Pham and Li",
-    "org": "Aramco Americas, Aramco Research Center - Houston",
-    "year": 2022,
-    "emoji": "🔩",
-    "type": "hybrid",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Physics-constrained CNN with f-k domain classification.",
-    "paper_url": "https://doi.org/10.1190/geo2020-0691.1",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/physics_unet.py",
-    "is_open_source": true
-  },
-  {
-    "id": "pix2pix-cgan-groundroll",
-    "name": "Pix2Pix cGAN",
-    "authors": "Yuan et al.",
-    "org": "China University of Geosciences (Beijing)",
-    "year": 2020,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Conditional GAN for ground-roll residual attenuation.",
-    "paper_url": "https://doi.org/10.1190/geo2019-0414.1",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/pix2pix.py",
-    "is_open_source": true
-  },
-  {
     "id": "res-unet-groundroll",
     "name": "ResUNet",
     "authors": "He et al.",
@@ -112,22 +48,6 @@
     "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
-  },
-  {
-    "id": "sanet-groundroll",
-    "name": "SANet",
-    "authors": "Yang et al.",
-    "org": "China University of Petroleum (Beijing)",
-    "year": 2024,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Soft-attention residual network for small-scale ground-roll attenuation.",
-    "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/sanet.py",
     "is_open_source": true
   },
   {

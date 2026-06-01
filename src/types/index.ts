@@ -85,32 +85,11 @@ export interface Paper {
   introduces_model: string;
 }
 
-export interface Dataset {
-  id: string;
-  name: string;
-  task: Task;
-  description: string;
-  thumbnail: string | null;
-  gallery: string[];
-  stats: {
-    shots?: number;
-    traces?: number;
-    samples?: number;
-    time_samples?: number;
-    dt?: number;
-    size_gb?: number;
-    format?: string;
-    dimensions?: string;
-  };
-  download_url?: string;
-}
-
 export interface AppData {
   models: Model[];
   benchmarks: Benchmark[];
   results: Result[];
   papers: Paper[];
-  datasets: Dataset[];
 }
 
 export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'models' | 'papers';

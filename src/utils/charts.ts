@@ -1,4 +1,4 @@
-import type { Chart as ChartType } from 'chart.js';
+import type { Chart as ChartType, TooltipItem } from 'chart.js';
 
 const chartInstances: Record<string, ChartType> = {};
 
@@ -25,7 +25,13 @@ export function storeChart(canvasId: string, chart: ChartType) {
   chartInstances[canvasId] = chart;
 }
 
-export function getBarChartConfig(labels: string[], data: number[], metric: string, theme: 'light' | 'dark') {
+export function getBarChartConfig(
+  labels: string[],
+  data: number[],
+  metric: string,
+  theme: 'light' | 'dark',
+  rawValues?: number[]
+) {
   const c = getChartColors(theme);
   return {
     type: 'bar' as const,
@@ -44,7 +50,17 @@ export function getBarChartConfig(labels: string[], data: number[], metric: stri
       indexAxis: 'y' as const,
       responsive: true,
       maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx: TooltipItem<'bar'>) => {
+              const val = rawValues ? rawValues[ctx.dataIndex] : ctx.parsed.x;
+              return `${metric.toUpperCase()}: ${typeof val === 'number' ? val.toFixed(2) : val}`;
+            },
+          },
+        },
+      },
       scales: {
         x: { grid: { color: c.grid }, ticks: { color: c.text } },
         y: { grid: { display: false }, ticks: { color: c.text } },
