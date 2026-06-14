@@ -15,7 +15,6 @@ const TASK_LABELS: Record<string, string> = {
   coherent_noise_suppression: 'Coherent Noise Suppression',
   random_noise_suppression: 'Random Noise Suppression',
   first_arrival_picking: 'First Arrival Picking',
-  super_resolution: 'Super Resolution',
 };
 
 export default function ModelsPage({ data, filters, setFilters, search }: Props) {

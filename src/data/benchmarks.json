@@ -449,7 +449,7 @@
       "Private Data"
     ],
     "citation": "Private Dongbei first-break picking data; public benchmark results in GeoBrain first-break picking release",
-    "download_url": null,
+    "download_url": "",
     "model_count": 4,
     "gallery": [
       "datasets/fbp-dongbei-raw.png",
@@ -538,9 +538,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -571,9 +569,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -604,9 +600,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -637,9 +631,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -670,9 +662,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -703,9 +693,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -736,9 +724,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -769,9 +755,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -802,9 +786,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -835,9 +817,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -869,9 +849,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -903,9 +881,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -937,9 +913,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -971,9 +945,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -1005,9 +977,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -1039,9 +1009,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -1073,9 +1041,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",
@@ -1107,9 +1073,7 @@
       "snr",
       "psnr",
       "ssim",
-      "mae",
-      "mse",
-      "rmse"
+      "mse"
     ],
     "tags": [
       "SEG C3",

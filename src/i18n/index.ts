@@ -56,7 +56,7 @@ const translations = {
     },
     leaderboard: {
       title: 'Leaderboard',
-      subtitle: 'Compare seismic data processing methods across interpolation, coherent noise suppression, random noise suppression, first arrival picking, and super-resolution tasks.',
+      subtitle: 'Compare seismic data processing methods across interpolation, coherent noise suppression, random noise suppression, and first arrival picking tasks.',
       task: 'Task',
       dataset: 'Dataset',
       metric: 'Metric',
@@ -132,7 +132,6 @@ const translations = {
       coherent_noise_suppression: 'Denoising (Coherent Noise)',
       random_noise_suppression: 'Denoising (Random Noise)',
       first_arrival_picking: 'First Arrival Picking',
-      super_resolution: 'Super Resolution',
     },
   },
   zh: {
@@ -266,7 +265,6 @@ const translations = {
       coherent_noise_suppression: '去噪（相干噪声）',
       random_noise_suppression: '去噪（随机噪声）',
       first_arrival_picking: '初至拾取',
-      super_resolution: '超分辨率',
     },
   },
 } as const;

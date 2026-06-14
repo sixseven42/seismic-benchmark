@@ -19,7 +19,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3489716",
     "code_url": null,
-    "introduces_model": "cddpm-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -42,7 +42,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3427405",
     "code_url": null,
-    "introduces_model": "afm-unet-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -64,7 +64,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2025.3526231",
     "code_url": null,
-    "introduces_model": "pcdnn-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -86,7 +86,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3110303",
     "code_url": null,
-    "introduces_model": "dfbcnn-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -112,7 +112,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2020.3029914",
     "code_url": null,
-    "introduces_model": "selflabel-cgan-2021",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -135,7 +135,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0150.1",
     "code_url": null,
-    "introduces_model": "soft-attention-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -157,7 +157,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2024-0148.1",
     "code_url": null,
-    "introduces_model": "inr-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -179,7 +179,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2024-0447.1",
     "code_url": null,
-    "introduces_model": "luc-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -202,7 +202,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2020-0691.1",
     "code_url": null,
-    "introduces_model": "pcdl-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -227,7 +227,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2019-0414.1",
     "code_url": null,
-    "introduces_model": "cgan-2020",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -249,7 +249,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2021.3052898",
     "code_url": null,
-    "introduces_model": "iaaa-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -270,7 +270,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxae091",
     "code_url": null,
-    "introduces_model": "msi-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -291,7 +291,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.petsci.2024.01.018",
     "code_url": null,
-    "introduces_model": "rdssa-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -315,7 +315,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2021-0206.1",
     "code_url": null,
-    "introduces_model": "dnn-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -339,7 +339,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2022-0599.1",
     "code_url": null,
-    "introduces_model": "lwc-dnn-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -361,7 +361,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0146.1",
     "code_url": null,
-    "introduces_model": "unet-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -383,7 +383,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1190/geo2023-0417.1",
     "code_url": null,
-    "introduces_model": "1dcnn-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -407,7 +407,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3243106",
     "code_url": null,
-    "introduces_model": "jcmdnns-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -430,7 +430,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3462440",
     "code_url": null,
-    "introduces_model": "mpr-ssn-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -457,7 +457,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2023.3307750",
     "code_url": null,
-    "introduces_model": "udl-loc-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -485,7 +485,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2022.3169481",
     "code_url": null,
-    "introduces_model": "ave-dnn-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -509,7 +509,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.petsci.2025.01.010",
     "code_url": null,
-    "introduces_model": "3d-unet-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -533,7 +533,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxac101",
     "code_url": null,
-    "introduces_model": "cnn-tl-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -556,7 +556,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf115",
     "code_url": null,
-    "introduces_model": "dl-clsrme-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -582,7 +582,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxaf142",
     "code_url": null,
-    "introduces_model": "glo-unet-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -605,7 +605,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxag020",
     "code_url": null,
-    "introduces_model": "radon-unet-2026",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -626,7 +626,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3487618",
     "code_url": null,
-    "introduces_model": "dc-lstm-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -647,7 +647,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
     "code_url": null,
-    "introduces_model": "pcnn-poststack-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -668,7 +668,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3408145",
     "code_url": null,
-    "introduces_model": "pcnn-srme-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -691,7 +691,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2022.3211855",
     "code_url": null,
-    "introduces_model": "ucnn-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -714,7 +714,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2022.3168143",
     "code_url": null,
-    "introduces_model": "sagan-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -736,7 +736,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2025.3627214",
     "code_url": null,
-    "introduces_model": "wednn-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -757,7 +757,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2024.3381078",
     "code_url": null,
-    "introduces_model": "unetfm-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -778,7 +778,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13443",
     "code_url": null,
-    "introduces_model": "1dcnn-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -800,7 +800,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70128",
     "code_url": null,
-    "introduces_model": "mdssl-2026",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -822,7 +822,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70180",
     "code_url": null,
-    "introduces_model": "pgdl-2026",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -844,7 +844,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70164",
     "code_url": null,
-    "introduces_model": "ulpmol-2026",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -865,7 +865,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1553/jse.32.169",
     "code_url": null,
-    "introduces_model": "cnn-as-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -888,7 +888,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1553/jse.32.373",
     "code_url": null,
-    "introduces_model": "unet-tl-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -912,7 +912,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.jappgeo.2026.106139",
     "code_url": null,
-    "introduces_model": "mcesa-unet-2026",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -935,7 +935,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/TGRS.2024.3366952",
     "code_url": null,
-    "introduces_model": "unetpp-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -960,7 +960,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13250",
     "code_url": null,
-    "introduces_model": "cae-2022",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -982,7 +982,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70179",
     "code_url": null,
-    "introduces_model": "dgdlnet-2026",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1006,7 +1006,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.12985",
     "code_url": null,
-    "introduces_model": "cyclegan-2020",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1030,7 +1030,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13271",
     "code_url": null,
-    "introduces_model": "st-cnn-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1053,7 +1053,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.13522",
     "code_url": null,
-    "introduces_model": "blind-fan-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1074,7 +1074,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1111/1365-2478.70004",
     "code_url": null,
-    "introduces_model": "pinnslope-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1098,7 +1098,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2023.3317528",
     "code_url": null,
-    "introduces_model": "msloss-unet-2023",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1121,7 +1121,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1109/LGRS.2025.3624295",
     "code_url": null,
-    "introduces_model": "dasdnet-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1145,7 +1145,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.jappgeo.2024.105363",
     "code_url": null,
-    "introduces_model": "bhn-dsssl-2024",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1167,7 +1167,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1016/j.jappgeo.2025.105736",
     "code_url": null,
-    "introduces_model": "nsst-msanet-2025",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -1189,7 +1189,7 @@
     "arxiv_url": null,
     "doi": "https://doi.org/10.1093/jge/gxag054",
     "code_url": null,
-    "introduces_model": "udnn-acs-2026",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7538,7 +7538,7 @@
     "doi": "https://doi.org/10.1190/geo2018-0688.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "U-Net convolutional network for first-arrival picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7562,7 +7562,7 @@
     "doi": "https://doi.org/10.1190/geo2019-0422.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Integrated seismic and machine-learning multitrace first-break picking workflow",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7585,7 +7585,7 @@
     "doi": "https://doi.org/10.1190/geo2019-0792.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Pixel-level convolutional network for arrival-time picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7609,7 +7609,7 @@
     "doi": "https://doi.org/10.1190/geo2019-0437.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "CNN/U-Net segmentation plus recurrent/post-processing first-arrival workflow",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7633,7 +7633,7 @@
     "doi": "https://doi.org/10.1190/geo2022-0666.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Single- to multidomain self-trained network for seismic first-arrival picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7657,7 +7657,7 @@
     "doi": "https://doi.org/10.1190/geo2023-0154.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "HU-net multi-input prediction fusion plus constrained path search",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7681,7 +7681,7 @@
     "doi": "https://doi.org/10.1190/geo2023-0110.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "MSSPN (multistage segmentation-picking network)",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7704,7 +7704,7 @@
     "doi": "https://doi.org/10.1190/geo2022-0741.1",
     "code_url": "https://github.com/mila-iqia/hardpicks",
     "github_stars": null,
-    "introduces_model": "Hardrock first-break detection benchmark and baseline models",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7727,7 +7727,7 @@
     "doi": "https://doi.org/10.1190/geo2024-0916.1",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Foundation-model review and perspective for exploration geophysics",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7751,7 +7751,7 @@
     "doi": "https://doi.org/10.1016/j.petsci.2021.10.010",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "SegNet waveform-classification first-break picker for sparse shot gathers",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7775,7 +7775,7 @@
     "doi": "https://doi.org/10.1016/j.petsci.2023.11.028",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "BiLSTM regression model for seismic first-break picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7799,7 +7799,7 @@
     "doi": "https://doi.org/10.6038/cjg2024R0306",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Attention U-Net for complex-surface seismic first-arrival picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7822,7 +7822,7 @@
     "doi": "https://doi.org/10.6038/cjg2021O0135",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Constrained Markov Decision Process (CMDP) first-break picking framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7845,7 +7845,7 @@
     "doi": "https://doi.org/10.1093/jge/gxab026",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Intelligent Markov optimal decision process with FCM reward and Gaussian stochastic policy",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7869,7 +7869,7 @@
     "doi": "https://doi.org/10.1016/j.cageo.2023.105321",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "NT-Com (NARX + CART) combined machine-learning model",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7893,7 +7893,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2019.2946118",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Human-interactive deep learning framework for automatic first-arrival picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7917,7 +7917,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2023.3338091",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "CNNBiLSTM, CNNLSTM, GRUCNN and other hybrid CNN-RNN architectures for first-break picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7940,7 +7940,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3439685",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "UPNet",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7964,7 +7964,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3457521",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "DSU-Net",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -7987,7 +7987,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3400977",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "SPR (Simultaneous Picking and Refinement)",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8011,7 +8011,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3412673",
     "code_url": "https://github.com/jiangpeifan/2C-SeismicFBpicking",
     "github_stars": 1,
-    "introduces_model": "Two-Channel Mask Strategy Network",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8034,7 +8034,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3436817",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Meta-learning-based first-arrival picking framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8057,7 +8057,7 @@
     "doi": "https://doi.org/10.1109/TGRS.2024.3462935",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "PG-TL (Prior Knowledge Guided Transfer Learning)",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8080,7 +8080,7 @@
     "doi": "http://dx.doi.org/10.12431/issn.1000-1441.2024.0090",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Multi-Data Fusion + Adaptive Weighted Hybrid Loss First-Arrival Picking Framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8103,7 +8103,7 @@
     "doi": "https://dx.doi.org/10.3969/j.issn.1000-1441.2020.05.013",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "DCGAN-based First-Arrival Picking Framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8127,7 +8127,7 @@
     "doi": "https://doi.org/10.36922/JSE025330058",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "M-Res-LSTM (Multi-perspective Residual Long Short-Term Memory Network)",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8151,7 +8151,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13592",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Multi-View Feature Fusion Network (LSTM + Re-AG-UNet)",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8174,7 +8174,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13390",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Structured Random Forest (SRF) First-Break Picking Framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8197,7 +8197,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13192",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "1-D CNN First-Break Picking Framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8220,7 +8220,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13164",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Iterative Gaussian Mixture Model (IGMM)",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8243,7 +8243,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13162",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Benchmark framework for U-Net / Autoencoder / ResNet architecture comparison",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8267,7 +8267,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.13088",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Semantic Segmentation U-Net First-Break Picking Framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8291,7 +8291,7 @@
     "doi": "https://doi.org/10.1111/1365-2478.12923",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Multi-Azimuth Clustering + Ant Colony First-Break Picking Framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8314,7 +8314,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2024.3412913",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Pseudo-coloring and Color Image Segmentation First-Arrival Picker",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8337,7 +8337,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2023.3287320",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "Texture Segmentation First-Arrival Picking Framework",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8360,7 +8360,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2023.3248233",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "STUNet",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8383,7 +8383,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2021.3096572",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "3-D U-Net for First Arrival Traveltime Picking",
+    "introduces_model": "",
     "citation_count": 0
   },
   {
@@ -8406,7 +8406,7 @@
     "doi": "https://doi.org/10.1109/LGRS.2019.2955950",
     "code_url": null,
     "github_stars": null,
-    "introduces_model": "CWT Transfer Learning First-Arrival Picker",
+    "introduces_model": "",
     "citation_count": 0
   }
 ]
