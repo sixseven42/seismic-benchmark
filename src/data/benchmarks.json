@@ -23,9 +23,9 @@
       "Ground Roll",
       "Synthetic"
     ],
-    "citation": "https://wiki.seg.org/wiki/C3",
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 4,
+    "model_count": 9,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -55,9 +55,9 @@
       "Ground Roll",
       "Synthetic"
     ],
-    "citation": "https://wiki.seg.org/wiki/C3",
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 4,
+    "model_count": 9,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -87,9 +87,9 @@
       "Ground Roll",
       "Synthetic"
     ],
-    "citation": "https://wiki.seg.org/wiki/C3",
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 4,
+    "model_count": 9,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -119,9 +119,9 @@
       "Ground Roll",
       "Synthetic"
     ],
-    "citation": "https://wiki.seg.org/wiki/C3",
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 4,
+    "model_count": 9,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -151,9 +151,9 @@
       "Ground Roll",
       "Synthetic"
     ],
-    "citation": "https://wiki.seg.org/wiki/C3",
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 4,
+    "model_count": 9,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -185,7 +185,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
-    "model_count": 4,
+    "model_count": 8,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -218,7 +218,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
-    "model_count": 4,
+    "model_count": 8,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -251,7 +251,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
-    "model_count": 4,
+    "model_count": 8,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -284,7 +284,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
-    "model_count": 4,
+    "model_count": 8,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -317,7 +317,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
-    "model_count": 4,
+    "model_count": 8,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -350,7 +350,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main",
-    "model_count": 4,
+    "model_count": 8,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -645,7 +645,7 @@
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-uniform-label.png"
     ]
   },
   {
@@ -676,7 +676,7 @@
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-uniform-label.png"
     ]
   },
   {
@@ -707,7 +707,7 @@
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-uniform-label.png"
     ]
   },
   {
@@ -738,7 +738,7 @@
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-continuous-label.png"
     ]
   },
   {
@@ -769,7 +769,7 @@
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-continuous-label.png"
     ]
   },
   {
@@ -800,7 +800,7 @@
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-continuous-label.png"
     ]
   },
   {
@@ -928,7 +928,7 @@
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-uniform-label.png"
     ]
   },
   {
@@ -960,7 +960,7 @@
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-uniform-label.png"
     ]
   },
   {
@@ -992,7 +992,7 @@
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-uniform-label.png"
     ]
   },
   {
@@ -1024,7 +1024,7 @@
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-continuous-label.png"
     ]
   },
   {
@@ -1056,7 +1056,7 @@
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-continuous-label.png"
     ]
   },
   {
@@ -1088,7 +1088,7 @@
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
-      "datasets/segc3-interp-random-label.png"
+      "datasets/segc3-interp-continuous-label.png"
     ]
   }
 ]

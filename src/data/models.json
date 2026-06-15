@@ -14,7 +14,8 @@
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "dncnn-groundroll",
@@ -31,7 +32,8 @@
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "res-unet-groundroll",
@@ -45,10 +47,11 @@
       "coherent_noise_suppression"
     ],
     "description": "Residual U-Net baseline for ground-roll residual prediction.",
-    "paper_url": "https://doi.org/10.1109/CVPR.2016.90",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "unet-groundroll",
@@ -65,13 +68,14 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "attention-unet-random-noise",
     "name": "Attention UNet",
     "authors": "Oktay et al.",
-    "org": "Attention U-Net family",
+    "org": "Imperial College London",
     "year": 2018,
     "emoji": "🧠",
     "type": "deep_learning",
@@ -82,13 +86,14 @@
     "paper_url": "https://openreview.net/forum?id=Skft7cijM",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/atten_unet",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "dncnn-random-noise",
     "name": "DnCNN",
     "authors": "Zhang et al.",
-    "org": "Image Processing Group",
+    "org": "Harbin Institute of Technology",
     "year": 2017,
     "emoji": "🧠",
     "type": "deep_learning",
@@ -99,13 +104,14 @@
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/dncnn",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "res-unet-random-noise",
     "name": "ResUNet",
     "authors": "Diakogiannis et al.",
-    "org": "ResUNet-a",
+    "org": "CSIRO, Floreat WA",
     "year": 2019,
     "emoji": "🧠",
     "type": "deep_learning",
@@ -116,7 +122,8 @@
     "paper_url": "https://arxiv.org/abs/1904.00592",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/res_unet",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "unet-random-noise",
@@ -133,7 +140,8 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet",
-    "is_open_source": true
+    "is_open_source": true,
+    "architecture_image": null
   },
   {
     "id": "attention-unet-first-break",
@@ -153,7 +161,6 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "architecture_image": null,
     "is_open_source": true
   },
   {
@@ -174,7 +181,6 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "architecture_image": null,
     "is_open_source": true
   },
   {
@@ -195,7 +201,6 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "architecture_image": null,
     "is_open_source": true
   },
   {
@@ -216,7 +221,6 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "architecture_image": null,
     "is_open_source": true
   },
   {
@@ -234,7 +238,6 @@
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "architecture_image": null,
     "is_open_source": true
   },
   {
@@ -252,7 +255,6 @@
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "architecture_image": null,
     "is_open_source": true
   },
   {
@@ -270,7 +272,6 @@
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "architecture_image": null,
     "is_open_source": true
   },
   {
@@ -288,7 +289,159 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/tree/main/model/interpolation/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "conditional-ddpm-groundroll",
+    "name": "Conditional DDPM",
+    "authors": "Li et al.",
+    "org": "China University of Petroleum (East China)",
+    "year": 2024,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Conditional diffusion model for joint signal and ground-roll estimation.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2024.3489716",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/ddpm.py",
+    "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "enhanced-atten-unet-groundroll",
+    "name": "Enhanced Atten-UNet",
+    "authors": "Sun et al.",
+    "org": "China University of Petroleum (Beijing)",
+    "year": 2024,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Enhanced attention U-Net with adaptive frequency modulation loss.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/enhanced_unet.py",
+    "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "physics-cnn-groundroll",
+    "name": "Physics CNN",
+    "authors": "Pham and Li",
+    "org": "Aramco Americas, Aramco Research Center - Houston",
+    "year": 2022,
+    "emoji": "🔩",
+    "type": "hybrid",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Physics-constrained CNN with f-k domain classification.",
+    "paper_url": "https://doi.org/10.1190/geo2020-0691.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/physics_unet.py",
+    "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "pix2pix-cgan-groundroll",
+    "name": "Pix2Pix cGAN",
+    "authors": "Yuan et al.",
+    "org": "China University of Geosciences (Beijing)",
+    "year": 2020,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Conditional GAN for ground-roll residual attenuation.",
+    "paper_url": "https://doi.org/10.1190/geo2019-0414.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/pix2pix.py",
+    "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "sanet-groundroll",
+    "name": "SANet",
+    "authors": "Yang et al.",
+    "org": "China University of Petroleum (Beijing)",
+    "year": 2024,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Soft-attention residual network for small-scale ground-roll attenuation.",
+    "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/sanet.py",
+    "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "ffcnn-random-noise",
+    "name": "FFCNN",
+    "authors": "Li et al.",
+    "org": "Key Laboratory Petroleum Resources Research",
+    "year": 2021,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "FFCNN baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ffcnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/ffcnn",
+    "is_open_source": true
+  },
+  {
+    "id": "q-unet-random-noise",
+    "name": "QUNet",
+    "authors": "Wang et al.",
+    "org": "Beijing Jiaotong University",
+    "year": 2025,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "Quadratic U-Net baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1190/geo2024-0019.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/q_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/q_unet",
+    "is_open_source": true
+  },
+  {
+    "id": "scrn-random-noise",
+    "name": "SCRN",
+    "authors": "Gao et al.",
+    "org": "Southwest Petroleum University",
+    "year": 2024,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "SCRN baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1016/j.cageo.2023.105510",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/SCRN.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/SCRN",
+    "is_open_source": true
+  },
+  {
+    "id": "unet-plusplus-random-noise",
+    "name": "UNet++",
+    "authors": "Zhang et al.",
+    "org": "University of California Los Angeles",
+    "year": 2024,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "UNet++ baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet_plusplus.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet_plusplus",
     "is_open_source": true
   }
 ]
