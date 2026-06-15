@@ -421,14 +421,30 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       {rows.length > 0 && (
         <div className="card">
           <div className="detail-chart-wrap" style={{ height: Math.max(280, rows.length * 44) }}>
-            <Bar
-              {...getBarChartConfig(
-                [...rows].reverse().map(r => r.model!.name),
-                [...rows].reverse().map(r => r.result.scores[highlightMetric] ?? 0),
-                highlightMetric,
-                theme
-              )}
-            />
+            {(() => {
+              const lowerBetter = isLowerBetter(highlightMetric);
+              const bestScore = lowerBetter
+                ? Math.min(...rows.map(r => r.result.scores[highlightMetric] ?? Infinity))
+                : Math.max(...rows.map(r => r.result.scores[highlightMetric] ?? -Infinity));
+              const chartData = rows.map(r => {
+                const score = r.result.scores[highlightMetric] ?? 0;
+                if (!lowerBetter) return score;
+                if (bestScore <= 0) return score <= 0 ? 100 : 0;
+                return (bestScore / score) * 100;
+              });
+              const rawScores = rows.map(r => r.result.scores[highlightMetric] ?? 0);
+              return (
+                <Bar
+                  {...getBarChartConfig(
+                    rows.map(r => r.model!.name),
+                    chartData,
+                    highlightMetric,
+                    theme,
+                    rawScores
+                  )}
+                />
+              );
+            })()}
           </div>
         </div>
       )}
