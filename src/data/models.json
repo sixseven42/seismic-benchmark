@@ -1,149 +1,5 @@
 [
   {
-    "id": "attention-unet-groundroll",
-    "name": "Attention UNet",
-    "authors": "Oktay et al.",
-    "org": "Imperial College London",
-    "year": 2018,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Attention-gated U-Net for ground-roll residual prediction.",
-    "paper_url": "https://arxiv.org/abs/1804.03999",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
-    "id": "dncnn-groundroll",
-    "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Residual convolutional denoiser for ground-roll noise prediction.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
-    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
-    "id": "res-unet-groundroll",
-    "name": "ResUNet",
-    "authors": "He et al.",
-    "org": "Microsoft Research",
-    "year": 2016,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Residual U-Net baseline for ground-roll residual prediction.",
-    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
-    "id": "unet-groundroll",
-    "name": "UNet",
-    "authors": "Ronneberger et al.",
-    "org": "University of Freiburg",
-    "year": 2015,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "U-Net baseline for ground-roll residual prediction.",
-    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
-    "id": "attention-unet-random-noise",
-    "name": "Attention UNet",
-    "authors": "Oktay et al.",
-    "org": "Imperial College London",
-    "year": 2018,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "Attention U-Net baseline for synthetic random-noise suppression.",
-    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/atten_unet",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
-    "id": "dncnn-random-noise",
-    "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "DnCNN baseline for synthetic random-noise suppression.",
-    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
-    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/dncnn",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
-    "id": "res-unet-random-noise",
-    "name": "ResUNet",
-    "authors": "Diakogiannis et al.",
-    "org": "CSIRO, Floreat WA",
-    "year": 2019,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "Residual U-Net baseline for synthetic random-noise suppression.",
-    "paper_url": "https://arxiv.org/abs/1904.00592",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/res_unet",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
-    "id": "unet-random-noise",
-    "name": "UNet",
-    "authors": "Ronneberger et al.",
-    "org": "University of Freiburg",
-    "year": 2015,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "U-Net baseline for synthetic random-noise suppression.",
-    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet",
-    "is_open_source": true,
-    "architecture_image": null
-  },
-  {
     "id": "attention-unet-first-break",
     "name": "Attention UNet",
     "authors": "Oktay et al.",
@@ -161,6 +17,142 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-groundroll",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Attention-gated U-Net for ground-roll residual prediction.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-interpolation",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Attention-gated U-Net for seismic interpolation and missing trace reconstruction.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-plus-groundroll",
+    "name": "Attention UNet++",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Attention-gated U-Net++ for ground-roll residual prediction.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-random-noise",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "Attention U-Net baseline for synthetic random-noise suppression.",
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/atten_unet",
+    "is_open_source": true
+  },
+  {
+    "id": "conditional-ddpm-groundroll",
+    "name": "Conditional DDPM",
+    "authors": "Li et al.",
+    "org": "China University of Petroleum (East China)",
+    "year": 2024,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Conditional diffusion model for joint signal and ground-roll estimation.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2024.3489716",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/ddpm.py",
+    "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "dncnn-groundroll",
+    "name": "DnCNN",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
+    "year": 2017,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Residual convolutional denoiser for ground-roll noise prediction.",
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
+    "is_open_source": true
+  },
+  {
+    "id": "dncnn-interpolation",
+    "name": "DnCNN",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
+    "year": 2017,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Residual convolutional neural network baseline for seismic trace interpolation and missing trace reconstruction.",
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
+    "is_open_source": true
+  },
+  {
+    "id": "dncnn-random-noise",
+    "name": "DnCNN",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
+    "year": 2017,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "DnCNN baseline for synthetic random-noise suppression.",
+    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/dncnn",
     "is_open_source": true
   },
   {
@@ -184,131 +176,6 @@
     "is_open_source": true
   },
   {
-    "id": "res-unet-first-break",
-    "name": "ResUNet",
-    "authors": "He et al.",
-    "org": "Microsoft Research",
-    "year": 2016,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "first_arrival_picking"
-    ],
-    "description": "Residual U-Net baseline adapted for first-break picking, combining residual convolution blocks with encoder-decoder skip connections for step-mask segmentation.",
-    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/res_unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
-    "weights_urls": {
-      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
-    },
-    "is_open_source": true
-  },
-  {
-    "id": "unet-first-break",
-    "name": "UNet",
-    "authors": "Ronneberger et al.",
-    "org": "University of Freiburg",
-    "year": 2015,
-    "emoji": "🔬",
-    "type": "deep_learning",
-    "tasks": [
-      "first_arrival_picking"
-    ],
-    "description": "U-Net baseline adapted for first-break picking as binary step-mask segmentation, using a single-channel amplitude input and a single-channel logits output.",
-    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
-    "weights_urls": {
-      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
-    },
-    "is_open_source": true
-  },
-  {
-    "id": "attention-unet-interpolation",
-    "name": "Attention UNet",
-    "authors": "Oktay et al.",
-    "org": "Imperial College London",
-    "year": 2018,
-    "emoji": "🔧",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Attention-gated U-Net for seismic interpolation and missing trace reconstruction.",
-    "paper_url": "https://arxiv.org/abs/1804.03999",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
-  },
-  {
-    "id": "dncnn-interpolation",
-    "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
-    "emoji": "🔧",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Residual convolutional neural network baseline for seismic trace interpolation and missing trace reconstruction.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
-    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
-  },
-  {
-    "id": "res-unet-interpolation",
-    "name": "ResUNet",
-    "authors": "He et al.",
-    "org": "Microsoft Research",
-    "year": 2016,
-    "emoji": "🔧",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Residual U-Net baseline for seismic interpolation and missing trace reconstruction.",
-    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
-  },
-  {
-    "id": "unet-interpolation",
-    "name": "UNet",
-    "authors": "Ronneberger et al.",
-    "org": "University of Freiburg",
-    "year": 2015,
-    "emoji": "🔧",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "U-Net baseline for seismic trace interpolation and missing data reconstruction.",
-    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/tree/main/model/interpolation/unet.py",
-    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
-  },
-  {
-    "id": "conditional-ddpm-groundroll",
-    "name": "Conditional DDPM",
-    "authors": "Li et al.",
-    "org": "China University of Petroleum (East China)",
-    "year": 2024,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Conditional diffusion model for joint signal and ground-roll estimation.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2024.3489716",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/ddpm.py",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
     "id": "enhanced-atten-unet-groundroll",
     "name": "Enhanced Atten-UNet",
     "authors": "Sun et al.",
@@ -323,6 +190,23 @@
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/enhanced_unet.py",
     "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "ffcnn-random-noise",
+    "name": "FFCNN",
+    "authors": "Li et al.",
+    "org": "Key Laboratory Petroleum Resources Research",
+    "year": 2021,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "FFCNN baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ffcnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/ffcnn",
     "is_open_source": true
   },
   {
@@ -360,40 +244,6 @@
     "is_open_source": true
   },
   {
-    "id": "sanet-groundroll",
-    "name": "SANet",
-    "authors": "Yang et al.",
-    "org": "China University of Petroleum (Beijing)",
-    "year": 2024,
-    "emoji": "🔩",
-    "type": "deep_learning",
-    "tasks": [
-      "coherent_noise_suppression"
-    ],
-    "description": "Soft-attention residual network for small-scale ground-roll attenuation.",
-    "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/sanet.py",
-    "weights_url": null,
-    "is_open_source": true
-  },
-  {
-    "id": "ffcnn-random-noise",
-    "name": "FFCNN",
-    "authors": "Li et al.",
-    "org": "Key Laboratory Petroleum Resources Research",
-    "year": 2021,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "FFCNN baseline for synthetic random-noise suppression.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ffcnn.py",
-    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/ffcnn",
-    "is_open_source": true
-  },
-  {
     "id": "q-unet-random-noise",
     "name": "QUNet",
     "authors": "Wang et al.",
@@ -408,6 +258,111 @@
     "paper_url": "https://doi.org/10.1190/geo2024-0019.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/q_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/q_unet",
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-first-break",
+    "name": "ResUNet",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "description": "Residual U-Net baseline adapted for first-break picking, combining residual convolution blocks with encoder-decoder skip connections for step-mask segmentation.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
+    "weights_urls": {
+      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
+    },
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-groundroll",
+    "name": "ResUNet",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Residual U-Net baseline for ground-roll residual prediction.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-interpolation",
+    "name": "ResUNet",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Residual U-Net baseline for seismic interpolation and missing trace reconstruction.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-plus-groundroll",
+    "name": "ResUNet++",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Residual U-Net++ baseline for ground-roll residual prediction.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-random-noise",
+    "name": "ResUNet",
+    "authors": "Diakogiannis et al.",
+    "org": "CSIRO, Floreat WA",
+    "year": 2019,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "Residual U-Net baseline for synthetic random-noise suppression.",
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/res_unet",
+    "is_open_source": true
+  },
+  {
+    "id": "sanet-groundroll",
+    "name": "SANet",
+    "authors": "Yang et al.",
+    "org": "China University of Petroleum (Beijing)",
+    "year": 2024,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "Soft-attention residual network for small-scale ground-roll attenuation.",
+    "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/sanet.py",
+    "weights_url": null,
     "is_open_source": true
   },
   {
@@ -428,6 +383,77 @@
     "is_open_source": true
   },
   {
+    "id": "unet-first-break",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔬",
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "description": "U-Net baseline adapted for first-break picking as binary step-mask segmentation, using a single-channel amplitude input and a single-channel logits output.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
+    "weights_urls": {
+      "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
+    },
+    "is_open_source": true
+  },
+  {
+    "id": "unet-groundroll",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "U-Net baseline for ground-roll residual prediction.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
+    "is_open_source": true
+  },
+  {
+    "id": "unet-interpolation",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "U-Net baseline for seismic trace interpolation and missing data reconstruction.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/tree/main/model/interpolation/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
+    "is_open_source": true
+  },
+  {
+    "id": "unet-plus-groundroll",
+    "name": "UNet++",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "coherent_noise_suppression"
+    ],
+    "description": "U-Net++ baseline for ground-roll residual prediction.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
+    "is_open_source": true
+  },
+  {
     "id": "unet-plusplus-random-noise",
     "name": "UNet++",
     "authors": "Zhang et al.",
@@ -442,6 +468,23 @@
     "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet_plusplus.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet_plusplus",
+    "is_open_source": true
+  },
+  {
+    "id": "unet-random-noise",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "U-Net baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet",
     "is_open_source": true
   }
 ]

@@ -25,7 +25,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9,
+    "model_count": 12,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -57,7 +57,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9,
+    "model_count": 12,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -89,7 +89,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9,
+    "model_count": 12,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -121,7 +121,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9,
+    "model_count": 12,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
@@ -153,7 +153,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-ground-roll",
-    "model_count": 9,
+    "model_count": 12,
     "gallery": [
       "datasets/segc3-raw.png",
       "datasets/segc3-label.png"
