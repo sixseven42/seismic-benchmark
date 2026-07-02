@@ -60,7 +60,8 @@
       "Read(//c/论文/SeisBench/网页源数据/gtx/json/**)",
       "Bash(dir \"C:\\\\论文\\\\SeisBench\\\\网页源数据\\\\gtx\\\\json\" /b)",
       "Read(//c/论文/SeisBench/网页源数据/record_random/**)",
-      "Bash(dir \"C:\\\\论文\\\\SeisBench\\\\网页源数据\\\\record_random\" /b)"
+      "Bash(dir \"C:\\\\论文\\\\SeisBench\\\\网页源数据\\\\record_random\" /b)",
+      "Bash(bsdtar *)"
     ]
   }
 }

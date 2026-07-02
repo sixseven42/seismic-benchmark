@@ -2211,6 +2211,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "ddpm-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr0",
+    "scores": {
+      "snr": 12.3782,
+      "psnr": 37.0446,
+      "ssim": 0.9424,
+      "mae": 0.010761,
+      "mse": 0.000213,
+      "rmse": 0.014344
+    },
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
+    "date_added": "2026-06-30"
+  },
+  {
     "model_id": "dncnn-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snr0",
     "scores": {
@@ -2224,6 +2239,21 @@
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "fbresnet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr0",
+    "scores": {
+      "snr": 13.384833,
+      "psnr": 38.0513,
+      "ssim": 0.9526,
+      "mae": 0.009171,
+      "mse": 0.000184,
+      "rmse": 0.01316
+    },
+    "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/fbresnet.py",
+    "date_added": "2026-06-20"
   },
   {
     "model_id": "ffcnn-random-noise",
@@ -2331,6 +2361,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "ddpm-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr5",
+    "scores": {
+      "snr": 14.3109,
+      "psnr": 38.9774,
+      "ssim": 0.9607,
+      "mae": 0.008788,
+      "mse": 0.000133,
+      "rmse": 0.011406
+    },
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
+    "date_added": "2026-06-30"
+  },
+  {
     "model_id": "dncnn-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snr5",
     "scores": {
@@ -2344,6 +2389,21 @@
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "fbresnet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr5",
+    "scores": {
+      "snr": 16.023833,
+      "psnr": 40.690267,
+      "ssim": 0.972833,
+      "mae": 0.006889,
+      "mse": 0.000099,
+      "rmse": 0.009679
+    },
+    "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/fbresnet.py",
+    "date_added": "2026-06-20"
   },
   {
     "model_id": "ffcnn-random-noise",
@@ -2451,6 +2511,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "ddpm-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
+    "scores": {
+      "snr": 10.4113,
+      "psnr": 35.0778,
+      "ssim": 0.9173,
+      "mae": 0.013028,
+      "mse": 0.000342,
+      "rmse": 0.018107
+    },
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
+    "date_added": "2026-06-30"
+  },
+  {
     "model_id": "dncnn-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
     "scores": {
@@ -2464,6 +2539,21 @@
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "fbresnet-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
+    "scores": {
+      "snr": 10.780767,
+      "psnr": 35.447233,
+      "ssim": 0.922367,
+      "mae": 0.011804,
+      "mse": 0.00033,
+      "rmse": 0.017663
+    },
+    "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/fbresnet.py",
+    "date_added": "2026-06-20"
   },
   {
     "model_id": "ffcnn-random-noise",
@@ -2571,6 +2661,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "ddpm-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr0",
+    "scores": {
+      "snr": 12.3655,
+      "psnr": 37.0319,
+      "ssim": 0.9416,
+      "mae": 0.010781,
+      "mse": 0.000214,
+      "rmse": 0.014372
+    },
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
+    "date_added": "2026-06-30"
+  },
+  {
     "model_id": "dncnn-random-noise",
     "benchmark_id": "segc3-random-noise-poisson-snr0",
     "scores": {
@@ -2584,6 +2689,21 @@
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "fbresnet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr0",
+    "scores": {
+      "snr": 13.3724,
+      "psnr": 38.0388,
+      "ssim": 0.952467,
+      "mae": 0.009193,
+      "mse": 0.000184,
+      "rmse": 0.013168
+    },
+    "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/fbresnet.py",
+    "date_added": "2026-06-20"
   },
   {
     "model_id": "ffcnn-random-noise",
@@ -2691,6 +2811,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "ddpm-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr5",
+    "scores": {
+      "snr": 14.3553,
+      "psnr": 39.0217,
+      "ssim": 0.9621,
+      "mae": 0.008738,
+      "mse": 0.000132,
+      "rmse": 0.011341
+    },
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
+    "date_added": "2026-06-30"
+  },
+  {
     "model_id": "dncnn-random-noise",
     "benchmark_id": "segc3-random-noise-poisson-snr5",
     "scores": {
@@ -2704,6 +2839,21 @@
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "fbresnet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snr5",
+    "scores": {
+      "snr": 16.043133,
+      "psnr": 40.709567,
+      "ssim": 0.972933,
+      "mae": 0.006877,
+      "mse": 0.000099,
+      "rmse": 0.009657
+    },
+    "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/fbresnet.py",
+    "date_added": "2026-06-20"
   },
   {
     "model_id": "ffcnn-random-noise",
@@ -2811,6 +2961,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "ddpm-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snrneg5",
+    "scores": {
+      "snr": 10.4292,
+      "psnr": 35.0956,
+      "ssim": 0.9159,
+      "mae": 0.012995,
+      "mse": 0.00034,
+      "rmse": 0.018075
+    },
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
+    "date_added": "2026-06-30"
+  },
+  {
     "model_id": "dncnn-random-noise",
     "benchmark_id": "segc3-random-noise-poisson-snrneg5",
     "scores": {
@@ -2824,6 +2989,21 @@
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "fbresnet-random-noise",
+    "benchmark_id": "segc3-random-noise-poisson-snrneg5",
+    "scores": {
+      "snr": 10.856733,
+      "psnr": 35.523167,
+      "ssim": 0.923367,
+      "mae": 0.011722,
+      "mse": 0.000326,
+      "rmse": 0.017549
+    },
+    "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/fbresnet.py",
+    "date_added": "2026-06-20"
   },
   {
     "model_id": "ffcnn-random-noise",

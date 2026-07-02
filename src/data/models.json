@@ -105,6 +105,23 @@
     "is_open_source": true
   },
   {
+    "id": "ddpm-random-noise",
+    "name": "DDPM",
+    "authors": "Ho et al.",
+    "org": "UC Berkeley",
+    "year": 2020,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "Standard DDPM baseline for synthetic random-noise suppression.",
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/ddpm",
+    "is_open_source": true
+  },
+  {
     "id": "dncnn-groundroll",
     "name": "DnCNN",
     "authors": "Zhang et al.",
@@ -190,6 +207,23 @@
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/enhanced_unet.py",
     "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "fbresnet-random-noise",
+    "name": "FBResNet",
+    "authors": "Liao et al.",
+    "org": "Chengdu University of Technology",
+    "year": 2023,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "Feedback residual network adapted for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/fbresnet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/fbresnet",
     "is_open_source": true
   },
   {
