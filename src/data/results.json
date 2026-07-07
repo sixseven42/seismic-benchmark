@@ -36,6 +36,23 @@
     "notes": "Scores are averaged over seeds 42, 43, and 44. Hit-rate metrics are computed by first-break pick error thresholds in samples."
   },
   {
+    "model_id": "pu2024hu_net_first_arrival_accuracy",
+    "benchmark_id": "fbp-brunswick-valid",
+    "scores": {
+      "mae": 2.015921702,
+      "rmse": 11.98755639,
+      "hit_rate_1px": 0.807276857,
+      "hit_rate_3px": 0.974033805,
+      "hit_rate_5px": 0.984300388,
+      "hit_rate_7px": 0.987645936,
+      "hit_rate_9px": 0.989216454,
+      "f1": 0.996931681
+    },
+    "paper_url": "https://doi.org/10.1190/geo2023-0154.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/hunet.py",
+    "date_added": "2026-07-07"
+  },
+  {
     "model_id": "res-unet-first-break",
     "benchmark_id": "fbp-brunswick-valid",
     "scores": {
@@ -106,6 +123,23 @@
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/dncnn_seg.py",
     "date_added": "2026-05-25",
     "notes": "Scores are averaged over seeds 42, 43, and 44. Hit-rate metrics are computed by first-break pick error thresholds in samples."
+  },
+  {
+    "model_id": "pu2024hu_net_first_arrival_accuracy",
+    "benchmark_id": "fbp-dongbei",
+    "scores": {
+      "mae": 3.483519493,
+      "rmse": 29.18170016,
+      "hit_rate_1px": 0.473281213,
+      "hit_rate_3px": 0.891694592,
+      "hit_rate_5px": 0.925711692,
+      "hit_rate_7px": 0.939053762,
+      "hit_rate_9px": 0.947875388,
+      "f1": 0.996007585
+    },
+    "paper_url": "https://doi.org/10.1190/geo2023-0154.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/hunet.py",
+    "date_added": "2026-07-07"
   },
   {
     "model_id": "res-unet-first-break",
@@ -180,6 +214,23 @@
     "notes": "Scores are averaged over seeds 42, 43, and 44. Hit-rate metrics are computed by first-break pick error thresholds in samples."
   },
   {
+    "model_id": "pu2024hu_net_first_arrival_accuracy",
+    "benchmark_id": "fbp-geomseg-all",
+    "scores": {
+      "mae": 6.401956452,
+      "rmse": 24.40651547,
+      "hit_rate_1px": 0.70866025,
+      "hit_rate_3px": 0.907165175,
+      "hit_rate_5px": 0.930251291,
+      "hit_rate_7px": 0.948356836,
+      "hit_rate_9px": 0.958839017,
+      "f1": 0.994497754
+    },
+    "paper_url": "https://doi.org/10.1190/geo2023-0154.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/hunet.py",
+    "date_added": "2026-07-07"
+  },
+  {
     "model_id": "res-unet-first-break",
     "benchmark_id": "fbp-geomseg-all",
     "scores": {
@@ -252,6 +303,23 @@
     "notes": "Scores are averaged over seeds 42, 43, and 44. Hit-rate metrics are computed by first-break pick error thresholds in samples."
   },
   {
+    "model_id": "pu2024hu_net_first_arrival_accuracy",
+    "benchmark_id": "fbp-halfmile-valid",
+    "scores": {
+      "mae": 2.930202579,
+      "rmse": 13.30252508,
+      "hit_rate_1px": 0.61743138,
+      "hit_rate_3px": 0.918520219,
+      "hit_rate_5px": 0.954499183,
+      "hit_rate_7px": 0.972665571,
+      "hit_rate_9px": 0.980958177,
+      "f1": 0.998649205
+    },
+    "paper_url": "https://doi.org/10.1190/geo2023-0154.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/hunet.py",
+    "date_added": "2026-07-07"
+  },
+  {
     "model_id": "res-unet-first-break",
     "benchmark_id": "fbp-halfmile-valid",
     "scores": {
@@ -322,6 +390,23 @@
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/dncnn_seg.py",
     "date_added": "2026-05-25",
     "notes": "Scores are averaged over seeds 42, 43, and 44. Hit-rate metrics are computed by first-break pick error thresholds in samples."
+  },
+  {
+    "model_id": "pu2024hu_net_first_arrival_accuracy",
+    "benchmark_id": "fbp-lalor-valid",
+    "scores": {
+      "mae": 17.04550871,
+      "rmse": 50.0373385,
+      "hit_rate_1px": 0.506577302,
+      "hit_rate_3px": 0.78980902,
+      "hit_rate_5px": 0.83994346,
+      "hit_rate_7px": 0.880417646,
+      "hit_rate_9px": 0.903892657,
+      "f1": 0.990825899
+    },
+    "paper_url": "https://doi.org/10.1190/geo2023-0154.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/hunet.py",
+    "date_added": "2026-07-07"
   },
   {
     "model_id": "res-unet-first-break",
@@ -2211,6 +2296,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "cbdrdn-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr0",
+    "scores": {
+      "snr": 13.581767,
+      "psnr": 38.2482,
+      "ssim": 0.951667,
+      "mae": 0.009367,
+      "mse": 0.000179,
+      "rmse": 0.01296
+    },
+    "paper_url": "https://doi.org/10.1190/GEO2021-0294.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/cbdrdn.py",
+    "date_added": "2026-07-07"
+  },
+  {
     "model_id": "ddpm-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snr0",
     "scores": {
@@ -2361,6 +2461,21 @@
     "date_added": "2026-05-22"
   },
   {
+    "model_id": "cbdrdn-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snr5",
+    "scores": {
+      "snr": 16.4587,
+      "psnr": 41.125133,
+      "ssim": 0.9738,
+      "mae": 0.006755,
+      "mse": 0.000092,
+      "rmse": 0.00928
+    },
+    "paper_url": "https://doi.org/10.1190/GEO2021-0294.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/cbdrdn.py",
+    "date_added": "2026-07-07"
+  },
+  {
     "model_id": "ddpm-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snr5",
     "scores": {
@@ -2509,6 +2624,21 @@
     "paper_url": "https://openreview.net/forum?id=Skft7cijM",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/atten_unet.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "cbdrdn-random-noise",
+    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
+    "scores": {
+      "snr": 11.881133,
+      "psnr": 36.547567,
+      "ssim": 0.933667,
+      "mae": 0.011011,
+      "mse": 0.00027,
+      "rmse": 0.015899
+    },
+    "paper_url": "https://doi.org/10.1190/GEO2021-0294.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/cbdrdn.py",
+    "date_added": "2026-07-07"
   },
   {
     "model_id": "ddpm-random-noise",

@@ -185,7 +185,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 10,
+    "model_count": 11,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -218,7 +218,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 10,
+    "model_count": 11,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -251,7 +251,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 10,
+    "model_count": 11,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -385,7 +385,7 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 4
+    "model_count": 5
   },
   {
     "id": "fbp-brunswick-valid",
@@ -415,7 +415,7 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 4,
+    "model_count": 5,
     "gallery": [
       "datasets/fbp-brunswick-raw.png",
       "datasets/fbp-brunswick-mask.png"
@@ -450,7 +450,7 @@
     ],
     "citation": "Private Dongbei first-break picking data; public benchmark results in GeoBrain first-break picking release",
     "download_url": "",
-    "model_count": 4,
+    "model_count": 5,
     "gallery": [
       "datasets/fbp-dongbei-raw.png",
       "datasets/fbp-dongbei-mask.png"
@@ -484,7 +484,7 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 4,
+    "model_count": 5,
     "gallery": [
       "datasets/fbp-halfmile-raw.png",
       "datasets/fbp-halfmile-mask.png"
@@ -518,7 +518,7 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 4,
+    "model_count": 5,
     "gallery": [
       "datasets/fbp-lalor-raw.png",
       "datasets/fbp-lalor-mask.png"

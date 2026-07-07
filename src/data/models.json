@@ -88,6 +88,23 @@
     "is_open_source": true
   },
   {
+    "id": "cbdrdn-random-noise",
+    "name": "CBD-RDN",
+    "authors": "Wang et al.",
+    "org": "Tsinghua University",
+    "year": 2022,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "random_noise_suppression"
+    ],
+    "description": "CBD-RDN baseline for synthetic random-noise suppression.",
+    "paper_url": "https://doi.org/10.1190/GEO2021-0294.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/cbdrdn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/cbdrdn",
+    "is_open_source": true
+  },
+  {
     "id": "conditional-ddpm-groundroll",
     "name": "Conditional DDPM",
     "authors": "Li et al.",
@@ -275,6 +292,23 @@
     "paper_url": "https://doi.org/10.1190/geo2019-0414.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/pix2pix.py",
     "weights_url": null,
+    "is_open_source": true
+  },
+  {
+    "id": "pu2024hu_net_first_arrival_accuracy",
+    "name": "HUNet",
+    "authors": "Yitao Pu, Bo Zhang, Chenglin Wei, Yingyu Xu, Hongfei Liu",
+    "year": 2024,
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "paper_url": "https://doi.org/10.1190/geo2023-0154.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/hunet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
+    "org": "Unknown",
+    "emoji": "🔬",
+    "description": "HUNet for first-arrival picking.",
     "is_open_source": true
   },
   {

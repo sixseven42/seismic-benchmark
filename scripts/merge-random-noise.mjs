@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 
-const srcDir = 'C:/Users/admin/Documents/WeChat Files/wxid_hvmr1h95e7jn22/FileStorage/File/2026-07/record_random';
+const srcDir = 'C:/Users/admin/Documents/WeChat Files/wxid_hvmr1h95e7jn22/FileStorage/File/2026-07/record_random(1)/record_random';
 const dataDir = './src/data';
 
 function readJson(path) {
