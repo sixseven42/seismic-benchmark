@@ -138,6 +138,9 @@ const translations = {
       title: 'Tutorial',
       subtitle: 'A hands-on guide to the seismic-benchmark-code repository.',
       loading: 'Loading tutorial...',
+      onThisPage: 'On this page',
+      copy: 'Copy',
+      copied: 'Copied!',
     },
   },
   zh: {
@@ -277,6 +280,9 @@ const translations = {
       title: '教程',
       subtitle: 'seismic-benchmark-code 仓库的实战指南。',
       loading: '加载教程中...',
+      onThisPage: '本页目录',
+      copy: '复制',
+      copied: '已复制',
     },
   },
 } as const;
