@@ -33,7 +33,7 @@ You do not need a deep background in seismology to follow the worked example, bu
 
 Before you begin, you should be comfortable with:
 
-- Basic PyTorch (`nn.Module`, `DataLoader`, training loops).
+- Basic PyTorch (nn.Module, DataLoader, training loops).
 - YAML syntax and command-line flags.
 - NumPy array shapes and indexing.
 
@@ -46,12 +46,12 @@ Optional but helpful:
 
 There is no centralized `requirements.txt` or `pyproject.toml` yet. Install the following packages manually:
 
-- `torch`
-- `numpy`
-- `matplotlib`
-- `pyyaml`
-- `segyio`
-- `scipy`
+- torch
+- numpy
+- matplotlib
+- pyyaml
+- segyio
+- scipy
 
 You can install them with:
 
@@ -911,7 +911,7 @@ python scripts/ground_roll_attenuation/train_denoise_unet.py \
   --config configs/ground_roll_attenuation/denoise_unet.yaml
 ```
 
-After training, run the batch evaluator on the experiment directory tree. `batch_evaluate.py` requires `openpyxl`; install it first if you have not already:
+After training, run the batch evaluator on the experiment directory tree. `batch_evaluate.py` requires openpyxl; install it first if you have not already:
 
 ```bash
 pip install openpyxl
@@ -953,7 +953,7 @@ python scripts/multiples_attenuation/train_denoise_unet.py \
   --config configs/multiples_attenuation/denoise_unet.yaml
 ```
 
-Run the batch evaluator. `batch_evaluate.py` requires `openpyxl`:
+Run the batch evaluator. `batch_evaluate.py` requires openpyxl:
 
 ```bash
 pip install openpyxl
@@ -1227,7 +1227,7 @@ When adding a step that changes the amplitude scale, remember to update `normali
 - For `ground_roll_attenuation` and `multiples_attenuation`, `batch_evaluate.py` requires both `checkpoints/best.pt` and a `test_set/` directory in every experiment directory it scans.
 - If you train interpolation with `--mask-mode` / `--mask-ratio`, the experiment name is auto-suffixed (e.g., `interp_unet_base_uniform_miss50`), so the checkpoint path changes accordingly.
 
-**`segyio` not installed or SEG-Y path wrong**
+**segyio not installed or SEG-Y path wrong**
 
 - Install the dependency: `pip install segyio`.
 - Confirm the file exists: `ls /path/to/volume.sgy`.
@@ -1268,7 +1268,7 @@ When adding a step that changes the amplitude scale, remember to update `normali
 
 #### CLI command cheat sheet
 
-> **Note:** `batch_evaluate.py` for `ground_roll_attenuation` and `multiples_attenuation` requires `openpyxl`. Install it first: `pip install openpyxl`.
+> **Note:** `batch_evaluate.py` for `ground_roll_attenuation` and `multiples_attenuation` requires openpyxl. Install it first: `pip install openpyxl`.
 
 ##### `random_noise_suppression`
 
@@ -1301,7 +1301,7 @@ python scripts/ground_roll_attenuation/train_denoise_unet.py \
   --config configs/ground_roll_attenuation/denoise_unet.yaml
 ```
 
-Batch evaluation (requires `openpyxl`):
+Batch evaluation (requires openpyxl):
 
 ```bash
 pip install openpyxl
@@ -1321,7 +1321,7 @@ python scripts/multiples_attenuation/train_denoise_unet.py \
   --config configs/multiples_attenuation/denoise_unet.yaml
 ```
 
-Batch evaluation (requires `openpyxl`):
+Batch evaluation (requires openpyxl):
 
 ```bash
 pip install openpyxl

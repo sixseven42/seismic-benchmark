@@ -37,7 +37,7 @@
 
 开始之前，你应熟悉以下内容：
 
-- 基础 PyTorch（`nn.Module`、`DataLoader`、训练循环）。
+- 基础 PyTorch（nn.Module、DataLoader、训练循环）。
 - YAML 语法与命令行标志。
 - NumPy 数组形状与索引。
 
@@ -51,12 +51,12 @@
 
 目前尚无统一的 `requirements.txt` 或 `pyproject.toml`。请手动安装以下包：
 
-- `torch`
-- `numpy`
-- `matplotlib`
-- `pyyaml`
-- `segyio`
-- `scipy`
+- torch
+- numpy
+- matplotlib
+- pyyaml
+- segyio
+- scipy
 
 可通过以下命令安装：
 
@@ -938,7 +938,7 @@ python scripts/ground_roll_attenuation/train_denoise_unet.py \
   --config configs/ground_roll_attenuation/denoise_unet.yaml
 ```
 
-训练完成后，在实验目录树上运行批量评估器。`batch_evaluate.py` 需要 `openpyxl`；如果尚未安装，请先安装：
+训练完成后，在实验目录树上运行批量评估器。`batch_evaluate.py` 需要 openpyxl；如果尚未安装，请先安装：
 
 ```bash
 pip install openpyxl
@@ -981,7 +981,7 @@ python scripts/multiples_attenuation/train_denoise_unet.py \
   --config configs/multiples_attenuation/denoise_unet.yaml
 ```
 
-运行批量评估器。`batch_evaluate.py` 需要 `openpyxl`：
+运行批量评估器。`batch_evaluate.py` 需要 openpyxl：
 
 ```bash
 pip install openpyxl
@@ -1264,7 +1264,7 @@ preprocess:
 - 对于 `ground_roll_attenuation` 和 `multiples_attenuation`，`batch_evaluate.py` 要求扫描的每个实验目录都包含 `checkpoints/best.pt` 和 `test_set/` 目录。
 - 如果用 `--mask-mode` / `--mask-ratio` 训练插值，实验名称会自动添加后缀（例如 `interp_unet_base_uniform_miss50`），因此检查点路径会相应变化。
 
-#### 未安装 `segyio` 或 SEG-Y 路径错误
+#### 未安装 segyio 或 SEG-Y 路径错误
 
 - 安装依赖：`pip install segyio`。
 - 确认文件存在：`ls /path/to/volume.sgy`。
@@ -1306,7 +1306,7 @@ preprocess:
 
 #### CLI 命令速查表
 
-> **注意：** `ground_roll_attenuation` 和 `multiples_attenuation` 的 `batch_evaluate.py` 需要 `openpyxl`。请先安装：`pip install openpyxl`。
+> **注意：** `ground_roll_attenuation` 和 `multiples_attenuation` 的 `batch_evaluate.py` 需要 openpyxl。请先安装：`pip install openpyxl`。
 
 ##### `random_noise_suppression`
 
@@ -1339,7 +1339,7 @@ python scripts/ground_roll_attenuation/train_denoise_unet.py \
   --config configs/ground_roll_attenuation/denoise_unet.yaml
 ```
 
-批量评估（需要 `openpyxl`）：
+批量评估（需要 openpyxl）：
 
 ```bash
 pip install openpyxl
@@ -1359,7 +1359,7 @@ python scripts/multiples_attenuation/train_denoise_unet.py \
   --config configs/multiples_attenuation/denoise_unet.yaml
 ```
 
-批量评估（需要 `openpyxl`）：
+批量评估（需要 openpyxl）：
 
 ```bash
 pip install openpyxl
