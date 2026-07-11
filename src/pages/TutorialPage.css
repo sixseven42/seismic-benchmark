@@ -16,6 +16,7 @@
   line-height: 1.8;
   font-size: 0.98rem;
   color: var(--text);
+  line-break: strict;
 }
 
 /* ---------- Typography ---------- */
