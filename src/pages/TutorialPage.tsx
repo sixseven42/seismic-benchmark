@@ -251,14 +251,16 @@ export default function TutorialPage() {
         const language = className?.replace('language-', '') || '';
         return (
           <div className="code-block-wrapper">
-            <div className="code-block-header">
-              {language && <span className="code-language">{language}</span>}
-              <CopyButton
-                text={String(children).replace(/\n$/, '')}
-                copyLabel={t.tutorial.copy}
-                copiedLabel={t.tutorial.copied}
-              />
-            </div>
+            {language && (
+              <div className="code-block-header">
+                <span className="code-language">{language}</span>
+                <CopyButton
+                  text={String(children).replace(/\n$/, '')}
+                  copyLabel={t.tutorial.copy}
+                  copiedLabel={t.tutorial.copied}
+                />
+              </div>
+            )}
             <pre className={className}>
               <code className={className}>{children}</code>
             </pre>
