@@ -11,6 +11,7 @@ import LeaderboardPage from './pages/LeaderboardPage';
 import BenchmarksPage from './pages/BenchmarksPage';
 import ModelsPage from './pages/ModelsPage';
 import PapersPage from './pages/PapersPage';
+import TutorialPage from './pages/TutorialPage';
 
 const TABS: { id: Tab; labelKey: keyof ReturnType<typeof useLanguage>['t']['nav'] }[] = [
   { id: 'overview', labelKey: 'overview' },
@@ -18,6 +19,7 @@ const TABS: { id: Tab; labelKey: keyof ReturnType<typeof useLanguage>['t']['nav'
   { id: 'benchmarks', labelKey: 'benchmarks' },
   { id: 'models', labelKey: 'models' },
   { id: 'papers', labelKey: 'papers' },
+  { id: 'tutorial', labelKey: 'tutorial' },
 ];
 
 function AppContent() {
@@ -157,6 +159,7 @@ function AppContent() {
               />
             }
           />
+          <Route path="/tutorial" element={<TutorialPage />} />
           <Route path="*" element={<Navigate to="/overview" replace />} />
         </Routes>
       </main>

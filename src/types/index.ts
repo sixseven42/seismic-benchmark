@@ -92,7 +92,7 @@ export interface AppData {
   papers: Paper[];
 }
 
-export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'models' | 'papers';
+export type Tab = 'overview' | 'leaderboard' | 'benchmarks' | 'models' | 'papers' | 'tutorial';
 
 export interface Filters {
   task: Task | 'all';

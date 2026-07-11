@@ -9,6 +9,7 @@ const translations = {
       benchmarks: 'Benchmarks',
       models: 'Models',
       papers: 'Papers',
+      tutorial: 'Tutorial',
       searchPlaceholder: 'Search...',
     },
     overview: {
@@ -133,6 +134,11 @@ const translations = {
       random_noise_suppression: 'Denoising (Random Noise)',
       first_arrival_picking: 'First Arrival Picking',
     },
+    tutorial: {
+      title: 'Tutorial',
+      subtitle: 'A hands-on guide to the seismic-benchmark-code repository.',
+      loading: 'Loading tutorial...',
+    },
   },
   zh: {
     nav: {
@@ -142,6 +148,7 @@ const translations = {
       benchmarks: '基准测试',
       models: '模型',
       papers: '论文',
+      tutorial: '教程',
       searchPlaceholder: '搜索...',
     },
     overview: {
@@ -265,6 +272,11 @@ const translations = {
       coherent_noise_suppression: '去噪（相干噪声）',
       random_noise_suppression: '去噪（随机噪声）',
       first_arrival_picking: '初至拾取',
+    },
+    tutorial: {
+      title: '教程',
+      subtitle: 'seismic-benchmark-code 仓库的实战指南。',
+      loading: '加载教程中...',
     },
   },
 } as const;
