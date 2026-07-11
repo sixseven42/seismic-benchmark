@@ -44,7 +44,7 @@ Optional but helpful:
 
 ### 1.4 Dependencies
 
-There is no centralized `requirements.txt` or `pyproject.toml` yet. Install the following packages manually:
+There is no centralized requirements.txt or pyproject.toml yet. Install the following packages manually:
 
 - torch
 - numpy
@@ -69,13 +69,13 @@ The repository is organized into self-contained directories. Each directory has 
 
 | Directory | Purpose |
 |-----------|---------|
-| `tools/` | Data utilities: I/O (`array_io.py`, `segy_read.py`), preprocessing (`preprocessing.py`), and patching (`patching.py`). |
-| `model/` | Neural network definitions and the `MODEL_REGISTRY`. Task-specific subpackages register their own models. Shared registration primitives live in `model/registry.py`; task-specific model files live in `model/<task>/`. |
-| `utils/` | Training infrastructure: datasets, losses, metrics, visualization, logging, optimizer/scheduler builders, training/evaluation loops, and checkpoint I/O. |
-| `configs/` | One YAML file per experiment. Hyper-parameters are never hard-coded in source. |
-| `scripts/` | CLI entry points for training (`train_*.py`) and inference (`inference_*.py`), plus bash launchers (`*.sh`). |
-| `results/` | Experiment outputs: checkpoints, logs, CSVs, and PNGs. This directory is gitignored. |
-| `memory/` | Project memory: design decisions, update log, techniques, and research references. |
+| tools/ | Data utilities: I/O (array_io.py, segy_read.py), preprocessing (preprocessing.py), and patching (patching.py). |
+| model/ | Neural network definitions and the MODEL_REGISTRY. Task-specific subpackages register their own models. Shared registration primitives live in model/registry.py; task-specific model files live in model/&lt;task&gt;/. |
+| utils/ | Training infrastructure: datasets, losses, metrics, visualization, logging, optimizer/scheduler builders, training/evaluation loops, and checkpoint I/O. |
+| configs/ | One YAML file per experiment. Hyper-parameters are never hard-coded in source. |
+| scripts/ | CLI entry points for training (`train_*.py`) and inference (`inference_*.py`), plus bash launchers (`*.sh`). |
+| results/ | Experiment outputs: checkpoints, logs, CSVs, and PNGs. This directory is gitignored. |
+| memory/ | Project memory: design decisions, update log, techniques, and research references. |
 
 ### 2.2 Registry + factory pattern
 
@@ -85,10 +85,10 @@ Each kind of component has its own registry and decorator:
 
 | Component | Registry file | Decorator | Factory |
 |-----------|---------------|-----------|---------|
-| Model | `model/registry.py` | `@register_model("name")` | `build_model(cfg)` |
-| Dataset | `utils/datasets.py` | `@register_dataset("name")` | `build_dataset(cfg)` |
-| Loss | `utils/losses.py` | `@register_loss("name")` | `build_loss(cfg)` |
-| Metric | `utils/metrics.py` | `@register_metric("name")` | `build_metrics(cfg)` |
+| Model | model/registry.py | `@register_model("name")` | `build_model(cfg)` |
+| Dataset | utils/datasets.py | `@register_dataset("name")` | `build_dataset(cfg)` |
+| Loss | utils/losses.py | `@register_loss("name")` | `build_loss(cfg)` |
+| Metric | utils/metrics.py | `@register_metric("name")` | `build_metrics(cfg)` |
 
 Every pluggable block in YAML follows the same shape:
 
@@ -144,13 +144,13 @@ model:
     base_channels: 32
 ```
 
-Note: model registration requires adding `from . import <file>  # noqa: F401` to `model/<task>/__init__.py` so the decorator runs at import time. The top-level `model/__init__.py` only exposes registry primitives (`MODEL_REGISTRY`, `register_model`, `build_model`) and a placeholder model; it does **not** import every concrete model file. Task-specific models are registered only when their task subpackage (`model/<task>/`) is imported, for example `from model.random_noise_suppression import build_model`.
+Note: model registration requires adding `from . import <file>  # noqa: F401` to `model/<task>/__init__.py` so the decorator runs at import time. The top-level model/__init__.py only exposes registry primitives (MODEL_REGISTRY, `register_model`, `build_model`) and a placeholder model; it does **not** import every concrete model file. Task-specific models are registered only when their task subpackage (model/&lt;task&gt;/) is imported, for example `from model.random_noise_suppression import build_model`.
 
 ### 2.3 Component-agnostic training scripts
 
-`scripts/train.py` is intentionally component-agnostic. It only parses CLI arguments, loads the YAML config, and wires up the factory functions. It never imports a concrete model, dataset, loss, or metric directly.
+scripts/train.py is intentionally component-agnostic. It only parses CLI arguments, loads the YAML config, and wires up the factory functions. It never imports a concrete model, dataset, loss, or metric directly.
 
-Task-specific scripts such as `scripts/random_noise_suppression/train_denoise_unet.py` follow the same pattern: parse CLI, load config, build components, and run the task-specific pipeline. All concrete behavior is driven by the YAML config.
+Task-specific scripts such as scripts/random_noise_suppression/train_denoise_unet.py follow the same pattern: parse CLI, load config, build components, and run the task-specific pipeline. All concrete behavior is driven by the YAML config.
 
 ---
 
@@ -166,7 +166,7 @@ The default config points to:
 data/SEG_45Shot_shots1-9.sgy
 ```
 
-relative to the repository root. This tutorial assumes the SEG-Y file is located at `data/SEG_45Shot_shots1-9.sgy` relative to the repo root. If your file is elsewhere, update the `data.segy.path` value in `configs/random_noise_suppression/denoise_unet.yaml` (or any other config) before training.
+relative to the repository root. This tutorial assumes the SEG-Y file is located at data/SEG_45Shot_shots1-9.sgy relative to the repo root. If your file is elsewhere, update the `data.segy.path` value in configs/random_noise_suppression/denoise_unet.yaml (or any other config) before training.
 
 ### 3.2 Train a model in one command
 
@@ -220,7 +220,7 @@ results/random_noise/random_noise_unet_base/
 └── config_used.yaml
 ```
 
-Checkpoints are saved every `ckpt_interval` epochs up to `epochs`. With the default config (`epochs: 200`, `ckpt_interval: 20`), the final periodic checkpoint is `epoch_0200.pt`.
+Checkpoints are saved every `ckpt_interval` epochs up to `epochs`. With the default config (`epochs: 200`, `ckpt_interval: 20`), the final periodic checkpoint is epoch_0200.pt.
 
 After inference, the output directory contains:
 
@@ -245,19 +245,19 @@ Training and inference scripts are not run automatically by this tutorial. Copy 
 
 ## Chapter 4: Complete End-to-End Example — Data and Preprocessing
 
-This chapter walks through the data and preprocessing stages of the random-noise suppression example. The YAML config used here is `configs/random_noise_suppression/denoise_unet.yaml`.
+This chapter walks through the data and preprocessing stages of the random-noise suppression example. The YAML config used here is configs/random_noise_suppression/denoise_unet.yaml.
 
 ### 4.1 Data format and loading
 
 #### SEG-Y reading
 
-The repository reads SEG-Y files via `tools/segy_read.py`. The function used for regular shot gathers is:
+The repository reads SEG-Y files via tools/segy_read.py. The function used for regular shot gathers is:
 
 ```python
 read_regular_shots(path, traces_per_shot, time_downsample=1)
 ```
 
-It returns a NumPy array of shape `(n_shots, n_traces, n_time)` and a dictionary of trace headers. Regularity is verified by checking that each shot slice shares a single `FieldRecord` (FFID) header value.
+It returns a NumPy array of shape `(n_shots, n_traces, n_time)` and a dictionary of trace headers. Regularity is verified by checking that each shot slice shares a single FieldRecord (FFID) header value.
 
 > **What is a shot gather?** A **shot gather** is a 2D image of seismic **traces** recorded by receivers from one seismic source (one shot). A **trace** is the recording from a single receiver. **FFID** (Field Record ID) is a SEG-Y header value that identifies one shot gather.
 
@@ -320,7 +320,7 @@ When a 2D conv model operates on a patch extracted from a single shot, the patch
 
 ### 4.2 Preprocessing pipeline
 
-The preprocessing block in `configs/random_noise_suppression/denoise_unet.yaml` defines the transformations applied to the raw volume before training and inference. The same values must be used in both stages.
+The preprocessing block in configs/random_noise_suppression/denoise_unet.yaml defines the transformations applied to the raw volume before training and inference. The same values must be used in both stages.
 
 ```yaml
 preprocess:
@@ -381,7 +381,7 @@ The example config uses `noise_kind: gaussian` and `snr_db: 5.0`. Smaller values
 
 #### Patching
 
-After normalization and noise injection, each shot is cut into overlapping 2D patches for the UNet. The repository uses `tools/patching.py`:
+After normalization and noise injection, each shot is cut into overlapping 2D patches for the UNet. The repository uses tools/patching.py:
 
 ```python
 patches, info = patchify_uniform(data, patch_size=(trace, time), overlap=0.0, output_ndim=3|4)
@@ -409,13 +409,13 @@ shot_split:
 
 The 9 shots are divided sequentially by FFID: the first 7 shots are used for training, the 8th for validation, and the 9th for testing. This prevents data leakage that could occur if patches from the same shot were placed in both train and test sets.
 
-> **Note:** The file name `SEG_45Shot_shots1-9.sgy` refers to the original 45-shot survey; the subset used here contains shots 1-9, which is why `n_shots = 9`.
+> **Note:** The file name SEG_45Shot_shots1-9.sgy refers to the original 45-shot survey; the subset used here contains shots 1-9, which is why `n_shots = 9`.
 
 If `shot_split` is omitted, the code falls back to a patch-level random split.
 
 ### 4.3 YAML Config Walkthrough
 
-The full config used for the random-noise suppression example is `configs/random_noise_suppression/denoise_unet.yaml`. Each top-level block maps directly to one stage of the pipeline. Values that affect preprocessing must be identical at training and inference time.
+The full config used for the random-noise suppression example is configs/random_noise_suppression/denoise_unet.yaml. Each top-level block maps directly to one stage of the pipeline. Values that affect preprocessing must be identical at training and inference time.
 
 #### Experiment block
 
@@ -507,9 +507,9 @@ model:
     depth: 4
 ```
 
-`type` must be a name registered in `MODEL_REGISTRY`. The file `model/random_noise_suppression/__init__.py` imports the task models so the decorators run. `params` is passed straight to the model constructor.
+`type` must be a name registered in MODEL_REGISTRY. The file model/random_noise_suppression/__init__.py imports the task models so the decorators run. `params` is passed straight to the model constructor.
 
-For the random-noise suppression task, the registered models include `unet`, `dncnn`, `res_unet`, and `atten_unet`. You can switch models by changing only `type` and, if necessary, the model-specific `params`. A `SCRN` config and shell scripts exist (`denoise_SCRN.yaml`, `train_denoise_SCRN.sh`, `inference_denoise_SCRN.sh`), but the model implementation is not currently present in `model/random_noise_suppression/`, so selecting `type: scrn` will raise a "model not registered" error.
+For the random-noise suppression task, the registered models include `unet`, `dncnn`, `res_unet`, and `atten_unet`. You can switch models by changing only `type` and, if necessary, the model-specific `params`. A `SCRN` config and shell scripts exist (denoise_SCRN.yaml, train_denoise_SCRN.sh, inference_denoise_SCRN.sh), but the model implementation is not currently present in model/random_noise_suppression/, so selecting `type: scrn` will raise a "model not registered" error.
 
 #### Loss, optimizer, and scheduler blocks
 
@@ -531,7 +531,7 @@ scheduler:
     min_lr: 1.0e-6
 ```
 
-- `loss` — registered in `LOSS_REGISTRY`. `mse` with `reduction: mean` is the standard choice for denoising.
+- `loss` — registered in LOSS_REGISTRY. `mse` with `reduction: mean` is the standard choice for denoising.
 - `optim` — registered in the optimizer builder. `adamw` here uses `lr=1e-4` and `weight_decay=1e-5`.
 - `scheduler` — cosine annealing from the optimizer's initial LR down to `min_lr`.
 
@@ -588,9 +588,9 @@ log:
 - `eval_interval` — how often to run validation evaluation.
 - `ckpt_interval` — how often to save periodic checkpoints (`epoch_*.pt`).
 - `vis_interval` — how often to save a random validation visualization.
-- `resume` — placeholder for a checkpoint path; the current `train_denoise_unet.py` script does not parse it from the CLI.
+- `resume` — placeholder for a checkpoint path; the current train_denoise_unet.py script does not parse it from the CLI.
 - `log_dir` — subdirectory under `output_dir / name` for text and CSV logs.
-- `plot_interval` — how often to redraw `loss_curve.png` and `metrics_curve.png`. Set to `0` to disable.
+- `plot_interval` — how often to redraw loss_curve.png and metrics_curve.png. Set to `0` to disable.
 
 #### Inference block
 
@@ -674,18 +674,18 @@ results/random_noise/random_noise_unet_base/
 └── config_used.yaml
 ```
 
-- `checkpoints/` — periodic checkpoints (`epoch_*.pt`) and `best.pt` (lowest validation loss). Checkpoints are saved every `ckpt_interval` epochs up to `epochs`; with the defaults this produces `epoch_0020.pt`, `epoch_0040.pt`, ..., `epoch_0200.pt`.
-- `logs/` — human-readable log, CSV histories, and auto-refreshed curve plots.
-- `visualizations/` — random validation samples saved every `vis_interval` epochs.
-- `config_used.yaml` — a copy of the resolved config for reproducibility.
+- checkpoints/ — periodic checkpoints (`epoch_*.pt`) and best.pt (lowest validation loss). Checkpoints are saved every `ckpt_interval` epochs up to `epochs`; with the defaults this produces epoch_0020.pt, epoch_0040.pt, ..., epoch_0200.pt.
+- logs/ — human-readable log, CSV histories, and auto-refreshed curve plots.
+- visualizations/ — random validation samples saved every `vis_interval` epochs.
+- config_used.yaml — a copy of the resolved config for reproducibility.
 
 #### Log files and curve images
 
-`logs/train_log.txt` contains timestamped one-line summaries per epoch. `logs/loss_history.csv` has columns `epoch, lr, train, val`, and `logs/metrics_history.csv` has columns `epoch, train_<metric>, val_<metric>`. The `TrainingLogger` rehydrates any existing CSVs when resuming, so curves stay continuous across restarts.
+logs/train_log.txt contains timestamped one-line summaries per epoch. logs/loss_history.csv has columns `epoch, lr, train, val`, and logs/metrics_history.csv has columns `epoch, train_<metric>, val_<metric>`. The `TrainingLogger` rehydrates any existing CSVs when resuming, so curves stay continuous across restarts.
 
 #### Resuming from a checkpoint
 
-Resuming is **not** supported via the CLI in the current `train_denoise_unet.py` script. The script only parses `--config`; it does not parse a `--resume` flag and will not restore an optimizer or scheduler state from a previous checkpoint. If you need to resume training, you must edit the script to call `load_checkpoint(...)` from `utils.train_utils` before the epoch loop and restore the optimizer/scheduler state manually.
+Resuming is **not** supported via the CLI in the current train_denoise_unet.py script. The script only parses `--config`; it does not parse a `--resume` flag and will not restore an optimizer or scheduler state from a previous checkpoint. If you need to resume training, you must edit the script to call `load_checkpoint(...)` from utils.train_utils before the epoch loop and restore the optimizer/scheduler state manually.
 
 #### Multi-GPU command
 
@@ -728,13 +728,13 @@ python scripts/random_noise_suppression/inference_denoise_unet.py \
 
 All overrides are optional. If omitted, the script falls back to the values in the `inference` block or the `preprocess` block. The available CLI arguments are:
 
-- `--checkpoint` — path to the `.pt` checkpoint (required if `inference.checkpoint` is not set).
+- `--checkpoint` — path to the .pt checkpoint (required if `inference.checkpoint` is not set).
 - `--output-dir` — directory for inference outputs.
 - `--n-viz-shots` — number of random shots to visualize.
 - `--seed` — random seed for shot selection and noise injection.
 - `--device` — inference device.
 - `--batch-size` — inference batch size.
-- `--save-npy` — save `input_shots.npy`, `pred_shots.npy`, and `target_shots.npy`.
+- `--save-npy` — save input_shots.npy, pred_shots.npy, and target_shots.npy.
 - `--noise-kind` — override `preprocess.noise_kind`.
 - `--snr-db` — override `preprocess.snr_db`.
 
@@ -753,13 +753,13 @@ The inference script performs the following steps on the test shots:
 
 #### Metric groups
 
-`metrics_summary.json` contains three groups of metrics:
+metrics_summary.json contains three groups of metrics:
 
 - `noisy` — the noisy input compared against the clean target. This is the baseline.
 - `denoised` — the model prediction compared against the clean target.
 - `delta` — the change in each metric from the noisy input to the denoised output (`denoised_metric - noisy_metric`), showing how much the model improved (or degraded) that metric. Positive values usually mean improvement.
 
-`metrics_per_shot.csv` contains the same metrics evaluated per shot, with columns prefixed by `noisy_`, `denoised_`, and `delta_`.
+metrics_per_shot.csv contains the same metrics evaluated per shot, with columns prefixed by `noisy_`, `denoised_`, and `delta_`.
 
 #### EB-WSE and FB-FRE
 
@@ -769,7 +769,7 @@ The binned diagnostics are enabled by `inference.binned_metrics.enabled`.
 
 - **FB-FRE (Frequency-Binned Fidelity and Recovery Evaluation)** estimates an effective frequency band from the reference spectrum, splits it into adaptive low/mid/high/very_high bands according to `band_ratios`, and computes NE and SNR per band. Output keys look like `fb_fre_low_ne`, `fb_fre_low_snr`, `fb_fre_low_energy_ratio`, and `fb_fre_low_frequency_range_hz`.
 
-Both metrics are computed on the normalized domain and written as mean values into `metrics_summary.json` under the `noisy` and `denoised` groups. Their deltas are also reported in the `delta` group.
+Both metrics are computed on the normalized domain and written as mean values into metrics_summary.json under the `noisy` and `denoised` groups. Their deltas are also reported in the `delta` group.
 
 #### Output files
 
@@ -788,21 +788,21 @@ results/random_noise/random_noise_unet_base/inference/
     └── target_shots.npy
 ```
 
-- `inference.log` — stdout and stderr from the inference run.
-- `metrics_summary.json` — mean scalar metrics and binned metrics for `noisy`, `denoised`, and `delta` groups.
-- `metrics_per_shot.csv` — per-shot scalar metrics.
+- inference.log — stdout and stderr from the inference run.
+- metrics_summary.json — mean scalar metrics and binned metrics for `noisy`, `denoised`, and `delta` groups.
+- metrics_per_shot.csv — per-shot scalar metrics.
 - `visualizations/shot_*.png` — side-by-side panels of input, prediction, target, and residual for each visualized shot.
-- `npy/` — optional NumPy arrays saved when `--save-npy` is passed.
+- npy/ — optional NumPy arrays saved when `--save-npy` is passed.
 
 ### 4.6 Batch Sweeps
 
 For systematic benchmarking, the repository provides shell launchers that sweep over noise kinds, SNR levels, and seeds without manual YAML edits.
 
-> **Note:** The sweep scripts are convenience helpers. Before running them, read the `.sh` file to understand the variables it defines (e.g., `NPROC_PER_NODE`, `TORCHRUN_EXTRA`, `STOP_ON_ERROR`) and confirm the generated experiment names and paths match what you expect.
+> **Note:** The sweep scripts are convenience helpers. Before running them, read the .sh file to understand the variables it defines (e.g., `NPROC_PER_NODE`, `TORCHRUN_EXTRA`, `STOP_ON_ERROR`) and confirm the generated experiment names and paths match what you expect.
 
-#### `train_denoise_unet.sh`
+#### train_denoise_unet.sh
 
-`scripts/random_noise_suppression/train_denoise_unet.sh` rewrites a temporary copy of the base config for each combination of noise kind, SNR, and seed, then launches `torchrun`.
+scripts/random_noise_suppression/train_denoise_unet.sh rewrites a temporary copy of the base config for each combination of noise kind, SNR, and seed, then launches `torchrun`.
 
 The editable block at the top of the script is:
 
@@ -822,9 +822,9 @@ The default sweep runs:
 
 Each run gets a unique experiment name such as `random_noise_unet_base_gaussian_snr5_seed42`, so outputs never collide.
 
-#### `inference_denoise_unet.sh`
+#### inference_denoise_unet.sh
 
-`scripts/random_noise_suppression/inference_denoise_unet.sh` mirrors the same sweep for inference. It loops over noise kinds, SNRs, and seeds, runs the inference script for each trained checkpoint, and then aggregates the results across seeds.
+scripts/random_noise_suppression/inference_denoise_unet.sh mirrors the same sweep for inference. It loops over noise kinds, SNRs, and seeds, runs the inference script for each trained checkpoint, and then aggregates the results across seeds.
 
 The default configuration block is:
 
@@ -839,7 +839,7 @@ SAVE_NPY=0                  # 1 = save .npy outputs, 0 = skip
 CHECKPOINT_NAME="best.pt"   # e.g. "best.pt" or "epoch_0049.pt"
 ```
 
-After the per-run inference loop finishes, the script aggregates the `metrics_summary.json` files from all seeds and writes a mean/standard-deviation summary to:
+After the per-run inference loop finishes, the script aggregates the metrics_summary.json files from all seeds and writes a mean/standard-deviation summary to:
 
 ```
 results/random_noise/random_noise_unet_base_<noise_kind>_snr<tag>_seed_stats/metrics_summary_mean_std.json
@@ -847,15 +847,15 @@ results/random_noise/random_noise_unet_base_<noise_kind>_snr<tag>_seed_stats/met
 
 The `<tag>` is `neg5` for `-5` dB and `5` for `5` dB, matching the training script naming convention.
 
-#### `run_all_random_noise_models.sh`
+#### run_all_random_noise_models.sh
 
-`scripts/random_noise_suppression/run_all_random_noise_models.sh` runs the full training and inference sweep for four model families sequentially:
+scripts/random_noise_suppression/run_all_random_noise_models.sh runs the full training and inference sweep for four model families sequentially:
 
 ```bash
 MODEL_LIST=("unet" "dncnn" "res_unet" "atten_unet")
 ```
 
-For each model, it looks for `scripts/random_noise_suppression/train_denoise_${model}.sh` and `scripts/random_noise_suppression/inference_denoise_${model}.sh`, runs the training sweep, and then runs the inference sweep. The script logs everything to `scripts/random_noise_suppression/run_all_random_noise_models.log`. If `STOP_ON_ERROR=1`, the script exits immediately when any stage fails.
+For each model, it looks for scripts/random_noise_suppression/train_denoise_${model}.sh and scripts/random_noise_suppression/inference_denoise_${model}.sh, runs the training sweep, and then runs the inference sweep. The script logs everything to scripts/random_noise_suppression/run_all_random_noise_models.log. If `STOP_ON_ERROR=1`, the script exits immediately when any stage fails.
 
 This is a convenient way to produce a full benchmark across architectures, but it takes a long time because each stage runs sequentially.
 
@@ -889,10 +889,10 @@ The repository ships with four task families. They all use the same registry + f
 
 | Task | Input Data | Entry Scripts | Config Directory | Key Differences |
 |------|------------|---------------|------------------|-----------------|
-| `random_noise_suppression` | Clean volume + synthetic noise | `scripts/random_noise_suppression/train_denoise_*.py`, `inference_denoise_*.py` | `configs/random_noise_suppression/` | Noise is injected with `add_noise`; metrics compare the denoised output to the clean target. |
-| `ground_roll_attenuation` | Paired noisy / noise-label volumes | `scripts/ground_roll_attenuation/train_denoise_*.py`, `batch_evaluate.py` | `configs/ground_roll_attenuation/` | No synthetic noise injection; the model predicts the additive noise label; the `data` block uses `segy_pair` (or `npy_pair` / `mat_pair`). |
-| `multiples_attenuation` | Paired noisy / noise-label volumes | `scripts/multiples_attenuation/train_denoise_*.py`, `batch_evaluate.py` | `configs/multiples_attenuation/` | Same shape as ground-roll attenuation; task-specific data and semantics. |
-| `interpolation` | Single volume + trace masking | `scripts/interpolation/train_interpolation_unet.py`, `inference_interpolation.py` | `configs/interpolation/` | `mask_traces` simulates missing traces; the model reconstructs the full shot gather. |
+| `random_noise_suppression` | Clean volume + synthetic noise | `scripts/random_noise_suppression/train_denoise_*.py`, `inference_denoise_*.py` | configs/random_noise_suppression/ | Noise is injected with `add_noise`; metrics compare the denoised output to the clean target. |
+| `ground_roll_attenuation` | Paired noisy / noise-label volumes | `scripts/ground_roll_attenuation/train_denoise_*.py`, batch_evaluate.py | configs/ground_roll_attenuation/ | No synthetic noise injection; the model predicts the additive noise label; the `data` block uses `segy_pair` (or `npy_pair` / `mat_pair`). |
+| `multiples_attenuation` | Paired noisy / noise-label volumes | `scripts/multiples_attenuation/train_denoise_*.py`, batch_evaluate.py | configs/multiples_attenuation/ | Same shape as ground-roll attenuation; task-specific data and semantics. |
+| `interpolation` | Single volume + trace masking | scripts/interpolation/train_interpolation_unet.py, inference_interpolation.py | configs/interpolation/ | `mask_traces` simulates missing traces; the model reconstructs the full shot gather. |
 
 ### 5.2 random_noise_suppression
 
@@ -904,14 +904,14 @@ Ground-roll attenuation is trained on **paired volumes**: a noisy input volume a
 
 Train a U-Net baseline:
 
-> **Warning:** The default `configs/ground_roll_attenuation/denoise_unet.yaml` contains absolute paths to data that is not included in the repository. Replace `input_path` and `target_path` with paths to your own paired volumes before running the command below.
+> **Warning:** The default configs/ground_roll_attenuation/denoise_unet.yaml contains absolute paths to data that is not included in the repository. Replace `input_path` and `target_path` with paths to your own paired volumes before running the command below.
 
 ```bash
 python scripts/ground_roll_attenuation/train_denoise_unet.py \
   --config configs/ground_roll_attenuation/denoise_unet.yaml
 ```
 
-After training, run the batch evaluator on the experiment directory tree. `batch_evaluate.py` requires openpyxl; install it first if you have not already:
+After training, run the batch evaluator on the experiment directory tree. batch_evaluate.py requires openpyxl; install it first if you have not already:
 
 ```bash
 pip install openpyxl
@@ -925,7 +925,7 @@ python scripts/ground_roll_attenuation/batch_evaluate.py \
   --batch_size 8
 ```
 
-`batch_evaluate.py` scans each experiment directory, loads `checkpoints/best.pt`, runs inference on the held-out `test_set/`, and writes an Excel workbook with one sheet per noise level. The workbook compares raw-input metrics (noisy vs reference) and denoised metrics (model output vs reference).
+batch_evaluate.py scans each experiment directory, loads checkpoints/best.pt, runs inference on the held-out test_set/, and writes an Excel workbook with one sheet per noise level. The workbook compares raw-input metrics (noisy vs reference) and denoised metrics (model output vs reference).
 
 The ground-roll config uses a `data.segy_pair` block (NPY/MAT variants are `npy_pair` / `mat_pair`):
 
@@ -946,14 +946,14 @@ Multiples attenuation follows the same paired-volume setup as ground-roll attenu
 
 Train a U-Net baseline:
 
-> **Warning:** The default `configs/multiples_attenuation/denoise_unet.yaml` contains absolute paths to data that is not included in the repository. Replace `input_path` and `target_path` with paths to your own paired volumes before running the command below.
+> **Warning:** The default configs/multiples_attenuation/denoise_unet.yaml contains absolute paths to data that is not included in the repository. Replace `input_path` and `target_path` with paths to your own paired volumes before running the command below.
 
 ```bash
 python scripts/multiples_attenuation/train_denoise_unet.py \
   --config configs/multiples_attenuation/denoise_unet.yaml
 ```
 
-Run the batch evaluator. `batch_evaluate.py` requires openpyxl:
+Run the batch evaluator. batch_evaluate.py requires openpyxl:
 
 ```bash
 pip install openpyxl
@@ -973,7 +973,7 @@ Interpolation trains a model to reconstruct missing traces. A single volume is l
 
 Train a U-Net baseline with uniform 50% missing traces:
 
-> **Warning:** The default `configs/interpolation/interpolation_unet.yaml` contains absolute paths to a SEG-Y volume that is not included in the repository. Update `data.segy.path` (or the active format block) to point to your own volume before running the command below.
+> **Warning:** The default configs/interpolation/interpolation_unet.yaml contains absolute paths to a SEG-Y volume that is not included in the repository. Update `data.segy.path` (or the active format block) to point to your own volume before running the command below.
 
 ```bash
 python scripts/interpolation/train_interpolation_unet.py \
@@ -982,7 +982,7 @@ python scripts/interpolation/train_interpolation_unet.py \
   --mask-ratio 0.5
 ```
 
-The training script appends the masking parameters to the experiment name, so the output directory for the run above becomes `results/interp_unet_base_uniform_miss50/`.
+The training script appends the masking parameters to the experiment name, so the output directory for the run above becomes results/interp_unet_base_uniform_miss50/.
 
 Run inference with the masked checkpoint:
 
@@ -1012,7 +1012,7 @@ All pluggable components are added through the registry + factory pattern descri
 
 ### 6.1 Adding a New Model
 
-Models live in `model/<task>/` and are registered with the `MODEL_REGISTRY`.
+Models live in model/&lt;task&gt;/ and are registered with the MODEL_REGISTRY.
 
 Steps:
 
@@ -1056,11 +1056,11 @@ model:
     base_channels: 32
 ```
 
-The same pattern applies to `model/ground_roll_attenuation/`, `model/multiples_attenuation/`, and `model/interpolation/`. Note that the top-level `model/__init__.py` does **not** import every task; each task subpackage has its own registry view, so scripts import `build_model` from the appropriate task (e.g., `from model.ground_roll_attenuation import build_model`).
+The same pattern applies to model/ground_roll_attenuation/, model/multiples_attenuation/, and model/interpolation/. Note that the top-level model/__init__.py does **not** import every task; each task subpackage has its own registry view, so scripts import `build_model` from the appropriate task (e.g., `from model.ground_roll_attenuation import build_model`).
 
 ### 6.2 Adding a New Loss
 
-Losses are registered in `utils/losses.py`.
+Losses are registered in utils/losses.py.
 
 Steps:
 
@@ -1097,7 +1097,7 @@ loss:
 
 ### 6.3 Adding a New Metric
 
-Metrics are registered in `utils/metrics.py`.
+Metrics are registered in utils/metrics.py.
 
 Steps:
 
@@ -1136,7 +1136,7 @@ metrics:
 
 ### 6.4 Adding a New Dataset
 
-Dataset classes live in `utils/datasets.py` and inherit from `BaseArrayDataset`.
+Dataset classes live in utils/datasets.py and inherit from `BaseArrayDataset`.
 
 Required overrides:
 
@@ -1181,13 +1181,13 @@ data:
 
 ### 6.5 Adding a New Preprocessing Step
 
-New preprocessing functions should be added to `tools/preprocessing.py` as pure NumPy operations on `(n_shots, n_traces, n_time)` or `(n_traces, n_time)`.
+New preprocessing functions should be added to tools/preprocessing.py as pure NumPy operations on `(n_shots, n_traces, n_time)` or `(n_traces, n_time)`.
 
 Steps:
 
 1. Implement the function and, if the step is optional, add it to the `skip` mechanism in the task-specific training script.
 2. Add the configuration field to the YAML `preprocess` block.
-3. Call the function from the task-specific script's preprocessing function (e.g., `_preprocess_shots` in `scripts/interpolation/train_interpolation_unet.py`).
+3. Call the function from the task-specific script's preprocessing function (e.g., `_preprocess_shots` in scripts/interpolation/train_interpolation_unet.py).
 
 Example:
 
@@ -1224,13 +1224,13 @@ When adding a step that changes the amplitude scale, remember to update `normali
 **Checkpoint not found / path issues**
 
 - Verify that the checkpoint file exists. For the random-noise example the default is `results/random_noise/<experiment.name>/checkpoints/best.pt`.
-- For `ground_roll_attenuation` and `multiples_attenuation`, `batch_evaluate.py` requires both `checkpoints/best.pt` and a `test_set/` directory in every experiment directory it scans.
+- For `ground_roll_attenuation` and `multiples_attenuation`, batch_evaluate.py requires both checkpoints/best.pt and a test_set/ directory in every experiment directory it scans.
 - If you train interpolation with `--mask-mode` / `--mask-ratio`, the experiment name is auto-suffixed (e.g., `interp_unet_base_uniform_miss50`), so the checkpoint path changes accordingly.
 
 **segyio not installed or SEG-Y path wrong**
 
 - Install the dependency: `pip install segyio`.
-- Confirm the file exists: `ls /path/to/volume.sgy`.
+- Confirm the file exists: ls /path/to/volume.sgy.
 - Check that `traces_per_shot` and `time_downsample` in the config match the actual file geometry.
 - For paired tasks, the noisy input and the noise label must have the same trace count, sample count, and FFID ordering.
 
@@ -1268,7 +1268,7 @@ When adding a step that changes the amplitude scale, remember to update `normali
 
 #### CLI command cheat sheet
 
-> **Note:** `batch_evaluate.py` for `ground_roll_attenuation` and `multiples_attenuation` requires openpyxl. Install it first: `pip install openpyxl`.
+> **Note:** batch_evaluate.py for `ground_roll_attenuation` and `multiples_attenuation` requires openpyxl. Install it first: `pip install openpyxl`.
 
 ##### `random_noise_suppression`
 
@@ -1374,10 +1374,10 @@ python scripts/interpolation/inference_interpolation.py \
 
 | Kind | Decorator | Base class | Factory | Registry |
 |------|-----------|------------|---------|----------|
-| Model | `@register_model("name")` | `nn.Module` | `build_model(cfg)` | `MODEL_REGISTRY` |
-| Loss | `@register_loss("name")` | `BaseLoss` | `build_loss(cfg)` | `LOSS_REGISTRY` |
-| Metric | `@register_metric("name")` | `BaseMetric` | `build_metrics(cfg_list)` | `METRIC_REGISTRY` |
-| Dataset | `@register_dataset("name")` | `BaseArrayDataset` | `build_dataset(cfg)` (called internally by the training script) | `DATASET_REGISTRY` |
+| Model | `@register_model("name")` | `nn.Module` | `build_model(cfg)` | MODEL_REGISTRY |
+| Loss | `@register_loss("name")` | `BaseLoss` | `build_loss(cfg)` | LOSS_REGISTRY |
+| Metric | `@register_metric("name")` | `BaseMetric` | `build_metrics(cfg_list)` | METRIC_REGISTRY |
+| Dataset | `@register_dataset("name")` | `BaseArrayDataset` | `build_dataset(cfg)` (called internally by the training script) | DATASET_REGISTRY |
 
 #### Metric arguments cheat sheet
 

@@ -49,7 +49,7 @@
 <a id="1-4-dependencies"></a>
 ### 1.4 依赖
 
-目前尚无统一的 `requirements.txt` 或 `pyproject.toml`。请手动安装以下包：
+目前尚无统一的 requirements.txt 或 pyproject.toml。请手动安装以下包：
 
 - torch
 - numpy
@@ -76,13 +76,13 @@ pip install torch numpy matplotlib pyyaml segyio scipy
 
 | 目录 | 用途 |
 |------|------|
-| `tools/` | 数据工具：I/O（`array_io.py`、`segy_read.py`）、预处理（`preprocessing.py`）和分块（`patching.py`）。 |
-| `model/` | 神经网络定义和 `MODEL_REGISTRY`。任务级子包负责注册各自的模型；共享注册原语位于 `model/registry.py`；任务特定模型文件位于 `model/<task>/`。 |
-| `utils/` | 训练基础设施：数据集、损失、指标、可视化、日志、优化器/调度器构建器、训练/评估循环和检查点 I/O。 |
-| `configs/` | 每个实验对应一个 YAML 文件。超参数绝不硬编码在源码中。 |
-| `scripts/` | 训练（`train_*.py`）和推理（`inference_*.py`）的 CLI 入口，以及 Bash 启动脚本（`*.sh`）。 |
-| `results/` | 实验输出：检查点、日志、CSV 和 PNG。该目录被 Git 忽略。 |
-| `memory/` | 项目记忆：设计决策、更新日志、技术记录和研究参考。 |
+| tools/ | 数据工具：I/O（array_io.py、segy_read.py）、预处理（preprocessing.py）和分块（patching.py）。 |
+| model/ | 神经网络定义和 MODEL_REGISTRY。任务级子包负责注册各自的模型；共享注册原语位于 model/registry.py；任务特定模型文件位于 model/&lt;task&gt;/。 |
+| utils/ | 训练基础设施：数据集、损失、指标、可视化、日志、优化器/调度器构建器、训练/评估循环和检查点 I/O。 |
+| configs/ | 每个实验对应一个 YAML 文件。超参数绝不硬编码在源码中。 |
+| scripts/ | 训练（`train_*.py`）和推理（`inference_*.py`）的 CLI 入口，以及 Bash 启动脚本（`*.sh`）。 |
+| results/ | 实验输出：检查点、日志、CSV 和 PNG。该目录被 Git 忽略。 |
+| memory/ | 项目记忆：设计决策、更新日志、技术记录和研究参考。 |
 
 <a id="2-2-registry-factory-pattern"></a>
 ### 2.2 注册表 + 工厂模式
@@ -93,10 +93,10 @@ pip install torch numpy matplotlib pyyaml segyio scipy
 
 | 组件 | 注册表文件 | 装饰器 | 工厂函数 |
 |------|-----------|--------|---------|
-| 模型 | `model/registry.py` | `@register_model("name")` | `build_model(cfg)` |
-| 数据集 | `utils/datasets.py` | `@register_dataset("name")` | `build_dataset(cfg)` |
-| 损失 | `utils/losses.py` | `@register_loss("name")` | `build_loss(cfg)` |
-| 指标 | `utils/metrics.py` | `@register_metric("name")` | `build_metrics(cfg)` |
+| 模型 | model/registry.py | `@register_model("name")` | `build_model(cfg)` |
+| 数据集 | utils/datasets.py | `@register_dataset("name")` | `build_dataset(cfg)` |
+| 损失 | utils/losses.py | `@register_loss("name")` | `build_loss(cfg)` |
+| 指标 | utils/metrics.py | `@register_metric("name")` | `build_metrics(cfg)` |
 
 YAML 中每个可插拔块都采用相同格式：
 
@@ -152,14 +152,14 @@ model:
     base_channels: 32
 ```
 
-注意：模型注册需要在 `model/<task>/__init__.py` 中添加 `from . import <file>  # noqa: F401`，以便装饰器在导入时执行。顶层 `model/__init__.py` 只暴露注册原语（`MODEL_REGISTRY`、`register_model`、`build_model`）和占位模型，它**不会**导入每一个具体模型文件。任务特定模型只有在导入对应的任务子包时才会注册，例如 `from model.random_noise_suppression import build_model`。
+注意：模型注册需要在 `model/<task>/__init__.py` 中添加 `from . import <file>  # noqa: F401`，以便装饰器在导入时执行。顶层 model/__init__.py 只暴露注册原语（MODEL_REGISTRY、`register_model`、`build_model`）和占位模型，它**不会**导入每一个具体模型文件。任务特定模型只有在导入对应的任务子包时才会注册，例如 `from model.random_noise_suppression import build_model`。
 
 <a id="2-3-component-agnostic-training-scripts"></a>
 ### 2.3 与组件无关的训练脚本
 
-`scripts/train.py` 刻意保持与组件无关。它只解析 CLI 参数、加载 YAML 配置并连接工厂函数。它绝不直接导入具体模型、数据集、损失或指标。
+scripts/train.py 刻意保持与组件无关。它只解析 CLI 参数、加载 YAML 配置并连接工厂函数。它绝不直接导入具体模型、数据集、损失或指标。
 
-任务特定脚本（如 `scripts/random_noise_suppression/train_denoise_unet.py`）遵循相同模式：解析 CLI、加载配置、构建组件并运行任务特定流程。所有具体行为由 YAML 配置驱动。
+任务特定脚本（如 scripts/random_noise_suppression/train_denoise_unet.py）遵循相同模式：解析 CLI、加载配置、构建组件并运行任务特定流程。所有具体行为由 YAML 配置驱动。
 
 ---
 
@@ -177,7 +177,7 @@ model:
 data/SEG_45Shot_shots1-9.sgy
 ```
 
-相对于仓库根目录。本教程假设 SEG-Y 文件位于 `data/SEG_45Shot_shots1-9.sgy`。如果你的文件在其他位置，请在训练前更新 `configs/random_noise_suppression/denoise_unet.yaml`（或其他任何配置）中的 `data.segy.path` 值。
+相对于仓库根目录。本教程假设 SEG-Y 文件位于 data/SEG_45Shot_shots1-9.sgy。如果你的文件在其他位置，请在训练前更新 configs/random_noise_suppression/denoise_unet.yaml（或其他任何配置）中的 `data.segy.path` 值。
 
 <a id="3-2-train-a-model-in-one-command"></a>
 ### 3.2 单命令训练模型
@@ -234,7 +234,7 @@ results/random_noise/random_noise_unet_base/
 └── config_used.yaml
 ```
 
-检查点每隔 `ckpt_interval` 轮保存一次，直到 `epochs` 轮。使用默认配置（`epochs: 200`，`ckpt_interval: 20`）时，最终的周期性检查点是 `epoch_0200.pt`。
+检查点每隔 `ckpt_interval` 轮保存一次，直到 `epochs` 轮。使用默认配置（`epochs: 200`，`ckpt_interval: 20`）时，最终的周期性检查点是 epoch_0200.pt。
 
 推理完成后，输出目录包含：
 
@@ -261,20 +261,20 @@ results/random_noise/random_noise_unet_base/inference/
 <a id="chapter-4-complete-end-to-end-example-data-and-preprocessing"></a>
 ## 第 4 章：完整端到端示例 — 数据与预处理
 
-本章逐步讲解随机噪声压制示例中的数据与预处理阶段。这里使用的 YAML 配置是 `configs/random_noise_suppression/denoise_unet.yaml`。
+本章逐步讲解随机噪声压制示例中的数据与预处理阶段。这里使用的 YAML 配置是 configs/random_noise_suppression/denoise_unet.yaml。
 
 <a id="4-1-data-format-and-loading"></a>
 ### 4.1 数据格式与加载
 
 #### SEG-Y 读取
 
-仓库通过 `tools/segy_read.py` 读取 SEG-Y 文件。用于规则炮集的函数是：
+仓库通过 tools/segy_read.py 读取 SEG-Y 文件。用于规则炮集的函数是：
 
 ```python
 read_regular_shots(path, traces_per_shot, time_downsample=1)
 ```
 
-它返回形状为 `(n_shots, n_traces, n_time)` 的 NumPy 数组，以及一个道头字典。通过检查每个炮集切片是否共享同一个 `FieldRecord`（FFID）道头值来验证规则性。
+它返回形状为 `(n_shots, n_traces, n_time)` 的 NumPy 数组，以及一个道头字典。通过检查每个炮集切片是否共享同一个 FieldRecord（FFID）道头值来验证规则性。
 
 > **什么是炮集？** 炮集是由接收点从一个震源（一炮）记录到的地震道组成的二维图像。**地震道**是一个接收点的记录。**FFID**（Field Record ID）是 SEG-Y 道头中标识一个炮集的值。
 
@@ -338,7 +338,7 @@ python -c "import scipy.io; print(list(scipy.io.loadmat('data/SEG_45Shot_shots1-
 <a id="4-2-preprocessing-pipeline"></a>
 ### 4.2 预处理流程
 
-`configs/random_noise_suppression/denoise_unet.yaml` 中的 `preprocess` 块定义了训练和推理前应用于原始数据体的变换。两个阶段必须使用相同的值。
+configs/random_noise_suppression/denoise_unet.yaml 中的 `preprocess` 块定义了训练和推理前应用于原始数据体的变换。两个阶段必须使用相同的值。
 
 ```yaml
 preprocess:
@@ -399,7 +399,7 @@ SNR_dB = 10 * log10(var_signal / var_noise)
 
 #### 分块
 
-归一化和加噪之后，每个炮集被切分成重叠的二维分块，供 UNet 使用。仓库使用 `tools/patching.py`：
+归一化和加噪之后，每个炮集被切分成重叠的二维分块，供 UNet 使用。仓库使用 tools/patching.py：
 
 ```python
 patches, info = patchify_uniform(data, patch_size=(trace, time), overlap=0.0, output_ndim=3|4)
@@ -427,14 +427,14 @@ shot_split:
 
 9 个炮集按 FFID 顺序划分：前 7 炮用于训练，第 8 炮用于验证，第 9 炮用于测试。这避免了将同一炮集的分块同时放入训练集和测试集所造成的数据泄漏。
 
-> **注意：** 文件名 `SEG_45Shot_shots1-9.sgy` 指原始 45 炮调查；这里使用的子集包含第 1 至第 9 炮，因此 `n_shots = 9`。
+> **注意：** 文件名 SEG_45Shot_shots1-9.sgy 指原始 45 炮调查；这里使用的子集包含第 1 至第 9 炮，因此 `n_shots = 9`。
 
 如果省略 `shot_split`，代码会回退到按分块随机划分。
 
 <a id="4-3-yaml-config-walkthrough"></a>
 ### 4.3 YAML 配置详解
 
-随机噪声压制示例使用的完整配置是 `configs/random_noise_suppression/denoise_unet.yaml`。每个顶层块直接对应流程中的一个阶段。影响预处理的值在训练与推理时必须完全一致。
+随机噪声压制示例使用的完整配置是 configs/random_noise_suppression/denoise_unet.yaml。每个顶层块直接对应流程中的一个阶段。影响预处理的值在训练与推理时必须完全一致。
 
 #### `experiment` 块
 
@@ -526,9 +526,9 @@ model:
     depth: 4
 ```
 
-`type` 必须是 `MODEL_REGISTRY` 中注册的名称。文件 `model/random_noise_suppression/__init__.py` 导入任务模型，使装饰器执行。`params` 直接传给模型构造函数。
+`type` 必须是 MODEL_REGISTRY 中注册的名称。文件 model/random_noise_suppression/__init__.py 导入任务模型，使装饰器执行。`params` 直接传给模型构造函数。
 
-对于随机噪声压制任务，已注册模型包括 `unet`、`dncnn`、`res_unet` 和 `atten_unet`。你只需修改 `type`（必要时再修改模型特定的 `params`）即可切换模型。SCRN 配置与 Shell 脚本已存在（`denoise_SCRN.yaml`、`train_denoise_SCRN.sh`、`inference_denoise_SCRN.sh`），但 `model/random_noise_suppression/` 中目前没有对应实现，因此选择 `type: scrn` 会抛出“模型未注册”错误。
+对于随机噪声压制任务，已注册模型包括 `unet`、`dncnn`、`res_unet` 和 `atten_unet`。你只需修改 `type`（必要时再修改模型特定的 `params`）即可切换模型。SCRN 配置与 Shell 脚本已存在（denoise_SCRN.yaml、train_denoise_SCRN.sh、inference_denoise_SCRN.sh），但 model/random_noise_suppression/ 中目前没有对应实现，因此选择 `type: scrn` 会抛出“模型未注册”错误。
 
 #### `loss`、`optim` 和 `scheduler` 块
 
@@ -550,7 +550,7 @@ scheduler:
     min_lr: 1.0e-6
 ```
 
-- `loss` — 在 `LOSS_REGISTRY` 中注册。去噪通常选择 `mse` 且 `reduction: mean`。
+- `loss` — 在 LOSS_REGISTRY 中注册。去噪通常选择 `mse` 且 `reduction: mean`。
 - `optim` — 在优化器构建器中注册。此处 `adamw` 使用 `lr=1e-4` 和 `weight_decay=1e-5`。
 - `scheduler` — 从优化器初始学习率下降到 `min_lr` 的余弦退火。
 
@@ -607,9 +607,9 @@ log:
 - `eval_interval` — 多久运行一次验证评估。
 - `ckpt_interval` — 保存周期性检查点（`epoch_*.pt`）的频率。
 - `vis_interval` — 保存随机验证可视化的频率。
-- `resume` — 检查点路径占位符；当前 `train_denoise_unet.py` 脚本不会从 CLI 解析它。
+- `resume` — 检查点路径占位符；当前 train_denoise_unet.py 脚本不会从 CLI 解析它。
 - `log_dir` — `output_dir / name` 下存放文本和 CSV 日志的子目录。
-- `plot_interval` — 重绘 `loss_curve.png` 和 `metrics_curve.png` 的频率。设为 `0` 禁用。
+- `plot_interval` — 重绘 loss_curve.png 和 metrics_curve.png 的频率。设为 `0` 禁用。
 
 #### `inference` 块
 
@@ -694,18 +694,18 @@ results/random_noise/random_noise_unet_base/
 └── config_used.yaml
 ```
 
-- `checkpoints/` — 周期性检查点（`epoch_*.pt`）和验证损失最低的 `best.pt`。检查点每隔 `ckpt_interval` 轮保存一次，直到 `epochs` 轮；使用默认值会生成 `epoch_0020.pt`、`epoch_0040.pt`、...、`epoch_0200.pt`。
-- `logs/` — 人类可读的日志、CSV 历史记录以及自动刷新的曲线图。
-- `visualizations/` — 每隔 `vis_interval` 轮保存的随机验证样本。
-- `config_used.yaml` — 解析后配置的副本，用于可复现。
+- checkpoints/ — 周期性检查点（`epoch_*.pt`）和验证损失最低的 best.pt。检查点每隔 `ckpt_interval` 轮保存一次，直到 `epochs` 轮；使用默认值会生成 epoch_0020.pt、epoch_0040.pt、...、epoch_0200.pt。
+- logs/ — 人类可读的日志、CSV 历史记录以及自动刷新的曲线图。
+- visualizations/ — 每隔 `vis_interval` 轮保存的随机验证样本。
+- config_used.yaml — 解析后配置的副本，用于可复现。
 
 #### 日志文件与曲线图
 
-`logs/train_log.txt` 包含每轮带时间戳的一行摘要。`logs/loss_history.csv` 的列为 `epoch, lr, train, val`，`logs/metrics_history.csv` 的列为 `epoch, train_<metric>, val_<metric>`。`TrainingLogger` 在恢复时会重新加载已有 CSV，因此曲线在重启后保持连续。
+logs/train_log.txt 包含每轮带时间戳的一行摘要。logs/loss_history.csv 的列为 `epoch, lr, train, val`，logs/metrics_history.csv 的列为 `epoch, train_<metric>, val_<metric>`。`TrainingLogger` 在恢复时会重新加载已有 CSV，因此曲线在重启后保持连续。
 
 #### 从检查点恢复
 
-当前 `train_denoise_unet.py` 脚本不支持通过 CLI 恢复。脚本只解析 `--config`，不解析 `--resume` 标志，也不会从之前的检查点恢复优化器或学习率调度器状态。如果你需要恢复训练，必须编辑脚本，在轮循环前调用 `utils.train_utils` 中的 `load_checkpoint(...)`，并手动恢复优化器/调度器状态。
+当前 train_denoise_unet.py 脚本不支持通过 CLI 恢复。脚本只解析 `--config`，不解析 `--resume` 标志，也不会从之前的检查点恢复优化器或学习率调度器状态。如果你需要恢复训练，必须编辑脚本，在轮循环前调用 utils.train_utils 中的 `load_checkpoint(...)`，并手动恢复优化器/调度器状态。
 
 #### 多 GPU 命令
 
@@ -749,13 +749,13 @@ python scripts/random_noise_suppression/inference_denoise_unet.py \
 
 所有覆盖项都是可选的。如果省略，脚本会回退到 `inference` 块或 `preprocess` 块中的值。可用的 CLI 参数包括：
 
-- `--checkpoint` — `.pt` 检查点路径（如果 `inference.checkpoint` 未设置则为必填）。
+- `--checkpoint` — .pt 检查点路径（如果 `inference.checkpoint` 未设置则为必填）。
 - `--output-dir` — 推理输出目录。
 - `--n-viz-shots` — 要可视化的随机炮集数量。
 - `--seed` — 炮集选择和噪声注入的随机种子。
 - `--device` — 推理设备。
 - `--batch-size` — 推理批次大小。
-- `--save-npy` — 保存 `input_shots.npy`、`pred_shots.npy` 和 `target_shots.npy`。
+- `--save-npy` — 保存 input_shots.npy、pred_shots.npy 和 target_shots.npy。
 - `--noise-kind` — 覆盖 `preprocess.noise_kind`。
 - `--snr-db` — 覆盖 `preprocess.snr_db`。
 
@@ -774,13 +774,13 @@ python scripts/random_noise_suppression/inference_denoise_unet.py \
 
 #### 指标分组
 
-`metrics_summary.json` 包含三组指标：
+metrics_summary.json 包含三组指标：
 
 - `noisy` — 含噪输入与干净目标对比。这是基线。
 - `denoised` — 模型预测与干净目标对比。
 - `delta` — 从含噪输入到去噪输出的每个指标变化（`denoised_metric - noisy_metric`），表示模型在该指标上改善（或恶化）的程度。正值通常表示改善。
 
-`metrics_per_shot.csv` 包含按炮集计算的相同指标，列名以 `noisy_`、`denoised_` 和 `delta_` 为前缀。
+metrics_per_shot.csv 包含按炮集计算的相同指标，列名以 `noisy_`、`denoised_` 和 `delta_` 为前缀。
 
 #### EB-WSE 与 FB-FRE
 
@@ -790,7 +790,7 @@ python scripts/random_noise_suppression/inference_denoise_unet.py \
 
 - **FB-FRE（频率分箱保真度与恢复评估）**从参考频谱估计有效频带，按 `band_ratios` 拆分为自适应低/中/高/甚高频带，并逐频带计算 NE 和 SNR。输出键形如 `fb_fre_low_ne`、`fb_fre_low_snr`、`fb_fre_low_energy_ratio` 和 `fb_fre_low_frequency_range_hz`。
 
-两个指标都在归一化域计算，并以均值形式写入 `metrics_summary.json` 的 `noisy` 和 `denoised` 组。它们的差值也报告在 `delta` 组中。
+两个指标都在归一化域计算，并以均值形式写入 metrics_summary.json 的 `noisy` 和 `denoised` 组。它们的差值也报告在 `delta` 组中。
 
 #### 输出文件
 
@@ -809,22 +809,22 @@ results/random_noise/random_noise_unet_base/inference/
     └── target_shots.npy
 ```
 
-- `inference.log` — 推理运行的标准输出和标准错误。
-- `metrics_summary.json` — `noisy`、`denoised` 和 `delta` 组的标量指标与分箱指标均值。
-- `metrics_per_shot.csv` — 逐炮标量指标。
+- inference.log — 推理运行的标准输出和标准错误。
+- metrics_summary.json — `noisy`、`denoised` 和 `delta` 组的标量指标与分箱指标均值。
+- metrics_per_shot.csv — 逐炮标量指标。
 - `visualizations/shot_*.png` — 每个可视化炮集的输入、预测、目标和残差并排面板。
-- `npy/` — 传入 `--save-npy` 时保存的可选 NumPy 数组。
+- npy/ — 传入 `--save-npy` 时保存的可选 NumPy 数组。
 
 <a id="4-6-batch-sweeps"></a>
 ### 4.6 批量扫描
 
 为进行系统性基准测试，仓库提供了 Shell 启动脚本，可在噪声类型、SNR 级别和随机种子上进行扫描，而无需手动编辑 YAML。
 
-> **注意：** 这些扫描脚本是便捷辅助工具。运行前请阅读 `.sh` 文件，了解其定义的变量（例如 `NPROC_PER_NODE`、`TORCHRUN_EXTRA`、`STOP_ON_ERROR`），并确认生成的实验名称与路径符合预期。
+> **注意：** 这些扫描脚本是便捷辅助工具。运行前请阅读 .sh 文件，了解其定义的变量（例如 `NPROC_PER_NODE`、`TORCHRUN_EXTRA`、`STOP_ON_ERROR`），并确认生成的实验名称与路径符合预期。
 
-#### `train_denoise_unet.sh`
+#### train_denoise_unet.sh
 
-`scripts/random_noise_suppression/train_denoise_unet.sh` 为每种噪声类型、SNR 和种子的组合重写临时基础配置，然后启动 `torchrun`。
+scripts/random_noise_suppression/train_denoise_unet.sh 为每种噪声类型、SNR 和种子的组合重写临时基础配置，然后启动 `torchrun`。
 
 脚本顶部的可编辑块为：
 
@@ -844,9 +844,9 @@ TORCHRUN_EXTRA=""          # 可选 torchrun 参数，例如 "--standalone"。
 
 每次运行都会获得唯一实验名称，例如 `random_noise_unet_base_gaussian_snr5_seed42`，从而避免输出冲突。
 
-#### `inference_denoise_unet.sh`
+#### inference_denoise_unet.sh
 
-`scripts/random_noise_suppression/inference_denoise_unet.sh` 对推理进行同样的扫描。它循环遍历噪声类型、SNR 和种子，为每个训练好的检查点运行推理脚本，然后聚合各种子的结果。
+scripts/random_noise_suppression/inference_denoise_unet.sh 对推理进行同样的扫描。它循环遍历噪声类型、SNR 和种子，为每个训练好的检查点运行推理脚本，然后聚合各种子的结果。
 
 默认配置块为：
 
@@ -861,7 +861,7 @@ SAVE_NPY=0                  # 1 = 保存 .npy 输出，0 = 跳过
 CHECKPOINT_NAME="best.pt"   # 例如 "best.pt" 或 "epoch_0049.pt"
 ```
 
-每次推理循环结束后，脚本聚合所有种子的 `metrics_summary.json`，并将均值/标准差汇总写入：
+每次推理循环结束后，脚本聚合所有种子的 metrics_summary.json，并将均值/标准差汇总写入：
 
 ```
 results/random_noise/random_noise_unet_base_<noise_kind>_snr<tag>_seed_stats/metrics_summary_mean_std.json
@@ -869,15 +869,15 @@ results/random_noise/random_noise_unet_base_<noise_kind>_snr<tag>_seed_stats/met
 
 `<tag>` 对 `-5` dB 为 `neg5`，对 `5` dB 为 `5`，与训练脚本命名约定一致。
 
-#### `run_all_random_noise_models.sh`
+#### run_all_random_noise_models.sh
 
-`scripts/random_noise_suppression/run_all_random_noise_models.sh` 依次为四个模型系列运行完整的训练与推理扫描：
+scripts/random_noise_suppression/run_all_random_noise_models.sh 依次为四个模型系列运行完整的训练与推理扫描：
 
 ```bash
 MODEL_LIST=("unet" "dncnn" "res_unet" "atten_unet")
 ```
 
-对于每个模型，它会查找 `scripts/random_noise_suppression/train_denoise_${model}.sh` 和 `scripts/random_noise_suppression/inference_denoise_${model}.sh`，先运行训练扫描，再运行推理扫描。脚本将所有日志写入 `scripts/random_noise_suppression/run_all_random_noise_models.log`。如果 `STOP_ON_ERROR=1`，任一阶段失败时脚本会立即退出。
+对于每个模型，它会查找 scripts/random_noise_suppression/train_denoise_${model}.sh 和 scripts/random_noise_suppression/inference_denoise_${model}.sh，先运行训练扫描，再运行推理扫描。脚本将所有日志写入 scripts/random_noise_suppression/run_all_random_noise_models.log。如果 `STOP_ON_ERROR=1`，任一阶段失败时脚本会立即退出。
 
 这是跨架构生成完整基准测试的便捷方式，但由于每个阶段顺序运行，耗时较长。
 
@@ -914,10 +914,10 @@ done
 
 | 任务 | 输入数据 | 入口脚本 | 配置目录 | 主要区别 |
 |------|----------|---------|---------|---------|
-| `random_noise_suppression` | 干净数据体 + 合成噪声 | `scripts/random_noise_suppression/train_denoise_*.py`、`inference_denoise_*.py` | `configs/random_noise_suppression/` | 使用 `add_noise` 注入噪声；指标将去噪输出与干净目标对比。 |
-| `ground_roll_attenuation` | 成对含噪 / 噪声标签数据体 | `scripts/ground_roll_attenuation/train_denoise_*.py`、`batch_evaluate.py` | `configs/ground_roll_attenuation/` | 无合成噪声注入；模型预测加性噪声标签；`data` 块使用 `segy_pair`（或 `npy_pair` / `mat_pair`）。 |
-| `multiples_attenuation` | 成对含噪 / 噪声标签数据体 | `scripts/multiples_attenuation/train_denoise_*.py`、`batch_evaluate.py` | `configs/multiples_attenuation/` | 与面波衰减结构相同；任务特定的数据与语义。 |
-| `interpolation` | 单数据体 + 道掩码 | `scripts/interpolation/train_interpolation_unet.py`、`inference_interpolation.py` | `configs/interpolation/` | `mask_traces` 模拟缺失道；模型重建完整炮集。 |
+| `random_noise_suppression` | 干净数据体 + 合成噪声 | `scripts/random_noise_suppression/train_denoise_*.py`、`inference_denoise_*.py` | configs/random_noise_suppression/ | 使用 `add_noise` 注入噪声；指标将去噪输出与干净目标对比。 |
+| `ground_roll_attenuation` | 成对含噪 / 噪声标签数据体 | `scripts/ground_roll_attenuation/train_denoise_*.py`、batch_evaluate.py | configs/ground_roll_attenuation/ | 无合成噪声注入；模型预测加性噪声标签；`data` 块使用 `segy_pair`（或 `npy_pair` / `mat_pair`）。 |
+| `multiples_attenuation` | 成对含噪 / 噪声标签数据体 | `scripts/multiples_attenuation/train_denoise_*.py`、batch_evaluate.py | configs/multiples_attenuation/ | 与面波衰减结构相同；任务特定的数据与语义。 |
+| `interpolation` | 单数据体 + 道掩码 | scripts/interpolation/train_interpolation_unet.py、inference_interpolation.py | configs/interpolation/ | `mask_traces` 模拟缺失道；模型重建完整炮集。 |
 
 <a id="5-2-random-noise-suppression"></a>
 ### 5.2 `random_noise_suppression`
@@ -931,14 +931,14 @@ done
 
 训练 U-Net 基线：
 
-> **警告：** 默认 `configs/ground_roll_attenuation/denoise_unet.yaml` 包含仓库未包含数据的绝对路径。在运行下方命令前，将 `input_path` 和 `target_path` 替换为你自己的成对数据体路径。
+> **警告：** 默认 configs/ground_roll_attenuation/denoise_unet.yaml 包含仓库未包含数据的绝对路径。在运行下方命令前，将 `input_path` 和 `target_path` 替换为你自己的成对数据体路径。
 
 ```bash
 python scripts/ground_roll_attenuation/train_denoise_unet.py \
   --config configs/ground_roll_attenuation/denoise_unet.yaml
 ```
 
-训练完成后，在实验目录树上运行批量评估器。`batch_evaluate.py` 需要 openpyxl；如果尚未安装，请先安装：
+训练完成后，在实验目录树上运行批量评估器。batch_evaluate.py 需要 openpyxl；如果尚未安装，请先安装：
 
 ```bash
 pip install openpyxl
@@ -952,7 +952,7 @@ python scripts/ground_roll_attenuation/batch_evaluate.py \
   --batch_size 8
 ```
 
-`batch_evaluate.py` 扫描每个实验目录，加载 `checkpoints/best.pt`，在留出的 `test_set/` 上运行推理，并写入一个每个噪声级别一个工作表的 Excel 工作簿。工作簿对比原始输入指标（含噪 vs 参考）和去噪指标（模型输出 vs 参考）。
+batch_evaluate.py 扫描每个实验目录，加载 checkpoints/best.pt，在留出的 test_set/ 上运行推理，并写入一个每个噪声级别一个工作表的 Excel 工作簿。工作簿对比原始输入指标（含噪 vs 参考）和去噪指标（模型输出 vs 参考）。
 
 面波配置使用 `data.segy_pair` 块（NPY/MAT 变体为 `npy_pair` / `mat_pair`）：
 
@@ -974,14 +974,14 @@ data:
 
 训练 U-Net 基线：
 
-> **警告：** 默认 `configs/multiples_attenuation/denoise_unet.yaml` 包含仓库未包含数据的绝对路径。在运行下方命令前，将 `input_path` 和 `target_path` 替换为你自己的成对数据体路径。
+> **警告：** 默认 configs/multiples_attenuation/denoise_unet.yaml 包含仓库未包含数据的绝对路径。在运行下方命令前，将 `input_path` 和 `target_path` 替换为你自己的成对数据体路径。
 
 ```bash
 python scripts/multiples_attenuation/train_denoise_unet.py \
   --config configs/multiples_attenuation/denoise_unet.yaml
 ```
 
-运行批量评估器。`batch_evaluate.py` 需要 openpyxl：
+运行批量评估器。batch_evaluate.py 需要 openpyxl：
 
 ```bash
 pip install openpyxl
@@ -1002,7 +1002,7 @@ python scripts/multiples_attenuation/batch_evaluate.py \
 
 训练 U-Net 基线，均匀缺失 50% 的道：
 
-> **警告：** 默认 `configs/interpolation/interpolation_unet.yaml` 包含仓库未包含 SEG-Y 数据体的绝对路径。在运行下方命令前，将 `data.segy.path`（或当前启用的格式块）更新为你自己的数据体路径。
+> **警告：** 默认 configs/interpolation/interpolation_unet.yaml 包含仓库未包含 SEG-Y 数据体的绝对路径。在运行下方命令前，将 `data.segy.path`（或当前启用的格式块）更新为你自己的数据体路径。
 
 ```bash
 python scripts/interpolation/train_interpolation_unet.py \
@@ -1011,7 +1011,7 @@ python scripts/interpolation/train_interpolation_unet.py \
   --mask-ratio 0.5
 ```
 
-训练脚本将掩码参数附加到实验名称后，因此上述运行的输出目录变为 `results/interp_unet_base_uniform_miss50/`。
+训练脚本将掩码参数附加到实验名称后，因此上述运行的输出目录变为 results/interp_unet_base_uniform_miss50/。
 
 使用掩码检查点运行推理：
 
@@ -1043,7 +1043,7 @@ python scripts/interpolation/inference_interpolation.py \
 <a id="6-1-adding-a-new-model"></a>
 ### 6.1 添加新模型
 
-模型位于 `model/<task>/` 中，并通过 `MODEL_REGISTRY` 注册。
+模型位于 model/&lt;task&gt;/ 中，并通过 MODEL_REGISTRY 注册。
 
 步骤：
 
@@ -1087,12 +1087,12 @@ model:
     base_channels: 32
 ```
 
-相同模式适用于 `model/ground_roll_attenuation/`、`model/multiples_attenuation/` 和 `model/interpolation/`。注意，顶层 `model/__init__.py` 不会导入每个任务；每个任务子包有自己的注册表视图，因此脚本从对应任务导入 `build_model`（例如 `from model.ground_roll_attenuation import build_model`）。
+相同模式适用于 model/ground_roll_attenuation/、model/multiples_attenuation/ 和 model/interpolation/。注意，顶层 model/__init__.py 不会导入每个任务；每个任务子包有自己的注册表视图，因此脚本从对应任务导入 `build_model`（例如 `from model.ground_roll_attenuation import build_model`）。
 
 <a id="6-2-adding-a-new-loss"></a>
 ### 6.2 添加新损失
 
-损失在 `utils/losses.py` 中注册。
+损失在 utils/losses.py 中注册。
 
 步骤：
 
@@ -1130,7 +1130,7 @@ loss:
 <a id="6-3-adding-a-new-metric"></a>
 ### 6.3 添加新指标
 
-指标在 `utils/metrics.py` 中注册。
+指标在 utils/metrics.py 中注册。
 
 步骤：
 
@@ -1170,7 +1170,7 @@ metrics:
 <a id="6-4-adding-a-new-dataset"></a>
 ### 6.4 添加新数据集
 
-数据集类位于 `utils/datasets.py` 中，继承自 `BaseArrayDataset`。
+数据集类位于 utils/datasets.py 中，继承自 `BaseArrayDataset`。
 
 需要重写的部分：
 
@@ -1216,13 +1216,13 @@ data:
 <a id="6-5-adding-a-new-preprocessing-step"></a>
 ### 6.5 添加新预处理步骤
 
-新的预处理函数应作为纯 NumPy 操作添加到 `tools/preprocessing.py` 中，作用于 `(n_shots, n_traces, n_time)` 或 `(n_traces, n_time)`。
+新的预处理函数应作为纯 NumPy 操作添加到 tools/preprocessing.py 中，作用于 `(n_shots, n_traces, n_time)` 或 `(n_traces, n_time)`。
 
 步骤：
 
 1. 实现该函数，如果步骤是可选的，则将其添加到任务特定训练脚本的 `skip` 机制中。
 2. 将配置字段添加到 YAML `preprocess` 块。
-3. 从任务特定脚本的预处理函数中调用（例如 `scripts/interpolation/train_interpolation_unet.py` 中的 `_preprocess_shots`）。
+3. 从任务特定脚本的预处理函数中调用（例如 scripts/interpolation/train_interpolation_unet.py 中的 `_preprocess_shots`）。
 
 示例：
 
@@ -1261,13 +1261,13 @@ preprocess:
 #### 检查点未找到 / 路径问题
 
 - 确认检查点文件存在。对于随机噪声示例，默认路径为 `results/random_noise/<experiment.name>/checkpoints/best.pt`。
-- 对于 `ground_roll_attenuation` 和 `multiples_attenuation`，`batch_evaluate.py` 要求扫描的每个实验目录都包含 `checkpoints/best.pt` 和 `test_set/` 目录。
+- 对于 `ground_roll_attenuation` 和 `multiples_attenuation`，batch_evaluate.py 要求扫描的每个实验目录都包含 checkpoints/best.pt 和 test_set/ 目录。
 - 如果用 `--mask-mode` / `--mask-ratio` 训练插值，实验名称会自动添加后缀（例如 `interp_unet_base_uniform_miss50`），因此检查点路径会相应变化。
 
 #### 未安装 segyio 或 SEG-Y 路径错误
 
 - 安装依赖：`pip install segyio`。
-- 确认文件存在：`ls /path/to/volume.sgy`。
+- 确认文件存在：ls /path/to/volume.sgy。
 - 检查配置中的 `traces_per_shot` 和 `time_downsample` 是否与实际文件几何一致。
 - 对于成对任务，含噪输入和噪声标签必须具有相同的道数、采样点数和 FFID 顺序。
 
@@ -1306,7 +1306,7 @@ preprocess:
 
 #### CLI 命令速查表
 
-> **注意：** `ground_roll_attenuation` 和 `multiples_attenuation` 的 `batch_evaluate.py` 需要 openpyxl。请先安装：`pip install openpyxl`。
+> **注意：** `ground_roll_attenuation` 和 `multiples_attenuation` 的 batch_evaluate.py 需要 openpyxl。请先安装：`pip install openpyxl`。
 
 ##### `random_noise_suppression`
 
@@ -1412,10 +1412,10 @@ python scripts/interpolation/inference_interpolation.py \
 
 | 类型 | 装饰器 | 基类 | 工厂 | 注册表 |
 |------|--------|------|------|--------|
-| 模型 | `@register_model("name")` | `nn.Module` | `build_model(cfg)` | `MODEL_REGISTRY` |
-| 损失 | `@register_loss("name")` | `BaseLoss` | `build_loss(cfg)` | `LOSS_REGISTRY` |
-| 指标 | `@register_metric("name")` | `BaseMetric` | `build_metrics(cfg_list)` | `METRIC_REGISTRY` |
-| 数据集 | `@register_dataset("name")` | `BaseArrayDataset` | `build_dataset(cfg)`（由训练脚本内部调用） | `DATASET_REGISTRY` |
+| 模型 | `@register_model("name")` | `nn.Module` | `build_model(cfg)` | MODEL_REGISTRY |
+| 损失 | `@register_loss("name")` | `BaseLoss` | `build_loss(cfg)` | LOSS_REGISTRY |
+| 指标 | `@register_metric("name")` | `BaseMetric` | `build_metrics(cfg_list)` | METRIC_REGISTRY |
+| 数据集 | `@register_dataset("name")` | `BaseArrayDataset` | `build_dataset(cfg)`（由训练脚本内部调用） | DATASET_REGISTRY |
 
 #### 指标参数速查表
 
