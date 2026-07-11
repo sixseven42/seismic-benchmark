@@ -215,7 +215,7 @@ python scripts/random_noise_suppression/inference_denoise_unet.py \
 
 训练完成后，实验目录包含：
 
-```
+```tree
 results/random_noise/random_noise_unet_base/
 ├── checkpoints/
 │   ├── epoch_0020.pt
@@ -234,11 +234,11 @@ results/random_noise/random_noise_unet_base/
 └── config_used.yaml
 ```
 
-检查点每隔 ckpt_interval 轮保存一次，直到 epochs 轮。使用默认配置（`epochs: 200`，`ckpt_interval: 20`）时，最终的周期性检查点是 epoch_0200.pt。
+检查点每隔 ckpt_interval 轮保存一次，直到 epochs 轮。使用默认配置（epochs: 200，ckpt_interval: 20）时，最终的周期性检查点是 epoch_0200.pt。
 
 推理完成后，输出目录包含：
 
-```
+```tree
 results/random_noise/random_noise_unet_base/inference/
 ├── inference.log
 ├── metrics_summary.json
@@ -274,17 +274,17 @@ results/random_noise/random_noise_unet_base/inference/
 read_regular_shots(path, traces_per_shot, time_downsample=1)
 ```
 
-它返回形状为 `(n_shots, n_traces, n_time)` 的 NumPy 数组，以及一个道头字典。通过检查每个炮集切片是否共享同一个 FieldRecord（FFID）道头值来验证规则性。
+它返回形状为 (n_shots, n_traces, n_time) 的 NumPy 数组，以及一个道头字典。通过检查每个炮集切片是否共享同一个 FieldRecord（FFID）道头值来验证规则性。
 
 > **什么是炮集？** 炮集是由接收点从一个震源（一炮）记录到的地震道组成的二维图像。**地震道**是一个接收点的记录。**FFID**（Field Record ID）是 SEG-Y 道头中标识一个炮集的值。
 
 对于本教程使用的 SEG C3 45 炮数据体：
 
-- `n_shots = 9`
-- `traces_per_shot = 201`
-- `dt = 0.008` 秒（8 毫秒采样间隔）
+- n_shots = 9
+- traces_per_shot = 201
+- dt = 0.008 秒（8 毫秒采样间隔）
 
-加载后的数组形状为 `(9, 201, n_time)`。配置中的 dt 值是训练脚本用于球面扩散校正和频率估计的值；它应与源数据的时间采样间隔一致。一些旧文档可能为同一数据体列出不同的 dt，因此请始终使用配置中与你文件匹配的值。
+加载后的数组形状为 (9, 201, n_time)。配置中的 dt 值是训练脚本用于球面扩散校正和频率估计的值；它应与源数据的时间采样间隔一致。一些旧文档可能为同一数据体列出不同的 dt，因此请始终使用配置中与你文件匹配的值。
 
 #### 在 YAML 中切换为 NPY 或 MAT
 
@@ -309,7 +309,7 @@ data:
   #   key: shots
 ```
 
-三个加载器都返回形状为 `(n_shots, n_traces, n_time)` 的 float32 数据体。MAT 文件通过 scipy.io.loadmat 加载；如果文件中没有配置的 key，加载器会抛出 KeyError，并列出可用的变量名。
+三个加载器都返回形状为 (n_shots, n_traces, n_time) 的 float32 数据体。MAT 文件通过 scipy.io.loadmat 加载；如果文件中没有配置的 key，加载器会抛出 KeyError，并列出可用的变量名。
 
 key 只对 MAT 文件必填，用于告诉加载器哪个 MATLAB 变量包含数据体。如果省略，加载器会回退到找到的第一个数组变量（可能并非你想要的）。要查看可用变量名，请运行：
 
@@ -317,7 +317,7 @@ key 只对 MAT 文件必填，用于告诉加载器哪个 MATLAB 变量包含数
 python -c "import scipy.io; print(list(scipy.io.loadmat('data/SEG_45Shot_shots1-9.mat').keys()))"
 ```
 
-找到值为 `(n_shots, n_traces, n_time)` 形状的变量，并将其用作 key。
+找到值为 (n_shots, n_traces, n_time) 形状的变量，并将其用作 key。
 
 #### 形状约定
 
@@ -333,7 +333,7 @@ python -c "import scipy.io; print(list(scipy.io.loadmat('data/SEG_45Shot_shots1-
 - n_traces 是每炮的接收道数（一道即一个接收点记录）。
 - n_time 是时间采样点数。
 
-当二维卷积模型对从单个炮集中提取的分块进行操作时，分块形状为 `(1, patch_trace, patch_time)`，其中前导 1 是通道维度，`(patch_trace, patch_time)` 是分块的空间范围。
+当二维卷积模型对从单个炮集中提取的分块进行操作时，分块形状为 (1, patch_trace, patch_time)，其中前导 1 是通道维度，(patch_trace, patch_time) 是分块的空间范围。
 
 <a id="4-2-preprocessing-pipeline"></a>
 ### 4.2 预处理流程
@@ -358,28 +358,28 @@ preprocess:
 
 #### 球面扩散校正
 
-`spherical_divergence_correction(shots, dt, t0, power)` 将每个采样点乘以 `(t + t0) ** power`，其中 t 为时间轴。它用于补偿球面扩散引起的振幅衰减。在本示例中，`spherical_power: 0` 且该步骤列在 skip 中，因此校正被禁用。
+spherical_divergence_correction(shots, dt, t0, power) 将每个采样点乘以 `(t + t0) ** power`，其中 t 为时间轴。它用于补偿球面扩散引起的振幅衰减。在本示例中，spherical_power: 0 且该步骤列在 skip 中，因此校正被禁用。
 
 #### 归一化
 
-`normalize(shots, mode, per)` 将数据缩放到模型友好的范围。示例配置使用：
+normalize(shots, mode, per) 将数据缩放到模型友好的范围。示例配置使用：
 
 ```yaml
 normalize_mode: max_abs
 normalize_scope: shot
 ```
 
-这通过将每个炮集除以其内部最大绝对值，将每个炮集映射到 `[-1, 1]`。其他支持的模式：minmax（映射到 `[0, 1]`）和 mean_std（零均值、单位方差）。其他作用域为 trace 和 global。
+这通过将每个炮集除以其内部最大绝对值，将每个炮集映射到 [-1, 1]。其他支持的模式：minmax（映射到 [0, 1]）和 mean_std（零均值、单位方差）。其他作用域为 trace 和 global。
 
-normalize_mode 必须与 metrics 块中 SSIM 和 PSNR 使用的 data_range 设置保持一致。对于 max_abs，SSIM 使用 `data_range: 2.0`，PSNR 使用 `data_range: 1.0`。对于 minmax，两者都使用 `data_range: 1.0`。
+normalize_mode 必须与 metrics 块中 SSIM 和 PSNR 使用的 data_range 设置保持一致。对于 max_abs，SSIM 使用 data_range: 2.0，PSNR 使用 data_range: 1.0。对于 minmax，两者都使用 data_range: 1.0。
 
 > **初学者提示：为什么 SSIM 和 PSNR 使用不同的 data_range 值**
 >
-> 使用 max_abs 时，归一化后的数据体范围为 `[-1, 1]`，因此全范围为 `max - min = 1 - (-1) = 2.0`。SSIM 期望 data_range 为全范围，因此设为 2.0。
+> 使用 max_abs 时，归一化后的数据体范围为 [-1, 1]，因此全范围为 `max - min = 1 - (-1) = 2.0`。SSIM 期望 data_range 为全范围，因此设为 2.0。
 >
-> 而 PSNR 是按峰值信号振幅定义的。对于 `[-1, 1]` 数据，峰值绝对振幅为 1.0，因此 PSNR 使用 `data_range: 1.0`。
+> 而 PSNR 是按峰值信号振幅定义的。对于 [-1, 1] 数据，峰值绝对振幅为 1.0，因此 PSNR 使用 data_range: 1.0。
 >
-> 如果切换到 minmax 归一化（`[0, 1]`），全范围与峰值振幅都是 1.0，因此 SSIM 和 PSNR 都使用 `data_range: 1.0`。请始终让这些值与所选的 normalize_mode 保持一致。
+> 如果切换到 minmax 归一化（[0, 1]），全范围与峰值振幅都是 1.0，因此 SSIM 和 PSNR 都使用 data_range: 1.0。请始终让这些值与所选的 normalize_mode 保持一致。
 
 #### 合成噪声注入
 
@@ -391,11 +391,11 @@ add_noise(shots, kind="gaussian"|"poisson", snr_db=5.0, rng=None)
 
 SNR 以分贝定义为：
 
-```
+```math
 SNR_dB = 10 * log10(var_signal / var_noise)
 ```
 
-示例配置使用 `noise_kind: gaussian` 和 `snr_db: 5.0`。较小的值会产生更强的噪声。你可以在推理时通过 --noise-kind 和 --snr-db 覆盖这些值。
+示例配置使用 noise_kind: gaussian 和 snr_db: 5.0。较小的值会产生更强的噪声。你可以在推理时通过 --noise-kind 和 --snr-db 覆盖这些值。
 
 #### 分块
 
@@ -408,11 +408,11 @@ reconstructed = unpatchify_uniform(patches, info)
 
 在本示例中：
 
-- `patch_size = (128, 256)`（道，时间）
-- `patch_overlap = 0.5`
-- `output_ndim = 4`，因此分块以 `(P, 1, 128, 256)` 返回，可直接用于 nn.Conv2d 层。
+- patch_size = (128, 256)（道，时间）
+- patch_overlap = 0.5
+- output_ndim = 4，因此分块以 `(P, 1, 128, 256)` 返回，可直接用于 nn.Conv2d 层。
 
-info 是一个小型元数据对象，记录原始数组形状、分块网格布局和重叠信息，以便 unpatchify_uniform 重建原始形状。重叠区域通过取平均（`sum / count`）融合，从而减少全炮推理时的边缘伪影。
+info 是一个小型元数据对象，记录原始数组形状、分块网格布局和重叠信息，以便 unpatchify_uniform 重建原始形状。重叠区域通过取平均（sum / count）融合，从而减少全炮推理时的边缘伪影。
 
 #### 按炮集划分
 
@@ -427,7 +427,7 @@ shot_split:
 
 9 个炮集按 FFID 顺序划分：前 7 炮用于训练，第 8 炮用于验证，第 9 炮用于测试。这避免了将同一炮集的分块同时放入训练集和测试集所造成的数据泄漏。
 
-> **注意：** 文件名 SEG_45Shot_shots1-9.sgy 指原始 45 炮调查；这里使用的子集包含第 1 至第 9 炮，因此 `n_shots = 9`。
+> **注意：** 文件名 SEG_45Shot_shots1-9.sgy 指原始 45 炮调查；这里使用的子集包含第 1 至第 9 炮，因此 n_shots = 9。
 
 如果省略 shot_split，代码会回退到按分块随机划分。
 
@@ -438,7 +438,7 @@ shot_split:
 
 #### experiment 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 experiment:
   name: random_noise_unet_base
   output_dir: results/random_noise
@@ -446,14 +446,14 @@ experiment:
   device: cuda
 ```
 
-- name — 最终实验目录为 `output_dir / name`。
-- output_dir — 可以是相对于仓库根目录的路径（例如 results/random_noise），也可以是绝对路径（例如 /data/experiments）。
-- seed — 噪声注入、炮集选择和数据加载使用的全局随机种子。
-- device — 训练设备；在 torchrun 下运行时会由 LOCAL_RANK 覆盖。
+- **name** — 最终实验目录为 output_dir / name。
+- **output_dir** — 可以是相对于仓库根目录的路径（例如 results/random_noise），也可以是绝对路径（例如 /data/experiments）。
+- **seed** — 噪声注入、炮集选择和数据加载使用的全局随机种子。
+- **device** — 训练设备；在 torchrun 下运行时会由 LOCAL_RANK 覆盖。
 
 #### data 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 data:
   segy:
     path: data/SEG_45Shot_shots1-9.sgy  # 如果文件在其他位置，请更新路径
@@ -475,7 +475,7 @@ data:
     pin_memory: true
 ```
 
-一次只能启用一种格式块（segy、npy 或 mat）。所有加载器都返回形状为 `(n_shots, n_traces, n_time)` 的 float32 数据体。
+一次只能启用一种格式块（segy、npy 或 mat）。所有加载器都返回形状为 (n_shots, n_traces, n_time) 的 float32 数据体。
 
 shot_split 控制按炮集（FFID）级别的训练/验证/测试划分。当存在时，test_ratio 被忽略。划分是顺序的：前 7 个唯一 FFID 用于训练，接下来用于验证，最后用于测试。这避免了重叠分块导致的数据泄漏。如果省略 shot_split，代码会回退到按分块随机划分。
 
@@ -483,7 +483,7 @@ loader 设置训练 DataLoader 参数。推理可以使用自己的 inference.ba
 
 #### preprocess 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 preprocess:
   dt: 0.008
   t0: 0.0
@@ -499,24 +499,24 @@ preprocess:
   skip: ["spherical_divergence_correction"]
 ```
 
-- dt — 时间采样间隔（秒），用于球面扩散校正和 FB-FRE 频率估计。
-- t0 — 增益的参考时间偏移，`gain = (t + t0) ** power`。
-- spherical_power — 球面扩散校正的幂次。设为 0 并将该步骤加入 skip 即可禁用。
-- noise_kind — 随机噪声压制的合成噪声类型：gaussian 或 poisson。
-- snr_db — 注入噪声的目标 SNR（dB）。值越小，噪声越强。
-- normalize_mode — max_abs 映射到 `[-1, 1]`，minmax 映射到 `[0, 1]`，mean_std 映射为零均值和单位方差。
-- normalize_scope — 统计量按 shot（炮集）、trace（道）还是 global（全局）计算。
+- **dt** — 时间采样间隔（秒），用于球面扩散校正和 FB-FRE 频率估计。
+- **t0** — 增益的参考时间偏移，gain = (t + t0) ** power。
+- **spherical_power** — 球面扩散校正的幂次。设为 0 并将该步骤加入 skip 即可禁用。
+- **noise_kind** — 随机噪声压制的合成噪声类型：gaussian 或 poisson。
+- **snr_db** — 注入噪声的目标 SNR（dB）。值越小，噪声越强。
+- **normalize_mode** — max_abs 映射到 [-1, 1]，minmax 映射到 [0, 1]，mean_std 映射为零均值和单位方差。
+- **normalize_scope** — 统计量按 shot（炮集）、trace（道）还是 global（全局）计算。
 - patch_time / patch_trace — 沿时间和道轴的分块大小。
-- patch_overlap — 推理时重叠分块的重叠比例。0.0 表示无重叠。
-- max_shots — 用于快速冒烟测试的可选限制。null 表示使用所有炮集。
-- skip — 要跳过的预处理步骤名列表。skip 是 YAML 字符串列表，不是布尔值。示例：
+- **patch_overlap** — 推理时重叠分块的重叠比例。0.0 表示无重叠。
+- **max_shots** — 用于快速冒烟测试的可选限制。null 表示使用所有炮集。
+- **skip** — 要跳过的预处理步骤名列表。skip 是 YAML 字符串列表，不是布尔值。示例：
   - `["spherical_divergence_correction"]` — 只跳过球面扩散校正。
   - `["spherical_divergence_correction", "normalize", "add_noise"]` — 跳过这三个步骤。
-  - `[]` — 运行所有预处理步骤。
+  - [] — 运行所有预处理步骤。
 
 #### model 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 model:
   type: unet
   params:
@@ -528,11 +528,11 @@ model:
 
 type 必须是 MODEL_REGISTRY 中注册的名称。文件 model/random_noise_suppression/__init__.py 导入任务模型，使装饰器执行。params 直接传给模型构造函数。
 
-对于随机噪声压制任务，已注册模型包括 unet、dncnn、res_unet 和 atten_unet。你只需修改 type（必要时再修改模型特定的 params）即可切换模型。SCRN 配置与 Shell 脚本已存在（denoise_SCRN.yaml、train_denoise_SCRN.sh、inference_denoise_SCRN.sh），但 model/random_noise_suppression/ 中目前没有对应实现，因此选择 `type: scrn` 会抛出“模型未注册”错误。
+对于随机噪声压制任务，已注册模型包括 unet、dncnn、res_unet 和 atten_unet。你只需修改 type（必要时再修改模型特定的 params）即可切换模型。SCRN 配置与 Shell 脚本已存在（denoise_SCRN.yaml、train_denoise_SCRN.sh、inference_denoise_SCRN.sh），但 model/random_noise_suppression/ 中目前没有对应实现，因此选择 type: scrn 会抛出“模型未注册”错误。
 
 #### loss、optim 和 scheduler 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 loss:
   type: mse
   params:
@@ -550,13 +550,13 @@ scheduler:
     min_lr: 1.0e-6
 ```
 
-- loss — 在 LOSS_REGISTRY 中注册。去噪通常选择 mse 且 `reduction: mean`。
-- optim — 在优化器构建器中注册。此处 adamw 使用 `lr=1e-4` 和 `weight_decay=1e-5`。
-- scheduler — 从优化器初始学习率下降到 min_lr 的余弦退火。
+- **loss** — 在 LOSS_REGISTRY 中注册。去噪通常选择 mse 且 reduction: mean。
+- **optim** — 在优化器构建器中注册。此处 adamw 使用 lr=1e-4 和 weight_decay=1e-5。
+- **scheduler** — 从优化器初始学习率下降到 min_lr 的余弦退火。
 
 #### metrics 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 metrics:
   - name: snr
     params: { reduction: per_sample }
@@ -572,19 +572,19 @@ metrics:
     params: { reduction: per_sample }
 ```
 
-这些指标在训练与推理过程中计算。rmse、snr 和 psnr 支持 `reduction: per_sample`（逐炮分数的均值）或 `reduction: global`。
+这些指标在训练与推理过程中计算。rmse、snr 和 psnr 支持 reduction: per_sample（逐炮分数的均值）或 reduction: global。
 
 > **重要：** data_range 必须与所选的 normalize_mode 匹配。
 >
-> 使用 max_abs 时，归一化数据体范围为 `[-1, 1]`。SSIM 期望峰峰值范围，因此 `data_range: 2.0`；PSNR 使用峰值绝对振幅，因此 `data_range: 1.0`。
+> 使用 max_abs 时，归一化数据体范围为 [-1, 1]。SSIM 期望峰峰值范围，因此 data_range: 2.0；PSNR 使用峰值绝对振幅，因此 data_range: 1.0。
 >
-> 使用 minmax 时，数据体范围为 `[0, 1]`，因此 SSIM 和 PSNR 都使用 `data_range: 1.0`。
+> 使用 minmax 时，数据体范围为 [0, 1]，因此 SSIM 和 PSNR 都使用 data_range: 1.0。
 >
 > 如果你切换 normalize_mode，请同步更新这两个值。
 
 #### train 和 log 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 train:
   epochs: 200
   grad_clip: 1.0
@@ -600,20 +600,20 @@ log:
   plot_interval: 5
 ```
 
-- epochs — 训练总轮数。
-- grad_clip — 梯度裁剪值。
-- log_step — 若为 true，记录每一步训练；若为 false，每轮记录一次摘要（由 log_interval 控制）。
-- log_interval — 当 log_step 为 false 时，控制每轮日志和曲线图在轮内刷新频率。每轮仍会写入一次摘要。
-- eval_interval — 多久运行一次验证评估。
-- ckpt_interval — 保存周期性检查点（epoch_\*.pt）的频率。
-- vis_interval — 保存随机验证可视化的频率。
-- resume — 检查点路径占位符；当前 train_denoise_unet.py 脚本不会从 CLI 解析它。
-- log_dir — `output_dir / name` 下存放文本和 CSV 日志的子目录。
-- plot_interval — 重绘 loss_curve.png 和 metrics_curve.png 的频率。设为 0 禁用。
+- **epochs** — 训练总轮数。
+- **grad_clip** — 梯度裁剪值。
+- **log_step** — 若为 true，记录每一步训练；若为 false，每轮记录一次摘要（由 log_interval 控制）。
+- **log_interval** — 当 log_step 为 false 时，控制每轮日志和曲线图在轮内刷新频率。每轮仍会写入一次摘要。
+- **eval_interval** — 多久运行一次验证评估。
+- **ckpt_interval** — 保存周期性检查点（epoch_\*.pt）的频率。
+- **vis_interval** — 保存随机验证可视化的频率。
+- **resume** — 检查点路径占位符；当前 train_denoise_unet.py 脚本不会从 CLI 解析它。
+- **log_dir** — output_dir / name 下存放文本和 CSV 日志的子目录。
+- **plot_interval** — 重绘 loss_curve.png 和 metrics_curve.png 的频率。设为 0 禁用。
 
 #### inference 块
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 inference:
   data:
     segy:
@@ -645,16 +645,16 @@ inference:
 
 > **警告：** 提交配置中的默认 inference.checkpoint 可能是绝对路径或已过期路径。请显式传入 --checkpoint，或更新配置使其指向你自己训练产生的检查点（`results/<exp>/checkpoints/best.pt`）。
 
-分箱诊断（EB-WSE 和 FB-FRE）是可选的。理解主要去噪任务并不需要它们，初学者在学习流程时可以设置 `binned_metrics.enabled: false` 跳过。
+分箱诊断（EB-WSE 和 FB-FRE）是可选的。理解主要去噪任务并不需要它们，初学者在学习流程时可以设置 binned_metrics.enabled: false 跳过。
 
-- inference.data — 可选的推理专用数据源。如果省略，则使用训练 data 块。
-- inference.shot_split — 必须与训练划分一致，以便一致地选择测试炮集。
-- checkpoint — 要加载的模型检查点路径。通常是 `results/<exp>/checkpoints/best.pt`。
-- output_dir — 推理输出目录。
-- n_viz_shots — 要可视化的随机测试炮集数量。
-- device — 推理设备，例如 `cuda:0` 或 cpu。
-- batch_size — 推理批次大小，独立于 data.loader.batch_size。
-- binned_metrics — EB-WSE 和 FB-FRE 诊断。enabled 标志控制整个子系统开关；eb_wse.enabled 和 fb_fre.enabled 分别控制两个指标。
+- **inference.data** — 可选的推理专用数据源。如果省略，则使用训练 data 块。
+- **inference.shot_split** — 必须与训练划分一致，以便一致地选择测试炮集。
+- **checkpoint** — 要加载的模型检查点路径。通常是 `results/<exp>/checkpoints/best.pt`。
+- **output_dir** — 推理输出目录。
+- **n_viz_shots** — 要可视化的随机测试炮集数量。
+- **device** — 推理设备，例如 cuda:0 或 cpu。
+- **batch_size** — 推理批次大小，独立于 data.loader.batch_size。
+- **binned_metrics** — EB-WSE 和 FB-FRE 诊断。enabled 标志控制整个子系统开关；eb_wse.enabled 和 fb_fre.enabled 分别控制两个指标。
   - eb_wse.smooth_sigma — 对能量图分箱前应用的高斯平滑 sigma。
   - fb_fre.rel_threshold — 将频率保留在有效频带内的相对功率阈值。
   - fb_fre.taper_width — 频带边缘处的余弦锥化宽度（Hz）。
@@ -697,7 +697,7 @@ results/random_noise/random_noise_unet_base/
 - checkpoints/ — 周期性检查点（epoch_\*.pt）和验证损失最低的 best.pt。检查点每隔 ckpt_interval 轮保存一次，直到 epochs 轮；使用默认值会生成 epoch_0020.pt、epoch_0040.pt、...、epoch_0200.pt。
 - logs/ — 人类可读的日志、CSV 历史记录以及自动刷新的曲线图。
 - visualizations/ — 每隔 vis_interval 轮保存的随机验证样本。
-- config_used.yaml — 解析后配置的副本，用于可复现。
+- **config_used.yaml** — 解析后配置的副本，用于可复现。
 
 #### 日志文件与曲线图
 
@@ -705,7 +705,7 @@ logs/train_log.txt 包含每轮带时间戳的一行摘要。logs/loss_history.c
 
 #### 从检查点恢复
 
-当前 train_denoise_unet.py 脚本不支持通过 CLI 恢复。脚本只解析 --config，不解析 --resume 标志，也不会从之前的检查点恢复优化器或学习率调度器状态。如果你需要恢复训练，必须编辑脚本，在轮循环前调用 utils.train_utils 中的 `load_checkpoint(...)`，并手动恢复优化器/调度器状态。
+当前 train_denoise_unet.py 脚本不支持通过 CLI 恢复。脚本只解析 --config，不解析 --resume 标志，也不会从之前的检查点恢复优化器或学习率调度器状态。如果你需要恢复训练，必须编辑脚本，在轮循环前调用 utils.train_utils 中的 load_checkpoint(...)，并手动恢复优化器/调度器状态。
 
 #### 多 GPU 命令
 
@@ -719,14 +719,14 @@ CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 \
   --config configs/random_noise_suppression/denoise_unet.yaml
 ```
 
-当 `WORLD_SIZE > 1` 时，脚本会自动：
+当 WORLD_SIZE > 1 时，脚本会自动：
 
 - 使用 DistributedDataParallel 包装模型。
 - 为训练加载器使用 DistributedSampler。
 - 仅由 rank 0 执行检查点保存、日志记录和可视化。
 - 对进程间的训练损失进行 all-reduce。
 
-分布式模式下会忽略 experiment.device，进程使用 `cuda:LOCAL_RANK`。
+分布式模式下会忽略 experiment.device，进程使用 cuda:LOCAL_RANK。
 
 > **注意：** 不要通过本教程自动运行训练脚本。请将上述命令复制到终端并手动执行。训练时间取决于 GPU、批次大小和轮数。
 
@@ -766,9 +766,9 @@ python scripts/random_noise_suppression/inference_denoise_unet.py \
 1. **加载原始数据体**：使用 tools.array_io.load_volume，按文件扩展名分派到 SEG-Y、NPY 或 MAT 读取器。
 2. **选择测试划分**：使用 inference.shot_split。采用与训练相同的顺序 FFID 排序，从而一致地选择留出测试炮集。
 3. **应用与训练相同的预处理**：球面扩散校正（如果未跳过）、归一化和合成噪声注入。噪声注入使用命令行覆盖后的 noise_kind 和 snr_db。
-4. **分块**：将含噪测试炮集分块为重叠的 `(1, patch_trace, patch_time)` 分块。
+4. **分块**：将含噪测试炮集分块为重叠的 (1, patch_trace, patch_time) 分块。
 5. **模型前向**：在指定设备上按批次运行模型。
-6. **合并**：使用重叠平均（`sum / count`）对输出进行合并，重建完整炮集。
+6. **合并**：使用重叠平均（sum / count）对输出进行合并，重建完整炮集。
 7. **应用逆变换**：将预测、含噪输入和干净目标恢复到原始振幅域。指标在逆变换前于归一化域计算，因此报告的值与训练一致。
 8. **计算指标并保存可视化**。
 
@@ -776,9 +776,9 @@ python scripts/random_noise_suppression/inference_denoise_unet.py \
 
 metrics_summary.json 包含三组指标：
 
-- noisy — 含噪输入与干净目标对比。这是基线。
-- denoised — 模型预测与干净目标对比。
-- delta — 从含噪输入到去噪输出的每个指标变化（`denoised_metric - noisy_metric`），表示模型在该指标上改善（或恶化）的程度。正值通常表示改善。
+- **noisy** — 含噪输入与干净目标对比。这是基线。
+- **denoised** — 模型预测与干净目标对比。
+- **delta** — 从含噪输入到去噪输出的每个指标变化（denoised_metric - noisy_metric），表示模型在该指标上改善（或恶化）的程度。正值通常表示改善。
 
 metrics_per_shot.csv 包含按炮集计算的相同指标，列名以 noisy_、denoised_ 和 delta_ 为前缀。
 
@@ -786,7 +786,7 @@ metrics_per_shot.csv 包含按炮集计算的相同指标，列名以 noisy_、d
 
 分箱诊断由 inference.binned_metrics.enabled 启用。
 
-- **EB-WSE（能量分箱弱信号评估）**在参考能量百分位分箱内计算归一化误差（NE）和 SNR。默认分箱为 `[5, 20]`、`[20, 40]`、`[40, 70]`、`[70, 100]`，分别对应极弱、弱、中等、强信号区域。输出键形如 eb_wse_very_weak_5_20_ne 和 eb_wse_very_weak_5_20_snr。
+- **EB-WSE（能量分箱弱信号评估）**在参考能量百分位分箱内计算归一化误差（NE）和 SNR。默认分箱为 [5, 20]、[20, 40]、[40, 70]、[70, 100]，分别对应极弱、弱、中等、强信号区域。输出键形如 eb_wse_very_weak_5_20_ne 和 eb_wse_very_weak_5_20_snr。
 
 - **FB-FRE（频率分箱保真度与恢复评估）**从参考频谱估计有效频带，按 band_ratios 拆分为自适应低/中/高/甚高频带，并逐频带计算 NE 和 SNR。输出键形如 fb_fre_low_ne、fb_fre_low_snr、fb_fre_low_energy_ratio 和 fb_fre_low_frequency_range_hz。
 
@@ -809,9 +809,9 @@ results/random_noise/random_noise_unet_base/inference/
     └── target_shots.npy
 ```
 
-- inference.log — 推理运行的标准输出和标准错误。
-- metrics_summary.json — noisy、denoised 和 delta 组的标量指标与分箱指标均值。
-- metrics_per_shot.csv — 逐炮标量指标。
+- **inference.log** — 推理运行的标准输出和标准错误。
+- **metrics_summary.json** — noisy、denoised 和 delta 组的标量指标与分箱指标均值。
+- **metrics_per_shot.csv** — 逐炮标量指标。
 - visualizations/shot_\*.png — 每个可视化炮集的输入、预测、目标和残差并排面板。
 - npy/ — 传入 --save-npy 时保存的可选 NumPy 数组。
 
@@ -877,7 +877,7 @@ scripts/random_noise_suppression/run_all_random_noise_models.sh 依次为四个�
 MODEL_LIST=("unet" "dncnn" "res_unet" "atten_unet")
 ```
 
-对于每个模型，它会查找 scripts/random_noise_suppression/train_denoise_${model}.sh 和 scripts/random_noise_suppression/inference_denoise_${model}.sh，先运行训练扫描，再运行推理扫描。脚本将所有日志写入 scripts/random_noise_suppression/run_all_random_noise_models.log。如果 `STOP_ON_ERROR=1`，任一阶段失败时脚本会立即退出。
+对于每个模型，它会查找 scripts/random_noise_suppression/train_denoise_${model}.sh 和 scripts/random_noise_suppression/inference_denoise_${model}.sh，先运行训练扫描，再运行推理扫描。脚本将所有日志写入 scripts/random_noise_suppression/run_all_random_noise_models.log。如果 STOP_ON_ERROR=1，任一阶段失败时脚本会立即退出。
 
 这是跨架构生成完整基准测试的便捷方式，但由于每个阶段顺序运行，耗时较长。
 
@@ -927,7 +927,7 @@ done
 <a id="5-3-ground-roll-attenuation"></a>
 ### 5.3 ground_roll_attenuation
 
-面波衰减使用成对数据体训练：一个含噪输入数据体和一个对应的噪声标签数据体（即加性噪声分量）。模型学习预测噪声图；去噪估计为 `noisy_input - predicted_noise`。
+面波衰减使用成对数据体训练：一个含噪输入数据体和一个对应的噪声标签数据体（即加性噪声分量）。模型学习预测噪声图；去噪估计为 noisy_input - predicted_noise。
 
 训练 U-Net 基线：
 
@@ -1027,8 +1027,8 @@ python scripts/interpolation/inference_interpolation.py \
 插值专用 YAML 字段：
 
 - preprocess.mask_mode（或 CLI --mask-mode）：uniform、random 或 continuous。
-- preprocess.mask_ratio（或 CLI --mask-ratio）：要掩码的道比例，范围 `(0, 1)`。
-- preprocess.uniform_stride：仅在 mask_mode 为 uniform 时使用；保留每第 uniform_stride 道。例如，`uniform_stride: 2` 会移除每隔一道。
+- preprocess.mask_ratio（或 CLI --mask-ratio）：要掩码的道比例，范围 (0, 1)。
+- preprocess.uniform_stride：仅在 mask_mode 为 uniform 时使用；保留每第 uniform_stride 道。例如，uniform_stride: 2 会移除每隔一道。
 - preprocess.spherical_power：插值中通常启用（例如 1.2），在掩码和归一化前补偿球面扩散。
 
 插值任务是四个任务中唯一使用 mask_traces 而非 add_noise 或成对噪声标签的任务。其他 YAML 块（model、loss、metrics、optim、scheduler、train、log）遵循与第 4 章相同的注册表模式。
@@ -1097,7 +1097,7 @@ model:
 步骤：
 
 1. 继承自 BaseLoss。
-2. 实现 `forward(self, pred, target=None, **extras)`。
+2. 实现 forward(self, pred, target=None, **extras)。
 3. 使用 `@register_loss("my_loss")` 装饰。
 
 extras 字典由训练循环传入，可携带可选掩码或权重。
@@ -1135,14 +1135,14 @@ loss:
 步骤：
 
 1. 继承自 BaseMetric。
-2. 实现 `__call__(self, pred, target)`，返回 Python float。
+2. 实现 __call__(self, pred, target)，返回 Python float。
 3. 适当地设置 higher_is_better。
 4. 使用 `@register_metric("my_metric")` 装饰。
 
 归约模式：
 
-- `reduction="per_sample"`（默认）：对前导批次维度中的每个样本独立计算指标，然后对批次取平均。这与地震领域常见的“报告平均逐炮 SNR 或 PSNR”惯例一致。
-- `reduction="global"`：先对所有元素进行池化，再应用非线性操作（例如 sqrt 或 log10）。这保留了教科书中的恒等式，例如 `RMSE == sqrt(MSE)` 和 `PSNR == 10*log10(peak^2 / MSE)`。
+- reduction="per_sample"（默认）：对前导批次维度中的每个样本独立计算指标，然后对批次取平均。这与地震领域常见的“报告平均逐炮 SNR 或 PSNR”惯例一致。
+- reduction="global"：先对所有元素进行池化，再应用非线性操作（例如 sqrt 或 log10）。这保留了教科书中的恒等式，例如 RMSE == sqrt(MSE) 和 PSNR == 10*log10(peak^2 / MSE)。
 
 示例：
 
@@ -1175,9 +1175,9 @@ metrics:
 需要重写的部分：
 
 - `_build_index()`：扫描 self.root，并用 Path 对象填充 self._index。
-- `_load_sample(path)`：返回 `(input_tensor, target_tensor_or_none)`。两者都应为 CPU 张量。
+- _load_sample(path)：返回 (input_tensor, target_tensor_or_none)。两者都应为 CPU 张量。
 
-数据集期望标准形状为 `(n_shots, n_traces, n_time)` 的地震数据体。
+数据集期望标准形状为 (n_shots, n_traces, n_time) 的地震数据体。
 
 示例：
 
@@ -1216,7 +1216,7 @@ data:
 <a id="6-5-adding-a-new-preprocessing-step"></a>
 ### 6.5 添加新预处理步骤
 
-新的预处理函数应作为纯 NumPy 操作添加到 tools/preprocessing.py 中，作用于 `(n_shots, n_traces, n_time)` 或 `(n_traces, n_time)`。
+新的预处理函数应作为纯 NumPy 操作添加到 tools/preprocessing.py 中，作用于 (n_shots, n_traces, n_time) 或 (n_traces, n_time)。
 
 步骤：
 
@@ -1248,7 +1248,7 @@ preprocess:
   skip: []
 ```
 
-添加改变振幅尺度的步骤时，请记得同步更新 normalize_mode 和指标 data_range 值。例如，如果你将振幅缩放使峰值范围变为 `[-2, 2]`，则 SSIM 应设 `data_range: 4.0`，PSNR 应设 `data_range: 2.0`。
+添加改变振幅尺度的步骤时，请记得同步更新 normalize_mode 和指标 data_range 值。例如，如果你将振幅缩放使峰值范围变为 [-2, 2]，则 SSIM 应设 data_range: 4.0，PSNR 应设 data_range: 2.0。
 
 ---
 
@@ -1284,8 +1284,8 @@ preprocess:
 
 #### SSIM / PSNR 的 data_range 与 normalize_mode 不匹配
 
-- max_abs 归一化到 `[-1, 1]`：SSIM 需要 `data_range: 2.0`，PSNR 需要 `data_range: 1.0`。
-- minmax 归一化到 `[0, 1]`：SSIM 和 PSNR 都使用 `data_range: 1.0`。
+- max_abs 归一化到 [-1, 1]：SSIM 需要 data_range: 2.0，PSNR 需要 data_range: 1.0。
+- minmax 归一化到 [0, 1]：SSIM 和 PSNR 都使用 data_range: 1.0。
 - mean_std 无界；请根据实际目标数据体设置范围，或保留在指标参数中。
 
 #### 训练与推理之间的 shot_split 不一致

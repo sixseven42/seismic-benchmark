@@ -94,6 +94,10 @@
   background: transparent;
   padding: 0;
   border-radius: 0;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
 }
 
 /* ---------- Code blocks ---------- */
@@ -115,6 +119,23 @@
   background: var(--bar-bg);
   border-bottom: 1px solid var(--border);
   font-size: 0.8rem;
+}
+
+.code-block-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.code-filename {
+  font-family: var(--mono);
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 420px;
 }
 
 .code-language {
@@ -162,6 +183,144 @@
   font-size: 0.88rem;
 }
 
+/* ---------- Formula blocks ---------- */
+.formula-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-4) 0;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+
+.formula-content {
+  flex: 1;
+  text-align: center;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.formula-block .code-copy-btn {
+  flex-shrink: 0;
+}
+
+/* ---------- File tree blocks ---------- */
+.file-tree-wrapper {
+  position: relative;
+  margin: var(--space-3) 0 var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-alt);
+}
+
+.file-tree-wrapper .code-copy-btn {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-3);
+}
+
+.file-tree {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: var(--space-3);
+  padding-right: calc(var(--space-3) + 60px);
+  overflow-x: auto;
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.file-tree code {
+  display: block;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font-weight: 400;
+}
+
+/* ---------- Task comparison cards ---------- */
+.task-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
+}
+
+.task-comparison-table-wrapper {
+  display: none;
+}
+
+.task-comparison-card {
+  padding: var(--space-4);
+}
+
+.task-comparison-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.task-comparison-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.task-comparison-name {
+  font-family: var(--mono);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.task-comparison-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.task-comparison-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.task-comparison-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.task-comparison-value {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+@media (min-width: 1200px) {
+  .task-comparison-grid {
+    display: none;
+  }
+
+  .task-comparison-table-wrapper {
+    display: block;
+  }
+}
+
 /* ---------- Blockquotes / Admonitions ---------- */
 .tutorial-content blockquote {
   border-left: 4px solid var(--accent);
@@ -177,6 +336,141 @@
 
 .tutorial-content blockquote p {
   margin-bottom: var(--space-2);
+}
+
+/* ---------- Admonitions ---------- */
+.admonition {
+  border-left: 4px solid var(--accent);
+  background: var(--surface-alt);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-4) 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.admonition-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.admonition-icon {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.admonition-title {
+  text-transform: capitalize;
+}
+
+.admonition-content > :last-child {
+  margin-bottom: 0;
+}
+
+.admonition-content p {
+  margin-bottom: var(--space-2);
+}
+
+.admonition-note {
+  border-left-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.admonition-warning {
+  border-left-color: #f0ad4e;
+  background: rgba(240, 173, 78, 0.08);
+}
+
+.admonition-tip {
+  border-left-color: #5bc0de;
+  background: rgba(91, 192, 222, 0.08);
+}
+
+.admonition-important {
+  border-left-color: #d9534f;
+  background: rgba(217, 83, 79, 0.08);
+}
+
+.admonition-beginner {
+  border-left-color: #9b59b6;
+  background: rgba(155, 89, 182, 0.08);
+}
+
+[data-theme="dark"] .admonition-warning {
+  background: rgba(240, 173, 78, 0.12);
+}
+
+[data-theme="dark"] .admonition-tip {
+  background: rgba(91, 192, 222, 0.12);
+}
+
+[data-theme="dark"] .admonition-important {
+  background: rgba(217, 83, 79, 0.12);
+}
+
+[data-theme="dark"] .admonition-beginner {
+  background: rgba(155, 89, 182, 0.12);
+}
+
+/* ---------- Parameter items ---------- */
+.tutorial-content .param-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.tutorial-content .param-item::before {
+  display: none;
+}
+
+.tutorial-content .param-item:last-child {
+  border-bottom: none;
+}
+
+.tutorial-content ul .param-item,
+.tutorial-content ol .param-item {
+  margin-bottom: 0;
+}
+
+.param-name {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.88em;
+  font-weight: 600;
+  color: var(--accent-dark);
+  background: var(--accent-bg);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.param-body {
+  flex: 1;
+  min-width: 0;
+  color: var(--text);
+}
+
+.param-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .tutorial-content .param-item {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .param-name {
+    white-space: normal;
+    word-break: break-word;
+  }
 }
 
 /* ---------- Tables ---------- */

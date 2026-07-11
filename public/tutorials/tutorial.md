@@ -201,7 +201,7 @@ You can override noise kind, SNR, batch size, device, and other inference settin
 
 After training, the experiment directory contains:
 
-```
+```tree
 results/random_noise/random_noise_unet_base/
 ├── checkpoints/
 │   ├── epoch_0020.pt
@@ -220,11 +220,11 @@ results/random_noise/random_noise_unet_base/
 └── config_used.yaml
 ```
 
-Checkpoints are saved every ckpt_interval epochs up to epochs. With the default config (`epochs: 200`, `ckpt_interval: 20`), the final periodic checkpoint is epoch_0200.pt.
+Checkpoints are saved every ckpt_interval epochs up to epochs. With the default config (epochs: 200, ckpt_interval: 20), the final periodic checkpoint is epoch_0200.pt.
 
 After inference, the output directory contains:
 
-```
+```tree
 results/random_noise/random_noise_unet_base/inference/
 ├── inference.log
 ├── metrics_summary.json
@@ -257,17 +257,17 @@ The repository reads SEG-Y files via tools/segy_read.py. The function used for r
 read_regular_shots(path, traces_per_shot, time_downsample=1)
 ```
 
-It returns a NumPy array of shape `(n_shots, n_traces, n_time)` and a dictionary of trace headers. Regularity is verified by checking that each shot slice shares a single FieldRecord (FFID) header value.
+It returns a NumPy array of shape (n_shots, n_traces, n_time) and a dictionary of trace headers. Regularity is verified by checking that each shot slice shares a single FieldRecord (FFID) header value.
 
 > **What is a shot gather?** A **shot gather** is a 2D image of seismic **traces** recorded by receivers from one seismic source (one shot). A **trace** is the recording from a single receiver. **FFID** (Field Record ID) is a SEG-Y header value that identifies one shot gather.
 
 For the SEG C3 45-shot volume used in this tutorial:
 
-- `n_shots = 9`
-- `traces_per_shot = 201`
-- `dt = 0.008` s (8 ms sampling interval)
+- n_shots = 9
+- traces_per_shot = 201
+- dt = 0.008 s (8 ms sampling interval)
 
-The loaded array shape is `(9, 201, n_time)`. The value of dt in the config is the one the training script uses for spherical-divergence correction and frequency estimation; it should match the time sampling interval of the source data. Some older documents may list a different dt for this volume, so always use the value in the config that matches your file.
+The loaded array shape is (9, 201, n_time). The value of dt in the config is the one the training script uses for spherical-divergence correction and frequency estimation; it should match the time sampling interval of the source data. Some older documents may list a different dt for this volume, so always use the value in the config that matches your file.
 
 #### Switching to NPY or MAT in YAML
 
@@ -292,7 +292,7 @@ data:
   #   key: shots
 ```
 
-All three loaders return a volume of shape `(n_shots, n_traces, n_time)` as float32. MAT files are loaded with scipy.io.loadmat; if the configured key is not present in the file, the loader raises a KeyError listing the available variable names.
+All three loaders return a volume of shape (n_shots, n_traces, n_time) as float32. MAT files are loaded with scipy.io.loadmat; if the configured key is not present in the file, the loader raises a KeyError listing the available variable names.
 
 key is only required for MAT files and tells the loader which MATLAB variable contains the volume. If it is omitted, the loader falls back to the first array variable it finds (which may not be the one you want). To inspect the available variable names, run:
 
@@ -300,7 +300,7 @@ key is only required for MAT files and tells the loader which MATLAB variable co
 python -c "import scipy.io; print(list(scipy.io.loadmat('data/SEG_45Shot_shots1-9.mat').keys()))"
 ```
 
-Look for the variable whose value has shape `(n_shots, n_traces, n_time)` and use that as key.
+Look for the variable whose value has shape (n_shots, n_traces, n_time) and use that as key.
 
 #### Shape convention
 
@@ -316,7 +316,7 @@ where:
 - n_traces is the number of receiver traces per shot (a trace is one receiver recording).
 - n_time is the number of time samples.
 
-When a 2D conv model operates on a patch extracted from a single shot, the patch shape is `(1, patch_trace, patch_time)`, where the leading 1 is the channel dimension and `(patch_trace, patch_time)` is the spatial extent of the patch.
+When a 2D conv model operates on a patch extracted from a single shot, the patch shape is (1, patch_trace, patch_time), where the leading 1 is the channel dimension and (patch_trace, patch_time) is the spatial extent of the patch.
 
 ### 4.2 Preprocessing pipeline
 
@@ -340,28 +340,28 @@ preprocess:
 
 #### Spherical divergence correction
 
-`spherical_divergence_correction(shots, dt, t0, power)` multiplies each sample by `(t + t0) ** power`, where t is the time axis. It compensates for amplitude decay caused by spherical spreading. In this example, `spherical_power: 0` and the step is listed in skip, so the correction is disabled.
+spherical_divergence_correction(shots, dt, t0, power) multiplies each sample by `(t + t0) ** power`, where t is the time axis. It compensates for amplitude decay caused by spherical spreading. In this example, spherical_power: 0 and the step is listed in skip, so the correction is disabled.
 
 #### Normalization
 
-`normalize(shots, mode, per)` scales the data into a model-friendly range. The example config uses:
+normalize(shots, mode, per) scales the data into a model-friendly range. The example config uses:
 
 ```yaml
 normalize_mode: max_abs
 normalize_scope: shot
 ```
 
-This maps each shot to the range `[-1, 1]` by dividing by the maximum absolute value inside that shot. Other supported modes are minmax (maps to `[0, 1]`) and mean_std (zero mean, unit variance). Other scopes are trace and global.
+This maps each shot to the range [-1, 1] by dividing by the maximum absolute value inside that shot. Other supported modes are minmax (maps to [0, 1]) and mean_std (zero mean, unit variance). Other scopes are trace and global.
 
-normalize_mode must agree with the data_range settings used by SSIM and PSNR in the metrics block. For max_abs, SSIM uses `data_range: 2.0` and PSNR uses `data_range: 1.0`. For minmax, both use `data_range: 1.0`.
+normalize_mode must agree with the data_range settings used by SSIM and PSNR in the metrics block. For max_abs, SSIM uses data_range: 2.0 and PSNR uses data_range: 1.0. For minmax, both use data_range: 1.0.
 
 > **Beginner note: why SSIM and PSNR use different data_range values**
 >
-> With max_abs, the normalized volume spans `[-1, 1]`, so the full range is `max - min = 1 - (-1) = 2.0`. SSIM expects data_range to be this full range, so it is set to 2.0.
+> With max_abs, the normalized volume spans [-1, 1], so the full range is `max - min = 1 - (-1) = 2.0`. SSIM expects data_range to be this full range, so it is set to 2.0.
 >
-> PSNR, on the other hand, is defined in terms of the peak signal amplitude. For `[-1, 1]` data the peak absolute amplitude is 1.0, so PSNR uses `data_range: 1.0`.
+> PSNR, on the other hand, is defined in terms of the peak signal amplitude. For [-1, 1] data the peak absolute amplitude is 1.0, so PSNR uses data_range: 1.0.
 >
-> If you switch to minmax normalization (`[0, 1]`), the full range and the peak amplitude are both 1.0, so both SSIM and PSNR use `data_range: 1.0`. Always keep these values consistent with the chosen normalize_mode.
+> If you switch to minmax normalization ([0, 1]), the full range and the peak amplitude are both 1.0, so both SSIM and PSNR use data_range: 1.0. Always keep these values consistent with the chosen normalize_mode.
 
 #### Synthetic noise injection
 
@@ -373,11 +373,11 @@ add_noise(shots, kind="gaussian"|"poisson", snr_db=5.0, rng=None)
 
 The SNR is defined in decibels as:
 
-```
+```math
 SNR_dB = 10 * log10(var_signal / var_noise)
 ```
 
-The example config uses `noise_kind: gaussian` and `snr_db: 5.0`. Smaller values produce stronger noise. You can override these at inference time with --noise-kind and --snr-db.
+The example config uses noise_kind: gaussian and snr_db: 5.0. Smaller values produce stronger noise. You can override these at inference time with --noise-kind and --snr-db.
 
 #### Patching
 
@@ -390,11 +390,11 @@ reconstructed = unpatchify_uniform(patches, info)
 
 For this example:
 
-- `patch_size = (128, 256)` (trace, time)
-- `patch_overlap = 0.5`
-- `output_ndim = 4`, so patches are returned as `(P, 1, 128, 256)` for direct use by nn.Conv2d layers.
+- patch_size = (128, 256) (trace, time)
+- patch_overlap = 0.5
+- output_ndim = 4, so patches are returned as `(P, 1, 128, 256)` for direct use by nn.Conv2d layers.
 
-info is a small metadata object that records the original array shape, patch grid layout, and overlap so that unpatchify_uniform can reconstruct the original shape. Overlapping regions are averaged (`sum / count`), which reduces edge artifacts during full-shot inference.
+info is a small metadata object that records the original array shape, patch grid layout, and overlap so that unpatchify_uniform can reconstruct the original shape. Overlapping regions are averaged (sum / count), which reduces edge artifacts during full-shot inference.
 
 #### Shot-level split
 
@@ -409,7 +409,7 @@ shot_split:
 
 The 9 shots are divided sequentially by FFID: the first 7 shots are used for training, the 8th for validation, and the 9th for testing. This prevents data leakage that could occur if patches from the same shot were placed in both train and test sets.
 
-> **Note:** The file name SEG_45Shot_shots1-9.sgy refers to the original 45-shot survey; the subset used here contains shots 1-9, which is why `n_shots = 9`.
+> **Note:** The file name SEG_45Shot_shots1-9.sgy refers to the original 45-shot survey; the subset used here contains shots 1-9, which is why n_shots = 9.
 
 If shot_split is omitted, the code falls back to a patch-level random split.
 
@@ -419,7 +419,7 @@ The full config used for the random-noise suppression example is configs/random_
 
 #### Experiment block
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 experiment:
   name: random_noise_unet_base
   output_dir: results/random_noise
@@ -427,14 +427,14 @@ experiment:
   device: cuda
 ```
 
-- name — the final experiment directory is `output_dir / name`.
-- output_dir — can be relative to the repo root (e.g. results/random_noise) or an absolute path (e.g. /data/experiments).
-- seed — global random seed used by noise injection, shot selection, and data loading.
-- device — training device; this is overridden by LOCAL_RANK when running under torchrun.
+- **name** — the final experiment directory is output_dir / name.
+- **output_dir** — can be relative to the repo root (e.g. results/random_noise) or an absolute path (e.g. /data/experiments).
+- **seed** — global random seed used by noise injection, shot selection, and data loading.
+- **device** — training device; this is overridden by LOCAL_RANK when running under torchrun.
 
 #### Data block
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 data:
   segy:
     path: data/SEG_45Shot_shots1-9.sgy  # update if your file is elsewhere
@@ -456,7 +456,7 @@ data:
     pin_memory: true
 ```
 
-Only one format block (segy, npy, or mat) should be active at a time. All loaders return a volume of shape `(n_shots, n_traces, n_time)` as float32.
+Only one format block (segy, npy, or mat) should be active at a time. All loaders return a volume of shape (n_shots, n_traces, n_time) as float32.
 
 shot_split controls the train/val/test split at the shot (FFID) level. When it is present, test_ratio is ignored. The split is sequential: the first 7 unique FFIDs go to train, the next to validation, and the last to test. This prevents data leakage from overlapping patches. If shot_split is omitted, the code falls back to a patch-level random split.
 
@@ -464,7 +464,7 @@ loader sets the training DataLoader arguments. Inference can use its own inferen
 
 #### Preprocess block
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 preprocess:
   dt: 0.008
   t0: 0.0
@@ -480,24 +480,24 @@ preprocess:
   skip: ["spherical_divergence_correction"]
 ```
 
-- dt — time sampling interval in seconds, used for spherical-divergence correction and FB-FRE frequency estimation.
-- t0 — reference time offset for the gain `gain = (t + t0) ** power`.
-- spherical_power — power for spherical-divergence correction. Set to 0 and add the step to skip to disable it.
-- noise_kind — synthetic noise type for random-noise suppression: `"gaussian"` or `"poisson"`.
-- snr_db — target SNR of the injected noise in dB. Smaller values mean stronger noise.
-- normalize_mode — max_abs maps to `[-1, 1]`, minmax maps to `[0, 1]`, mean_std maps to zero mean and unit variance.
-- normalize_scope — whether statistics are computed per shot, per trace, or globally.
+- **dt** — time sampling interval in seconds, used for spherical-divergence correction and FB-FRE frequency estimation.
+- **t0** — reference time offset for the gain gain = (t + t0) ** power.
+- **spherical_power** — power for spherical-divergence correction. Set to 0 and add the step to skip to disable it.
+- **noise_kind** — synthetic noise type for random-noise suppression: "gaussian" or "poisson".
+- **snr_db** — target SNR of the injected noise in dB. Smaller values mean stronger noise.
+- **normalize_mode** — max_abs maps to [-1, 1], minmax maps to [0, 1], mean_std maps to zero mean and unit variance.
+- **normalize_scope** — whether statistics are computed per shot, per trace, or globally.
 - patch_time / patch_trace — patch size along the time and trace axes.
-- patch_overlap — overlap ratio for overlapping patches during inference. 0.0 means no overlap.
-- max_shots — optional limit for quick smoke tests. null means use all shots.
-- skip — list of preprocessing step names to skip. skip is a YAML list of strings, not a boolean. Examples:
+- **patch_overlap** — overlap ratio for overlapping patches during inference. 0.0 means no overlap.
+- **max_shots** — optional limit for quick smoke tests. null means use all shots.
+- **skip** — list of preprocessing step names to skip. skip is a YAML list of strings, not a boolean. Examples:
   - `["spherical_divergence_correction"]` — skip only spherical-divergence correction.
   - `["spherical_divergence_correction", "normalize", "add_noise"]` — skip all three steps.
-  - `[]` — run every preprocessing step.
+  - [] — run every preprocessing step.
 
 #### Model block
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 model:
   type: unet
   params:
@@ -509,11 +509,11 @@ model:
 
 type must be a name registered in MODEL_REGISTRY. The file model/random_noise_suppression/__init__.py imports the task models so the decorators run. params is passed straight to the model constructor.
 
-For the random-noise suppression task, the registered models include unet, dncnn, res_unet, and atten_unet. You can switch models by changing only type and, if necessary, the model-specific params. A SCRN config and shell scripts exist (denoise_SCRN.yaml, train_denoise_SCRN.sh, inference_denoise_SCRN.sh), but the model implementation is not currently present in model/random_noise_suppression/, so selecting `type: scrn` will raise a "model not registered" error.
+For the random-noise suppression task, the registered models include unet, dncnn, res_unet, and atten_unet. You can switch models by changing only type and, if necessary, the model-specific params. A SCRN config and shell scripts exist (denoise_SCRN.yaml, train_denoise_SCRN.sh, inference_denoise_SCRN.sh), but the model implementation is not currently present in model/random_noise_suppression/, so selecting type: scrn will raise a "model not registered" error.
 
 #### Loss, optimizer, and scheduler blocks
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 loss:
   type: mse
   params:
@@ -531,13 +531,13 @@ scheduler:
     min_lr: 1.0e-6
 ```
 
-- loss — registered in LOSS_REGISTRY. mse with `reduction: mean` is the standard choice for denoising.
-- optim — registered in the optimizer builder. adamw here uses `lr=1e-4` and `weight_decay=1e-5`.
-- scheduler — cosine annealing from the optimizer's initial LR down to min_lr.
+- **loss** — registered in LOSS_REGISTRY. mse with reduction: mean is the standard choice for denoising.
+- **optim** — registered in the optimizer builder. adamw here uses lr=1e-4 and weight_decay=1e-5.
+- **scheduler** — cosine annealing from the optimizer's initial LR down to min_lr.
 
 #### Metrics block
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 metrics:
   - name: snr
     params: { reduction: per_sample }
@@ -553,19 +553,19 @@ metrics:
     params: { reduction: per_sample }
 ```
 
-These metrics are computed during training and inference. rmse, snr, and psnr support `reduction: per_sample` (mean of per-shot scores) or `reduction: global`.
+These metrics are computed during training and inference. rmse, snr, and psnr support reduction: per_sample (mean of per-shot scores) or reduction: global.
 
 > **Important:** data_range must match the chosen normalize_mode.
 >
-> With max_abs, the normalized volume spans `[-1, 1]`. SSIM expects the full peak-to-peak range, so `data_range: 2.0`. PSNR uses the peak absolute amplitude, so `data_range: 1.0`.
+> With max_abs, the normalized volume spans [-1, 1]. SSIM expects the full peak-to-peak range, so data_range: 2.0. PSNR uses the peak absolute amplitude, so data_range: 1.0.
 >
-> With minmax, the volume spans `[0, 1]`, so both SSIM and PSNR use `data_range: 1.0`.
+> With minmax, the volume spans [0, 1], so both SSIM and PSNR use data_range: 1.0.
 >
 > If you switch normalize_mode, update these two values consistently.
 
 #### Train and log blocks
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 train:
   epochs: 200
   grad_clip: 1.0
@@ -581,20 +581,20 @@ log:
   plot_interval: 5
 ```
 
-- epochs — total number of training epochs.
-- grad_clip — gradient clipping value.
-- log_step — if true, log every training step; if false, log one summary per epoch (controlled by log_interval).
-- log_interval — when log_step is false, this controls how often per-epoch logs and curve plots are refreshed during the epoch. One summary is still written per epoch.
-- eval_interval — how often to run validation evaluation.
-- ckpt_interval — how often to save periodic checkpoints (epoch_\*.pt).
-- vis_interval — how often to save a random validation visualization.
-- resume — placeholder for a checkpoint path; the current train_denoise_unet.py script does not parse it from the CLI.
-- log_dir — subdirectory under `output_dir / name` for text and CSV logs.
-- plot_interval — how often to redraw loss_curve.png and metrics_curve.png. Set to 0 to disable.
+- **epochs** — total number of training epochs.
+- **grad_clip** — gradient clipping value.
+- **log_step** — if true, log every training step; if false, log one summary per epoch (controlled by log_interval).
+- **log_interval** — when log_step is false, this controls how often per-epoch logs and curve plots are refreshed during the epoch. One summary is still written per epoch.
+- **eval_interval** — how often to run validation evaluation.
+- **ckpt_interval** — how often to save periodic checkpoints (epoch_\*.pt).
+- **vis_interval** — how often to save a random validation visualization.
+- **resume** — placeholder for a checkpoint path; the current train_denoise_unet.py script does not parse it from the CLI.
+- **log_dir** — subdirectory under output_dir / name for text and CSV logs.
+- **plot_interval** — how often to redraw loss_curve.png and metrics_curve.png. Set to 0 to disable.
 
 #### Inference block
 
-```yaml
+```yaml filename="configs/random_noise_suppression/denoise_unet.yaml"
 inference:
   data:
     segy:
@@ -626,16 +626,16 @@ inference:
 
 > **Warning:** The default inference.checkpoint value in the committed config may be an absolute or stale path. Always pass --checkpoint explicitly, or update the config to point to the checkpoint produced by your own training run (`results/<exp>/checkpoints/best.pt`).
 
-The binned diagnostics (EB-WSE and FB-FRE) are optional. They are not required to understand the main denoising task, and beginners can set `binned_metrics.enabled: false` to skip them while learning the pipeline.
+The binned diagnostics (EB-WSE and FB-FRE) are optional. They are not required to understand the main denoising task, and beginners can set binned_metrics.enabled: false to skip them while learning the pipeline.
 
-- inference.data — optional inference-specific data source. If omitted, the training data block is used.
-- inference.shot_split — must match the training split so the test shot is selected consistently.
-- checkpoint — path to the model checkpoint to load. Usually `results/<exp>/checkpoints/best.pt`.
-- output_dir — directory for inference outputs.
-- n_viz_shots — number of random test shots to visualize.
-- device — inference device, e.g. `cuda:0` or cpu.
-- batch_size — inference batch size, independent of data.loader.batch_size.
-- binned_metrics — EB-WSE and FB-FRE diagnostics. The enabled flag turns the whole subsystem on or off. Individual eb_wse.enabled and fb_fre.enabled switches control the two metrics.
+- **inference.data** — optional inference-specific data source. If omitted, the training data block is used.
+- **inference.shot_split** — must match the training split so the test shot is selected consistently.
+- **checkpoint** — path to the model checkpoint to load. Usually `results/<exp>/checkpoints/best.pt`.
+- **output_dir** — directory for inference outputs.
+- **n_viz_shots** — number of random test shots to visualize.
+- **device** — inference device, e.g. cuda:0 or cpu.
+- **batch_size** — inference batch size, independent of data.loader.batch_size.
+- **binned_metrics** — EB-WSE and FB-FRE diagnostics. The enabled flag turns the whole subsystem on or off. Individual eb_wse.enabled and fb_fre.enabled switches control the two metrics.
   - eb_wse.smooth_sigma — Gaussian smoothing sigma applied to the energy map before binning.
   - fb_fre.rel_threshold — relative power threshold for keeping a frequency in the effective band.
   - fb_fre.taper_width — cosine taper width in Hz at band edges.
@@ -677,7 +677,7 @@ results/random_noise/random_noise_unet_base/
 - checkpoints/ — periodic checkpoints (epoch_\*.pt) and best.pt (lowest validation loss). Checkpoints are saved every ckpt_interval epochs up to epochs; with the defaults this produces epoch_0020.pt, epoch_0040.pt, ..., epoch_0200.pt.
 - logs/ — human-readable log, CSV histories, and auto-refreshed curve plots.
 - visualizations/ — random validation samples saved every vis_interval epochs.
-- config_used.yaml — a copy of the resolved config for reproducibility.
+- **config_used.yaml** — a copy of the resolved config for reproducibility.
 
 #### Log files and curve images
 
@@ -685,7 +685,7 @@ logs/train_log.txt contains timestamped one-line summaries per epoch. logs/loss_
 
 #### Resuming from a checkpoint
 
-Resuming is **not** supported via the CLI in the current train_denoise_unet.py script. The script only parses --config; it does not parse a --resume flag and will not restore an optimizer or scheduler state from a previous checkpoint. If you need to resume training, you must edit the script to call `load_checkpoint(...)` from utils.train_utils before the epoch loop and restore the optimizer/scheduler state manually.
+Resuming is **not** supported via the CLI in the current train_denoise_unet.py script. The script only parses --config; it does not parse a --resume flag and will not restore an optimizer or scheduler state from a previous checkpoint. If you need to resume training, you must edit the script to call load_checkpoint(...) from utils.train_utils before the epoch loop and restore the optimizer/scheduler state manually.
 
 #### Multi-GPU command
 
@@ -699,14 +699,14 @@ CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 \
   --config configs/random_noise_suppression/denoise_unet.yaml
 ```
 
-When `WORLD_SIZE > 1`, the script automatically:
+When WORLD_SIZE > 1, the script automatically:
 
 - Wraps the model with DistributedDataParallel.
 - Uses DistributedSampler for the training loader.
 - Performs rank-0-only checkpointing, logging, and visualization.
 - All-reduces the training loss across processes.
 
-experiment.device is ignored in distributed mode; the process uses `cuda:LOCAL_RANK`.
+experiment.device is ignored in distributed mode; the process uses cuda:LOCAL_RANK.
 
 > **Note:** Do not run training scripts automatically from this tutorial. Copy the commands above into your terminal and execute them manually. Training time depends on GPU, batch size, and epoch count.
 
@@ -745,9 +745,9 @@ The inference script performs the following steps on the test shots:
 1. **Load the raw volume** using tools.array_io.load_volume, which dispatches by file extension to SEG-Y, NPY, or MAT readers.
 2. **Select the test split** using inference.shot_split. The same sequential FFID ordering as training is used, so the held-out test shot is selected consistently.
 3. **Apply the same preprocessing** as training: spherical-divergence correction (if not skipped), normalization, and synthetic noise injection. Noise is injected with the CLI-overridden noise_kind and snr_db.
-4. **Patchify** the noisy test shots into overlapping `(1, patch_trace, patch_time)` patches.
+4. **Patchify** the noisy test shots into overlapping (1, patch_trace, patch_time) patches.
 5. **Run the model forward** in batches on the selected device.
-6. **Unpatchify** the outputs with overlap averaging (`sum / count`) to reconstruct full shots.
+6. **Unpatchify** the outputs with overlap averaging (sum / count) to reconstruct full shots.
 7. **Apply inverse transforms** to return the predictions, noisy inputs, and clean targets to the original amplitude domain. Metrics are computed on the normalized domain before the inverse transform, so the reported values align with training.
 8. **Compute metrics** and **save visualizations**.
 
@@ -755,9 +755,9 @@ The inference script performs the following steps on the test shots:
 
 metrics_summary.json contains three groups of metrics:
 
-- noisy — the noisy input compared against the clean target. This is the baseline.
-- denoised — the model prediction compared against the clean target.
-- delta — the change in each metric from the noisy input to the denoised output (`denoised_metric - noisy_metric`), showing how much the model improved (or degraded) that metric. Positive values usually mean improvement.
+- **noisy** — the noisy input compared against the clean target. This is the baseline.
+- **denoised** — the model prediction compared against the clean target.
+- **delta** — the change in each metric from the noisy input to the denoised output (denoised_metric - noisy_metric), showing how much the model improved (or degraded) that metric. Positive values usually mean improvement.
 
 metrics_per_shot.csv contains the same metrics evaluated per shot, with columns prefixed by noisy_, denoised_, and delta_.
 
@@ -765,7 +765,7 @@ metrics_per_shot.csv contains the same metrics evaluated per shot, with columns 
 
 The binned diagnostics are enabled by inference.binned_metrics.enabled.
 
-- **EB-WSE (Energy-Binned Weak Signal Evaluation)** computes normalized error (NE) and SNR inside reference-energy percentile bins. The default bins are `[5, 20]`, `[20, 40]`, `[40, 70]`, and `[70, 100]`, corresponding to very weak, weak, moderate, and strong signal regions. Output keys look like eb_wse_very_weak_5_20_ne and eb_wse_very_weak_5_20_snr.
+- **EB-WSE (Energy-Binned Weak Signal Evaluation)** computes normalized error (NE) and SNR inside reference-energy percentile bins. The default bins are [5, 20], [20, 40], [40, 70], and [70, 100], corresponding to very weak, weak, moderate, and strong signal regions. Output keys look like eb_wse_very_weak_5_20_ne and eb_wse_very_weak_5_20_snr.
 
 - **FB-FRE (Frequency-Binned Fidelity and Recovery Evaluation)** estimates an effective frequency band from the reference spectrum, splits it into adaptive low/mid/high/very_high bands according to band_ratios, and computes NE and SNR per band. Output keys look like fb_fre_low_ne, fb_fre_low_snr, fb_fre_low_energy_ratio, and fb_fre_low_frequency_range_hz.
 
@@ -788,9 +788,9 @@ results/random_noise/random_noise_unet_base/inference/
     └── target_shots.npy
 ```
 
-- inference.log — stdout and stderr from the inference run.
-- metrics_summary.json — mean scalar metrics and binned metrics for noisy, denoised, and delta groups.
-- metrics_per_shot.csv — per-shot scalar metrics.
+- **inference.log** — stdout and stderr from the inference run.
+- **metrics_summary.json** — mean scalar metrics and binned metrics for noisy, denoised, and delta groups.
+- **metrics_per_shot.csv** — per-shot scalar metrics.
 - visualizations/shot_\*.png — side-by-side panels of input, prediction, target, and residual for each visualized shot.
 - npy/ — optional NumPy arrays saved when --save-npy is passed.
 
@@ -855,7 +855,7 @@ scripts/random_noise_suppression/run_all_random_noise_models.sh runs the full tr
 MODEL_LIST=("unet" "dncnn" "res_unet" "atten_unet")
 ```
 
-For each model, it looks for scripts/random_noise_suppression/train_denoise_${model}.sh and scripts/random_noise_suppression/inference_denoise_${model}.sh, runs the training sweep, and then runs the inference sweep. The script logs everything to scripts/random_noise_suppression/run_all_random_noise_models.log. If `STOP_ON_ERROR=1`, the script exits immediately when any stage fails.
+For each model, it looks for scripts/random_noise_suppression/train_denoise_${model}.sh and scripts/random_noise_suppression/inference_denoise_${model}.sh, runs the training sweep, and then runs the inference sweep. The script logs everything to scripts/random_noise_suppression/run_all_random_noise_models.log. If STOP_ON_ERROR=1, the script exits immediately when any stage fails.
 
 This is a convenient way to produce a full benchmark across architectures, but it takes a long time because each stage runs sequentially.
 
@@ -900,7 +900,7 @@ This is the task covered in Chapter 4.
 
 ### 5.3 ground_roll_attenuation
 
-Ground-roll attenuation is trained on **paired volumes**: a noisy input volume and a corresponding noise-label volume (the additive noise component). The model learns to predict the noise map; the denoised estimate is `noisy_input - predicted_noise`.
+Ground-roll attenuation is trained on **paired volumes**: a noisy input volume and a corresponding noise-label volume (the additive noise component). The model learns to predict the noise map; the denoised estimate is noisy_input - predicted_noise.
 
 Train a U-Net baseline:
 
@@ -998,9 +998,9 @@ python scripts/interpolation/inference_interpolation.py \
 Interpolation-specific YAML fields:
 
 - preprocess.mask_mode (or CLI --mask-mode): uniform, random, or continuous.
-- preprocess.mask_ratio (or CLI --mask-ratio): fraction of traces to mask in `(0, 1)`.
-- preprocess.uniform_stride: only used when mask_mode is uniform; keeps every uniform_stride-th trace. For example, `uniform_stride: 2` removes every other trace.
-- preprocess.spherical_power: often enabled for interpolation (e.g., 1.2) to compensate for spherical divergence before masking and normalization.
+- preprocess.mask_ratio (or CLI --mask-ratio): fraction of traces to mask in (0, 1).
+- **preprocess.uniform_stride** : only used when mask_mode is uniform; keeps every uniform_stride-th trace. For example, uniform_stride: 2 removes every other trace.
+- **preprocess.spherical_power** : often enabled for interpolation (e.g., 1.2) to compensate for spherical divergence before masking and normalization.
 
 The interpolation task is the only one of the four that uses mask_traces instead of add_noise or paired noise labels. The other YAML blocks (model, loss, metrics, optim, scheduler, train, log) follow the same registry pattern as Chapter 4.
 
@@ -1065,7 +1065,7 @@ Losses are registered in utils/losses.py.
 Steps:
 
 1. Inherit from BaseLoss.
-2. Implement `forward(self, pred, target=None, **extras)`.
+2. Implement forward(self, pred, target=None, **extras).
 3. Decorate with `@register_loss("my_loss")`.
 
 The extras dict is passed by the training loop and can carry optional masks or weights.
@@ -1102,14 +1102,14 @@ Metrics are registered in utils/metrics.py.
 Steps:
 
 1. Inherit from BaseMetric.
-2. Implement `__call__(self, pred, target)` returning a Python float.
+2. Implement __call__(self, pred, target) returning a Python float.
 3. Set higher_is_better appropriately.
 4. Decorate with `@register_metric("my_metric")`.
 
 Reduction modes:
 
-- `reduction="per_sample"` (default): compute the metric independently for each sample in the leading batch dimension, then average across the batch. This matches the common seismic convention of reporting a mean per-shot SNR or PSNR.
-- `reduction="global"`: pool all elements first, then apply any non-linear operation (e.g., sqrt or log10). This preserves textbook identities such as `RMSE == sqrt(MSE)` and `PSNR == 10*log10(peak^2 / MSE)`.
+- reduction="per_sample" (default): compute the metric independently for each sample in the leading batch dimension, then average across the batch. This matches the common seismic convention of reporting a mean per-shot SNR or PSNR.
+- reduction="global": pool all elements first, then apply any non-linear operation (e.g., sqrt or log10). This preserves textbook identities such as RMSE == sqrt(MSE) and PSNR == 10*log10(peak^2 / MSE).
 
 Example:
 
@@ -1141,9 +1141,9 @@ Dataset classes live in utils/datasets.py and inherit from BaseArrayDataset.
 Required overrides:
 
 - `_build_index()`: scan self.root and populate self._index with Path objects.
-- `_load_sample(path)`: return `(input_tensor, target_tensor_or_none)`. Both should be CPU tensors.
+- _load_sample(path): return (input_tensor, target_tensor_or_none). Both should be CPU tensors.
 
-The dataset expects seismic volumes with the standard shape `(n_shots, n_traces, n_time)`.
+The dataset expects seismic volumes with the standard shape (n_shots, n_traces, n_time).
 
 Example:
 
@@ -1181,7 +1181,7 @@ data:
 
 ### 6.5 Adding a New Preprocessing Step
 
-New preprocessing functions should be added to tools/preprocessing.py as pure NumPy operations on `(n_shots, n_traces, n_time)` or `(n_traces, n_time)`.
+New preprocessing functions should be added to tools/preprocessing.py as pure NumPy operations on (n_shots, n_traces, n_time) or (n_traces, n_time).
 
 Steps:
 
@@ -1213,7 +1213,7 @@ preprocess:
   skip: []
 ```
 
-When adding a step that changes the amplitude scale, remember to update normalize_mode and metric data_range values consistently. For example, if you scale amplitudes so the peak range becomes `[-2, 2]`, set SSIM `data_range: 4.0` and PSNR `data_range: 2.0`.
+When adding a step that changes the amplitude scale, remember to update normalize_mode and metric data_range values consistently. For example, if you scale amplitudes so the peak range becomes [-2, 2], set SSIM data_range: 4.0 and PSNR data_range: 2.0.
 
 ---
 
@@ -1247,8 +1247,8 @@ When adding a step that changes the amplitude scale, remember to update normaliz
 
 **SSIM / PSNR data_range mismatch with normalize_mode**
 
-- max_abs normalizes to `[-1, 1]`: SSIM needs `data_range: 2.0`, PSNR needs `data_range: 1.0`.
-- minmax normalizes to `[0, 1]`: both SSIM and PSNR use `data_range: 1.0`.
+- max_abs normalizes to [-1, 1]: SSIM needs data_range: 2.0, PSNR needs data_range: 1.0.
+- minmax normalizes to [0, 1]: both SSIM and PSNR use data_range: 1.0.
 - mean_std is unbounded; set the ranges from the actual target volume or keep them in the metric params.
 
 **shot_split inconsistency between training and inference**
