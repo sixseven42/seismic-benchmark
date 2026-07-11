@@ -203,6 +203,16 @@
   word-break: break-word;
 }
 
+.tutorial-content td code {
+  white-space: nowrap;
+}
+
+.tutorial-content th:first-child,
+.tutorial-content td:first-child {
+  white-space: nowrap;
+  width: 1%;
+}
+
 .tutorial-content th {
   font-weight: 600;
   color: var(--text);
