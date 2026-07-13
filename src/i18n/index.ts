@@ -134,6 +134,7 @@ const translations = {
       random_noise_suppression: 'Denoising (Random Noise)',
       first_arrival_picking: 'First Arrival Picking',
       multiples_attenuation: 'Coherent Noise — Multiples',
+      deblending: 'Deblending',
     },
     taskGroups: {
       coherent_noise: 'Coherent Noise',
@@ -280,6 +281,7 @@ const translations = {
       random_noise_suppression: '去噪（随机噪声）',
       first_arrival_picking: '初至拾取',
       multiples_attenuation: '相干噪声 — 多次波',
+      deblending: '去混叠',
     },
     taskGroups: {
       coherent_noise: '相干噪声',

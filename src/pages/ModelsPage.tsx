@@ -16,6 +16,7 @@ const TASK_LABELS: Record<string, string> = {
   random_noise_suppression: 'Random Noise Suppression',
   first_arrival_picking: 'First Arrival Picking',
   multiples_attenuation: 'Coherent Noise — Multiples',
+  deblending: 'Deblending',
 };
 
 export default function ModelsPage({ data, filters, setFilters, search }: Props) {
@@ -103,6 +104,7 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
             </optgroup>
             <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
+            <option value="deblending">{t.tasks.deblending}</option>
           </select>
         </div>
         <div className="toolbar-group">

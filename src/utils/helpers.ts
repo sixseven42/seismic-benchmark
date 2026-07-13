@@ -34,7 +34,8 @@ export function getMetricColumns(task: string): string[] {
     task === 'interpolation' ||
     task === 'coherent_noise_suppression' ||
     task === 'random_noise_suppression' ||
-    task === 'multiples_attenuation'
+    task === 'multiples_attenuation' ||
+    task === 'deblending'
   ) {
     return ['snr', 'psnr', 'ssim', 'rmse', 'mse'];
   }

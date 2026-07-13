@@ -77,6 +77,7 @@ export default function PapersPage({ data, search }: Props) {
             </optgroup>
             <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
+            <option value="deblending">{t.tasks.deblending}</option>
           </select>
         </div>
         <div className="toolbar-group">

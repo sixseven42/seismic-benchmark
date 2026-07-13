@@ -136,6 +136,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
             </optgroup>
             <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
+            <option value="deblending">{t.tasks.deblending}</option>
           </select>
         </div>
         <span className="result-count">{filteredBenchmarks.length} {t.leaderboard.results}</span>

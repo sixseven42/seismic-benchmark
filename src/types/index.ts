@@ -3,7 +3,8 @@ export type Task =
   | 'coherent_noise_suppression'
   | 'random_noise_suppression'
   | 'first_arrival_picking'
-  | 'multiples_attenuation';
+  | 'multiples_attenuation'
+  | 'deblending';
 export type ModelType = 'traditional' | 'deep_learning' | 'hybrid';
 export type Language = 'en' | 'zh';
 

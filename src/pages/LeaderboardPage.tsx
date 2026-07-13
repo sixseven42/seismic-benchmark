@@ -183,6 +183,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     },
     { value: 'random_noise_suppression', label: t.tasks.random_noise_suppression },
     { value: 'first_arrival_picking', label: t.tasks.first_arrival_picking },
+    { value: 'deblending', label: t.tasks.deblending },
   ];
 
   const typeOptions: { value: Filters['type']; label: string }[] = [
