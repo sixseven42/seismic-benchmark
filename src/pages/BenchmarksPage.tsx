@@ -133,10 +133,10 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
             <optgroup label={t.taskGroups.coherent_noise}>
               <option value="coherent_noise_suppression">{t.tasks.coherent_noise_suppression}</option>
               <option value="multiples_attenuation">{t.tasks.multiples_attenuation}</option>
+              <option value="deblending">{t.tasks.deblending}</option>
             </optgroup>
             <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
-            <option value="deblending">{t.tasks.deblending}</option>
           </select>
         </div>
         <span className="result-count">{filteredBenchmarks.length} {t.leaderboard.results}</span>

@@ -179,11 +179,11 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       items: [
         { value: 'coherent_noise_suppression', label: t.tasks.coherent_noise_suppression },
         { value: 'multiples_attenuation', label: t.tasks.multiples_attenuation },
+        { value: 'deblending', label: t.tasks.deblending },
       ],
     },
     { value: 'random_noise_suppression', label: t.tasks.random_noise_suppression },
     { value: 'first_arrival_picking', label: t.tasks.first_arrival_picking },
-    { value: 'deblending', label: t.tasks.deblending },
   ];
 
   const typeOptions: { value: Filters['type']; label: string }[] = [
