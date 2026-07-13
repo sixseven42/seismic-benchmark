@@ -62,7 +62,9 @@
       "Read(//c/论文/SeisBench/网页源数据/record_random/**)",
       "Bash(dir \"C:\\\\论文\\\\SeisBench\\\\网页源数据\\\\record_random\" /b)",
       "Bash(bsdtar *)",
-      "Bash(unzip *)"
+      "Bash(unzip *)",
+      "Bash(cp \"C:/Users/admin/Documents/WeChat Files/wxid_hvmr1h95e7jn22/FileStorage/Temp/1cd0bb7781cc2f87dbc1bd194d96c52.png\" public/datasets/multiples-raw.png)",
+      "Bash(cp \"C:/Users/admin/Documents/WeChat Files/wxid_hvmr1h95e7jn22/FileStorage/Temp/64ed0fa5ae4be6e8d27eab1b51a495b.png\" public/datasets/multiples-label.png)"
     ]
   }
 }
