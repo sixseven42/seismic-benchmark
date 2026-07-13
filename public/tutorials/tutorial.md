@@ -883,22 +883,26 @@ This writes each SNR level to its own output directory and is useful for quick c
 
 ## Chapter 5: Extending to Other Tasks
 
-The repository ships with four task families. They all use the same registry + factory backbone, but the way training pairs are generated differs.
+The repository ships with four task families. They all use the same registry + factory backbone, but the way training pairs are generated differs. Two of the tasks — ground-roll attenuation and multiples attenuation — belong to the coherent-noise family and share a paired-volume training setup; the other two use different input generation strategies.
 
 ### 5.1 Task comparison
 
 | Task | Input Data | Entry Scripts | Config Directory | Key Differences |
 |------|------------|---------------|------------------|-----------------|
 | random_noise_suppression | Clean volume + synthetic noise | scripts/random_noise_suppression/train_denoise_\*.py, inference_denoise_\*.py | configs/random_noise_suppression/ | Noise is injected with add_noise; metrics compare the denoised output to the clean target. |
-| ground_roll_attenuation | Paired noisy / noise-label volumes | scripts/ground_roll_attenuation/train_denoise_\*.py, batch_evaluate.py | configs/ground_roll_attenuation/ | No synthetic noise injection; the model predicts the additive noise label; the data block uses segy_pair (or npy_pair / mat_pair). |
-| multiples_attenuation | Paired noisy / noise-label volumes | scripts/multiples_attenuation/train_denoise_\*.py, batch_evaluate.py | configs/multiples_attenuation/ | Same shape as ground-roll attenuation; task-specific data and semantics. |
+| ground_roll_attenuation | Paired noisy / noise-label volumes | scripts/ground_roll_attenuation/train_denoise_\*.py, batch_evaluate.py | configs/ground_roll_attenuation/ | Coherent-noise family; no synthetic noise injection; the model predicts the additive noise label; the data block uses segy_pair (or npy_pair / mat_pair). |
+| multiples_attenuation | Paired noisy / noise-label volumes | scripts/multiples_attenuation/train_denoise_\*.py, batch_evaluate.py | configs/multiples_attenuation/ | Coherent-noise family; same paired-volume setup as ground roll, but the noise label represents free-surface multiples rather than ground-roll energy. |
 | interpolation | Single volume + trace masking | scripts/interpolation/train_interpolation_unet.py, inference_interpolation.py | configs/interpolation/ | mask_traces simulates missing traces; the model reconstructs the full shot gather. |
 
 ### 5.2 random_noise_suppression
 
 This is the task covered in Chapter 4.
 
-### 5.3 ground_roll_attenuation
+### 5.3 Coherent noise attenuation
+
+The coherent-noise family contains two tasks that train on paired volumes: a noisy input volume and a corresponding noise-label volume. The model learns to predict the additive noise component; the cleaned estimate is obtained by subtracting the predicted noise from the input.
+
+#### 5.3.1 ground_roll_attenuation
 
 Ground-roll attenuation is trained on **paired volumes**: a noisy input volume and a corresponding noise-label volume (the additive noise component). The model learns to predict the noise map; the denoised estimate is noisy_input - predicted_noise.
 
@@ -940,9 +944,9 @@ data:
 
 The two volumes must have the same shape after loading.
 
-### 5.4 multiples_attenuation
+#### 5.3.2 multiples_attenuation
 
-Multiples attenuation follows the same paired-volume setup as ground-roll attenuation; only the data and the physical meaning of the noise label differ.
+Multiples attenuation belongs to the same coherent-noise family as ground-roll attenuation and follows the same paired-volume setup. The difference is the physical meaning of the noise label: here it represents the free-surface multiple energy that needs to be removed from the marine shot gather, rather than ground-roll energy.
 
 Train a U-Net baseline:
 
@@ -967,7 +971,22 @@ python scripts/multiples_attenuation/batch_evaluate.py \
   --batch_size 8
 ```
 
-### 5.5 interpolation
+batch_evaluate.py scans each experiment directory, loads checkpoints/best.pt, runs inference on the held-out test_set/, and writes an Excel workbook with one sheet per experiment. The workbook compares raw-input metrics (noisy vs reference) and denoised metrics (model output vs reference).
+
+The multiples-attenuation config uses a data.segy_pair block (NPY/MAT variants are npy_pair / mat_pair):
+
+```yaml
+data:
+  segy_pair:
+    input_path: /path/to/noisy.sgy
+    target_path: /path/to/multiples_label.sgy
+    traces_per_shot: 201
+    time_downsample: 1
+```
+
+The two volumes must have the same shape after loading.
+
+### 5.4 interpolation
 
 Interpolation trains a model to reconstruct missing traces. A single volume is loaded, masked along the trace axis, and the model learns to recover the original traces.
 

@@ -1090,5 +1090,37 @@
       "datasets/segc3-interp-continuous-raw.png",
       "datasets/segc3-interp-continuous-label.png"
     ]
+  },
+  {
+    "id": "multiples-attenuation",
+    "name": "Marine Multiples Attenuation Dataset",
+    "dataset_name": "Marine Multiples Attenuation Dataset",
+    "task": "multiples_attenuation",
+    "icon": "🌊",
+    "description": "Paired noisy-input and multiples-noise-label SEG-Y benchmark for supervised marine multiples attenuation.",
+    "data_source": "synthetic",
+    "dimensions": "638 × 638 × 1976 (shots, traces, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse"
+    ],
+    "tags": [
+      "Multiples",
+      "Marine",
+      "Synthetic"
+    ],
+    "citation": "https://huggingface.co/datasets/GeoBrain/multiples",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/multiples",
+    "model_count": 9,
+    "group_name": "SEGC3 Multiples Attenuation",
+    "gallery": [
+      "datasets/multiples-raw.png",
+      "datasets/multiples-label.png"
+    ]
   }
 ]

@@ -554,5 +554,176 @@
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet",
     "is_open_source": true
+  },
+  {
+    "id": "attention-unet-multiples",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "Attention-gated U-Net for predicting the additive multiple component in marine shot gathers.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/atten_unet/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-plus-multiples",
+    "name": "Attention UNet-Plus",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "Wider attention-gated U-Net variant for marine multiple component prediction.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/atten_unet_plus/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "dncnn-multiples",
+    "name": "DnCNN",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
+    "year": 2017,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "Residual convolutional denoiser adapted to predict marine multiple wavefields.",
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dncnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/dncnn/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "dnndat-multiples",
+    "name": "DNNDAT",
+    "authors": "Wang et al.",
+    "org": "Peking University",
+    "year": 2022,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "DNNDAT-style convolutional encoder-decoder for marine multiple suppression with data augmentation training.",
+    "paper_url": "https://doi.org/10.1190/geo2021-0206.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dnndat.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/dnndat/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-multiples",
+    "name": "ResUNet",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "Residual U-Net baseline for predicting marine free-surface multiples.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/res_unet/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-plus-multiples",
+    "name": "ResUNet-Plus",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "Wider residual U-Net variant with increased base channels for marine multiple attenuation.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/res_unet_plus/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "sagan-multiples",
+    "name": "SAGAN",
+    "authors": "Tao et al.",
+    "org": "Zhejiang University",
+    "year": 2022,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "Self-attention GAN generator for seismic surface-related multiple suppression.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2022.3168143",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/sagan.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/sagan/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "unet-multiples",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "U-Net baseline for predicting the additive free-surface multiple component in marine shot gathers.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/unet/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
+  },
+  {
+    "id": "unet-plus-multiples",
+    "name": "UNet-Plus",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔩",
+    "type": "deep_learning",
+    "tasks": [
+      "multiples_attenuation"
+    ],
+    "description": "Wider U-Net variant with increased base channels for marine multiple component prediction.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/unet_plus/seed42/best.pt",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true
   }
 ]

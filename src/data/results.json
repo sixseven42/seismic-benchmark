@@ -3224,5 +3224,140 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet.py",
     "date_added": "2026-05-22"
+  },
+  {
+    "model_id": "attention-unet-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 20.8545,
+      "psnr": 48.8842,
+      "ssim": 0.9945,
+      "mae": 0.000825,
+      "mse": 0.000013,
+      "rmse": 0.003608
+    },
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "attention-unet-plus-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 22.3286,
+      "psnr": 50.3583,
+      "ssim": 0.9948,
+      "mae": 0.000706,
+      "mse": 0.000009,
+      "rmse": 0.003037
+    },
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "dncnn-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 15.8952,
+      "psnr": 43.925,
+      "ssim": 0.9859,
+      "mae": 0.001653,
+      "mse": 0.000041,
+      "rmse": 0.006391
+    },
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dncnn.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "dnndat-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 18.5085,
+      "psnr": 46.5383,
+      "ssim": 0.9928,
+      "mae": 0.000904,
+      "mse": 0.000022,
+      "rmse": 0.004715
+    },
+    "paper_url": "https://doi.org/10.1190/geo2021-0206.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dnndat.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "res-unet-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 20.7719,
+      "psnr": 48.8016,
+      "ssim": 0.9939,
+      "mae": 0.000936,
+      "mse": 0.000013,
+      "rmse": 0.003638
+    },
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "res-unet-plus-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 21.6077,
+      "psnr": 49.6374,
+      "ssim": 0.9944,
+      "mae": 0.000794,
+      "mse": 0.000011,
+      "rmse": 0.003301
+    },
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "sagan-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 23.8948,
+      "psnr": 23.6218,
+      "ssim": 0.8669,
+      "mae": 0.017121,
+      "mse": 0.004996,
+      "rmse": 0.068335
+    },
+    "paper_url": "https://doi.org/10.1109/LGRS.2022.3168143",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/sagan.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "unet-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 20.5177,
+      "psnr": 48.5474,
+      "ssim": 0.9938,
+      "mae": 0.000896,
+      "mse": 0.000014,
+      "rmse": 0.003743
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",
+    "date_added": "2026-07-10"
+  },
+  {
+    "model_id": "unet-plus-multiples",
+    "benchmark_id": "multiples-attenuation",
+    "scores": {
+      "snr": 22.7475,
+      "psnr": 50.7773,
+      "ssim": 0.9948,
+      "mae": 0.000736,
+      "mse": 0.000008,
+      "rmse": 0.002897
+    },
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",
+    "date_added": "2026-07-10"
   }
 ]

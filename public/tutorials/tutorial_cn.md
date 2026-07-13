@@ -907,7 +907,7 @@ done
 <a id="chapter-5-extending-to-other-tasks"></a>
 ## 第 5 章：扩展到其他任务
 
-仓库包含四个任务族。它们都使用相同的注册表 + 工厂模式骨架，但训练对的生成方式不同。
+仓库包含四个任务族。它们都使用相同的注册表 + 工厂模式骨架，但训练对的生成方式不同。其中两个任务——面波衰减与多次波衰减——属于相干噪声族，共享成对数据体训练设置；另外两个任务使用不同的输入生成策略。
 
 <a id="5-1-task-comparison"></a>
 ### 5.1 任务对比
@@ -915,8 +915,8 @@ done
 | 任务 | 输入数据 | 入口脚本 | 配置目录 | 主要区别 |
 |------|----------|---------|---------|---------|
 | random_noise_suppression | 干净数据体 + 合成噪声 | scripts/random_noise_suppression/train_denoise_\*.py、inference_denoise_\*.py | configs/random_noise_suppression/ | 使用 add_noise 注入噪声；指标将去噪输出与干净目标对比。 |
-| ground_roll_attenuation | 成对含噪 / 噪声标签数据体 | scripts/ground_roll_attenuation/train_denoise_\*.py、batch_evaluate.py | configs/ground_roll_attenuation/ | 无合成噪声注入；模型预测加性噪声标签；data 块使用 segy_pair（或 npy_pair / mat_pair）。 |
-| multiples_attenuation | 成对含噪 / 噪声标签数据体 | scripts/multiples_attenuation/train_denoise_\*.py、batch_evaluate.py | configs/multiples_attenuation/ | 与面波衰减结构相同；任务特定的数据与语义。 |
+| ground_roll_attenuation | 成对含噪 / 噪声标签数据体 | scripts/ground_roll_attenuation/train_denoise_\*.py、batch_evaluate.py | configs/ground_roll_attenuation/ | 相干噪声族；无合成噪声注入；模型预测加性噪声标签；data 块使用 segy_pair（或 npy_pair / mat_pair）。 |
+| multiples_attenuation | 成对含噪 / 噪声标签数据体 | scripts/multiples_attenuation/train_denoise_\*.py、batch_evaluate.py | configs/multiples_attenuation/ | 相干噪声族；与面波衰减结构相同，但噪声标签代表需要被移除的自由表面多次波能量。 |
 | interpolation | 单数据体 + 道掩码 | scripts/interpolation/train_interpolation_unet.py、inference_interpolation.py | configs/interpolation/ | mask_traces 模拟缺失道；模型重建完整炮集。 |
 
 <a id="5-2-random-noise-suppression"></a>
@@ -924,8 +924,13 @@ done
 
 这是第 4 章介绍的任务。
 
-<a id="5-3-ground-roll-attenuation"></a>
-### 5.3 ground_roll_attenuation
+<a id="5-3-coherent-noise-attenuation"></a>
+### 5.3 相干噪声衰减
+
+相干噪声族包含两个任务，它们都使用成对数据体训练：一个含噪输入数据体和一个对应的噪声标签数据体。模型学习预测加性噪声分量；通过从输入中减去预测的噪声得到去噪后的估计。
+
+<a id="5-3-1-ground-roll-attenuation"></a>
+#### 5.3.1 ground_roll_attenuation
 
 面波衰减使用成对数据体训练：一个含噪输入数据体和一个对应的噪声标签数据体（即加性噪声分量）。模型学习预测噪声图；去噪估计为 noisy_input - predicted_noise。
 
@@ -967,10 +972,10 @@ data:
 
 两个数据体加载后必须具有相同形状。
 
-<a id="5-4-multiples-attenuation"></a>
-### 5.4 multiples_attenuation
+<a id="5-3-2-multiples-attenuation"></a>
+#### 5.3.2 multiples_attenuation
 
-多次波衰减遵循与面波衰减相同的成对数据体设置；只有数据和噪声标签的物理含义不同。
+多次波衰减与面波衰减同属相干噪声族，遵循相同的成对数据体设置。区别在于噪声标签的物理含义：此处标签代表需要从海洋炮集中移除的自由表面多次波能量，而不是面波能量。
 
 训练 U-Net 基线：
 
@@ -995,8 +1000,23 @@ python scripts/multiples_attenuation/batch_evaluate.py \
   --batch_size 8
 ```
 
-<a id="5-5-interpolation"></a>
-### 5.5 interpolation
+batch_evaluate.py 扫描每个实验目录，加载 checkpoints/best.pt，在留出的 test_set/ 上运行推理，并写入一个每个实验一个工作表的 Excel 工作簿。工作簿对比原始输入指标（含噪 vs 参考）和去噪指标（模型输出 vs 参考）。
+
+多次波衰减配置使用 data.segy_pair 块（NPY/MAT 变体为 npy_pair / mat_pair）：
+
+```yaml
+data:
+  segy_pair:
+    input_path: /path/to/noisy.sgy
+    target_path: /path/to/multiples_label.sgy
+    traces_per_shot: 201
+    time_downsample: 1
+```
+
+两个数据体加载后必须具有相同形状。
+
+<a id="5-4-interpolation"></a>
+### 5.4 interpolation
 
 插值训练模型重建缺失道。加载单个数据体，沿道轴进行掩码，模型学习恢复原始道。
 

@@ -71,7 +71,10 @@ export default function PapersPage({ data, search }: Props) {
           >
             <option value="all">{t.leaderboard.all}</option>
             <option value="interpolation">{t.tasks.interpolation}</option>
-            <option value="coherent_noise_suppression">{t.tasks.coherent_noise_suppression}</option>
+            <optgroup label={t.taskGroups.coherent_noise}>
+              <option value="coherent_noise_suppression">{t.tasks.coherent_noise_suppression}</option>
+              <option value="multiples_attenuation">{t.tasks.multiples_attenuation}</option>
+            </optgroup>
             <option value="random_noise_suppression">{t.tasks.random_noise_suppression}</option>
             <option value="first_arrival_picking">{t.tasks.first_arrival_picking}</option>
           </select>

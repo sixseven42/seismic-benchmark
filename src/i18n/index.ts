@@ -14,7 +14,7 @@ const translations = {
     },
     overview: {
       title: 'Overview',
-      subtitle: 'SeismicBench is an open academic benchmark for seismic data processing methods, tracking performance across interpolation, coherent noise suppression, random noise suppression, first arrival picking, and super-resolution tasks.',
+      subtitle: 'SeismicBench is an open academic benchmark for seismic data processing methods, tracking performance across interpolation, coherent noise suppression, random noise suppression, first arrival picking, and multiples attenuation tasks.',
       aboutTitle: 'About SeismicBench',
       aboutText1: 'SeismicBench was created to provide a centralized, fair, and reproducible evaluation platform for seismic data processing algorithms. We collect results from peer-reviewed publications and maintain up-to-date leaderboards to help researchers identify state-of-the-art methods.',
       aboutText2: 'All data is sourced from published papers with full citation information. We encourage authors to submit their latest results to keep the benchmark current.',
@@ -57,7 +57,7 @@ const translations = {
     },
     leaderboard: {
       title: 'Leaderboard',
-      subtitle: 'Compare seismic data processing methods across interpolation, coherent noise suppression, random noise suppression, and first arrival picking tasks.',
+      subtitle: 'Compare seismic data processing methods across interpolation, coherent noise suppression, random noise suppression, first arrival picking, and multiples attenuation tasks.',
       task: 'Task',
       dataset: 'Dataset',
       metric: 'Metric',
@@ -130,9 +130,13 @@ const translations = {
     },
     tasks: {
       interpolation: 'Interpolation',
-      coherent_noise_suppression: 'Denoising (Coherent Noise)',
+      coherent_noise_suppression: 'Coherent Noise — Ground Roll',
       random_noise_suppression: 'Denoising (Random Noise)',
       first_arrival_picking: 'First Arrival Picking',
+      multiples_attenuation: 'Coherent Noise — Multiples',
+    },
+    taskGroups: {
+      coherent_noise: 'Coherent Noise',
     },
     tutorial: {
       title: 'Tutorial',
@@ -156,7 +160,7 @@ const translations = {
     },
     overview: {
       title: '概览',
-      subtitle: 'SeismicBench 是一个开放的地震数据处理学术基准平台，追踪插值、相干噪声压制、随机噪声压制、初至拾取和超分辨率等任务的算法性能。',
+      subtitle: 'SeismicBench 是一个开放的地震数据处理学术基准平台，追踪插值、相干噪声压制、随机噪声压制、初至拾取和多次波衰减等任务的算法性能。',
       aboutTitle: '关于 SeismicBench',
       aboutText1: 'SeismicBench 旨在为地震数据处理算法提供一个集中、公平且可复现的评估平台。我们收集同行评审论文中的实验结果，并维护最新的排行榜，帮助研究人员识别最先进的方法。',
       aboutText2: '所有数据均来自已发表论文，并附有完整的引用信息。我们鼓励作者提交最新结果以保持基准的时效性。',
@@ -199,7 +203,7 @@ const translations = {
     },
     leaderboard: {
       title: '排行榜',
-      subtitle: '对比地震数据处理方法的性能，涵盖插值、相干噪声压制、随机噪声压制、初至拾取和超分辨率任务。',
+      subtitle: '对比地震数据处理方法的性能，涵盖插值、相干噪声压制、随机噪声压制、初至拾取和多次波衰减任务。',
       task: '任务',
       dataset: '数据集',
       metric: '指标',
@@ -272,9 +276,13 @@ const translations = {
     },
     tasks: {
       interpolation: '插值',
-      coherent_noise_suppression: '去噪（相干噪声）',
+      coherent_noise_suppression: '相干噪声 — 面波',
       random_noise_suppression: '去噪（随机噪声）',
       first_arrival_picking: '初至拾取',
+      multiples_attenuation: '相干噪声 — 多次波',
+    },
+    taskGroups: {
+      coherent_noise: '相干噪声',
     },
     tutorial: {
       title: '教程',

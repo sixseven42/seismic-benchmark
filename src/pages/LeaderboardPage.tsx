@@ -169,9 +169,18 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
 
   const currentBench = data.benchmarks.find(b => b.id === filters.dataset);
 
-  const taskOptions: { value: Filters['task']; label: string }[] = [
+  const taskOptions: (
+    | { value: Filters['task']; label: string }
+    | { group: string; items: { value: Filters['task']; label: string }[] }
+  )[] = [
     { value: 'interpolation', label: t.tasks.interpolation },
-    { value: 'coherent_noise_suppression', label: t.tasks.coherent_noise_suppression },
+    {
+      group: t.taskGroups.coherent_noise,
+      items: [
+        { value: 'coherent_noise_suppression', label: t.tasks.coherent_noise_suppression },
+        { value: 'multiples_attenuation', label: t.tasks.multiples_attenuation },
+      ],
+    },
     { value: 'random_noise_suppression', label: t.tasks.random_noise_suppression },
     { value: 'first_arrival_picking', label: t.tasks.first_arrival_picking },
   ];
@@ -204,7 +213,17 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
               setSort({ key: 'score', dir: 'desc' });
             }}
           >
-            {taskOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
+            {taskOptions.map(o =>
+              'group' in o ? (
+                <optgroup key={o.group} label={o.group}>
+                  {o.items.map(item => (
+                    <option key={item.value} value={item.value}>{item.label}</option>
+                  ))}
+                </optgroup>
+              ) : (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              )
+            )}
           </select>
         </div>
 
