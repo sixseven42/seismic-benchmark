@@ -388,8 +388,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                                     <td>{escapeHtml(r.model.name)}</td>
                                     {ebMetrics.map(m => {
                                       const val = scores[m] ?? null;
-                                      const std = scores[`${m}_std`] ?? null;
-                                      return <td key={m}>{formatMetricValue(val, m, std)}</td>;
+                                      return <td key={m}>{formatMetricValue(val, m)}</td>;
                                     })}
                                   </tr>
                                 );
@@ -416,8 +415,7 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                                     <td>{escapeHtml(r.model.name)}</td>
                                     {fbMetrics.map(m => {
                                       const val = scores[m] ?? null;
-                                      const std = scores[`${m}_std`] ?? null;
-                                      return <td key={m}>{formatMetricValue(val, m, std)}</td>;
+                                      return <td key={m}>{formatMetricValue(val, m)}</td>;
                                     })}
                                   </tr>
                                 );

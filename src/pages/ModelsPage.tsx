@@ -251,11 +251,10 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                               {metrics.map(m => {
                                 const scores = r.scores as Record<string, number | undefined>;
                                 const val = scores[m] ?? null;
-                                const std = scores[`${m}_std`] ?? null;
                                 return (
                                   <tr key={m}>
                                     <td>{m.toUpperCase()}</td>
-                                    <td>{formatMetricValue(val, m, std)}</td>
+                                    <td>{formatMetricValue(val, m)}</td>
                                   </tr>
                                 );
                               })}

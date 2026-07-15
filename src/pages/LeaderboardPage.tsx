@@ -478,11 +478,10 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                   {metricCols.map(m => {
                     const actualMetric = m === 'hit_rate' ? hitRatePx : m === 'eb' ? ebMetric : m === 'fb' ? fbMetric : m;
                     const val = row.result.scores[actualMetric as MetricKey] ?? null;
-                    const std = row.result.scores[`${actualMetric}_std` as MetricKey] ?? null;
                     const isHighlight = actualMetric === highlightMetric;
                     return (
                       <td key={m} className={`lb-score ${isHighlight ? 'lb-score-highlight' : ''}`}>
-                        {formatMetricValue(val, actualMetric, std)}
+                        {formatMetricValue(val, actualMetric)}
                       </td>
                     );
                   })}

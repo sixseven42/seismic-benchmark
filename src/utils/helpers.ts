@@ -47,17 +47,11 @@ export function getMetricColumns(task: string): string[] {
   return ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
 }
 
-export function formatMetricValue(value: number | null | undefined, metric: string, std?: number | null): string {
+export function formatMetricValue(value: number | null | undefined, metric: string): string {
   if (value == null) return '—';
-  const decimals =
-    metric === 'ssim' || metric === 'f1' ? 3 :
-    metric === 'mse' ? 6 :
-    metric === 'rmse' ? 4 :
-    2;
-  const suffix = metric === 'accuracy' ? '%' : '';
-  const meanStr = value.toFixed(decimals) + suffix;
-  if (std != null) {
-    return `${meanStr} ± ${std.toFixed(decimals)}`;
-  }
-  return meanStr;
+  if (metric === 'ssim' || metric === 'f1') return value.toFixed(3);
+  if (metric === 'mse') return value.toFixed(6);
+  if (metric === 'rmse') return value.toFixed(4);
+  if (metric === 'accuracy') return value.toFixed(2) + '%';
+  return value.toFixed(2);
 }
