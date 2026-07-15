@@ -284,6 +284,8 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
             onChange={e => {
               const val = e.target.value as MetricKey;
               if (val.startsWith('hit_rate_')) setHitRatePx(val);
+              if (val.startsWith('eb_wse_')) setEbMetric(val);
+              if (val.startsWith('fb_fre_')) setFbMetric(val);
               setFilters(prev => ({ ...prev, metric: val }));
             }}
           >
