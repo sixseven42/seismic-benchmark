@@ -452,7 +452,7 @@
       "psnr": 48.5979,
       "ssim": 0.9974,
       "mae": 0.000577,
-      "mse": 0.000014,
+      "mse": 1.4e-05,
       "rmse": 0.003745
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -467,7 +467,7 @@
       "psnr": 47.1306,
       "ssim": 0.9966,
       "mae": 0.000826,
-      "mse": 0.00002,
+      "mse": 2e-05,
       "rmse": 0.004436
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -557,7 +557,7 @@
       "psnr": 50.742,
       "ssim": 0.998,
       "mae": 0.000659,
-      "mse": 0.000008,
+      "mse": 8e-06,
       "rmse": 0.002907
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -572,7 +572,7 @@
       "psnr": 44.9143,
       "ssim": 0.9949,
       "mae": 0.001245,
-      "mse": 0.000032,
+      "mse": 3.2e-05,
       "rmse": 0.005679
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -587,7 +587,7 @@
       "psnr": 40.6078,
       "ssim": 0.9886,
       "mae": 0.003088,
-      "mse": 0.000087,
+      "mse": 8.7e-05,
       "rmse": 0.009328
     },
     "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
@@ -602,7 +602,7 @@
       "psnr": 47.508,
       "ssim": 0.9972,
       "mae": 0.000673,
-      "mse": 0.000018,
+      "mse": 1.8e-05,
       "rmse": 0.004235
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -617,7 +617,7 @@
       "psnr": 45.682,
       "ssim": 0.9953,
       "mae": 0.000896,
-      "mse": 0.000027,
+      "mse": 2.7e-05,
       "rmse": 0.005203
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -632,7 +632,7 @@
       "psnr": 49.5338,
       "ssim": 0.9964,
       "mae": 0.00063,
-      "mse": 0.000011,
+      "mse": 1.1e-05,
       "rmse": 0.003358
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -647,7 +647,7 @@
       "psnr": 48.0343,
       "ssim": 0.9959,
       "mae": 0.000729,
-      "mse": 0.000016,
+      "mse": 1.6e-05,
       "rmse": 0.00397
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -677,7 +677,7 @@
       "psnr": 42.3788,
       "ssim": 0.9883,
       "mae": 0.002676,
-      "mse": 0.000058,
+      "mse": 5.8e-05,
       "rmse": 0.007606
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -737,7 +737,7 @@
       "psnr": 47.7869,
       "ssim": 0.9924,
       "mae": 0.001194,
-      "mse": 0.000017,
+      "mse": 1.7e-05,
       "rmse": 0.004095
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -752,7 +752,7 @@
       "psnr": 46.7651,
       "ssim": 0.9948,
       "mae": 0.001003,
-      "mse": 0.000021,
+      "mse": 2.1e-05,
       "rmse": 0.00459
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -767,7 +767,7 @@
       "psnr": 42.2528,
       "ssim": 0.9876,
       "mae": 0.002294,
-      "mse": 0.00006,
+      "mse": 6e-05,
       "rmse": 0.007717
     },
     "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
@@ -782,7 +782,7 @@
       "psnr": 48.2128,
       "ssim": 0.9961,
       "mae": 0.000676,
-      "mse": 0.000015,
+      "mse": 1.5e-05,
       "rmse": 0.003885
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -797,7 +797,7 @@
       "psnr": 48.2143,
       "ssim": 0.9958,
       "mae": 0.000745,
-      "mse": 0.000015,
+      "mse": 1.5e-05,
       "rmse": 0.003885
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -812,7 +812,7 @@
       "psnr": 50.6163,
       "ssim": 0.9965,
       "mae": 0.000618,
-      "mse": 0.000009,
+      "mse": 9e-06,
       "rmse": 0.002961
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -827,7 +827,7 @@
       "psnr": 48.8933,
       "ssim": 0.996,
       "mae": 0.000664,
-      "mse": 0.000013,
+      "mse": 1.3e-05,
       "rmse": 0.003594
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -857,7 +857,7 @@
       "psnr": 44.228,
       "ssim": 0.9898,
       "mae": 0.002042,
-      "mse": 0.000038,
+      "mse": 3.8e-05,
       "rmse": 0.006147
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -887,7 +887,7 @@
       "psnr": 40.7978,
       "ssim": 0.973,
       "mae": 0.004344,
-      "mse": 0.000083,
+      "mse": 8.3e-05,
       "rmse": 0.009123
     },
     "paper_url": "https://doi.org/10.1190/geo2020-0691.1",
@@ -917,7 +917,7 @@
       "psnr": 46.7695,
       "ssim": 0.9898,
       "mae": 0.001265,
-      "mse": 0.000023,
+      "mse": 2.3e-05,
       "rmse": 0.004679
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -932,7 +932,7 @@
       "psnr": 48.1864,
       "ssim": 0.9953,
       "mae": 0.000855,
-      "mse": 0.000015,
+      "mse": 1.5e-05,
       "rmse": 0.003898
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -947,7 +947,7 @@
       "psnr": 42.9236,
       "ssim": 0.9875,
       "mae": 0.001949,
-      "mse": 0.000051,
+      "mse": 5.1e-05,
       "rmse": 0.007142
     },
     "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
@@ -962,7 +962,7 @@
       "psnr": 48.8813,
       "ssim": 0.9958,
       "mae": 0.000656,
-      "mse": 0.000013,
+      "mse": 1.3e-05,
       "rmse": 0.003599
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -977,7 +977,7 @@
       "psnr": 49.0517,
       "ssim": 0.9958,
       "mae": 0.000699,
-      "mse": 0.000012,
+      "mse": 1.2e-05,
       "rmse": 0.003527
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -992,7 +992,7 @@
       "psnr": 49.1059,
       "ssim": 0.9947,
       "mae": 0.000686,
-      "mse": 0.000014,
+      "mse": 1.4e-05,
       "rmse": 0.003623
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -1007,7 +1007,7 @@
       "psnr": 49.4675,
       "ssim": 0.996,
       "mae": 0.000671,
-      "mse": 0.000011,
+      "mse": 1.1e-05,
       "rmse": 0.003364
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -1037,7 +1037,7 @@
       "psnr": 46.3346,
       "ssim": 0.9925,
       "mae": 0.001628,
-      "mse": 0.000023,
+      "mse": 2.3e-05,
       "rmse": 0.004823
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -1052,7 +1052,7 @@
       "psnr": 40.4008,
       "ssim": 0.9785,
       "mae": 0.003988,
-      "mse": 0.000093,
+      "mse": 9.3e-05,
       "rmse": 0.009608
     },
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
@@ -1067,7 +1067,7 @@
       "psnr": 41.542,
       "ssim": 0.9747,
       "mae": 0.00394,
-      "mse": 0.000071,
+      "mse": 7.1e-05,
       "rmse": 0.008387
     },
     "paper_url": "https://doi.org/10.1190/geo2020-0691.1",
@@ -1097,7 +1097,7 @@
       "psnr": 47.7628,
       "ssim": 0.9895,
       "mae": 0.001264,
-      "mse": 0.000017,
+      "mse": 1.7e-05,
       "rmse": 0.004128
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -1112,7 +1112,7 @@
       "psnr": 49.4477,
       "ssim": 0.9959,
       "mae": 0.000742,
-      "mse": 0.000011,
+      "mse": 1.1e-05,
       "rmse": 0.003372
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -1127,7 +1127,7 @@
       "psnr": 43.2559,
       "ssim": 0.9877,
       "mae": 0.001822,
-      "mse": 0.000047,
+      "mse": 4.7e-05,
       "rmse": 0.006875
     },
     "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
@@ -1142,7 +1142,7 @@
       "psnr": 49.059,
       "ssim": 0.9955,
       "mae": 0.00062,
-      "mse": 0.000012,
+      "mse": 1.2e-05,
       "rmse": 0.003526
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -1157,7 +1157,7 @@
       "psnr": 49.8571,
       "ssim": 0.9961,
       "mae": 0.000686,
-      "mse": 0.00001,
+      "mse": 1e-05,
       "rmse": 0.003215
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -1172,7 +1172,7 @@
       "psnr": 48.8849,
       "ssim": 0.994,
       "mae": 0.000822,
-      "mse": 0.000015,
+      "mse": 1.5e-05,
       "rmse": 0.003715
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -1187,7 +1187,7 @@
       "psnr": 50.1554,
       "ssim": 0.9963,
       "mae": 0.000622,
-      "mse": 0.00001,
+      "mse": 1e-05,
       "rmse": 0.003107
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
@@ -1217,7 +1217,7 @@
       "psnr": 47.9725,
       "ssim": 0.9942,
       "mae": 0.001366,
-      "mse": 0.000016,
+      "mse": 1.6e-05,
       "rmse": 0.003994
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
@@ -1232,7 +1232,7 @@
       "psnr": 41.5847,
       "ssim": 0.982,
       "mae": 0.003487,
-      "mse": 0.000072,
+      "mse": 7.2e-05,
       "rmse": 0.008417
     },
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
@@ -1247,7 +1247,7 @@
       "psnr": 42.2838,
       "ssim": 0.9783,
       "mae": 0.003351,
-      "mse": 0.000059,
+      "mse": 5.9e-05,
       "rmse": 0.00769
     },
     "paper_url": "https://doi.org/10.1190/geo2020-0691.1",
@@ -1277,7 +1277,7 @@
       "psnr": 46.9932,
       "ssim": 0.9873,
       "mae": 0.001799,
-      "mse": 0.000021,
+      "mse": 2.1e-05,
       "rmse": 0.004502
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -1292,7 +1292,7 @@
       "psnr": 50.4823,
       "ssim": 0.9965,
       "mae": 0.000674,
-      "mse": 0.000009,
+      "mse": 9e-06,
       "rmse": 0.002992
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
@@ -1307,7 +1307,7 @@
       "psnr": 43.678,
       "ssim": 0.9884,
       "mae": 0.001715,
-      "mse": 0.000043,
+      "mse": 4.3e-05,
       "rmse": 0.006548
     },
     "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
@@ -1322,7 +1322,7 @@
       "psnr": 49.6984,
       "ssim": 0.9956,
       "mae": 0.000673,
-      "mse": 0.000011,
+      "mse": 1.1e-05,
       "rmse": 0.003277
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -1337,7 +1337,7 @@
       "psnr": 50.4158,
       "ssim": 0.9963,
       "mae": 0.000669,
-      "mse": 0.000009,
+      "mse": 9e-06,
       "rmse": 0.003015
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
@@ -1351,7 +1351,7 @@
       "snr": 15.59,
       "psnr": 51.58,
       "ssim": 1,
-      "mse": 0.000008
+      "mse": 8e-06
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1364,7 +1364,7 @@
       "snr": 16.21,
       "psnr": 52.2,
       "ssim": 1,
-      "mse": 0.000007
+      "mse": 7e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1377,7 +1377,7 @@
       "snr": 15.43,
       "psnr": 51.41,
       "ssim": 1,
-      "mse": 0.000008
+      "mse": 8e-06
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1390,7 +1390,7 @@
       "snr": 15.62,
       "psnr": 51.6,
       "ssim": 1,
-      "mse": 0.000008
+      "mse": 8e-06
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1403,7 +1403,7 @@
       "snr": 10.93,
       "psnr": 46.91,
       "ssim": 0.99,
-      "mse": 0.000022
+      "mse": 2.2e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1416,7 +1416,7 @@
       "snr": 11.07,
       "psnr": 47.05,
       "ssim": 0.99,
-      "mse": 0.000021
+      "mse": 2.1e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1429,7 +1429,7 @@
       "snr": 11.08,
       "psnr": 47.06,
       "ssim": 0.99,
-      "mse": 0.000021
+      "mse": 2.1e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1442,7 +1442,7 @@
       "snr": 11.15,
       "psnr": 47.13,
       "ssim": 0.99,
-      "mse": 0.000021
+      "mse": 2.1e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1455,7 +1455,7 @@
       "snr": 12.46,
       "psnr": 48.45,
       "ssim": 0.99,
-      "mse": 0.000016
+      "mse": 1.6e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1468,7 +1468,7 @@
       "snr": 12.2,
       "psnr": 48.18,
       "ssim": 0.99,
-      "mse": 0.000017
+      "mse": 1.7e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1481,7 +1481,7 @@
       "snr": 12.46,
       "psnr": 48.44,
       "ssim": 0.99,
-      "mse": 0.000016
+      "mse": 1.6e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1494,7 +1494,7 @@
       "snr": 12.48,
       "psnr": 48.46,
       "ssim": 0.9933,
-      "mse": 0.000016
+      "mse": 1.6e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1507,7 +1507,7 @@
       "snr": 9.55,
       "psnr": 45.53,
       "ssim": 0.99,
-      "mse": 0.00003
+      "mse": 3e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1520,7 +1520,7 @@
       "snr": 9.77,
       "psnr": 45.75,
       "ssim": 0.99,
-      "mse": 0.000029
+      "mse": 2.9e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1533,7 +1533,7 @@
       "snr": 9.64,
       "psnr": 45.62,
       "ssim": 0.99,
-      "mse": 0.00003
+      "mse": 3e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1546,7 +1546,7 @@
       "snr": 9.73,
       "psnr": 45.71,
       "ssim": 0.99,
-      "mse": 0.000029
+      "mse": 2.9e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1559,7 +1559,7 @@
       "snr": 10.38,
       "psnr": 46.36,
       "ssim": 0.99,
-      "mse": 0.000026
+      "mse": 2.6e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1572,7 +1572,7 @@
       "snr": 9.78,
       "psnr": 45.76,
       "ssim": 0.99,
-      "mse": 0.000029
+      "mse": 2.9e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1585,7 +1585,7 @@
       "snr": 10.35,
       "psnr": 46.33,
       "ssim": 0.99,
-      "mse": 0.000026
+      "mse": 2.6e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1598,7 +1598,7 @@
       "snr": 10.62,
       "psnr": 46.6,
       "ssim": 0.99,
-      "mse": 0.000024
+      "mse": 2.4e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1611,7 +1611,7 @@
       "snr": 8.42,
       "psnr": 44.4,
       "ssim": 0.99,
-      "mse": 0.000039
+      "mse": 3.9e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1624,7 +1624,7 @@
       "snr": 8.22,
       "psnr": 44.21,
       "ssim": 0.99,
-      "mse": 0.000041
+      "mse": 4.1e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1637,7 +1637,7 @@
       "snr": 8.38,
       "psnr": 44.36,
       "ssim": 0.99,
-      "mse": 0.00004
+      "mse": 4e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1650,7 +1650,7 @@
       "snr": 8.58,
       "psnr": 44.56,
       "ssim": 0.99,
-      "mse": 0.000038
+      "mse": 3.8e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1663,7 +1663,7 @@
       "snr": 15.83,
       "psnr": 51.06,
       "ssim": 1,
-      "mse": 0.000008
+      "mse": 8e-06
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1676,7 +1676,7 @@
       "snr": 21.49,
       "psnr": 57.47,
       "ssim": 1,
-      "mse": 0.000002
+      "mse": 2e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1689,7 +1689,7 @@
       "snr": 16.02,
       "psnr": 51.25,
       "ssim": 1,
-      "mse": 0.000008
+      "mse": 8e-06
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1702,7 +1702,7 @@
       "snr": 10.66,
       "psnr": 46.65,
       "ssim": 0.9933,
-      "mse": 0.000023
+      "mse": 2.3e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1715,7 +1715,7 @@
       "snr": 13.68,
       "psnr": 48.91,
       "ssim": 1,
-      "mse": 0.000014
+      "mse": 1.4e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1728,7 +1728,7 @@
       "snr": 18.36,
       "psnr": 54.34,
       "ssim": 1,
-      "mse": 0.000004
+      "mse": 4e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1741,7 +1741,7 @@
       "snr": 13.99,
       "psnr": 49.23,
       "ssim": 1,
-      "mse": 0.000013
+      "mse": 1.3e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1754,7 +1754,7 @@
       "snr": 9.07,
       "psnr": 45.05,
       "ssim": 0.99,
-      "mse": 0.000034
+      "mse": 3.4e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1767,7 +1767,7 @@
       "snr": 13.13,
       "psnr": 48.36,
       "ssim": 1,
-      "mse": 0.000016
+      "mse": 1.6e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1780,7 +1780,7 @@
       "snr": 16.08,
       "psnr": 52.06,
       "ssim": 1,
-      "mse": 0.000007
+      "mse": 7e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1793,7 +1793,7 @@
       "snr": 13.09,
       "psnr": 48.33,
       "ssim": 1,
-      "mse": 0.000016
+      "mse": 1.6e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1806,7 +1806,7 @@
       "snr": 9.14,
       "psnr": 45.12,
       "ssim": 0.99,
-      "mse": 0.000034
+      "mse": 3.4e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1819,7 +1819,7 @@
       "snr": 11.12,
       "psnr": 46.35,
       "ssim": 0.99,
-      "mse": 0.000025
+      "mse": 2.5e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1832,7 +1832,7 @@
       "snr": 13.02,
       "psnr": 49,
       "ssim": 1,
-      "mse": 0.000014
+      "mse": 1.4e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1845,7 +1845,7 @@
       "snr": 11.16,
       "psnr": 46.4,
       "ssim": 0.99,
-      "mse": 0.000024
+      "mse": 2.4e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1858,7 +1858,7 @@
       "snr": 7.63,
       "psnr": 43.62,
       "ssim": 0.9867,
-      "mse": 0.000048
+      "mse": 4.8e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1871,7 +1871,7 @@
       "snr": 9.38,
       "psnr": 44.61,
       "ssim": 0.99,
-      "mse": 0.000037
+      "mse": 3.7e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1884,7 +1884,7 @@
       "snr": 10.63,
       "psnr": 46.61,
       "ssim": 0.99,
-      "mse": 0.000023
+      "mse": 2.3e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1897,7 +1897,7 @@
       "snr": 9.13,
       "psnr": 44.36,
       "ssim": 0.99,
-      "mse": 0.000039
+      "mse": 3.9e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1910,7 +1910,7 @@
       "snr": 6.88,
       "psnr": 42.86,
       "ssim": 0.9867,
-      "mse": 0.000057
+      "mse": 5.7e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1923,7 +1923,7 @@
       "snr": 7.13,
       "psnr": 42.37,
       "ssim": 0.98,
-      "mse": 0.000061
+      "mse": 6.1e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1936,7 +1936,7 @@
       "snr": 7.2,
       "psnr": 43.18,
       "ssim": 0.99,
-      "mse": 0.000051
+      "mse": 5.1e-05
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -1949,7 +1949,7 @@
       "snr": 6.77,
       "psnr": 42,
       "ssim": 0.98,
-      "mse": 0.000066
+      "mse": 6.6e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -1962,7 +1962,7 @@
       "snr": 5.21,
       "psnr": 41.19,
       "ssim": 0.9767,
-      "mse": 0.000083
+      "mse": 8.3e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -1975,7 +1975,7 @@
       "snr": 15.69,
       "psnr": 50.93,
       "ssim": 1,
-      "mse": 0.000011
+      "mse": 1.1e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -1988,7 +1988,7 @@
       "snr": 16.87,
       "psnr": 52.85,
       "ssim": 1,
-      "mse": 0.000006
+      "mse": 6e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -2001,7 +2001,7 @@
       "snr": 15.79,
       "psnr": 51.02,
       "ssim": 1,
-      "mse": 0.00001
+      "mse": 1e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -2014,7 +2014,7 @@
       "snr": 12.92,
       "psnr": 48.9,
       "ssim": 0.9961,
-      "mse": 0.000015
+      "mse": 1.5e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -2027,7 +2027,7 @@
       "snr": 15.69,
       "psnr": 50.93,
       "ssim": 1,
-      "mse": 0.000011
+      "mse": 1.1e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -2040,7 +2040,7 @@
       "snr": 16.87,
       "psnr": 52.85,
       "ssim": 1,
-      "mse": 0.000006
+      "mse": 6e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -2053,7 +2053,7 @@
       "snr": 15.79,
       "psnr": 51.02,
       "ssim": 1,
-      "mse": 0.00001
+      "mse": 1e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -2066,7 +2066,7 @@
       "snr": 12.92,
       "psnr": 48.9,
       "ssim": 0.9961,
-      "mse": 0.000015
+      "mse": 1.5e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -2079,7 +2079,7 @@
       "snr": 15.67,
       "psnr": 50.9,
       "ssim": 1,
-      "mse": 0.000011
+      "mse": 1.1e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -2092,7 +2092,7 @@
       "snr": 16.85,
       "psnr": 52.83,
       "ssim": 1,
-      "mse": 0.000006
+      "mse": 6e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -2105,7 +2105,7 @@
       "snr": 15.74,
       "psnr": 50.98,
       "ssim": 1,
-      "mse": 0.00001
+      "mse": 1e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -2118,7 +2118,7 @@
       "snr": 12.93,
       "psnr": 48.91,
       "ssim": 0.9961,
-      "mse": 0.000015
+      "mse": 1.5e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -2131,7 +2131,7 @@
       "snr": 15.67,
       "psnr": 50.9,
       "ssim": 1,
-      "mse": 0.000011
+      "mse": 1.1e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -2144,7 +2144,7 @@
       "snr": 16.85,
       "psnr": 52.83,
       "ssim": 1,
-      "mse": 0.000006
+      "mse": 6e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -2157,7 +2157,7 @@
       "snr": 15.74,
       "psnr": 50.98,
       "ssim": 1,
-      "mse": 0.00001
+      "mse": 1e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -2170,7 +2170,7 @@
       "snr": 12.93,
       "psnr": 48.91,
       "ssim": 0.9961,
-      "mse": 0.000015
+      "mse": 1.5e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -2183,7 +2183,7 @@
       "snr": 15.58,
       "psnr": 50.81,
       "ssim": 1,
-      "mse": 0.000011
+      "mse": 1.1e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -2196,7 +2196,7 @@
       "snr": 16.89,
       "psnr": 52.87,
       "ssim": 1,
-      "mse": 0.000006
+      "mse": 6e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -2209,7 +2209,7 @@
       "snr": 15.76,
       "psnr": 50.99,
       "ssim": 1,
-      "mse": 0.00001
+      "mse": 1e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -2222,7 +2222,7 @@
       "snr": 12.9,
       "psnr": 48.88,
       "ssim": 0.9961,
-      "mse": 0.000015
+      "mse": 1.5e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -2235,7 +2235,7 @@
       "snr": 15.58,
       "psnr": 50.81,
       "ssim": 1,
-      "mse": 0.000011
+      "mse": 1.1e-05
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
@@ -2248,7 +2248,7 @@
       "snr": 16.89,
       "psnr": 52.87,
       "ssim": 1,
-      "mse": 0.000006
+      "mse": 6e-06
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
@@ -2261,7 +2261,7 @@
       "snr": 15.76,
       "psnr": 50.99,
       "ssim": 1,
-      "mse": 0.00001
+      "mse": 1e-05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
@@ -2274,7 +2274,7 @@
       "snr": 12.9,
       "psnr": 48.88,
       "ssim": 0.9961,
-      "mse": 0.000015
+      "mse": 1.5e-05
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/unet.py",
@@ -2468,7 +2468,7 @@
       "psnr": 41.125133,
       "ssim": 0.9738,
       "mae": 0.006755,
-      "mse": 0.000092,
+      "mse": 9.2e-05,
       "rmse": 0.00928
     },
     "paper_url": "https://doi.org/10.1190/GEO2021-0294.1",
@@ -2498,7 +2498,7 @@
       "psnr": 41.414567,
       "ssim": 0.975833,
       "mae": 0.006463,
-      "mse": 0.000085,
+      "mse": 8.5e-05,
       "rmse": 0.008953
     },
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
@@ -2513,7 +2513,7 @@
       "psnr": 40.690267,
       "ssim": 0.972833,
       "mae": 0.006889,
-      "mse": 0.000099,
+      "mse": 9.9e-05,
       "rmse": 0.009679
     },
     "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
@@ -2528,7 +2528,7 @@
       "psnr": 41.499967,
       "ssim": 0.977267,
       "mae": 0.006203,
-      "mse": 0.000083,
+      "mse": 8.3e-05,
       "rmse": 0.008835
     },
     "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
@@ -2573,7 +2573,7 @@
       "psnr": 41.7214,
       "ssim": 0.977333,
       "mae": 0.006136,
-      "mse": 0.00008,
+      "mse": 8e-05,
       "rmse": 0.008675
     },
     "paper_url": null,
@@ -2588,7 +2588,7 @@
       "psnr": 40.851567,
       "ssim": 0.974067,
       "mae": 0.006638,
-      "mse": 0.000095,
+      "mse": 9.5e-05,
       "rmse": 0.009469
     },
     "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
@@ -2963,7 +2963,7 @@
       "psnr": 41.421967,
       "ssim": 0.9758,
       "mae": 0.006463,
-      "mse": 0.000085,
+      "mse": 8.5e-05,
       "rmse": 0.008949
     },
     "paper_url": "https://ieeexplore.ieee.org/document/7839189",
@@ -2978,7 +2978,7 @@
       "psnr": 40.709567,
       "ssim": 0.972933,
       "mae": 0.006877,
-      "mse": 0.000099,
+      "mse": 9.9e-05,
       "rmse": 0.009657
     },
     "paper_url": "https://doi.org/10.1190/geo2021-0621.1",
@@ -2993,7 +2993,7 @@
       "psnr": 41.515133,
       "ssim": 0.9773,
       "mae": 0.0062,
-      "mse": 0.000082,
+      "mse": 8.2e-05,
       "rmse": 0.008821
     },
     "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
@@ -3038,7 +3038,7 @@
       "psnr": 41.7332,
       "ssim": 0.9773,
       "mae": 0.006135,
-      "mse": 0.00008,
+      "mse": 8e-05,
       "rmse": 0.008664
     },
     "paper_url": null,
@@ -3053,7 +3053,7 @@
       "psnr": 40.826733,
       "ssim": 0.974067,
       "mae": 0.006662,
-      "mse": 0.000095,
+      "mse": 9.5e-05,
       "rmse": 0.009487
     },
     "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
@@ -3233,8 +3233,40 @@
       "psnr": 48.8842,
       "ssim": 0.9945,
       "mae": 0.000825,
-      "mse": 0.000013,
-      "rmse": 0.003608
+      "mse": 1.3e-05,
+      "rmse": 0.003608,
+      "eb_wse_medium_40_70_ne": 3.81,
+      "eb_wse_medium_40_70_ne_std": 0.46,
+      "eb_wse_medium_40_70_snr": -11.13,
+      "eb_wse_medium_40_70_snr_std": 1.06,
+      "eb_wse_strong_70_100_ne": 0.04,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 27.03,
+      "eb_wse_strong_70_100_snr_std": 0.16,
+      "eb_wse_very_weak_5_20_ne": 16.08,
+      "eb_wse_very_weak_5_20_ne_std": 2.03,
+      "eb_wse_very_weak_5_20_snr": -23.93,
+      "eb_wse_very_weak_5_20_snr_std": 1.15,
+      "eb_wse_weak_20_40_ne": 9.44,
+      "eb_wse_weak_20_40_ne_std": 0.81,
+      "eb_wse_weak_20_40_snr": -18.76,
+      "eb_wse_weak_20_40_snr_std": 0.64,
+      "fb_fre_high_ne": 0.09,
+      "fb_fre_high_ne_std": 0.01,
+      "fb_fre_high_snr": 21.04,
+      "fb_fre_high_snr_std": 0.94,
+      "fb_fre_low_ne": 0.08,
+      "fb_fre_low_ne_std": 0.01,
+      "fb_fre_low_snr": 22.11,
+      "fb_fre_low_snr_std": 0.69,
+      "fb_fre_mid_ne": 0.08,
+      "fb_fre_mid_ne_std": 0.01,
+      "fb_fre_mid_snr": 22.08,
+      "fb_fre_mid_snr_std": 0.91,
+      "fb_fre_very_high_ne": 0.16,
+      "fb_fre_very_high_ne_std": 0.02,
+      "fb_fre_very_high_snr": 16.04,
+      "fb_fre_very_high_snr_std": 0.88
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
@@ -3248,8 +3280,40 @@
       "psnr": 50.3583,
       "ssim": 0.9948,
       "mae": 0.000706,
-      "mse": 0.000009,
-      "rmse": 0.003037
+      "mse": 9e-06,
+      "rmse": 0.003037,
+      "eb_wse_medium_40_70_ne": 3.0,
+      "eb_wse_medium_40_70_ne_std": 0.27,
+      "eb_wse_medium_40_70_snr": -8.94,
+      "eb_wse_medium_40_70_snr_std": 0.89,
+      "eb_wse_strong_70_100_ne": 0.04,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 27.44,
+      "eb_wse_strong_70_100_snr_std": 0.37,
+      "eb_wse_very_weak_5_20_ne": 8.73,
+      "eb_wse_very_weak_5_20_ne_std": 1.06,
+      "eb_wse_very_weak_5_20_snr": -18.53,
+      "eb_wse_very_weak_5_20_snr_std": 1.15,
+      "eb_wse_weak_20_40_ne": 6.87,
+      "eb_wse_weak_20_40_ne_std": 0.2,
+      "eb_wse_weak_20_40_snr": -15.84,
+      "eb_wse_weak_20_40_snr_std": 0.25,
+      "fb_fre_high_ne": 0.08,
+      "fb_fre_high_ne_std": 0.01,
+      "fb_fre_high_snr": 22.77,
+      "fb_fre_high_snr_std": 0.83,
+      "fb_fre_low_ne": 0.07,
+      "fb_fre_low_ne_std": 0.0,
+      "fb_fre_low_snr": 23.75,
+      "fb_fre_low_snr_std": 0.55,
+      "fb_fre_mid_ne": 0.07,
+      "fb_fre_mid_ne_std": 0.0,
+      "fb_fre_mid_snr": 23.26,
+      "fb_fre_mid_snr_std": 0.54,
+      "fb_fre_very_high_ne": 0.12,
+      "fb_fre_very_high_ne_std": 0.01,
+      "fb_fre_very_high_snr": 18.74,
+      "fb_fre_very_high_snr_std": 0.82
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
@@ -3263,8 +3327,40 @@
       "psnr": 43.925,
       "ssim": 0.9859,
       "mae": 0.001653,
-      "mse": 0.000041,
-      "rmse": 0.006391
+      "mse": 4.1e-05,
+      "rmse": 0.006391,
+      "eb_wse_medium_40_70_ne": 6.58,
+      "eb_wse_medium_40_70_ne_std": 0.99,
+      "eb_wse_medium_40_70_snr": -16.14,
+      "eb_wse_medium_40_70_snr_std": 1.35,
+      "eb_wse_strong_70_100_ne": 0.09,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 20.97,
+      "eb_wse_strong_70_100_snr_std": 0.37,
+      "eb_wse_very_weak_5_20_ne": 21.83,
+      "eb_wse_very_weak_5_20_ne_std": 1.98,
+      "eb_wse_very_weak_5_20_snr": -26.62,
+      "eb_wse_very_weak_5_20_snr_std": 0.81,
+      "eb_wse_weak_20_40_ne": 18.3,
+      "eb_wse_weak_20_40_ne_std": 1.34,
+      "eb_wse_weak_20_40_snr": -25.1,
+      "eb_wse_weak_20_40_snr_std": 0.63,
+      "fb_fre_high_ne": 0.16,
+      "fb_fre_high_ne_std": 0.02,
+      "fb_fre_high_snr": 15.9,
+      "fb_fre_high_snr_std": 0.87,
+      "fb_fre_low_ne": 0.18,
+      "fb_fre_low_ne_std": 0.02,
+      "fb_fre_low_snr": 14.79,
+      "fb_fre_low_snr_std": 1.07,
+      "fb_fre_mid_ne": 0.15,
+      "fb_fre_mid_ne_std": 0.02,
+      "fb_fre_mid_snr": 16.67,
+      "fb_fre_mid_snr_std": 1.08,
+      "fb_fre_very_high_ne": 0.26,
+      "fb_fre_very_high_ne_std": 0.02,
+      "fb_fre_very_high_snr": 11.88,
+      "fb_fre_very_high_snr_std": 0.59
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dncnn.py",
@@ -3278,8 +3374,40 @@
       "psnr": 46.5383,
       "ssim": 0.9928,
       "mae": 0.000904,
-      "mse": 0.000022,
-      "rmse": 0.004715
+      "mse": 2.2e-05,
+      "rmse": 0.004715,
+      "eb_wse_medium_40_70_ne": 5.12,
+      "eb_wse_medium_40_70_ne_std": 0.39,
+      "eb_wse_medium_40_70_snr": -13.83,
+      "eb_wse_medium_40_70_snr_std": 0.77,
+      "eb_wse_strong_70_100_ne": 0.06,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 25.03,
+      "eb_wse_strong_70_100_snr_std": 0.24,
+      "eb_wse_very_weak_5_20_ne": 11.4,
+      "eb_wse_very_weak_5_20_ne_std": 1.56,
+      "eb_wse_very_weak_5_20_snr": -20.75,
+      "eb_wse_very_weak_5_20_snr_std": 1.45,
+      "eb_wse_weak_20_40_ne": 10.21,
+      "eb_wse_weak_20_40_ne_std": 0.69,
+      "eb_wse_weak_20_40_snr": -19.13,
+      "eb_wse_weak_20_40_snr_std": 0.87,
+      "fb_fre_high_ne": 0.12,
+      "fb_fre_high_ne_std": 0.01,
+      "fb_fre_high_snr": 18.74,
+      "fb_fre_high_snr_std": 0.41,
+      "fb_fre_low_ne": 0.11,
+      "fb_fre_low_ne_std": 0.01,
+      "fb_fre_low_snr": 19.28,
+      "fb_fre_low_snr_std": 1.08,
+      "fb_fre_mid_ne": 0.11,
+      "fb_fre_mid_ne_std": 0.01,
+      "fb_fre_mid_snr": 19.22,
+      "fb_fre_mid_snr_std": 0.68,
+      "fb_fre_very_high_ne": 0.17,
+      "fb_fre_very_high_ne_std": 0.02,
+      "fb_fre_very_high_snr": 15.57,
+      "fb_fre_very_high_snr_std": 1.13
     },
     "paper_url": "https://doi.org/10.1190/geo2021-0206.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dnndat.py",
@@ -3293,8 +3421,40 @@
       "psnr": 48.8016,
       "ssim": 0.9939,
       "mae": 0.000936,
-      "mse": 0.000013,
-      "rmse": 0.003638
+      "mse": 1.3e-05,
+      "rmse": 0.003638,
+      "eb_wse_medium_40_70_ne": 3.7,
+      "eb_wse_medium_40_70_ne_std": 0.36,
+      "eb_wse_medium_40_70_snr": -10.95,
+      "eb_wse_medium_40_70_snr_std": 0.86,
+      "eb_wse_strong_70_100_ne": 0.05,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 25.93,
+      "eb_wse_strong_70_100_snr_std": 0.59,
+      "eb_wse_very_weak_5_20_ne": 12.29,
+      "eb_wse_very_weak_5_20_ne_std": 0.67,
+      "eb_wse_very_weak_5_20_snr": -21.47,
+      "eb_wse_very_weak_5_20_snr_std": 0.52,
+      "eb_wse_weak_20_40_ne": 9.3,
+      "eb_wse_weak_20_40_ne_std": 0.43,
+      "eb_wse_weak_20_40_snr": -18.68,
+      "eb_wse_weak_20_40_snr_std": 0.43,
+      "fb_fre_high_ne": 0.09,
+      "fb_fre_high_ne_std": 0.01,
+      "fb_fre_high_snr": 20.93,
+      "fb_fre_high_snr_std": 0.86,
+      "fb_fre_low_ne": 0.08,
+      "fb_fre_low_ne_std": 0.0,
+      "fb_fre_low_snr": 22.6,
+      "fb_fre_low_snr_std": 0.46,
+      "fb_fre_mid_ne": 0.08,
+      "fb_fre_mid_ne_std": 0.01,
+      "fb_fre_mid_snr": 21.94,
+      "fb_fre_mid_snr_std": 0.67,
+      "fb_fre_very_high_ne": 0.16,
+      "fb_fre_very_high_ne_std": 0.02,
+      "fb_fre_very_high_snr": 16.21,
+      "fb_fre_very_high_snr_std": 1.05
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
@@ -3308,8 +3468,40 @@
       "psnr": 49.6374,
       "ssim": 0.9944,
       "mae": 0.000794,
-      "mse": 0.000011,
-      "rmse": 0.003301
+      "mse": 1.1e-05,
+      "rmse": 0.003301,
+      "eb_wse_medium_40_70_ne": 3.37,
+      "eb_wse_medium_40_70_ne_std": 0.23,
+      "eb_wse_medium_40_70_snr": -10.08,
+      "eb_wse_medium_40_70_snr_std": 0.61,
+      "eb_wse_strong_70_100_ne": 0.05,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 26.98,
+      "eb_wse_strong_70_100_snr_std": 0.48,
+      "eb_wse_very_weak_5_20_ne": 9.11,
+      "eb_wse_very_weak_5_20_ne_std": 0.62,
+      "eb_wse_very_weak_5_20_snr": -18.78,
+      "eb_wse_very_weak_5_20_snr_std": 0.64,
+      "eb_wse_weak_20_40_ne": 7.61,
+      "eb_wse_weak_20_40_ne_std": 0.26,
+      "eb_wse_weak_20_40_snr": -16.81,
+      "eb_wse_weak_20_40_snr_std": 0.3,
+      "fb_fre_high_ne": 0.08,
+      "fb_fre_high_ne_std": 0.0,
+      "fb_fre_high_snr": 21.81,
+      "fb_fre_high_snr_std": 0.48,
+      "fb_fre_low_ne": 0.07,
+      "fb_fre_low_ne_std": 0.0,
+      "fb_fre_low_snr": 23.8,
+      "fb_fre_low_snr_std": 0.49,
+      "fb_fre_mid_ne": 0.08,
+      "fb_fre_mid_ne_std": 0.0,
+      "fb_fre_mid_snr": 22.51,
+      "fb_fre_mid_snr_std": 0.49,
+      "fb_fre_very_high_ne": 0.13,
+      "fb_fre_very_high_ne_std": 0.01,
+      "fb_fre_very_high_snr": 18.03,
+      "fb_fre_very_high_snr_std": 0.72
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
@@ -3324,7 +3516,39 @@
       "ssim": 0.8669,
       "mae": 0.017121,
       "mse": 0.004996,
-      "rmse": 0.068335
+      "rmse": 0.068335,
+      "eb_wse_medium_40_70_ne": 2.15,
+      "eb_wse_medium_40_70_ne_std": 1.05,
+      "eb_wse_medium_40_70_snr": -5.55,
+      "eb_wse_medium_40_70_snr_std": 4.34,
+      "eb_wse_strong_70_100_ne": 0.04,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 28.55,
+      "eb_wse_strong_70_100_snr_std": 0.47,
+      "eb_wse_very_weak_5_20_ne": 15.15,
+      "eb_wse_very_weak_5_20_ne_std": 4.47,
+      "eb_wse_very_weak_5_20_snr": -22.69,
+      "eb_wse_very_weak_5_20_snr_std": 2.45,
+      "eb_wse_weak_20_40_ne": 7.22,
+      "eb_wse_weak_20_40_ne_std": 1.86,
+      "eb_wse_weak_20_40_snr": -16.04,
+      "eb_wse_weak_20_40_snr_std": 2.01,
+      "fb_fre_high_ne": 0.06,
+      "fb_fre_high_ne_std": 0.02,
+      "fb_fre_high_snr": 24.4,
+      "fb_fre_high_snr_std": 2.88,
+      "fb_fre_low_ne": 0.08,
+      "fb_fre_low_ne_std": 0.03,
+      "fb_fre_low_snr": 22.6,
+      "fb_fre_low_snr_std": 2.87,
+      "fb_fre_mid_ne": 0.06,
+      "fb_fre_mid_ne_std": 0.02,
+      "fb_fre_mid_snr": 24.77,
+      "fb_fre_mid_snr_std": 2.44,
+      "fb_fre_very_high_ne": 0.11,
+      "fb_fre_very_high_ne_std": 0.04,
+      "fb_fre_very_high_snr": 20.14,
+      "fb_fre_very_high_snr_std": 3.31
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2022.3168143",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/sagan.py",
@@ -3338,8 +3562,40 @@
       "psnr": 48.5474,
       "ssim": 0.9938,
       "mae": 0.000896,
-      "mse": 0.000014,
-      "rmse": 0.003743
+      "mse": 1.4e-05,
+      "rmse": 0.003743,
+      "eb_wse_medium_40_70_ne": 3.93,
+      "eb_wse_medium_40_70_ne_std": 0.31,
+      "eb_wse_medium_40_70_snr": -11.49,
+      "eb_wse_medium_40_70_snr_std": 0.72,
+      "eb_wse_strong_70_100_ne": 0.05,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 26.35,
+      "eb_wse_strong_70_100_snr_std": 0.32,
+      "eb_wse_very_weak_5_20_ne": 14.05,
+      "eb_wse_very_weak_5_20_ne_std": 0.51,
+      "eb_wse_very_weak_5_20_snr": -22.77,
+      "eb_wse_very_weak_5_20_snr_std": 0.3,
+      "eb_wse_weak_20_40_ne": 9.87,
+      "eb_wse_weak_20_40_ne_std": 0.53,
+      "eb_wse_weak_20_40_snr": -19.22,
+      "eb_wse_weak_20_40_snr_std": 0.4,
+      "fb_fre_high_ne": 0.1,
+      "fb_fre_high_ne_std": 0.01,
+      "fb_fre_high_snr": 20.18,
+      "fb_fre_high_snr_std": 0.62,
+      "fb_fre_low_ne": 0.08,
+      "fb_fre_low_ne_std": 0.0,
+      "fb_fre_low_snr": 22.63,
+      "fb_fre_low_snr_std": 0.47,
+      "fb_fre_mid_ne": 0.09,
+      "fb_fre_mid_ne_std": 0.01,
+      "fb_fre_mid_snr": 21.68,
+      "fb_fre_mid_snr_std": 0.62,
+      "fb_fre_very_high_ne": 0.17,
+      "fb_fre_very_high_ne_std": 0.01,
+      "fb_fre_very_high_snr": 15.39,
+      "fb_fre_very_high_snr_std": 0.37
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",
@@ -3353,8 +3609,40 @@
       "psnr": 50.7773,
       "ssim": 0.9948,
       "mae": 0.000736,
-      "mse": 0.000008,
-      "rmse": 0.002897
+      "mse": 8e-06,
+      "rmse": 0.002897,
+      "eb_wse_medium_40_70_ne": 2.82,
+      "eb_wse_medium_40_70_ne_std": 0.28,
+      "eb_wse_medium_40_70_snr": -8.37,
+      "eb_wse_medium_40_70_snr_std": 0.9,
+      "eb_wse_strong_70_100_ne": 0.04,
+      "eb_wse_strong_70_100_ne_std": 0.0,
+      "eb_wse_strong_70_100_snr": 27.51,
+      "eb_wse_strong_70_100_snr_std": 0.25,
+      "eb_wse_very_weak_5_20_ne": 9.29,
+      "eb_wse_very_weak_5_20_ne_std": 2.53,
+      "eb_wse_very_weak_5_20_snr": -18.94,
+      "eb_wse_very_weak_5_20_snr_std": 2.38,
+      "eb_wse_weak_20_40_ne": 6.67,
+      "eb_wse_weak_20_40_ne_std": 0.5,
+      "eb_wse_weak_20_40_snr": -15.81,
+      "eb_wse_weak_20_40_snr_std": 0.61,
+      "fb_fre_high_ne": 0.07,
+      "fb_fre_high_ne_std": 0.01,
+      "fb_fre_high_snr": 23.02,
+      "fb_fre_high_snr_std": 0.76,
+      "fb_fre_low_ne": 0.06,
+      "fb_fre_low_ne_std": 0.0,
+      "fb_fre_low_snr": 24.1,
+      "fb_fre_low_snr_std": 0.49,
+      "fb_fre_mid_ne": 0.07,
+      "fb_fre_mid_ne_std": 0.0,
+      "fb_fre_mid_snr": 23.69,
+      "fb_fre_mid_snr_std": 0.57,
+      "fb_fre_very_high_ne": 0.12,
+      "fb_fre_very_high_ne_std": 0.01,
+      "fb_fre_very_high_snr": 18.41,
+      "fb_fre_very_high_snr_std": 0.63
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",

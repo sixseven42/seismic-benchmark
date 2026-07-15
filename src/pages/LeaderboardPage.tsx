@@ -40,6 +40,8 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
   const { theme } = useTheme();
   const [sort, setSort] = useState<SortState>({ key: 'score', dir: 'desc' });
   const [hitRatePx, setHitRatePx] = useState<string>('hit_rate_3px');
+  const [ebMetric, setEbMetric] = useState<MetricKey>('eb_wse_medium_40_70_snr');
+  const [fbMetric, setFbMetric] = useState<MetricKey>('fb_fre_high_snr');
 
   const metricCols = useMemo(() => getMetricColumns(filters.task), [filters.task]);
 
@@ -67,7 +69,19 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     }
 
     const { key, dir } = sort;
-    const allMetrics = ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae', 'hit_rate', 'hit_rate_1px', 'hit_rate_3px', 'hit_rate_5px', 'hit_rate_7px', 'hit_rate_9px'];
+    const allMetrics = [
+      'snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae',
+      'hit_rate', 'hit_rate_1px', 'hit_rate_3px', 'hit_rate_5px', 'hit_rate_7px', 'hit_rate_9px',
+      'eb', 'fb',
+      'eb_wse_medium_40_70_ne', 'eb_wse_medium_40_70_snr',
+      'eb_wse_strong_70_100_ne', 'eb_wse_strong_70_100_snr',
+      'eb_wse_very_weak_5_20_ne', 'eb_wse_very_weak_5_20_snr',
+      'eb_wse_weak_20_40_ne', 'eb_wse_weak_20_40_snr',
+      'fb_fre_high_ne', 'fb_fre_high_snr',
+      'fb_fre_low_ne', 'fb_fre_low_snr',
+      'fb_fre_mid_ne', 'fb_fre_mid_snr',
+      'fb_fre_very_high_ne', 'fb_fre_very_high_snr',
+    ];
 
     list.sort((a, b) => {
       if (key === 'name') {
@@ -79,7 +93,9 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         const bv = b.benchmark!.name || '';
         return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
       } else if (key === 'score' || allMetrics.includes(key)) {
-        const metric = key === 'score' ? filters.metric : key === 'hit_rate' ? hitRatePx : key;
+        let metric = key === 'score' ? filters.metric : key === 'hit_rate' ? hitRatePx : key;
+        if (metric === 'eb') metric = ebMetric;
+        if (metric === 'fb') metric = fbMetric;
         const av = a.result.scores[metric as MetricKey] ?? null;
         const bv = b.result.scores[metric as MetricKey] ?? null;
         if (av === null && bv === null) return 0;
@@ -117,7 +133,13 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
   }, []);
 
   const exportCSV = useCallback(() => {
-    const headers = ['Rank', 'Method', 'Authors', 'Org', 'Year', 'Type', 'Benchmark', 'Task', ...metricCols.map(m => m.toUpperCase()), 'Date Added'];
+    const resolveMetric = (m: string): MetricKey => {
+      if (m === 'hit_rate') return hitRatePx as MetricKey;
+      if (m === 'eb') return ebMetric;
+      if (m === 'fb') return fbMetric;
+      return m as MetricKey;
+    };
+    const headers = ['Rank', 'Method', 'Authors', 'Org', 'Year', 'Type', 'Benchmark', 'Task', ...metricCols.map(m => resolveMetric(m).toUpperCase()), 'Date Added'];
     const lines = [headers.join(',')];
     rows.forEach((row, idx) => {
       const m = row.model!;
@@ -132,8 +154,8 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         `"${(b.name || '').replace(/"/g, '""')}"`,
         b.task || '',
         ...metricCols.map(metric => {
-          const actualMetric = metric === 'hit_rate' ? hitRatePx : metric;
-          return row.result.scores[actualMetric as MetricKey] ?? '';
+          const actualMetric = resolveMetric(metric);
+          return row.result.scores[actualMetric] ?? '';
         }),
         row.result.date_added || '',
       ];
@@ -147,7 +169,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     a.download = `seismicbench-${filters.task}-${new Date().toISOString().slice(0, 10)}.csv`;
     a.click();
     URL.revokeObjectURL(url);
-  }, [rows, metricCols, filters.task]);
+  }, [rows, metricCols, filters.task, hitRatePx, ebMetric, fbMetric]);
 
   const availableDatasets = useMemo(() => {
     return data.benchmarks.filter(b => filters.task === 'all' || b.task === filters.task);
@@ -266,18 +288,34 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
             }}
           >
             {(() => {
-              const baseMetrics = currentBench?.metrics || ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
-              const hasHitRate = baseMetrics.some(m => m.startsWith('hit_rate_'));
-              const nonHitRate = baseMetrics.filter(m => !m.startsWith('hit_rate_'));
+              const metrics = currentBench?.metrics || ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
+              const energyMetrics = metrics.filter(m => m.startsWith('eb_wse_'));
+              const freqMetrics = metrics.filter(m => m.startsWith('fb_fre_'));
+              const hitRateMetrics = metrics.filter(m => m.startsWith('hit_rate_') || m === 'hit_rate');
+              const coreMetrics = metrics.filter(m => !energyMetrics.includes(m) && !freqMetrics.includes(m) && !hitRateMetrics.includes(m));
               return (
                 <>
-                  {nonHitRate.map(m => (
+                  {coreMetrics.map(m => (
                     <option key={m} value={m}>{m.toUpperCase()}</option>
                   ))}
-                  {hasHitRate && (
+                  {energyMetrics.length > 0 && (
+                    <optgroup label="Energy Band">
+                      {energyMetrics.map(m => (
+                        <option key={m} value={m}>{m.toUpperCase()}</option>
+                      ))}
+                    </optgroup>
+                  )}
+                  {freqMetrics.length > 0 && (
+                    <optgroup label="Frequency Band">
+                      {freqMetrics.map(m => (
+                        <option key={m} value={m}>{m.toUpperCase()}</option>
+                      ))}
+                    </optgroup>
+                  )}
+                  {hitRateMetrics.length > 0 && (
                     <optgroup label="Hit Rate">
-                      {['1px', '3px', '5px', '7px', '9px'].map(px => (
-                        <option key={px} value={`hit_rate_${px}`}>{px}</option>
+                      {hitRateMetrics.map(m => (
+                        <option key={m} value={m}>{m.replace('hit_rate_', '').replace(/^hit_rate$/, 'Any')}</option>
                       ))}
                     </optgroup>
                   )}
@@ -341,6 +379,62 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                     </th>
                   );
                 }
+                if (m === 'eb') {
+                  const isActive = filters.metric === ebMetric;
+                  const options = (currentBench?.metrics || []).filter(x => x.startsWith('eb_wse_'));
+                  return (
+                    <th
+                      key={m}
+                      className={`sortable ${isActive ? 'sort-active' : ''}`}
+                      onClick={() => handleSort('eb')}
+                    >
+                      ENERGY BAND{' '}
+                      <select
+                        value={ebMetric}
+                        onClick={e => e.stopPropagation()}
+                        onChange={e => {
+                          const val = e.target.value as MetricKey;
+                          setEbMetric(val);
+                          setFilters(prev => ({ ...prev, metric: val }));
+                        }}
+                        style={{ fontSize: '0.7em', marginLeft: 4, padding: '1px 2px' }}
+                      >
+                        {options.map(opt => (
+                          <option key={opt} value={opt}>{opt.toUpperCase()}</option>
+                        ))}
+                      </select>
+                      <span className="sort-arrow">{sort.key === 'eb' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                    </th>
+                  );
+                }
+                if (m === 'fb') {
+                  const isActive = filters.metric === fbMetric;
+                  const options = (currentBench?.metrics || []).filter(x => x.startsWith('fb_fre_'));
+                  return (
+                    <th
+                      key={m}
+                      className={`sortable ${isActive ? 'sort-active' : ''}`}
+                      onClick={() => handleSort('fb')}
+                    >
+                      FREQUENCY BAND{' '}
+                      <select
+                        value={fbMetric}
+                        onClick={e => e.stopPropagation()}
+                        onChange={e => {
+                          const val = e.target.value as MetricKey;
+                          setFbMetric(val);
+                          setFilters(prev => ({ ...prev, metric: val }));
+                        }}
+                        style={{ fontSize: '0.7em', marginLeft: 4, padding: '1px 2px' }}
+                      >
+                        {options.map(opt => (
+                          <option key={opt} value={opt}>{opt.toUpperCase()}</option>
+                        ))}
+                      </select>
+                      <span className="sort-arrow">{sort.key === 'fb' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                    </th>
+                  );
+                }
                 return (
                   <th
                     key={m}
@@ -380,12 +474,13 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                   </td>
                   <td className="lb-benchmark">{escapeHtml(row.benchmark!.name)}</td>
                   {metricCols.map(m => {
-                    const actualMetric = m === 'hit_rate' ? hitRatePx : m;
+                    const actualMetric = m === 'hit_rate' ? hitRatePx : m === 'eb' ? ebMetric : m === 'fb' ? fbMetric : m;
                     const val = row.result.scores[actualMetric as MetricKey] ?? null;
+                    const std = row.result.scores[`${actualMetric}_std` as MetricKey] ?? null;
                     const isHighlight = actualMetric === highlightMetric;
                     return (
                       <td key={m} className={`lb-score ${isHighlight ? 'lb-score-highlight' : ''}`}>
-                        {formatMetricValue(val, actualMetric)}
+                        {formatMetricValue(val, actualMetric, std)}
                       </td>
                     );
                   })}

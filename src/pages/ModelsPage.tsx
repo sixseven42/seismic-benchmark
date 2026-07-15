@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import type { AppData, Filters, MetricKey } from '../types';
-import { formatType, escapeHtml } from '../utils/helpers';
+import type { AppData, Filters } from '../types';
+import { formatType, escapeHtml, formatMetricValue } from '../utils/helpers';
 
 interface Props {
   data: AppData;
@@ -54,17 +54,6 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
       })
       .filter((r): r is typeof r & { benchmark: NonNullable<typeof r.benchmark> } => !!r.benchmark);
   }, [activeModel, data.results, data.benchmarks]);
-
-  const metricCols: { key: MetricKey; label: string }[] = [
-    { key: 'snr', label: 'SNR' },
-    { key: 'psnr', label: 'PSNR' },
-    { key: 'ssim', label: 'SSIM' },
-    { key: 'rmse', label: 'RMSE' },
-    { key: 'mse', label: 'MSE' },
-    { key: 'accuracy', label: 'Accuracy' },
-    { key: 'f1', label: 'F1' },
-    { key: 'mae', label: 'MAE' },
-  ];
 
   const closePanel = () => {
     setActiveModelId(null);
@@ -142,6 +131,7 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                 <span className={`tag tag-type-${m.type}`}>{formatType(m.type)}</span>
                 {(m.tasks || []).map(t => <span key={t} className="tag">{escapeHtml(t)}</span>)}
                 {m.is_open_source && <span className="tag tag-accent">{t.models.openSource}</span>}
+                {m.parameters_m != null && <span className="tag">{m.parameters_m}M params</span>}
               </div>
             </div>
           </div>
@@ -171,6 +161,9 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                   <div className="dl-row"><span className="dl-label">Provider</span><span>{escapeHtml(activeModel.authors || '—')}</span></div>
                   <div className="dl-row"><span className="dl-label">Reference</span><span>{escapeHtml(activeModel.org || '—')}</span></div>
                   <div className="dl-row"><span className="dl-label">Type</span><span>{formatType(activeModel.type)}</span></div>
+                  {activeModel.parameters_m != null && (
+                    <div className="dl-row"><span className="dl-label">Parameters</span><span>{activeModel.parameters_m}M</span></div>
+                  )}
                 </section>
 
                 <section className="slide-section">
@@ -235,37 +228,45 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
               <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                 <section className="slide-section">
                   <h4>{t.models.scoresTitle}</h4>
-                  <table className="detail-mini-table">
-                    <thead>
-                      <tr>
-                        <th>{t.leaderboard.benchmark}</th>
-                        <th>{t.leaderboard.task}</th>
-                        {metricCols.map(m => <th key={m.key}>{m.label}</th>)}
-                        <th>Weights</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {modelResults.map(r => {
-                        const taskWeights = activeModel?.weights_urls?.[r.benchmark!.task];
-                        const weightsUrl = taskWeights || activeModel?.weights_url;
-                        return (
-                          <tr key={r.benchmark_id}>
-                            <td>{escapeHtml(r.benchmark!.name)}</td>
-                            <td>{escapeHtml(r.benchmark!.task)}</td>
-                            {metricCols.map(m => (
-                              <td key={m.key}>{r.scores[m.key] != null ? r.scores[m.key]!.toFixed(m.key === 'ssim' || m.key === 'f1' ? 3 : m.key === 'rmse' ? 4 : m.key === 'mse' ? 6 : m.key === 'accuracy' ? 2 : 2) : '—'}{m.key === 'accuracy' && r.scores[m.key] != null ? '%' : ''}</td>
-                            ))}
-                            <td>
-                              {weightsUrl ? (
-                                <a href={weightsUrl} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️</a>
-                              ) : '—'}
-                            </td>
-                          </tr>
-                        );
-                      })}
-                      {!modelResults.length && <tr><td colSpan={metricCols.length + 4} className="text-muted">{t.benchmarks.noResults}</td></tr>}
-                    </tbody>
-                  </table>
+                  {modelResults.map(r => {
+                    const metrics = r.benchmark!.metrics || [];
+                    const weightsUrl = activeModel?.weights_urls?.[r.benchmark!.task] || activeModel?.weights_url;
+                    return (
+                      <div key={r.benchmark_id} style={{ marginBottom: 'var(--space-4)' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)', marginBottom: 'var(--space-2)' }}>
+                          <h5 style={{ margin: 0 }}>{escapeHtml(r.benchmark!.name)}</h5>
+                          {weightsUrl && (
+                            <a href={weightsUrl} target="_blank" rel="noreferrer" className="btn btn-primary">⬇️ Weights</a>
+                          )}
+                        </div>
+                        <div style={{ overflowX: 'auto' }}>
+                          <table className="detail-mini-table">
+                            <thead>
+                              <tr>
+                                <th>Metric</th>
+                                <th>Value</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {metrics.map(m => {
+                                const scores = r.scores as Record<string, number | undefined>;
+                                const val = scores[m] ?? null;
+                                const std = scores[`${m}_std`] ?? null;
+                                return (
+                                  <tr key={m}>
+                                    <td>{m.toUpperCase()}</td>
+                                    <td>{formatMetricValue(val, m, std)}</td>
+                                  </tr>
+                                );
+                              })}
+                              {!metrics.length && <tr><td colSpan={2} className="text-muted">{t.benchmarks.noResults}</td></tr>}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  {!modelResults.length && <p className="text-muted">{t.benchmarks.noResults}</p>}
                 </section>
               </div>
             </div>

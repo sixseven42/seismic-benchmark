@@ -14,7 +14,7 @@ import {
 } from 'chart.js';
 import { useLanguage } from '../contexts/LanguageContext';
 import type { AppData, Filters, Benchmark } from '../types';
-import { isLowerBetter, escapeHtml } from '../utils/helpers';
+import { isLowerBetter, escapeHtml, formatMetricValue } from '../utils/helpers';
 import { getBarChartConfig } from '../utils/charts';
 
 ChartJS.register(
@@ -360,6 +360,76 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                   </div>
                 </section>
               </div>
+
+              {/* Binned metrics */}
+              {(() => {
+                const ebMetrics = (activeBench.metrics || []).filter(m => m.startsWith('eb_wse_'));
+                const fbMetrics = (activeBench.metrics || []).filter(m => m.startsWith('fb_fre_'));
+                if (!ebMetrics.length && !fbMetrics.length) return null;
+                return (
+                  <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
+                    <section className="slide-section">
+                      <h4>Binned Metrics</h4>
+                      {ebMetrics.length > 0 && (
+                        <div style={{ marginBottom: 'var(--space-4)', overflowX: 'auto' }}>
+                          <h5 style={{ marginBottom: 'var(--space-2)' }}>Energy Band WSE</h5>
+                          <table className="detail-mini-table">
+                            <thead>
+                              <tr>
+                                <th>Method</th>
+                                {ebMetrics.map(m => <th key={m}>{m.toUpperCase()}</th>)}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {benchResults.map(r => {
+                                const scores = r.scores as Record<string, number | undefined>;
+                                return (
+                                  <tr key={r.model_id}>
+                                    <td>{escapeHtml(r.model.name)}</td>
+                                    {ebMetrics.map(m => {
+                                      const val = scores[m] ?? null;
+                                      const std = scores[`${m}_std`] ?? null;
+                                      return <td key={m}>{formatMetricValue(val, m, std)}</td>;
+                                    })}
+                                  </tr>
+                                );
+                              })}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+                      {fbMetrics.length > 0 && (
+                        <div style={{ overflowX: 'auto' }}>
+                          <h5 style={{ marginBottom: 'var(--space-2)' }}>Frequency Band</h5>
+                          <table className="detail-mini-table">
+                            <thead>
+                              <tr>
+                                <th>Method</th>
+                                {fbMetrics.map(m => <th key={m}>{m.toUpperCase()}</th>)}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {benchResults.map(r => {
+                                const scores = r.scores as Record<string, number | undefined>;
+                                return (
+                                  <tr key={r.model_id}>
+                                    <td>{escapeHtml(r.model.name)}</td>
+                                    {fbMetrics.map(m => {
+                                      const val = scores[m] ?? null;
+                                      const std = scores[`${m}_std`] ?? null;
+                                      return <td key={m}>{formatMetricValue(val, m, std)}</td>;
+                                    })}
+                                  </tr>
+                                );
+                              })}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+                    </section>
+                  </div>
+                );
+              })()}
             </div>
           </div>
         </>

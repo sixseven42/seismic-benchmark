@@ -24,6 +24,7 @@ export interface Model {
   weights_urls?: Record<string, string>;
   architecture_image?: string;
   is_open_source: boolean;
+  parameters_m?: number;
 }
 
 export interface Benchmark {
@@ -46,7 +47,55 @@ export interface Benchmark {
   gallery?: string[];
 }
 
-export type MetricKey = 'snr' | 'psnr' | 'ssim' | 'rmse' | 'mse' | 'accuracy' | 'f1' | 'mae' | 'hit_rate' | 'hit_rate_1px' | 'hit_rate_3px' | 'hit_rate_5px' | 'hit_rate_7px' | 'hit_rate_9px';
+export type MetricKey =
+  | 'snr'
+  | 'psnr'
+  | 'ssim'
+  | 'rmse'
+  | 'mse'
+  | 'accuracy'
+  | 'f1'
+  | 'mae'
+  | 'hit_rate'
+  | 'hit_rate_1px'
+  | 'hit_rate_3px'
+  | 'hit_rate_5px'
+  | 'hit_rate_7px'
+  | 'hit_rate_9px'
+  // Energy-band WSE metrics
+  | 'eb_wse_medium_40_70_ne'
+  | 'eb_wse_medium_40_70_ne_std'
+  | 'eb_wse_medium_40_70_snr'
+  | 'eb_wse_medium_40_70_snr_std'
+  | 'eb_wse_strong_70_100_ne'
+  | 'eb_wse_strong_70_100_ne_std'
+  | 'eb_wse_strong_70_100_snr'
+  | 'eb_wse_strong_70_100_snr_std'
+  | 'eb_wse_very_weak_5_20_ne'
+  | 'eb_wse_very_weak_5_20_ne_std'
+  | 'eb_wse_very_weak_5_20_snr'
+  | 'eb_wse_very_weak_5_20_snr_std'
+  | 'eb_wse_weak_20_40_ne'
+  | 'eb_wse_weak_20_40_ne_std'
+  | 'eb_wse_weak_20_40_snr'
+  | 'eb_wse_weak_20_40_snr_std'
+  // Frequency-band metrics
+  | 'fb_fre_high_ne'
+  | 'fb_fre_high_ne_std'
+  | 'fb_fre_high_snr'
+  | 'fb_fre_high_snr_std'
+  | 'fb_fre_low_ne'
+  | 'fb_fre_low_ne_std'
+  | 'fb_fre_low_snr'
+  | 'fb_fre_low_snr_std'
+  | 'fb_fre_mid_ne'
+  | 'fb_fre_mid_ne_std'
+  | 'fb_fre_mid_snr'
+  | 'fb_fre_mid_snr_std'
+  | 'fb_fre_very_high_ne'
+  | 'fb_fre_very_high_ne_std'
+  | 'fb_fre_very_high_snr'
+  | 'fb_fre_very_high_snr_std';
 
 export interface Scores {
   snr?: number;
@@ -63,6 +112,40 @@ export interface Scores {
   hit_rate_5px?: number;
   hit_rate_7px?: number;
   hit_rate_9px?: number;
+  // Energy-band WSE metrics
+  eb_wse_medium_40_70_ne?: number;
+  eb_wse_medium_40_70_ne_std?: number;
+  eb_wse_medium_40_70_snr?: number;
+  eb_wse_medium_40_70_snr_std?: number;
+  eb_wse_strong_70_100_ne?: number;
+  eb_wse_strong_70_100_ne_std?: number;
+  eb_wse_strong_70_100_snr?: number;
+  eb_wse_strong_70_100_snr_std?: number;
+  eb_wse_very_weak_5_20_ne?: number;
+  eb_wse_very_weak_5_20_ne_std?: number;
+  eb_wse_very_weak_5_20_snr?: number;
+  eb_wse_very_weak_5_20_snr_std?: number;
+  eb_wse_weak_20_40_ne?: number;
+  eb_wse_weak_20_40_ne_std?: number;
+  eb_wse_weak_20_40_snr?: number;
+  eb_wse_weak_20_40_snr_std?: number;
+  // Frequency-band metrics
+  fb_fre_high_ne?: number;
+  fb_fre_high_ne_std?: number;
+  fb_fre_high_snr?: number;
+  fb_fre_high_snr_std?: number;
+  fb_fre_low_ne?: number;
+  fb_fre_low_ne_std?: number;
+  fb_fre_low_snr?: number;
+  fb_fre_low_snr_std?: number;
+  fb_fre_mid_ne?: number;
+  fb_fre_mid_ne_std?: number;
+  fb_fre_mid_snr?: number;
+  fb_fre_mid_snr_std?: number;
+  fb_fre_very_high_ne?: number;
+  fb_fre_very_high_ne_std?: number;
+  fb_fre_very_high_snr?: number;
+  fb_fre_very_high_snr_std?: number;
 }
 
 export interface Result {

@@ -572,7 +572,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/atten_unet/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.85
   },
   {
     "id": "attention-unet-plus-multiples",
@@ -591,7 +592,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/atten_unet_plus/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 31.39
   },
   {
     "id": "dncnn-multiples",
@@ -610,7 +612,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/dncnn/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 0.56
   },
   {
     "id": "dnndat-multiples",
@@ -629,7 +632,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/dnndat/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 37.07
   },
   {
     "id": "res-unet-multiples",
@@ -648,7 +652,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/res_unet/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 8.11
   },
   {
     "id": "res-unet-plus-multiples",
@@ -667,7 +672,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/res_unet_plus/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 32.44
   },
   {
     "id": "sagan-multiples",
@@ -686,7 +692,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/sagan/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 32.34
   },
   {
     "id": "unet-multiples",
@@ -705,7 +712,8 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/unet/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.76
   },
   {
     "id": "unet-plus-multiples",
@@ -724,6 +732,7 @@
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/unet_plus/seed42/best.pt",
     "weights_urls": {},
     "architecture_image": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 31.04
   }
 ]

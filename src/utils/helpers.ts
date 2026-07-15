@@ -4,7 +4,7 @@ export function escapeHtml(str: string): string {
 }
 
 export function isLowerBetter(metric: string): boolean {
-  return metric === 'rmse' || metric === 'mae' || metric === 'mse';
+  return metric === 'rmse' || metric === 'mae' || metric === 'mse' || metric.endsWith('_ne');
 }
 
 export function formatType(type: string): string {
@@ -30,14 +30,16 @@ export function getLastUpdatedDate(results: { date_added?: string }[]): string {
 }
 
 export function getMetricColumns(task: string): string[] {
+  if (task === 'multiples_attenuation') {
+    return ['snr', 'psnr', 'ssim', 'mae', 'mse', 'rmse', 'eb', 'fb'];
+  }
   if (
     task === 'interpolation' ||
     task === 'coherent_noise_suppression' ||
     task === 'random_noise_suppression' ||
-    task === 'multiples_attenuation' ||
     task === 'deblending'
   ) {
-    return ['snr', 'psnr', 'ssim', 'rmse', 'mse'];
+    return ['snr', 'psnr', 'ssim', 'mae', 'mse', 'rmse'];
   }
   if (task === 'first_arrival_picking') {
     return ['mae', 'rmse', 'f1', 'hit_rate'];
@@ -45,11 +47,17 @@ export function getMetricColumns(task: string): string[] {
   return ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
 }
 
-export function formatMetricValue(value: number | null | undefined, metric: string): string {
+export function formatMetricValue(value: number | null | undefined, metric: string, std?: number | null): string {
   if (value == null) return '—';
-  if (metric === 'ssim' || metric === 'f1') return value.toFixed(3);
-  if (metric === 'mse') return value.toFixed(6);
-  if (metric === 'rmse') return value.toFixed(4);
-  if (metric === 'accuracy') return value.toFixed(2) + '%';
-  return value.toFixed(2);
+  const decimals =
+    metric === 'ssim' || metric === 'f1' ? 3 :
+    metric === 'mse' ? 6 :
+    metric === 'rmse' ? 4 :
+    2;
+  const suffix = metric === 'accuracy' ? '%' : '';
+  const meanStr = value.toFixed(decimals) + suffix;
+  if (std != null) {
+    return `${meanStr} ± ${std.toFixed(decimals)}`;
+  }
+  return meanStr;
 }
