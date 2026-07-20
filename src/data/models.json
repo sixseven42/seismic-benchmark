@@ -34,7 +34,8 @@
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.85
   },
   {
     "id": "attention-unet-interpolation",
@@ -68,7 +69,8 @@
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 31.39
   },
   {
     "id": "attention-unet-random-noise",
@@ -119,7 +121,8 @@
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3489716",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/ddpm.py",
     "weights_url": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 50.61
   },
   {
     "id": "ddpm-random-noise",
@@ -153,7 +156,8 @@
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 0.14
   },
   {
     "id": "dncnn-interpolation",
@@ -224,7 +228,8 @@
     "paper_url": "https://doi.org/10.1109/TGRS.2024.3427405",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/enhanced_unet.py",
     "weights_url": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 8.2
   },
   {
     "id": "fbresnet-random-noise",
@@ -275,7 +280,8 @@
     "paper_url": "https://doi.org/10.1190/geo2020-0691.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/physics_unet.py",
     "weights_url": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.27
   },
   {
     "id": "pix2pix-cgan-groundroll",
@@ -292,7 +298,8 @@
     "paper_url": "https://doi.org/10.1190/geo2019-0414.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/pix2pix.py",
     "weights_url": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 48.84
   },
   {
     "id": "pu2024hu_net_first_arrival_accuracy",
@@ -363,7 +370,8 @@
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 8.11
   },
   {
     "id": "res-unet-interpolation",
@@ -397,7 +405,8 @@
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 32.44
   },
   {
     "id": "res-unet-random-noise",
@@ -431,7 +440,8 @@
     "paper_url": "https://doi.org/10.1190/geo2023-0150.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/sanet.py",
     "weights_url": null,
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 0.23
   },
   {
     "id": "scrn-random-noise",
@@ -485,7 +495,8 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.76
   },
   {
     "id": "unet-interpolation",
@@ -519,7 +530,8 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 31.04
   },
   {
     "id": "unet-plusplus-random-noise",
