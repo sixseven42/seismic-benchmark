@@ -16,3 +16,8 @@
 - Added `parameters_m` to 12 ground-roll models in `src/data/models.json`.
 - Updated `getMetricColumns` in `src/utils/helpers.ts` so ground-roll also shows `Energy Band` / `Frequency Band` dropdown columns.
 - Verified `npm run build` passes.
+
+## Server handoff (2026-08-03)
+- Created `HANDOFF.md` summarizing project setup, recent changes, type conventions, continuation guide, and verification steps.
+- Updated `task_plan.md` and `progress.md`.
+- Committed and pushed to `main` on `git@github.com:sixseven42/seismic-benchmark.git`.

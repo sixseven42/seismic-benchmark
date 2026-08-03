@@ -17,6 +17,11 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update `src/data/results.json` for the corresponding `coherent_noise_suppression` entries.
 - [x] Run `npm run build` to verify consistency.
 
+## Additional Phase — Server handoff / migration
+- [x] Summarize current project state, recent changes, and continuation instructions into a handoff document.
+- [x] Commit the handoff document (and updated planning files) to `main`.
+- [x] Push to GitHub so the other server can pull and continue.
+
 
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
