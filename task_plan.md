@@ -22,6 +22,13 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
+## Additional Phase — Integrate STUNet first-arrival picking model/results
+- [x] Inspect the two STUNet JSON files and verify benchmark IDs.
+- [x] Add the STUNet model to `src/data/models.json` (fill required fields).
+- [x] Add the 5 result entries to `src/data/results.json` with corrected `model_id`.
+- [x] Update `model_count` for the 5 affected first-arrival benchmarks.
+- [x] Run `npm run build` and push to GitHub.
+
 
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).

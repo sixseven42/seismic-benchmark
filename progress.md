@@ -21,3 +21,16 @@
 - Created `HANDOFF.md` summarizing project setup, recent changes, type conventions, continuation guide, and verification steps.
 - Updated `task_plan.md` and `progress.md`.
 - Committed and pushed to `main` on `git@github.com:sixseven42/seismic-benchmark.git`.
+
+## STUNet first-arrival picking integration (2026-08-03)
+- Verified the two STUNet JSON files were not yet integrated.
+- Added STUNet model (`jiang2023swin_transformer_first_break`) to `src/data/models.json`.
+- Added 5 result entries to `src/data/results.json` for benchmarks:
+  - `fbp-geomseg-all`
+  - `fbp-brunswick-valid`
+  - `fbp-dongbei`
+  - `fbp-halfmile-valid`
+  - `fbp-lalor-valid`
+- Corrected `model_id` in results from `pu2024hu_net_first_arrival_accuracy` to `jiang2023swin_transformer_first_break`.
+- Incremented `model_count` for the 5 affected benchmarks.
+- Verified `npm run build` passes.
