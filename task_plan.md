@@ -22,11 +22,12 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
-## Additional Phase — Integrate STUNet first-arrival picking model/results
-- [x] Inspect the two STUNet JSON files and verify benchmark IDs.
-- [x] Add the STUNet model to `src/data/models.json` (fill required fields).
-- [x] Add the 5 result entries to `src/data/results.json` with corrected `model_id`.
-- [x] Update `model_count` for the 5 affected first-arrival benchmarks.
+## Additional Phase — Integrate DSUNet and Plus first-arrival picking models/results
+- [x] Inspect `dsunet.zip` and `plus.zip` contents and identify model/result JSON files.
+- [x] Extract model metadata and map to existing/new model IDs.
+- [x] Add new models to `src/data/models.json` with required fields.
+- [x] Add result entries to `src/data/results.json` with corrected `model_id`s.
+- [x] Update `model_count` for affected first-arrival benchmarks.
 - [x] Run `npm run build` and push to GitHub.
 
 

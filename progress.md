@@ -34,3 +34,14 @@
 - Corrected `model_id` in results from `pu2024hu_net_first_arrival_accuracy` to `jiang2023swin_transformer_first_break`.
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
+
+## DSUNet and Plus first-arrival picking integration (2026-08-03)
+- Extracted model/result JSONs from `dsunet.zip` and `plus.zip`.
+- Added 4 new first-arrival picking models to `src/data/models.json`:
+  - `wang2024dsunet_first_break_picking`（DSU-Net）
+  - `unet-first-break-plus`（UNet Plus）
+  - `attention-unet-first-break-plus`（Attention UNet Plus）
+  - `res-unet-first-break-plus`（ResUNet Plus）
+- Added 20 result entries (4 models × 5 benchmarks) to `src/data/results.json`.
+- Updated `model_count` for the 5 affected first-arrival benchmarks.
+- Verified `npm run build` passes.

@@ -763,5 +763,73 @@
     "architecture_image": null,
     "is_open_source": true,
     "parameters_m": 31.04
+  },
+  {
+    "id": "wang2024dsunet_first_break_picking",
+    "name": "DSU-Net",
+    "authors": "Hongtao Wang, Rongyu Feng, Liangyi Wu, Mutian Liu, Yinuo Cui, Chunxia Zhang, Zhenbo Guo",
+    "year": 2024,
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "paper_url": "https://doi.org/10.1109/TGRS.2024.3457521",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/dsu_net.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
+    "org": "Unknown",
+    "emoji": "🔬",
+    "description": "DSU-Net for first-arrival picking.",
+    "is_open_source": true
+  },
+  {
+    "id": "unet-first-break-plus",
+    "name": "UNet Plus",
+    "authors": "Ronneberger et al.",
+    "year": 2015,
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
+    "org": "Unknown",
+    "emoji": "🔬",
+    "description": "UNet Plus for first-arrival picking.",
+    "is_open_source": true
+  },
+  {
+    "id": "attention-unet-first-break-plus",
+    "name": "Attention UNet Plus",
+    "authors": "Oktay et al.",
+    "year": 2018,
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
+    "org": "Unknown",
+    "emoji": "🔬",
+    "description": "Attention UNet Plus for first-arrival picking.",
+    "is_open_source": true
+  },
+  {
+    "id": "res-unet-first-break-plus",
+    "name": "ResUNet Plus",
+    "authors": "He et al.",
+    "year": 2016,
+    "type": "deep_learning",
+    "tasks": [
+      "first_arrival_picking"
+    ],
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
+    "org": "Unknown",
+    "emoji": "🔬",
+    "description": "ResUNet Plus for first-arrival picking.",
+    "is_open_source": true
   }
 ]
