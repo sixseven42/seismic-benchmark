@@ -22,12 +22,14 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
-## Additional Phase — Integrate DSUNet and Plus first-arrival picking models/results
-- [x] Inspect `dsunet.zip` and `plus.zip` contents and identify model/result JSON files.
-- [x] Extract model metadata and map to existing/new model IDs.
-- [x] Add new models to `src/data/models.json` with required fields.
-- [x] Add result entries to `src/data/results.json` with corrected `model_id`s.
-- [x] Update `model_count` for affected first-arrival benchmarks.
+## Additional Phase — Integrate interpolation field results from `interp_field_czt0820`
+- [x] Inspect directory contents (6 models + 6 result JSONs + Excel).
+- [x] Map result benchmark IDs to existing repo benchmark IDs.
+- [x] Add 6 interpolation models to `src/data/models.json` with required fields and `parameters_m`.
+- [x] Add 42 result entries to `src/data/results.json`, filtering out energy ratio / frequency range keys.
+- [x] Update interpolation benchmark `metrics` to core 6 + binned NE/SNR where applicable.
+- [x] Update `model_count` for the 7 affected interpolation benchmarks.
+- [x] Update `getMetricColumns` to show `Energy Band` / `Frequency Band` dropdowns for interpolation.
 - [x] Run `npm run build` and push to GitHub.
 
 

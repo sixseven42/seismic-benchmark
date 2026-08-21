@@ -35,13 +35,21 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
-## DSUNet and Plus first-arrival picking integration (2026-08-03)
-- Extracted model/result JSONs from `dsunet.zip` and `plus.zip`.
-- Added 4 new first-arrival picking models to `src/data/models.json`:
-  - `wang2024dsunet_first_break_picking`（DSU-Net）
-  - `unet-first-break-plus`（UNet Plus）
-  - `attention-unet-first-break-plus`（Attention UNet Plus）
-  - `res-unet-first-break-plus`（ResUNet Plus）
-- Added 20 result entries (4 models × 5 benchmarks) to `src/data/results.json`.
-- Updated `model_count` for the 5 affected first-arrival benchmarks.
+## Interpolation field results integration (2026-08-20)
+- Inspected `interp_field_czt0820` directory: 6 model JSONs + 6 result JSONs + `batch_evaluation_part.xlsx`.
+- Extracted `parameters_m` from Excel for the 6 interpolation models.
+- Added 6 new interpolation models to `src/data/models.json`:
+  - `chai2020_unet`
+  - `gated_transformer_v9`
+  - `li2022_caunet`
+  - `liu2022_wrdl`
+  - `park2022_cfunet`
+  - `yu2022_anet`
+- Added 42 result entries (6 models × 7 benchmarks) to `src/data/results.json`.
+- Mapped result benchmark IDs to repo IDs, e.g. `interp-continuous-miss20tr` → `segc3-interp-continuous20tr`.
+- Filtered out energy ratio / frequency range keys, kept core 6 + 16 NE/SNR binned metrics.
+- Updated the 7 affected interpolation benchmarks in `src/data/benchmarks.json`:
+  - metrics now include core 6 + 16 binned keys
+  - `model_count` +6
+- Updated `getMetricColumns` in `src/utils/helpers.ts` so interpolation shows `Energy Band` / `Frequency Band` dropdown columns.
 - Verified `npm run build` passes.

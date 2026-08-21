@@ -30,11 +30,10 @@ export function getLastUpdatedDate(results: { date_added?: string }[]): string {
 }
 
 export function getMetricColumns(task: string): string[] {
-  if (task === 'multiples_attenuation' || task === 'coherent_noise_suppression') {
+  if (task === 'multiples_attenuation' || task === 'coherent_noise_suppression' || task === 'interpolation') {
     return ['snr', 'psnr', 'ssim', 'mae', 'mse', 'rmse', 'eb', 'fb'];
   }
   if (
-    task === 'interpolation' ||
     task === 'random_noise_suppression' ||
     task === 'deblending'
   ) {
