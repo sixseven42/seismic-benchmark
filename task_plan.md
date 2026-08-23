@@ -22,6 +22,13 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
+## Additional Phase — Add missing benchmarks and Mobile AVO UNet++ results
+- [x] Create `segc3-interp-random10-30` benchmark and integrate skipped synthetic result.
+- [x] Create 6 Mobile AVO field random-noise benchmarks.
+- [x] Integrate UNet++ results from `RN-AVO ...` sheets.
+- [x] Update benchmark `metrics` and `model_count`.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Additional Phase — Integrate interpolation field & synthetic zip results
 - [x] Inspect `interp_field_czt0820.zip` and `interp_syn_czt0822.zip` contents.
 - [x] Map result benchmark IDs to existing repo benchmark IDs.

@@ -35,6 +35,15 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
+## New benchmarks + UNet++ AVO integration (2026-08-23)
+- Added interpolation benchmark `segc3-interp-random10-30` and integrated the previously skipped `yu2022_anet_interpolation` result for `interp-random-10-30`.
+- Added 6 Mobile AVO field random-noise benchmarks:
+  - `mobile-avo-random-noise-gaussian-snrneg5`, `snr0`, `snr5`
+  - `mobile-avo-random-noise-poisson-snrneg5`, `snr0`, `snr5`
+- Integrated UNet++ (`zhou2018unet_plusplus_denoise`) Mobile AVO results from the 6 `RN-AVO ...` sheets in `batch_evaluation_unet_plusplus.xlsx`.
+- Updated benchmark `metrics` (6 core + 16 binned) and `model_count` for all new benchmarks.
+- Verified `npm run build` passes.
+
 ## UNet++ cleanup (2026-08-23)
 - Removed the older `unet-plusplus-random-noise` model and its 6 SEGC3 random-noise results.
 - Kept `zhou2018unet_plusplus_denoise` as the canonical UNet++ entry; paper/code references follow the original Zhou et al. 2018 UNet++ paper.
