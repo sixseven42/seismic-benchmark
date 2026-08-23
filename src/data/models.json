@@ -551,23 +551,6 @@
     "parameters_m": 31.04
   },
   {
-    "id": "unet-plusplus-random-noise",
-    "name": "UNet++",
-    "authors": "Zhang et al.",
-    "org": "University of California Los Angeles",
-    "year": 2024,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "UNet++ baseline for synthetic random-noise suppression.",
-    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet_plusplus.py",
-    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/unet_plusplus",
-    "is_open_source": true
-  },
-  {
     "id": "unet-random-noise",
     "name": "UNet",
     "authors": "Ronneberger et al.",

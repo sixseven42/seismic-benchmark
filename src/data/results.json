@@ -3376,21 +3376,6 @@
     "date_added": "2026-06-14"
   },
   {
-    "model_id": "unet-plusplus-random-noise",
-    "benchmark_id": "segc3-random-noise-gaussian-snr0",
-    "scores": {
-      "snr": 13.474467,
-      "psnr": 38.1409,
-      "ssim": 0.954333,
-      "mae": 0.008972,
-      "mse": 0.000179,
-      "rmse": 0.012988
-    },
-    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
-    "code_url": null,
-    "date_added": "2026-05-24"
-  },
-  {
     "model_id": "unet-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snr0",
     "scores": {
@@ -3539,21 +3524,6 @@
     "paper_url": null,
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/SCRN.py",
     "date_added": "2026-06-14"
-  },
-  {
-    "model_id": "unet-plusplus-random-noise",
-    "benchmark_id": "segc3-random-noise-gaussian-snr5",
-    "scores": {
-      "snr": 16.185167,
-      "psnr": 40.851567,
-      "ssim": 0.974067,
-      "mae": 0.006638,
-      "mse": 9.5e-05,
-      "rmse": 0.009469
-    },
-    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
-    "code_url": null,
-    "date_added": "2026-05-24"
   },
   {
     "model_id": "unet-random-noise",
@@ -3706,21 +3676,6 @@
     "date_added": "2026-06-14"
   },
   {
-    "model_id": "unet-plusplus-random-noise",
-    "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
-    "scores": {
-      "snr": 11.0445,
-      "psnr": 35.7109,
-      "ssim": 0.9285,
-      "mae": 0.011459,
-      "mse": 0.000313,
-      "rmse": 0.017203
-    },
-    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
-    "code_url": null,
-    "date_added": "2026-05-24"
-  },
-  {
     "model_id": "unet-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
     "scores": {
@@ -3854,21 +3809,6 @@
     "paper_url": null,
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/SCRN.py",
     "date_added": "2026-06-14"
-  },
-  {
-    "model_id": "unet-plusplus-random-noise",
-    "benchmark_id": "segc3-random-noise-poisson-snr0",
-    "scores": {
-      "snr": 13.493233,
-      "psnr": 38.159667,
-      "ssim": 0.954433,
-      "mae": 0.008933,
-      "mse": 0.000178,
-      "rmse": 0.012968
-    },
-    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
-    "code_url": null,
-    "date_added": "2026-05-24"
   },
   {
     "model_id": "unet-random-noise",
@@ -4006,21 +3946,6 @@
     "date_added": "2026-06-14"
   },
   {
-    "model_id": "unet-plusplus-random-noise",
-    "benchmark_id": "segc3-random-noise-poisson-snr5",
-    "scores": {
-      "snr": 16.160267,
-      "psnr": 40.826733,
-      "ssim": 0.974067,
-      "mae": 0.006662,
-      "mse": 9.5e-05,
-      "rmse": 0.009487
-    },
-    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
-    "code_url": null,
-    "date_added": "2026-05-24"
-  },
-  {
     "model_id": "unet-random-noise",
     "benchmark_id": "segc3-random-noise-poisson-snr5",
     "scores": {
@@ -4154,21 +4079,6 @@
     "paper_url": null,
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/SCRN.py",
     "date_added": "2026-06-14"
-  },
-  {
-    "model_id": "unet-plusplus-random-noise",
-    "benchmark_id": "segc3-random-noise-poisson-snrneg5",
-    "scores": {
-      "snr": 10.982833,
-      "psnr": 35.6493,
-      "ssim": 0.928067,
-      "mae": 0.011491,
-      "mse": 0.000313,
-      "rmse": 0.017234
-    },
-    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
-    "code_url": null,
-    "date_added": "2026-05-24"
   },
   {
     "model_id": "unet-random-noise",

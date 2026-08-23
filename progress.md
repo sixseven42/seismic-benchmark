@@ -35,6 +35,12 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
+## UNet++ cleanup (2026-08-23)
+- Removed the older `unet-plusplus-random-noise` model and its 6 SEGC3 random-noise results.
+- Kept `zhou2018unet_plusplus_denoise` as the canonical UNet++ entry; paper/code references follow the original Zhou et al. 2018 UNet++ paper.
+- Updated the 6 SEGC3 random-noise benchmarks in `src/data/benchmarks.json` to recalculate `model_count` after deletion.
+- Verified `npm run build` passes.
+
 ## Interpolation field & synthetic zip integration (2026-08-23)
 - Extracted and inspected `interp_field_czt0820.zip` (6 models, 7 benchmarks) and `interp_syn_czt0822.zip` (7 models, 7 benchmarks).
 - Added 7 new synthetic interpolation models to `src/data/models.json`:
