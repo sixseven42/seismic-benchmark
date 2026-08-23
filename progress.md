@@ -35,16 +35,22 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
-## UNet++ random-noise integration (2026-08-23)
-- Inspected `batch_evaluation_unet_plusplus.xlsx`: 12 random-noise sheets (6 SEGC3 + 6 AVO) and 4 deblending sheets.
-- Added `zhou2018unet_plusplus_denoise` model to `src/data/models.json` (UNet++ by Zhou et al., 2018, 9.05 M parameters).
-- Integrated the 6 `RN-SEGC3 ...` sheets into existing SEGC3 random-noise benchmarks:
-  - `segc3-random-noise-gaussian-snrneg5`, `snr0`, `snr5`
-  - `segc3-random-noise-poisson-snrneg5`, `snr0`, `snr5`
-- Extracted means for 6 core metrics + 16 NE/SNR binned metrics; ignored standard-deviation, energy-ratio and frequency-range columns.
-- Updated the 6 SEGC3 random-noise benchmarks in `src/data/benchmarks.json`:
-  - metrics now include core 6 + 16 binned keys
-  - `model_count` +1 each
-- Updated `getMetricColumns` in `src/utils/helpers.ts` so `random_noise_suppression` shows `Energy Band` / `Frequency Band` dropdown columns.
+## Interpolation field & synthetic zip integration (2026-08-23)
+- Extracted and inspected `interp_field_czt0820.zip` (6 models, 7 benchmarks) and `interp_syn_czt0822.zip` (7 models, 7 benchmarks).
+- Added 7 new synthetic interpolation models to `src/data/models.json`:
+  - `chai2020_unet_interpolation`
+  - `gated_transformer_v9_interpolation`
+  - `li2022_caunet_interpolation`
+  - `liu2022_wrdl_interpolation`
+  - `pan2020_pconv_unet_interpolation` (new architecture)
+  - `park2022_cfunet_interpolation`
+  - `yu2022_anet_interpolation`
+- Integrated results into 7 SEGC3 interpolation benchmarks:
+  - Field results mapped: `interp-continuous-miss*tr` → `segc3-interp-continuous*tr`, `interp-random-miss*` → `segc3-interp-random*`, `interp-uniform-miss*` → `segc3-interp-uniform*`.
+  - Synthetic results mapped: `interp-continuous-*tr` → `segc3-interp-continuous*tr`, `interp-random-*` → `segc3-interp-random*`, `interp-uniform-*` → `segc3-interp-uniform*`.
+- Filtered scores to 6 core + 16 NE/SNR binned metrics; ignored energy ratio / frequency range keys.
+- Replaced 42 existing field result entries and added 45 new synthetic result entries; skipped 1 unmatched synthetic benchmark (`interp-random-10-30`).
+- Updated affected interpolation benchmarks in `src/data/benchmarks.json`:
+  - metrics include core 6 + 16 binned keys
+  - `model_count` recalculated from `results.json`
 - Verified `npm run build` passes.
-- **Note:** AVO random-noise and deblending sheets in the Excel were not integrated because the repo has no corresponding benchmarks yet.

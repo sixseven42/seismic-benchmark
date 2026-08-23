@@ -742,7 +742,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 17,
     "group_name": "SEGC3 Random Missing",
     "gallery": [
       "datasets/segc3-interp-random-raw.png",
@@ -791,7 +791,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 17,
     "group_name": "SEGC3 Random Missing",
     "gallery": [
       "datasets/segc3-interp-random-raw.png",
@@ -906,7 +906,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 17,
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
@@ -955,7 +955,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 16,
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
@@ -1004,7 +1004,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 16,
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
@@ -1053,7 +1053,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 16,
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
@@ -1102,7 +1102,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 16,
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",

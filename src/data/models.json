@@ -957,5 +957,131 @@
     "weights_url": null,
     "is_open_source": true,
     "parameters_m": 9.05
+  },
+  {
+    "id": "chai2020_unet_interpolation",
+    "name": "Chai2020 UNet",
+    "authors": "Xintao Chai, Genyang Tang, Shangxu Wang, Ronghua Peng, Wei Chen, Jingnan Li",
+    "org": "Unknown",
+    "year": 2020,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Chai2020 UNet for seismic interpolation.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2019.2961015",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/chai2020_unet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 87.15
+  },
+  {
+    "id": "gated_transformer_v9_interpolation",
+    "name": "Gated Transformer v9",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Gated Transformer v9 for seismic interpolation.",
+    "paper_url": null,
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/gated_transformer_v9.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 113.68
+  },
+  {
+    "id": "li2022_caunet_interpolation",
+    "name": "CA-Unet",
+    "authors": "Xinze Li, Bangyu Wu, Xu Zhu, Hui Yang",
+    "org": "Unknown",
+    "year": 2022,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "CA-Unet for seismic interpolation.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2021.3128511",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/li2022_caunet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 1.95
+  },
+  {
+    "id": "liu2022_wrdl_interpolation",
+    "name": "WRDL",
+    "authors": "Naihao Liu, Lukun Wu, Jiale Wang, Hao Wu, Jinghuai Gao, Dehua Wang",
+    "org": "Unknown",
+    "year": 2022,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "WRDL for seismic interpolation.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2022.3152984",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/liu2022_wrdl.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 35.83
+  },
+  {
+    "id": "pan2020_pconv_unet_interpolation",
+    "name": "PConv U-Net",
+    "authors": "Shulin Pan, Kai Chen, Jingyi Chen, Ziyu Qin, Qinghui Cui, Jing Li",
+    "org": "Unknown",
+    "year": 2020,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "PConv U-Net for seismic interpolation.",
+    "paper_url": "https://doi.org/10.1016/j.cageo.2020.104609",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/pan2020_pconv_unet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 22.33
+  },
+  {
+    "id": "park2022_cfunet_interpolation",
+    "name": "CFunet",
+    "authors": "Junhwan Park, Jungkyun Shin, Soon Jee Seol, Joongmoo Byun",
+    "org": "Unknown",
+    "year": 2022,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "CFunet for seismic interpolation.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2022.3190292",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/park2022_cfunet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 7.35
+  },
+  {
+    "id": "yu2022_anet_interpolation",
+    "name": "ANet",
+    "authors": "Jiaxu Yu, Bangyu Wu",
+    "org": "Unknown",
+    "year": 2022,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "ANet for seismic interpolation.",
+    "paper_url": "https://doi.org/10.1109/TGRS.2021.3068279",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/yu2022_anet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 2.01
   }
 ]

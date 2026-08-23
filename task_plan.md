@@ -22,12 +22,12 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
-## Additional Phase — Integrate random-noise UNet++ model/results
-- [x] Inspect `batch_evaluation_unet_plusplus.xlsx` and `unet_plusplus_model.json`.
+## Additional Phase — Integrate interpolation field & synthetic zip results
+- [x] Inspect `interp_field_czt0820.zip` and `interp_syn_czt0822.zip` contents.
 - [x] Map result benchmark IDs to existing repo benchmark IDs.
-- [x] Add UNet++ model to `src/data/models.json` with required fields and `parameters_m`.
-- [x] Add result entries to `src/data/results.json`, keeping only valid metric keys.
-- [x] Update affected random-noise benchmark `metrics` and `model_count`.
+- [x] Add synthetic interpolation models (`*_interpolation`) including `pan2020_pconv_unet_interpolation` to `src/data/models.json`.
+- [x] Add/replace result entries from both zips, keeping only valid metric keys.
+- [x] Update affected interpolation benchmark `metrics` and `model_count`.
 - [x] Run `npm run build` and push to GitHub.
 
 
