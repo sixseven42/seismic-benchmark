@@ -4801,7 +4801,7 @@
   },
   {
     "model_id": "chai2020_unet",
-    "benchmark_id": "segc3-interp-continuous20tr",
+    "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 8.9207,
       "psnr": 46.7182,
@@ -4832,7 +4832,7 @@
   },
   {
     "model_id": "chai2020_unet",
-    "benchmark_id": "segc3-interp-continuous30tr",
+    "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 4.2888,
       "psnr": 41.8253,
@@ -4863,7 +4863,7 @@
   },
   {
     "model_id": "chai2020_unet",
-    "benchmark_id": "segc3-interp-continuous40tr",
+    "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 3.3029,
       "psnr": 41.0064,
@@ -4894,7 +4894,7 @@
   },
   {
     "model_id": "chai2020_unet",
-    "benchmark_id": "segc3-interp-random30",
+    "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 13.4616,
       "psnr": 47.6118,
@@ -4925,7 +4925,7 @@
   },
   {
     "model_id": "chai2020_unet",
-    "benchmark_id": "segc3-interp-random50",
+    "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 11.0039,
       "psnr": 45.0983,
@@ -4956,7 +4956,7 @@
   },
   {
     "model_id": "chai2020_unet",
-    "benchmark_id": "segc3-interp-uniform50",
+    "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 16.7035,
       "psnr": 50.6644,
@@ -4987,7 +4987,7 @@
   },
   {
     "model_id": "chai2020_unet",
-    "benchmark_id": "segc3-interp-uniform70",
+    "benchmark_id": "mobile-avo-interp-uniform70",
     "scores": {
       "snr": 11.5562,
       "psnr": 45.5022,
@@ -5018,7 +5018,7 @@
   },
   {
     "model_id": "gated_transformer_v9",
-    "benchmark_id": "segc3-interp-continuous20tr",
+    "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 11.1076,
       "psnr": 45.1841,
@@ -5049,7 +5049,7 @@
   },
   {
     "model_id": "gated_transformer_v9",
-    "benchmark_id": "segc3-interp-continuous30tr",
+    "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 9.0817,
       "psnr": 43.1582,
@@ -5080,7 +5080,7 @@
   },
   {
     "model_id": "gated_transformer_v9",
-    "benchmark_id": "segc3-interp-continuous40tr",
+    "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 8.0453,
       "psnr": 42.1218,
@@ -5111,7 +5111,7 @@
   },
   {
     "model_id": "gated_transformer_v9",
-    "benchmark_id": "segc3-interp-random30",
+    "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 4.8477,
       "psnr": 38.9242,
@@ -5142,7 +5142,7 @@
   },
   {
     "model_id": "gated_transformer_v9",
-    "benchmark_id": "segc3-interp-random50",
+    "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 2.9203,
       "psnr": 36.9968,
@@ -5173,7 +5173,7 @@
   },
   {
     "model_id": "gated_transformer_v9",
-    "benchmark_id": "segc3-interp-uniform50",
+    "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 3.006,
       "psnr": 37.0825,
@@ -5204,7 +5204,7 @@
   },
   {
     "model_id": "gated_transformer_v9",
-    "benchmark_id": "segc3-interp-uniform70",
+    "benchmark_id": "mobile-avo-interp-uniform70",
     "scores": {
       "snr": -22.9778,
       "psnr": 11.0987,
@@ -5235,7 +5235,7 @@
   },
   {
     "model_id": "li2022_caunet",
-    "benchmark_id": "segc3-interp-continuous20tr",
+    "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 9.7519,
       "psnr": 47.3941,
@@ -5266,7 +5266,7 @@
   },
   {
     "model_id": "li2022_caunet",
-    "benchmark_id": "segc3-interp-continuous30tr",
+    "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 7.1083,
       "psnr": 44.7072,
@@ -5297,7 +5297,7 @@
   },
   {
     "model_id": "li2022_caunet",
-    "benchmark_id": "segc3-interp-continuous40tr",
+    "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 4.9539,
       "psnr": 42.7304,
@@ -5328,7 +5328,7 @@
   },
   {
     "model_id": "li2022_caunet",
-    "benchmark_id": "segc3-interp-random30",
+    "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 8.9664,
       "psnr": 43.1016,
@@ -5359,7 +5359,7 @@
   },
   {
     "model_id": "li2022_caunet",
-    "benchmark_id": "segc3-interp-random50",
+    "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 8.8865,
       "psnr": 43.0022,
@@ -5390,7 +5390,7 @@
   },
   {
     "model_id": "li2022_caunet",
-    "benchmark_id": "segc3-interp-uniform50",
+    "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 13.7514,
       "psnr": 47.7123,
@@ -5421,7 +5421,7 @@
   },
   {
     "model_id": "li2022_caunet",
-    "benchmark_id": "segc3-interp-uniform70",
+    "benchmark_id": "mobile-avo-interp-uniform70",
     "scores": {
       "snr": 10.7211,
       "psnr": 44.6671,
@@ -5452,7 +5452,7 @@
   },
   {
     "model_id": "liu2022_wrdl",
-    "benchmark_id": "segc3-interp-continuous20tr",
+    "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 12.9254,
       "psnr": 42.3482,
@@ -5483,7 +5483,7 @@
   },
   {
     "model_id": "liu2022_wrdl",
-    "benchmark_id": "segc3-interp-continuous30tr",
+    "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 10.5182,
       "psnr": 40.0449,
@@ -5514,7 +5514,7 @@
   },
   {
     "model_id": "liu2022_wrdl",
-    "benchmark_id": "segc3-interp-continuous40tr",
+    "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 7.403,
       "psnr": 37.0172,
@@ -5545,7 +5545,7 @@
   },
   {
     "model_id": "liu2022_wrdl",
-    "benchmark_id": "segc3-interp-random30",
+    "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 15.5739,
       "psnr": 44.2371,
@@ -5576,7 +5576,7 @@
   },
   {
     "model_id": "liu2022_wrdl",
-    "benchmark_id": "segc3-interp-random50",
+    "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 12.3751,
       "psnr": 41.0497,
@@ -5607,7 +5607,7 @@
   },
   {
     "model_id": "liu2022_wrdl",
-    "benchmark_id": "segc3-interp-uniform50",
+    "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 15.7436,
       "psnr": 44.3753,
@@ -5638,7 +5638,7 @@
   },
   {
     "model_id": "liu2022_wrdl",
-    "benchmark_id": "segc3-interp-uniform70",
+    "benchmark_id": "mobile-avo-interp-uniform70",
     "scores": {
       "snr": 12.9424,
       "psnr": 41.5672,
@@ -5669,7 +5669,7 @@
   },
   {
     "model_id": "park2022_cfunet",
-    "benchmark_id": "segc3-interp-continuous20tr",
+    "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 9.005,
       "psnr": 38.472,
@@ -5700,7 +5700,7 @@
   },
   {
     "model_id": "park2022_cfunet",
-    "benchmark_id": "segc3-interp-continuous30tr",
+    "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 6.9634,
       "psnr": 36.3733,
@@ -5731,7 +5731,7 @@
   },
   {
     "model_id": "park2022_cfunet",
-    "benchmark_id": "segc3-interp-continuous40tr",
+    "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 5.1701,
       "psnr": 34.8168,
@@ -5762,7 +5762,7 @@
   },
   {
     "model_id": "park2022_cfunet",
-    "benchmark_id": "segc3-interp-random30",
+    "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 12.4542,
       "psnr": 41.1214,
@@ -5793,7 +5793,7 @@
   },
   {
     "model_id": "park2022_cfunet",
-    "benchmark_id": "segc3-interp-random50",
+    "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 10.5064,
       "psnr": 39.1695,
@@ -5824,7 +5824,7 @@
   },
   {
     "model_id": "park2022_cfunet",
-    "benchmark_id": "segc3-interp-uniform50",
+    "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 10.962,
       "psnr": 39.5937,
@@ -5855,7 +5855,7 @@
   },
   {
     "model_id": "park2022_cfunet",
-    "benchmark_id": "segc3-interp-uniform70",
+    "benchmark_id": "mobile-avo-interp-uniform70",
     "scores": {
       "snr": 10.1162,
       "psnr": 38.7409,
@@ -5886,7 +5886,7 @@
   },
   {
     "model_id": "yu2022_anet",
-    "benchmark_id": "segc3-interp-continuous20tr",
+    "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 6.6347,
       "psnr": 44.3612,
@@ -5917,7 +5917,7 @@
   },
   {
     "model_id": "yu2022_anet",
-    "benchmark_id": "segc3-interp-continuous30tr",
+    "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 4.8051,
       "psnr": 42.2444,
@@ -5948,7 +5948,7 @@
   },
   {
     "model_id": "yu2022_anet",
-    "benchmark_id": "segc3-interp-continuous40tr",
+    "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 4.1084,
       "psnr": 41.7047,
@@ -5979,7 +5979,7 @@
   },
   {
     "model_id": "yu2022_anet",
-    "benchmark_id": "segc3-interp-random30",
+    "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 7.6541,
       "psnr": 41.8543,
@@ -6010,7 +6010,7 @@
   },
   {
     "model_id": "yu2022_anet",
-    "benchmark_id": "segc3-interp-random50",
+    "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 6.6028,
       "psnr": 40.7696,
@@ -6041,7 +6041,7 @@
   },
   {
     "model_id": "yu2022_anet",
-    "benchmark_id": "segc3-interp-uniform50",
+    "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 8.8468,
       "psnr": 42.8077,
@@ -6072,7 +6072,7 @@
   },
   {
     "model_id": "yu2022_anet",
-    "benchmark_id": "segc3-interp-uniform70",
+    "benchmark_id": "mobile-avo-interp-uniform70",
     "scores": {
       "snr": 6.1702,
       "psnr": 40.1162,

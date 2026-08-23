@@ -16,16 +16,17 @@ ZIPS = {
     'syn': Path(r'C:\Users\admin\Documents\WeChat Files\wxid_hvmr1h95e7jn22\FileStorage\File\2026-08\interp_syn_czt0822.zip'),
 }
 
-BENCHMARK_MAP = {
-    # field zip
-    'interp-continuous-miss20tr': 'segc3-interp-continuous20tr',
-    'interp-continuous-miss30tr': 'segc3-interp-continuous30tr',
-    'interp-continuous-miss40tr': 'segc3-interp-continuous40tr',
-    'interp-random-miss30': 'segc3-interp-random30',
-    'interp-random-miss50': 'segc3-interp-random50',
-    'interp-uniform-miss50': 'segc3-interp-uniform50',
-    'interp-uniform-miss70': 'segc3-interp-uniform70',
-    # synthetic zip
+FIELD_BENCHMARK_MAP = {
+    'interp-continuous-miss20tr': 'mobile-avo-interp-continuous20tr',
+    'interp-continuous-miss30tr': 'mobile-avo-interp-continuous30tr',
+    'interp-continuous-miss40tr': 'mobile-avo-interp-continuous40tr',
+    'interp-random-miss30': 'mobile-avo-interp-random30',
+    'interp-random-miss50': 'mobile-avo-interp-random50',
+    'interp-uniform-miss50': 'mobile-avo-interp-uniform50',
+    'interp-uniform-miss70': 'mobile-avo-interp-uniform70',
+}
+
+SYN_BENCHMARK_MAP = {
     'interp-continuous-20tr': 'segc3-interp-continuous20tr',
     'interp-continuous-30tr': 'segc3-interp-continuous30tr',
     'interp-continuous-40tr': 'segc3-interp-continuous40tr',
@@ -33,6 +34,11 @@ BENCHMARK_MAP = {
     'interp-random-50': 'segc3-interp-random50',
     'interp-uniform-50': 'segc3-interp-uniform50',
     'interp-uniform-70': 'segc3-interp-uniform70',
+}
+
+BENCHMARK_MAP_BY_ZIP = {
+    'field': FIELD_BENCHMARK_MAP,
+    'syn': SYN_BENCHMARK_MAP,
 }
 
 CORE_METRICS = ['snr', 'psnr', 'ssim', 'mae', 'mse', 'rmse']
@@ -118,7 +124,7 @@ def add_models(models_data, model_files):
     return added
 
 
-def integrate_results(results_data, result_files):
+def integrate_results(results_data, result_files, benchmark_map):
     existing = {(r['model_id'], r['benchmark_id']): r for r in results_data}
     added = 0
     replaced = 0
@@ -129,10 +135,10 @@ def integrate_results(results_data, result_files):
             entries = entries.get('results', [entries])
         for entry in entries:
             raw_bench = entry.get('benchmark_id')
-            if raw_bench not in BENCHMARK_MAP:
+            if raw_bench not in benchmark_map:
                 skipped += 1
                 continue
-            bench_id = BENCHMARK_MAP[raw_bench]
+            bench_id = benchmark_map[raw_bench]
             model_id = entry.get('model_id')
             if not model_id:
                 continue
@@ -160,7 +166,7 @@ def integrate_results(results_data, result_files):
 def update_benchmarks(benchmarks_data, results_data):
     bench_by_id = {b['id']: b for b in benchmarks_data}
     counts = Counter(r['benchmark_id'] for r in results_data)
-    affected = set(BENCHMARK_MAP.values())
+    affected = set(FIELD_BENCHMARK_MAP.values()) | set(SYN_BENCHMARK_MAP.values())
     for bench_id in affected:
         b = bench_by_id.get(bench_id)
         if not b:
@@ -175,17 +181,24 @@ def main():
     benchmarks = load_json(BENCH_PATH)
     results = load_json(RESULTS_PATH)
 
-    all_model_files = []
-    all_result_files = []
+    field_models = []
+    field_results = []
+    syn_models = []
+    syn_results = []
     for label, zippath in ZIPS.items():
         tmp = extract_zip(zippath)
         mfiles, rfiles = find_json_files(tmp)
         print(f'{label}: {len(mfiles)} model files, {len(rfiles)} result files')
-        all_model_files.extend(mfiles)
-        all_result_files.extend(rfiles)
+        if label == 'field':
+            field_models.extend(mfiles)
+            field_results.extend(rfiles)
+        else:
+            syn_models.extend(mfiles)
+            syn_results.extend(rfiles)
 
-    add_models(models, all_model_files)
-    integrate_results(results, all_result_files)
+    add_models(models, syn_models)  # field models already exist as base model IDs
+    integrate_results(results, field_results, FIELD_BENCHMARK_MAP)
+    integrate_results(results, syn_results, SYN_BENCHMARK_MAP)
     update_benchmarks(benchmarks, results)
 
     save_json(MODELS_PATH, models)

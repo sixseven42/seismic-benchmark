@@ -35,6 +35,14 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
+## Mobile AVO dataset correction (2026-08-23)
+- Updated Mobile AVO random-noise benchmarks to cite https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12 and note it is an open-source 2D marine field dataset.
+- Added 7 Mobile AVO interpolation benchmarks (continuous 20/30/40tr, random 30/50%, uniform 50/70%).
+- Reassigned the 42 field interpolation results from `interp_field_czt0820.zip` to the new Mobile AVO interpolation benchmarks (they had been incorrectly placed under SEGC3).
+- Recalculated `model_count` for all interpolation and random-noise benchmarks.
+- Updated `scripts/integrate_interp_zips.py` so field zip maps to Mobile AVO and synthetic zip maps to SEGC3 going forward.
+- Verified `npm run build` passes.
+
 ## New benchmarks + UNet++ AVO integration (2026-08-23)
 - Added interpolation benchmark `segc3-interp-random10-30` and integrated the previously skipped `yu2022_anet_interpolation` result for `interp-random-10-30`.
 - Added 6 Mobile AVO field random-noise benchmarks:

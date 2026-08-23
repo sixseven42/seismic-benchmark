@@ -22,6 +22,14 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
+## Additional Phase — Mobile AVO dataset correction and interpolation benchmarks
+- [x] Update Mobile AVO random-noise benchmark URLs/descriptions to the SEG wiki page.
+- [x] Create Mobile AVO interpolation benchmarks (uniform / random / continuous).
+- [x] Reassign field interpolation results from SEGC3 to Mobile AVO benchmarks.
+- [x] Update `scripts/integrate_interp_zips.py` mapping.
+- [x] Recalculate affected `model_count` values.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Additional Phase — Add missing benchmarks and Mobile AVO UNet++ results
 - [x] Create `segc3-interp-random10-30` benchmark and integrate skipped synthetic result.
 - [x] Create 6 Mobile AVO field random-noise benchmarks.
