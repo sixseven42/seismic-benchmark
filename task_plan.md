@@ -22,14 +22,12 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
-## Additional Phase — Integrate interpolation field results from `interp_field_czt0820`
-- [x] Inspect directory contents (6 models + 6 result JSONs + Excel).
+## Additional Phase — Integrate random-noise UNet++ model/results
+- [x] Inspect `batch_evaluation_unet_plusplus.xlsx` and `unet_plusplus_model.json`.
 - [x] Map result benchmark IDs to existing repo benchmark IDs.
-- [x] Add 6 interpolation models to `src/data/models.json` with required fields and `parameters_m`.
-- [x] Add 42 result entries to `src/data/results.json`, filtering out energy ratio / frequency range keys.
-- [x] Update interpolation benchmark `metrics` to core 6 + binned NE/SNR where applicable.
-- [x] Update `model_count` for the 7 affected interpolation benchmarks.
-- [x] Update `getMetricColumns` to show `Energy Band` / `Frequency Band` dropdowns for interpolation.
+- [x] Add UNet++ model to `src/data/models.json` with required fields and `parameters_m`.
+- [x] Add result entries to `src/data/results.json`, keeping only valid metric keys.
+- [x] Update affected random-noise benchmark `metrics` and `model_count`.
 - [x] Run `npm run build` and push to GitHub.
 
 

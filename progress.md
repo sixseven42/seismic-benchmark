@@ -35,21 +35,16 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
-## Interpolation field results integration (2026-08-20)
-- Inspected `interp_field_czt0820` directory: 6 model JSONs + 6 result JSONs + `batch_evaluation_part.xlsx`.
-- Extracted `parameters_m` from Excel for the 6 interpolation models.
-- Added 6 new interpolation models to `src/data/models.json`:
-  - `chai2020_unet`
-  - `gated_transformer_v9`
-  - `li2022_caunet`
-  - `liu2022_wrdl`
-  - `park2022_cfunet`
-  - `yu2022_anet`
-- Added 42 result entries (6 models × 7 benchmarks) to `src/data/results.json`.
-- Mapped result benchmark IDs to repo IDs, e.g. `interp-continuous-miss20tr` → `segc3-interp-continuous20tr`.
-- Filtered out energy ratio / frequency range keys, kept core 6 + 16 NE/SNR binned metrics.
-- Updated the 7 affected interpolation benchmarks in `src/data/benchmarks.json`:
+## UNet++ random-noise integration (2026-08-23)
+- Inspected `batch_evaluation_unet_plusplus.xlsx`: 12 random-noise sheets (6 SEGC3 + 6 AVO) and 4 deblending sheets.
+- Added `zhou2018unet_plusplus_denoise` model to `src/data/models.json` (UNet++ by Zhou et al., 2018, 9.05 M parameters).
+- Integrated the 6 `RN-SEGC3 ...` sheets into existing SEGC3 random-noise benchmarks:
+  - `segc3-random-noise-gaussian-snrneg5`, `snr0`, `snr5`
+  - `segc3-random-noise-poisson-snrneg5`, `snr0`, `snr5`
+- Extracted means for 6 core metrics + 16 NE/SNR binned metrics; ignored standard-deviation, energy-ratio and frequency-range columns.
+- Updated the 6 SEGC3 random-noise benchmarks in `src/data/benchmarks.json`:
   - metrics now include core 6 + 16 binned keys
-  - `model_count` +6
-- Updated `getMetricColumns` in `src/utils/helpers.ts` so interpolation shows `Energy Band` / `Frequency Band` dropdown columns.
+  - `model_count` +1 each
+- Updated `getMetricColumns` in `src/utils/helpers.ts` so `random_noise_suppression` shows `Energy Band` / `Frequency Band` dropdown columns.
 - Verified `npm run build` passes.
+- **Note:** AVO random-noise and deblending sheets in the Excel were not integrated because the repo has no corresponding benchmarks yet.
