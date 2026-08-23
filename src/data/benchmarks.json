@@ -577,7 +577,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 1,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-random-noise-gaussian-snr0",
@@ -623,7 +625,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 1,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-random-noise-gaussian-snr5",
@@ -669,7 +673,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 1,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-random-noise-poisson-snrneg5",
@@ -715,7 +721,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 1,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-random-noise-poisson-snr0",
@@ -761,7 +769,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 1,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-random-noise-poisson-snr5",
@@ -807,7 +817,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 1,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-interp-continuous20tr",
@@ -853,7 +865,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 6,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-interp-continuous30tr",
@@ -899,7 +913,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 6,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-interp-continuous40tr",
@@ -945,7 +961,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 6,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-interp-random30",
@@ -991,7 +1009,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 6,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-interp-random50",
@@ -1037,7 +1057,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 6,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-interp-uniform50",
@@ -1083,7 +1105,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 6,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "mobile-avo-interp-uniform70",
@@ -1129,7 +1153,9 @@
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "model_count": 6,
-    "gallery": []
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
   },
   {
     "id": "fbp-geomseg-all",

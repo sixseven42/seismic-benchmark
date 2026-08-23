@@ -298,36 +298,51 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                 <div className="slide-panel-col" style={{ gridColumn: '1 / -1' }}>
                   <section className="slide-section">
                     <h4>Visualization</h4>
-                    <div className="viz-pair row">
-                      <div className="viz-item">
-                        <span className="viz-tag">Raw Data</span>
-                        <div className="viz-frame">
-                          {activeBench.gallery[0] ? (
+                    {activeBench.gallery.length === 1 ? (
+                      <div className="viz-pair row">
+                        <div className="viz-item">
+                          <span className="viz-tag">Data</span>
+                          <div className="viz-frame">
                             <img
                               src={activeBench.gallery[0]}
-                              alt={`${activeBench.name} raw`}
+                              alt={`${activeBench.name} data`}
                               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)' }}>No image</div>
-                          )}
+                          </div>
                         </div>
                       </div>
-                      <div className="viz-item">
-                        <span className="viz-tag">Label / Clean</span>
-                        <div className="viz-frame">
-                          {activeBench.gallery[1] ? (
-                            <img
-                              src={activeBench.gallery[1]}
-                              alt={`${activeBench.name} label`}
-                              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                            />
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)' }}>No image</div>
-                          )}
+                    ) : (
+                      <div className="viz-pair row">
+                        <div className="viz-item">
+                          <span className="viz-tag">Raw Data</span>
+                          <div className="viz-frame">
+                            {activeBench.gallery[0] ? (
+                              <img
+                                src={activeBench.gallery[0]}
+                                alt={`${activeBench.name} raw`}
+                                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                              />
+                            ) : (
+                              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)' }}>No image</div>
+                            )}
+                          </div>
+                        </div>
+                        <div className="viz-item">
+                          <span className="viz-tag">Label / Clean</span>
+                          <div className="viz-frame">
+                            {activeBench.gallery[1] ? (
+                              <img
+                                src={activeBench.gallery[1]}
+                                alt={`${activeBench.name} label`}
+                                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                              />
+                            ) : (
+                              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)' }}>No image</div>
+                            )}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </section>
                 </div>
               )}

@@ -35,6 +35,12 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
+## Mobile AVO gallery image (2026-08-23)
+- Copied the Mobile AVO visualization image to `public/datasets/mobile-avo-data.png`.
+- Added the image to the `gallery` array of all Mobile AVO benchmarks (random-noise ×6 + interpolation ×7).
+- Updated `src/pages/BenchmarksPage.tsx` so a single-gallery-image benchmark renders with a `Data` tag instead of the `Raw Data / Label` pair.
+- Verified `npm run build` passes.
+
 ## Mobile AVO interpolation grouping fix (2026-08-23)
 - Split Mobile AVO interpolation benchmarks into three `group_name`s to match SEG C3 structure:
   - `Mobile AVO Continuous Missing`
