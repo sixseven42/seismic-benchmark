@@ -76,13 +76,20 @@ def create_mobile_avo_interpolation_benchmarks(benchmarks):
         ('uniform70', 'Uniform Missing 70%'),
     ]
     insert_idx = find_index(benchmarks, lambda b: b['id'] == 'fbp-geomseg-all')
-    group = 'Mobile AVO Interpolation'
     added = 0
     for key, name_suffix in variants:
         bid = f'mobile-avo-interp-{key}'
         if any(b['id'] == bid for b in benchmarks):
             print(f'Benchmark {bid} already exists')
             continue
+        if key.startswith('continuous'):
+            group = 'Mobile AVO Continuous Missing'
+        elif key.startswith('random'):
+            group = 'Mobile AVO Random Missing'
+        elif key.startswith('uniform'):
+            group = 'Mobile AVO Uniform Missing'
+        else:
+            group = 'Mobile AVO Interpolation'
         tmpl = templates[key]
         bench = {
             'id': bid,

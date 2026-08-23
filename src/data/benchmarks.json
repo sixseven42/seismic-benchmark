@@ -812,7 +812,7 @@
   {
     "id": "mobile-avo-interp-continuous20tr",
     "name": "Mobile AVO Continuous Missing 20 Traces",
-    "group_name": "Mobile AVO Interpolation",
+    "group_name": "Mobile AVO Continuous Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",
@@ -858,7 +858,7 @@
   {
     "id": "mobile-avo-interp-continuous30tr",
     "name": "Mobile AVO Continuous Missing 30 Traces",
-    "group_name": "Mobile AVO Interpolation",
+    "group_name": "Mobile AVO Continuous Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",
@@ -904,7 +904,7 @@
   {
     "id": "mobile-avo-interp-continuous40tr",
     "name": "Mobile AVO Continuous Missing 40 Traces",
-    "group_name": "Mobile AVO Interpolation",
+    "group_name": "Mobile AVO Continuous Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",
@@ -950,7 +950,7 @@
   {
     "id": "mobile-avo-interp-random30",
     "name": "Mobile AVO Random Missing 30%",
-    "group_name": "Mobile AVO Interpolation",
+    "group_name": "Mobile AVO Random Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",
@@ -996,7 +996,7 @@
   {
     "id": "mobile-avo-interp-random50",
     "name": "Mobile AVO Random Missing 50%",
-    "group_name": "Mobile AVO Interpolation",
+    "group_name": "Mobile AVO Random Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",
@@ -1042,7 +1042,7 @@
   {
     "id": "mobile-avo-interp-uniform50",
     "name": "Mobile AVO Uniform Missing 50%",
-    "group_name": "Mobile AVO Interpolation",
+    "group_name": "Mobile AVO Uniform Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",
@@ -1088,7 +1088,7 @@
   {
     "id": "mobile-avo-interp-uniform70",
     "name": "Mobile AVO Uniform Missing 70%",
-    "group_name": "Mobile AVO Interpolation",
+    "group_name": "Mobile AVO Uniform Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",

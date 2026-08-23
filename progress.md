@@ -35,6 +35,14 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
+## Mobile AVO interpolation grouping fix (2026-08-23)
+- Split Mobile AVO interpolation benchmarks into three `group_name`s to match SEG C3 structure:
+  - `Mobile AVO Continuous Missing`
+  - `Mobile AVO Random Missing`
+  - `Mobile AVO Uniform Missing`
+- Updated `scripts/fix_mobile_avo_benchmarks.py` to use category-specific group names for future runs.
+- Verified `npm run build` passes.
+
 ## Mobile AVO dataset correction (2026-08-23)
 - Updated Mobile AVO random-noise benchmarks to cite https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12 and note it is an open-source 2D marine field dataset.
 - Added 7 Mobile AVO interpolation benchmarks (continuous 20/30/40tr, random 30/50%, uniform 50/70%).
