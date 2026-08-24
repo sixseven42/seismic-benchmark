@@ -820,24 +820,6 @@
     "is_open_source": true
   },
   {
-    "id": "chai2020_unet",
-    "name": "Chai2020 UNet",
-    "authors": "Chai et al.",
-    "year": 2020,
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "paper_url": "https://doi.org/10.1109/TGRS.2019.2961015",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/chai2020_unet.py",
-    "weights_url": null,
-    "org": "Unknown",
-    "emoji": "🔧",
-    "description": "Chai2020 UNet for seismic interpolation.",
-    "is_open_source": true,
-    "parameters_m": 87.15
-  },
-  {
     "id": "gated_transformer_v9",
     "name": "Gated Transformer v9",
     "authors": "Unknown",
@@ -944,24 +926,6 @@
     "weights_url": null,
     "is_open_source": true,
     "parameters_m": 9.05
-  },
-  {
-    "id": "chai2020_unet_interpolation",
-    "name": "Chai2020 UNet",
-    "authors": "Xintao Chai, Genyang Tang, Shangxu Wang, Ronghua Peng, Wei Chen, Jingnan Li",
-    "org": "Unknown",
-    "year": 2020,
-    "emoji": "🔧",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Chai2020 UNet for seismic interpolation.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2019.2961015",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/chai2020_unet.py",
-    "weights_url": null,
-    "is_open_source": true,
-    "parameters_m": 87.15
   },
   {
     "id": "gated_transformer_v9_interpolation",

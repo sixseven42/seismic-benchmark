@@ -35,6 +35,12 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
+## Remove Chai2020UNet (2026-08-24)
+- Removed models `chai2020_unet` and `chai2020_unet_interpolation` from `src/data/models.json`.
+- Removed all result entries with those `model_id`s.
+- Recalculated `model_count` for affected interpolation benchmarks.
+- Verified `npm run build` passes.
+
 ## Latest interpolation results integration (2026-08-24)
 - Integrated `interpolation_json.zip` (SEGC3 synthetic) and `avo_interpolation_json.zip` (Mobile AVO field).
 - Added new SEGC3 interpolation models: `unet-plus-interpolation`, `unet-unpn-interpolation`, `attention-unet-plus-interpolation`, `attention-unet-unpn-interpolation`, `resunet-plus-interpolation`, `resunet-unpn-interpolation`, `dncnn-plus-interpolation`, `spnet-interpolation`.
