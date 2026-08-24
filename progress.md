@@ -1,5 +1,15 @@
 # Session Progress
 
+## 2026-08-24 — Integrate random-noise and deblending mean±std from json0824.rar
+- Extracted `json0824.rar` and parsed the four `batch_evaluation_results.xlsx` files.
+- Updated all SEGC3 random-noise results with 6 core + 16 binned metrics and `scores_std`.
+- Added missing Mobile AVO random-noise results for 8 models (UNet, DnCNN, ResUNet, Attention UNet, DDPM, SCRN, QUNet, UNet++) across 6 benchmarks.
+- Added SEGC3 deblending results using the non-`-avo` model IDs from the rar and removed the incorrectly assigned `-avo` entries from SEGC3 deblending benchmarks.
+- Updated AVO deblending results.
+- Recalculated `model_count` for all affected random-noise and deblending benchmarks.
+- Created `scripts/integrate_json0824_random_deblending.py` for reproducibility.
+- Verified `npm run build` passes and pushed commit `2e0ced3` to `main`.
+
 ## 2026-08-24 — Set all DnCNN papers to Siwei Yu 2019
 - Updated `authors`, `year`, and `paper_url` for 10 DnCNN-family models (including DnCNN-Plus and deblending variants) to cite Yu, Ma & Wang (2019), *Deep learning for denoising*, Geophysics.
 - Created `scripts/update_dncnn_paper.py` for reproducibility.

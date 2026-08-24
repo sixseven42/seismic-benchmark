@@ -114,6 +114,15 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update `scores` and `scores_std` only for the 70 matching existing interpolation result entries (35 field + 35 synthetic).
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Integrate random-noise and deblending mean±std from `json0824.rar`
+- [x] Extract `json0824.rar` and locate `batch_evaluation_results.xlsx` for random-noise (SEGC3 + Mobile AVO) and deblending (SEGC3 + Mobile AVO).
+- [x] Parse `mean+-std` cells for all 22 metrics, ignoring energy-ratio/frequency-range columns.
+- [x] Update SEGC3 random-noise results and add missing Mobile AVO random-noise results.
+- [x] Add SEGC3 deblending results with non-`-avo` model IDs from the rar and remove incorrectly assigned `-avo` SEGC3 deblending entries.
+- [x] Update Mobile AVO deblending results.
+- [x] Recalculate `model_count` for affected benchmarks.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.
