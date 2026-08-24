@@ -41,6 +41,13 @@
 - Recalculated `model_count` for affected interpolation benchmarks.
 - Verified `npm run build` passes.
 
+## Leaderboard AUX dropdown column (2026-08-24)
+- Replaced the fixed `SSIM / MAE / MSE / RMSE` columns in the leaderboard with a single `DETAIL` dropdown column.
+- `getMetricColumns` now returns `['snr', 'psnr', 'aux', 'eb', 'fb']` for tasks with binned metrics, and `['snr', 'psnr', 'aux', ...]` for other tasks.
+- Added `auxMetric` state in `LeaderboardPage.tsx`; dropdown options are SSIM / MAE / MSE / RMSE.
+- Updated sorting, CSV export, highlight, and table cell rendering to resolve the `aux` alias.
+- Verified `npm run build` passes and pushed commit `8eacf6c` to `main`.
+
 ## UNet++ deblending integration (2026-08-24)
 - Created 4 deblending benchmarks:
   - `mobile-avo-deblending-t03-mod` (Mobile AVO field, T03 mod)

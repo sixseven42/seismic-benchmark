@@ -75,6 +75,13 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Add group descriptions for `SEGC3 Deblending` and `Mobile AVO Deblending` in `BenchmarksPage.tsx`.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Leaderboard AUX dropdown column
+- [x] Replace fixed SSIM/MAE/MSE/RMSE columns with a single `aux` dropdown column (`DETAIL`).
+- [x] Update `getMetricColumns` in `src/utils/helpers.ts` to return `aux` for relevant tasks.
+- [x] Add `auxMetric` state and dropdown rendering in `src/pages/LeaderboardPage.tsx`.
+- [x] Update sorting, CSV export, and cell resolution to handle the `aux` alias.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Do not store standard deviations; display single values only, matching the existing benchmark style.
