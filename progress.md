@@ -1,5 +1,10 @@
 # Session Progress
 
+## 2026-08-24 — Set all DnCNN papers to Siwei Yu 2019
+- Updated `authors`, `year`, and `paper_url` for 10 DnCNN-family models (including DnCNN-Plus and deblending variants) to cite Yu, Ma & Wang (2019), *Deep learning for denoising*, Geophysics.
+- Created `scripts/update_dncnn_paper.py` for reproducibility.
+- Verified `npm run build` passes and pushed commit `cd498d1` to `main`.
+
 ## 2026-08-24 — Backfill standard deviations for older interpolation results
 - Parsed `batch_evaluation_part.xlsx` (`Interpolation` sheet) from `interp_field_czt0820.zip` and `interp_syn_czt0822.zip`.
 - Mapped Mobile AVO `uniform70` Excel rows to the current `mobile-avo-interp-uniform75` benchmark; skipped removed `segc3-interp-random10-30` rows.
