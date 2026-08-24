@@ -250,11 +250,13 @@ export default function ModelsPage({ data, filters, setFilters, search }: Props)
                             <tbody>
                               {metrics.map(m => {
                                 const scores = r.scores as Record<string, number | undefined>;
+                                const stds = r.scores_std as Record<string, number | undefined> | undefined;
                                 const val = scores[m] ?? null;
+                                const std = stds?.[m] ?? null;
                                 return (
                                   <tr key={m}>
                                     <td>{m.toUpperCase()}</td>
-                                    <td>{formatMetricValue(val, m)}</td>
+                                    <td>{formatMetricValue(val, m, std)}</td>
                                   </tr>
                                 );
                               })}

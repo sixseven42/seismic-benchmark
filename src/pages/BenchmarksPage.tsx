@@ -283,13 +283,18 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                   <table className="detail-mini-table">
                     <thead><tr><th>Rank</th><th>Method</th><th>{activeBench.primary_metric.toUpperCase()}</th></tr></thead>
                     <tbody>
-                      {top5.map((r, i) => (
-                        <tr key={r.model_id}>
-                          <td>{i + 1}</td>
-                          <td>{escapeHtml(r.model.name)}</td>
-                          <td>{r.score.toFixed(2)}</td>
-                        </tr>
-                      ))}
+                      {top5.map((r, i) => {
+                        const metric = activeBench.primary_metric;
+                        const val = r.scores[metric] ?? null;
+                        const std = r.scores_std?.[metric] ?? null;
+                        return (
+                          <tr key={r.model_id}>
+                            <td>{i + 1}</td>
+                            <td>{escapeHtml(r.model.name)}</td>
+                            <td>{formatMetricValue(val, metric, std)}</td>
+                          </tr>
+                        );
+                      })}
                       {!top5.length && <tr><td colSpan={3} className="text-muted">{t.benchmarks.noResults}</td></tr>}
                     </tbody>
                   </table>
@@ -401,12 +406,14 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                             <tbody>
                               {benchResults.map(r => {
                                 const scores = r.scores as Record<string, number | undefined>;
+                                const stds = r.scores_std as Record<string, number | undefined> | undefined;
                                 return (
                                   <tr key={r.model_id}>
                                     <td>{escapeHtml(r.model.name)}</td>
                                     {ebMetrics.map(m => {
                                       const val = scores[m] ?? null;
-                                      return <td key={m}>{formatMetricValue(val, m)}</td>;
+                                      const std = stds?.[m] ?? null;
+                                      return <td key={m}>{formatMetricValue(val, m, std)}</td>;
                                     })}
                                   </tr>
                                 );
@@ -428,12 +435,14 @@ export default function BenchmarksPage({ data, filters, setFilters, search, them
                             <tbody>
                               {benchResults.map(r => {
                                 const scores = r.scores as Record<string, number | undefined>;
+                                const stds = r.scores_std as Record<string, number | undefined> | undefined;
                                 return (
                                   <tr key={r.model_id}>
                                     <td>{escapeHtml(r.model.name)}</td>
                                     {fbMetrics.map(m => {
                                       const val = scores[m] ?? null;
-                                      return <td key={m}>{formatMetricValue(val, m)}</td>;
+                                      const std = stds?.[m] ?? null;
+                                      return <td key={m}>{formatMetricValue(val, m, std)}</td>;
                                     })}
                                   </tr>
                                 );

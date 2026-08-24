@@ -166,7 +166,9 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         b.task || '',
         ...metricCols.map(metric => {
           const actualMetric = resolveMetric(metric);
-          return row.result.scores[actualMetric] ?? '';
+          const val = row.result.scores[actualMetric] ?? null;
+          const std = row.result.scores_std?.[actualMetric] ?? null;
+          return formatMetricValue(val, actualMetric, std);
         }),
         row.result.date_added || '',
       ];
@@ -522,10 +524,11 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                   {metricCols.map(m => {
                     const actualMetric = m === 'hit_rate' ? hitRatePx : m === 'eb' ? ebMetric : m === 'fb' ? fbMetric : m === 'aux' ? auxMetric : m;
                     const val = row.result.scores[actualMetric as MetricKey] ?? null;
+                    const std = row.result.scores_std?.[actualMetric as MetricKey] ?? null;
                     const isHighlight = actualMetric === highlightMetric;
                     return (
                       <td key={m} className={`lb-score ${isHighlight ? 'lb-score-highlight' : ''}`}>
-                        {formatMetricValue(val, actualMetric)}
+                        {formatMetricValue(val, actualMetric, std)}
                       </td>
                     );
                   })}

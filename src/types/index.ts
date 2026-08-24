@@ -120,9 +120,11 @@ export interface Result {
   model_id: string;
   benchmark_id: string;
   scores: Scores;
+  scores_std?: Scores;
   paper_url: string;
   code_url: string;
   date_added: string;
+  notes?: string;
 }
 
 export interface Paper {

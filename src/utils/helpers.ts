@@ -45,11 +45,23 @@ export function getMetricColumns(task: string): string[] {
   return ['snr', 'psnr', 'aux', 'accuracy', 'f1'];
 }
 
-export function formatMetricValue(value: number | null | undefined, metric: string): string {
+export function formatMetricValue(value: number | null | undefined, metric: string, std?: number | null | undefined): string {
   if (value == null) return '—';
-  if (metric === 'ssim' || metric === 'f1') return value.toFixed(3);
-  if (metric === 'mse') return value.toFixed(6);
-  if (metric === 'rmse') return value.toFixed(4);
-  if (metric === 'accuracy') return value.toFixed(2) + '%';
-  return value.toFixed(2);
+  let meanStr: string;
+  if (metric === 'ssim' || metric === 'f1') meanStr = value.toFixed(3);
+  else if (metric === 'mse') meanStr = value.toFixed(6);
+  else if (metric === 'rmse') meanStr = value.toFixed(4);
+  else if (metric === 'accuracy') meanStr = value.toFixed(2) + '%';
+  else meanStr = value.toFixed(2);
+
+  if (std == null) return meanStr;
+
+  let stdStr: string;
+  if (metric === 'ssim' || metric === 'f1') stdStr = std.toFixed(4);
+  else if (metric === 'mse') stdStr = std.toFixed(7);
+  else if (metric === 'rmse') stdStr = std.toFixed(5);
+  else if (metric === 'accuracy') stdStr = std.toFixed(2) + '%';
+  else stdStr = std.toFixed(3);
+
+  return `${meanStr} ± ${stdStr}`;
 }
