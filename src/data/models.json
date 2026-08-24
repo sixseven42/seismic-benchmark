@@ -145,16 +145,16 @@
   {
     "id": "dncnn-groundroll",
     "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🔩",
     "type": "deep_learning",
     "tasks": [
       "coherent_noise_suppression"
     ],
     "description": "Residual convolutional denoiser for ground-roll noise prediction.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "is_open_source": true,
@@ -163,16 +163,16 @@
   {
     "id": "dncnn-interpolation",
     "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🔧",
     "type": "deep_learning",
     "tasks": [
       "interpolation"
     ],
     "description": "Residual convolutional neural network baseline for seismic trace interpolation and missing trace reconstruction.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
     "is_open_source": true,
@@ -181,16 +181,16 @@
   {
     "id": "dncnn-random-noise",
     "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🧠",
     "type": "deep_learning",
     "tasks": [
       "random_noise_suppression"
     ],
     "description": "DnCNN baseline for synthetic random-noise suppression.",
-    "paper_url": "https://ieeexplore.ieee.org/document/7839189",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/dncnn",
     "is_open_source": true
@@ -198,16 +198,16 @@
   {
     "id": "dncnn-seg-first-break",
     "name": "DnCNN Seg",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🔬",
     "type": "deep_learning",
     "tasks": [
       "first_arrival_picking"
     ],
     "description": "DnCNN-style convolutional segmentation baseline for first-break picking, modified from residual denoising to direct binary step-mask logits prediction.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/first_break_picking/dncnn_seg.py",
     "weights_url": "https://huggingface.co/GeoBrain/first-break-picking",
     "weights_urls": {
@@ -614,16 +614,16 @@
   {
     "id": "dncnn-multiples",
     "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🔩",
     "type": "deep_learning",
     "tasks": [
       "multiples_attenuation"
     ],
     "description": "Residual convolutional denoiser adapted to predict marine multiple wavefields.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/multiples-attenuation/resolve/main/models/dncnn/seed42/best.pt",
     "weights_urls": {},
@@ -1056,16 +1056,16 @@
   {
     "id": "dncnn-plus-interpolation",
     "name": "DnCNN-Plus",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2026,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🔧",
     "type": "deep_learning",
     "tasks": [
       "interpolation"
     ],
     "description": "DnCNN-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1200,16 +1200,16 @@
   {
     "id": "avo-dncnn-plus-interpolation",
     "name": "DnCNN-Plus",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2026,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🔧",
     "type": "deep_learning",
     "tasks": [
       "interpolation"
     ],
     "description": "DnCNN-Plus model used in the user-provided AVO seismic interpolation evaluation.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1218,16 +1218,16 @@
   {
     "id": "avo-dncnn-interpolation",
     "name": "DnCNN",
-    "authors": "Zhang et al.",
-    "org": "Harbin Institute of Technology",
-    "year": 2017,
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
+    "year": 2019,
     "emoji": "🔧",
     "type": "deep_learning",
     "tasks": [
       "interpolation"
     ],
     "description": "Residual convolutional neural network baseline for seismic trace interpolation and missing trace reconstruction.",
-    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
     "weights_url": null,
     "is_open_source": true,
@@ -1346,8 +1346,8 @@
   {
     "id": "dncnn-blending-noise",
     "name": "DnCNN",
-    "authors": "Siwei Yu et al.",
-    "org": "Harbin Institute of Technology / Peking University",
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
     "year": 2019,
     "emoji": "🧠",
     "type": "deep_learning",
@@ -1486,8 +1486,8 @@
   {
     "id": "dncnn-blending-noise-avo",
     "name": "DnCNN",
-    "authors": "Siwei Yu et al.",
-    "org": "Harbin Institute of Technology / Peking University",
+    "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
+    "org": "",
     "year": 2019,
     "emoji": "🧠",
     "type": "deep_learning",
