@@ -624,6 +624,7 @@ select:focus {
 .lb-score {
   font-family: var(--mono);
   font-weight: 600;
+  min-width: 92px;
 }
 
 .lb-score-highlight {
