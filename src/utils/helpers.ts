@@ -34,17 +34,15 @@ export function getMetricColumns(task: string): string[] {
     task === 'multiples_attenuation' ||
     task === 'coherent_noise_suppression' ||
     task === 'interpolation' ||
-    task === 'random_noise_suppression'
+    task === 'random_noise_suppression' ||
+    task === 'deblending'
   ) {
-    return ['snr', 'psnr', 'ssim', 'mae', 'mse', 'rmse', 'eb', 'fb'];
-  }
-  if (task === 'deblending') {
-    return ['snr', 'psnr', 'ssim', 'mae', 'mse', 'rmse'];
+    return ['snr', 'psnr', 'aux', 'eb', 'fb'];
   }
   if (task === 'first_arrival_picking') {
     return ['mae', 'rmse', 'f1', 'hit_rate'];
   }
-  return ['snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae'];
+  return ['snr', 'psnr', 'aux', 'accuracy', 'f1'];
 }
 
 export function formatMetricValue(value: number | null | undefined, metric: string): string {

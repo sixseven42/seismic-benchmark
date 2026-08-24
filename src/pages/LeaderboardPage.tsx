@@ -42,6 +42,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
   const [hitRatePx, setHitRatePx] = useState<string>('hit_rate_3px');
   const [ebMetric, setEbMetric] = useState<MetricKey>('eb_wse_medium_40_70_snr');
   const [fbMetric, setFbMetric] = useState<MetricKey>('fb_fre_high_snr');
+  const [auxMetric, setAuxMetric] = useState<MetricKey>('ssim');
 
   const metricCols = useMemo(() => getMetricColumns(filters.task), [filters.task]);
 
@@ -72,7 +73,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     const allMetrics = [
       'snr', 'psnr', 'ssim', 'rmse', 'mse', 'accuracy', 'f1', 'mae',
       'hit_rate', 'hit_rate_1px', 'hit_rate_3px', 'hit_rate_5px', 'hit_rate_7px', 'hit_rate_9px',
-      'eb', 'fb',
+      'eb', 'fb', 'aux',
       'eb_wse_medium_40_70_ne', 'eb_wse_medium_40_70_snr',
       'eb_wse_strong_70_100_ne', 'eb_wse_strong_70_100_snr',
       'eb_wse_very_weak_5_20_ne', 'eb_wse_very_weak_5_20_snr',
@@ -96,6 +97,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         let metric = key === 'score' ? filters.metric : key === 'hit_rate' ? hitRatePx : key;
         if (metric === 'eb') metric = ebMetric;
         if (metric === 'fb') metric = fbMetric;
+        if (metric === 'aux') metric = auxMetric;
         const av = a.result.scores[metric as MetricKey] ?? null;
         const bv = b.result.scores[metric as MetricKey] ?? null;
         if (av === null && bv === null) return 0;
@@ -137,6 +139,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       if (m === 'hit_rate') return hitRatePx as MetricKey;
       if (m === 'eb') return ebMetric;
       if (m === 'fb') return fbMetric;
+      if (m === 'aux') return auxMetric;
       return m as MetricKey;
     };
     const headers = ['Rank', 'Method', 'Authors', 'Org', 'Year', 'Type', 'Benchmark', 'Task', ...metricCols.map(m => resolveMetric(m).toUpperCase()), 'Date Added'];
@@ -169,7 +172,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     a.download = `seismicbench-${filters.task}-${new Date().toISOString().slice(0, 10)}.csv`;
     a.click();
     URL.revokeObjectURL(url);
-  }, [rows, metricCols, filters.task, hitRatePx, ebMetric, fbMetric]);
+  }, [rows, metricCols, filters.task, hitRatePx, ebMetric, fbMetric, auxMetric]);
 
   const availableDatasets = useMemo(() => {
     return data.benchmarks.filter(b => filters.task === 'all' || b.task === filters.task);
@@ -437,6 +440,35 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                     </th>
                   );
                 }
+                if (m === 'aux') {
+                  const isActive = filters.metric === auxMetric;
+                  const options = (currentBench?.metrics || []).filter(x => ['ssim', 'mae', 'mse', 'rmse'].includes(x));
+                  const optionLabels: Record<string, string> = { ssim: 'SSIM', mae: 'MAE', mse: 'MSE', rmse: 'RMSE' };
+                  return (
+                    <th
+                      key={m}
+                      className={`sortable ${isActive ? 'sort-active' : ''}`}
+                      onClick={() => handleSort('aux')}
+                    >
+                      DETAIL{' '}
+                      <select
+                        value={auxMetric}
+                        onClick={e => e.stopPropagation()}
+                        onChange={e => {
+                          const val = e.target.value as MetricKey;
+                          setAuxMetric(val);
+                          setFilters(prev => ({ ...prev, metric: val }));
+                        }}
+                        style={{ fontSize: '0.7em', marginLeft: 4, padding: '1px 2px' }}
+                      >
+                        {(options.length ? options : ['ssim', 'mae', 'mse', 'rmse']).map(opt => (
+                          <option key={opt} value={opt}>{optionLabels[opt] || opt.toUpperCase()}</option>
+                        ))}
+                      </select>
+                      <span className="sort-arrow">{sort.key === 'aux' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+                    </th>
+                  );
+                }
                 return (
                   <th
                     key={m}
@@ -476,7 +508,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                   </td>
                   <td className="lb-benchmark">{escapeHtml(row.benchmark!.name)}</td>
                   {metricCols.map(m => {
-                    const actualMetric = m === 'hit_rate' ? hitRatePx : m === 'eb' ? ebMetric : m === 'fb' ? fbMetric : m;
+                    const actualMetric = m === 'hit_rate' ? hitRatePx : m === 'eb' ? ebMetric : m === 'fb' ? fbMetric : m === 'aux' ? auxMetric : m;
                     const val = row.result.scores[actualMetric as MetricKey] ?? null;
                     const isHighlight = actualMetric === highlightMetric;
                     return (
