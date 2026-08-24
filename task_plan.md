@@ -22,6 +22,15 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Commit the handoff document (and updated planning files) to `main`.
 - [x] Push to GitHub so the other server can pull and continue.
 
+## Additional Phase — Integrate latest interpolation JSON zips and Excels
+- [x] Inspect `interpolation_json.zip`, `avo_interpolation_json.zip`, and the two Excel files.
+- [x] Map SEGC3 / Mobile AVO benchmark IDs and model IDs.
+- [x] Add new interpolation models and set `parameters_m` from Excel.
+- [x] Create missing benchmarks (`segc3-interp-uniform75`, `mobile-avo-interp-random70`, `mobile-avo-interp-uniform75`).
+- [x] Add/replace result entries, keeping only valid metric keys.
+- [x] Recalculate interpolation benchmark `model_count`.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Additional Phase — Mobile AVO dataset correction and interpolation benchmarks
 - [x] Update Mobile AVO random-noise benchmark URLs/descriptions to the SEG wiki page.
 - [x] Create Mobile AVO interpolation benchmarks (uniform / random / continuous).

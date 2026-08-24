@@ -35,6 +35,20 @@
 - Incremented `model_count` for the 5 affected benchmarks.
 - Verified `npm run build` passes.
 
+## Latest interpolation results integration (2026-08-24)
+- Integrated `interpolation_json.zip` (SEGC3 synthetic) and `avo_interpolation_json.zip` (Mobile AVO field).
+- Added new SEGC3 interpolation models: `unet-plus-interpolation`, `unet-unpn-interpolation`, `attention-unet-plus-interpolation`, `attention-unet-unpn-interpolation`, `resunet-plus-interpolation`, `resunet-unpn-interpolation`, `dncnn-plus-interpolation`, `spnet-interpolation`.
+- Added 9 Mobile AVO interpolation models (`avo-*-interpolation`).
+- Created new benchmarks:
+  - `segc3-interp-uniform75`
+  - `mobile-avo-interp-random70`
+  - `mobile-avo-interp-uniform75`
+- Mapped result benchmark IDs and model IDs; `resunet-interpolation` mapped to existing `res-unet-interpolation`.
+- Extracted `parameters_m` from `batch_evaluation.xlsx` / `batch_evaluation_avo.xlsx`.
+- Filtered scores to valid core + 16 binned metrics, ignored `_std` / energy ratio / frequency range.
+- Recalculated `model_count` for all interpolation benchmarks.
+- Verified `npm run build` passes.
+
 ## Mobile AVO gallery image (2026-08-23)
 - Copied the Mobile AVO visualization image to `public/datasets/mobile-avo-data.png`.
 - Added the image to the `gallery` array of all Mobile AVO benchmarks (random-noise ×6 + interpolation ×7).

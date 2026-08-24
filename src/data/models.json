@@ -52,7 +52,8 @@
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.85
   },
   {
     "id": "attention-unet-plus-groundroll",
@@ -174,7 +175,8 @@
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 0.14
   },
   {
     "id": "dncnn-random-noise",
@@ -405,7 +407,8 @@
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 8.11
   },
   {
     "id": "res-unet-plus-groundroll",
@@ -530,7 +533,8 @@
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/tree/main/model/interpolation/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/seismic-interpolation/tree/main/models",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.76
   },
   {
     "id": "unet-plus-groundroll",
@@ -1066,5 +1070,311 @@
     "weights_url": null,
     "is_open_source": true,
     "parameters_m": 2.01
+  },
+  {
+    "id": "attention-unet-plus-interpolation",
+    "name": "Attention UNet-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Attention UNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 31.39
+  },
+  {
+    "id": "attention-unet-unpn-interpolation",
+    "name": "Attention UNet(UNPN)",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Attention UNet(UNPN) model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 7.85
+  },
+  {
+    "id": "dncnn-plus-interpolation",
+    "name": "DnCNN-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "DnCNN-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 0.56
+  },
+  {
+    "id": "resunet-plus-interpolation",
+    "name": "ResUNet-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "ResUNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 32.44
+  },
+  {
+    "id": "resunet-unpn-interpolation",
+    "name": "ResUNet(UNPN)",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "ResUNet(UNPN) model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 8.11
+  },
+  {
+    "id": "spnet-interpolation",
+    "name": "SPNet",
+    "authors": "Wu et al.",
+    "org": "China University of Geosciences / University College London",
+    "year": 2024,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Sparse prior-net (SP-Net) for seismic missing-trace interpolation, combining a sparsity-promoting prior with a deep neural network; paper-aligned implementation of Wu et al.",
+    "paper_url": "https://doi.org/10.1190/geo2022-0262.1",
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 0.67
+  },
+  {
+    "id": "unet-plus-interpolation",
+    "name": "UNet-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "UNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 31.04
+  },
+  {
+    "id": "unet-unpn-interpolation",
+    "name": "UNet (UNPN)",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "UNet (UNPN) model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 7.76
+  },
+  {
+    "id": "avo-attention-unet-plus-interpolation",
+    "name": "Attention UNet-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Attention UNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 31.39
+  },
+  {
+    "id": "avo-attention-unet-interpolation",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Attention-gated U-Net for seismic interpolation and missing trace reconstruction.",
+    "paper_url": "https://arxiv.org/abs/1804.03999",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/atten_unet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 7.85
+  },
+  {
+    "id": "avo-dncnn-plus-interpolation",
+    "name": "DnCNN-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "DnCNN-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 0.56
+  },
+  {
+    "id": "avo-dncnn-interpolation",
+    "name": "DnCNN",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
+    "year": 2017,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Residual convolutional neural network baseline for seismic trace interpolation and missing trace reconstruction.",
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/dncnn.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 0.14
+  },
+  {
+    "id": "avo-resunet-plus-interpolation",
+    "name": "ResUNet-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "ResUNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 32.44
+  },
+  {
+    "id": "avo-resunet-interpolation",
+    "name": "ResUNet",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
+    "year": 2016,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Residual U-Net baseline for seismic interpolation and missing trace reconstruction.",
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/res_unet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 8.11
+  },
+  {
+    "id": "avo-spnet-interpolation",
+    "name": "SPNet",
+    "authors": "Wu et al.",
+    "org": "China University of Geosciences / University College London",
+    "year": 2024,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "Sparse prior-net (SP-Net) for seismic missing-trace interpolation, combining a sparsity-promoting prior with a deep neural network; paper-aligned implementation of Wu et al.",
+    "paper_url": "https://doi.org/10.1190/geo2022-0262.1",
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 0.67
+  },
+  {
+    "id": "avo-unet-plus-interpolation",
+    "name": "UNet-Plus",
+    "authors": "Unknown",
+    "org": "Unknown",
+    "year": 2026,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "UNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "paper_url": null,
+    "code_url": null,
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 31.04
+  },
+  {
+    "id": "avo-unet-interpolation",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🔧",
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "description": "U-Net baseline for seismic trace interpolation and missing data reconstruction.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/tree/main/model/interpolation/unet.py",
+    "weights_url": null,
+    "is_open_source": true,
+    "parameters_m": 7.76
   }
 ]

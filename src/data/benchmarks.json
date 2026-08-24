@@ -864,7 +864,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 6,
+    "model_count": 15,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -912,7 +912,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 6,
+    "model_count": 15,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -960,7 +960,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 6,
+    "model_count": 15,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1008,7 +1008,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 6,
+    "model_count": 15,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1056,7 +1056,55 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 6,
+    "model_count": 15,
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
+  },
+  {
+    "id": "mobile-avo-interp-random70",
+    "name": "Mobile AVO Random Missing 70%",
+    "group_name": "Mobile AVO Random Missing",
+    "dataset_name": "Mobile AVO Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "Mobile AVO Interpolation interpolation benchmark with 70% randomly missing traces.",
+    "data_source": "field",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse",
+      "eb_wse_medium_40_70_ne",
+      "eb_wse_medium_40_70_snr",
+      "eb_wse_strong_70_100_ne",
+      "eb_wse_strong_70_100_snr",
+      "eb_wse_very_weak_5_20_ne",
+      "eb_wse_very_weak_5_20_snr",
+      "eb_wse_weak_20_40_ne",
+      "eb_wse_weak_20_40_snr",
+      "fb_fre_high_ne",
+      "fb_fre_high_snr",
+      "fb_fre_low_ne",
+      "fb_fre_low_snr",
+      "fb_fre_mid_ne",
+      "fb_fre_mid_snr",
+      "fb_fre_very_high_ne",
+      "fb_fre_very_high_snr"
+    ],
+    "tags": [
+      "Mobile AVO",
+      "Random Missing",
+      "Random",
+      "Field"
+    ],
+    "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
+    "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
+    "model_count": 9,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1104,7 +1152,55 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 6,
+    "model_count": 15,
+    "gallery": [
+      "datasets/mobile-avo-data.png"
+    ]
+  },
+  {
+    "id": "mobile-avo-interp-uniform75",
+    "name": "Mobile AVO Uniform Missing 75%",
+    "group_name": "Mobile AVO Uniform Missing",
+    "dataset_name": "Mobile AVO Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "Mobile AVO Interpolation interpolation benchmark with 75% uniformly missing traces.",
+    "data_source": "field",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse",
+      "eb_wse_medium_40_70_ne",
+      "eb_wse_medium_40_70_snr",
+      "eb_wse_strong_70_100_ne",
+      "eb_wse_strong_70_100_snr",
+      "eb_wse_very_weak_5_20_ne",
+      "eb_wse_very_weak_5_20_snr",
+      "eb_wse_weak_20_40_ne",
+      "eb_wse_weak_20_40_snr",
+      "fb_fre_high_ne",
+      "fb_fre_high_snr",
+      "fb_fre_low_ne",
+      "fb_fre_low_snr",
+      "fb_fre_mid_ne",
+      "fb_fre_mid_snr",
+      "fb_fre_very_high_ne",
+      "fb_fre_very_high_snr"
+    ],
+    "tags": [
+      "Mobile AVO",
+      "Uniform Missing",
+      "Uniform",
+      "Field"
+    ],
+    "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
+    "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
+    "model_count": 9,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1366,7 +1462,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 11,
+    "model_count": 19,
     "group_name": "SEGC3 Random Missing",
     "gallery": [
       "datasets/segc3-interp-random-raw.png",
@@ -1464,7 +1560,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 11,
+    "model_count": 19,
     "group_name": "SEGC3 Random Missing",
     "gallery": [
       "datasets/segc3-interp-random-raw.png",
@@ -1497,7 +1593,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 4,
+    "model_count": 12,
     "group_name": "SEGC3 Random Missing",
     "gallery": [
       "datasets/segc3-interp-random-raw.png",
@@ -1579,7 +1675,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 11,
+    "model_count": 19,
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
@@ -1636,6 +1732,55 @@
     ]
   },
   {
+    "id": "segc3-interp-uniform75",
+    "name": "SEGC3 Uniform Missing 75%",
+    "group_name": "SEGC3 Uniform Missing",
+    "dataset_name": "SEG C3 Interpolation",
+    "task": "interpolation",
+    "icon": "📡",
+    "description": "SEG C3 Interpolation interpolation benchmark with 75% uniformly missing traces.",
+    "data_source": "synthetic",
+    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse",
+      "eb_wse_medium_40_70_ne",
+      "eb_wse_medium_40_70_snr",
+      "eb_wse_strong_70_100_ne",
+      "eb_wse_strong_70_100_snr",
+      "eb_wse_very_weak_5_20_ne",
+      "eb_wse_very_weak_5_20_snr",
+      "eb_wse_weak_20_40_ne",
+      "eb_wse_weak_20_40_snr",
+      "fb_fre_high_ne",
+      "fb_fre_high_snr",
+      "fb_fre_low_ne",
+      "fb_fre_low_snr",
+      "fb_fre_mid_ne",
+      "fb_fre_mid_snr",
+      "fb_fre_very_high_ne",
+      "fb_fre_very_high_snr"
+    ],
+    "tags": [
+      "SEG C3",
+      "Uniform Missing",
+      "Uniform Missing",
+      "Synthetic"
+    ],
+    "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
+    "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
+    "model_count": 10,
+    "gallery": [
+      "datasets/segc3-interp-uniform-raw.png",
+      "datasets/segc3-interp-uniform-label.png"
+    ]
+  },
+  {
     "id": "segc3-interp-continuous20tr",
     "name": "SEGC3 Continuous Missing 20 Traces",
     "dataset_name": "SEG C3 Interpolation",
@@ -1677,7 +1822,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 15,
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
@@ -1726,7 +1871,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 15,
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
@@ -1775,7 +1920,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 10,
+    "model_count": 15,
     "group_name": "SEGC3 Continuous Missing",
     "gallery": [
       "datasets/segc3-interp-continuous-raw.png",
