@@ -23,6 +23,11 @@ KEEP_SEGC3 = {
 
 MERGE = {
     'segc3-interp-uniform70': 'segc3-interp-uniform75',
+    'mobile-avo-interp-random70': 'mobile-avo-interp-random75',
+}
+
+DELETE_BENCH = {
+    'mobile-avo-interp-random70',
 }
 
 
@@ -70,6 +75,9 @@ def simplify_benchmarks(benchmarks):
     removed = []
     for b in benchmarks:
         bid = b['id']
+        if bid in DELETE_BENCH:
+            removed.append(bid)
+            continue
         if bid.startswith('segc3-interp-') and bid not in KEEP_SEGC3:
             removed.append(bid)
             continue

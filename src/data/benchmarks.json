@@ -1062,54 +1062,6 @@
     ]
   },
   {
-    "id": "mobile-avo-interp-random70",
-    "name": "Mobile AVO Random Missing 70%",
-    "group_name": "Mobile AVO Random Missing",
-    "dataset_name": "Mobile AVO Interpolation",
-    "task": "interpolation",
-    "icon": "📡",
-    "description": "Mobile AVO Interpolation interpolation benchmark with 70% randomly missing traces.",
-    "data_source": "field",
-    "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
-    "primary_metric": "snr",
-    "metrics": [
-      "snr",
-      "psnr",
-      "ssim",
-      "mae",
-      "mse",
-      "rmse",
-      "eb_wse_medium_40_70_ne",
-      "eb_wse_medium_40_70_snr",
-      "eb_wse_strong_70_100_ne",
-      "eb_wse_strong_70_100_snr",
-      "eb_wse_very_weak_5_20_ne",
-      "eb_wse_very_weak_5_20_snr",
-      "eb_wse_weak_20_40_ne",
-      "eb_wse_weak_20_40_snr",
-      "fb_fre_high_ne",
-      "fb_fre_high_snr",
-      "fb_fre_low_ne",
-      "fb_fre_low_snr",
-      "fb_fre_mid_ne",
-      "fb_fre_mid_snr",
-      "fb_fre_very_high_ne",
-      "fb_fre_very_high_snr"
-    ],
-    "tags": [
-      "Mobile AVO",
-      "Random Missing",
-      "Random",
-      "Field"
-    ],
-    "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 9,
-    "gallery": [
-      "datasets/mobile-avo-data.png"
-    ]
-  },
-  {
     "id": "mobile-avo-interp-uniform50",
     "name": "Mobile AVO Uniform Missing 50%",
     "group_name": "Mobile AVO Uniform Missing",

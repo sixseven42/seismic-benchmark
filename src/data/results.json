@@ -9023,7 +9023,7 @@
   },
   {
     "model_id": "avo-attention-unet-plus-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 10.7755,
       "psnr": 43.597,
@@ -9255,7 +9255,7 @@
   },
   {
     "model_id": "avo-attention-unet-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 9.6048,
       "psnr": 42.4263,
@@ -9487,7 +9487,7 @@
   },
   {
     "model_id": "avo-dncnn-plus-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 10.0922,
       "psnr": 42.9137,
@@ -9719,7 +9719,7 @@
   },
   {
     "model_id": "avo-dncnn-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 8.2174,
       "psnr": 41.0388,
@@ -9951,7 +9951,7 @@
   },
   {
     "model_id": "avo-resunet-plus-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 10.5751,
       "psnr": 43.3966,
@@ -10183,7 +10183,7 @@
   },
   {
     "model_id": "avo-resunet-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 9.0814,
       "psnr": 41.9029,
@@ -10415,7 +10415,7 @@
   },
   {
     "model_id": "avo-spnet-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 8.416,
       "psnr": 41.2375,
@@ -10647,7 +10647,7 @@
   },
   {
     "model_id": "avo-unet-plus-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 11.0863,
       "psnr": 43.9077,
@@ -10879,7 +10879,7 @@
   },
   {
     "model_id": "avo-unet-interpolation",
-    "benchmark_id": "mobile-avo-interp-random70",
+    "benchmark_id": "mobile-avo-interp-random75",
     "scores": {
       "snr": 10.3082,
       "psnr": 43.1297,
