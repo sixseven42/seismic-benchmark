@@ -1020,8 +1020,8 @@
   {
     "id": "attention-unet-plus-interpolation",
     "name": "Attention UNet-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1029,7 +1029,7 @@
       "interpolation"
     ],
     "description": "Attention UNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1038,8 +1038,8 @@
   {
     "id": "attention-unet-unpn-interpolation",
     "name": "Attention UNet(UNPN)",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1047,7 +1047,7 @@
       "interpolation"
     ],
     "description": "Attention UNet(UNPN) model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1056,8 +1056,8 @@
   {
     "id": "dncnn-plus-interpolation",
     "name": "DnCNN-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1065,7 +1065,7 @@
       "interpolation"
     ],
     "description": "DnCNN-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1074,8 +1074,8 @@
   {
     "id": "resunet-plus-interpolation",
     "name": "ResUNet-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1083,7 +1083,7 @@
       "interpolation"
     ],
     "description": "ResUNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1092,8 +1092,8 @@
   {
     "id": "resunet-unpn-interpolation",
     "name": "ResUNet(UNPN)",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1101,7 +1101,7 @@
       "interpolation"
     ],
     "description": "ResUNet(UNPN) model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1128,8 +1128,8 @@
   {
     "id": "unet-plus-interpolation",
     "name": "UNet-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1137,7 +1137,7 @@
       "interpolation"
     ],
     "description": "UNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1146,8 +1146,8 @@
   {
     "id": "unet-unpn-interpolation",
     "name": "UNet (UNPN)",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1155,7 +1155,7 @@
       "interpolation"
     ],
     "description": "UNet (UNPN) model used in the user-provided Interpolation seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1164,8 +1164,8 @@
   {
     "id": "avo-attention-unet-plus-interpolation",
     "name": "Attention UNet-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1173,7 +1173,7 @@
       "interpolation"
     ],
     "description": "Attention UNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1200,8 +1200,8 @@
   {
     "id": "avo-dncnn-plus-interpolation",
     "name": "DnCNN-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Zhang et al.",
+    "org": "Harbin Institute of Technology",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1209,7 +1209,7 @@
       "interpolation"
     ],
     "description": "DnCNN-Plus model used in the user-provided AVO seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1236,8 +1236,8 @@
   {
     "id": "avo-resunet-plus-interpolation",
     "name": "ResUNet-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "He et al.",
+    "org": "Microsoft Research",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1245,7 +1245,7 @@
       "interpolation"
     ],
     "description": "ResUNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
@@ -1290,8 +1290,8 @@
   {
     "id": "avo-unet-plus-interpolation",
     "name": "UNet-Plus",
-    "authors": "Unknown",
-    "org": "Unknown",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
     "year": 2026,
     "emoji": "🔧",
     "type": "deep_learning",
@@ -1299,7 +1299,7 @@
       "interpolation"
     ],
     "description": "UNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
-    "paper_url": null,
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
