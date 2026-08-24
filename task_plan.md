@@ -88,6 +88,15 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update CSV export to include `Params (M)`.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Display metric standard deviations
+- [x] Add `scores_std?: Scores` to `Result` interface.
+- [x] Update `formatMetricValue` to accept an optional `std` and render `mean ± std`.
+- [x] Create `scripts/backfill_std.py` to extract standard deviations from interpolation zips and relevant Excel files.
+- [x] Backfill `scores_std` for 233 existing result entries.
+- [x] Update `LeaderboardPage`, `BenchmarksPage`, and `ModelsPage` tables to display ±std.
+- [x] Update CSV export to include standard deviations.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Do not store standard deviations; display single values only, matching the existing benchmark style.

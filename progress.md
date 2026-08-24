@@ -41,6 +41,19 @@
 - Recalculated `model_count` for affected interpolation benchmarks.
 - Verified `npm run build` passes.
 
+## Display metric standard deviations (2026-08-24)
+- Added `scores_std?: Scores` to the `Result` type and updated `formatMetricValue` to render `mean ± std`.
+- Created `scripts/backfill_std.py` to extract standard deviations from source files:
+  - `interpolation_json.zip` → 85 entries
+  - `avo_interpolation_json.zip` → 63 entries
+  - `batch_evaluation_unet_plusplus.xlsx` → 16 entries (random noise + deblending)
+  - `batch_evaluation_all.xlsx` → 60 entries (ground-roll)
+  - `batch_evaluation_part(2).xlsx` → 9 entries (multiples)
+- Total results with `scores_std`: 233 / ~? entries.
+- Updated `LeaderboardPage`, `BenchmarksPage` (top5 + binned metrics), and `ModelsPage` score tables to display ±std.
+- CSV export now writes combined `mean ± std` strings for metric columns.
+- Verified `npm run build` passes and pushed commit `9d70873` to `main`.
+
 ## Leaderboard parameters column (2026-08-24)
 - Added a sortable `PARAMS (M)` column to the leaderboard between `Method` and `Benchmark`.
 - CSV export now includes a `Params (M)` field.
