@@ -82,6 +82,12 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update sorting, CSV export, and cell resolution to handle the `aux` alias.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Add parameters (M) column to leaderboard
+- [x] Create `scripts/backfill_parameters.py` to extract `parameters_m` from interpolation Excels/zips and backfill missing model entries.
+- [x] Add a sortable `PARAMS (M)` column to the leaderboard table between Method and Benchmark.
+- [x] Update CSV export to include `Params (M)`.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Do not store standard deviations; display single values only, matching the existing benchmark style.

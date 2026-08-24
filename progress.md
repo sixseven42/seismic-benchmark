@@ -41,6 +41,13 @@
 - Recalculated `model_count` for affected interpolation benchmarks.
 - Verified `npm run build` passes.
 
+## Leaderboard parameters column (2026-08-24)
+- Added a sortable `PARAMS (M)` column to the leaderboard between `Method` and `Benchmark`.
+- CSV export now includes a `Params (M)` field.
+- Created `scripts/backfill_parameters.py` to fill missing `parameters_m` from interpolation Excel/zip files; interpolation models already had parameters, so no new values were written this run.
+- 20 models remain without `parameters_m` (random-noise and first-arrival-picking models); they display `—` in the column until their source files are provided.
+- Verified `npm run build` passes and pushed commit `bf4d1c0` to `main`.
+
 ## Leaderboard AUX dropdown column (2026-08-24)
 - Replaced the fixed `SSIM / MAE / MSE / RMSE` columns in the leaderboard with a single `DETAIL` dropdown column.
 - `getMetricColumns` now returns `['snr', 'psnr', 'aux', 'eb', 'fb']` for tasks with binned metrics, and `['snr', 'psnr', 'aux', ...]` for other tasks.
