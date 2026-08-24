@@ -1,5 +1,12 @@
 # Session Progress
 
+## 2026-08-24 — Backfill standard deviations for older interpolation results
+- Parsed `batch_evaluation_part.xlsx` (`Interpolation` sheet) from `interp_field_czt0820.zip` and `interp_syn_czt0822.zip`.
+- Mapped Mobile AVO `uniform70` Excel rows to the current `mobile-avo-interp-uniform75` benchmark; skipped removed `segc3-interp-random10-30` rows.
+- Updated `scores` and `scores_std` for 70 existing interpolation result entries (35 Mobile AVO field + 35 SEGC3 synthetic).
+- Created `scripts/backfill_interp_zip_std.py` to make the update reproducible.
+- Verified `npm run build` passes and pushed commit `5c143c1` to `main`.
+
 ## 2026-08-24 — Integrate 2026-08-24 deblending update
 - Extracted `json0824.rar` to `.tmp_json0824/` using 7-Zip.
 - Replaced old deblending benchmarks with new definitions from `benchmarks(1).json`:

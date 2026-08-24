@@ -108,9 +108,15 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Recalculate `model_count` for all benchmarks from actual result counts.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Backfill standard deviations for older interpolation zips
+- [x] Parse `batch_evaluation_part.xlsx` (`Interpolation` sheet) from `interp_field_czt0820.zip` and `interp_syn_czt0822.zip`.
+- [x] Map method/variant rows to existing repo `model_id` + `benchmark_id` (Mobile AVO `uniform70` → `uniform75`; skip removed `random10-30`).
+- [x] Update `scores` and `scores_std` only for the 70 matching existing interpolation result entries (35 field + 35 synthetic).
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
-- Do not store standard deviations; display single values only, matching the existing benchmark style.
+- Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.
 - For uniform 70% → 75% merge, when a model already has a 75% result, keep the 75% value and discard the 70% duplicate.
 - For Mobile AVO interpolation, `mobile-avo-interp-random70` results were also merged into `mobile-avo-interp-random75` and the 70% benchmark was removed.
 - Deblending benchmarks store the same 6 core + 16 binned metrics as random-noise benchmarks, even though the leaderboard currently shows only the 6 core metrics for the `deblending` task.
