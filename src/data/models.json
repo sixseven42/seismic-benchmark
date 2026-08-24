@@ -918,9 +918,10 @@
     "emoji": "🔀",
     "type": "deep_learning",
     "tasks": [
-      "random_noise_suppression"
+      "random_noise_suppression",
+      "deblending"
     ],
-    "description": "Nested U-Net++ architecture with dense skip connections for seismic random-noise suppression.",
+    "description": "Nested U-Net++ architecture with dense skip connections for seismic random-noise suppression and seismic deblending.",
     "paper_url": "https://arxiv.org/abs/1807.10165",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/unet_plusplus.py",
     "weights_url": null,

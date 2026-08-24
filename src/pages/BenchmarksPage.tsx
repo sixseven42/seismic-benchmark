@@ -29,6 +29,9 @@ const GROUP_DESCRIPTIONS: Record<string, string> = {
   'SEGC3 Random Missing': 'A suite of synthetic 3D seismic interpolation benchmarks based on the SEG China 3D (SEGC3) geological model with randomly missing traces at fixed ratios (30%, 50%, 70%). Each variant provides paired incomplete and complete data, enabling systematic evaluation of interpolation methods under random spatial subsampling conditions.',
   'SEGC3 Uniform Missing': 'A suite of synthetic 3D seismic interpolation benchmarks based on the SEG China 3D (SEGC3) geological model with uniformly missing traces at fixed ratios (50% and 75%). Each variant provides paired incomplete and complete data, enabling systematic evaluation of interpolation methods under uniform spatial subsampling conditions.',
   'SEGC3 Continuous Missing': 'A suite of synthetic 3D seismic interpolation benchmarks based on the SEG China 3D (SEGC3) geological model with continuously missing traces at fixed lengths (20, 30, 40 traces). Each variant provides paired incomplete and complete data, enabling systematic evaluation of interpolation methods under continuous spatial gap conditions.',
+  'SEGC3 Deblending': 'Synthetic 3D seismic deblending benchmarks based on the SEG China 3D (SEGC3) geological model. Each variant uses a different T02 blending scenario (mod, simp, comp), providing blended inputs and corresponding labels for evaluating methods that separate overlapping shot or blended arrivals.',
+  'Mobile AVO Deblending': 'A 2D marine field deblending benchmark using the Mobile AVO Viking Graben Line 12 open-source dataset. The T03 mod scenario evaluates deblending methods on real marine seismic data with overlapping arrivals.',
+
 };
 
 interface Props {
