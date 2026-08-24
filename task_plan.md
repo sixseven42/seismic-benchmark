@@ -55,9 +55,22 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Run `npm run build` and push to GitHub.
 
 
+## New Phase — Simplify SEGC3 interpolation benchmarks
+- [x] Inspect current SEGC3 interpolation benchmark IDs and result counts.
+- [ ] Remove non-canonical SEGC3 interpolation benchmarks:
+  - Random missing: keep `random30`, `random50`, `random70`; delete `random10-30` and all `*-to-*` cross-domain variants.
+  - Uniform missing: keep `uniform50`, `uniform75`; delete `uniform30`, `uniform70`, and all `*-to-*` cross-domain variants.
+  - Continuous missing: keep `continuous20tr`, `continuous30tr`, `continuous40tr`; delete all `*-to-*` cross-domain variants.
+- [ ] Merge `segc3-interp-uniform70` results into `segc3-interp-uniform75` (models without a 75 entry get moved; duplicates keep the existing 75 value).
+- [ ] Delete all result entries whose `benchmark_id` was removed.
+- [ ] Recalculate `model_count` for all interpolation benchmarks from actual result counts.
+- [ ] Update `BenchmarksPage.tsx` group descriptions to match the simplified variant sets.
+- [ ] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Do not store standard deviations; display single values only, matching the existing benchmark style.
+- For uniform 70% → 75% merge, when a model already has a 75% result, keep the 75% value and discard the 70% duplicate.
 
 ## Errors Encountered
 | Error | Attempt | Resolution |
