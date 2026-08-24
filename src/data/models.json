@@ -982,24 +982,6 @@
     "parameters_m": 35.83
   },
   {
-    "id": "pan2020_pconv_unet_interpolation",
-    "name": "PConv U-Net",
-    "authors": "Shulin Pan, Kai Chen, Jingyi Chen, Ziyu Qin, Qinghui Cui, Jing Li",
-    "org": "Unknown",
-    "year": 2020,
-    "emoji": "🔧",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "PConv U-Net for seismic interpolation.",
-    "paper_url": "https://doi.org/10.1016/j.cageo.2020.104609",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/pan2020_pconv_unet.py",
-    "weights_url": null,
-    "is_open_source": true,
-    "parameters_m": 22.33
-  },
-  {
     "id": "park2022_cfunet_interpolation",
     "name": "CFunet",
     "authors": "Junhwan Park, Jungkyun Shin, Soon Jee Seol, Joongmoo Byun",
