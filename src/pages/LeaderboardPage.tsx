@@ -93,6 +93,13 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         const av = a.benchmark!.name || '';
         const bv = b.benchmark!.name || '';
         return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+      } else if (key === 'params') {
+        const av = a.model!.parameters_m ?? null;
+        const bv = b.model!.parameters_m ?? null;
+        if (av === null && bv === null) return 0;
+        if (av === null) return 1;
+        if (bv === null) return -1;
+        return dir === 'asc' ? av - bv : bv - av;
       } else if (key === 'score' || allMetrics.includes(key)) {
         let metric = key === 'score' ? filters.metric : key === 'hit_rate' ? hitRatePx : key;
         if (metric === 'eb') metric = ebMetric;
@@ -142,7 +149,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
       if (m === 'aux') return auxMetric;
       return m as MetricKey;
     };
-    const headers = ['Rank', 'Method', 'Authors', 'Org', 'Year', 'Type', 'Benchmark', 'Task', ...metricCols.map(m => resolveMetric(m).toUpperCase()), 'Date Added'];
+    const headers = ['Rank', 'Method', 'Authors', 'Org', 'Year', 'Type', 'Params (M)', 'Benchmark', 'Task', ...metricCols.map(m => resolveMetric(m).toUpperCase()), 'Date Added'];
     const lines = [headers.join(',')];
     rows.forEach((row, idx) => {
       const m = row.model!;
@@ -154,6 +161,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
         `"${(m.org || '').replace(/"/g, '""')}"`,
         m.year || '',
         m.type || '',
+        m.parameters_m != null ? m.parameters_m.toFixed(2) : '',
         `"${(b.name || '').replace(/"/g, '""')}"`,
         b.task || '',
         ...metricCols.map(metric => {
@@ -353,6 +361,9 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
               <th className="sortable" onClick={() => handleSort('name')}>
                 {t.leaderboard.method} <span className="sort-arrow">{sort.key === 'name' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
               </th>
+              <th className="sortable" onClick={() => handleSort('params')}>
+                PARAMS (M) <span className="sort-arrow">{sort.key === 'params' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
+              </th>
               <th className="sortable" onClick={() => handleSort('benchmark')}>
                 {t.leaderboard.benchmark} <span className="sort-arrow">{sort.key === 'benchmark' ? (sort.dir === 'asc' ? '▲' : '▼') : ''}</span>
               </th>
@@ -506,6 +517,7 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
                     </div>
                     {isNewResult(row.result.date_added) && <span className="tag tag-new">{t.leaderboard.newBadge}</span>}
                   </td>
+                  <td className="lb-params">{row.model!.parameters_m != null ? row.model!.parameters_m.toFixed(2) : '—'}</td>
                   <td className="lb-benchmark">{escapeHtml(row.benchmark!.name)}</td>
                   {metricCols.map(m => {
                     const actualMetric = m === 'hit_rate' ? hitRatePx : m === 'eb' ? ebMetric : m === 'fb' ? fbMetric : m === 'aux' ? auxMetric : m;
