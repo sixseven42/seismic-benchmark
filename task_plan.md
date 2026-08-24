@@ -97,6 +97,17 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update CSV export to include standard deviations.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Integrate 2026-08-24 deblending update (`json0824.rar` / `benchmarks(1).json`)
+- [x] Extract `json0824.rar` and inspect new deblending benchmarks, models, and Excel results.
+- [x] Replace existing SEGC3 / Mobile AVO deblending benchmarks with the new `benchmarks(1).json` definitions (IDs: `blending-noise-T02_mod`, `blending-noise-T02_comp`, `blending-noise-T02_simp`, `blending-noise-avo-T03_avo_mod`), mapped to repo task `deblending`.
+- [x] Add new deblending-specific models from the rar and assign `parameters_m` from the Excel files.
+- [x] Extract all 22 metrics (6 core + 16 binned) plus standard deviations from the deblending Excel sheets and create 27 result entries (SEGC3 6×3 + AVO 9×1).
+- [x] Remove old deblending result entries and migrate any previous results under the new benchmark IDs.
+- [x] Copy deblending visualization assets from the rar to `public/datasets/` and update gallery references.
+- [x] Update `BenchmarksPage.tsx` group descriptions for the new deblending group names.
+- [x] Recalculate `model_count` for all benchmarks from actual result counts.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Do not store standard deviations; display single values only, matching the existing benchmark style.

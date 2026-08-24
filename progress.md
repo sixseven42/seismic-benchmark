@@ -1,5 +1,18 @@
 # Session Progress
 
+## 2026-08-24 — Integrate 2026-08-24 deblending update
+- Extracted `json0824.rar` to `.tmp_json0824/` using 7-Zip.
+- Replaced old deblending benchmarks with new definitions from `benchmarks(1).json`:
+  - SEGC3: `blending-noise-T02_mod`, `blending-noise-T02_comp`, `blending-noise-T02_simp` (group `Common-Receiver Deblending`).
+  - Mobile AVO: `blending-noise-avo-T03_avo_mod` (group `AVO Common-Receiver Deblending`).
+- Added 15 new deblending-specific models with `parameters_m` from Excel.
+- Extracted 22 metrics + standard deviations from deblending Excel sheets; created 27 result entries (SEGC3 18 + AVO 9).
+- Removed old `segc3-deblending-*` and `mobile-avo-deblending-t03-mod` results.
+- Copied deblending assets to `public/datasets/` (`deblending-input.png`, `deblending-target.png`, `deblending-avo-input.png`, `deblending-avo-target.png`).
+- Updated `BenchmarksPage.tsx` group descriptions for new deblending groups.
+- Fixed pre-existing Mobile AVO interpolation inconsistencies: created `mobile-avo-interp-random75`, merged `uniform70` results into `uniform75`, removed obsolete `uniform70` benchmark, recalculated `model_count`.
+- Verified `npm run build` passes.
+
 ## 2026-07-20
 - Created task plan for updating `multiples_attenuation` results from `batch_evaluation_part(2).xlsx`.
 - Parsed Excel (`Multiples` sheet, 9 model rows + `Raw (noisy)`).

@@ -918,8 +918,7 @@
     "emoji": "🔀",
     "type": "deep_learning",
     "tasks": [
-      "random_noise_suppression",
-      "deblending"
+      "random_noise_suppression"
     ],
     "description": "Nested U-Net++ architecture with dense skip connections for seismic random-noise suppression and seismic deblending.",
     "paper_url": "https://arxiv.org/abs/1807.10165",
@@ -1341,5 +1340,305 @@
     "weights_url": null,
     "is_open_source": true,
     "parameters_m": 7.76
+  },
+  {
+    "id": "attention-unet-blending-noise",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "Attention UNet baseline for blending noise suppression.",
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/atten_unet",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 7.85
+  },
+  {
+    "id": "dncnn-blending-noise",
+    "name": "DnCNN",
+    "authors": "Siwei Yu et al.",
+    "org": "Harbin Institute of Technology / Peking University",
+    "year": 2019,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "Geophysical DnCNN baseline for blending noise suppression.",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/dncnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/dncnn",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 0.56
+  },
+  {
+    "id": "res_unet-blending-noise",
+    "name": "ResUNet",
+    "authors": "Diakogiannis et al.",
+    "org": "CSIRO, Floreat WA",
+    "year": 2019,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "ResUNet baseline for blending noise suppression.",
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/res_unet",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 8.11
+  },
+  {
+    "id": "unet-blending-noise",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "UNet baseline for blending noise suppression.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/unet",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 7.76
+  },
+  {
+    "id": "unet_L-blending-noise",
+    "name": "UNet-L",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "UNet-L baseline for blending noise suppression.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/unet_L",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 31.04
+  },
+  {
+    "id": "unet-plusplus-blending-noise",
+    "name": "UNet++",
+    "authors": "Zhang et al.",
+    "org": "University of California Los Angeles",
+    "year": 2024,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "UNet++ baseline for blending noise suppression.",
+    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/unet_plusplus.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/unet_plusplus",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 9.05
+  },
+  {
+    "id": "attention-unet-blending-noise-avo",
+    "name": "Attention UNet",
+    "authors": "Oktay et al.",
+    "org": "Imperial College London",
+    "year": 2018,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "Attention UNet baseline for blending noise suppression avo.",
+    "paper_url": "https://openreview.net/forum?id=Skft7cijM",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/atten_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/atten_unet",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 7.85
+  },
+  {
+    "id": "ddpm-blending-noise-avo",
+    "name": "DDPM",
+    "authors": "Ho et al.",
+    "org": "UC Berkeley",
+    "year": 2020,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "DDPM baseline for blending noise suppression avo.",
+    "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/ddpm.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/ddpm",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 33.3
+  },
+  {
+    "id": "dncnn-blending-noise-avo",
+    "name": "DnCNN",
+    "authors": "Siwei Yu et al.",
+    "org": "Harbin Institute of Technology / Peking University",
+    "year": 2019,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "Geophysical DnCNN baseline for blending noise suppression avo.",
+    "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/dncnn.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/dncnn",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 0.56
+  },
+  {
+    "id": "q_unet-blending-noise-avo",
+    "name": "QUNet",
+    "authors": "Wang et al.",
+    "org": "Beijing Jiaotong University",
+    "year": 2025,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "QUNet baseline for blending noise suppression avo.",
+    "paper_url": "https://doi.org/10.1190/geo2024-0019.1",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/q_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/q_unet",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 21.88
+  },
+  {
+    "id": "res_unet-blending-noise-avo",
+    "name": "ResUNet",
+    "authors": "Diakogiannis et al.",
+    "org": "CSIRO, Floreat WA",
+    "year": 2019,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "ResUNet baseline for blending noise suppression avo.",
+    "paper_url": "https://arxiv.org/abs/1904.00592",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/res_unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/res_unet",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 8.11
+  },
+  {
+    "id": "scrn-blending-noise-avo",
+    "name": "SCRN",
+    "authors": "Gao et al.",
+    "org": "Southwest Petroleum University",
+    "year": 2024,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "SCRN baseline for blending noise suppression avo.",
+    "paper_url": "https://doi.org/10.1016/j.cageo.2023.105510",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/SCRN.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/SCRN",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 0.43
+  },
+  {
+    "id": "unet-blending-noise-avo",
+    "name": "UNet",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "UNet baseline for blending noise suppression avo.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/unet",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 7.76
+  },
+  {
+    "id": "unet_L-blending-noise-avo",
+    "name": "UNet-L",
+    "authors": "Ronneberger et al.",
+    "org": "University of Freiburg",
+    "year": 2015,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "UNet-L baseline for blending noise suppression avo.",
+    "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/unet.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/unet_L",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 31.04
+  },
+  {
+    "id": "unet-plusplus-blending-noise-avo",
+    "name": "UNet++",
+    "authors": "Zhang et al.",
+    "org": "University of California Los Angeles",
+    "year": 2024,
+    "emoji": "🧠",
+    "type": "deep_learning",
+    "tasks": [
+      "deblending"
+    ],
+    "description": "UNet++ baseline for blending noise suppression avo.",
+    "paper_url": "https://doi.org/10.1016/j.cageo.2024.105595",
+    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/unet_plusplus.py",
+    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/unet_plusplus",
+    "weights_urls": {},
+    "architecture_image": null,
+    "is_open_source": true,
+    "parameters_m": 9.05
   }
 ]
