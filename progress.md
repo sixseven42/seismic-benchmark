@@ -41,6 +41,19 @@
 - Recalculated `model_count` for affected interpolation benchmarks.
 - Verified `npm run build` passes.
 
+## Simplify SEGC3 interpolation benchmarks (2026-08-24)
+- Inspected current interpolation benchmarks: 8 canonical SEGC3 variants + 12 cross-domain/non-canonical variants.
+- Deleted 12 SEGC3 interpolation benchmarks:
+  - Random: `segc3-interp-random10-30`, `segc3-interp-random30-to-random40`, `segc3-interp-random50-to-random60`, `segc3-interp-random70-to-random80`
+  - Uniform: `segc3-interp-uniform30`, `segc3-interp-uniform70`, `segc3-interp-uniform30-to-uniform40`, `segc3-interp-uniform50-to-uniform60`, `segc3-interp-uniform70-to-uniform80`
+  - Continuous: `segc3-interp-continuous20tr-to-continuous30tr`, `segc3-interp-continuous30tr-to-continuous40tr`, `segc3-interp-continuous40tr-to-continuous50tr`
+- Merged 5 results from `segc3-interp-uniform70` into `segc3-interp-uniform75`; discarded 4 duplicates where 75% results already existed.
+- Removed 45 obsolete result entries tied to deleted benchmarks.
+- Recalculated `model_count` for all interpolation benchmarks (e.g. `segc3-interp-uniform75`: 10 → 15).
+- Updated `BenchmarksPage.tsx` group descriptions to reflect simplified variant sets.
+- Added `scripts/cleanup_segc3_interpolation.py` for reproducibility.
+- Verified `npm run build` passes and pushed commit `513912e` to `main`.
+
 ## Latest interpolation results integration (2026-08-24)
 - Integrated `interpolation_json.zip` (SEGC3 synthetic) and `avo_interpolation_json.zip` (Mobile AVO field).
 - Added new SEGC3 interpolation models: `unet-plus-interpolation`, `unet-unpn-interpolation`, `attention-unet-plus-interpolation`, `attention-unet-unpn-interpolation`, `resunet-plus-interpolation`, `resunet-unpn-interpolation`, `dncnn-plus-interpolation`, `spnet-interpolation`.
