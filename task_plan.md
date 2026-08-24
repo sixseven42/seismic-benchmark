@@ -71,6 +71,7 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Do not store standard deviations; display single values only, matching the existing benchmark style.
 - For uniform 70% → 75% merge, when a model already has a 75% result, keep the 75% value and discard the 70% duplicate.
+- For Mobile AVO interpolation, `mobile-avo-interp-random70` results were also merged into `mobile-avo-interp-random75` and the 70% benchmark was removed.
 
 ## Errors Encountered
 | Error | Attempt | Resolution |

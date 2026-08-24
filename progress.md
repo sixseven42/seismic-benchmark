@@ -41,6 +41,12 @@
 - Recalculated `model_count` for affected interpolation benchmarks.
 - Verified `npm run build` passes.
 
+## Mobile AVO random70 → random75 merge (2026-08-24)
+- Moved all 9 results from `mobile-avo-interp-random70` to `mobile-avo-interp-random75`.
+- Deleted `mobile-avo-interp-random70` benchmark.
+- Recalculated interpolation benchmark `model_count` values.
+- Verified `npm run build` passes and pushed commit `cfc96ac` to `main`.
+
 ## Simplify SEGC3 interpolation benchmarks (2026-08-24)
 - Inspected current interpolation benchmarks: 8 canonical SEGC3 variants + 12 cross-domain/non-canonical variants.
 - Deleted 12 SEGC3 interpolation benchmarks:
