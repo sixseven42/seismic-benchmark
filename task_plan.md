@@ -67,11 +67,20 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update `BenchmarksPage.tsx` group descriptions to match the simplified variant sets.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Integrate UNet++ deblending results
+- [x] Create 4 deblending benchmarks for SEGC3 T02 (mod/simp/comp) and Mobile AVO T03 mod.
+- [x] Update UNet++ model tasks to include `deblending`.
+- [x] Extract UNet-Plus scores from the 4 `Deblending*` sheets in `batch_evaluation_unet_plusplus.xlsx`.
+- [x] Add 4 result entries to `src/data/results.json` (6 core + 16 binned metrics).
+- [x] Add group descriptions for `SEGC3 Deblending` and `Mobile AVO Deblending` in `BenchmarksPage.tsx`.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Do not store standard deviations; display single values only, matching the existing benchmark style.
 - For uniform 70% → 75% merge, when a model already has a 75% result, keep the 75% value and discard the 70% duplicate.
 - For Mobile AVO interpolation, `mobile-avo-interp-random70` results were also merged into `mobile-avo-interp-random75` and the 70% benchmark was removed.
+- Deblending benchmarks store the same 6 core + 16 binned metrics as random-noise benchmarks, even though the leaderboard currently shows only the 6 core metrics for the `deblending` task.
 
 ## Errors Encountered
 | Error | Attempt | Resolution |

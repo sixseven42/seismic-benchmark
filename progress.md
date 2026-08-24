@@ -41,6 +41,15 @@
 - Recalculated `model_count` for affected interpolation benchmarks.
 - Verified `npm run build` passes.
 
+## UNet++ deblending integration (2026-08-24)
+- Created 4 deblending benchmarks:
+  - `mobile-avo-deblending-t03-mod` (Mobile AVO field, T03 mod)
+  - `segc3-deblending-t02-mod`, `segc3-deblending-t02-simp`, `segc3-deblending-t02-comp` (SEGC3 synthetic)
+- Updated `zhou2018unet_plusplus_denoise` model `tasks` to include `deblending`.
+- Extracted 4 UNet-Plus deblending result entries from `batch_evaluation_unet_plusplus.xlsx` (6 core + 16 binned metrics).
+- Added group descriptions for `SEGC3 Deblending` and `Mobile AVO Deblending` in `BenchmarksPage.tsx`.
+- Verified `npm run build` passes and pushed commit `a3dd0f7` to `main`.
+
 ## Mobile AVO random70 → random75 merge (2026-08-24)
 - Moved all 9 results from `mobile-avo-interp-random70` to `mobile-avo-interp-random75`.
 - Deleted `mobile-avo-interp-random70` benchmark.
