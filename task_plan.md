@@ -133,6 +133,12 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Recalculate `model_count` for the new benchmark.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Integrate first-arrival picking model parameter counts
+- [x] Parse `初至拾取模型参数量汇总.md` and map model names to first-break `model_id`s.
+- [x] Update `parameters_m` for the 10 first-arrival picking models (7 standard + 3 Plus variants).
+- [x] Round parameter counts to 2 decimal places to match existing leaderboard convention.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.

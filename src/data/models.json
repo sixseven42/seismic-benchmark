@@ -17,7 +17,8 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.85
   },
   {
     "id": "attention-unet-groundroll",
@@ -213,7 +214,8 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 0.56
   },
   {
     "id": "enhanced-atten-unet-groundroll",
@@ -318,7 +320,8 @@
     "org": "Unknown",
     "emoji": "🔬",
     "description": "HUNet for first-arrival picking.",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.76
   },
   {
     "id": "jiang2023swin_transformer_first_break",
@@ -335,7 +338,8 @@
     "org": "Unknown",
     "emoji": "🔬",
     "description": "STUNet for first-arrival picking.",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 71.55
   },
   {
     "id": "q-unet-random-noise",
@@ -372,7 +376,8 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 8.11
   },
   {
     "id": "res-unet-groundroll",
@@ -498,7 +503,8 @@
     "weights_urls": {
       "first_arrival_picking": "https://huggingface.co/GeoBrain/first-break-picking"
     },
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 7.76
   },
   {
     "id": "unet-groundroll",
@@ -766,7 +772,8 @@
     "org": "Unknown",
     "emoji": "🔬",
     "description": "DSU-Net for first-arrival picking.",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 1.99
   },
   {
     "id": "unet-first-break-plus",
@@ -783,7 +790,8 @@
     "org": "Unknown",
     "emoji": "🔬",
     "description": "UNet Plus for first-arrival picking.",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 31.04
   },
   {
     "id": "attention-unet-first-break-plus",
@@ -800,7 +808,8 @@
     "org": "Unknown",
     "emoji": "🔬",
     "description": "Attention UNet Plus for first-arrival picking.",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 31.39
   },
   {
     "id": "res-unet-first-break-plus",
@@ -817,7 +826,8 @@
     "org": "Unknown",
     "emoji": "🔬",
     "description": "ResUNet Plus for first-arrival picking.",
-    "is_open_source": true
+    "is_open_source": true,
+    "parameters_m": 32.44
   },
   {
     "id": "gated_transformer_v9",

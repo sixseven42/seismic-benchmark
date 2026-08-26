@@ -1,5 +1,14 @@
 # Session Progress
 
+## 2026-08-26 — Integrate first-arrival picking model parameter counts
+- Parsed `初至拾取模型参数量汇总.md` and mapped 10 model names to first-break `model_id`s.
+- Updated `parameters_m` for:
+  - Standard: U-Net (7.76 M), ResUNet (8.11 M), Attention U-Net (7.85 M), DnCNN Seg (0.56 M), DSU-Net (1.99 M), HUNet (7.76 M), STUNet (71.55 M)
+  - Plus: U-Net Plus (31.04 M), ResUNet Plus (32.44 M), Attention U-Net Plus (31.39 M)
+- Rounded all values to 2 decimal places to match existing leaderboard convention.
+- Created `scripts/update_first_break_parameters.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-08-26 — Integrate field ground-roll results from `batch_evaluation_all_0822.xlsx`
 - Inspected `batch_evaluation_all_0822.xlsx`: one sheet `Noise 1.0` with 10 model rows + `Raw (noisy)`.
 - Created new benchmark `field-groundroll-noise1` under group `Field Ground-Roll Noise` (task `coherent_noise_suppression`, data_source `field`).
