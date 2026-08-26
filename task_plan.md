@@ -139,6 +139,11 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Round parameter counts to 2 decimal places to match existing leaderboard convention.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Add field ground-roll gallery images
+- [x] Copy the provided input/label visualizations to `public/datasets/`.
+- [x] Update `field-groundroll-noise1` benchmark `gallery` to reference the two images.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.

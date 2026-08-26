@@ -2032,6 +2032,9 @@
     "citation": "",
     "download_url": "",
     "model_count": 10,
-    "gallery": []
+    "gallery": [
+      "datasets/field-groundroll-input.png",
+      "datasets/field-groundroll-label.png"
+    ]
   }
 ]

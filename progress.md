@@ -1,5 +1,12 @@
 # Session Progress
 
+## 2026-08-26 — Add field ground-roll gallery images
+- Copied the provided field ground-roll input and label visualizations to:
+  - `public/datasets/field-groundroll-input.png`
+  - `public/datasets/field-groundroll-label.png`
+- Updated `field-groundroll-noise1` benchmark `gallery` to show the input/label pair.
+- Verified `npm run build` passes.
+
 ## 2026-08-26 — Integrate first-arrival picking model parameter counts
 - Parsed `初至拾取模型参数量汇总.md` and mapped 10 model names to first-break `model_id`s.
 - Updated `parameters_m` for:
