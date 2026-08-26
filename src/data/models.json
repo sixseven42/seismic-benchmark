@@ -158,7 +158,7 @@
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/dncnn.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
     "is_open_source": true,
-    "parameters_m": 0.14
+    "parameters_m": 0.56
   },
   {
     "id": "dncnn-interpolation",

@@ -1988,5 +1988,50 @@
       "datasets/deblending-avo-input.png",
       "datasets/deblending-avo-target.png"
     ]
+  },
+  {
+    "id": "field-groundroll-noise1",
+    "name": "Field Ground-Roll Noise 1.0",
+    "group_name": "Field Ground-Roll Noise",
+    "dataset_name": "Field Ground Roll",
+    "task": "coherent_noise_suppression",
+    "icon": "🌊",
+    "description": "Field ground-roll attenuation benchmark with noise strength 1.0 on real seismic shot gathers.",
+    "data_source": "field",
+    "dimensions": "Field shot gathers",
+    "primary_metric": "snr",
+    "metrics": [
+      "snr",
+      "psnr",
+      "ssim",
+      "mae",
+      "mse",
+      "rmse",
+      "eb_wse_medium_40_70_ne",
+      "eb_wse_medium_40_70_snr",
+      "eb_wse_strong_70_100_ne",
+      "eb_wse_strong_70_100_snr",
+      "eb_wse_very_weak_5_20_ne",
+      "eb_wse_very_weak_5_20_snr",
+      "eb_wse_weak_20_40_ne",
+      "eb_wse_weak_20_40_snr",
+      "fb_fre_high_ne",
+      "fb_fre_high_snr",
+      "fb_fre_low_ne",
+      "fb_fre_low_snr",
+      "fb_fre_mid_ne",
+      "fb_fre_mid_snr",
+      "fb_fre_very_high_ne",
+      "fb_fre_very_high_snr"
+    ],
+    "tags": [
+      "Field",
+      "Ground Roll",
+      "Coherent Noise"
+    ],
+    "citation": "",
+    "download_url": "",
+    "model_count": 10,
+    "gallery": []
   }
 ]

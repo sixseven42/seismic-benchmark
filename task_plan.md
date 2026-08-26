@@ -123,6 +123,16 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Recalculate `model_count` for affected benchmarks.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Integrate field ground-roll results from `batch_evaluation_all_0822.xlsx`
+- [x] Inspect Excel structure and identify the field ground-roll benchmark variant.
+- [x] Map Excel method names to existing ground-roll `model_id`s.
+- [x] Create new benchmark `field-groundroll-noise1` with group `Field Ground-Roll Noise`.
+- [x] Add 10 result entries with mean ± std for 6 core + 16 binned metrics.
+- [x] Update `parameters_m` for the 10 models from the Excel `Parameters (M)` column.
+- [x] Add group description for `Field Ground-Roll Noise` in `BenchmarksPage.tsx`.
+- [x] Recalculate `model_count` for the new benchmark.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.

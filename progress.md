@@ -1,5 +1,16 @@
 # Session Progress
 
+## 2026-08-26 — Integrate field ground-roll results from `batch_evaluation_all_0822.xlsx`
+- Inspected `batch_evaluation_all_0822.xlsx`: one sheet `Noise 1.0` with 10 model rows + `Raw (noisy)`.
+- Created new benchmark `field-groundroll-noise1` under group `Field Ground-Roll Noise` (task `coherent_noise_suppression`, data_source `field`).
+- Mapped Excel methods (UNet, UNet-Plus, ResUNet, ResUNet-Plus, DnCNN, Attention UNet, Attention UNet-Plus, SANet, Physics CNN, Pix2Pix cGAN) to existing ground-roll `model_id`s.
+- Added 10 result entries with 6 core + 16 binned metrics and `scores_std` (mean ± std).
+- Updated `parameters_m` for the 10 models from the Excel `Parameters (M)` column (e.g., `dncnn-groundroll` corrected to 0.56 M).
+- Added group description for `Field Ground-Roll Noise` in `src/pages/BenchmarksPage.tsx`.
+- Recalculated `model_count` for the new benchmark.
+- Created `scripts/integrate_field_groundroll_0822.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-08-24 — Integrate random-noise and deblending mean±std from json0824.rar
 - Extracted `json0824.rar` and parsed the four `batch_evaluation_results.xlsx` files.
 - Updated all SEGC3 random-noise results with 6 core + 16 binned metrics and `scores_std`.
