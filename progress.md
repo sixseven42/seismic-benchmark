@@ -1,5 +1,25 @@
 # Session Progress
 
+## 2026-08-31 — Integrate synthetic interpolation update from `intrep_syn_czt0830.zip`
+- Extracted `intrep_syn_czt0830.zip` and inspected JSON results, model definitions, and `batch_evaluation_part.xlsx`.
+- Added missing interpolation models from the zip:
+  - `chai2020_unet_interpolation` (87.15 M)
+  - `pan2020_pconv_unet_interpolation` (22.33 M)
+- Updated `parameters_m` for all 7 interpolation models from the Excel `Parameters (M)` column:
+  - `chai2020_unet_interpolation` 87.15 M
+  - `gated_transformer_v9_interpolation` 113.68 M
+  - `li2022_caunet_interpolation` 7.79 M
+  - `liu2022_wrdl_interpolation` 35.83 M
+  - `pan2020_pconv_unet_interpolation` 22.33 M
+  - `park2022_cfunet_interpolation` 7.35 M
+  - `yu2022_anet_interpolation` 7.05 M
+- Parsed the `Interpolation` sheet (mean ± std) and mapped rows to canonical SEGC3 interpolation benchmarks; `uniform 70` merged into `segc3-interp-uniform75`.
+- Averaged duplicate `park2022_cfunet` continuous rows; skipped non-canonical `cfunet_random 50-88` and removed `uniform 30` variant.
+- Updated 32 existing SEGC3 interpolation results and created 10 new results for `chai2020_unet_interpolation` and `pan2020_pconv_unet_interpolation`.
+- Recalculated `model_count` for all `segc3-interp-*` benchmarks.
+- Created `scripts/integrate_intrep_syn_0830.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-08-26 — Add field ground-roll gallery images
 - Copied the provided field ground-roll input and label visualizations to:
   - `public/datasets/field-groundroll-input.png`

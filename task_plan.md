@@ -144,6 +144,17 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update `field-groundroll-noise1` benchmark `gallery` to reference the two images.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Integrate synthetic interpolation update from `intrep_syn_czt0830.zip`
+- [x] Extract zip and inspect JSON results, model definitions, and `batch_evaluation_part.xlsx`.
+- [x] Add missing interpolation models (`chai2020_unet_interpolation`, `pan2020_pconv_unet_interpolation`) from the zip's model JSONs.
+- [x] Update `parameters_m` for all 7 interpolation models from the Excel `Parameters (M)` column.
+- [x] Parse the `Interpolation` sheet (mean ± std), map model/variant rows to repo `model_id` + `benchmark_id`.
+- [x] Map `uniform 70` rows to the existing `segc3-interp-uniform75` benchmark; ignore removed/non-canonical variants.
+- [x] Average duplicate rows (e.g., `park2022_cfunet` continuous variants) when aggregating to a single result entry.
+- [x] Update 32 existing SEGC3 interpolation results and create 10 new results for the newly added models.
+- [x] Recalculate `model_count` for all `segc3-interp-*` benchmarks.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.
