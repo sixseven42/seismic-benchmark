@@ -155,6 +155,12 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Recalculate `model_count` for all `segc3-interp-*` benchmarks.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Remove `chai2020_unet_interpolation`
+- [x] Remove the `chai2020_unet_interpolation` model from `src/data/models.json`.
+- [x] Delete all result entries with `model_id` == `chai2020_unet_interpolation`.
+- [x] Recalculate `model_count` for affected `segc3-interp-*` benchmarks.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.

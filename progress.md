@@ -1,5 +1,12 @@
 # Session Progress
 
+## 2026-08-31 — Remove `chai2020_unet_interpolation`
+- Removed the `chai2020_unet_interpolation` model from `src/data/models.json`.
+- Deleted all 7 result entries with `model_id` == `chai2020_unet_interpolation`.
+- Recalculated `model_count` for affected `segc3-interp-*` benchmarks.
+- Created `scripts/remove_chai2020_unet.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-08-31 — Integrate synthetic interpolation update from `intrep_syn_czt0830.zip`
 - Extracted `intrep_syn_czt0830.zip` and inspected JSON results, model definitions, and `batch_evaluation_part.xlsx`.
 - Added missing interpolation models from the zip:
