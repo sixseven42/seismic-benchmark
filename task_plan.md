@@ -161,6 +161,12 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Recalculate `model_count` for affected `segc3-interp-*` benchmarks.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Rename Mobile AVO random missing benchmark 75% → 70%
+- [x] Rename `mobile-avo-interp-random75` to `mobile-avo-interp-random70` in `src/data/benchmarks.json`.
+- [x] Update benchmark `name` and `description` from 75% to 70%.
+- [x] Update all result entries whose `benchmark_id` was `mobile-avo-interp-random75`.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.

@@ -1062,13 +1062,13 @@
     ]
   },
   {
-    "id": "mobile-avo-interp-random75",
-    "name": "Mobile AVO Random Missing 75%",
+    "id": "mobile-avo-interp-random70",
+    "name": "Mobile AVO Random Missing 70%",
     "group_name": "Mobile AVO Random Missing",
     "dataset_name": "Mobile AVO Interpolation",
     "task": "interpolation",
     "icon": "📡",
-    "description": "Mobile AVO Viking Graben Line 12 open-source 2D marine field dataset interpolation benchmark with random missing 75%.",
+    "description": "Mobile AVO Viking Graben Line 12 open-source 2D marine field dataset interpolation benchmark with random missing 70%.",
     "data_source": "field",
     "dimensions": "9 × 201 × 201 × 625 (shots, xline, inline, time)",
     "primary_metric": "snr",

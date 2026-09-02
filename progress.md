@@ -1,5 +1,12 @@
 # Session Progress
 
+## 2026-09-02 — Rename Mobile AVO random missing benchmark 75% → 70%
+- Renamed `mobile-avo-interp-random75` to `mobile-avo-interp-random70` in `src/data/benchmarks.json`.
+- Updated benchmark `name` and `description` from 75% to 70%.
+- Updated 9 result entries whose `benchmark_id` was the old ID.
+- Created `scripts/rename_mobile_avo_random75_to_70.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-08-31 — Remove `chai2020_unet_interpolation`
 - Removed the `chai2020_unet_interpolation` model from `src/data/models.json`.
 - Deleted all 7 result entries with `model_id` == `chai2020_unet_interpolation`.
