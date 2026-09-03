@@ -18,6 +18,17 @@
 - Created `scripts/integrate_json0903.py` for reproducibility.
 - Verified `npm run build` passes.
 
+## 2026-09-03 — Integrate field interpolation results from `interp_field_czt0903.zip`
+- Extracted `interp_field_czt0903.zip` and inspected model JSONs and `batch_evaluation_part.xlsx`.
+- Added back the `chai2020_unet_interpolation` model (87.15 M) using the source model JSON.
+- Parsed the `Interpolation` sheet: 6 models × 7 variants = 42 rows.
+- Mapped variant names to Mobile AVO field benchmark IDs; `uniform 70` mapped to `mobile-avo-interp-uniform75`.
+- Updated/created 42 result entries with mean ± std for the 22 valid metrics, ignoring energy-ratio/frequency-range columns.
+- Updated `parameters_m` for the 6 field interpolation models from the Excel `Parameters (M)` column.
+- Recalculated `model_count` for all Mobile AVO interpolation benchmarks.
+- Created `scripts/integrate_interp_field_0903.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-03 — Remove PConv interpolation results
 - Removed the `pan2020_pconv_unet_interpolation` model from `src/data/models.json`.
 - Deleted 3 interpolation result entries with that `model_id`.

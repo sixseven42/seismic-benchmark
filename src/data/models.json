@@ -2041,5 +2041,19 @@
     "architecture_image": null,
     "is_open_source": true,
     "parameters_m": 9.05
+  },
+  {
+    "id": "chai2020_unet_interpolation",
+    "name": "Chai2020 UNet",
+    "authors": "Xintao Chai, Genyang Tang, Shangxu Wang, Ronghua Peng, Wei Chen, Jingnan Li",
+    "year": 2020,
+    "type": "deep_learning",
+    "tasks": [
+      "interpolation"
+    ],
+    "paper_url": "https://doi.org/10.1109/TGRS.2019.2961015",
+    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/chai2020_unet.py",
+    "weights_url": null,
+    "parameters_m": 87.15
   }
 ]
