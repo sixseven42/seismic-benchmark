@@ -167,6 +167,14 @@ Replace the current `multiples_attenuation` scores in `src/data/results.json` wi
 - [x] Update all result entries whose `benchmark_id` was `mobile-avo-interp-random75`.
 - [x] Run `npm run build` and push to GitHub.
 
+## Additional Phase — Fill CAUNet continuous missing interpolation results
+- [x] Inspect `batch_evaluation_part.xlsx` and `interpolation_result_li2022_caunet.json` for CAUNet results.
+- [x] Identify the three continuous missing variants (`continuous 20/30/40tr`) for `li2022_caunet_interpolation`.
+- [x] Parse mean ± std from the Excel and update the three existing `segc3-interp-continuous*tr` result entries.
+- [x] Preserve existing PSNR values because the new Excel marks PSNR as unavailable for CAUNet.
+- [x] Recalculate `model_count` for the affected continuous interpolation benchmarks.
+- [x] Run `npm run build` and push to GitHub.
+
 ## Decisions
 - Keep only NE/SNR binned metrics (energy ratio / frequency range columns ignored).
 - Standard deviations are now stored in `scores_std` and rendered as `mean ± std` for all result entries where the source data provides them.

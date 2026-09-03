@@ -1,5 +1,16 @@
 # Session Progress
 
+## 2026-09-03 — Fill CAUNet continuous missing interpolation results
+- Inspected `batch_evaluation_part.xlsx` and `interpolation_result_li2022_caunet.json`.
+- Updated `li2022_caunet_interpolation` results for the three continuous missing benchmarks:
+  - `segc3-interp-continuous20tr`
+  - `segc3-interp-continuous30tr`
+  - `segc3-interp-continuous40tr`
+- Parsed mean ± std from the Excel; preserved existing PSNR because the Excel marks PSNR as `—` for CAUNet.
+- Recalculated `model_count` for the affected continuous interpolation benchmarks.
+- Created `scripts/update_caunet_continuous_interp.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-02 — Rename Mobile AVO random missing benchmark 75% → 70%
 - Renamed `mobile-avo-interp-random75` to `mobile-avo-interp-random70` in `src/data/benchmarks.json`.
 - Updated benchmark `name` and `description` from 75% to 70%.
