@@ -1,5 +1,23 @@
 # Session Progress
 
+## 2026-09-03 — Integrate json0903.rar results
+- Extracted `json0903.rar` and inspected the four task folders:
+  - `blending_noise_suppression`, `blending_noise_suppression_avo`
+  - `random_noise_suppression`, `random_noise_suppression_avo`
+- Mapped source tasks to repo tasks (`deblending` and `random_noise_suppression`).
+- Added new models and merged existing ones:
+  - SEGC3 deblending: `ddpm-blending-noise`, `fbresnet-blending-noise`, `ffcnn-blending-noise`, `q_unet-blending-noise`, `scrn-blending-noise`
+  - AVO deblending: `fbresnet-blending-noise-avo`, `ffcnn-blending-noise-avo`
+  - SEGC3 random noise: `unet_L-random-noise`, `unet-plusplus-random-noise`
+  - AVO random noise: 11 new `*-random-noise-avo` models
+- Created 6 new AVO synthetic random-noise benchmarks (`random-noise-avo-*`) with 22 metrics.
+- Parsed all Excel sheets for mean ± std, keeping only the 6 core + 16 binned metrics and ignoring energy-ratio/frequency-range columns.
+- Updated/created result entries for all affected benchmarks; `model_count` recalculated from actual result counts.
+- Updated `parameters_m` for all models that had values in the Excel `Parameters (M)` column.
+- Added group description for `AVO Random Noise` in `src/pages/BenchmarksPage.tsx`.
+- Created `scripts/integrate_json0903.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-03 — Remove PConv interpolation results
 - Removed the `pan2020_pconv_unet_interpolation` model from `src/data/models.json`.
 - Deleted 3 interpolation result entries with that `model_id`.
