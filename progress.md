@@ -1,5 +1,12 @@
 # Session Progress
 
+## 2026-09-03 — Remove PConv interpolation results
+- Removed the `pan2020_pconv_unet_interpolation` model from `src/data/models.json`.
+- Deleted 3 interpolation result entries with that `model_id`.
+- Recalculated `model_count` for all interpolation benchmarks.
+- Created `scripts/remove_pconv_interpolation.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-03 — Fill CAUNet continuous missing interpolation results
 - Inspected `batch_evaluation_part.xlsx` and `interpolation_result_li2022_caunet.json`.
 - Updated `li2022_caunet_interpolation` results for the three continuous missing benchmarks:
