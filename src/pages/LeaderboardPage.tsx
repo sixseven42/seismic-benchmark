@@ -59,7 +59,9 @@ export default function LeaderboardPage({ data, filters, setFilters, search }: P
     if (filters.dataset !== 'all') {
       list = list.filter(row => row.benchmark!.id === filters.dataset);
     }
-    list = list.filter(row => row.model!.type === 'deep_learning');
+    list = list.filter(row =>
+      row.model!.type === 'deep_learning' || row.model!.type === 'hybrid'
+    );
     if (search) {
       const q = search.toLowerCase();
       list = list.filter(row =>

@@ -1,5 +1,11 @@
 # Session Progress
 
+## 2026-09-04 — Fix Leaderboard filter to show hybrid models (Physics CNN)
+- Investigated why `Physics CNN` was missing from the Ground-Roll leaderboard.
+- Root cause: `src/pages/LeaderboardPage.tsx` hardcoded the list to `type === 'deep_learning'`, while `physics-cnn-groundroll` has `type: 'hybrid'`.
+- Updated the filter to include both `deep_learning` and `hybrid` models.
+- Verified `npm run build` passes.
+
 ## 2026-09-04 — Fill missing binned metrics for UNet++ SEGC3 random-noise results
 - Checked `batch_evaluation_unet_plusplus.xlsx` and `unet_plusplus_model.json`.
 - Confirmed the Excel contains all 22 valid metrics (6 core + 16 binned NE/SNR) for every UNet++ sheet, including SEGC3 random noise.
