@@ -1,5 +1,14 @@
 # Session Progress
 
+## 2026-09-04 — Integrate latest SEGC3 ground-roll results from `batch_evaluation_all_groundroll.xlsx`
+- Parsed 5 sheets: `Noise 1.0` → `segc3-groundroll-noise1`, `Noise 3.0` → `noise3`, ..., `Noise 9.0` → `noise9`.
+- Mapped 12 methods to repo ground-roll model IDs (e.g., `UNet-Plus` → `unet-L-groundroll`, `Attention UNet-Plus` → `attention-unet-L-groundroll`).
+- Updated 60 result entries (12 models × 5 benchmarks) with mean ± std for the 22 valid metrics (6 core + 16 binned NE/SNR), ignoring energy-ratio/frequency-range columns.
+- Updated `parameters_m` for the 12 ground-roll models from the Excel `Parameters (M)` column (notably `dncnn-groundroll` 0.56 → 0.14).
+- Recalculated `model_count` for the 5 affected SEGC3 ground-roll benchmarks.
+- Created `scripts/integrate_groundroll_202507.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-04 — Fix Leaderboard filter to show hybrid models (Physics CNN)
 - Investigated why `Physics CNN` was missing from the Ground-Roll leaderboard.
 - Root cause: `src/pages/LeaderboardPage.tsx` hardcoded the list to `type === 'deep_learning'`, while `physics-cnn-groundroll` has `type: 'hybrid'`.
