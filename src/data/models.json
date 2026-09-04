@@ -57,8 +57,8 @@
     "parameters_m": 7.85
   },
   {
-    "id": "attention-unet-plus-groundroll",
-    "name": "Attention UNet++",
+    "id": "attention-unet-L-groundroll",
+    "name": "Attention UNet-L",
     "authors": "Oktay et al.",
     "org": "Imperial College London",
     "year": 2018,
@@ -67,7 +67,7 @@
     "tasks": [
       "coherent_noise_suppression"
     ],
-    "description": "Attention-gated U-Net++ for ground-roll residual prediction.",
+    "description": "Attention-gated U-Net-L for ground-roll residual prediction.",
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/atten_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
@@ -423,8 +423,8 @@
     "parameters_m": 8.11
   },
   {
-    "id": "res-unet-plus-groundroll",
-    "name": "ResUNet++",
+    "id": "res-unet-L-groundroll",
+    "name": "ResUNet-L",
     "authors": "He et al.",
     "org": "Microsoft Research",
     "year": 2016,
@@ -433,7 +433,7 @@
     "tasks": [
       "coherent_noise_suppression"
     ],
-    "description": "Residual U-Net++ baseline for ground-roll residual prediction.",
+    "description": "Residual U-Net-L baseline for ground-roll residual prediction.",
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/res_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
@@ -552,8 +552,8 @@
     "parameters_m": 7.76
   },
   {
-    "id": "unet-plus-groundroll",
-    "name": "UNet++",
+    "id": "unet-L-groundroll",
+    "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",
     "year": 2015,
@@ -562,7 +562,7 @@
     "tasks": [
       "coherent_noise_suppression"
     ],
-    "description": "U-Net++ baseline for ground-roll residual prediction.",
+    "description": "U-Net-L baseline for ground-roll residual prediction.",
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/coherent_noise_attenuation/unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/coherent-noise-attenuation",
@@ -608,8 +608,8 @@
     "parameters_m": 7.85
   },
   {
-    "id": "attention-unet-plus-multiples",
-    "name": "Attention UNet-Plus",
+    "id": "attention-unet-L-multiples",
+    "name": "Attention UNet-L",
     "authors": "Oktay et al.",
     "org": "Imperial College London",
     "year": 2018,
@@ -688,8 +688,8 @@
     "parameters_m": 8.11
   },
   {
-    "id": "res-unet-plus-multiples",
-    "name": "ResUNet-Plus",
+    "id": "res-unet-L-multiples",
+    "name": "ResUNet-L",
     "authors": "He et al.",
     "org": "Microsoft Research",
     "year": 2016,
@@ -748,8 +748,8 @@
     "parameters_m": 7.76
   },
   {
-    "id": "unet-plus-multiples",
-    "name": "UNet-Plus",
+    "id": "unet-L-multiples",
+    "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",
     "year": 2015,
@@ -786,8 +786,8 @@
     "parameters_m": 1.99
   },
   {
-    "id": "unet-first-break-plus",
-    "name": "UNet Plus",
+    "id": "unet-first-break-L",
+    "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "year": 2015,
     "type": "deep_learning",
@@ -799,13 +799,13 @@
     "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
     "org": "Unknown",
     "emoji": "🔬",
-    "description": "UNet Plus for first-arrival picking.",
+    "description": "UNet-L for first-arrival picking.",
     "is_open_source": true,
     "parameters_m": 31.04
   },
   {
-    "id": "attention-unet-first-break-plus",
-    "name": "Attention UNet Plus",
+    "id": "attention-unet-first-break-L",
+    "name": "Attention UNet-L",
     "authors": "Oktay et al.",
     "year": 2018,
     "type": "deep_learning",
@@ -817,13 +817,13 @@
     "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
     "org": "Unknown",
     "emoji": "🔬",
-    "description": "Attention UNet Plus for first-arrival picking.",
+    "description": "Attention UNet-L for first-arrival picking.",
     "is_open_source": true,
     "parameters_m": 31.39
   },
   {
-    "id": "res-unet-first-break-plus",
-    "name": "ResUNet Plus",
+    "id": "res-unet-first-break-L",
+    "name": "ResUNet-L",
     "authors": "He et al.",
     "year": 2016,
     "type": "deep_learning",
@@ -835,7 +835,7 @@
     "weights_url": "https://huggingface.co/GeoBrain/first-break-picking/tree/main",
     "org": "Unknown",
     "emoji": "🔬",
-    "description": "ResUNet Plus for first-arrival picking.",
+    "description": "ResUNet-L for first-arrival picking.",
     "is_open_source": true,
     "parameters_m": 32.44
   },
@@ -1038,8 +1038,8 @@
     "parameters_m": 7.05
   },
   {
-    "id": "attention-unet-plus-interpolation",
-    "name": "Attention UNet-Plus",
+    "id": "attention-unet-L-interpolation",
+    "name": "Attention UNet-L",
     "authors": "Oktay et al.",
     "org": "Imperial College London",
     "year": 2026,
@@ -1048,7 +1048,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "Attention UNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "description": "Attention UNet-L model used in the user-provided Interpolation seismic interpolation evaluation.",
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": null,
     "weights_url": null,
@@ -1074,8 +1074,8 @@
     "parameters_m": 7.85
   },
   {
-    "id": "dncnn-plus-interpolation",
-    "name": "DnCNN-Plus",
+    "id": "dncnn-L-interpolation",
+    "name": "DnCNN-L",
     "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
     "org": "",
     "year": 2019,
@@ -1084,7 +1084,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "DnCNN-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "description": "DnCNN-L model used in the user-provided Interpolation seismic interpolation evaluation.",
     "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": null,
     "weights_url": null,
@@ -1092,8 +1092,8 @@
     "parameters_m": 0.56
   },
   {
-    "id": "resunet-plus-interpolation",
-    "name": "ResUNet-Plus",
+    "id": "resunet-L-interpolation",
+    "name": "ResUNet-L",
     "authors": "He et al.",
     "org": "Microsoft Research",
     "year": 2026,
@@ -1102,7 +1102,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "ResUNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "description": "ResUNet-L model used in the user-provided Interpolation seismic interpolation evaluation.",
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": null,
     "weights_url": null,
@@ -1146,8 +1146,8 @@
     "parameters_m": 0.67
   },
   {
-    "id": "unet-plus-interpolation",
-    "name": "UNet-Plus",
+    "id": "unet-L-interpolation",
+    "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",
     "year": 2026,
@@ -1156,7 +1156,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "UNet-Plus model used in the user-provided Interpolation seismic interpolation evaluation.",
+    "description": "UNet-L model used in the user-provided Interpolation seismic interpolation evaluation.",
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": null,
     "weights_url": null,
@@ -1182,8 +1182,8 @@
     "parameters_m": 7.76
   },
   {
-    "id": "avo-attention-unet-plus-interpolation",
-    "name": "Attention UNet-Plus",
+    "id": "avo-attention-unet-L-interpolation",
+    "name": "Attention UNet-L",
     "authors": "Oktay et al.",
     "org": "Imperial College London",
     "year": 2026,
@@ -1192,7 +1192,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "Attention UNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "description": "Attention UNet-L model used in the user-provided AVO seismic interpolation evaluation.",
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": null,
     "weights_url": null,
@@ -1218,8 +1218,8 @@
     "parameters_m": 7.85
   },
   {
-    "id": "avo-dncnn-plus-interpolation",
-    "name": "DnCNN-Plus",
+    "id": "avo-dncnn-L-interpolation",
+    "name": "DnCNN-L",
     "authors": "Siwei Yu, Jianwei Ma, Wenlong Wang",
     "org": "",
     "year": 2019,
@@ -1228,7 +1228,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "DnCNN-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "description": "DnCNN-L model used in the user-provided AVO seismic interpolation evaluation.",
     "paper_url": "https://doi.org/10.1190/geo2018-0668.1",
     "code_url": null,
     "weights_url": null,
@@ -1254,8 +1254,8 @@
     "parameters_m": 0.14
   },
   {
-    "id": "avo-resunet-plus-interpolation",
-    "name": "ResUNet-Plus",
+    "id": "avo-resunet-L-interpolation",
+    "name": "ResUNet-L",
     "authors": "He et al.",
     "org": "Microsoft Research",
     "year": 2026,
@@ -1264,7 +1264,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "ResUNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "description": "ResUNet-L model used in the user-provided AVO seismic interpolation evaluation.",
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": null,
     "weights_url": null,
@@ -1308,8 +1308,8 @@
     "parameters_m": 0.67
   },
   {
-    "id": "avo-unet-plus-interpolation",
-    "name": "UNet-Plus",
+    "id": "avo-unet-L-interpolation",
+    "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",
     "year": 2026,
@@ -1318,7 +1318,7 @@
     "tasks": [
       "interpolation"
     ],
-    "description": "UNet-Plus model used in the user-provided AVO seismic interpolation evaluation.",
+    "description": "UNet-L model used in the user-provided AVO seismic interpolation evaluation.",
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": null,
     "weights_url": null,

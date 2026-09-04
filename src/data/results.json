@@ -500,7 +500,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-groundroll",
+    "model_id": "attention-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise1",
     "scores": {
       "snr": 28.0118,
@@ -885,7 +885,7 @@
     }
   },
   {
-    "model_id": "res-unet-plus-groundroll",
+    "model_id": "res-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise1",
     "scores": {
       "snr": 25.7955,
@@ -1050,7 +1050,7 @@
     }
   },
   {
-    "model_id": "unet-plus-groundroll",
+    "model_id": "unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise1",
     "scores": {
       "snr": 26.5625,
@@ -1160,7 +1160,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-groundroll",
+    "model_id": "attention-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise3",
     "scores": {
       "snr": 22.895,
@@ -1545,7 +1545,7 @@
     }
   },
   {
-    "model_id": "res-unet-plus-groundroll",
+    "model_id": "res-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise3",
     "scores": {
       "snr": 21.6252,
@@ -1710,7 +1710,7 @@
     }
   },
   {
-    "model_id": "unet-plus-groundroll",
+    "model_id": "unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise3",
     "scores": {
       "snr": 23.0748,
@@ -1820,7 +1820,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-groundroll",
+    "model_id": "attention-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise5",
     "scores": {
       "snr": 20.2301,
@@ -2205,7 +2205,7 @@
     }
   },
   {
-    "model_id": "res-unet-plus-groundroll",
+    "model_id": "res-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise5",
     "scores": {
       "snr": 19.5248,
@@ -2370,7 +2370,7 @@
     }
   },
   {
-    "model_id": "unet-plus-groundroll",
+    "model_id": "unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise5",
     "scores": {
       "snr": 20.3918,
@@ -2480,7 +2480,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-groundroll",
+    "model_id": "attention-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise7",
     "scores": {
       "snr": 18.3074,
@@ -2865,7 +2865,7 @@
     }
   },
   {
-    "model_id": "res-unet-plus-groundroll",
+    "model_id": "res-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise7",
     "scores": {
       "snr": 18.2892,
@@ -3030,7 +3030,7 @@
     }
   },
   {
-    "model_id": "unet-plus-groundroll",
+    "model_id": "unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise7",
     "scores": {
       "snr": 18.6983,
@@ -3140,7 +3140,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-groundroll",
+    "model_id": "attention-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise9",
     "scores": {
       "snr": 17.0559,
@@ -3525,7 +3525,7 @@
     }
   },
   {
-    "model_id": "res-unet-plus-groundroll",
+    "model_id": "res-unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise9",
     "scores": {
       "snr": 17.3822,
@@ -3690,7 +3690,7 @@
     }
   },
   {
-    "model_id": "unet-plus-groundroll",
+    "model_id": "unet-L-groundroll",
     "benchmark_id": "segc3-groundroll-noise9",
     "scores": {
       "snr": 17.3153,
@@ -8363,7 +8363,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-multiples",
+    "model_id": "attention-unet-L-multiples",
     "benchmark_id": "multiples-attenuation",
     "scores": {
       "snr": 22.3286,
@@ -8583,7 +8583,7 @@
     }
   },
   {
-    "model_id": "res-unet-plus-multiples",
+    "model_id": "res-unet-L-multiples",
     "benchmark_id": "multiples-attenuation",
     "scores": {
       "snr": 21.6077,
@@ -8748,7 +8748,7 @@
     }
   },
   {
-    "model_id": "unet-plus-multiples",
+    "model_id": "unet-L-multiples",
     "benchmark_id": "multiples-attenuation",
     "scores": {
       "snr": 22.7475,
@@ -8973,7 +8973,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "attention-unet-first-break-plus",
+    "model_id": "attention-unet-first-break-L",
     "benchmark_id": "fbp-geomseg-all",
     "scores": {
       "mae": 5.67426121,
@@ -8990,7 +8990,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "attention-unet-first-break-plus",
+    "model_id": "attention-unet-first-break-L",
     "benchmark_id": "fbp-brunswick-valid",
     "scores": {
       "mae": 2.259572943,
@@ -9007,7 +9007,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "attention-unet-first-break-plus",
+    "model_id": "attention-unet-first-break-L",
     "benchmark_id": "fbp-dongbei",
     "scores": {
       "mae": 2.49979887,
@@ -9024,7 +9024,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "attention-unet-first-break-plus",
+    "model_id": "attention-unet-first-break-L",
     "benchmark_id": "fbp-halfmile-valid",
     "scores": {
       "mae": 2.452455246,
@@ -9041,7 +9041,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "attention-unet-first-break-plus",
+    "model_id": "attention-unet-first-break-L",
     "benchmark_id": "fbp-lalor-valid",
     "scores": {
       "mae": 15.626999949,
@@ -9058,7 +9058,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "res-unet-first-break-plus",
+    "model_id": "res-unet-first-break-L",
     "benchmark_id": "fbp-geomseg-all",
     "scores": {
       "mae": 8.277227335,
@@ -9075,7 +9075,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "res-unet-first-break-plus",
+    "model_id": "res-unet-first-break-L",
     "benchmark_id": "fbp-brunswick-valid",
     "scores": {
       "mae": 2.191285812,
@@ -9092,7 +9092,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "res-unet-first-break-plus",
+    "model_id": "res-unet-first-break-L",
     "benchmark_id": "fbp-dongbei",
     "scores": {
       "mae": 2.506045687,
@@ -9109,7 +9109,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "res-unet-first-break-plus",
+    "model_id": "res-unet-first-break-L",
     "benchmark_id": "fbp-halfmile-valid",
     "scores": {
       "mae": 2.579689105,
@@ -9126,7 +9126,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "res-unet-first-break-plus",
+    "model_id": "res-unet-first-break-L",
     "benchmark_id": "fbp-lalor-valid",
     "scores": {
       "mae": 18.346895329,
@@ -9143,7 +9143,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "unet-first-break-plus",
+    "model_id": "unet-first-break-L",
     "benchmark_id": "fbp-geomseg-all",
     "scores": {
       "mae": 6.921158794,
@@ -9160,7 +9160,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "unet-first-break-plus",
+    "model_id": "unet-first-break-L",
     "benchmark_id": "fbp-brunswick-valid",
     "scores": {
       "mae": 2.253970068,
@@ -9177,7 +9177,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "unet-first-break-plus",
+    "model_id": "unet-first-break-L",
     "benchmark_id": "fbp-dongbei",
     "scores": {
       "mae": 2.437870577,
@@ -9194,7 +9194,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "unet-first-break-plus",
+    "model_id": "unet-first-break-L",
     "benchmark_id": "fbp-halfmile-valid",
     "scores": {
       "mae": 2.656580815,
@@ -9211,7 +9211,7 @@
     "date_added": "2026-08-17"
   },
   {
-    "model_id": "unet-first-break-plus",
+    "model_id": "unet-first-break-L",
     "benchmark_id": "fbp-lalor-valid",
     "scores": {
       "mae": 19.367807689,
@@ -13546,7 +13546,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-random30",
     "scores": {
       "snr": 21.4957,
@@ -13597,7 +13597,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-random50",
     "scores": {
       "snr": 16.3131,
@@ -13648,7 +13648,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-random70",
     "scores": {
       "snr": 11.3194,
@@ -13699,7 +13699,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-uniform50",
     "scores": {
       "snr": 18.2045,
@@ -13750,7 +13750,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-uniform75",
     "scores": {
       "snr": 18.2091,
@@ -13801,7 +13801,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous20tr",
     "scores": {
       "snr": 16.214,
@@ -13852,7 +13852,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous30tr",
     "scores": {
       "snr": 13.0493,
@@ -13903,7 +13903,7 @@
     }
   },
   {
-    "model_id": "attention-unet-plus-interpolation",
+    "model_id": "attention-unet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous40tr",
     "scores": {
       "snr": 10.9354,
@@ -14260,7 +14260,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-random30",
     "scores": {
       "snr": 21.9659,
@@ -14311,7 +14311,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-random50",
     "scores": {
       "snr": 16.5578,
@@ -14362,7 +14362,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-random70",
     "scores": {
       "snr": 11.1124,
@@ -14413,7 +14413,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-uniform50",
     "scores": {
       "snr": 16.8869,
@@ -14464,7 +14464,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-uniform75",
     "scores": {
       "snr": 16.9653,
@@ -14515,7 +14515,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-continuous20tr",
     "scores": {
       "snr": 16.14,
@@ -14566,7 +14566,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-continuous30tr",
     "scores": {
       "snr": 12.2906,
@@ -14617,7 +14617,7 @@
     }
   },
   {
-    "model_id": "dncnn-plus-interpolation",
+    "model_id": "dncnn-L-interpolation",
     "benchmark_id": "segc3-interp-continuous40tr",
     "scores": {
       "snr": 9.793,
@@ -14719,7 +14719,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-random30",
     "scores": {
       "snr": 21.3572,
@@ -14770,7 +14770,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-random50",
     "scores": {
       "snr": 16.2282,
@@ -14821,7 +14821,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-random70",
     "scores": {
       "snr": 11.3657,
@@ -14872,7 +14872,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-uniform50",
     "scores": {
       "snr": 18.1792,
@@ -14923,7 +14923,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-uniform75",
     "scores": {
       "snr": 18.161,
@@ -14974,7 +14974,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous20tr",
     "scores": {
       "snr": 16.1753,
@@ -15025,7 +15025,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous30tr",
     "scores": {
       "snr": 13.0974,
@@ -15076,7 +15076,7 @@
     }
   },
   {
-    "model_id": "resunet-plus-interpolation",
+    "model_id": "resunet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous40tr",
     "scores": {
       "snr": 10.9322,
@@ -15790,7 +15790,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-random30",
     "scores": {
       "snr": 21.2836,
@@ -15841,7 +15841,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-random50",
     "scores": {
       "snr": 16.2558,
@@ -15892,7 +15892,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-random70",
     "scores": {
       "snr": 11.1917,
@@ -15943,7 +15943,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-uniform50",
     "scores": {
       "snr": 18.2184,
@@ -15994,7 +15994,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-uniform75",
     "scores": {
       "snr": 18.234,
@@ -16045,7 +16045,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous20tr",
     "scores": {
       "snr": 16.2465,
@@ -16096,7 +16096,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous30tr",
     "scores": {
       "snr": 13.0653,
@@ -16147,7 +16147,7 @@
     }
   },
   {
-    "model_id": "unet-plus-interpolation",
+    "model_id": "unet-L-interpolation",
     "benchmark_id": "segc3-interp-continuous40tr",
     "scores": {
       "snr": 10.9003,
@@ -16453,7 +16453,7 @@
     }
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 18.981,
@@ -16504,7 +16504,7 @@
     }
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 15.194,
@@ -16555,7 +16555,7 @@
     }
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random70",
     "scores": {
       "snr": 10.7755,
@@ -16584,7 +16584,7 @@
     "date_added": "2026-08-24"
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 20.0386,
@@ -16635,7 +16635,7 @@
     }
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform75",
     "scores": {
       "snr": 19.8745,
@@ -16686,7 +16686,7 @@
     }
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 16.488,
@@ -16737,7 +16737,7 @@
     }
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 14.857,
@@ -16788,7 +16788,7 @@
     }
   },
   {
-    "model_id": "avo-attention-unet-plus-interpolation",
+    "model_id": "avo-attention-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 12.9069,
@@ -17225,7 +17225,7 @@
     }
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 17.9194,
@@ -17276,7 +17276,7 @@
     }
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 13.9286,
@@ -17327,7 +17327,7 @@
     }
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random70",
     "scores": {
       "snr": 10.0922,
@@ -17356,7 +17356,7 @@
     "date_added": "2026-08-24"
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 19.0459,
@@ -17407,7 +17407,7 @@
     }
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform75",
     "scores": {
       "snr": 19.0725,
@@ -17458,7 +17458,7 @@
     }
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 15.0201,
@@ -17509,7 +17509,7 @@
     }
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 12.1681,
@@ -17560,7 +17560,7 @@
     }
   },
   {
-    "model_id": "avo-dncnn-plus-interpolation",
+    "model_id": "avo-dncnn-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 10.4685,
@@ -17997,7 +17997,7 @@
     }
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 17.8262,
@@ -18048,7 +18048,7 @@
     }
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 14.1815,
@@ -18099,7 +18099,7 @@
     }
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random70",
     "scores": {
       "snr": 10.5751,
@@ -18128,7 +18128,7 @@
     "date_added": "2026-08-24"
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 19.2045,
@@ -18179,7 +18179,7 @@
     }
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform75",
     "scores": {
       "snr": 18.9806,
@@ -18230,7 +18230,7 @@
     }
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 16.6951,
@@ -18281,7 +18281,7 @@
     }
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 14.3265,
@@ -18332,7 +18332,7 @@
     }
   },
   {
-    "model_id": "avo-resunet-plus-interpolation",
+    "model_id": "avo-resunet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 12.8031,
@@ -19155,7 +19155,7 @@
     }
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random30",
     "scores": {
       "snr": 19.1655,
@@ -19206,7 +19206,7 @@
     }
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random50",
     "scores": {
       "snr": 14.9001,
@@ -19257,7 +19257,7 @@
     }
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-random70",
     "scores": {
       "snr": 11.0863,
@@ -19286,7 +19286,7 @@
     "date_added": "2026-08-24"
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform50",
     "scores": {
       "snr": 20.2574,
@@ -19337,7 +19337,7 @@
     }
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-uniform75",
     "scores": {
       "snr": 20.4041,
@@ -19388,7 +19388,7 @@
     }
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous20tr",
     "scores": {
       "snr": 16.8472,
@@ -19439,7 +19439,7 @@
     }
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous30tr",
     "scores": {
       "snr": 15.1346,
@@ -19490,7 +19490,7 @@
     }
   },
   {
-    "model_id": "avo-unet-plus-interpolation",
+    "model_id": "avo-unet-L-interpolation",
     "benchmark_id": "mobile-avo-interp-continuous40tr",
     "scores": {
       "snr": 12.8895,
@@ -23681,7 +23681,7 @@
     "date_added": "2026-08-26"
   },
   {
-    "model_id": "unet-plus-groundroll",
+    "model_id": "unet-L-groundroll",
     "benchmark_id": "field-groundroll-noise1",
     "scores": {
       "snr": 20.4935,
@@ -23791,7 +23791,7 @@
     "date_added": "2026-08-26"
   },
   {
-    "model_id": "res-unet-plus-groundroll",
+    "model_id": "res-unet-L-groundroll",
     "benchmark_id": "field-groundroll-noise1",
     "scores": {
       "snr": 20.6956,
@@ -23956,7 +23956,7 @@
     "date_added": "2026-08-26"
   },
   {
-    "model_id": "attention-unet-plus-groundroll",
+    "model_id": "attention-unet-L-groundroll",
     "benchmark_id": "field-groundroll-noise1",
     "scores": {
       "snr": 20.5072,

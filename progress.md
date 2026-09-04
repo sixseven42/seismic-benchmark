@@ -29,6 +29,20 @@
 - Created `scripts/integrate_interp_field_0903.py` for reproducibility.
 - Verified `npm run build` passes.
 
+## 2026-09-04 — Rename `-plus` suffix models to `-L` (large version)
+- Identified 17 models with `-plus` suffixes that should follow the `-L` naming standard.
+- Renamed model IDs and display names:
+  - Ground-roll: `attention-unet-plus-groundroll` → `attention-unet-L-groundroll`, `res-unet-plus-groundroll` → `res-unet-L-groundroll`, `unet-plus-groundroll` → `unet-L-groundroll`
+  - Multiples: `attention-unet-plus-multiples` → `attention-unet-L-multiples`, `res-unet-plus-multiples` → `res-unet-L-multiples`, `unet-plus-multiples` → `unet-L-multiples`
+  - First-break: `attention-unet-first-break-plus` → `attention-unet-first-break-L`, `res-unet-first-break-plus` → `res-unet-first-break-L`, `unet-first-break-plus` → `unet-first-break-L`
+  - Interpolation: `attention-unet-plus-interpolation` → `attention-unet-L-interpolation`, `dncnn-plus-interpolation` → `dncnn-L-interpolation`, `resunet-plus-interpolation` → `resunet-L-interpolation`, `unet-plus-interpolation` → `unet-L-interpolation`
+  - AVO interpolation: `avo-attention-unet-plus-interpolation` → `avo-attention-unet-L-interpolation`, `avo-dncnn-plus-interpolation` → `avo-dncnn-L-interpolation`, `avo-resunet-plus-interpolation` → `avo-resunet-L-interpolation`, `avo-unet-plus-interpolation` → `avo-unet-L-interpolation`
+- Left legitimate UNet++ models unchanged (`zhou2018unet_plusplus_denoise`, `unet-plusplus-blending-noise`, `unet-plusplus-blending-noise-avo`).
+- Updated all `model_id` references in `src/data/results.json`.
+- Recalculated `model_count` values in `src/data/benchmarks.json` from actual result entries.
+- Created `scripts/rename_plus_to_L.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-04 — Remove duplicate UNet++ random-noise models
 - Identified duplicate models added by `json0903.rar`:
   - `unet-plusplus-random-noise`
