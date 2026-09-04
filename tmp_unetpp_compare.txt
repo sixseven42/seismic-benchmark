@@ -1,0 +1,592 @@
+
+=== RN-AVO Gaussian -5dB -> random-noise-avo-gaussian-snrneg5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=1.315981 excel=1.32
+  eb_wse_medium_40_70_ne std repo=0.127828 excel=0.13
+  eb_wse_medium_40_70_snr mean repo=-2.341 excel=-2.34
+  eb_wse_medium_40_70_snr std repo=0.8313 excel=0.83
+  eb_wse_strong_70_100_ne mean repo=0.342618 excel=0.34
+  eb_wse_strong_70_100_ne std repo=0.005508 excel=0.01
+  eb_wse_strong_70_100_snr mean repo=9.3217 excel=9.32
+  eb_wse_strong_70_100_snr std repo=0.1398 excel=0.14
+  eb_wse_very_weak_5_20_ne mean repo=5.225225 excel=5.23
+  eb_wse_very_weak_5_20_ne std repo=1.469224 excel=1.47
+  eb_wse_very_weak_5_20_snr mean repo=-13.9889 excel=-13.99
+  eb_wse_very_weak_5_20_snr std repo=2.5525 excel=2.55
+  eb_wse_weak_20_40_ne mean repo=2.63355 excel=2.63
+  eb_wse_weak_20_40_ne std repo=0.648347 excel=0.65
+  eb_wse_weak_20_40_snr mean repo=-8.1289 excel=-8.13
+  eb_wse_weak_20_40_snr std repo=2.1766 excel=2.18
+  fb_fre_high_ne mean repo=0.405496 excel=0.41
+  fb_fre_high_ne std repo=0.011353 excel=0.01
+  fb_fre_high_snr mean repo=7.8878 excel=7.89
+  fb_fre_low_ne mean repo=0.325757 excel=0.33
+  fb_fre_low_ne std repo=0.005751 excel=0.01
+  fb_fre_low_snr mean repo=9.7691 excel=9.77
+  fb_fre_low_snr std repo=0.1521 excel=0.15
+  fb_fre_mid_ne mean repo=0.312565 excel=0.31
+  fb_fre_mid_ne std repo=0.004777 excel=0.0
+  fb_fre_mid_snr mean repo=10.1219 excel=10.12
+  fb_fre_mid_snr std repo=0.1317 excel=0.13
+  fb_fre_very_high_ne mean repo=1.383703 excel=1.38
+  fb_fre_very_high_ne std repo=0.035778 excel=0.04
+  fb_fre_very_high_snr mean repo=-2.7287 excel=-2.73
+  fb_fre_very_high_snr std repo=0.2206 excel=0.22
+
+=== RN-AVO Gaussian +0dB -> random-noise-avo-gaussian-snr0 (model zhou2018unet_plusplus_denoise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=1.203791 excel=1.2
+  eb_wse_medium_40_70_ne std repo=0.076397 excel=0.08
+  eb_wse_medium_40_70_snr mean repo=-1.5908 excel=-1.59
+  eb_wse_medium_40_70_snr std repo=0.5487 excel=0.55
+  eb_wse_strong_70_100_ne mean repo=0.236296 excel=0.24
+  eb_wse_strong_70_100_ne std repo=0.009167 excel=0.01
+  eb_wse_strong_70_100_snr mean repo=12.5505 excel=12.55
+  eb_wse_strong_70_100_snr std repo=0.3326 excel=0.33
+  eb_wse_very_weak_5_20_ne mean repo=4.198035 excel=4.2
+  eb_wse_very_weak_5_20_ne std repo=1.574517 excel=1.57
+  eb_wse_very_weak_5_20_snr mean repo=-11.7866 excel=-11.79
+  eb_wse_very_weak_5_20_snr std repo=3.4733 excel=3.47
+  eb_wse_weak_20_40_ne mean repo=2.144492 excel=2.14
+  eb_wse_weak_20_40_ne std repo=0.630081 excel=0.63
+  eb_wse_weak_20_40_snr mean repo=-6.2274 excel=-6.23
+  eb_wse_weak_20_40_snr std repo=2.6114 excel=2.61
+  fb_fre_high_ne mean repo=0.286912 excel=0.29
+  fb_fre_high_ne std repo=0.013585 excel=0.01
+  fb_fre_high_snr mean repo=10.8982 excel=10.9
+  fb_fre_high_snr std repo=0.4057 excel=0.41
+  fb_fre_low_ne mean repo=0.219596 excel=0.22
+  fb_fre_low_ne std repo=0.010199 excel=0.01
+  fb_fre_low_snr mean repo=13.1974 excel=13.2
+  fb_fre_low_snr std repo=0.3946 excel=0.39
+  fb_fre_mid_ne mean repo=0.213996 excel=0.21
+  fb_fre_mid_ne std repo=0.008473 excel=0.01
+  fb_fre_mid_snr mean repo=13.4143 excel=13.41
+  fb_fre_mid_snr std repo=0.342 excel=0.34
+  fb_fre_very_high_ne mean repo=1.169351 excel=1.17
+  fb_fre_very_high_ne std repo=0.082337 excel=0.08
+  fb_fre_very_high_snr mean repo=-1.2685 excel=-1.27
+  fb_fre_very_high_snr std repo=0.6091 excel=0.61
+
+=== RN-AVO Gaussian +5dB -> random-noise-avo-gaussian-snr5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=1.053772 excel=1.05
+  eb_wse_medium_40_70_ne std repo=0.032269 excel=0.03
+  eb_wse_medium_40_70_snr mean repo=-0.448 excel=-0.45
+  eb_wse_medium_40_70_snr std repo=0.2629 excel=0.26
+  eb_wse_strong_70_100_ne mean repo=0.15979 excel=0.16
+  eb_wse_strong_70_100_ne std repo=0.003133 excel=0.0
+  eb_wse_strong_70_100_snr mean repo=15.9479 excel=15.95
+  eb_wse_strong_70_100_snr std repo=0.1683 excel=0.17
+  eb_wse_very_weak_5_20_ne mean repo=2.505276 excel=2.51
+  eb_wse_very_weak_5_20_ne std repo=0.799956 excel=0.8
+  eb_wse_very_weak_5_20_snr mean repo=-7.5683 excel=-7.57
+  eb_wse_very_weak_5_20_snr std repo=2.5747 excel=2.57
+  eb_wse_weak_20_40_ne mean repo=1.526088 excel=1.53
+  eb_wse_weak_20_40_ne std repo=0.313348 excel=0.31
+  eb_wse_weak_20_40_snr mean repo=-3.4965 excel=-3.5
+  eb_wse_weak_20_40_snr std repo=1.6845 excel=1.68
+  fb_fre_high_ne mean repo=0.190522 excel=0.19
+  fb_fre_high_ne std repo=0.001093 excel=0.0
+  fb_fre_high_snr mean repo=14.4536 excel=14.45
+  fb_fre_high_snr std repo=0.0558 excel=0.06
+  fb_fre_low_ne mean repo=0.148547 excel=0.15
+  fb_fre_low_ne std repo=0.00591 excel=0.01
+  fb_fre_low_snr mean repo=16.5912 excel=16.59
+  fb_fre_low_snr std repo=0.3424 excel=0.34
+  fb_fre_mid_ne mean repo=0.148987 excel=0.15
+  fb_fre_mid_ne std repo=0.00347 excel=0.0
+  fb_fre_mid_snr mean repo=16.5549 excel=16.55
+  fb_fre_very_high_ne mean repo=0.93674 excel=0.94
+  fb_fre_very_high_ne std repo=0.044181 excel=0.04
+  fb_fre_very_high_snr mean repo=0.6405 excel=0.64
+  fb_fre_very_high_snr std repo=0.4164 excel=0.42
+
+=== RN-AVO Poisson -5dB -> random-noise-avo-poisson-snrneg5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=1.252834 excel=1.25
+  eb_wse_medium_40_70_ne std repo=0.079947 excel=0.08
+  eb_wse_medium_40_70_snr mean repo=-1.9379 excel=-1.94
+  eb_wse_medium_40_70_snr std repo=0.553 excel=0.55
+  eb_wse_strong_70_100_ne mean repo=0.340962 excel=0.34
+  eb_wse_strong_70_100_ne std repo=0.007051 excel=0.01
+  eb_wse_strong_70_100_snr mean repo=9.3642 excel=9.36
+  eb_wse_strong_70_100_snr std repo=0.1806 excel=0.18
+  eb_wse_very_weak_5_20_ne mean repo=4.619622 excel=4.62
+  eb_wse_very_weak_5_20_ne std repo=1.032702 excel=1.03
+  eb_wse_very_weak_5_20_snr mean repo=-13.0557 excel=-13.06
+  eb_wse_very_weak_5_20_snr std repo=2.0201 excel=2.02
+  eb_wse_weak_20_40_ne mean repo=2.328813 excel=2.33
+  eb_wse_weak_20_40_ne std repo=0.436187 excel=0.44
+  eb_wse_weak_20_40_snr mean repo=-7.1757 excel=-7.18
+  eb_wse_weak_20_40_snr std repo=1.671 excel=1.67
+  fb_fre_high_ne mean repo=0.400363 excel=0.4
+  fb_fre_high_ne std repo=0.014086 excel=0.01
+  fb_fre_high_snr mean repo=8.0007 excel=8.0
+  fb_fre_high_snr std repo=0.3039 excel=0.3
+  fb_fre_low_ne mean repo=0.329723 excel=0.33
+  fb_fre_low_ne std repo=0.004727 excel=0.0
+  fb_fre_low_snr mean repo=9.6613 excel=9.66
+  fb_fre_low_snr std repo=0.1237 excel=0.12
+  fb_fre_mid_ne mean repo=0.309802 excel=0.31
+  fb_fre_mid_ne std repo=0.001718 excel=0.0
+  fb_fre_mid_snr mean repo=10.1973 excel=10.2
+  fb_fre_mid_snr std repo=0.0474 excel=0.05
+  fb_fre_very_high_ne mean repo=1.350403 excel=1.35
+  fb_fre_very_high_ne std repo=0.063866 excel=0.06
+  fb_fre_very_high_snr mean repo=-2.5166 excel=-2.52
+  fb_fre_very_high_snr std repo=0.4032 excel=0.4
+
+=== RN-AVO Poisson +0dB -> random-noise-avo-poisson-snr0 (model zhou2018unet_plusplus_denoise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=1.159013 excel=1.16
+  eb_wse_medium_40_70_ne std repo=0.029364 excel=0.03
+  eb_wse_medium_40_70_snr mean repo=-1.2767 excel=-1.28
+  eb_wse_medium_40_70_snr std repo=0.2198 excel=0.22
+  eb_wse_strong_70_100_ne mean repo=0.240119 excel=0.24
+  eb_wse_strong_70_100_ne std repo=0.006134 excel=0.01
+  eb_wse_strong_70_100_snr mean repo=12.4097 excel=12.41
+  eb_wse_strong_70_100_snr std repo=0.2222 excel=0.22
+  eb_wse_very_weak_5_20_ne mean repo=3.339027 excel=3.34
+  eb_wse_very_weak_5_20_ne std repo=0.710787 excel=0.71
+  eb_wse_very_weak_5_20_snr mean repo=-10.2604 excel=-10.26
+  eb_wse_very_weak_5_20_snr std repo=1.907 excel=1.91
+  eb_wse_weak_20_40_ne mean repo=1.765013 excel=1.77
+  eb_wse_weak_20_40_ne std repo=0.218187 excel=0.22
+  eb_wse_weak_20_40_snr mean repo=-4.8579 excel=-4.86
+  eb_wse_weak_20_40_snr std repo=1.094 excel=1.09
+  fb_fre_high_ne mean repo=0.290077 excel=0.29
+  fb_fre_high_ne std repo=0.014796 excel=0.01
+  fb_fre_high_snr mean repo=10.8058 excel=10.81
+  fb_fre_high_snr std repo=0.4469 excel=0.45
+  fb_fre_low_ne mean repo=0.224719 excel=0.22
+  fb_fre_low_ne std repo=0.006503 excel=0.01
+  fb_fre_low_snr mean repo=12.9954 excel=13.0
+  fb_fre_low_snr std repo=0.2497 excel=0.25
+  fb_fre_mid_ne mean repo=0.218194 excel=0.22
+  fb_fre_mid_ne std repo=0.005042 excel=0.01
+  fb_fre_mid_snr mean repo=13.2415 excel=13.24
+  fb_fre_mid_snr std repo=0.2002 excel=0.2
+  fb_fre_very_high_ne mean repo=1.166998 excel=1.17
+  fb_fre_very_high_ne std repo=0.045498 excel=0.05
+  fb_fre_very_high_snr mean repo=-1.2666 excel=-1.27
+  fb_fre_very_high_snr std repo=0.3331 excel=0.33
+
+=== RN-AVO Poisson +5dB -> random-noise-avo-poisson-snr5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=1.02804 excel=1.03
+  eb_wse_medium_40_70_ne std repo=0.009612 excel=0.01
+  eb_wse_medium_40_70_snr mean repo=-0.2375 excel=-0.24
+  eb_wse_medium_40_70_snr std repo=0.0812 excel=0.08
+  eb_wse_strong_70_100_ne mean repo=0.155961 excel=0.16
+  eb_wse_strong_70_100_ne std repo=0.002812 excel=0.0
+  eb_wse_strong_70_100_snr mean repo=16.1562 excel=16.16
+  eb_wse_strong_70_100_snr std repo=0.1552 excel=0.16
+  eb_wse_very_weak_5_20_ne mean repo=2.06578 excel=2.07
+  eb_wse_very_weak_5_20_ne std repo=0.228628 excel=0.23
+  eb_wse_very_weak_5_20_snr mean repo=-6.2457 excel=-6.25
+  eb_wse_very_weak_5_20_snr std repo=0.9316 excel=0.93
+  eb_wse_weak_20_40_ne mean repo=1.324516 excel=1.32
+  eb_wse_weak_20_40_ne std repo=0.070479 excel=0.07
+  eb_wse_weak_20_40_snr mean repo=-2.4266 excel=-2.43
+  eb_wse_weak_20_40_snr std repo=0.4541 excel=0.45
+  fb_fre_high_ne mean repo=0.18349 excel=0.18
+  fb_fre_high_ne std repo=0.000252 excel=0.0
+  fb_fre_high_snr mean repo=14.7755 excel=14.78
+  fb_fre_high_snr std repo=0.0099 excel=0.01
+  fb_fre_low_ne mean repo=0.145899 excel=0.15
+  fb_fre_low_ne std repo=0.00341 excel=0.0
+  fb_fre_low_snr mean repo=16.7409 excel=16.74
+  fb_fre_low_snr std repo=0.2017 excel=0.2
+  fb_fre_mid_ne mean repo=0.145121 excel=0.15
+  fb_fre_mid_ne std repo=0.003365 excel=0.0
+  fb_fre_mid_snr mean repo=16.7812 excel=16.78
+  fb_fre_mid_snr std repo=0.1984 excel=0.2
+  fb_fre_very_high_ne mean repo=0.933117 excel=0.93
+  fb_fre_very_high_ne std repo=0.05058 excel=0.05
+  fb_fre_very_high_snr mean repo=0.6759 excel=0.68
+  fb_fre_very_high_snr std repo=0.4723 excel=0.47
+
+=== RN-SEGC3 Gaussian -5dB -> segc3-random-noise-gaussian-snrneg5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+  repo missing metric eb_wse_medium_40_70_ne (excel mean=1.02)
+  repo missing std eb_wse_medium_40_70_ne (excel std=0.04)
+  repo missing metric eb_wse_medium_40_70_snr (excel mean=0.15)
+  repo missing std eb_wse_medium_40_70_snr (excel std=0.13)
+  repo missing metric eb_wse_strong_70_100_ne (excel mean=0.24)
+  repo missing std eb_wse_strong_70_100_ne (excel std=0.0)
+  repo missing metric eb_wse_strong_70_100_snr (excel mean=12.57)
+  repo missing std eb_wse_strong_70_100_snr (excel std=0.15)
+  repo missing metric eb_wse_very_weak_5_20_ne (excel mean=1.34)
+  repo missing std eb_wse_very_weak_5_20_ne (excel std=0.13)
+  repo missing metric eb_wse_very_weak_5_20_snr (excel mean=-1.5)
+  repo missing std eb_wse_very_weak_5_20_snr (excel std=0.26)
+  repo missing metric eb_wse_weak_20_40_ne (excel mean=1.16)
+  repo missing std eb_wse_weak_20_40_ne (excel std=0.08)
+  repo missing metric eb_wse_weak_20_40_snr (excel mean=-0.76)
+  repo missing std eb_wse_weak_20_40_snr (excel std=0.19)
+  repo missing metric fb_fre_high_ne (excel mean=0.31)
+  repo missing std fb_fre_high_ne (excel std=0.0)
+  repo missing metric fb_fre_high_snr (excel mean=10.3)
+  repo missing std fb_fre_high_snr (excel std=0.07)
+  repo missing metric fb_fre_low_ne (excel mean=0.3)
+  repo missing std fb_fre_low_ne (excel std=0.01)
+  repo missing metric fb_fre_low_snr (excel mean=10.55)
+  repo missing std fb_fre_low_snr (excel std=0.26)
+  repo missing metric fb_fre_mid_ne (excel mean=0.22)
+  repo missing std fb_fre_mid_ne (excel std=0.0)
+  repo missing metric fb_fre_mid_snr (excel mean=13.21)
+  repo missing std fb_fre_mid_snr (excel std=0.14)
+  repo missing metric fb_fre_very_high_ne (excel mean=0.86)
+  repo missing std fb_fre_very_high_ne (excel std=0.0)
+  repo missing metric fb_fre_very_high_snr (excel mean=1.3)
+  repo missing std fb_fre_very_high_snr (excel std=0.04)
+diffs:
+
+=== RN-SEGC3 Gaussian +0dB -> segc3-random-noise-gaussian-snr0 (model zhou2018unet_plusplus_denoise) ===
+missing:
+  repo missing metric eb_wse_medium_40_70_ne (excel mean=0.84)
+  repo missing std eb_wse_medium_40_70_ne (excel std=0.02)
+  repo missing metric eb_wse_medium_40_70_snr (excel mean=1.74)
+  repo missing std eb_wse_medium_40_70_snr (excel std=0.09)
+  repo missing metric eb_wse_strong_70_100_ne (excel mean=0.17)
+  repo missing std eb_wse_strong_70_100_ne (excel std=0.0)
+  repo missing metric eb_wse_strong_70_100_snr (excel mean=15.63)
+  repo missing std eb_wse_strong_70_100_snr (excel std=0.03)
+  repo missing metric eb_wse_very_weak_5_20_ne (excel mean=1.24)
+  repo missing std eb_wse_very_weak_5_20_ne (excel std=0.05)
+  repo missing metric eb_wse_very_weak_5_20_snr (excel mean=-1.2)
+  repo missing std eb_wse_very_weak_5_20_snr (excel std=0.11)
+  repo missing metric eb_wse_weak_20_40_ne (excel mean=1.05)
+  repo missing std eb_wse_weak_20_40_ne (excel std=0.03)
+  repo missing metric eb_wse_weak_20_40_snr (excel mean=-0.03)
+  repo missing std eb_wse_weak_20_40_snr (excel std=0.12)
+  repo missing metric fb_fre_high_ne (excel mean=0.23)
+  repo missing std fb_fre_high_ne (excel std=0.0)
+  repo missing metric fb_fre_high_snr (excel mean=12.62)
+  repo missing std fb_fre_high_snr (excel std=0.04)
+  repo missing metric fb_fre_low_ne (excel mean=0.23)
+  repo missing std fb_fre_low_ne (excel std=0.0)
+  repo missing metric fb_fre_low_snr (excel mean=12.78)
+  repo missing std fb_fre_low_snr (excel std=0.06)
+  repo missing metric fb_fre_mid_ne (excel mean=0.16)
+  repo missing std fb_fre_mid_ne (excel std=0.0)
+  repo missing metric fb_fre_mid_snr (excel mean=15.9)
+  repo missing std fb_fre_mid_snr (excel std=0.04)
+  repo missing metric fb_fre_very_high_ne (excel mean=0.69)
+  repo missing std fb_fre_very_high_ne (excel std=0.01)
+  repo missing metric fb_fre_very_high_snr (excel mean=3.26)
+  repo missing std fb_fre_very_high_snr (excel std=0.08)
+diffs:
+
+=== RN-SEGC3 Gaussian +5dB -> segc3-random-noise-gaussian-snr5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+  repo missing metric eb_wse_medium_40_70_ne (excel mean=0.64)
+  repo missing std eb_wse_medium_40_70_ne (excel std=0.02)
+  repo missing metric eb_wse_medium_40_70_snr (excel mean=4.16)
+  repo missing std eb_wse_medium_40_70_snr (excel std=0.11)
+  repo missing metric eb_wse_strong_70_100_ne (excel mean=0.12)
+  repo missing std eb_wse_strong_70_100_ne (excel std=0.0)
+  repo missing metric eb_wse_strong_70_100_snr (excel mean=18.86)
+  repo missing std eb_wse_strong_70_100_snr (excel std=0.02)
+  repo missing metric eb_wse_very_weak_5_20_ne (excel mean=1.11)
+  repo missing std eb_wse_very_weak_5_20_ne (excel std=0.04)
+  repo missing metric eb_wse_very_weak_5_20_snr (excel mean=-0.31)
+  repo missing std eb_wse_very_weak_5_20_snr (excel std=0.09)
+  repo missing metric eb_wse_weak_20_40_ne (excel mean=0.88)
+  repo missing std eb_wse_weak_20_40_ne (excel std=0.03)
+  repo missing metric eb_wse_weak_20_40_snr (excel mean=1.51)
+  repo missing std eb_wse_weak_20_40_snr (excel std=0.1)
+  repo missing metric fb_fre_high_ne (excel mean=0.18)
+  repo missing std fb_fre_high_ne (excel std=0.0)
+  repo missing metric fb_fre_high_snr (excel mean=15.18)
+  repo missing std fb_fre_high_snr (excel std=0.06)
+  repo missing metric fb_fre_low_ne (excel mean=0.18)
+  repo missing std fb_fre_low_ne (excel std=0.0)
+  repo missing metric fb_fre_low_snr (excel mean=15.08)
+  repo missing std fb_fre_low_snr (excel std=0.14)
+  repo missing metric fb_fre_mid_ne (excel mean=0.11)
+  repo missing std fb_fre_mid_ne (excel std=0.0)
+  repo missing metric fb_fre_mid_snr (excel mean=18.89)
+  repo missing std fb_fre_mid_snr (excel std=0.01)
+  repo missing metric fb_fre_very_high_ne (excel mean=0.52)
+  repo missing std fb_fre_very_high_ne (excel std=0.01)
+  repo missing metric fb_fre_very_high_snr (excel mean=5.76)
+  repo missing std fb_fre_very_high_snr (excel std=0.09)
+diffs:
+
+=== RN-SEGC3 Poisson -5dB -> segc3-random-noise-poisson-snrneg5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+  repo missing metric eb_wse_medium_40_70_ne (excel mean=1.07)
+  repo missing std eb_wse_medium_40_70_ne (excel std=0.08)
+  repo missing metric eb_wse_medium_40_70_snr (excel mean=0.05)
+  repo missing std eb_wse_medium_40_70_snr (excel std=0.14)
+  repo missing metric eb_wse_strong_70_100_ne (excel mean=0.24)
+  repo missing std eb_wse_strong_70_100_ne (excel std=0.0)
+  repo missing metric eb_wse_strong_70_100_snr (excel mean=12.51)
+  repo missing std eb_wse_strong_70_100_snr (excel std=0.09)
+  repo missing metric eb_wse_very_weak_5_20_ne (excel mean=1.49)
+  repo missing std eb_wse_very_weak_5_20_ne (excel std=0.23)
+  repo missing metric eb_wse_very_weak_5_20_snr (excel mean=-1.54)
+  repo missing std eb_wse_very_weak_5_20_snr (excel std=0.28)
+  repo missing metric eb_wse_weak_20_40_ne (excel mean=1.27)
+  repo missing std eb_wse_weak_20_40_ne (excel std=0.14)
+  repo missing metric eb_wse_weak_20_40_snr (excel mean=-0.82)
+  repo missing std eb_wse_weak_20_40_snr (excel std=0.21)
+  repo missing metric fb_fre_high_ne (excel mean=0.31)
+  repo missing std fb_fre_high_ne (excel std=0.0)
+  repo missing metric fb_fre_high_snr (excel mean=10.25)
+  repo missing std fb_fre_high_snr (excel std=0.04)
+  repo missing metric fb_fre_low_ne (excel mean=0.3)
+  repo missing std fb_fre_low_ne (excel std=0.01)
+  repo missing metric fb_fre_low_snr (excel mean=10.51)
+  repo missing std fb_fre_low_snr (excel std=0.17)
+  repo missing metric fb_fre_mid_ne (excel mean=0.22)
+  repo missing std fb_fre_mid_ne (excel std=0.0)
+  repo missing metric fb_fre_mid_snr (excel mean=13.22)
+  repo missing std fb_fre_mid_snr (excel std=0.11)
+  repo missing metric fb_fre_very_high_ne (excel mean=0.87)
+  repo missing std fb_fre_very_high_ne (excel std=0.0)
+  repo missing metric fb_fre_very_high_snr (excel mean=1.23)
+  repo missing std fb_fre_very_high_snr (excel std=0.03)
+diffs:
+  snr mean repo=10.9828 excel=10.9818
+  snr std repo=0.0946 excel=0.0939
+  psnr mean repo=35.6493 excel=35.6482
+  psnr std repo=0.0946 excel=0.0939
+  ssim mean repo=0.9281 excel=0.928
+  ssim std repo=0.0014 excel=0.0013
+  mae mean repo=0.011491 excel=0.011493
+  rmse mean repo=0.017234 excel=0.017237
+
+=== RN-SEGC3 Poisson +0dB -> segc3-random-noise-poisson-snr0 (model zhou2018unet_plusplus_denoise) ===
+missing:
+  repo missing metric eb_wse_medium_40_70_ne (excel mean=0.83)
+  repo missing std eb_wse_medium_40_70_ne (excel std=0.02)
+  repo missing metric eb_wse_medium_40_70_snr (excel mean=1.8)
+  repo missing std eb_wse_medium_40_70_snr (excel std=0.13)
+  repo missing metric eb_wse_strong_70_100_ne (excel mean=0.17)
+  repo missing std eb_wse_strong_70_100_ne (excel std=0.0)
+  repo missing metric eb_wse_strong_70_100_snr (excel mean=15.63)
+  repo missing std eb_wse_strong_70_100_snr (excel std=0.06)
+  repo missing metric eb_wse_very_weak_5_20_ne (excel mean=1.22)
+  repo missing std eb_wse_very_weak_5_20_ne (excel std=0.05)
+  repo missing metric eb_wse_very_weak_5_20_snr (excel mean=-1.19)
+  repo missing std eb_wse_very_weak_5_20_snr (excel std=0.06)
+  repo missing metric eb_wse_weak_20_40_ne (excel mean=1.03)
+  repo missing std eb_wse_weak_20_40_ne (excel std=0.03)
+  repo missing metric eb_wse_weak_20_40_snr (excel mean=0.04)
+  repo missing std eb_wse_weak_20_40_snr (excel std=0.1)
+  repo missing metric fb_fre_high_ne (excel mean=0.23)
+  repo missing std fb_fre_high_ne (excel std=0.0)
+  repo missing metric fb_fre_high_snr (excel mean=12.65)
+  repo missing std fb_fre_high_snr (excel std=0.08)
+  repo missing metric fb_fre_low_ne (excel mean=0.23)
+  repo missing std fb_fre_low_ne (excel std=0.0)
+  repo missing metric fb_fre_low_snr (excel mean=12.75)
+  repo missing std fb_fre_low_snr (excel std=0.16)
+  repo missing metric fb_fre_mid_ne (excel mean=0.16)
+  repo missing std fb_fre_mid_ne (excel std=0.0)
+  repo missing metric fb_fre_mid_snr (excel mean=15.85)
+  repo missing std fb_fre_mid_snr (excel std=0.02)
+  repo missing metric fb_fre_very_high_ne (excel mean=0.68)
+  repo missing std fb_fre_very_high_ne (excel std=0.01)
+  repo missing metric fb_fre_very_high_snr (excel mean=3.36)
+  repo missing std fb_fre_very_high_snr (excel std=0.09)
+diffs:
+  snr mean repo=13.4932 excel=13.4922
+  snr std repo=0.0835 excel=0.0822
+  psnr mean repo=38.1597 excel=38.1587
+  psnr std repo=0.0835 excel=0.0822
+  rmse mean repo=0.012968 excel=0.01297
+  rmse std repo=6.7e-05 excel=6.5e-05
+
+=== RN-SEGC3 Poisson +5dB -> segc3-random-noise-poisson-snr5 (model zhou2018unet_plusplus_denoise) ===
+missing:
+  repo missing metric eb_wse_medium_40_70_ne (excel mean=0.65)
+  repo missing std eb_wse_medium_40_70_ne (excel std=0.02)
+  repo missing metric eb_wse_medium_40_70_snr (excel mean=4.13)
+  repo missing std eb_wse_medium_40_70_snr (excel std=0.12)
+  repo missing metric eb_wse_strong_70_100_ne (excel mean=0.12)
+  repo missing std eb_wse_strong_70_100_ne (excel std=0.0)
+  repo missing metric eb_wse_strong_70_100_snr (excel mean=18.85)
+  repo missing std eb_wse_strong_70_100_snr (excel std=0.05)
+  repo missing metric eb_wse_very_weak_5_20_ne (excel mean=1.12)
+  repo missing std eb_wse_very_weak_5_20_ne (excel std=0.05)
+  repo missing metric eb_wse_very_weak_5_20_snr (excel mean=-0.37)
+  repo missing std eb_wse_very_weak_5_20_snr (excel std=0.12)
+  repo missing metric eb_wse_weak_20_40_ne (excel mean=0.89)
+  repo missing std eb_wse_weak_20_40_ne (excel std=0.03)
+  repo missing metric eb_wse_weak_20_40_snr (excel mean=1.47)
+  repo missing std eb_wse_weak_20_40_snr (excel std=0.15)
+  repo missing metric fb_fre_high_ne (excel mean=0.18)
+  repo missing std fb_fre_high_ne (excel std=0.0)
+  repo missing metric fb_fre_high_snr (excel mean=15.14)
+  repo missing std fb_fre_high_snr (excel std=0.05)
+  repo missing metric fb_fre_low_ne (excel mean=0.18)
+  repo missing std fb_fre_low_ne (excel std=0.0)
+  repo missing metric fb_fre_low_snr (excel mean=15.11)
+  repo missing std fb_fre_low_snr (excel std=0.19)
+  repo missing metric fb_fre_mid_ne (excel mean=0.11)
+  repo missing std fb_fre_mid_ne (excel std=0.0)
+  repo missing metric fb_fre_mid_snr (excel mean=18.94)
+  repo missing std fb_fre_mid_snr (excel std=0.06)
+  repo missing metric fb_fre_very_high_ne (excel mean=0.52)
+  repo missing std fb_fre_very_high_ne (excel std=0.0)
+  repo missing metric fb_fre_very_high_snr (excel mean=5.68)
+  repo missing std fb_fre_very_high_snr (excel std=0.02)
+diffs:
+  snr mean repo=16.1603 excel=16.16
+  snr std repo=0.0714 excel=0.0725
+  psnr mean repo=40.8267 excel=40.8264
+  psnr std repo=0.0714 excel=0.0725
+  mae std repo=6e-05 excel=6.2e-05
+  rmse std repo=4e-05 excel=4.2e-05
+
+=== Deblending-AVO T03 mod -> blending-noise-avo-T03_avo_mod (model unet-plusplus-blending-noise-avo) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=0.757421 excel=0.76
+  eb_wse_medium_40_70_ne std repo=0.028589 excel=0.03
+  eb_wse_medium_40_70_snr mean repo=2.4215 excel=2.42
+  eb_wse_medium_40_70_snr std repo=0.3287 excel=0.33
+  eb_wse_strong_70_100_ne mean repo=0.042676 excel=0.04
+  eb_wse_strong_70_100_ne std repo=0.00108 excel=0.0
+  eb_wse_strong_70_100_snr mean repo=27.4034 excel=27.4
+  eb_wse_strong_70_100_snr std repo=0.223 excel=0.22
+  eb_wse_very_weak_5_20_ne mean repo=2.291199 excel=2.29
+  eb_wse_very_weak_5_20_ne std repo=0.019998 excel=0.02
+  eb_wse_very_weak_5_20_snr mean repo=-7.1792 excel=-7.18
+  eb_wse_very_weak_5_20_snr std repo=0.0743 excel=0.07
+  eb_wse_weak_20_40_ne mean repo=1.344684 excel=1.34
+  eb_wse_weak_20_40_ne std repo=0.007086 excel=0.01
+  eb_wse_weak_20_40_snr std repo=0.0451 excel=0.05
+  fb_fre_high_ne mean repo=0.046849 excel=0.05
+  fb_fre_high_ne std repo=0.001166 excel=0.0
+  fb_fre_high_snr mean repo=26.6284 excel=26.63
+  fb_fre_high_snr std repo=0.2227 excel=0.22
+  fb_fre_low_ne mean repo=0.104241 excel=0.1
+  fb_fre_low_ne std repo=0.002996 excel=0.0
+  fb_fre_low_snr mean repo=19.6444 excel=19.64
+  fb_fre_low_snr std repo=0.2517 excel=0.25
+  fb_fre_mid_ne mean repo=0.05159 excel=0.05
+  fb_fre_mid_ne std repo=0.001425 excel=0.0
+  fb_fre_mid_snr mean repo=25.7523 excel=25.75
+  fb_fre_mid_snr std repo=0.2407 excel=0.24
+  fb_fre_very_high_ne mean repo=0.213581 excel=0.21
+  fb_fre_very_high_ne std repo=0.005819 excel=0.01
+  fb_fre_very_high_snr mean repo=13.5175 excel=13.52
+  fb_fre_very_high_snr std repo=0.2481 excel=0.25
+
+=== Deblending T02 mod -> blending-noise-T02_mod (model unet-plusplus-blending-noise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=0.381156 excel=0.38
+  eb_wse_medium_40_70_ne std repo=0.008215 excel=0.01
+  eb_wse_medium_40_70_snr mean repo=8.3842 excel=8.38
+  eb_wse_medium_40_70_snr std repo=0.1885 excel=0.19
+  eb_wse_strong_70_100_ne mean repo=0.146441 excel=0.15
+  eb_wse_strong_70_100_ne std repo=0.002299 excel=0.0
+  eb_wse_strong_70_100_snr mean repo=16.7103 excel=16.71
+  eb_wse_strong_70_100_snr std repo=0.1318 excel=0.13
+  eb_wse_very_weak_5_20_ne mean repo=0.942822 excel=0.94
+  eb_wse_very_weak_5_20_ne std repo=0.074475 excel=0.07
+  eb_wse_very_weak_5_20_snr mean repo=0.5956 excel=0.6
+  eb_wse_very_weak_5_20_snr std repo=0.6963 excel=0.7
+  eb_wse_weak_20_40_ne mean repo=0.560692 excel=0.56
+  eb_wse_weak_20_40_ne std repo=0.013453 excel=0.01
+  eb_wse_weak_20_40_snr mean repo=5.0339 excel=5.03
+  eb_wse_weak_20_40_snr std repo=0.2116 excel=0.21
+  fb_fre_high_ne mean repo=0.143779 excel=0.14
+  fb_fre_high_ne std repo=0.004492 excel=0.0
+  fb_fre_high_snr mean repo=16.8836 excel=16.88
+  fb_fre_high_snr std repo=0.2674 excel=0.27
+  fb_fre_low_ne mean repo=0.217884 excel=0.22
+  fb_fre_low_ne std repo=0.004291 excel=0.0
+  fb_fre_low_snr mean repo=13.2408 excel=13.24
+  fb_fre_low_snr std repo=0.1713 excel=0.17
+  fb_fre_mid_ne mean repo=0.159881 excel=0.16
+  fb_fre_mid_ne std repo=0.001322 excel=0.0
+  fb_fre_mid_snr mean repo=15.949 excel=15.95
+  fb_fre_mid_snr std repo=0.0679 excel=0.07
+  fb_fre_very_high_ne mean repo=0.217814 excel=0.22
+  fb_fre_very_high_ne std repo=0.002202 excel=0.0
+  fb_fre_very_high_snr mean repo=13.2565 excel=13.26
+  fb_fre_very_high_snr std repo=0.0889 excel=0.09
+
+=== Deblending T02 simp -> blending-noise-T02_simp (model unet-plusplus-blending-noise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=0.271258 excel=0.27
+  eb_wse_medium_40_70_ne std repo=0.001558 excel=0.0
+  eb_wse_medium_40_70_snr mean repo=11.3398 excel=11.34
+  eb_wse_medium_40_70_snr std repo=0.0526 excel=0.05
+  eb_wse_strong_70_100_ne mean repo=0.106809 excel=0.11
+  eb_wse_strong_70_100_ne std repo=0.002691 excel=0.0
+  eb_wse_strong_70_100_snr mean repo=19.4605 excel=19.46
+  eb_wse_strong_70_100_snr std repo=0.2206 excel=0.22
+  eb_wse_very_weak_5_20_ne mean repo=0.592957 excel=0.59
+  eb_wse_very_weak_5_20_ne std repo=0.064839 excel=0.06
+  eb_wse_very_weak_5_20_snr mean repo=4.6225 excel=4.62
+  eb_wse_very_weak_5_20_snr std repo=0.9836 excel=0.98
+  eb_wse_weak_20_40_ne mean repo=0.39295 excel=0.39
+  eb_wse_weak_20_40_ne std repo=0.019655 excel=0.02
+  eb_wse_weak_20_40_snr std repo=0.4407 excel=0.44
+  fb_fre_high_ne mean repo=0.102302 excel=0.1
+  fb_fre_high_ne std repo=0.003632 excel=0.0
+  fb_fre_high_snr mean repo=19.8414 excel=19.84
+  fb_fre_high_snr std repo=0.3107 excel=0.31
+  fb_fre_low_ne mean repo=0.168415 excel=0.17
+  fb_fre_low_ne std repo=0.004631 excel=0.0
+  fb_fre_low_snr mean repo=15.4805 excel=15.48
+  fb_fre_low_snr std repo=0.2381 excel=0.24
+  fb_fre_mid_ne mean repo=0.116446 excel=0.12
+  fb_fre_mid_ne std repo=0.002148 excel=0.0
+  fb_fre_mid_snr mean repo=18.7137 excel=18.71
+  fb_fre_mid_snr std repo=0.1657 excel=0.17
+  fb_fre_very_high_ne mean repo=0.159941 excel=0.16
+  fb_fre_very_high_ne std repo=0.001205 excel=0.0
+  fb_fre_very_high_snr mean repo=15.9347 excel=15.93
+  fb_fre_very_high_snr std repo=0.0641 excel=0.06
+
+=== Deblending T02 comp -> blending-noise-T02_comp (model unet-plusplus-blending-noise) ===
+missing:
+diffs:
+  eb_wse_medium_40_70_ne mean repo=0.444732 excel=0.44
+  eb_wse_medium_40_70_ne std repo=0.012046 excel=0.01
+  eb_wse_medium_40_70_snr mean repo=7.0443 excel=7.04
+  eb_wse_medium_40_70_snr std repo=0.2349 excel=0.23
+  eb_wse_strong_70_100_ne mean repo=0.160543 excel=0.16
+  eb_wse_strong_70_100_ne std repo=0.005032 excel=0.01
+  eb_wse_strong_70_100_snr mean repo=15.9006 excel=15.9
+  eb_wse_strong_70_100_snr std repo=0.2719 excel=0.27
+  eb_wse_very_weak_5_20_ne mean repo=0.935775 excel=0.94
+  eb_wse_very_weak_5_20_ne std repo=0.065182 excel=0.07
+  eb_wse_very_weak_5_20_snr mean repo=0.603 excel=0.6
+  eb_wse_very_weak_5_20_snr std repo=0.5927 excel=0.59
+  eb_wse_weak_20_40_ne mean repo=0.677899 excel=0.68
+  eb_wse_weak_20_40_ne std repo=0.024309 excel=0.02
+  eb_wse_weak_20_40_snr mean repo=3.3839 excel=3.38
+  eb_wse_weak_20_40_snr std repo=0.3072 excel=0.31
+  fb_fre_high_ne mean repo=0.162277 excel=0.16
+  fb_fre_high_ne std repo=0.004542 excel=0.0
+  fb_fre_high_snr mean repo=15.811 excel=15.81
+  fb_fre_high_snr std repo=0.2436 excel=0.24
+  fb_fre_low_ne mean repo=0.254377 excel=0.25
+  fb_fre_low_ne std repo=0.00898 excel=0.01
+  fb_fre_low_snr mean repo=11.8972 excel=11.9
+  fb_fre_low_snr std repo=0.3099 excel=0.31
+  fb_fre_mid_ne mean repo=0.173309 excel=0.17
+  fb_fre_mid_ne std repo=0.005015 excel=0.01
+  fb_fre_mid_snr mean repo=15.2444 excel=15.24
+  fb_fre_mid_snr std repo=0.251 excel=0.25
+  fb_fre_very_high_ne mean repo=0.248085 excel=0.25
+  fb_fre_very_high_ne std repo=0.006049 excel=0.01
+  fb_fre_very_high_snr mean repo=12.129 excel=12.13
+  fb_fre_very_high_snr std repo=0.2107 excel=0.21

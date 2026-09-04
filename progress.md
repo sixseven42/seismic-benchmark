@@ -1,5 +1,16 @@
 # Session Progress
 
+## 2026-09-04 — Fill missing binned metrics for UNet++ SEGC3 random-noise results
+- Checked `batch_evaluation_unet_plusplus.xlsx` and `unet_plusplus_model.json`.
+- Confirmed the Excel contains all 22 valid metrics (6 core + 16 binned NE/SNR) for every UNet++ sheet, including SEGC3 random noise.
+- The repo had only the 6 core metrics for `zhou2018unet_plusplus_denoise` on the 6 SEGC3 random-noise benchmarks; the 16 binned metrics were missing.
+- Added 96 missing binned metric mean/std values from the Excel (`UNet-Plus` row) to:
+  - `segc3-random-noise-gaussian-snrneg5`, `snr0`, `snr5`
+  - `segc3-random-noise-poisson-snrneg5`, `snr0`, `snr5`
+- Left existing core metrics unchanged to preserve their precision.
+- Created `scripts/fill_unetpp_segc3_binned.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-03 — Integrate json0903.rar results
 - Extracted `json0903.rar` and inspected the four task folders:
   - `blending_noise_suppression`, `blending_noise_suppression_avo`
