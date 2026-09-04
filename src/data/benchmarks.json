@@ -281,7 +281,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 13,
+    "model_count": 12,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -330,7 +330,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 13,
+    "model_count": 12,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -379,7 +379,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 13,
+    "model_count": 12,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -428,7 +428,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 12,
+    "model_count": 11,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -477,7 +477,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 12,
+    "model_count": 11,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",
@@ -526,7 +526,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/C3",
     "download_url": "https://wiki.seg.org/wiki/C3",
-    "model_count": 12,
+    "model_count": 11,
     "group_name": "SEGC3 Random Noise",
     "gallery": [
       "datasets/segc3-random-raw.png",

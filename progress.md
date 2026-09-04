@@ -29,6 +29,18 @@
 - Created `scripts/integrate_interp_field_0903.py` for reproducibility.
 - Verified `npm run build` passes.
 
+## 2026-09-04 — Remove duplicate UNet++ random-noise models
+- Identified duplicate models added by `json0903.rar`:
+  - `unet-plusplus-random-noise`
+  - `unet-plusplus-random-noise-avo`
+- Migrated their results to the canonical `zhou2018unet_plusplus_denoise` model:
+  - Replaced 6 existing SEGC3 Gaussian results with the newer values.
+  - Added 6 new results for SEGC3 Poisson and AVO synthetic random-noise benchmarks.
+- Removed the 2 duplicate model entries.
+- Recalculated `model_count` for all `random_noise_suppression` benchmarks.
+- Created `scripts/remove_unet_plusplus_duplicates.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-03 — Remove PConv interpolation results
 - Removed the `pan2020_pconv_unet_interpolation` model from `src/data/models.json`.
 - Deleted 3 interpolation result entries with that `model_id`.
