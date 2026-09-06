@@ -1,5 +1,12 @@
 # Session Progress
 
+## 2026-09-06 — Remove Transformer v9 models and results
+- Removed models `gated_transformer_v9` and `gated_transformer_v9_interpolation`.
+- Deleted 21 result entries across the SEGC3 and Mobile AVO interpolation benchmarks (7 Mobile AVO + 7 SEGC3 for `_interpolation`, 7 Mobile AVO for `gated_transformer_v9`).
+- Recalculated `model_count` for the 14 affected interpolation benchmarks.
+- Created `scripts/remove_transformer_v9.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-06 — Unify DDPM / cDDPM naming to cDDPM
 - Renamed 5 DDPM-related models to use the `cDDPM` display name and `cddpm-*` IDs:
   - `conditional-ddpm-groundroll` → `cddpm-groundroll`

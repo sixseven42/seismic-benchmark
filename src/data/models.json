@@ -840,24 +840,6 @@
     "parameters_m": 32.44
   },
   {
-    "id": "gated_transformer_v9",
-    "name": "Gated Transformer v9",
-    "authors": "Unknown",
-    "year": 2026,
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "paper_url": "",
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/gated_transformer_v9.py",
-    "weights_url": null,
-    "org": "Unknown",
-    "emoji": "🔧",
-    "description": "Gated Transformer v9 for seismic interpolation.",
-    "is_open_source": true,
-    "parameters_m": 113.68
-  },
-  {
     "id": "li2022_caunet",
     "name": "CA-Unet",
     "authors": "Li et al.",
@@ -946,24 +928,6 @@
     "weights_url": null,
     "is_open_source": true,
     "parameters_m": 9.05
-  },
-  {
-    "id": "gated_transformer_v9_interpolation",
-    "name": "Gated Transformer v9",
-    "authors": "Unknown",
-    "org": "Unknown",
-    "year": 2026,
-    "emoji": "🔧",
-    "type": "deep_learning",
-    "tasks": [
-      "interpolation"
-    ],
-    "description": "Gated Transformer v9 for seismic interpolation.",
-    "paper_url": null,
-    "code_url": "https://github.com/1eyan/seismic-benchmark-code_interp/blob/main/model/interpolation/gated_transformer_v9.py",
-    "weights_url": null,
-    "is_open_source": true,
-    "parameters_m": 113.68
   },
   {
     "id": "li2022_caunet_interpolation",
