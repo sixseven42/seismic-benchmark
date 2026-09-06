@@ -1233,7 +1233,8 @@
     ],
     "citation": "GeoBrain first-break picking release",
     "download_url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-dataset",
-    "model_count": 10
+    "model_count": 10,
+    "group_name": "First-Break Picking"
   },
   {
     "id": "fbp-brunswick-valid",
@@ -1267,7 +1268,8 @@
     "gallery": [
       "datasets/fbp-brunswick-raw.png",
       "datasets/fbp-brunswick-mask.png"
-    ]
+    ],
+    "group_name": "First-Break Picking"
   },
   {
     "id": "fbp-dongbei",
@@ -1302,7 +1304,8 @@
     "gallery": [
       "datasets/fbp-dongbei-raw.png",
       "datasets/fbp-dongbei-mask.png"
-    ]
+    ],
+    "group_name": "First-Break Picking"
   },
   {
     "id": "fbp-halfmile-valid",
@@ -1336,7 +1339,8 @@
     "gallery": [
       "datasets/fbp-halfmile-raw.png",
       "datasets/fbp-halfmile-mask.png"
-    ]
+    ],
+    "group_name": "First-Break Picking"
   },
   {
     "id": "fbp-lalor-valid",
@@ -1370,7 +1374,8 @@
     "gallery": [
       "datasets/fbp-lalor-raw.png",
       "datasets/fbp-lalor-mask.png"
-    ]
+    ],
+    "group_name": "First-Break Picking"
   },
   {
     "id": "segc3-interp-random30",
@@ -1486,7 +1491,23 @@
       "ssim",
       "mae",
       "mse",
-      "rmse"
+      "rmse",
+      "eb_wse_medium_40_70_ne",
+      "eb_wse_medium_40_70_snr",
+      "eb_wse_strong_70_100_ne",
+      "eb_wse_strong_70_100_snr",
+      "eb_wse_very_weak_5_20_ne",
+      "eb_wse_very_weak_5_20_snr",
+      "eb_wse_weak_20_40_ne",
+      "eb_wse_weak_20_40_snr",
+      "fb_fre_high_ne",
+      "fb_fre_high_snr",
+      "fb_fre_low_ne",
+      "fb_fre_low_snr",
+      "fb_fre_mid_ne",
+      "fb_fre_mid_snr",
+      "fb_fre_very_high_ne",
+      "fb_fre_very_high_snr"
     ],
     "tags": [
       "SEG C3",

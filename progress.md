@@ -408,3 +408,16 @@
 - 同步更新历史集成脚本的 ID 映射：`integrate_json0824_random_deblending.py`、`integrate_json0903.py`（BASE_MAP + 删除 blending 特判分支）、`merge-random-noise.mjs`。
 - 保留未改（刻意）：引用文献风格的 ID（`zhou2018unet_plusplus_denoise`、`li2022_caunet_interpolation`、`pu2024hu_net_first_arrival_accuracy` 等）以及其中可能引用的外部 weights_url 路径；`-L` 后缀中的大写 L 是既定约定。
 - Verified: no duplicate model IDs (101 models), no remaining underscore IDs outside citation-style ones; `npm run build` passes.
+
+## 全面数据审计 (2026-09-06)
+- 审计脚本 `scripts/audit_data.py`：13 项检查（引用完整性、重复条目、model_count、同名/相似名、孤儿模型、tasks 一致性、分组覆盖矩阵、指标完整性、命名规范、parameters_m）。
+- 健康项：无悬空引用、无重复结果条目、model_count 全部一致、无孤儿模型、tasks 与实际结果一致、名称无特殊字符、parameters_m 无异常。
+- 已修复（`scripts/fix_audit_findings.py`）：
+  - 5 个 `fbp-*` benchmark 补 group_name "First-Break Picking"（原无组，网站分组缺失）。
+  - `segc3-interp-random70` metrics 声明 6 → 22（结果含 16 个 binned 指标但声明遗漏）。
+- 确认为源头数据缺失（非集成遗漏）：
+  - `cbdrdn-random-noise` 缺 poisson 3 个 benchmark：json0903.rar 的 poisson sheet 无 cbdrdn 行（gaussian sheet 有）。
+  - `segc3/mobile-avo-interp-random70` 缺 5 个论文模型、`segc3-interp-uniform75` 缺 unpn 两模型：czt0903 zip 的 xlsx 无对应行。
+  - 插值任务经典模型缺 mae/rmse：source json（interpolation_json/avo_interpolation_json.zip）本来就不含这两个指标；论文模型（xlsx 来源）有。
+- fbp 组结果指标（mae/rmse/hit_rate/f1）与声明完全匹配，无问题。
+- `npm run build` 通过，commit 并推送。
