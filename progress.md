@@ -1,5 +1,18 @@
 # Session Progress
 
+## 2026-09-06 — Remove duplicate Mobile AVO interpolation models
+- Identified 4 duplicate model pairs with the same display name on Mobile AVO interpolation benchmarks:
+  - `li2022_caunet` vs `li2022_caunet_interpolation`
+  - `liu2022_wrdl` vs `liu2022_wrdl_interpolation`
+  - `park2022_cfunet` vs `park2022_cfunet_interpolation`
+  - `yu2022_anet` vs `yu2022_anet_interpolation`
+- Compared mean SNR on the 7 Mobile AVO interpolation benchmarks; the `*_interpolation` variants were better in every pair (e.g., CA-Unet 13.64 vs 9.16, WRDL 13.46 vs 12.50, CFunet 11.00 vs 9.31, ANet 10.30 vs 6.40).
+- The `*_interpolation` variants also cover the SEGC3 interpolation benchmarks, while the base IDs only had Mobile AVO results.
+- Removed the 4 base models and their 28 Mobile AVO result entries; kept the `*_interpolation` variants.
+- Recalculated `model_count` for the 7 affected Mobile AVO interpolation benchmarks.
+- Created `scripts/remove_duplicate_mobile_avo_interp.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-06 — Remove Transformer v9 models and results
 - Removed models `gated_transformer_v9` and `gated_transformer_v9_interpolation`.
 - Deleted 21 result entries across the SEGC3 and Mobile AVO interpolation benchmarks (7 Mobile AVO + 7 SEGC3 for `_interpolation`, 7 Mobile AVO for `gated_transformer_v9`).
