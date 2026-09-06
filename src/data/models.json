@@ -111,8 +111,8 @@
     "parameters_m": 1.49
   },
   {
-    "id": "conditional-ddpm-groundroll",
-    "name": "Conditional DDPM",
+    "id": "cddpm-groundroll",
+    "name": "cDDPM",
     "authors": "Li et al.",
     "org": "China University of Petroleum (East China)",
     "year": 2024,
@@ -129,8 +129,8 @@
     "parameters_m": 50.61
   },
   {
-    "id": "ddpm-random-noise",
-    "name": "DDPM",
+    "id": "cddpm-random-noise",
+    "name": "cDDPM",
     "authors": "Ho et al.",
     "org": "UC Berkeley",
     "year": 2020,
@@ -139,7 +139,7 @@
     "tasks": [
       "random_noise_suppression"
     ],
-    "description": "Standard DDPM baseline for synthetic random-noise suppression.",
+    "description": "Standard cDDPM baseline for synthetic random-noise suppression.",
     "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/ddpm",
@@ -1484,8 +1484,8 @@
     "parameters_m": 7.85
   },
   {
-    "id": "ddpm-blending-noise-avo",
-    "name": "DDPM",
+    "id": "cddpm-blending-noise-avo",
+    "name": "cDDPM",
     "authors": "Ho et al.",
     "org": "UC Berkeley",
     "year": 2020,
@@ -1494,7 +1494,7 @@
     "tasks": [
       "deblending"
     ],
-    "description": "DDPM baseline for blending noise suppression avo.",
+    "description": "cDDPM baseline for blending noise suppression avo.",
     "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/ddpm.py",
     "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/ddpm",
@@ -1644,8 +1644,8 @@
     "parameters_m": 9.05
   },
   {
-    "id": "ddpm-blending-noise",
-    "name": "DDPM",
+    "id": "cddpm-blending-noise",
+    "name": "cDDPM",
     "authors": "Ho et al.",
     "org": "UC Berkeley",
     "year": 2020,
@@ -1654,7 +1654,7 @@
     "tasks": [
       "deblending"
     ],
-    "description": "DDPM baseline for common-receiver blending-noise suppression.",
+    "description": "cDDPM baseline for common-receiver blending-noise suppression.",
     "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/ddpm.py",
     "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/ddpm",
@@ -1824,8 +1824,8 @@
     "parameters_m": 7.85
   },
   {
-    "id": "ddpm-random-noise-avo",
-    "name": "DDPM",
+    "id": "cddpm-random-noise-avo",
+    "name": "cDDPM",
     "authors": "Ho et al.",
     "org": "UC Berkeley",
     "year": 2020,
@@ -1834,7 +1834,7 @@
     "tasks": [
       "random_noise_suppression"
     ],
-    "description": "DDPM baseline for AVO synthetic random-noise suppression.",
+    "description": "cDDPM baseline for AVO synthetic random-noise suppression.",
     "paper_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ddpm.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/ddpm",

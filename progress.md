@@ -1,5 +1,17 @@
 # Session Progress
 
+## 2026-09-06 — Unify DDPM / cDDPM naming to cDDPM
+- Renamed 5 DDPM-related models to use the `cDDPM` display name and `cddpm-*` IDs:
+  - `conditional-ddpm-groundroll` → `cddpm-groundroll`
+  - `ddpm-random-noise` → `cddpm-random-noise`
+  - `ddpm-blending-noise` → `cddpm-blending-noise`
+  - `ddpm-blending-noise-avo` → `cddpm-blending-noise-avo`
+  - `ddpm-random-noise-avo` → `cddpm-random-noise-avo`
+- Updated all `model_id` references in `src/data/results.json` and recalculated `model_count`.
+- Updated integration script mappings (`integrate_groundroll_202507.py`, `integrate_json0824_random_deblending.py`, `integrate_json0903.py`, `backfill_std.py`) to point to the new IDs.
+- Created `scripts/rename_ddpm_to_cddpm.py` for reproducibility.
+- Verified `npm run build` passes.
+
 ## 2026-09-04 — Integrate latest SEGC3 ground-roll results from `batch_evaluation_all_groundroll.xlsx`
 - Parsed 5 sheets: `Noise 1.0` → `segc3-groundroll-noise1`, `Noise 3.0` → `noise3`, ..., `Noise 9.0` → `noise9`.
 - Mapped 12 methods to repo ground-roll model IDs (e.g., `UNet-Plus` → `unet-L-groundroll`, `Attention UNet-Plus` → `attention-unet-L-groundroll`).

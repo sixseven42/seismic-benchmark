@@ -96,7 +96,7 @@ BASE_MAP = {
     "fbresnet": "fbresnet",
     "q_unet": "q-unet",
     "unet_plusplus": "unet-plusplus",
-    "ddpm": "ddpm",
+    "ddpm": "cddpm",
     "cbdrdn": "cbdrdn",
 }
 

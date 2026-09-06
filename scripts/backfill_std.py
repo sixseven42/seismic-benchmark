@@ -109,7 +109,7 @@ GROUND_ROLL_METHOD_MAP = {
     'SANet': 'sanet-groundroll',
     'Physics CNN': 'physics-cnn-groundroll',
     'Pix2Pix cGAN': 'pix2pix-cgan-groundroll',
-    'DDPM cDDPM': 'conditional-ddpm-groundroll',
+    'DDPM cDDPM': 'cddpm-groundroll',
 }
 
 GROUND_ROLL_SHEET_MAP = {

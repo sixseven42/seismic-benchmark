@@ -555,7 +555,7 @@
     }
   },
   {
-    "model_id": "conditional-ddpm-groundroll",
+    "model_id": "cddpm-groundroll",
     "benchmark_id": "segc3-groundroll-noise1",
     "scores": {
       "snr": 18.3006,
@@ -1215,7 +1215,7 @@
     }
   },
   {
-    "model_id": "conditional-ddpm-groundroll",
+    "model_id": "cddpm-groundroll",
     "benchmark_id": "segc3-groundroll-noise3",
     "scores": {
       "snr": 17.7307,
@@ -1875,7 +1875,7 @@
     }
   },
   {
-    "model_id": "conditional-ddpm-groundroll",
+    "model_id": "cddpm-groundroll",
     "benchmark_id": "segc3-groundroll-noise5",
     "scores": {
       "snr": 17.6531,
@@ -2535,7 +2535,7 @@
     }
   },
   {
-    "model_id": "conditional-ddpm-groundroll",
+    "model_id": "cddpm-groundroll",
     "benchmark_id": "segc3-groundroll-noise7",
     "scores": {
       "snr": 17.6376,
@@ -3195,7 +3195,7 @@
     }
   },
   {
-    "model_id": "conditional-ddpm-groundroll",
+    "model_id": "cddpm-groundroll",
     "benchmark_id": "segc3-groundroll-noise9",
     "scores": {
       "snr": 17.7251,
@@ -5283,7 +5283,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snr0",
     "scores": {
       "snr": 12.3782,
@@ -5833,7 +5833,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snr5",
     "scores": {
       "snr": 14.3109,
@@ -6383,7 +6383,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "segc3-random-noise-gaussian-snrneg5",
     "scores": {
       "snr": 10.4113,
@@ -6878,7 +6878,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "segc3-random-noise-poisson-snr0",
     "scores": {
       "snr": 12.3655,
@@ -7373,7 +7373,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "segc3-random-noise-poisson-snr5",
     "scores": {
       "snr": 14.3553,
@@ -7868,7 +7868,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "segc3-random-noise-poisson-snrneg5",
     "scores": {
       "snr": 10.4292,
@@ -20339,7 +20339,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-blending-noise-avo",
+    "model_id": "cddpm-blending-noise-avo",
     "benchmark_id": "blending-noise-avo-T03_avo_mod",
     "scores": {
       "snr": 17.6126,
@@ -20834,7 +20834,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "mobile-avo-random-noise-gaussian-snrneg5",
     "scores": {
       "snr": 7.164833,
@@ -21203,7 +21203,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "mobile-avo-random-noise-gaussian-snr0",
     "scores": {
       "snr": 7.352,
@@ -21572,7 +21572,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "mobile-avo-random-noise-gaussian-snr5",
     "scores": {
       "snr": 7.685,
@@ -21941,7 +21941,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "mobile-avo-random-noise-poisson-snrneg5",
     "scores": {
       "snr": 6.870133,
@@ -22310,7 +22310,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "mobile-avo-random-noise-poisson-snr0",
     "scores": {
       "snr": 7.052733,
@@ -22679,7 +22679,7 @@
     }
   },
   {
-    "model_id": "ddpm-random-noise",
+    "model_id": "cddpm-random-noise",
     "benchmark_id": "mobile-avo-random-noise-poisson-snr5",
     "scores": {
       "snr": 7.7837,
@@ -24368,7 +24368,7 @@
     "date_added": "2026-08-26"
   },
   {
-    "model_id": "ddpm-blending-noise",
+    "model_id": "cddpm-blending-noise",
     "benchmark_id": "blending-noise-T02_mod",
     "scores": {
       "snr": 17.241,
@@ -24643,7 +24643,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-blending-noise",
+    "model_id": "cddpm-blending-noise",
     "benchmark_id": "blending-noise-T02_comp",
     "scores": {
       "snr": 16.3483,
@@ -24918,7 +24918,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-blending-noise",
+    "model_id": "cddpm-blending-noise",
     "benchmark_id": "blending-noise-T02_simp",
     "scores": {
       "snr": 19.2691,
@@ -25853,7 +25853,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-random-noise-avo",
+    "model_id": "cddpm-random-noise-avo",
     "benchmark_id": "random-noise-avo-gaussian-snrneg5",
     "scores": {
       "snr": 7.1648,
@@ -26403,7 +26403,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-random-noise-avo",
+    "model_id": "cddpm-random-noise-avo",
     "benchmark_id": "random-noise-avo-gaussian-snr0",
     "scores": {
       "snr": 7.352,
@@ -26953,7 +26953,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-random-noise-avo",
+    "model_id": "cddpm-random-noise-avo",
     "benchmark_id": "random-noise-avo-gaussian-snr5",
     "scores": {
       "snr": 7.685,
@@ -27503,7 +27503,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-random-noise-avo",
+    "model_id": "cddpm-random-noise-avo",
     "benchmark_id": "random-noise-avo-poisson-snrneg5",
     "scores": {
       "snr": 6.8701,
@@ -28053,7 +28053,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-random-noise-avo",
+    "model_id": "cddpm-random-noise-avo",
     "benchmark_id": "random-noise-avo-poisson-snr0",
     "scores": {
       "snr": 7.0527,
@@ -28603,7 +28603,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "model_id": "ddpm-random-noise-avo",
+    "model_id": "cddpm-random-noise-avo",
     "benchmark_id": "random-noise-avo-poisson-snr5",
     "scores": {
       "snr": 7.7837,

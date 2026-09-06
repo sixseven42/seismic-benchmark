@@ -33,7 +33,7 @@ SHEET_MAP = {
 METHOD_MAP = {
     "Attention UNet": "attention-unet-groundroll",
     "Attention UNet-Plus": "attention-unet-L-groundroll",
-    "DDPM cDDPM": "conditional-ddpm-groundroll",
+    "DDPM cDDPM": "cddpm-groundroll",
     "DnCNN": "dncnn-groundroll",
     "Enhanced Atten-UNet": "enhanced-atten-unet-groundroll",
     "Physics CNN": "physics-cnn-groundroll",
