@@ -421,3 +421,9 @@
   - 插值任务经典模型缺 mae/rmse：source json（interpolation_json/avo_interpolation_json.zip）本来就不含这两个指标；论文模型（xlsx 来源）有。
 - fbp 组结果指标（mae/rmse/hit_rate/f1）与声明完全匹配，无问题。
 - `npm run build` 通过，commit 并推送。
+
+## Mobile AVO random70 方差回填 (2026-09-06)
+- 用户反馈：70% 随机缺失（mobile-avo-interp-random70）网站上没有 ± 方差。
+- 根因：backfill_std.py 运行时仓库 benchmark 还叫 `mobile-avo-interp-random75`，脚本映射目标是 `random70`，key 不匹配被静默跳过；commit 9ba5d30 随后才把 random75 改名为 random70。
+- 修复：`scripts/backfill_random70_std.py` 从 avo_interpolation_json.zip 回填 9 条 scores_std（snr_std 与 batch_evaluation_avo.xlsx 核对一致）。
+- Verified `npm run build` passes.
