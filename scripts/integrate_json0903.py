@@ -87,14 +87,14 @@ COL_TO_METRIC = {
 
 BASE_MAP = {
     "unet": "unet",
-    "unet_L": "unet_L",
+    "unet_L": "unet-L",
     "dncnn": "dncnn",
     "atten_unet": "attention-unet",
     "res_unet": "res-unet",
     "SCRN": "scrn",
     "ffcnn": "ffcnn",
     "fbresnet": "fbresnet",
-    "q_unet": "q-unet",
+    "q_unet": "qunet",
     "unet_plusplus": "unet-plusplus",
     "ddpm": "cddpm",
     "cbdrdn": "cbdrdn",
@@ -108,12 +108,7 @@ def source_id_to_repo_id(source_id: str, task: str) -> str:
     else:
         base = source_id
 
-    if base == "res_unet" and task.startswith("blending"):
-        repo_base = "res_unet"
-    elif base == "q_unet" and task.startswith("blending"):
-        repo_base = "q_unet"
-    else:
-        repo_base = BASE_MAP.get(base, base.lower())
+    repo_base = BASE_MAP.get(base, base.lower())
     return f"{repo_base}{suffix}"
 
 

@@ -393,3 +393,18 @@
   - metrics include core 6 + 16 binned keys
   - `model_count` recalculated from `results.json`
 - Verified `npm run build` passes.
+
+## QUNet naming unification + ID confusion audit (2026-09-06)
+- User request: q_unet 和 QUNet 是同一种模型，统一为 QUNet，并检查其他类似混淆。
+- Audit findings (4 variants of QUNet scattered across random-noise / deblending / AVO results):
+  - IDs: `q-unet-random-noise`, `q-unet-random-noise-avo`, `q_unet-blending-noise`, `q_unet-blending-noise-avo`
+  - Names: two were "QUNet", two were "q_unet"
+- Similar confusions found and fixed (14 models renamed total, `scripts/normalize_confused_model_ids.py`):
+  - QUNet: all 4 IDs → `qunet-*`, name统一为 "QUNet", description 中 q_unet → QUNet
+  - `unet_L-*` (4 个) → `unet-L-*`（与既有 -L 大参数量命名一致）
+  - `res_unet-blending-*` (2 个) → `res-unet-blending-*`
+  - `resunet-*` interpolation 系列 (5 个, e.g. `avo-resunet-interpolation`) → `res-unet-*`
+- All `results.json` model_id 引用同步更新，所有 benchmark `model_count` 重新计算。
+- 同步更新历史集成脚本的 ID 映射：`integrate_json0824_random_deblending.py`、`integrate_json0903.py`（BASE_MAP + 删除 blending 特判分支）、`merge-random-noise.mjs`。
+- 保留未改（刻意）：引用文献风格的 ID（`zhou2018unet_plusplus_denoise`、`li2022_caunet_interpolation`、`pu2024hu_net_first_arrival_accuracy` 等）以及其中可能引用的外部 weights_url 路径；`-L` 后缀中的大写 L 是既定约定。
+- Verified: no duplicate model IDs (101 models), no remaining underscore IDs outside citation-style ones; `npm run build` passes.

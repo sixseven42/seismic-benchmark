@@ -348,7 +348,7 @@
     "parameters_m": 71.55
   },
   {
-    "id": "q-unet-random-noise",
+    "id": "qunet-random-noise",
     "name": "QUNet",
     "authors": "Wang et al.",
     "org": "Beijing Jiaotong University",
@@ -984,7 +984,7 @@
     "parameters_m": 0.56
   },
   {
-    "id": "resunet-L-interpolation",
+    "id": "res-unet-L-interpolation",
     "name": "ResUNet-L",
     "authors": "He et al.",
     "org": "Microsoft Research",
@@ -1002,7 +1002,7 @@
     "parameters_m": 32.44
   },
   {
-    "id": "resunet-unpn-interpolation",
+    "id": "res-unet-unpn-interpolation",
     "name": "ResUNet(UNPN)",
     "authors": "He et al.",
     "org": "Microsoft Research",
@@ -1146,7 +1146,7 @@
     "parameters_m": 0.14
   },
   {
-    "id": "avo-resunet-L-interpolation",
+    "id": "avo-res-unet-L-interpolation",
     "name": "ResUNet-L",
     "authors": "He et al.",
     "org": "Microsoft Research",
@@ -1164,7 +1164,7 @@
     "parameters_m": 32.44
   },
   {
-    "id": "avo-resunet-interpolation",
+    "id": "avo-res-unet-interpolation",
     "name": "ResUNet",
     "authors": "He et al.",
     "org": "Microsoft Research",
@@ -1276,7 +1276,7 @@
     "parameters_m": 0.56
   },
   {
-    "id": "res_unet-blending-noise",
+    "id": "res-unet-blending-noise",
     "name": "ResUNet",
     "authors": "Diakogiannis et al.",
     "org": "CSIRO, Floreat WA",
@@ -1316,7 +1316,7 @@
     "parameters_m": 7.76
   },
   {
-    "id": "unet_L-blending-noise",
+    "id": "unet-L-blending-noise",
     "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",
@@ -1416,7 +1416,7 @@
     "parameters_m": 0.56
   },
   {
-    "id": "q_unet-blending-noise-avo",
+    "id": "qunet-blending-noise-avo",
     "name": "QUNet",
     "authors": "Wang et al.",
     "org": "Beijing Jiaotong University",
@@ -1436,7 +1436,7 @@
     "parameters_m": 21.88
   },
   {
-    "id": "res_unet-blending-noise-avo",
+    "id": "res-unet-blending-noise-avo",
     "name": "ResUNet",
     "authors": "Diakogiannis et al.",
     "org": "CSIRO, Floreat WA",
@@ -1496,7 +1496,7 @@
     "parameters_m": 7.76
   },
   {
-    "id": "unet_L-blending-noise-avo",
+    "id": "unet-L-blending-noise-avo",
     "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",
@@ -1596,8 +1596,8 @@
     "parameters_m": 0.56
   },
   {
-    "id": "q_unet-blending-noise",
-    "name": "q_unet",
+    "id": "qunet-blending-noise",
+    "name": "QUNet",
     "authors": "Wang et al.",
     "org": "Beijing Jiaotong University",
     "year": 2025,
@@ -1606,7 +1606,7 @@
     "tasks": [
       "deblending"
     ],
-    "description": "q_unet baseline for common-receiver blending-noise suppression.",
+    "description": "QUNet baseline for common-receiver blending-noise suppression.",
     "paper_url": "https://doi.org/10.1190/geo2024-0019.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/q_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/q_unet",
@@ -1676,7 +1676,7 @@
     "parameters_m": 0.56
   },
   {
-    "id": "unet_L-random-noise",
+    "id": "unet-L-random-noise",
     "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",
@@ -1796,8 +1796,8 @@
     "parameters_m": 0.56
   },
   {
-    "id": "q-unet-random-noise-avo",
-    "name": "q_unet",
+    "id": "qunet-random-noise-avo",
+    "name": "QUNet",
     "authors": "Wang et al.",
     "org": "Beijing Jiaotong University",
     "year": 2025,
@@ -1806,7 +1806,7 @@
     "tasks": [
       "random_noise_suppression"
     ],
-    "description": "q_unet baseline for AVO synthetic random-noise suppression.",
+    "description": "QUNet baseline for AVO synthetic random-noise suppression.",
     "paper_url": "https://doi.org/10.1190/geo2024-0019.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/q_unet.py",
     "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/q_unet",
@@ -1876,7 +1876,7 @@
     "parameters_m": 7.76
   },
   {
-    "id": "unet_L-random-noise-avo",
+    "id": "unet-L-random-noise-avo",
     "name": "UNet-L",
     "authors": "Ronneberger et al.",
     "org": "University of Freiburg",

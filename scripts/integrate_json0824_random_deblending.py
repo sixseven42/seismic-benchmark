@@ -76,7 +76,7 @@ RANDOM_NOISE_METHOD_MAP = {
     "Attention UNet": "attention-unet-random-noise",
     "DDPM": "cddpm-random-noise",
     "SCRN": "scrn-random-noise",
-    "q_unet": "q-unet-random-noise",
+    "q_unet": "qunet-random-noise",
     "UNet++": "zhou2018unet_plusplus_denoise",
     "CBDRDN": "cbdrdn-random-noise",
     "FBResNet": "fbresnet-random-noise",
@@ -96,21 +96,21 @@ DEBLENDING_AVO_SHEETS = {
 DEBLENDING_SEGC3_METHOD_MAP = {
     "UNet": "unet-blending-noise",
     "DnCNN": "dncnn-blending-noise",
-    "ResUNet": "res_unet-blending-noise",
+    "ResUNet": "res-unet-blending-noise",
     "Attention UNet": "attention-unet-blending-noise",
-    "unet_L": "unet_L-blending-noise",
+    "unet_L": "unet-L-blending-noise",
     "UNet++": "unet-plusplus-blending-noise",
 }
 
 DEBLENDING_AVO_METHOD_MAP = {
     "UNet": "unet-blending-noise-avo",
     "DnCNN": "dncnn-blending-noise-avo",
-    "ResUNet": "res_unet-blending-noise-avo",
+    "ResUNet": "res-unet-blending-noise-avo",
     "Attention UNet": "attention-unet-blending-noise-avo",
     "DDPM": "cddpm-blending-noise-avo",
     "SCRN": "scrn-blending-noise-avo",
-    "unet_L": "unet_L-blending-noise-avo",
-    "q_unet": "q_unet-blending-noise-avo",
+    "unet_L": "unet-L-blending-noise-avo",
+    "q_unet": "qunet-blending-noise-avo",
     "UNet++": "unet-plusplus-blending-noise-avo",
 }
 

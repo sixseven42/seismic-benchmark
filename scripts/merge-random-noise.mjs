@@ -10,8 +10,8 @@ function readJson(path) {
 }
 
 function normalizeModelId(id) {
-  // Source model file uses q_unet-random-noise but project uses q-unet-random-noise
-  return id.replace(/^q_unet-/, 'q-unet-');
+  // Source model file uses q_unet-random-noise but project uses qunet-random-noise
+  return id.replace(/^q_unet-/, 'qunet-');
 }
 
 function cleanModel(model) {
