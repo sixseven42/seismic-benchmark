@@ -29,14 +29,12 @@ TASK_MAP = {
     "blending_noise_suppression": "deblending",
     "blending_noise_suppression_avo": "deblending",
     "random_noise_suppression": "random_noise_suppression",
-    "random_noise_suppression_avo": "random_noise_suppression",
 }
 
 SUFFIX_MAP = {
     "blending_noise_suppression": "-blending-noise",
     "blending_noise_suppression_avo": "-blending-noise-avo",
     "random_noise_suppression": "-random-noise",
-    "random_noise_suppression_avo": "-random-noise-avo",
 }
 
 CORE_METRICS = ["snr", "psnr", "ssim", "mae", "mse", "rmse"]
@@ -154,8 +152,6 @@ def benchmark_id_for_sheet(task: str, sheet: str) -> str:
     snr = snr_map.get(snr_part, snr_part.lower())
     if task == "random_noise_suppression":
         return f"segc3-random-noise-{noise_type}-{snr}"
-    if task == "random_noise_suppression_avo":
-        return f"random-noise-avo-{noise_type}-{snr}"
     raise ValueError(f"Unknown task {task}")
 
 
@@ -194,8 +190,6 @@ def parse_parameters(cell):
 def group_name_for_benchmark(benchmark_id: str) -> str:
     if benchmark_id.startswith("segc3-random-noise"):
         return "SEGC3 Random Noise"
-    if benchmark_id.startswith("random-noise-avo"):
-        return "AVO Random Noise"
     if benchmark_id.startswith("blending-noise-avo"):
         return "AVO Common-Receiver Deblending"
     if benchmark_id.startswith("blending-noise-T02"):
@@ -227,6 +221,9 @@ def main():
         if not task_dir.is_dir():
             continue
         src_task = task_dir.name
+        if src_task not in TASK_MAP:
+            # e.g. random_noise_suppression_avo (AVO Random Noise group was removed)
+            continue
         repo_task = TASK_MAP[src_task]
 
         # ---- models ----

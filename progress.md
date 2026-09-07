@@ -427,3 +427,11 @@
 - 根因：backfill_std.py 运行时仓库 benchmark 还叫 `mobile-avo-interp-random75`，脚本映射目标是 `random70`，key 不匹配被静默跳过；commit 9ba5d30 随后才把 random75 改名为 random70。
 - 修复：`scripts/backfill_random70_std.py` 从 avo_interpolation_json.zip 回填 9 条 scores_std（snr_std 与 batch_evaluation_avo.xlsx 核对一致）。
 - Verified `npm run build` passes.
+
+## 移除 AVO Random Noise 组 (2026-09-07)
+- 用户要求：随机噪声任务里 "AVO Random Noise" 与 "Mobile AVO Random Noise" 重复，只保留 Mobile AVO。
+- 删除 6 个 benchmark：`random-noise-avo-{gaussian,poisson}-snr{neg5,0,5}`。
+- 删除 66 条结果、10 个孤儿模型（`*-random-noise-avo` 变体：attention-unet/cddpm/dncnn/fbresnet/ffcnn/qunet/res-unet/scrn/unet/unet-L）。
+- `zhou2018unet_plusplus_denoise` 两组共用，保留。
+- 更新 `integrate_json0903.py`：移除 random_noise_suppression_avo 映射并跳过未映射任务目录，防止重跑时重建该组。
+- 剩余：91 models / 44 benchmarks / 510 results；`npm run build` 通过。
