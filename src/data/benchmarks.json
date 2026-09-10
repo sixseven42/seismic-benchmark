@@ -1282,47 +1282,6 @@
     "group_name": "First-Break Picking"
   },
   {
-    "id": "fbp-dongbei",
-    "name": "Dongbei First-Break Picking",
-    "dataset_name": "Dongbei",
-    "task": "first_arrival_picking",
-    "icon": "⏱️",
-    "description": "Single-dataset first-break picking benchmark on the Dongbei SEG-Y pair. The benchmark results and model weights are public, while the raw Dongbei SEG-Y data are private and are not provided as a public download.",
-    "data_source": "field",
-    "dimensions": "266,270 traces × 2,751 samples, 10 FFIDs",
-    "primary_metric": "mae",
-    "metrics": [
-      "mae",
-      "rmse",
-      "hit_rate_1px",
-      "hit_rate_3px",
-      "hit_rate_5px",
-      "hit_rate_7px",
-      "hit_rate_9px",
-      "f1",
-      "dice",
-      "iou",
-      "mbe",
-      "gather_coverage",
-      "rc_norm"
-    ],
-    "tags": [
-      "SEG-Y",
-      "First Break",
-      "Field",
-      "Dongbei",
-      "Private Data"
-    ],
-    "citation": "Private Dongbei first-break picking data; public benchmark results in GeoBrain first-break picking release",
-    "download_url": "",
-    "model_count": 10,
-    "gallery": [
-      "datasets/fbp-dongbei-raw.png",
-      "datasets/fbp-dongbei-mask.png"
-    ],
-    "group_name": "First-Break Picking"
-  },
-  {
     "id": "fbp-halfmile-valid",
     "name": "Halfmile First-Break Picking",
     "dataset_name": "Halfmile",

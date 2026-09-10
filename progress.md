@@ -467,3 +467,7 @@
 - 命名：q_unet→qunet-*（QUNet）、unet_plusplus→UNet++（随机噪声用 zhou2018unet_plusplus_denoise，去混叠用 unet-plusplus-blending-noise），均已正确
 - 删除 FFCNN：3 个模型（ffcnn-random-noise、ffcnn-blending-noise、ffcnn-blending-noise-avo）+ 10 条结果；segc3 随机噪声 12→11、去混叠 11→10 模型
 - 脚本：scripts/integrate_0909_randomnoise.py；审计通过，tsc 通过
+
+## 2026-09-10 删除初至拾取 Dongbei 实验
+- 删除 benchmark `fbp-dongbei` + 10 条结果（10 个模型均与其他 FAP benchmark 共享，无孤儿模型）
+- FAP benchmark 剩余：fbp-geomseg-all(Mixed)、fbp-brunswick-valid、fbp-halfmile-valid、fbp-lalor-valid
