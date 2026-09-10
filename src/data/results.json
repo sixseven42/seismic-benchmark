@@ -8326,17 +8326,17 @@
       "eb_wse_weak_20_40_ne": 9.44,
       "eb_wse_weak_20_40_snr": -18.76,
       "fb_fre_high_ne": 0.09,
-      "fb_fre_high_snr": 21.04,
+      "fb_fre_high_snr": 20.94,
       "fb_fre_low_ne": 0.08,
-      "fb_fre_low_snr": 22.11,
+      "fb_fre_low_snr": 22.08,
       "fb_fre_mid_ne": 0.08,
       "fb_fre_mid_snr": 22.08,
       "fb_fre_very_high_ne": 0.16,
-      "fb_fre_very_high_snr": 16.04
+      "fb_fre_very_high_snr": 15.8
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.8848,
       "psnr": 0.8848,
@@ -8355,11 +8355,11 @@
       "fb_fre_high_ne": 0.01,
       "fb_fre_high_snr": 0.94,
       "fb_fre_low_ne": 0.01,
-      "fb_fre_low_snr": 0.69,
+      "fb_fre_low_snr": 0.67,
       "fb_fre_mid_ne": 0.01,
-      "fb_fre_mid_snr": 0.91,
+      "fb_fre_mid_snr": 0.92,
       "fb_fre_very_high_ne": 0.02,
-      "fb_fre_very_high_snr": 0.88
+      "fb_fre_very_high_snr": 0.9
     }
   },
   {
@@ -8381,17 +8381,17 @@
       "eb_wse_weak_20_40_ne": 6.87,
       "eb_wse_weak_20_40_snr": -15.84,
       "fb_fre_high_ne": 0.08,
-      "fb_fre_high_snr": 22.77,
+      "fb_fre_high_snr": 22.71,
       "fb_fre_low_ne": 0.07,
-      "fb_fre_low_snr": 23.75,
+      "fb_fre_low_snr": 23.77,
       "fb_fre_mid_ne": 0.07,
-      "fb_fre_mid_snr": 23.26,
+      "fb_fre_mid_snr": 23.23,
       "fb_fre_very_high_ne": 0.12,
-      "fb_fre_very_high_snr": 18.74
+      "fb_fre_very_high_snr": 18.53
     },
     "paper_url": "https://arxiv.org/abs/1804.03999",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/atten_unet.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.4611,
       "psnr": 0.4612,
@@ -8408,13 +8408,13 @@
       "eb_wse_weak_20_40_ne": 0.2,
       "eb_wse_weak_20_40_snr": 0.25,
       "fb_fre_high_ne": 0.01,
-      "fb_fre_high_snr": 0.83,
+      "fb_fre_high_snr": 0.86,
       "fb_fre_low_ne": 0.0,
-      "fb_fre_low_snr": 0.55,
+      "fb_fre_low_snr": 0.54,
       "fb_fre_mid_ne": 0.0,
       "fb_fre_mid_snr": 0.54,
       "fb_fre_very_high_ne": 0.01,
-      "fb_fre_very_high_snr": 0.82
+      "fb_fre_very_high_snr": 0.83
     }
   },
   {
@@ -8436,17 +8436,17 @@
       "eb_wse_weak_20_40_ne": 18.3,
       "eb_wse_weak_20_40_snr": -25.1,
       "fb_fre_high_ne": 0.16,
-      "fb_fre_high_snr": 15.9,
-      "fb_fre_low_ne": 0.18,
-      "fb_fre_low_snr": 14.79,
+      "fb_fre_high_snr": 15.82,
+      "fb_fre_low_ne": 0.19,
+      "fb_fre_low_snr": 14.56,
       "fb_fre_mid_ne": 0.15,
-      "fb_fre_mid_snr": 16.67,
+      "fb_fre_mid_snr": 16.65,
       "fb_fre_very_high_ne": 0.26,
-      "fb_fre_very_high_snr": 11.88
+      "fb_fre_very_high_snr": 11.7
     },
     "paper_url": "https://doi.org/10.1109/TIP.2017.2662206",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dncnn.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.9794,
       "psnr": 0.9793,
@@ -8463,13 +8463,13 @@
       "eb_wse_weak_20_40_ne": 1.34,
       "eb_wse_weak_20_40_snr": 0.63,
       "fb_fre_high_ne": 0.02,
-      "fb_fre_high_snr": 0.87,
+      "fb_fre_high_snr": 0.86,
       "fb_fre_low_ne": 0.02,
       "fb_fre_low_snr": 1.07,
       "fb_fre_mid_ne": 0.02,
       "fb_fre_mid_snr": 1.08,
       "fb_fre_very_high_ne": 0.02,
-      "fb_fre_very_high_snr": 0.59
+      "fb_fre_very_high_snr": 0.58
     }
   },
   {
@@ -8491,17 +8491,17 @@
       "eb_wse_weak_20_40_ne": 10.21,
       "eb_wse_weak_20_40_snr": -19.13,
       "fb_fre_high_ne": 0.12,
-      "fb_fre_high_snr": 18.74,
+      "fb_fre_high_snr": 18.71,
       "fb_fre_low_ne": 0.11,
-      "fb_fre_low_snr": 19.28,
+      "fb_fre_low_snr": 19.18,
       "fb_fre_mid_ne": 0.11,
-      "fb_fre_mid_snr": 19.22,
+      "fb_fre_mid_snr": 19.21,
       "fb_fre_very_high_ne": 0.17,
-      "fb_fre_very_high_snr": 15.57
+      "fb_fre_very_high_snr": 15.36
     },
     "paper_url": "https://doi.org/10.1190/geo2021-0206.1",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/dnndat.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.4554,
       "psnr": 0.4554,
@@ -8518,13 +8518,13 @@
       "eb_wse_weak_20_40_ne": 0.69,
       "eb_wse_weak_20_40_snr": 0.87,
       "fb_fre_high_ne": 0.01,
-      "fb_fre_high_snr": 0.41,
+      "fb_fre_high_snr": 0.4,
       "fb_fre_low_ne": 0.01,
-      "fb_fre_low_snr": 1.08,
+      "fb_fre_low_snr": 1.12,
       "fb_fre_mid_ne": 0.01,
       "fb_fre_mid_snr": 0.68,
       "fb_fre_very_high_ne": 0.02,
-      "fb_fre_very_high_snr": 1.13
+      "fb_fre_very_high_snr": 1.19
     }
   },
   {
@@ -8546,17 +8546,17 @@
       "eb_wse_weak_20_40_ne": 9.3,
       "eb_wse_weak_20_40_snr": -18.68,
       "fb_fre_high_ne": 0.09,
-      "fb_fre_high_snr": 20.93,
+      "fb_fre_high_snr": 20.82,
       "fb_fre_low_ne": 0.08,
-      "fb_fre_low_snr": 22.6,
+      "fb_fre_low_snr": 22.64,
       "fb_fre_mid_ne": 0.08,
-      "fb_fre_mid_snr": 21.94,
+      "fb_fre_mid_snr": 21.92,
       "fb_fre_very_high_ne": 0.16,
-      "fb_fre_very_high_snr": 16.21
+      "fb_fre_very_high_snr": 15.99
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.7141,
       "psnr": 0.7141,
@@ -8575,11 +8575,11 @@
       "fb_fre_high_ne": 0.01,
       "fb_fre_high_snr": 0.86,
       "fb_fre_low_ne": 0.0,
-      "fb_fre_low_snr": 0.46,
+      "fb_fre_low_snr": 0.47,
       "fb_fre_mid_ne": 0.01,
       "fb_fre_mid_snr": 0.67,
       "fb_fre_very_high_ne": 0.02,
-      "fb_fre_very_high_snr": 1.05
+      "fb_fre_very_high_snr": 1.06
     }
   },
   {
@@ -8601,17 +8601,17 @@
       "eb_wse_weak_20_40_ne": 7.61,
       "eb_wse_weak_20_40_snr": -16.81,
       "fb_fre_high_ne": 0.08,
-      "fb_fre_high_snr": 21.81,
+      "fb_fre_high_snr": 21.73,
       "fb_fre_low_ne": 0.07,
-      "fb_fre_low_snr": 23.8,
+      "fb_fre_low_snr": 23.91,
       "fb_fre_mid_ne": 0.08,
-      "fb_fre_mid_snr": 22.51,
+      "fb_fre_mid_snr": 22.49,
       "fb_fre_very_high_ne": 0.13,
-      "fb_fre_very_high_snr": 18.03
+      "fb_fre_very_high_snr": 17.81
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2018.2802944",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/res_unet.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.5392,
       "psnr": 0.5393,
@@ -8628,13 +8628,13 @@
       "eb_wse_weak_20_40_ne": 0.26,
       "eb_wse_weak_20_40_snr": 0.3,
       "fb_fre_high_ne": 0.0,
-      "fb_fre_high_snr": 0.48,
+      "fb_fre_high_snr": 0.49,
       "fb_fre_low_ne": 0.0,
-      "fb_fre_low_snr": 0.49,
+      "fb_fre_low_snr": 0.48,
       "fb_fre_mid_ne": 0.0,
-      "fb_fre_mid_snr": 0.49,
+      "fb_fre_mid_snr": 0.5,
       "fb_fre_very_high_ne": 0.01,
-      "fb_fre_very_high_snr": 0.72
+      "fb_fre_very_high_snr": 0.74
     }
   },
   {
@@ -8656,17 +8656,17 @@
       "eb_wse_weak_20_40_ne": 9.88,
       "eb_wse_weak_20_40_snr": -19.44,
       "fb_fre_high_ne": 0.08,
-      "fb_fre_high_snr": 22.38,
-      "fb_fre_low_ne": 0.09,
-      "fb_fre_low_snr": 20.62,
+      "fb_fre_high_snr": 22.29,
+      "fb_fre_low_ne": 0.1,
+      "fb_fre_low_snr": 20.27,
       "fb_fre_mid_ne": 0.07,
-      "fb_fre_mid_snr": 23.71,
+      "fb_fre_mid_snr": 23.75,
       "fb_fre_very_high_ne": 0.15,
-      "fb_fre_very_high_snr": 16.67
+      "fb_fre_very_high_snr": 16.42
     },
     "paper_url": "https://doi.org/10.1109/LGRS.2022.3168143",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/sagan.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 1.4618,
       "psnr": 1.4618,
@@ -8683,11 +8683,11 @@
       "eb_wse_weak_20_40_ne": 2.1,
       "eb_wse_weak_20_40_snr": 2.12,
       "fb_fre_high_ne": 0.02,
-      "fb_fre_high_snr": 2.02,
-      "fb_fre_low_ne": 0.01,
-      "fb_fre_low_snr": 1.47,
+      "fb_fre_high_snr": 2.1,
+      "fb_fre_low_ne": 0.02,
+      "fb_fre_low_snr": 1.53,
       "fb_fre_mid_ne": 0.01,
-      "fb_fre_mid_snr": 1.25,
+      "fb_fre_mid_snr": 1.23,
       "fb_fre_very_high_ne": 0.03,
       "fb_fre_very_high_snr": 1.71
     }
@@ -8711,17 +8711,17 @@
       "eb_wse_weak_20_40_ne": 9.87,
       "eb_wse_weak_20_40_snr": -19.22,
       "fb_fre_high_ne": 0.1,
-      "fb_fre_high_snr": 20.18,
+      "fb_fre_high_snr": 20.05,
       "fb_fre_low_ne": 0.08,
-      "fb_fre_low_snr": 22.63,
+      "fb_fre_low_snr": 22.65,
       "fb_fre_mid_ne": 0.09,
-      "fb_fre_mid_snr": 21.68,
-      "fb_fre_very_high_ne": 0.17,
-      "fb_fre_very_high_snr": 15.39
+      "fb_fre_mid_snr": 21.69,
+      "fb_fre_very_high_ne": 0.18,
+      "fb_fre_very_high_snr": 15.17
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.5761,
       "psnr": 0.5761,
@@ -8738,13 +8738,13 @@
       "eb_wse_weak_20_40_ne": 0.53,
       "eb_wse_weak_20_40_snr": 0.4,
       "fb_fre_high_ne": 0.01,
-      "fb_fre_high_snr": 0.62,
+      "fb_fre_high_snr": 0.64,
       "fb_fre_low_ne": 0.0,
-      "fb_fre_low_snr": 0.47,
+      "fb_fre_low_snr": 0.44,
       "fb_fre_mid_ne": 0.01,
-      "fb_fre_mid_snr": 0.62,
+      "fb_fre_mid_snr": 0.63,
       "fb_fre_very_high_ne": 0.01,
-      "fb_fre_very_high_snr": 0.37
+      "fb_fre_very_high_snr": 0.35
     }
   },
   {
@@ -8766,17 +8766,17 @@
       "eb_wse_weak_20_40_ne": 6.67,
       "eb_wse_weak_20_40_snr": -15.81,
       "fb_fre_high_ne": 0.07,
-      "fb_fre_high_snr": 23.02,
+      "fb_fre_high_snr": 22.93,
       "fb_fre_low_ne": 0.06,
-      "fb_fre_low_snr": 24.1,
+      "fb_fre_low_snr": 24.18,
       "fb_fre_mid_ne": 0.07,
-      "fb_fre_mid_snr": 23.69,
-      "fb_fre_very_high_ne": 0.12,
-      "fb_fre_very_high_snr": 18.41
+      "fb_fre_mid_snr": 23.68,
+      "fb_fre_very_high_ne": 0.13,
+      "fb_fre_very_high_snr": 18.18
     },
     "paper_url": "https://doi.org/10.1007/978-3-319-24574-4_28",
     "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/multiples_attenuation/unet.py",
-    "date_added": "2026-07-10",
+    "date_added": "2026-09-10",
     "scores_std": {
       "snr": 0.6398,
       "psnr": 0.6398,
@@ -8793,9 +8793,9 @@
       "eb_wse_weak_20_40_ne": 0.5,
       "eb_wse_weak_20_40_snr": 0.61,
       "fb_fre_high_ne": 0.01,
-      "fb_fre_high_snr": 0.76,
+      "fb_fre_high_snr": 0.77,
       "fb_fre_low_ne": 0.0,
-      "fb_fre_low_snr": 0.49,
+      "fb_fre_low_snr": 0.47,
       "fb_fre_mid_ne": 0.0,
       "fb_fre_mid_snr": 0.57,
       "fb_fre_very_high_ne": 0.01,

@@ -443,3 +443,10 @@
 - cDDPM 差异：旧 SNR 在所有噪声水平恒为 ~17.7（异常平坦），新值正常递减（13.50→7.73→4.47→2.15→0.39）。已询问用户，确认用新值覆盖。
 - `scripts/integrate_groundroll_0907.py`：更新 5 个 segc3-groundroll-noise* benchmark 上 12 个模型的 22 项指标 mean+std 及 parameters_m，共 60 条；0 新增。
 - Verified `npm run build` passes.
+
+## 多次波最终确认结果集成 (2026-09-10)
+- 源文件：`最终指标\多次波\batch_evaluation_all_multiples(1).xlsx`（sheet Multiples，9 方法）。
+- 命名映射：`UNet-Plus`→`*-L-multiples`。
+- 比对结论：6 项核心指标 + eb_wse_* 分箱指标与仓库完全一致；仅 fb_fre_* 频率分带指标有小幅变化（重新计算后的最终值），共 40 处差异，全部覆盖更新。
+- `scripts/integrate_multiples_final.py`：更新 multiples-attenuation 上 9 个模型的 22 项指标 mean+std；参数量与仓库一致无变化。
+- Verified `npm run build` passes.
