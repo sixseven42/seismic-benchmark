@@ -1208,7 +1208,7 @@
   {
     "id": "fbp-geomseg-all",
     "name": "First-Break Picking Multi-Dataset",
-    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "dataset_name": "Brunswick + Dongbei + Halfmile + Lalor (Mixed)",
     "task": "first_arrival_picking",
     "icon": "⏱️",
     "description": "Multi-dataset first-break picking benchmark using SEG-Y amplitude records and binary step-mask labels. Models are trained on all available first-break SEG-Y pairs with gather-level train/validation/test splits and evaluated by pick-location error and hit-rate metrics.",
@@ -1223,7 +1223,12 @@
       "hit_rate_5px",
       "hit_rate_7px",
       "hit_rate_9px",
-      "f1"
+      "f1",
+      "dice",
+      "iou",
+      "mbe",
+      "gather_coverage",
+      "rc_norm"
     ],
     "tags": [
       "SEG-Y",
@@ -1239,7 +1244,7 @@
   {
     "id": "fbp-brunswick-valid",
     "name": "Brunswick First-Break Picking",
-    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "dataset_name": "Brunswick",
     "task": "first_arrival_picking",
     "icon": "⏱️",
     "description": "Single-dataset first-break picking benchmark on the Brunswick valid SEG-Y pair. The task uses paired amplitude and step-mask SEG-Y files and reports averaged results across seeds 42, 43, and 44.",
@@ -1254,7 +1259,12 @@
       "hit_rate_5px",
       "hit_rate_7px",
       "hit_rate_9px",
-      "f1"
+      "f1",
+      "dice",
+      "iou",
+      "mbe",
+      "gather_coverage",
+      "rc_norm"
     ],
     "tags": [
       "SEG-Y",
@@ -1274,7 +1284,7 @@
   {
     "id": "fbp-dongbei",
     "name": "Dongbei First-Break Picking",
-    "dataset_name": "Dongbei First-Break Picking",
+    "dataset_name": "Dongbei",
     "task": "first_arrival_picking",
     "icon": "⏱️",
     "description": "Single-dataset first-break picking benchmark on the Dongbei SEG-Y pair. The benchmark results and model weights are public, while the raw Dongbei SEG-Y data are private and are not provided as a public download.",
@@ -1289,7 +1299,12 @@
       "hit_rate_5px",
       "hit_rate_7px",
       "hit_rate_9px",
-      "f1"
+      "f1",
+      "dice",
+      "iou",
+      "mbe",
+      "gather_coverage",
+      "rc_norm"
     ],
     "tags": [
       "SEG-Y",
@@ -1310,7 +1325,7 @@
   {
     "id": "fbp-halfmile-valid",
     "name": "Halfmile First-Break Picking",
-    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "dataset_name": "Halfmile",
     "task": "first_arrival_picking",
     "icon": "⏱️",
     "description": "Single-dataset first-break picking benchmark on the Halfmile valid SEG-Y pair. The task uses paired amplitude and step-mask SEG-Y files and reports averaged results across seeds 42, 43, and 44.",
@@ -1325,7 +1340,12 @@
       "hit_rate_5px",
       "hit_rate_7px",
       "hit_rate_9px",
-      "f1"
+      "f1",
+      "dice",
+      "iou",
+      "mbe",
+      "gather_coverage",
+      "rc_norm"
     ],
     "tags": [
       "SEG-Y",
@@ -1345,7 +1365,7 @@
   {
     "id": "fbp-lalor-valid",
     "name": "Lalor First-Break Picking",
-    "dataset_name": "First-Break Picking SEG-Y Dataset with Masks",
+    "dataset_name": "Lalor",
     "task": "first_arrival_picking",
     "icon": "⏱️",
     "description": "Single-dataset first-break picking benchmark on the Lalor valid SEG-Y pair. The task uses paired amplitude and step-mask SEG-Y files and reports averaged results across seeds 42, 43, and 44.",
@@ -1360,7 +1380,12 @@
       "hit_rate_5px",
       "hit_rate_7px",
       "hit_rate_9px",
-      "f1"
+      "f1",
+      "dice",
+      "iou",
+      "mbe",
+      "gather_coverage",
+      "rc_norm"
     ],
     "tags": [
       "SEG-Y",

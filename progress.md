@@ -450,3 +450,12 @@
 - 比对结论：6 项核心指标 + eb_wse_* 分箱指标与仓库完全一致；仅 fb_fre_* 频率分带指标有小幅变化（重新计算后的最终值），共 40 处差异，全部覆盖更新。
 - `scripts/integrate_multiples_final.py`：更新 multiples-attenuation 上 9 个模型的 22 项指标 mean+std；参数量与仓库一致无变化。
 - Verified `npm run build` passes.
+
+## 初至拾取最终指标集成 (2026-09-10)
+- 源文件：`最终指标\FAP\初至拾取指标_all(1).xlsx`（3 sheet：旧指标 / 新增指标 / paper重排）。
+- 旧指标 sheet 作为最终版整体替换 50 条结果（10 方法 × 5 scope）：含 dice/iou/f1/hit_rate_1-9px/mae/rmse/mbe/gather_coverage 共 12 项 mean+std；`-Plus`→`-first-break-L`。
+- 新指标只集成 RC_norm = paper重排 的 `MC-norm (shot macro)`（新增指标 sheet 的 MC-norm 口径不同，不采用），50 条全部写入 mean+std。
+- `dataset_name` 区分修复：4 个 fbp benchmark 原均为 "First-Break Picking SEG-Y Dataset with Masks"，改为 Brunswick / Dongbei / Halfmile / Lalor / Brunswick + Dongbei + Halfmile + Lalor (Mixed)（BenchmarksPage 卡片副标题与 Leaderboard 下拉使用此字段）。
+- fbp benchmark metrics 声明扩为 13 项；MetricKey/Scores 类型新增 dice/iou/mbe/gather_coverage/rc_norm；isLowerBetter 增加 mbe、rc_norm（按误差类处理：越小越好）。
+- 方法映射：DSU-Net→wang2024dsunet_first_break_picking，HUNet→pu2024hu_net_first_arrival_accuracy，STUNet→jiang2023swin_transformer_first_break。
+- Verified `npm run build` passes.

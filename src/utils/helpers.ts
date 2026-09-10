@@ -4,7 +4,7 @@ export function escapeHtml(str: string): string {
 }
 
 export function isLowerBetter(metric: string): boolean {
-  return metric === 'rmse' || metric === 'mae' || metric === 'mse' || metric.endsWith('_ne');
+  return metric === 'rmse' || metric === 'mae' || metric === 'mse' || metric === 'mbe' || metric === 'rc_norm' || metric.endsWith('_ne');
 }
 
 export function formatType(type: string): string {

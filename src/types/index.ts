@@ -79,7 +79,13 @@ export type MetricKey =
   | 'fb_fre_mid_ne'
   | 'fb_fre_mid_snr'
   | 'fb_fre_very_high_ne'
-  | 'fb_fre_very_high_snr';
+  | 'fb_fre_very_high_snr'
+  // First-arrival picking metrics
+  | 'dice'
+  | 'iou'
+  | 'mbe'
+  | 'gather_coverage'
+  | 'rc_norm';
 
 export interface Scores {
   snr?: number;
@@ -114,6 +120,12 @@ export interface Scores {
   fb_fre_mid_snr?: number;
   fb_fre_very_high_ne?: number;
   fb_fre_very_high_snr?: number;
+  // First-arrival picking metrics
+  dice?: number;
+  iou?: number;
+  mbe?: number;
+  gather_coverage?: number;
+  rc_norm?: number;
 }
 
 export interface Result {
