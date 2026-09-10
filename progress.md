@@ -459,3 +459,11 @@
 - fbp benchmark metrics 声明扩为 13 项；MetricKey/Scores 类型新增 dice/iou/mbe/gather_coverage/rc_norm；isLowerBetter 增加 mbe、rc_norm（按误差类处理：越小越好）。
 - 方法映射：DSU-Net→wang2024dsunet_first_break_picking，HUNet→pu2024hu_net_first_arrival_accuracy，STUNet→jiang2023swin_transformer_first_break。
 - Verified `npm run build` passes.
+
+## 2026-09-10 集成表格0909（随机噪声最终版 + 删除FFCNN）
+- 源：`C:\论文\SeisBench\最终指标\表格0909\表格0909\` 4 个 batch_evaluation_results.xlsx
+- 比对结果：去混叠 4 sheet、SEGC3 随机噪声 6 sheet 与仓库完全一致，无需改动
+- Mobile AVO Random Noise 以 0909 表为准：新增 UNet-L / FBResNet 共 12 条结果（8→10 模型/组），补齐 SCRN 缺失的 8 项分频段指标（6 个 benchmark，共 60 条更新/新建）
+- 命名：q_unet→qunet-*（QUNet）、unet_plusplus→UNet++（随机噪声用 zhou2018unet_plusplus_denoise，去混叠用 unet-plusplus-blending-noise），均已正确
+- 删除 FFCNN：3 个模型（ffcnn-random-noise、ffcnn-blending-noise、ffcnn-blending-noise-avo）+ 10 条结果；segc3 随机噪声 12→11、去混叠 11→10 模型
+- 脚本：scripts/integrate_0909_randomnoise.py；审计通过，tsc 通过

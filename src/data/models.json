@@ -258,24 +258,6 @@
     "parameters_m": 0.45
   },
   {
-    "id": "ffcnn-random-noise",
-    "name": "FFCNN",
-    "authors": "Li et al.",
-    "org": "Key Laboratory Petroleum Resources Research",
-    "year": 2021,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "random_noise_suppression"
-    ],
-    "description": "FFCNN baseline for synthetic random-noise suppression.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/random_noise_suppression/ffcnn.py",
-    "weights_url": "https://huggingface.co/GeoBrain/random-noise-attenuation/tree/main/models/ffcnn",
-    "is_open_source": true,
-    "parameters_m": 0.56
-  },
-  {
     "id": "physics-cnn-groundroll",
     "name": "Physics CNN",
     "authors": "Pham and Li",
@@ -1576,26 +1558,6 @@
     "parameters_m": 0.45
   },
   {
-    "id": "ffcnn-blending-noise",
-    "name": "FFCNN",
-    "authors": "Li et al.",
-    "org": "Key Laboratory Petroleum Resources Research",
-    "year": 2021,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "deblending"
-    ],
-    "description": "FFCNN baseline for common-receiver blending-noise suppression.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/ffcnn.py",
-    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/ffcnn",
-    "weights_urls": {},
-    "architecture_image": null,
-    "is_open_source": true,
-    "parameters_m": 0.56
-  },
-  {
     "id": "qunet-blending-noise",
     "name": "QUNet",
     "authors": "Wang et al.",
@@ -1654,26 +1616,6 @@
     "architecture_image": null,
     "is_open_source": true,
     "parameters_m": 0.45
-  },
-  {
-    "id": "ffcnn-blending-noise-avo",
-    "name": "FFCNN",
-    "authors": "Li et al.",
-    "org": "Key Laboratory Petroleum Resources Research",
-    "year": 2021,
-    "emoji": "🧠",
-    "type": "deep_learning",
-    "tasks": [
-      "deblending"
-    ],
-    "description": "FFCNN baseline for AVO common-receiver blending-noise suppression.",
-    "paper_url": "https://doi.org/10.1109/TGRS.2021.3073001",
-    "code_url": "https://github.com/sixseven42/seismic-benchmark-code/blob/main/model/blending_noise_suppression/ffcnn.py",
-    "weights_url": "https://huggingface.co/GeoBrain/blending-noise-suppression/tree/main/models/ffcnn",
-    "weights_urls": {},
-    "architecture_image": null,
-    "is_open_source": true,
-    "parameters_m": 0.56
   },
   {
     "id": "unet-L-random-noise",
