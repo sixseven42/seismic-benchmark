@@ -435,3 +435,11 @@
 - `zhou2018unet_plusplus_denoise` 两组共用，保留。
 - 更新 `integrate_json0903.py`：移除 random_noise_suppression_avo 映射并跳过未映射任务目录，防止重跑时重建该组。
 - 剩余：91 models / 44 benchmarks / 510 results；`npm run build` 通过。
+
+## 面波最终确认结果集成 (2026-09-10)
+- 源文件：`最终指标\面波\batch_evaluation_all_groundroll0907.xlsx`（SEGC3，5 个 sheet）+ `batch_evaluation_all_field_0822.xlsx`（field，1 个 sheet）。
+- 命名映射：`UNet-Plus`→`*-L-groundroll`，`DDPM cDDPM`→`cddpm-groundroll`。
+- 比对结论：0822 field 文件 10 个模型与仓库完全一致，无需改动；0907 文件 11 个模型与仓库一致，仅 `cddpm-groundroll` 不同。
+- cDDPM 差异：旧 SNR 在所有噪声水平恒为 ~17.7（异常平坦），新值正常递减（13.50→7.73→4.47→2.15→0.39）。已询问用户，确认用新值覆盖。
+- `scripts/integrate_groundroll_0907.py`：更新 5 个 segc3-groundroll-noise* benchmark 上 12 个模型的 22 项指标 mean+std 及 parameters_m，共 60 条；0 新增。
+- Verified `npm run build` passes.
