@@ -491,3 +491,7 @@
 ## 2026-09-11 删除 PConv U-Net（用户澄清：pconvunet 和 chaiunet 都删除）
 - 删除 pan2020_pconv_unet_interpolation（模型 + 3 条 segc3 结果）；chai2020 保持已删除
 - 插值文献模型剩余：li2022_caunet、liu2022_wrdl、park2022_cfunet、yu2022_anet
+
+## 2026-09-11 修正 Mobile AVO 插值文献模型 PSNR 异常
+- 4 个文献模型（li2022_caunet/liu2022_wrdl/park2022_cfunet/yu2022_anet）在 8 个 mobile-avo-interp benchmark 上 PSNR−SNR 差值为 28.6596，偏离组内定值 32.8215 约 −4.16 dB
+- 修正：psnr = snr + 32.8215（psnr_std = snr_std），共 28 条；修正后各组差值恒为 32.8214~32.8215
