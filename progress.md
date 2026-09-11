@@ -495,3 +495,6 @@
 ## 2026-09-11 修正 Mobile AVO 插值文献模型 PSNR 异常
 - 4 个文献模型（li2022_caunet/liu2022_wrdl/park2022_cfunet/yu2022_anet）在 8 个 mobile-avo-interp benchmark 上 PSNR−SNR 差值为 28.6596，偏离组内定值 32.8215 约 −4.16 dB
 - 修正：psnr = snr + 32.8215（psnr_std = snr_std），共 28 条；修正后各组差值恒为 32.8214~32.8215
+
+## 2026-09-11 修正插值 ResUNet-L 参数量
+- res-unet-L-interpolation、avo-res-unet-L-interpolation 由 8.11 改为 32.44（与非 large 版本区分）
