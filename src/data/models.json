@@ -981,7 +981,7 @@
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
-    "parameters_m": 32.44
+    "parameters_m": 8.11
   },
   {
     "id": "res-unet-unpn-interpolation",
@@ -1143,7 +1143,7 @@
     "code_url": null,
     "weights_url": null,
     "is_open_source": true,
-    "parameters_m": 32.44
+    "parameters_m": 8.11
   },
   {
     "id": "avo-res-unet-interpolation",

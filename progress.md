@@ -471,3 +471,10 @@
 ## 2026-09-10 删除初至拾取 Dongbei 实验
 - 删除 benchmark `fbp-dongbei` + 10 条结果（10 个模型均与其他 FAP benchmark 共享，无孤儿模型）
 - FAP benchmark 剩余：fbp-geomseg-all(Mixed)、fbp-brunswick-valid、fbp-halfmile-valid、fbp-lalor-valid
+
+## 2026-09-11 集成 Uniform 75% 插值最终结果
+- 源：batch_evaluation_uniform75.xlsx（SEGC3）、batch_evaluation_avo_uniform75.xlsx（Mobile AVO），sheet uniform_miss75
+- 各 9 个模型（UNet/-L、DnCNN/-L、ResUNet/-L、Attention UNet/-L、SPNet）20 项指标 mean±std 覆盖写入（新值与旧值差异较大，以文件为准）
+- 文献模型（chai2020/li2022/liu2022/park2022/yu2022）不在文件中，保持原值（22 项含 mae/rmse）
+- 参数量更新 18 个模型（如 dncnn-interpolation 0.14、attention-unet-L-interpolation 31.39 等）
+- 脚本：scripts/integrate_uniform75.py；审计通过，tsc 通过
