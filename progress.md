@@ -478,3 +478,12 @@
 - 文献模型（chai2020/li2022/liu2022/park2022/yu2022）不在文件中，保持原值（22 项含 mae/rmse）
 - 参数量更新 18 个模型（如 dncnn-interpolation 0.14、attention-unet-L-interpolation 31.39 等）
 - 脚本：scripts/integrate_uniform75.py；审计通过，tsc 通过
+
+## 2026-09-11 集成插值最终结果（interp_*_czt0909.zip）
+- 源：interp_segc3_czt0909.zip、interp_field_czt0909.zip（xlsx sheet 'Interpolation' 为准，mean±std）
+- interp_field（Mobile AVO）与仓库完全一致，无需改动
+- 删除 chai2020_unet_interpolation（模型 + 7 条结果）；gated_transformer_v9 仓库中不存在，文件中的行跳过
+- SEGC3 4 个文献模型（li2022_caunet/liu2022_wrdl/park2022_cfunet/yu2022_anet）× 7 个 benchmark 覆盖写入（修正 PSNR 等，旧命名 uniform 70→uniform75）
+- 新增模型 pan2020_pconv_unet_interpolation（PConv U-Net, 22.33M）+ segc3 random30/random50/uniform50 3 条结果
+- 跳过 park2022_cfunet (cfunet_random 50-88)：无对应仓库 benchmark（待用户确认是否新增）
+- 脚本：scripts/integrate_interp_final.py；审计通过，tsc 通过

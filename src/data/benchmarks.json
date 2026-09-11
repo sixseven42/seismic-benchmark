@@ -864,7 +864,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 14,
+    "model_count": 13,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -912,7 +912,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 14,
+    "model_count": 13,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -960,7 +960,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 14,
+    "model_count": 13,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1008,7 +1008,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 14,
+    "model_count": 13,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1056,7 +1056,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 14,
+    "model_count": 13,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1152,7 +1152,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 14,
+    "model_count": 13,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1200,7 +1200,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
     "download_url": "https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12",
-    "model_count": 14,
+    "model_count": 13,
     "gallery": [
       "datasets/mobile-avo-data.png"
     ]
@@ -1403,7 +1403,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 16,
+    "model_count": 17,
     "group_name": "SEGC3 Random Missing",
     "gallery": [
       "datasets/segc3-interp-random-raw.png",
@@ -1452,7 +1452,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 16,
+    "model_count": 17,
     "group_name": "SEGC3 Random Missing",
     "gallery": [
       "datasets/segc3-interp-random-raw.png",
@@ -1550,7 +1550,7 @@
     ],
     "citation": "https://wiki.seg.org/wiki/SEG_C3_45_shot",
     "download_url": "https://huggingface.co/datasets/GeoBrain/seg-c3-interpolation",
-    "model_count": 16,
+    "model_count": 17,
     "group_name": "SEGC3 Uniform Missing",
     "gallery": [
       "datasets/segc3-interp-uniform-raw.png",
