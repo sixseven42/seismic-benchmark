@@ -487,3 +487,7 @@
 - 新增模型 pan2020_pconv_unet_interpolation（PConv U-Net, 22.33M）+ segc3 random30/random50/uniform50 3 条结果
 - 跳过 park2022_cfunet (cfunet_random 50-88)：无对应仓库 benchmark（待用户确认是否新增）
 - 脚本：scripts/integrate_interp_final.py；审计通过，tsc 通过
+
+## 2026-09-11 删除 PConv U-Net（用户澄清：pconvunet 和 chaiunet 都删除）
+- 删除 pan2020_pconv_unet_interpolation（模型 + 3 条 segc3 结果）；chai2020 保持已删除
+- 插值文献模型剩余：li2022_caunet、liu2022_wrdl、park2022_cfunet、yu2022_anet
